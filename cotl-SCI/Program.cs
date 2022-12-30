@@ -1,4 +1,6 @@
-using cotl_SCI.MemoryAccess;
+using System.Diagnostics;
+using cotl_SCI.DataAnalysis;
+using cotl_SCI.DataImport;
 using cotl_SCI.MemorySampling;
 
 namespace cotl_SCI
@@ -8,12 +10,10 @@ namespace cotl_SCI
         [STAThread]
         static void Main()
         {
-            ApplicationConfiguration.Initialize();
-            Application.Run(new RandomSeedSampling());
             // RunMemorySampling();
+            RunDataAnalysis();
             // TestBitmapImport();
         }
-
 
         public static void RunMemorySampling()
         {
@@ -21,7 +21,10 @@ namespace cotl_SCI
             Application.Run(new RandomSeedSampling());
         }
 
-
+        public static void RunDataAnalysis()
+        {
+            TestRandomSeedGeneration.RunAnalysis();
+        }
 
         public static void TestBitmapImport()
         {
@@ -32,9 +35,7 @@ namespace cotl_SCI
 
         }
 
-
-
-
-
     }
 }
+
+
