@@ -2,7 +2,7 @@ using System.Diagnostics;
 using cotl_SCI.MemoryAccess;
 using static cotl_SCI.MemoryAccess.CotlPointers;
 
-namespace cotl_SCI.MemorySampling
+namespace cotl_SCI.MemoryMonitor
 {
     public partial class RandomSeedSampling : Form
     {
@@ -43,7 +43,9 @@ namespace cotl_SCI.MemorySampling
             List<int> seedValuesSeen = new();
             while (!requestClose)
             {
-                int randomSeed = kq1ReadWrite.ReadTwoByte(RANDOM_SEED_PTR);
+                // int randomSeed = kq1ReadWrite.ReadTwoByte(RANDOM_SEED_PTR);
+                // int randomSeed = kq1ReadWrite.ReadTwoByte(0x1B496);
+                int randomSeed = kq1ReadWrite.ReadTwoByte(0x1C8AC); // mouse stack pointer
                 if (seedValuesSeen.Count == 0 || randomSeed != seedValuesSeen.Last())
                 {
                     seedValuesSeen.Add(randomSeed);
@@ -60,7 +62,7 @@ namespace cotl_SCI.MemorySampling
                         Debug.WriteLine($"DisposedException handled by ThreadSampleRandomSeed");
                     }
                 }
-                Thread.Sleep(THREAD_INTERVAL);
+                // Thread.Sleep(THREAD_INTERVAL);
             }
         }
 

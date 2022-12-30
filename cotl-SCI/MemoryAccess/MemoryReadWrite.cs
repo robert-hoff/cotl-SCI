@@ -1,5 +1,8 @@
 using cotl_SCI.MemoryAccess;
 
+// FIXME - I need a base pointer here
+
+
 namespace cotl_SCI.MemoryAccess
 {
     class MemoryReadWrite
@@ -50,7 +53,7 @@ namespace cotl_SCI.MemoryAccess
 
         public static void WriteInt(int val, int address)
         {
-            MemoryInterface.WriteMemory<MemoryReadWrite.Int4Byte>(val, address);
+            MemoryInterface.WriteMemory<Int4Byte>(val, address);
         }
 
         private static OneByte IntToOneByte(int val)

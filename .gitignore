@@ -4,6 +4,8 @@
 /cotl-SCI/bin/
 /cotl-SCI/obj/
 *.user
+/input/
+/output/
 
 
 

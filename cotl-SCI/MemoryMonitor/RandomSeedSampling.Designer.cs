@@ -1,4 +1,4 @@
-namespace cotl_SCI.MemorySampling
+namespace cotl_SCI.MemoryMonitor
 {
     partial class RandomSeedSampling
     {

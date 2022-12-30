@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 
 namespace cotl_SCI.MemoryAccess
@@ -34,7 +34,7 @@ namespace cotl_SCI.MemoryAccess
                 Environment.Exit(1);
             }
             processPointer = OpenProcess(PROCESS_VM_OPERATION | PROCESS_VM_READ | PROCESS_VM_WRITE, false, process.Id);
-            Debug.WriteLine($"Opened prcoess {processName}");
+            // Debug.WriteLine($"Opened prcoess {processName}");
         }
 
         public static T ReadMemory<T>(int address) where T : struct
