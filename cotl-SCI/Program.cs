@@ -1,3 +1,5 @@
+using cotl_SCI.MemoryAccess;
+
 namespace cotl_SCI
 {
     internal static class Program
@@ -10,8 +12,25 @@ namespace cotl_SCI
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            // ApplicationConfiguration.Initialize();
+            // Application.Run(new Form1());
+            TestBitmapImport();
+
+
         }
+
+        static void TestBitmapImport()
+        {
+            // ImportBitmapData.RunTrials();
+            // Rand.RunTrials();
+            // TestMemoryOperations.RunTrials();
+            RandomSeedSampling.RunTrials();
+
+        }
+
+
+
+
+
     }
 }
