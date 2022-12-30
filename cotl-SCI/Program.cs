@@ -1,30 +1,34 @@
 using cotl_SCI.MemoryAccess;
+using cotl_SCI.MemorySampling;
 
 namespace cotl_SCI
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            // ApplicationConfiguration.Initialize();
-            // Application.Run(new Form1());
-            TestBitmapImport();
-
-
+            ApplicationConfiguration.Initialize();
+            Application.Run(new RandomSeedSampling());
+            // RunMemorySampling();
+            // TestBitmapImport();
         }
 
-        static void TestBitmapImport()
+
+        public static void RunMemorySampling()
+        {
+            ApplicationConfiguration.Initialize();
+            Application.Run(new RandomSeedSampling());
+        }
+
+
+
+        public static void TestBitmapImport()
         {
             // ImportBitmapData.RunTrials();
             // Rand.RunTrials();
             // TestMemoryOperations.RunTrials();
-            RandomSeedSampling.RunTrials();
+            // RandomSeedSampling.RunTrials();
 
         }
 
