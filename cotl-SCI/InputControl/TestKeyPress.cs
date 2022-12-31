@@ -8,9 +8,12 @@ namespace cotl_SCI.InputControl
         public static void RunTrials()
         {
             KeyPress keypress = new KeyPress();
-            keypress.SendKeyBoardInput(KEY_LEFT);
+            // keypress.SendKeyBoardInput(KEY_LEFT);
             // keypress.SendKeyBoardInput(KEY_4);
             // keypress.SendKeyBoardInput(KEY_S);
+
+
+            keypress.SendKeyBoardInputSciVersion(KEY_LEFT);
         }
 
 

@@ -33,7 +33,7 @@ namespace cotl_SCI.MemoryMonitor
         }
 
 
-        private CotlReadWrite kq1ReadWrite = new CotlReadWrite();
+        private CotlReadWrite cotlReadWrite = new CotlReadWrite();
         private static bool requestClose = false;
         // in ms, low not to miss samples
         private int THREAD_INTERVAL = 10;
@@ -45,7 +45,7 @@ namespace cotl_SCI.MemoryMonitor
             {
                 // int randomSeed = kq1ReadWrite.ReadTwoByte(RANDOM_SEED_PTR);
                 // int randomSeed = kq1ReadWrite.ReadTwoByte(0x1B496);
-                int randomSeed = kq1ReadWrite.ReadTwoByte(0x1C8AC); // mouse stack pointer
+                int randomSeed = cotlReadWrite.ReadTwoByte(0x1C8AC); // mouse stack pointer
                 if (seedValuesSeen.Count == 0 || randomSeed != seedValuesSeen.Last())
                 {
                     seedValuesSeen.Add(randomSeed);

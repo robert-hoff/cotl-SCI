@@ -13,6 +13,7 @@ namespace cotl_SCI
         static void Main()
         {
             // RunMemorySampling();
+            // RunMonitorVariable();
             // RunDataAnalysis();
             // TestBitmapImport();
             // SetDropBoxCycles();
@@ -23,8 +24,8 @@ namespace cotl_SCI
             // RunDosboxScan();
             // ReadDataFromFile.CreateCheatEngineConfiguration();
             // PrintCheatEntries();
-            // MousePress.WriteMousePress();
-            TestKeyPress.RunTrials();
+            TestMousePress.RunTrials();
+            // TestKeyPress.RunTrials();
         }
 
 
@@ -32,6 +33,12 @@ namespace cotl_SCI
         {
             ApplicationConfiguration.Initialize();
             Application.Run(new RandomSeedSampling());
+        }
+
+        public static void RunMonitorVariable()
+        {
+            ApplicationConfiguration.Initialize();
+            Application.Run(new MonitorVariable());
         }
 
         public static void RunDosboxScan()
@@ -58,7 +65,7 @@ namespace cotl_SCI
         public static void SetDropBoxCycles()
         {
             // Toggle the cycles up/down in Dosbox to verify changes in the titlebar (Ctrl+F12, Ctrl+F11)
-            new CotlReadWrite().SetDosboxCycles(5000);
+            new CotlReadWrite().SetDosboxCycles(1500);
         }
 
 

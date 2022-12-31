@@ -1,67 +1,202 @@
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using cotl_SCI.MemoryAccess;
+using static cotl_SCI.MemoryAccess.CotlPointers;
 
+
+
+
+// the stack values as a short are
+// 14666, 14680, 14694, 14708, 14722, 14736, 14750, 14764
+// 14778, 14792, 14806, 14820, 14834, 14848, 14862, 14876
+
+
+/*
+ * Notes on the input system
+ * -------------------------
+ *
+ * I'm not yet able to get any inputs written to memory registered by the game.
+ *
+ * The keystroke-ptr0, keystroke-ptr1 and keystroke-queue looks exactly the same as the AGI version
+ * But performing the same operations on the memory does not yield any response from the game.
+ *
+ * There is a looking strcture in the SCI as the one in the AGI version, with the addition of
+ * having data entries that are concerned with the mouse.
+ *
+ * stack-ptr0 and stack-ptr1 have matching offsets to the data entries of the input queue.
+ *
+ * I believe by incrementing stack-ptr1, stack-ptr0 will be automatically incremented to follow
+ * and will process inputs registered in the input queue.
+ *
+ * the stack values change as follows. I.e. they differ by 14 and cycle against a base 14666.
+ *
+ *      14666, 14680, 14694, 14708, 14722, 14736, 14750, 14764
+ *      14778, 14792, 14806, 14820, 14834, 14848, 14862, 14876
+ *
+ * Monitoring stack-ptr1,stack-ptr0 it is clear that stack-ptr1 leads stack-ptr0.
+ * It seems the most reasonable that stack-ptr0 should be incremented by the system
+ * which will process the data in the input queue's which is pointed to.
+ *
+ * stack-ptr0 points to the register following the one that has been processed. It
+ * means we need to load the data and then increment ptr1 for ptr0 to catch up.
+ *
+ *
+ *
+ * Here, a mouse-click was made at (192,181)
+ *
+ *
+ *  INPUT_CLK     QUEUE0_CLK     QUEUE0_XY
+ *      53971       49986        (207,184)
+ *      53972       53971        (192,181)
+ *      53973       53971        (192,181)
+ *
+ * their are two candidate uses for QUEUE0_CLK
+ * either the input is written to it as a marker of it having been processed. Or, it is given a value higher
+ * than INPUT_CLK to indicate that it still 'needs' processing.
+ *
+ * But having a higher value for QUEUE0_CLK may not work if the system should hang and inputs would be missed.
+ *
+ * It may be coded in though that the queue is checked on each cycle, which does seem reasonable likely. And therefore
+ * missing a value which is higher is impossible.
+ *
+ * I feel if this is the case we should at least be able to see one instance of QUEUE0_CLK being higher than INPUT_CLK
+ * With the monitor it looks like it is always the same value or higher
+ *
+ *
+ *   INPUT_CLK     QUEUE0_CLK     QUEUE0_XY
+ *      139062  137196        (165,189)
+ *      139063  139062        (127,189)
+ *
+ *
+ * when monitoring against changes on QUEUE0_CLK the values will typically be equal, and
+ * occassionally the same
+ *      147032  139062        (127,189)
+ *      147147  147146        (181,168)
+ *      147630  147630        (146,188)
+ *      148792  148792        (230,181)
+ *      148953  148953        (158,181)
+ *      149062  149062        (215,188)
+ *
+ * when monitoring changes on (x,y) it appears that very occassionally the system clock is
+ * ahead
+ *
+ * 182620  182620        (57,184)
+ * 182742  182620        (200,173)
+ *
+ * The system clock is ahead *and* the timer part of the queue is the same value as last.
+ *
+ *
+ *
+ *
+ * This mystery variable might be the key ..
+ *
+ *  224308  222933   1375   (244,188)         0
+ *  224446  224446   0      (132,193)         0
+ *  224712  224712   0      (147,190)         0
+ *  224818  224712   106    (127,184)         0
+ *  225193  225193   0      (259,187)         0
+ *  225365  225365   0      (30,183)         0
+ *  225484  225484   0      (298,180)         0
+ *  225671  225671   0      (295,181)         0
+ *  225796  225796   0      (70,179)         2
+ *  225921  225921   0      (267,179)         0
+ *  226061  226060   1      (66,184)         2
+ *
+ *
+ *
+ *
+ * starting on a downpress
+ *
+ * 14240  14240   ( 98,186) 0     14666,14680
+ * and mouse is released next mouse-press
+ * 14301  14240   ( 98,186) 2     14680,14680
+ * 14301  14240   ( 98,186) 0     14694,14694
+ *
+ * coming up
+ * 28490  28490   (115,179) 0     14666,14680
+ * then next mouse-press
+ * 29039  28490   (115,179) 1     14680,14680
+ * 29039  28490   (115,179) 0     14694,14694
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 namespace cotl_SCI.InputControl
 {
     class MousePress
     {
 
-        const int STACK_POINTER = 0x1B490; // 1 or 2
-        const int CURSOR_TYPE = 0x1B494;
-        const int BUTTON_TYPE = 0x1B4A4;
-        const int CLICK_TIMER = 0x1B496; // takes the value of the game clock
-        const int GAME_CLOCK = 0x1CAEE;
-        const int MOUSE_X1 = 0x1B49C;
-        const int MOUSE_Y1 = 0x1B49A;
-        const int MOUSE_X2 = 0x1B4A2;
-        const int MOUSE_Y2 = 0x1B4A0;
-        const int MOUSE_BUTTON = 0x1B4A4;
-        // 0,14,28,74,88,102,116,130,144,158,172,186,200,214,228,242
-        const int INC1 = 0x1C8AC;
-        const int INCF1 = 0x1C8AD;
-        const int INC2 = 0x1C8AE;
-        const int INCF2 = 0x1C8AF;
+        CotlReadWrite cotlRW = new CotlReadWrite();
 
-
-        // the stack values as a short are
-        // 14666, 14680, 14694, 14708, 14722, 14736, 14750, 14764
-        // 14778, 14792, 14806, 14820, 14834, 14848, 14862, 14876
-
-        public static void WriteMousePress2()
+        public MousePress()
         {
-            CotlReadWrite cotlRW = new CotlReadWrite();
-
-            int incValue = 88;
-            cotlRW.WriteByte(incValue, INC1);
-            cotlRW.WriteByte(incValue, INC2);
-
-
-            // cotlRW.WriteInt(210000, CLICK_TIMER);
-            // Debug.WriteLine($"0x{(COTL_BASE_ADDRESS + ptr):X}");
-            // Thread.Sleep(100);
-            int timer = cotlRW.ReadInt(GAME_CLOCK);
-            // Debug.WriteLine($"{timer}");
-            // cotlRW.WriteByte(228, INC1);
-            // cotlRW.WriteByte(1, CURSOR_TYPE);
-            cotlRW.WriteByte(1, STACK_POINTER);
-            cotlRW.WriteByte(1, BUTTON_TYPE);
-            cotlRW.WriteInt(timer, CLICK_TIMER);
-
-
-            Debug.WriteLine($"{timer}");
 
         }
 
 
-        public static void WriteMousePress()
+
+        public void WriteMousePress98()
         {
-            WriteMouseClick(0, 1000, LEFT_BUTTON, 100, 100);
+            // WriteMouseClick(0, 500, LEFT_BUTTON, 100, 100);
+            WriteMouseClick(0, 500, LEFT_BUTTON, 50, 50);
+            // WriteMouseClick(0, 500, RIGHT_BUTTON, 100, 100);
         }
+
+        public void WriteMousePress()
+        {
+
+        }
+
+        public void IncrementStackPtr1()
+        {
+            int nextStackPtr1 = NextStackPtr1();
+            cotlRW.WriteTwoByte(nextStackPtr1, STACK_PTR1);
+        }
+
+        private int NextStackPtr1()
+        {
+            int stack_ptr1 = cotlRW.ReadTwoByte(STACK_PTR1);
+            stack_ptr1 += 14;
+            if (stack_ptr1 > 14876)
+            {
+                stack_ptr1 = 14666;
+            }
+            return stack_ptr1;
+        }
+
+        /*
+         * move the stacks to position 14876 on the keyboard
+         *
+         * Before I increment stack_ptr1 there should be a 1 in the mystery position
+         * what should the 1 be interpreted as?
+         * it's different for the mouse and keyboard.
+         *
+         * 1 means a mousepress is about to begin
+         * 4 means a keystroke has started
+         *
+         */
+        public void MousePressFromPosition14876()
+        {
+            int queue0_ptr = 0x1D720;
+            int queue15_ptr = 0x1D7F2;
+
+            int clock = cotlRW.ReadInt(INPUT_CLOCK);
+
+
+            cotlRW.WriteTwoByte(0, queue15_ptr + 8);
+            cotlRW.WriteInt(clock, queue0_ptr);
+            cotlRW.WriteTwoByte(14666, STACK_PTR1);
+
+
+
+
+
+        }
+
+
+
 
 
         static int LEFT_BUTTON = 0;
@@ -72,33 +207,46 @@ namespace cotl_SCI.InputControl
         // 0-3 time of the click, copied over from the game clock
         // 4-5 cursor y-position
         // 6-7 cursor x-position
-        // 8-11 unknown, always or mostly zero
+        // 8-9, mouse or keyboard is about to begin.
+        // 10-11 keycode, where non-zero indicates keyboard input
         // 12 mouse button 0=left-button, 3=right-button
-        // 13 unknown, always or mostly zero
+        // 13 probably part of the mouse-button, considered as a 2-byte int
 
-
+        // when a key is pressed the cursor xy is seen to be written in but is possibly not consequential
         const int STACK_POINTER_BASE_VAL = 14666;
+
+
+
+        // It's working when I bring the pointer up to 14876 on the last click
+        // Then, I prepare the data for the mouse click to queue0 and finish by incrementing
+        // the stack-pointer to 14848
+        // then doing a button press (down + up) leaving the pointer at 14876
+        // I also seem to be getting some presses through leaving the stack at 14832
+
+        // ah, the god damn dialog just disappears by itself
+
 
         public static void WriteMouseClick(int queuePos, int clockDelta, int button, int xpos, int ypos)
         {
-            CotlReadWrite cotlRW = new CotlReadWrite();
+            Debug.WriteLine($"sending mouse click");
+            CotlReadWrite cotlRW = new();
 
             // offset of the first mouse queue 0x1D720
-            int queue1_clock_ptr = 0x1D720;
-            int queue1_y_ptr = 0x1D724;
-            int queue1_x_ptr = 0x1D726;
-            int queue1_button_ptr = 0x1D72C;
+            int queue0_clock_ptr = 0x1D720;
+            int queue0_y_ptr = 0x1D724;
+            int queue0_x_ptr = 0x1D726;
+            int queue0_button_ptr = 0x1D72C;
 
-            int gameClock = cotlRW.ReadInt(GAME_CLOCK);
+            int gameClock = cotlRW.ReadInt(INPUT_CLOCK);
 
-            cotlRW.WriteInt(gameClock + clockDelta, queue1_clock_ptr);
-            cotlRW.WriteTwoByte(xpos, queue1_x_ptr);
-            cotlRW.WriteTwoByte(ypos, queue1_y_ptr);
-            cotlRW.WriteByte(button, queue1_button_ptr);
+            cotlRW.WriteInt(gameClock + clockDelta, queue0_clock_ptr);
+            cotlRW.WriteTwoByte(xpos, queue0_x_ptr);
+            cotlRW.WriteTwoByte(ypos, queue0_y_ptr);
+            cotlRW.WriteByte(button, queue0_button_ptr);
 
             // see if the click gets registered by writing in the first queue position
             // 14666
-            cotlRW.WriteTwoByte(14666, INC1);
+            cotlRW.WriteTwoByte(14666, STACK_PTR0);
         }
 
 

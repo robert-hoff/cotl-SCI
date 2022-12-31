@@ -10,7 +10,8 @@ namespace cotl_SCI.InputControl
         const int KEYSTROKE_PTR2= 0x41C;
         const int KEYSTROKE_QUEUE0_PTR = 0x41E;
 
-        public const int KEY_LEFT = 0x4BE0;
+        // public const int KEY_LEFT = 0x4BE0;
+        public const int KEY_LEFT = 0x4B00;
         public const int KEY_UP = 0x48E0;
         public const int KEY_RIGHT = 0x4DE0;
         public const int KEY_DOWN = 0x50E0;
@@ -62,6 +63,46 @@ namespace cotl_SCI.InputControl
             // CotlRW.WriteTwoByte(30, KEYSTROKE_PTR);
             // CotlRW.WriteTwoByte(32, KEYSTROKE_PTR2);
         }
+
+
+        const int GAME_CLOCK = 0x1CAEE;
+        const int INC1_PTR = 0x1C8AC;
+
+
+        public void SendKeyBoardInputSciVersion(int keyCode)
+        {
+            int clockDelta = 1000;
+            // int xpos = 0;
+            // int ypos = 0;
+            int button = 0;
+
+
+
+            CotlReadWrite cotlRW = new CotlReadWrite();
+
+            // offset of the first mouse queue 0x1D720
+            int queue0_clock_ptr = 0x1D720;
+            int queue0_y_ptr = 0x1D724;
+            int queue0_x_ptr = 0x1D726;
+            int queue0_keycode_ptr = 0x1D72C;
+            int queue0_button_ptr = 0x1D72C;
+
+            int gameClock = cotlRW.ReadInt(GAME_CLOCK);
+
+            cotlRW.WriteInt(gameClock + clockDelta, queue0_clock_ptr);
+            // cotlRW.WriteTwoByte(xpos, queue1_x_ptr);
+            // cotlRW.WriteTwoByte(ypos, queue1_y_ptr);
+            cotlRW.WriteByte(button, queue0_button_ptr);
+
+            // see if the click gets registered by writing in the first queue position
+            // 14666
+            // cotlRW.WriteTwoByte(14666, INC1_PTR);
+
+        }
+
+
+
+
 
         private int KeyCodeOffset(int inputPointer)
         {
