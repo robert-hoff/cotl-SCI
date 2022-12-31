@@ -87,19 +87,20 @@ using static cotl_SCI.MemoryAccess.CotlPointers;
  *
  *
  *
- * This mystery variable might be the key ..
  *
- *  224308  222933   1375   (244,188)         0
- *  224446  224446   0      (132,193)         0
- *  224712  224712   0      (147,190)         0
- *  224818  224712   106    (127,184)         0
- *  225193  225193   0      (259,187)         0
- *  225365  225365   0      (30,183)         0
- *  225484  225484   0      (298,180)         0
- *  225671  225671   0      (295,181)         0
- *  225796  225796   0      (70,179)         2
- *  225921  225921   0      (267,179)         0
- *  226061  226060   1      (66,184)         2
+ *
+ * game-clock  queue0-
+ * 224308      222933   1375   (244,188)         0
+ * 224446      224446   0      (132,193)         0
+ * 224712      224712   0      (147,190)         0
+ * 224818      224712   106    (127,184)         0
+ * 225193      225193   0      (259,187)         0
+ * 225365      225365   0      (30,183)          0
+ * 225484      225484   0      (298,180)         0
+ * 225671      225671   0      (295,181)         0
+ * 225796      225796   0      (70,179)          2
+ * 225921      225921   0      (267,179)         0
+ * 226061      226060   1      (66,184)          2
  *
  *
  *
@@ -166,42 +167,6 @@ namespace cotl_SCI.InputControl
             return stack_ptr1;
         }
 
-        /*
-         * move the stacks to position 14876 on the keyboard
-         *
-         * Before I increment stack_ptr1 there should be a 1 in the mystery position
-         * what should the 1 be interpreted as?
-         * it's different for the mouse and keyboard.
-         *
-         * 1 means a mousepress is about to begin
-         * 4 means a keystroke has started
-         *
-         */
-        public void MousePressFromPosition14876()
-        {
-            int queue0_ptr = 0x1D720;
-            int queue15_ptr = 0x1D7F2;
-
-            int clock = cotlRW.ReadInt(INPUT_CLOCK);
-
-
-            cotlRW.WriteTwoByte(0, queue15_ptr + 8);
-            cotlRW.WriteInt(clock, queue0_ptr);
-            cotlRW.WriteTwoByte(14666, STACK_PTR1);
-
-
-
-
-
-        }
-
-
-
-
-
-        static int LEFT_BUTTON = 0;
-        static int RIGHT_BUTTON = 3;
-
 
         // Mouse events described by 14 bytes
         // 0-3 time of the click, copied over from the game clock
@@ -213,9 +178,6 @@ namespace cotl_SCI.InputControl
         // 13 probably part of the mouse-button, considered as a 2-byte int
 
         // when a key is pressed the cursor xy is seen to be written in but is possibly not consequential
-        const int STACK_POINTER_BASE_VAL = 14666;
-
-
 
         // It's working when I bring the pointer up to 14876 on the last click
         // Then, I prepare the data for the mouse click to queue0 and finish by incrementing
@@ -224,6 +186,103 @@ namespace cotl_SCI.InputControl
         // I also seem to be getting some presses through leaving the stack at 14832
 
         // ah, the god damn dialog just disappears by itself
+
+        /*
+         * move the stacks to position 14876 on the keyboard
+         *
+         * Before I increment stack_ptr1 there should be a 1 in the mystery position
+         * what should the 1 be interpreted as?
+         * it's different for the mouse and keyboard.
+         *
+         * 1 means a mousepress is about to begin
+         * 4 means a keystroke has started
+         *
+         */
+
+
+
+        /*
+         *
+         * New ordering
+         *
+         *
+         *
+         *
+         * organise the data with the event-type first.
+         *
+        // 8-9, event-type (1 = mousepress, 4 = keyboard)
+        // 10-11 keycode, where non-zero indicates keyboard input
+        // 12-13 mousebutton 0=left-button, 3=right-button
+        // 0-3 time of the click, copied over from the game clock
+        // 4-5 cursor y-position
+        // 6-7 cursor x-position
+         *
+         *
+         *
+         * The following works
+         * -------------------
+         *
+         * Advance the stack pointer to 14666
+         * this means the game has finished processing input data pointed to by 14876
+         *
+         *      write 1 into position queue0[0]
+         *      advance stack_ptr1
+         *
+         * It's not necessary but it's intended to write in the game-clock
+         * at the time the event was submitted.
+         * Because the time is copied over from the input-clock, the input-clock will always be ahead
+         *
+         *
+         *
+         *
+         */
+
+
+
+        /*
+         * this works but won't necessarily do anything in the game,
+         * but it will always advance stack_ptr0 to position 14680
+         *
+         */
+        public void MousePressFromPosition14666()
+        {
+            int queue0_ptr = 0x1D720;
+
+            // if the event type is organised first
+            // 1 = mouse-press
+            cotlRW.WriteTwoByte(1, queue0_ptr - 6);
+            cotlRW.WriteTwoByte(14680, STACK_PTR1);
+        }
+
+
+        /*
+         * submits a left press
+         *
+         * KEYCODE_LEFT = 0x4B00
+         *
+         * advance stack_ptr1 to 14666 and run
+         *
+         *
+         */
+        public void KeyPressFromPosition14666()
+        {
+            int queue0_ptr = 0x1D720;
+            int keycode_left = 0x4B00;
+
+            // 4 = key-press
+            cotlRW.WriteTwoByte(4, queue0_ptr - 6);
+            cotlRW.WriteTwoByte(keycode_left, queue0_ptr - 4);
+            cotlRW.WriteTwoByte(14680, STACK_PTR1);
+        }
+
+
+
+
+
+        static int LEFT_BUTTON = 0;
+        static int RIGHT_BUTTON = 3;
+        const int STACK_POINTER_BASE_VAL = 14666;
+
 
 
         public static void WriteMouseClick(int queuePos, int clockDelta, int button, int xpos, int ypos)

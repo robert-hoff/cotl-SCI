@@ -50,22 +50,19 @@ namespace cotl_SCI.MemoryMonitor
                 if (seedValuesSeen.Count == 0 || seedValuesSeen.Last().changeCondition(queue0State))
                 {
                     seedValuesSeen.Add(queue0State);
-                    //MethodInvoker inv = delegate
-                    //{
-                    // this.label1.Text = $"{data0,5} (samples seen: {seedValuesSeen.Count,5})";
-                    //Debug.WriteLine($"{data0,5}  {data1}   {data1 - data0}      ({data2},{data3})    {data4}" +
-                    //    $"               {stack_ptr0},{stack_ptr1}");
-                    // Debug.WriteLine($"{data1,5}  {data0}        ({data2},{data3})");
-                    //};
-                    //try
-                    //{
-                    //    this.Invoke(inv);
-                    //}
+                    // MethodInvoker inv = delegate
+                    // {
+                    //   this.label1.Text = $("");
+                    // };
+                    // try
+                    // {
+                    //   this.Invoke(inv);
+                    // }
+                    // catch (ObjectDisposedException)
+                    // {
+                    //   Debug.WriteLine($"DisposedException handled by ThreadSampleRandomSeed");
+                    // }
                     Debug.WriteLine($"{queue0State}");
-                    //catch (ObjectDisposedException)
-                    //{
-                    //    Debug.WriteLine($"DisposedException handled by ThreadSampleRandomSeed");
-                    //}
                 }
                 // Thread.Sleep(THREAD_INTERVAL);
             }
@@ -84,6 +81,10 @@ namespace cotl_SCI.MemoryMonitor
             int queue0_y;
             int queue0_unknown;
 
+            int keycode_preceeding;
+
+
+
             public Queue0State(CotlReadWrite cotlReadWrite)
             {
                 this.cotlReadWrite = cotlReadWrite;
@@ -94,6 +95,9 @@ namespace cotl_SCI.MemoryMonitor
                 this.queue0_x = cotlReadWrite.ReadTwoByte(INPUT_QUEUE0 + 6);
                 this.queue0_y = cotlReadWrite.ReadTwoByte(INPUT_QUEUE0 + 4);
                 this.queue0_unknown = cotlReadWrite.ReadTwoByte(INPUT_QUEUE0 + 8);
+
+
+
             }
 
             public bool changeCondition(Queue0State q0prev)
@@ -115,7 +119,8 @@ namespace cotl_SCI.MemoryMonitor
 
             public override string ToString()
             {
-                return $"{input_clock,5}  {input_queue_clockinc,5}   ({queue0_x,3},{queue0_y,3}) " +
+                int delta = input_queue_clockinc - input_clock;
+                return $"{input_clock,6} {input_queue_clockinc,6} {delta,5} ({queue0_x,3},{queue0_y,3}) " +
                     $"{queue0_unknown}     {stack_ptr0},{stack_ptr1}";
             }
         }

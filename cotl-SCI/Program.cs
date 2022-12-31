@@ -65,7 +65,7 @@ namespace cotl_SCI
         public static void SetDropBoxCycles()
         {
             // Toggle the cycles up/down in Dosbox to verify changes in the titlebar (Ctrl+F12, Ctrl+F11)
-            new CotlReadWrite().SetDosboxCycles(1500);
+            new CotlReadWrite().SetDosboxCycles(50000);
         }
 
 

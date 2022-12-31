@@ -13,7 +13,8 @@ namespace cotl_SCI.InputControl
         {
             MousePress mousePress = new MousePress();
             // mousePress.IncrementStackPtr1();
-            mousePress.MousePressFromPosition14876();
+            // mousePress.MousePressFromPosition14666();
+            mousePress.KeyPressFromPosition14666();
         }
 
 
