@@ -106,7 +106,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>115</ID>
-      <Description>"mouse-clockinc"</Description>
+      <Description>"mouse-timestamp"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -186,7 +186,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>117</ID>
-      <Description>"input-clock"</Description>
+      <Description>"event-clock"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -212,6 +212,66 @@
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x1D71A</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>172</ID>
+      <Description>"event-data0-event-type"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x1D71A</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>173</ID>
+      <Description>"event-data0-keycode"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x1D71A+2</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>174</ID>
+      <Description>"event-data0-mouse-button-id"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x1D71A + 4</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>175</ID>
+      <Description>"event-data0-timestamp"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x1D71A + 6</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>176</ID>
+      <Description>"event-data0-cursor-y"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x1D71A + 10</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>177</ID>
+      <Description>"event-data0-cursor-x"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x1D71A + 12</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
