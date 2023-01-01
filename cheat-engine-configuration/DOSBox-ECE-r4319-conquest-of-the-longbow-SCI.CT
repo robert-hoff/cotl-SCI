@@ -206,162 +206,162 @@
     </CheatEntry>
     <CheatEntry>
       <ID>144</ID>
-      <Description>"input-queue0-clockinc"</Description>
+      <Description>"event-data0"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
-        <Offset>0x1D720</Offset>
+        <Offset>0x1D71A</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>145</ID>
-      <Description>"mouse-queue1"</Description>
+      <Description>"event-data1"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
-        <Offset>0x1D72E</Offset>
+        <Offset>0x1D728</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>146</ID>
-      <Description>"mouse-queue2"</Description>
+      <Description>"event-data2"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
-        <Offset>0x1D73C</Offset>
+        <Offset>0x1D736</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>147</ID>
-      <Description>"mouse-queue3"</Description>
+      <Description>"event-data3"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
-        <Offset>0x1D74A</Offset>
+        <Offset>0x1D744</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>148</ID>
-      <Description>"mouse-queue4"</Description>
+      <Description>"event-data4"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
-        <Offset>0x1D758</Offset>
+        <Offset>0x1D752</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>149</ID>
-      <Description>"mouse-queue5"</Description>
+      <Description>"event-data5"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
-        <Offset>0x1D766</Offset>
+        <Offset>0x1D760</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>150</ID>
-      <Description>"mouse-queue6"</Description>
+      <Description>"event-data6"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
-        <Offset>0x1D774</Offset>
+        <Offset>0x1D76E</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>151</ID>
-      <Description>"mouse-queue7"</Description>
+      <Description>"event-data7"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
-        <Offset>0x1D782</Offset>
+        <Offset>0x1D77C</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>152</ID>
-      <Description>"mouse-queue8"</Description>
+      <Description>"event-data8"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
-        <Offset>0x1D790</Offset>
+        <Offset>0x1D78A</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>153</ID>
-      <Description>"mouse-queue9"</Description>
+      <Description>"event-data9"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
-        <Offset>0x1D79E</Offset>
+        <Offset>0x1D798</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>154</ID>
-      <Description>"mouse-queue10"</Description>
+      <Description>"event-data10"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
-        <Offset>0x1D7AC</Offset>
+        <Offset>0x1D7A6</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>155</ID>
-      <Description>"mouse-queue11"</Description>
+      <Description>"event-data11"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
-        <Offset>0x1D7BA</Offset>
+        <Offset>0x1D7B4</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>156</ID>
-      <Description>"mouse-queue12"</Description>
+      <Description>"event-data12"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
-        <Offset>0x1D7C8</Offset>
+        <Offset>0x1D7C2</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>157</ID>
-      <Description>"mouse-queue13"</Description>
+      <Description>"event-data13"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
-        <Offset>0x1D7D6</Offset>
+        <Offset>0x1D7D0</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>158</ID>
-      <Description>"mouse-queue14"</Description>
+      <Description>"event-data14"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
-        <Offset>0x1D7E4</Offset>
+        <Offset>0x1D7DE</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
       <ID>159</ID>
-      <Description>"mouse-queue15"</Description>
+      <Description>"event-data15"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
-        <Offset>0x1D7F2</Offset>
+        <Offset>0x1D7EC</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
