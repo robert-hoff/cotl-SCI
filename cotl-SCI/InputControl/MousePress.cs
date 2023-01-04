@@ -4,12 +4,6 @@ using static cotl_SCI.MemoryAccess.CotlPointers;
 
 
 
-
-// the stack values as a short are
-// 14666, 14680, 14694, 14708, 14722, 14736, 14750, 14764
-// 14778, 14792, 14806, 14820, 14834, 14848, 14862, 14876
-
-
 /*
  * Notes on the input system
  * -------------------------
@@ -131,91 +125,88 @@ namespace cotl_SCI.InputControl
 
         CotlReadWrite cotlRW = new CotlReadWrite();
 
-        public MousePress()
-        {
+        public MousePress() { }
 
+
+        const int EVENT_MOUSEDOWN = 1;
+        const int EVENT_MOUSEUP = 2;
+        const int EVENT_KEYPRESS = 4;
+        const int MOUSE_BUTTON_LEFT = 0;
+        const int MOUSE_BUTTON_RIGHT = 3;
+
+        const int STACK_POINTER_BASE_VAL = 14666;
+
+
+        public void WriteMouseLeftButtonDown(int xpos, int ypos)
+        {
+            // the next input event should be written to stack_ptr1
+            // the first task is to obtain the address of the next event-data
+            int stack_ptr1 = GetStackPtr1();
+            int event_data_ptr = EventDataPointer(stack_ptr1);
+            int event_clock = cotlRW.ReadInt(EVENT_CLOCK);
+
+            cotlRW.WriteTwoByte(EVENT_MOUSEDOWN, event_data_ptr);
+            cotlRW.WriteTwoByte(0, event_data_ptr + 2);
+            cotlRW.WriteTwoByte(MOUSE_BUTTON_LEFT, event_data_ptr + 4);
+            cotlRW.WriteInt(event_clock, event_data_ptr + 6);
+            cotlRW.WriteTwoByte(ypos, event_data_ptr + 10);
+            cotlRW.WriteTwoByte(xpos, event_data_ptr + 12);
+
+            // after writing the event-data, increment the pointer to effect the event
+            IncrementStackPtr1(stack_ptr1);
         }
 
 
 
-        public void WriteMousePress98()
+
+        private int GetStackPtr1()
         {
-            // WriteMouseClick(0, 500, LEFT_BUTTON, 100, 100);
-            WriteMouseClick(0, 500, LEFT_BUTTON, 50, 50);
-            // WriteMouseClick(0, 500, RIGHT_BUTTON, 100, 100);
+            return cotlRW.ReadTwoByte(STACK_PTR1);
         }
 
-        public void WriteMousePress()
+        private int EventDataPointer(int stack_ptr1)
         {
-
+            return stack_ptr1 - STACK_POINTER_BASE_VAL + EVENT_DATA0;
         }
 
-        public void IncrementStackPtr1()
+        /*
+         * the stack pointers stack_ptr0 and stack_ptr1 are given as 2-byte ints
+         * and will cycle the following values
+         * 14666, 14680, 14694, 14708, 14722, 14736, 14750, 14764
+         * 14778, 14792, 14806, 14820, 14834, 14848, 14862, 14876
+         *
+         */
+        public void IncrementStackPtr1(int stack_ptr1)
         {
-            int nextStackPtr1 = NextStackPtr1();
+            int nextStackPtr1 = NextStackPtr1(stack_ptr1);
             cotlRW.WriteTwoByte(nextStackPtr1, STACK_PTR1);
         }
 
-        private int NextStackPtr1()
+        private int NextStackPtr1(int stack_ptr1)
         {
-            int stack_ptr1 = cotlRW.ReadTwoByte(STACK_PTR1);
             stack_ptr1 += 14;
-            if (stack_ptr1 > 14876)
+            if (stack_ptr1 > STACK_POINTER_BASE_VAL + 15 * 14)
             {
-                stack_ptr1 = 14666;
+                stack_ptr1 = STACK_POINTER_BASE_VAL;
             }
             return stack_ptr1;
         }
 
 
-        // Mouse events described by 14 bytes
-        // 0-3 time of the click, copied over from the game clock
-        // 4-5 cursor y-position
-        // 6-7 cursor x-position
-        // 8-9, mouse or keyboard is about to begin.
-        // 10-11 keycode, where non-zero indicates keyboard input
-        // 12 mouse button 0=left-button, 3=right-button
-        // 13 probably part of the mouse-button, considered as a 2-byte int
 
-        // when a key is pressed the cursor xy is seen to be written in but is possibly not consequential
-
-        // It's working when I bring the pointer up to 14876 on the last click
-        // Then, I prepare the data for the mouse click to queue0 and finish by incrementing
-        // the stack-pointer to 14848
-        // then doing a button press (down + up) leaving the pointer at 14876
-        // I also seem to be getting some presses through leaving the stack at 14832
-
-        // ah, the god damn dialog just disappears by itself
-
-        /*
-         * move the stacks to position 14876 on the keyboard
-         *
-         * Before I increment stack_ptr1 there should be a 1 in the mystery position
-         * what should the 1 be interpreted as?
-         * it's different for the mouse and keyboard.
-         *
-         * 1 means a mousepress is about to begin
-         * 4 means a keystroke has started
-         *
-         */
 
 
 
         /*
          *
-         * New ordering
          *
-         *
-         *
-         *
-         * organise the data with the event-type first.
-         *
-        // 8-9, event-type (1 = mousepress, 4 = keyboard)
-        // 10-11 keycode, where non-zero indicates keyboard input
-        // 12-13 mousebutton 0=left-button, 3=right-button
-        // 0-3 time of the click, copied over from the game clock
-        // 4-5 cursor y-position
-        // 6-7 cursor x-position
+         * Input events are described by 14 bytes
+         * 0-1, event-type (1 = mousepress, 4 = keyboard)
+         * 2-3 keycode, where non-zero indicates keyboard input
+         * 4-5 mousebutton 0=left-button, 3=right-button
+         * 6-9 time of the click, copied over from the game clock
+         * 10-11 cursor y-position
+         * 12-13 cursor x-position
          *
          *
          *
@@ -236,8 +227,6 @@ namespace cotl_SCI.InputControl
          *
          *
          */
-
-
 
         /*
          * To run this test, advance the stack-pointers to 14666
@@ -282,11 +271,13 @@ namespace cotl_SCI.InputControl
 
 
 
-        static int LEFT_BUTTON = 0;
-        static int RIGHT_BUTTON = 3;
-        const int STACK_POINTER_BASE_VAL = 14666;
-
-
+        /*
+        public void WriteMousePress()
+        {
+            // WriteMouseClick(0, 500, LEFT_BUTTON, 100, 100);
+            WriteMouseClick(0, 500, LEFT_BUTTON, 50, 50);
+            // WriteMouseClick(0, 500, RIGHT_BUTTON, 100, 100);
+        }
 
         public static void WriteMouseClick(int queuePos, int clockDelta, int button, int xpos, int ypos)
         {
@@ -310,6 +301,7 @@ namespace cotl_SCI.InputControl
             // 14666
             cotlRW.WriteTwoByte(14666, STACK_PTR0);
         }
+        */
 
 
 

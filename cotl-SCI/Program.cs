@@ -109,14 +109,14 @@ namespace cotl_SCI
 
         public static void ShowEventPointerValues()
         {
-            int stack_ptr0_val = 14660;
+            int stack_ptr0_val = 14666;
             int event_queue_count = 16;
             int event_data_size = 14;
             for (int i = 0; i < event_queue_count; i++)
             {
                 int pointer_val = stack_ptr0_val + event_data_size * i;
-                Debug.WriteLine($"0x{pointer_val:X}");
-                // Debug.WriteLine($"{pointer_val}");
+                // Debug.WriteLine($"0x{pointer_val:X}");
+                Debug.WriteLine($"{pointer_val}");
             }
         }
 
