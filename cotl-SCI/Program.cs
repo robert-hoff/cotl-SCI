@@ -15,7 +15,8 @@ namespace cotl_SCI
             // RunMemorySampling();
             // RunMonitorVariable();
             // RunDataAnalysis();
-            // TestBitmapImport();
+            TestBitmapImport();
+            // TestMemoryOperations.RunTrials();
             // SetDropBoxCycles();
             // PrintCheatEntries();
             // ShowPointersOfInterest();
@@ -26,7 +27,7 @@ namespace cotl_SCI
             // PrintCheatEntries();
             // ShowEventQueueOffsets();
             // ShowEventPointerValues();
-            TestMousePress.RunTrials();
+            // TestMousePress.RunTrials();
             // TestKeyPress.RunTrials();
         }
 
@@ -57,11 +58,7 @@ namespace cotl_SCI
 
         public static void TestBitmapImport()
         {
-            // ImportBitmapData.RunTrials();
-            // Rand.RunTrials();
-            // TestMemoryOperations.RunTrials();
-            // RandomSeedSampling.RunTrials();
-
+            ImportBitmapData.RunTrials();
         }
 
         public static void SetDropBoxCycles()
