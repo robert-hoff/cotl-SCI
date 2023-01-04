@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace cotl_SCI.DataFileIO
 {
@@ -15,7 +10,7 @@ namespace cotl_SCI.DataFileIO
 
         public FileWriter(string outputFilenamepath, bool showOutputToConsole = true)
         {
-            Console.WriteLine($"Writing to {outputFilenamepath}");
+            // Debug.WriteLine($"Writing to {outputFilenamepath}");
             sw = new StreamWriter(outputFilenamepath);
             this.writeToConsole = showOutputToConsole;
         }
@@ -45,10 +40,17 @@ namespace cotl_SCI.DataFileIO
                 sw = null;
             }
         }
-        public void WriteText(string text)
+
+        public void Write(string text)
+        {
+            sw.Write(text);
+        }
+
+        public void WriteLine(string text)
         {
             sw.WriteLine(text);
         }
+
         public void WriteHtmlHeader(string browserTitle, string pageHeader)
         {
             writeAsHtml = true;

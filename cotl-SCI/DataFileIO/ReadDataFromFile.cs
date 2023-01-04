@@ -30,11 +30,11 @@ namespace cotl_SCI.DataFileIO
             {
                 if (saveAsHex)
                 {
-                    fileWriter.WriteText($"0x{d:X}");
+                    fileWriter.WriteLine($"0x{d:X}");
                 }
                 else
                 {
-                    fileWriter.WriteText($"{d}");
+                    fileWriter.WriteLine($"{d}");
                 }
             }
             fileWriter.CloseStreamWriter();
@@ -48,9 +48,9 @@ namespace cotl_SCI.DataFileIO
         {
             string filenamepath = $"{OUTPUT_FOLDER}/CheatEngineConfig.CT";
             FileWriter fileWriter = new FileWriter(filenamepath);
-            fileWriter.WriteText("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
-            fileWriter.WriteText("<CheatTable CheatEngineTableVersion=\"42\">");
-            fileWriter.WriteText("<CheatEntries>");
+            fileWriter.WriteLine("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
+            fileWriter.WriteLine("<CheatTable CheatEngineTableVersion=\"42\">");
+            fileWriter.WriteLine("<CheatEntries>");
             List<int> addresses = ReadSingleColumnData("addresses.txt", folder: OUTPUT_FOLDER);
             for (int i = 0; i < addresses.Count; i++)
             {
@@ -58,22 +58,22 @@ namespace cotl_SCI.DataFileIO
 
                 int configId = i + 1;
                 // Debug.WriteLine($"Dosbox.exe + 0x{addresses[i]:X}");
-                fileWriter.WriteText($"  <CheatEntry>");
-                fileWriter.WriteText($"    <ID>{configId}</ID>");
-                fileWriter.WriteText($"    <Description>\"var{configId}\"</Description>");
-                fileWriter.WriteText($"    <ShowAsSigned>0</ShowAsSigned>");
-                fileWriter.WriteText($"    <VariableType>2 Bytes</VariableType>");
+                fileWriter.WriteLine($"  <CheatEntry>");
+                fileWriter.WriteLine($"    <ID>{configId}</ID>");
+                fileWriter.WriteLine($"    <Description>\"var{configId}\"</Description>");
+                fileWriter.WriteLine($"    <ShowAsSigned>0</ShowAsSigned>");
+                fileWriter.WriteLine($"    <VariableType>2 Bytes</VariableType>");
                 // fileWriter.WriteText($"    <Address>Dosbox.exe + 0x{addressAjusted:X}</Address>");
-                fileWriter.WriteText($"    <Address>0x{addresses[i]:X}</Address>");
-                fileWriter.WriteText($"  </CheatEntry>");
+                fileWriter.WriteLine($"    <Address>0x{addresses[i]:X}</Address>");
+                fileWriter.WriteLine($"  </CheatEntry>");
                 if (i > 400)
                 {
                     break;
                 }
             }
-            fileWriter.WriteText("</CheatEntries>");
-            fileWriter.WriteText("<UserdefinedSymbols/>");
-            fileWriter.WriteText("</CheatTable>");
+            fileWriter.WriteLine("</CheatEntries>");
+            fileWriter.WriteLine("<UserdefinedSymbols/>");
+            fileWriter.WriteLine("</CheatTable>");
             fileWriter.CloseStreamWriter();
             Debug.WriteLine($"data written to {filenamepath}");
         }
