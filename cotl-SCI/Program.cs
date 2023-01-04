@@ -13,7 +13,7 @@ namespace cotl_SCI
         static void Main()
         {
             // RunMemorySampling();
-            RunMonitorVariable();
+            // RunMonitorVariable();
             // RunDataAnalysis();
             // TestBitmapImport();
             // SetDropBoxCycles();
@@ -26,7 +26,7 @@ namespace cotl_SCI
             // PrintCheatEntries();
             // ShowEventQueueOffsets();
             // ShowEventPointerValues();
-            // TestMousePress.RunTrials();
+            TestMousePress.RunTrials();
             // TestKeyPress.RunTrials();
         }
 

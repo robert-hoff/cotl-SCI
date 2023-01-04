@@ -240,18 +240,23 @@ namespace cotl_SCI.InputControl
 
 
         /*
+         * To run this test, advance the stack-pointers to 14666
          * this works but won't necessarily do anything in the game,
          * but it will always advance stack_ptr0 to position 14680
+         *
+         *
          *
          */
         public void MousePressFromPosition14666()
         {
-            int queue0_ptr = 0x1D720;
+            int queue0_ptr = 0x1D71A;
 
             // if the event type is organised first
             // 1 = mouse-press
-            cotlRW.WriteTwoByte(1, queue0_ptr - 6);
+            cotlRW.WriteTwoByte(1, queue0_ptr);
             cotlRW.WriteTwoByte(14680, STACK_PTR1);
+
+
         }
 
 
