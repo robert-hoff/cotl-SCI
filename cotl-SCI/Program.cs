@@ -13,7 +13,7 @@ namespace cotl_SCI
         static void Main()
         {
             // RunMemorySampling();
-            // RunMonitorVariable();
+            RunMonitorVariable();
             // RunDataAnalysis();
             // TestBitmapImport();
             // SetDropBoxCycles();
@@ -24,7 +24,9 @@ namespace cotl_SCI
             // RunDosboxScan();
             // ReadDataFromFile.CreateCheatEngineConfiguration();
             // PrintCheatEntries();
-            TestMousePress.RunTrials();
+            // ShowEventQueueOffsets();
+            // ShowEventPointerValues();
+            // TestMousePress.RunTrials();
             // TestKeyPress.RunTrials();
         }
 
@@ -71,24 +73,53 @@ namespace cotl_SCI
 
         public static void PrintCheatEntries()
         {
-            int offset = 0x1D72E;
-            int nameid = 1;
-            int entryid = 145;
+            int baseOffset = 0x1D71A;
+            int nameid = 0;
+            int entryid = 144;
 
-            for (int i = 0; i < 15; i++)
+            for (int i = 0; i < 16; i++)
             {
+                int offset = baseOffset + i * 14;
                 Debug.WriteLine($"<CheatEntry>");
-                Debug.WriteLine($"<ID>{entryid+i}</ID>");
-                Debug.WriteLine($"<Description>\"mouse-queue{nameid+i}\"</Description>");
-                Debug.WriteLine($"<ShowAsSigned>0</ShowAsSigned>");
-                Debug.WriteLine($"<VariableType>4 Bytes</VariableType>");
-                Debug.WriteLine($"<Address>Dosbox.exe + 0x1B58E20</Address>");
-                Debug.WriteLine($"<Offsets>");
-                Debug.WriteLine($"<Offset>0x{(offset+i*14):X}</Offset>");
-                Debug.WriteLine($"</Offsets>");
+                Debug.WriteLine($"  <ID>{entryid+i}</ID>");
+                Debug.WriteLine($"  <Description>\"event-data{nameid+i}\"</Description>");
+                Debug.WriteLine($"  <ShowAsSigned>0</ShowAsSigned>");
+                Debug.WriteLine($"  <VariableType>2 Bytes</VariableType>");
+                Debug.WriteLine($"  <Address>Dosbox.exe + 0x1B58E20</Address>");
+                Debug.WriteLine($"  <Offsets>");
+                Debug.WriteLine($"    <Offset>0x{offset:X}</Offset>");
+                Debug.WriteLine($"  </Offsets>");
                 Debug.WriteLine($"</CheatEntry>");
             }
         }
+
+        public static void ShowEventQueueOffsets()
+        {
+            int event_queue0_ptr = 0x1D720 - 6;
+            int event_queue_count = 16;
+            int event_data_size = 14;
+            for (int i = 0; i < event_queue_count; i++)
+            {
+                int offset = event_queue0_ptr + event_data_size * i;
+                // Debug.WriteLine($"0x{offset:X}");
+                Debug.WriteLine($"{offset}");
+                // Debug.WriteLine($"event-data{i}");
+            }
+        }
+
+        public static void ShowEventPointerValues()
+        {
+            int stack_ptr0_val = 14660;
+            int event_queue_count = 16;
+            int event_data_size = 14;
+            for (int i = 0; i < event_queue_count; i++)
+            {
+                int pointer_val = stack_ptr0_val + event_data_size * i;
+                Debug.WriteLine($"0x{pointer_val:X}");
+                // Debug.WriteLine($"{pointer_val}");
+            }
+        }
+
 
 
         public static void ShowPointersOfInterest()

@@ -296,7 +296,7 @@ namespace cotl_SCI.InputControl
             int queue0_x_ptr = 0x1D726;
             int queue0_button_ptr = 0x1D72C;
 
-            int gameClock = cotlRW.ReadInt(INPUT_CLOCK);
+            int gameClock = cotlRW.ReadInt(EVENT_CLOCK);
 
             cotlRW.WriteInt(gameClock + clockDelta, queue0_clock_ptr);
             cotlRW.WriteTwoByte(xpos, queue0_x_ptr);

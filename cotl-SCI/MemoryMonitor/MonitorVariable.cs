@@ -42,14 +42,15 @@ namespace cotl_SCI.MemoryMonitor
 
         private void ThreadSampleRandomSeed()
         {
-            List<Queue0State> seedValuesSeen = new();
+            List<EventDataState> seedValuesSeen = new();
             while (!requestClose)
             {
-                Queue0State queue0State = new Queue0State(cotlReadWrite);
+                EventDataState queue0State = new EventDataState(cotlReadWrite);
 
-                if (seedValuesSeen.Count == 0 || seedValuesSeen.Last().changeCondition(queue0State))
+                if (seedValuesSeen.Count == 0 || seedValuesSeen.Last().DataChangedCondition(queue0State))
                 {
                     seedValuesSeen.Add(queue0State);
+                    // FIXME - currently no feedback on interface ..
                     // MethodInvoker inv = delegate
                     // {
                     //   this.label1.Text = $("");
@@ -69,59 +70,51 @@ namespace cotl_SCI.MemoryMonitor
         }
 
 
-        class Queue0State
+        class EventDataState
         {
             CotlReadWrite cotlReadWrite;
 
             int stack_ptr0;
             int stack_ptr1;
-            int input_clock;
-            int input_queue_clockinc;
-            int queue0_x;
-            int queue0_y;
-            int queue0_unknown;
+            int event_clock;
+            int event_data0_eventtype;
+            int event_data0_keycode;
+            int event_data0_mousebutton_id;
+            int event_data0_timestamp;
+            int event_data0_y;
+            int event_data0_x;
 
-            int keycode_preceeding;
 
-
-
-            public Queue0State(CotlReadWrite cotlReadWrite)
+            public EventDataState(CotlReadWrite cotlReadWrite)
             {
                 this.cotlReadWrite = cotlReadWrite;
                 this.stack_ptr0 = cotlReadWrite.ReadTwoByte(STACK_PTR0);
                 this.stack_ptr1 = cotlReadWrite.ReadTwoByte(STACK_PTR1);
-                this.input_clock = cotlReadWrite.ReadInt(INPUT_CLOCK);
-                this.input_queue_clockinc = cotlReadWrite.ReadInt(INPUT_QUEUE0);
-                this.queue0_x = cotlReadWrite.ReadTwoByte(INPUT_QUEUE0 + 6);
-                this.queue0_y = cotlReadWrite.ReadTwoByte(INPUT_QUEUE0 + 4);
-                this.queue0_unknown = cotlReadWrite.ReadTwoByte(INPUT_QUEUE0 + 8);
-
-
-
+                this.event_clock = cotlReadWrite.ReadInt(EVENT_CLOCK);
+                this.event_data0_eventtype = cotlReadWrite.ReadTwoByte(EVENT_DATA0);
+                this.event_data0_keycode = cotlReadWrite.ReadTwoByte(EVENT_DATA0 + 2);
+                this.event_data0_mousebutton_id = cotlReadWrite.ReadTwoByte(EVENT_DATA0 + 4);
+                this.event_data0_timestamp = cotlReadWrite.ReadInt(EVENT_DATA0 + 6);
+                this.event_data0_x = cotlReadWrite.ReadTwoByte(EVENT_DATA0 + 10);
+                this.event_data0_y = cotlReadWrite.ReadTwoByte(EVENT_DATA0 + 12);
             }
 
-            public bool changeCondition(Queue0State q0prev)
+            public bool DataChangedCondition(EventDataState ed0_prev)
             {
-                if (this.input_queue_clockinc != q0prev.input_queue_clockinc)
-                {
-                    return true;
-                }
-                if (this.queue0_x != q0prev.queue0_x)
-                {
-                    return true;
-                }
-                if (this.queue0_unknown != q0prev.queue0_unknown)
-                {
-                    return true;
-                }
-                return false;
+                return
+                    this.event_data0_eventtype != ed0_prev.event_data0_eventtype ||
+                    this.event_data0_keycode != ed0_prev.event_data0_keycode ||
+                    this.event_data0_mousebutton_id != ed0_prev.event_data0_mousebutton_id ||
+                    this.event_data0_timestamp != ed0_prev.event_data0_timestamp ||
+                    this.event_data0_y != ed0_prev.event_data0_y ||
+                    this.event_data0_x != ed0_prev.event_data0_x;
             }
 
             public override string ToString()
             {
-                int delta = input_queue_clockinc - input_clock;
-                return $"{input_clock,6} {input_queue_clockinc,6} {delta,5} ({queue0_x,3},{queue0_y,3}) " +
-                    $"{queue0_unknown}     {stack_ptr0},{stack_ptr1}";
+                int delta = event_data0_timestamp - event_clock;
+                return $"{event_clock,6} {event_data0_timestamp,6} {delta,5} ({event_data0_x,3},{event_data0_y,3}) " +
+                    $"{event_data0_eventtype} 0x{event_data0_keycode:X4} {event_data0_mousebutton_id,2}   {stack_ptr0},{stack_ptr1}";
             }
         }
     }

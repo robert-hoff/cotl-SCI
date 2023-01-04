@@ -16,6 +16,8 @@ namespace cotl_SCI.MemoryAccess
 
         public static int RANDOM_SEED_PTR = 0x1B1C4;
 
+        // 0x1D71A + 12
+
         public static int MOUSE_PRESSED_STATE = 0x1B490; // 1 or 2
         public static int CURSOR_CATEGORY = 0x1B494;
         public static int MOUSE_CLOCKINC = 0x1B496; // takes the value of the game clock
@@ -27,10 +29,13 @@ namespace cotl_SCI.MemoryAccess
 
         public static int STACK_PTR0 = 0x1C8AC;
         public static int STACK_PTR1 = 0x1C8AE;
-        public static int INPUT_CLOCK = 0x1CAEE;
+        public static int EVENT_CLOCK = 0x1CAEE;
 
         public static int ROOM_NR_PTR = 0x1D70C;
-        public static int INPUT_QUEUE0 = 0x1D720;
+        // public static int INPUT_QUEUE0 = 0x1D720;
+
+        // corrected input queue (and renamed to 'event_data')
+        public static int EVENT_DATA0 = 0x1D71A;
 
 
         public static int PLAYER_X0_PTR = 0x1EFA0;
