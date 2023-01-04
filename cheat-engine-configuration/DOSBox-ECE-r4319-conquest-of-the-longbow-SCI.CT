@@ -545,6 +545,46 @@
       </Offsets>
     </CheatEntry>
     <CheatEntry>
+      <ID>184</ID>
+      <Description>"flag/wind direction shooting"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x22658</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>192</ID>
+      <Description>"flag animation cycle shooting"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x2265A</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>180</ID>
+      <Description>"flag/wind direction arrow range"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x2275A</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>181</ID>
+      <Description>"flag animation cycle arrow range"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x2275C</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
       <ID>75</ID>
       <Description>"mouse-click-x"</Description>
       <ShowAsSigned>0</ShowAsSigned>

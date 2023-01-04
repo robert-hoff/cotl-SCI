@@ -90,9 +90,11 @@ namespace cotl_SCI.InputControl
             cotlRW.WriteTwoByte(0, event_data_ptr + 2);
             cotlRW.WriteTwoByte(mouseButtonId, event_data_ptr + 4);
             cotlRW.WriteInt(event_clock, event_data_ptr + 6);
-            cotlRW.WriteTwoByte(yPos, event_data_ptr + 10);
-            cotlRW.WriteTwoByte(xPos, event_data_ptr + 12);
-
+            if (xPos > -1 && yPos > -1)
+            {
+                cotlRW.WriteTwoByte(yPos, event_data_ptr + 10);
+                cotlRW.WriteTwoByte(xPos, event_data_ptr + 12);
+            }
             // after writing the event-data, increment the pointer to effect the event
             IncrementStackPtr1(stack_ptr1);
         }
@@ -130,6 +132,22 @@ namespace cotl_SCI.InputControl
             }
             return stack_ptr1;
         }
+
+
+        /*
+         *
+         * moving the mouse is controlled by a different system
+         * it is sufficient to write the (x,y) position
+         *
+         */
+        public void MoveMouse(int xPos, int yPos, int msDelay = 100)
+        {
+            cotlRW.WriteTwoByte(xPos, MOUSE_CURSOR1_X_PTR);
+            cotlRW.WriteTwoByte(yPos, MOUSE_CURSOR1_Y_PTR);
+            Thread.Sleep(msDelay);
+        }
+
+
 
 
     }

@@ -121,10 +121,11 @@ namespace cotl_SCI
         }
 
 
-
+        // find offsets from
+        // Dosbox.exe + 0x1B58E20
         public static void ShowPointersOfInterest()
         {
-            ShowPointerOffset(0x0C68E43E);
+            ShowPointerOffset(0x0C927678);
         }
 
         public static void ShowPointerOffset(int address)
