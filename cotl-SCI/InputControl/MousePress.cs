@@ -255,28 +255,26 @@ namespace cotl_SCI.InputControl
             // 1 = mouse-press
             cotlRW.WriteTwoByte(1, queue0_ptr);
             cotlRW.WriteTwoByte(14680, STACK_PTR1);
-
-
         }
 
 
         /*
-         * submits a left press
+         * submits a left arrow keystroke
          *
          * KEYCODE_LEFT = 0x4B00
          *
-         * advance stack_ptr1 to 14666 and run
+         * to test this advance stack_ptr1 to 14666 and run
          *
          *
          */
         public void KeyPressFromPosition14666()
         {
-            int queue0_ptr = 0x1D720;
+            int queue0_ptr = 0x1D71A;
             int keycode_left = 0x4B00;
 
             // 4 = key-press
-            cotlRW.WriteTwoByte(4, queue0_ptr - 6);
-            cotlRW.WriteTwoByte(keycode_left, queue0_ptr - 4);
+            cotlRW.WriteTwoByte(4, queue0_ptr);
+            cotlRW.WriteTwoByte(keycode_left, queue0_ptr + 2);
             cotlRW.WriteTwoByte(14680, STACK_PTR1);
         }
 
