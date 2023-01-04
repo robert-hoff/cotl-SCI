@@ -4,6 +4,7 @@ using cotl_SCI.DataFileIO;
 using cotl_SCI.InputControl;
 using cotl_SCI.MemoryAccess;
 using cotl_SCI.MemoryMonitor;
+// using static cotl_SCI.MemoryAccess.CotlPointers;
 
 namespace cotl_SCI
 {
@@ -15,7 +16,7 @@ namespace cotl_SCI
             // RunMemorySampling();
             // RunMonitorVariable();
             // RunDataAnalysis();
-            TestBitmapImport();
+            // TestBitmapImport();
             // TestMemoryOperations.RunTrials();
             // SetDropBoxCycles();
             // PrintCheatEntries();
@@ -29,6 +30,7 @@ namespace cotl_SCI
             // ShowEventPointerValues();
             // TestMousePress.RunTrials();
             // TestKeyPress.RunTrials();
+            ClockTests.TestGameClockDuration();
         }
 
 
@@ -64,7 +66,7 @@ namespace cotl_SCI
         public static void SetDropBoxCycles()
         {
             // Toggle the cycles up/down in Dosbox to verify changes in the titlebar (Ctrl+F12, Ctrl+F11)
-            new CotlReadWrite().SetDosboxCycles(50000);
+            new CotlReadWrite().SetDosboxCycles(20000);
         }
 
 
@@ -138,6 +140,9 @@ namespace cotl_SCI
             int baseAddress = new CotlReadWrite().COTL_BASE_ADDRESS;
             Debug.WriteLine($"0x{baseAddress:X}");
         }
+
+
+
 
 
 

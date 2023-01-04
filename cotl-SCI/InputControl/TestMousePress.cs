@@ -34,7 +34,7 @@ namespace cotl_SCI.InputControl
             MousePress mousePress = new MousePress();
             CotlReadWrite cotlRW = new();
 
-            int TIME_TO_START = 15;
+            const int TIME_TO_START = 1;
             Debug.WriteLine($"starting in {TIME_TO_START}");
             Thread.Sleep(TIME_TO_START * 1000);
 
