@@ -90,13 +90,13 @@ namespace cotl_SCI.MemoryMonitor
                 this.cotlReadWrite = cotlReadWrite;
                 this.stack_ptr0 = cotlReadWrite.ReadTwoByte(STACK_PTR0);
                 this.stack_ptr1 = cotlReadWrite.ReadTwoByte(STACK_PTR1);
-                this.event_clock = cotlReadWrite.ReadInt(EVENT_CLOCK);
-                this.event_data0_eventtype = cotlReadWrite.ReadTwoByte(EVENT_DATA0);
-                this.event_data0_keycode = cotlReadWrite.ReadTwoByte(EVENT_DATA0 + 2);
-                this.event_data0_mousebutton_id = cotlReadWrite.ReadTwoByte(EVENT_DATA0 + 4);
-                this.event_data0_timestamp = cotlReadWrite.ReadInt(EVENT_DATA0 + 6);
-                this.event_data0_x = cotlReadWrite.ReadTwoByte(EVENT_DATA0 + 10);
-                this.event_data0_y = cotlReadWrite.ReadTwoByte(EVENT_DATA0 + 12);
+                this.event_clock = cotlReadWrite.ReadInt(EVENT_CLOCK_PTR);
+                this.event_data0_eventtype = cotlReadWrite.ReadTwoByte(EVENT_DATA0_PTR);
+                this.event_data0_keycode = cotlReadWrite.ReadTwoByte(EVENT_DATA0_PTR + 2);
+                this.event_data0_mousebutton_id = cotlReadWrite.ReadTwoByte(EVENT_DATA0_PTR + 4);
+                this.event_data0_timestamp = cotlReadWrite.ReadInt(EVENT_DATA0_PTR + 6);
+                this.event_data0_x = cotlReadWrite.ReadTwoByte(EVENT_DATA0_PTR + 10);
+                this.event_data0_y = cotlReadWrite.ReadTwoByte(EVENT_DATA0_PTR + 12);
             }
 
             public bool DataChangedCondition(EventDataState ed0_prev)

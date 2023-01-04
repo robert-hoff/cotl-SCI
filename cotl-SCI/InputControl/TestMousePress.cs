@@ -1,25 +1,20 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace cotl_SCI.InputControl
 {
     class TestMousePress
     {
-
         public static void RunTrials()
         {
             MousePress mousePress = new MousePress();
-            // mousePress.IncrementStackPtr1();
-            // mousePress.MousePressFromPosition14666();
-            // mousePress.KeyPressFromPosition14666();
-            // mousePress.WriteMouseLeftButtonDown(150, 187);
-            mousePress.WriteMouseLeftButtonDown(99, 187);
+            mousePress.WriteMouseLeftClick(99, 187);
+
+            // cycles the in-game cursor
+            //for (int i = 0; i < 6; i++)
+            //{
+            //    mousePress.WriteMouseRightClick(99, 187);
+            //}
         }
-
-
 
     }
 }
+
