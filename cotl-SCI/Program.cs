@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using cotl_SCI.AssemblyDecoding;
 using cotl_SCI.DataAnalysis;
 using cotl_SCI.DataFileIO;
 using cotl_SCI.InputControl;
@@ -31,8 +32,8 @@ namespace cotl_SCI
             // TestMousePress.RunTrials();
             // TestKeyPress.RunTrials();
             // ClockTests.TestGameClockDuration();
-
-            ScummVmBasePointerSearch.RunTrials();
+            // ScummVmBasePointerSearch.RunTrials();
+            ParseAssembly.RunTrials();
         }
 
 
