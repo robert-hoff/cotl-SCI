@@ -19,15 +19,15 @@
         prevDir $0
         joyInc $5
     )
-    (method (doit) // method_00d4
-  00d4:3f 02             link 2 // (var $2)
-  00d6:39 04            pushi 4 // $4 x
+    (method (doit)                                     // method_00d4
+  00d4:3f 02             link 2                        // (var $2)
+  00d6:39 04            pushi 4                        // $4 x
   00d8:76               push0 
   00d9:81 18              lag  
   00db:4a 04             send 4 
 
   00dd:a5 00              sat temp0 
-  00df:39 03            pushi 3 // $3 y
+  00df:39 03            pushi 3                        // $3 y
   00e1:76               push0 
   00e2:81 18              lag  
   00e4:4a 04             send 4 
@@ -138,8 +138,8 @@
 
         code_018b
   018b:3a                toss 
-  018c:38 00bb          pushi bb // $bb setCursor
-  018f:39 04            pushi 4 // $4 x
+  018c:38 00bb          pushi bb                       // $bb setCursor
+  018f:39 04            pushi 4                        // $4 x
   0191:89 13              lsg  
   0193:78               push1 
   0194:8d 00              lst temp0 
@@ -151,14 +151,14 @@
   019d:00                bnot 
     )
 
-    (method (handleEvent) // method_0004
-  0004:38 0144          pushi 144 // $144 canInput
+    (method (handleEvent)                              // method_0004
+  0004:38 0144          pushi 144                      // $144 canInput
   0007:76               push0 
   0008:81 50              lag  
   000a:4a 04             send 4 
 
   000c:30 00a5            bnt code_00b4 
-  000f:39 22            pushi 22 // $22 type
+  000f:39 22            pushi 22                       // $22 type
   0011:76               push0 
   0012:87 01              lap param1 
   0014:4a 04             send 4 
@@ -170,9 +170,9 @@
   001d:81 45              lag  
   001f:18                 not 
   0020:2e 0011             bt code_0034 
-  0023:39 28            pushi 28 // $28 message
+  0023:39 28            pushi 28                       // $28 message
   0025:76               push0 
-  0026:38 00ce          pushi ce // $ce curIcon
+  0026:38 00ce          pushi ce                       // $ce curIcon
   0029:76               push0 
   002a:81 45              lag  
   002c:4a 04             send 4 
@@ -185,7 +185,7 @@
 
         code_0034
   0034:30 000c            bnt code_0043 
-  0037:39 28            pushi 28 // $28 message
+  0037:39 28            pushi 28                       // $28 message
   0039:76               push0 
   003a:87 01              lap param1 
   003c:4a 04             send 4 
@@ -198,7 +198,7 @@
 
         code_0044
   0044:65 0e             aTop prevDir 
-  0046:39 22            pushi 22 // $22 type
+  0046:39 22            pushi 22                       // $22 type
   0048:76               push0 
   0049:87 01              lap param1 
   004b:4a 04             send 4 
@@ -207,7 +207,7 @@
   004e:35 04              ldi 4 
   0050:12                 and 
   0051:30 0018            bnt code_006c 
-  0054:39 40            pushi 40 // $40 modifiers
+  0054:39 40            pushi 40                       // $40 modifiers
   0056:76               push0 
   0057:87 01              lap param1 
   0059:4a 04             send 4 
@@ -228,7 +228,7 @@
 
         code_006e
   006e:65 08             aTop cursorInc 
-  0070:39 22            pushi 22 // $22 type
+  0070:39 22            pushi 22                       // $22 type
   0072:76               push0 
   0073:87 01              lap param1 
   0075:4a 04             send 4 
@@ -239,14 +239,14 @@
   007b:30 0019            bnt code_0097 
   007e:63 0e             pToa prevDir 
   0080:30 0008            bnt code_008b 
-  0083:39 3c            pushi 3c // $3c doit
+  0083:39 3c            pushi 3c                       // $3c doit
   0085:76               push0 
   0086:54 04             self 4 
 
   0088:32 0020            jmp code_00ab 
 
         code_008b
-  008b:39 4c            pushi 4c // $4c claimed
+  008b:39 4c            pushi 4c                       // $4c claimed
   008d:78               push1 
   008e:76               push0 
   008f:87 01              lap param1 
@@ -258,20 +258,20 @@
         code_0097
   0097:63 0e             pToa prevDir 
   0099:30 0009            bnt code_00a5 
-  009c:38 0082          pushi 82 // $82 start
+  009c:38 0082          pushi 82                       // $82 start
   009f:76               push0 
   00a0:54 04             self 4 
 
   00a2:32 0006            jmp code_00ab 
 
         code_00a5
-  00a5:38 009c          pushi 9c // $9c stop
+  00a5:38 009c          pushi 9c                       // $9c stop
   00a8:76               push0 
   00a9:54 04             self 4 
 
 
         code_00ab
-  00ab:39 4c            pushi 4c // $4c claimed
+  00ab:39 4c            pushi 4c                       // $4c claimed
   00ad:78               push1 
   00ae:78               push1 
   00af:87 01              lap param1 
@@ -283,14 +283,14 @@
   00b4:48                 ret 
     )
 
-    (method (start) // method_00b5
+    (method (start)                                    // method_00b5
   00b5:87 00              lap paramTotal 
   00b7:30 0004            bnt code_00be 
   00ba:87 01              lap param1 
   00bc:65 0e             aTop prevDir 
 
         code_00be
-  00be:39 73            pushi 73 // $73 add
+  00be:39 73            pushi 73                       // $73 add
   00c0:78               push1 
   00c1:7c            pushSelf 
   00c2:81 4e              lag  
@@ -299,10 +299,10 @@
   00c6:48                 ret 
     )
 
-    (method (stop) // method_00c7
+    (method (stop)                                     // method_00c7
   00c7:35 00              ldi 0 
   00c9:65 0e             aTop prevDir 
-  00cb:39 54            pushi 54 // $54 delete
+  00cb:39 54            pushi 54                       // $54 delete
   00cd:78               push1 
   00ce:7c            pushSelf 
   00cf:81 4e              lag  

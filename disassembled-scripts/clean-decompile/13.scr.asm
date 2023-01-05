@@ -34,18 +34,18 @@
         caller $0
         next $0
     )
-    (method (init) // method_0416
+    (method (init)                                     // method_0416
   0416:35 01              ldi 1 
   0418:65 1a             aTop register 
   041a:87 01              lap param1 
   041c:65 1e             aTop caller 
-  041e:39 7d            pushi 7d // $7d addToFront
+  041e:39 7d            pushi 7d                       // $7d addToFront
   0420:78               push1 
   0421:7c            pushSelf 
   0422:81 48              lag  
   0424:4a 06             send 6 
 
-  0426:39 7d            pushi 7d // $7d addToFront
+  0426:39 7d            pushi 7d                       // $7d addToFront
   0428:78               push1 
   0429:7c            pushSelf 
   042a:81 49              lag  
@@ -54,14 +54,14 @@
   042e:48                 ret 
     )
 
-    (method (cue) // method_042f
-  042f:39 54            pushi 54 // $54 delete
+    (method (cue)                                      // method_042f
+  042f:39 54            pushi 54                       // $54 delete
   0431:78               push1 
   0432:7c            pushSelf 
   0433:81 48              lag  
   0435:4a 06             send 6 
 
-  0437:39 54            pushi 54 // $54 delete
+  0437:39 54            pushi 54                       // $54 delete
   0439:78               push1 
   043a:7c            pushSelf 
   043b:81 49              lag  
@@ -75,7 +75,7 @@
   0447:43 06 02         callk IsObject 2 
 
   044a:30 000a            bnt code_0457 
-  044d:38 008d          pushi 8d // $8d cue
+  044d:38 008d          pushi 8d                       // $8d cue
   0450:78               push1 
   0451:67 1a             pTos register 
   0453:63 1e             pToa caller 
@@ -86,14 +86,14 @@
   0457:48                 ret 
     )
 
-    (method (handleEvent) // method_0458
-  0458:39 4c            pushi 4c // $4c claimed
+    (method (handleEvent)                              // method_0458
+  0458:39 4c            pushi 4c                       // $4c claimed
   045a:78               push1 
   045b:78               push1 
   045c:87 01              lap param1 
   045e:4a 06             send 6 
 
-  0460:39 40            pushi 40 // $40 modifiers
+  0460:39 40            pushi 40                       // $40 modifiers
   0462:76               push0 
   0463:87 01              lap param1 
   0465:4a 04             send 4 
@@ -102,7 +102,7 @@
   0468:35 03              ldi 3 
   046a:12                 and 
   046b:30 000b            bnt code_0479 
-  046e:39 22            pushi 22 // $22 type
+  046e:39 22            pushi 22                       // $22 type
   0470:76               push0 
   0471:87 01              lap param1 
   0473:4a 04             send 4 
@@ -113,7 +113,7 @@
 
         code_0479
   0479:2e 0019             bt code_0495 
-  047c:39 22            pushi 22 // $22 type
+  047c:39 22            pushi 22                       // $22 type
   047e:76               push0 
   047f:87 01              lap param1 
   0481:4a 04             send 4 
@@ -122,7 +122,7 @@
   0484:35 04              ldi 4 
   0486:12                 and 
   0487:30 0012            bnt code_049c 
-  048a:39 28            pushi 28 // $28 message
+  048a:39 28            pushi 28                       // $28 message
   048c:76               push0 
   048d:87 01              lap param1 
   048f:4a 04             send 4 
@@ -139,7 +139,7 @@
         code_049c
   049c:81 19              lag  
   049e:30 0005            bnt code_04a6 
-  04a1:39 6c            pushi 6c // $6c dispose
+  04a1:39 6c            pushi 6c                       // $6c dispose
   04a3:76               push0 
   04a4:4a 04             send 4 
 
@@ -154,16 +154,16 @@
 
 // EXPORTED procedure #0 ()
 (procedure proc_006b
-  006b:3f 01             link 1 // (var $1)
+  006b:3f 01             link 1                        // (var $1)
   006d:81 19              lag  
   006f:30 0005            bnt code_0077 
-  0072:39 6c            pushi 6c // $6c dispose
+  0072:39 6c            pushi 6c                       // $6c dispose
   0074:76               push0 
   0075:4a 04             send 4 
 
 
         code_0077
-  0077:39 03            pushi 3 // $3 y
+  0077:39 03            pushi 3                        // $3 y
   0079:76               push0 
   007a:8f 01              lsp param1 
   007c:8f 02              lsp param2 
@@ -186,13 +186,13 @@
   0098:35 01              ldi 1 
   009a:1a                 eq? 
   009b:30 0012            bnt code_00b0 
-  009e:39 05            pushi 5 // $5 view
+  009e:39 05            pushi 5                        // $5 view
   00a0:8f 01              lsp param1 
-  00a2:39 46            pushi 46 // $46 width
+  00a2:39 46            pushi 46                       // $46 width
   00a4:8d 00              lst temp0 
-  00a6:39 1e            pushi 1e // $1e mode
+  00a6:39 1e            pushi 1e                       // $1e mode
   00a8:78               push1 
-  00a9:47 ff 00 0a      calle ff procedure_0000 a //  
+  00a9:47 ff 00 0a      calle ff procedure_0000 a      //  
 
   00ad:32 0032            jmp code_00e2 
 
@@ -201,28 +201,28 @@
   00b2:34 03e8            ldi 3e8 
   00b5:2a                ult? 
   00b6:30 0016            bnt code_00cf 
-  00b9:39 06            pushi 6 // $6 loop
+  00b9:39 06            pushi 6                        // $6 loop
   00bb:8f 01              lsp param1 
   00bd:8f 02              lsp param2 
-  00bf:39 46            pushi 46 // $46 width
+  00bf:39 46            pushi 46                       // $46 width
   00c1:8d 00              lst temp0 
-  00c3:39 1e            pushi 1e // $1e mode
+  00c3:39 1e            pushi 1e                       // $1e mode
   00c5:78               push1 
   00c6:59 03            &rest 3 
-  00c8:47 ff 00 0c      calle ff procedure_0000 c //  
+  00c8:47 ff 00 0c      calle ff procedure_0000 c      //  
 
   00cc:32 0013            jmp code_00e2 
 
         code_00cf
-  00cf:39 06            pushi 6 // $6 loop
+  00cf:39 06            pushi 6                        // $6 loop
   00d1:8f 01              lsp param1 
-  00d3:39 46            pushi 46 // $46 width
+  00d3:39 46            pushi 46                       // $46 width
   00d5:8d 00              lst temp0 
-  00d7:39 1e            pushi 1e // $1e mode
+  00d7:39 1e            pushi 1e                       // $1e mode
   00d9:78               push1 
   00da:8f 02              lsp param2 
   00dc:59 03            &rest 3 
-  00de:47 ff 00 0c      calle ff procedure_0000 c //  
+  00de:47 ff 00 0c      calle ff procedure_0000 c      //  
 
 
         code_00e2
@@ -231,12 +231,12 @@
 
 // EXPORTED procedure #1 ()
 (procedure proc_00e3
-  00e3:39 04            pushi 4 // $4 x
+  00e3:39 04            pushi 4                        // $4 x
   00e5:8f 01              lsp param1 
   00e7:59 02            &rest 2 
-  00e9:39 43            pushi 43 // $43 at
-  00eb:39 ff            pushi ff // $ff syncNum
-  00ed:39 05            pushi 5 // $5 view
+  00e9:39 43            pushi 43                       // $43 at
+  00eb:39 ff            pushi ff                       // $ff syncNum
+  00ed:39 05            pushi 5                        // $5 view
   00ef:40 ff78 08        call proc_006b 8 
 
   00f3:48                 ret 
@@ -244,7 +244,7 @@
 
 // EXPORTED procedure #2 ()
 (procedure proc_00f4
-  00f4:3f 01             link 1 // (var $1)
+  00f4:3f 01             link 1                        // (var $1)
   00f6:7a               push2 
   00f7:76               push0 
   00f8:8f 01              lsp param1 
@@ -254,12 +254,12 @@
   0100:35 02              ldi 2 
   0102:93 02             lali local2 
   0104:a5 00              sat temp0 
-  0106:39 04            pushi 4 // $4 x
+  0106:39 04            pushi 4                        // $4 x
   0108:8f 01              lsp param1 
   010a:59 02            &rest 2 
-  010c:39 43            pushi 43 // $43 at
-  010e:39 ff            pushi ff // $ff syncNum
-  0110:38 00aa          pushi aa // $aa setSize
+  010c:39 43            pushi 43                       // $43 at
+  010e:39 ff            pushi ff                       // $ff syncNum
+  0110:38 00aa          pushi aa                       // $aa setSize
   0113:04                 sub 
   0114:36                push 
   0115:40 ff52 08        call proc_006b 8 
@@ -269,10 +269,10 @@
 
 // EXPORTED procedure #4 ()
 (procedure proc_011a
-  011a:3f c8             link c8 // (var $c8)
+  011a:3f c8             link c8                       // (var $c8)
   011c:81 19              lag  
   011e:30 0005            bnt code_0126 
-  0121:39 6c            pushi 6c // $6c dispose
+  0121:39 6c            pushi 6c                       // $6c dispose
   0123:76               push0 
   0124:4a 04             send 4 
 
@@ -282,7 +282,7 @@
   0128:35 05              ldi 5 
   012a:1a                 eq? 
   012b:a3 06              sal local6 
-  012d:39 03            pushi 3 // $3 y
+  012d:39 03            pushi 3                        // $3 y
   012f:8f 01              lsp param1 
   0131:8f 02              lsp param2 
   0133:5b 04 00           lea 4 0 
@@ -303,9 +303,9 @@
   014c:35 03              ldi 3 
   014e:22                 lt? 
   014f:30 0028            bnt code_017a 
-  0152:38 00bb          pushi bb // $bb setCursor
+  0152:38 00bb          pushi bb                       // $bb setCursor
   0155:7a               push2 
-  0156:39 05            pushi 5 // $5 view
+  0156:39 05            pushi 5                        // $5 view
   0158:76               push0 
   0159:43 27 00         callk HaveMouse 0 
 
@@ -314,12 +314,12 @@
   015e:81 01              lag  
   0160:4a 08             send 8 
 
-  0162:39 04            pushi 4 // $4 x
+  0162:39 04            pushi 4                        // $4 x
   0164:5b 04 00           lea 4 0 
   0167:36                push 
-  0168:39 43            pushi 43 // $43 at
-  016a:39 ff            pushi ff // $ff syncNum
-  016c:39 05            pushi 5 // $5 view
+  0168:39 43            pushi 43                       // $43 at
+  016a:39 ff            pushi ff                       // $ff syncNum
+  016c:39 05            pushi 5                        // $5 view
   016e:40 fef9 08        call proc_006b 8 
 
   0172:76               push0 
@@ -333,21 +333,21 @@
   017d:43 06 02         callk IsObject 2 
 
   0180:30 006c            bnt code_01ef 
-  0183:39 71            pushi 71 // $71 respondsTo
+  0183:39 71            pushi 71                       // $71 respondsTo
   0185:78               push1 
-  0186:38 02a2          pushi 2a2 // $2a2 notKilled
+  0186:38 02a2          pushi 2a2                      // $2a2 notKilled
   0189:87 03              lap param3 
   018b:4a 06             send 6 
 
   018d:30 005f            bnt code_01ef 
-  0190:38 02a2          pushi 2a2 // $2a2 notKilled
+  0190:38 02a2          pushi 2a2                      // $2a2 notKilled
   0193:76               push0 
   0194:87 03              lap param3 
   0196:4a 04             send 4 
 
   0198:18                 not 
   0199:30 000c            bnt code_01a8 
-  019c:38 008d          pushi 8d // $8d cue
+  019c:38 008d          pushi 8d                       // $8d cue
   019f:78               push1 
   01a0:76               push0 
   01a1:87 03              lap param3 
@@ -356,9 +356,9 @@
   01a5:32 010e            jmp code_02b6 
 
         code_01a8
-  01a8:38 00bb          pushi bb // $bb setCursor
+  01a8:38 00bb          pushi bb                       // $bb setCursor
   01ab:7a               push2 
-  01ac:39 05            pushi 5 // $5 view
+  01ac:39 05            pushi 5                        // $5 view
   01ae:76               push0 
   01af:43 27 00         callk HaveMouse 0 
 
@@ -367,29 +367,29 @@
   01b4:81 01              lag  
   01b6:4a 08             send 8 
 
-  01b8:39 6b            pushi 6b // $6b init
+  01b8:39 6b            pushi 6b                       // $6b init
   01ba:78               push1 
   01bb:8f 03              lsp param3 
-  01bd:72 04b4          lofsa $04b4 // stopMessage
+  01bd:72 04b4          lofsa $04b4                    // stopMessage
   01c0:4a 06             send 6 
 
-  01c2:39 08            pushi 8 // $8 underBits
+  01c2:39 08            pushi 8                        // $8 underBits
   01c4:5b 04 00           lea 4 0 
   01c7:36                push 
-  01c8:39 43            pushi 43 // $43 at
-  01ca:39 ff            pushi ff // $ff syncNum
-  01cc:39 05            pushi 5 // $5 view
-  01ce:39 6c            pushi 6c // $6c dispose
-  01d0:72 04b4          lofsa $04b4 // stopMessage
+  01c8:39 43            pushi 43                       // $43 at
+  01ca:39 ff            pushi ff                       // $ff syncNum
+  01cc:39 05            pushi 5                        // $5 view
+  01ce:39 6c            pushi 6c                       // $6c dispose
+  01d0:72 04b4          lofsa $04b4                    // stopMessage
   01d3:36                push 
-  01d4:39 19            pushi 19 // $19 time
+  01d4:39 19            pushi 19                       // $19 time
   01d6:7a               push2 
   01d7:8b 00              lsl local0 
   01d9:35 3c              ldi 3c 
   01db:08                 div 
   01dc:36                push 
-  01dd:39 03            pushi 3 // $3 y
-  01df:46 03e7 0003 04  calle 3e7 procedure_0003 4 //  
+  01dd:39 03            pushi 3                        // $3 y
+  01df:46 03e7 0003 04  calle 3e7 procedure_0003 4     //  
 
   01e5:36                push 
   01e6:59 04            &rest 4 
@@ -403,9 +403,9 @@
   01f2:43 06 02         callk IsObject 2 
 
   01f5:30 0047            bnt code_023f 
-  01f8:38 00bb          pushi bb // $bb setCursor
+  01f8:38 00bb          pushi bb                       // $bb setCursor
   01fb:7a               push2 
-  01fc:39 05            pushi 5 // $5 view
+  01fc:39 05            pushi 5                        // $5 view
   01fe:76               push0 
   01ff:43 27 00         callk HaveMouse 0 
 
@@ -414,30 +414,30 @@
   0204:81 01              lag  
   0206:4a 08             send 8 
 
-  0208:39 6b            pushi 6b // $6b init
+  0208:39 6b            pushi 6b                       // $6b init
   020a:78               push1 
   020b:8f 03              lsp param3 
-  020d:72 04b4          lofsa $04b4 // stopMessage
+  020d:72 04b4          lofsa $04b4                    // stopMessage
   0210:4a 06             send 6 
 
-  0212:39 08            pushi 8 // $8 underBits
+  0212:39 08            pushi 8                        // $8 underBits
   0214:5b 04 00           lea 4 0 
   0217:36                push 
-  0218:39 43            pushi 43 // $43 at
-  021a:39 ff            pushi ff // $ff syncNum
-  021c:39 05            pushi 5 // $5 view
-  021e:39 19            pushi 19 // $19 time
+  0218:39 43            pushi 43                       // $43 at
+  021a:39 ff            pushi ff                       // $ff syncNum
+  021c:39 05            pushi 5                        // $5 view
+  021e:39 19            pushi 19                       // $19 time
   0220:7a               push2 
   0221:8b 00              lsl local0 
   0223:35 3c              ldi 3c 
   0225:08                 div 
   0226:36                push 
-  0227:39 03            pushi 3 // $3 y
-  0229:46 03e7 0003 04  calle 3e7 procedure_0003 4 //  
+  0227:39 03            pushi 3                        // $3 y
+  0229:46 03e7 0003 04  calle 3e7 procedure_0003 4     //  
 
   022f:36                push 
-  0230:39 6c            pushi 6c // $6c dispose
-  0232:72 04b4          lofsa $04b4 // stopMessage
+  0230:39 6c            pushi 6c                       // $6c dispose
+  0232:72 04b4          lofsa $04b4                    // stopMessage
   0235:36                push 
   0236:59 04            &rest 4 
   0238:40 fe2f 10        call proc_006b 10 
@@ -449,9 +449,9 @@
   0241:35 01              ldi 1 
   0243:1a                 eq? 
   0244:30 0046            bnt code_028d 
-  0247:38 00bb          pushi bb // $bb setCursor
+  0247:38 00bb          pushi bb                       // $bb setCursor
   024a:7a               push2 
-  024b:39 05            pushi 5 // $5 view
+  024b:39 05            pushi 5                        // $5 view
   024d:76               push0 
   024e:43 27 00         callk HaveMouse 0 
 
@@ -460,30 +460,30 @@
   0253:81 01              lag  
   0255:4a 08             send 8 
 
-  0257:39 6b            pushi 6b // $6b init
+  0257:39 6b            pushi 6b                       // $6b init
   0259:78               push1 
   025a:76               push0 
-  025b:72 04b4          lofsa $04b4 // stopMessage
+  025b:72 04b4          lofsa $04b4                    // stopMessage
   025e:4a 06             send 6 
 
-  0260:39 08            pushi 8 // $8 underBits
+  0260:39 08            pushi 8                        // $8 underBits
   0262:5b 04 00           lea 4 0 
   0265:36                push 
-  0266:39 43            pushi 43 // $43 at
-  0268:39 ff            pushi ff // $ff syncNum
-  026a:39 05            pushi 5 // $5 view
-  026c:39 19            pushi 19 // $19 time
+  0266:39 43            pushi 43                       // $43 at
+  0268:39 ff            pushi ff                       // $ff syncNum
+  026a:39 05            pushi 5                        // $5 view
+  026c:39 19            pushi 19                       // $19 time
   026e:7a               push2 
   026f:8b 00              lsl local0 
   0271:35 3c              ldi 3c 
   0273:08                 div 
   0274:36                push 
-  0275:39 03            pushi 3 // $3 y
-  0277:46 03e7 0003 04  calle 3e7 procedure_0003 4 //  
+  0275:39 03            pushi 3                        // $3 y
+  0277:46 03e7 0003 04  calle 3e7 procedure_0003 4     //  
 
   027d:36                push 
-  027e:39 6c            pushi 6c // $6c dispose
-  0280:72 04b4          lofsa $04b4 // stopMessage
+  027e:39 6c            pushi 6c                       // $6c dispose
+  0280:72 04b4          lofsa $04b4                    // stopMessage
   0283:36                push 
   0284:59 04            &rest 4 
   0286:40 fde1 10        call proc_006b 10 
@@ -491,9 +491,9 @@
   028a:32 0029            jmp code_02b6 
 
         code_028d
-  028d:38 00bb          pushi bb // $bb setCursor
+  028d:38 00bb          pushi bb                       // $bb setCursor
   0290:7a               push2 
-  0291:39 05            pushi 5 // $5 view
+  0291:39 05            pushi 5                        // $5 view
   0293:76               push0 
   0294:43 27 00         callk HaveMouse 0 
 
@@ -502,12 +502,12 @@
   0299:81 01              lag  
   029b:4a 08             send 8 
 
-  029d:39 05            pushi 5 // $5 view
+  029d:39 05            pushi 5                        // $5 view
   029f:5b 04 00           lea 4 0 
   02a2:36                push 
-  02a3:39 43            pushi 43 // $43 at
-  02a5:39 ff            pushi ff // $ff syncNum
-  02a7:39 05            pushi 5 // $5 view
+  02a3:39 43            pushi 43                       // $43 at
+  02a5:39 ff            pushi ff                       // $ff syncNum
+  02a7:39 05            pushi 5                        // $5 view
   02a9:8f 03              lsp param3 
   02ab:59 04            &rest 4 
   02ad:40 fdba 0a        call proc_006b a 
@@ -522,10 +522,10 @@
 
 // EXPORTED procedure #5 ()
 (procedure proc_02b7
-  02b7:3f c8             link c8 // (var $c8)
+  02b7:3f c8             link c8                       // (var $c8)
   02b9:81 19              lag  
   02bb:30 0005            bnt code_02c3 
-  02be:39 6c            pushi 6c // $6c dispose
+  02be:39 6c            pushi 6c                       // $6c dispose
   02c0:76               push0 
   02c1:4a 04             send 4 
 
@@ -535,7 +535,7 @@
   02c5:35 05              ldi 5 
   02c7:1a                 eq? 
   02c8:a3 06              sal local6 
-  02ca:39 03            pushi 3 // $3 y
+  02ca:39 03            pushi 3                        // $3 y
   02cc:8f 01              lsp param1 
   02ce:8f 02              lsp param2 
   02d0:5b 04 00           lea 4 0 
@@ -556,9 +556,9 @@
   02e9:35 03              ldi 3 
   02eb:22                 lt? 
   02ec:30 0021            bnt code_0310 
-  02ef:38 00bb          pushi bb // $bb setCursor
+  02ef:38 00bb          pushi bb                       // $bb setCursor
   02f2:7a               push2 
-  02f3:39 05            pushi 5 // $5 view
+  02f3:39 05            pushi 5                        // $5 view
   02f5:76               push0 
   02f6:43 27 00         callk HaveMouse 0 
 
@@ -583,21 +583,21 @@
   0313:43 06 02         callk IsObject 2 
 
   0316:30 005c            bnt code_0375 
-  0319:39 71            pushi 71 // $71 respondsTo
+  0319:39 71            pushi 71                       // $71 respondsTo
   031b:78               push1 
-  031c:38 02a2          pushi 2a2 // $2a2 notKilled
+  031c:38 02a2          pushi 2a2                      // $2a2 notKilled
   031f:87 03              lap param3 
   0321:4a 06             send 6 
 
   0323:30 004f            bnt code_0375 
-  0326:38 02a2          pushi 2a2 // $2a2 notKilled
+  0326:38 02a2          pushi 2a2                      // $2a2 notKilled
   0329:76               push0 
   032a:87 03              lap param3 
   032c:4a 04             send 4 
 
   032e:18                 not 
   032f:30 000c            bnt code_033e 
-  0332:38 008d          pushi 8d // $8d cue
+  0332:38 008d          pushi 8d                       // $8d cue
   0335:78               push1 
   0336:76               push0 
   0337:87 03              lap param3 
@@ -606,9 +606,9 @@
   033b:32 00d7            jmp code_0415 
 
         code_033e
-  033e:38 00bb          pushi bb // $bb setCursor
+  033e:38 00bb          pushi bb                       // $bb setCursor
   0341:7a               push2 
-  0342:39 05            pushi 5 // $5 view
+  0342:39 05            pushi 5                        // $5 view
   0344:76               push0 
   0345:43 27 00         callk HaveMouse 0 
 
@@ -617,19 +617,19 @@
   034a:81 01              lag  
   034c:4a 08             send 8 
 
-  034e:39 6b            pushi 6b // $6b init
+  034e:39 6b            pushi 6b                       // $6b init
   0350:78               push1 
   0351:8f 03              lsp param3 
-  0353:72 04b4          lofsa $04b4 // stopMessage
+  0353:72 04b4          lofsa $04b4                    // stopMessage
   0356:4a 06             send 6 
 
-  0358:39 05            pushi 5 // $5 view
+  0358:39 05            pushi 5                        // $5 view
   035a:5b 04 00           lea 4 0 
   035d:36                push 
-  035e:39 6c            pushi 6c // $6c dispose
-  0360:72 04b4          lofsa $04b4 // stopMessage
+  035e:39 6c            pushi 6c                       // $6c dispose
+  0360:72 04b4          lofsa $04b4                    // stopMessage
   0363:36                push 
-  0364:39 19            pushi 19 // $19 time
+  0364:39 19            pushi 19                       // $19 time
   0366:8b 00              lsl local0 
   0368:35 3c              ldi 3c 
   036a:08                 div 
@@ -645,9 +645,9 @@
   0378:43 06 02         callk IsObject 2 
 
   037b:30 0037            bnt code_03b5 
-  037e:38 00bb          pushi bb // $bb setCursor
+  037e:38 00bb          pushi bb                       // $bb setCursor
   0381:7a               push2 
-  0382:39 05            pushi 5 // $5 view
+  0382:39 05            pushi 5                        // $5 view
   0384:76               push0 
   0385:43 27 00         callk HaveMouse 0 
 
@@ -656,22 +656,22 @@
   038a:81 01              lag  
   038c:4a 08             send 8 
 
-  038e:39 6b            pushi 6b // $6b init
+  038e:39 6b            pushi 6b                       // $6b init
   0390:78               push1 
   0391:8f 03              lsp param3 
-  0393:72 04b4          lofsa $04b4 // stopMessage
+  0393:72 04b4          lofsa $04b4                    // stopMessage
   0396:4a 06             send 6 
 
-  0398:39 05            pushi 5 // $5 view
+  0398:39 05            pushi 5                        // $5 view
   039a:5b 04 00           lea 4 0 
   039d:36                push 
-  039e:39 19            pushi 19 // $19 time
+  039e:39 19            pushi 19                       // $19 time
   03a0:8b 00              lsl local0 
   03a2:35 3c              ldi 3c 
   03a4:08                 div 
   03a5:36                push 
-  03a6:39 6c            pushi 6c // $6c dispose
-  03a8:72 04b4          lofsa $04b4 // stopMessage
+  03a6:39 6c            pushi 6c                       // $6c dispose
+  03a8:72 04b4          lofsa $04b4                    // stopMessage
   03ab:36                push 
   03ac:59 04            &rest 4 
   03ae:40 fd42 0a        call proc_00f4 a 
@@ -683,9 +683,9 @@
   03b7:35 01              ldi 1 
   03b9:1a                 eq? 
   03ba:30 0036            bnt code_03f3 
-  03bd:38 00bb          pushi bb // $bb setCursor
+  03bd:38 00bb          pushi bb                       // $bb setCursor
   03c0:7a               push2 
-  03c1:39 05            pushi 5 // $5 view
+  03c1:39 05            pushi 5                        // $5 view
   03c3:76               push0 
   03c4:43 27 00         callk HaveMouse 0 
 
@@ -694,22 +694,22 @@
   03c9:81 01              lag  
   03cb:4a 08             send 8 
 
-  03cd:39 6b            pushi 6b // $6b init
+  03cd:39 6b            pushi 6b                       // $6b init
   03cf:78               push1 
   03d0:76               push0 
-  03d1:72 04b4          lofsa $04b4 // stopMessage
+  03d1:72 04b4          lofsa $04b4                    // stopMessage
   03d4:4a 06             send 6 
 
-  03d6:39 05            pushi 5 // $5 view
+  03d6:39 05            pushi 5                        // $5 view
   03d8:5b 04 00           lea 4 0 
   03db:36                push 
-  03dc:39 19            pushi 19 // $19 time
+  03dc:39 19            pushi 19                       // $19 time
   03de:8b 00              lsl local0 
   03e0:35 3c              ldi 3c 
   03e2:08                 div 
   03e3:36                push 
-  03e4:39 6c            pushi 6c // $6c dispose
-  03e6:72 04b4          lofsa $04b4 // stopMessage
+  03e4:39 6c            pushi 6c                       // $6c dispose
+  03e6:72 04b4          lofsa $04b4                    // stopMessage
   03e9:36                push 
   03ea:59 04            &rest 4 
   03ec:40 fd04 0a        call proc_00f4 a 
@@ -717,9 +717,9 @@
   03f0:32 0022            jmp code_0415 
 
         code_03f3
-  03f3:38 00bb          pushi bb // $bb setCursor
+  03f3:38 00bb          pushi bb                       // $bb setCursor
   03f6:7a               push2 
-  03f7:39 05            pushi 5 // $5 view
+  03f7:39 05            pushi 5                        // $5 view
   03f9:76               push0 
   03fa:43 27 00         callk HaveMouse 0 
 
@@ -753,7 +753,7 @@
   04f4:a7 01              sap param1 
 
         code_04f6
-  04f6:39 1c            pushi 1c // $1c color
+  04f6:39 1c            pushi 1c                       // $1c color
   04f8:78               push1 
   04f9:8f 01              lsp param1 
   04fb:3c                 dup 
@@ -1029,7 +1029,7 @@
         code_0690
   0690:3a                toss 
   0691:36                push 
-  0692:39 1d            pushi 1d // $1d back
+  0692:39 1d            pushi 1d                       // $1d back
   0694:78               push1 
   0695:8f 01              lsp param1 
   0697:3c                 dup 
@@ -1313,8 +1313,8 @@
 
 // EXPORTED procedure #7 ()
 (procedure proc_0833
-  0833:3f 01             link 1 // (var $1)
-  0835:39 20            pushi 20 // $20 state
+  0833:3f 01             link 1                        // (var $1)
+  0835:39 20            pushi 20                       // $20 state
   0837:76               push0 
   0838:81 09              lag  
   083a:4a 04             send 4 
@@ -1331,7 +1331,7 @@
 
         code_084a
   084a:a5 00              sat temp0 
-  084c:38 00bb          pushi bb // $bb setCursor
+  084c:38 00bb          pushi bb                       // $bb setCursor
   084f:7a               push2 
   0850:83 06              lal local6 
   0852:30 0005            bnt code_085a 
@@ -1345,9 +1345,9 @@
   0861:32 000d            jmp code_0871 
 
         code_0864
-  0864:39 24            pushi 24 // $24 cursor
+  0864:39 24            pushi 24                       // $24 cursor
   0866:76               push0 
-  0867:38 00ce          pushi ce // $ce curIcon
+  0867:38 00ce          pushi ce                       // $ce curIcon
   086a:76               push0 
   086b:85 00              lat temp0 
   086d:4a 04             send 4 
@@ -1366,7 +1366,7 @@
 
 
 (procedure proc_002a
-  002a:3e 01f5           link 1f5 // (var $1f5)
+  002a:3e 01f5           link 1f5                      // (var $1f5)
   002d:87 02              lap param2 
   002f:a5 00              sat temp0 
   0031:36                push 
@@ -1394,7 +1394,7 @@
   0057:32 0010            jmp code_006a 
 
         code_005a
-  005a:39 04            pushi 4 // $4 x
+  005a:39 04            pushi 4                        // $4 x
   005c:35 00              ldi 0 
   005e:5b 12 02           lea 12 2 
   0061:36                push 

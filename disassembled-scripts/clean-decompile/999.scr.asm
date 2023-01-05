@@ -21,7 +21,7 @@
 (class Obj of 
     (properties
     )
-    (method (new) // method_0121
+    (method (new)                                      // method_0121
   0121:78               push1 
   0122:7c            pushSelf 
   0123:43 04 02         callk Clone 2 
@@ -29,16 +29,16 @@
   0126:48                 ret 
     )
 
-    (method (init) // method_0127
+    (method (init)                                     // method_0127
   0127:48                 ret 
     )
 
-    (method (doit) // method_0128
+    (method (doit)                                     // method_0128
   0128:5c              selfID 
   0129:48                 ret 
     )
 
-    (method (dispose) // method_012a
+    (method (dispose)                                  // method_012a
   012a:78               push1 
   012b:7c            pushSelf 
   012c:43 05 02         callk DisposeClone 2 
@@ -46,7 +46,7 @@
   012f:48                 ret 
     )
 
-    (method (showStr) // method_0130
+    (method (showStr)                                  // method_0130
   0130:7a               push2 
   0131:8f 01              lsp param1 
   0133:67 06             pTos name 
@@ -55,23 +55,23 @@
   0138:48                 ret 
     )
 
-    (method (showSelf) // method_0139
-  0139:3f c8             link c8 // (var $c8)
+    (method (showSelf)                                 // method_0139
+  0139:3f c8             link c8                       // (var $c8)
   013b:78               push1 
-  013c:39 6d            pushi 6d // $6d showStr
+  013c:39 6d            pushi 6d                       // $6d showStr
   013e:78               push1 
   013f:5b 04 00           lea 4 0 
   0142:36                push 
   0143:54 06             self 6 
 
   0145:36                push 
-  0146:47 ff 00 02      calle ff procedure_0000 2 //  
+  0146:47 ff 00 02      calle ff procedure_0000 2      //  
 
   014a:48                 ret 
     )
 
-    (method (perform) // method_014b
-  014b:39 3c            pushi 3c // $3c doit
+    (method (perform)                                  // method_014b
+  014b:39 3c            pushi 3c                       // $3c doit
   014d:78               push1 
   014e:7c            pushSelf 
   014f:59 02            &rest 2 
@@ -81,8 +81,8 @@
   0155:48                 ret 
     )
 
-    (method (isKindOf) // method_0180
-  0180:3f 01             link 1 // (var $1)
+    (method (isKindOf)                                 // method_0180
+  0180:3f 01             link 1                        // (var $1)
   0182:78               push1 
   0183:76               push0 
   0184:54 04             self 4 
@@ -101,7 +101,7 @@
   0197:43 06 02         callk IsObject 2 
 
   019a:30 0009            bnt code_01a6 
-  019d:39 6f            pushi 6f // $6f isKindOf
+  019d:39 6f            pushi 6f                       // $6f isKindOf
   019f:78               push1 
   01a0:8f 01              lsp param1 
   01a2:85 00              lat temp0 
@@ -112,7 +112,7 @@
   01a6:48                 ret 
     )
 
-    (method (isMemberOf) // method_015e
+    (method (isMemberOf)                               // method_015e
   015e:7a               push2 
   015f:76               push0 
   0160:87 01              lap param1 
@@ -139,7 +139,7 @@
   017f:48                 ret 
     )
 
-    (method (respondsTo) // method_0156
+    (method (respondsTo)                               // method_0156
   0156:7a               push2 
   0157:7c            pushSelf 
   0158:8f 01              lsp param1 
@@ -148,7 +148,7 @@
   015d:48                 ret 
     )
 
-    (method (yourself) // method_01a7
+    (method (yourself)                                 // method_01a7
   01a7:5c              selfID 
   01a8:48                 ret 
   01a9:00                bnot 
@@ -160,7 +160,7 @@
 (class Code of Obj
     (properties
     )
-    (method (doit) // method_01fa
+    (method (doit)                                     // method_01fa
   01fa:48                 ret 
   01fb:00                bnot 
     )
@@ -173,22 +173,22 @@
         elements $0
         size $0
     )
-    (method (doit) // method_0224
-  0224:39 74            pushi 74 // $74 eachElementDo
+    (method (doit)                                     // method_0224
+  0224:39 74            pushi 74                       // $74 eachElementDo
   0226:78               push1 
-  0227:39 3c            pushi 3c // $3c doit
+  0227:39 3c            pushi 3c                       // $3c doit
   0229:59 01            &rest 1 
   022b:54 06             self 6 
 
   022d:48                 ret 
     )
 
-    (method (dispose) // method_02af
+    (method (dispose)                                  // method_02af
   02af:63 08             pToa elements 
   02b1:30 000d            bnt code_02c1 
-  02b4:39 74            pushi 74 // $74 eachElementDo
+  02b4:39 74            pushi 74                       // $74 eachElementDo
   02b6:78               push1 
-  02b7:39 6c            pushi 6c // $6c dispose
+  02b7:39 6c            pushi 6c                       // $6c dispose
   02b9:54 06             self 6 
 
   02bb:78               push1 
@@ -200,17 +200,17 @@
   02c1:35 00              ldi 0 
   02c3:65 08             aTop elements 
   02c5:65 0a             aTop size 
-  02c7:39 6c            pushi 6c // $6c dispose
+  02c7:39 6c            pushi 6c                       // $6c dispose
   02c9:76               push0 
   02ca:57 00 04         super Obj 4 
 
   02cd:48                 ret 
     )
 
-    (method (showStr) // method_022e
-  022e:39 05            pushi 5 // $5 view
+    (method (showStr)                                  // method_022e
+  022e:39 05            pushi 5                        // $5 view
   0230:8f 01              lsp param1 
-  0232:38 03e7          pushi 3e7 // $3e7 sel_999
+  0232:38 03e7          pushi 3e7                      // $3e7 sel_999
   0235:76               push0 
   0236:67 06             pTos name 
   0238:67 0a             pTos size 
@@ -219,28 +219,28 @@
   023d:48                 ret 
     )
 
-    (method (showSelf) // method_023e
-  023e:3f 28             link 28 // (var $28)
+    (method (showSelf)                                 // method_023e
+  023e:3f 28             link 28                       // (var $28)
   0240:78               push1 
-  0241:39 6d            pushi 6d // $6d showStr
+  0241:39 6d            pushi 6d                       // $6d showStr
   0243:78               push1 
   0244:5b 04 00           lea 4 0 
   0247:36                push 
   0248:54 06             self 6 
 
   024a:36                push 
-  024b:47 ff 00 02      calle ff procedure_0000 2 //  
+  024b:47 ff 00 02      calle ff procedure_0000 2      //  
 
-  024f:39 74            pushi 74 // $74 eachElementDo
+  024f:39 74            pushi 74                       // $74 eachElementDo
   0251:78               push1 
-  0252:39 6e            pushi 6e // $6e showSelf
+  0252:39 6e            pushi 6e                       // $6e showSelf
   0254:54 06             self 6 
 
   0256:48                 ret 
     )
 
-    (method (add) // method_0257
-  0257:3f 03             link 3 // (var $3)
+    (method (add)                                      // method_0257
+  0257:3f 03             link 3                        // (var $3)
   0259:63 08             pToa elements 
   025b:18                 not 
   025c:30 0006            bnt code_0265 
@@ -278,8 +278,8 @@
   028a:48                 ret 
     )
 
-    (method (delete) // method_028b
-  028b:3f 01             link 1 // (var $1)
+    (method (delete)                                   // method_028b
+  028b:3f 01             link 1                        // (var $1)
   028d:35 00              ldi 0 
   028f:a5 00              sat temp0 
 
@@ -306,8 +306,8 @@
   02ae:48                 ret 
     )
 
-    (method (eachElementDo) // method_02f4
-  02f4:3f 03             link 3 // (var $3)
+    (method (eachElementDo)                            // method_02f4
+  02f4:3f 03             link 3                        // (var $3)
   02f6:78               push1 
   02f7:67 08             pTos elements 
   02f9:43 31 02         callk FirstNode 2 
@@ -350,8 +350,8 @@
   032c:48                 ret 
     )
 
-    (method (firstTrue) // method_032d
-  032d:3f 03             link 3 // (var $3)
+    (method (firstTrue)                                // method_032d
+  032d:3f 03             link 3                        // (var $3)
   032f:78               push1 
   0330:67 08             pTos elements 
   0332:43 31 02         callk FirstNode 2 
@@ -390,8 +390,8 @@
   0361:48                 ret 
     )
 
-    (method (allTrue) // method_0362
-  0362:3f 03             link 3 // (var $3)
+    (method (allTrue)                                  // method_0362
+  0362:3f 03             link 3                        // (var $3)
   0364:78               push1 
   0365:67 08             pTos elements 
   0367:43 31 02         callk FirstNode 2 
@@ -431,7 +431,7 @@
   0397:48                 ret 
     )
 
-    (method (contains) // method_02eb
+    (method (contains)                                 // method_02eb
   02eb:7a               push2 
   02ec:67 08             pTos elements 
   02ee:8f 01              lsp param1 
@@ -440,7 +440,7 @@
   02f3:48                 ret 
     )
 
-    (method (isEmpty) // method_02dc
+    (method (isEmpty)                                  // method_02dc
   02dc:67 08             pTos elements 
   02de:35 00              ldi 0 
   02e0:1a                 eq? 
@@ -454,7 +454,7 @@
   02ea:48                 ret 
     )
 
-    (method (first) // method_02ce
+    (method (first)                                    // method_02ce
   02ce:78               push1 
   02cf:67 08             pTos elements 
   02d1:43 31 02         callk FirstNode 2 
@@ -462,7 +462,7 @@
   02d4:48                 ret 
     )
 
-    (method (next) // method_02d5
+    (method (next)                                     // method_02d5
   02d5:78               push1 
   02d6:8f 01              lsp param1 
   02d8:43 34 02         callk NextNode 2 
@@ -470,8 +470,8 @@
   02db:48                 ret 
     )
 
-    (method (release) // method_0398
-  0398:3f 02             link 2 // (var $2)
+    (method (release)                                  // method_0398
+  0398:3f 02             link 2                        // (var $2)
   039a:78               push1 
   039b:67 08             pTos elements 
   039d:43 31 02         callk FirstNode 2 
@@ -486,7 +486,7 @@
   03a9:43 34 02         callk NextNode 2 
 
   03ac:a5 01              sat temp1 
-  03ae:39 54            pushi 54 // $54 delete
+  03ae:39 54            pushi 54                       // $54 delete
   03b0:78               push1 
   03b1:78               push1 
   03b2:8d 00              lst temp0 
@@ -511,10 +511,10 @@
         elements $0
         size $0
     )
-    (method (showStr) // method_0426
-  0426:39 05            pushi 5 // $5 view
+    (method (showStr)                                  // method_0426
+  0426:39 05            pushi 5                        // $5 view
   0428:8f 01              lsp param1 
-  042a:38 03e7          pushi 3e7 // $3e7 sel_999
+  042a:38 03e7          pushi 3e7                      // $3e7 sel_999
   042d:78               push1 
   042e:67 06             pTos name 
   0430:67 0a             pTos size 
@@ -523,8 +523,8 @@
   0435:48                 ret 
     )
 
-    (method (at) // method_0436
-  0436:3f 01             link 1 // (var $1)
+    (method (at)                                       // method_0436
+  0436:3f 01             link 1                        // (var $1)
   0438:78               push1 
   0439:67 08             pTos elements 
   043b:43 31 02         callk FirstNode 2 
@@ -560,7 +560,7 @@
   0466:48                 ret 
     )
 
-    (method (last) // method_0467
+    (method (last)                                     // method_0467
   0467:78               push1 
   0468:67 08             pTos elements 
   046a:43 32 02         callk LastNode 2 
@@ -568,7 +568,7 @@
   046d:48                 ret 
     )
 
-    (method (prev) // method_046e
+    (method (prev)                                     // method_046e
   046e:78               push1 
   046f:8f 01              lsp param1 
   0471:43 35 02         callk PrevNode 2 
@@ -576,8 +576,8 @@
   0474:48                 ret 
     )
 
-    (method (addToFront) // method_0475
-  0475:3f 01             link 1 // (var $1)
+    (method (addToFront)                               // method_0475
+  0475:3f 01             link 1                        // (var $1)
   0477:63 08             pToa elements 
   0479:18                 not 
   047a:30 0006            bnt code_0483 
@@ -617,8 +617,8 @@
   04aa:48                 ret 
     )
 
-    (method (addToEnd) // method_04ab
-  04ab:3f 01             link 1 // (var $1)
+    (method (addToEnd)                                 // method_04ab
+  04ab:3f 01             link 1                        // (var $1)
   04ad:63 08             pToa elements 
   04af:18                 not 
   04b0:30 0006            bnt code_04b9 
@@ -656,8 +656,8 @@
   04de:48                 ret 
     )
 
-    (method (addAfter) // method_04df
-  04df:3f 03             link 3 // (var $3)
+    (method (addAfter)                                 // method_04df
+  04df:3f 03             link 3                        // (var $3)
   04e1:7a               push2 
   04e2:67 08             pTos elements 
   04e4:8f 01              lsp param1 
@@ -674,7 +674,7 @@
   04f6:87 00              lap paramTotal 
   04f8:22                 lt? 
   04f9:30 001d            bnt code_0519 
-  04fc:39 03            pushi 3 // $3 y
+  04fc:39 03            pushi 3                        // $3 y
   04fe:67 08             pTos elements 
   0500:8d 02              lst temp2 
   0502:7a               push2 
@@ -696,8 +696,8 @@
   051a:48                 ret 
     )
 
-    (method (indexOf) // method_051b
-  051b:3f 02             link 2 // (var $2)
+    (method (indexOf)                                  // method_051b
+  051b:3f 02             link 2                        // (var $2)
   051d:35 00              ldi 0 
   051f:a5 00              sat temp0 
   0521:78               push1 
@@ -741,10 +741,10 @@
         elements $0
         size $0
     )
-    (method (showStr) // method_0598
-  0598:39 05            pushi 5 // $5 view
+    (method (showStr)                                  // method_0598
+  0598:39 05            pushi 5                        // $5 view
   059a:8f 01              lsp param1 
-  059c:38 03e7          pushi 3e7 // $3e7 sel_999
+  059c:38 03e7          pushi 3e7                      // $3e7 sel_999
   059f:7a               push2 
   05a0:67 06             pTos name 
   05a2:67 0a             pTos size 
@@ -753,8 +753,8 @@
   05a7:48                 ret 
     )
 
-    (method (add) // method_05a8
-  05a8:3f 03             link 3 // (var $3)
+    (method (add)                                      // method_05a8
+  05a8:3f 03             link 3                        // (var $3)
   05aa:63 08             pToa elements 
   05ac:18                 not 
   05ad:30 0006            bnt code_05b6 
@@ -775,7 +775,7 @@
   05c2:85 01              lat temp1 
   05c4:97 01             lapi param1 
   05c6:a5 02              sat temp2 
-  05c8:39 77            pushi 77 // $77 contains
+  05c8:39 77            pushi 77                       // $77 contains
   05ca:78               push1 
   05cb:36                push 
   05cc:54 06             self 6 
@@ -810,8 +810,8 @@
         elements $0
         size $0
     )
-    (method (handleEvent) // method_061c
-  061c:3f 03             link 3 // (var $3)
+    (method (handleEvent)                              // method_061c
+  061c:3f 03             link 3                        // (var $3)
   061e:78               push1 
   061f:67 08             pTos elements 
   0621:43 31 02         callk FirstNode 2 
@@ -821,7 +821,7 @@
         code_0626
   0626:85 00              lat temp0 
   0628:30 0035            bnt code_0660 
-  062b:39 4c            pushi 4c // $4c claimed
+  062b:39 4c            pushi 4c                       // $4c claimed
   062d:76               push0 
   062e:87 01              lap param1 
   0630:4a 04             send 4 
@@ -844,7 +844,7 @@
 
   064b:18                 not 
   064c:2e 0011             bt code_0660 
-  064f:38 0081          pushi 81 // $81 handleEvent
+  064f:38 0081          pushi 81                       // $81 handleEvent
   0652:78               push1 
   0653:8f 01              lsp param1 
   0655:85 02              lat temp2 
@@ -855,7 +855,7 @@
   065d:32 ffc6            jmp code_0626 
 
         code_0660
-  0660:39 4c            pushi 4c // $4c claimed
+  0660:39 4c            pushi 4c                       // $4c claimed
   0662:76               push0 
   0663:87 01              lap param1 
   0665:4a 04             send 4 
@@ -882,14 +882,14 @@
         caller $0
         next $0
     )
-    (method (init) // method_0706
+    (method (init)                                     // method_0706
   0706:81 58              lag  
   0708:65 18             aTop lastTicks 
   070a:8f 00              lsp paramTotal 
   070c:35 01              ldi 1 
   070e:20                 ge? 
   070f:30 0023            bnt code_0735 
-  0712:38 008a          pushi 8a // $8a script
+  0712:38 008a          pushi 8a                       // $8a script
   0715:78               push1 
   0716:7c            pushSelf 
   0717:87 01              lap param1 
@@ -914,18 +914,18 @@
   0737:35 01              ldi 1 
   0739:04                 sub 
   073a:65 0a             aTop state 
-  073c:38 008d          pushi 8d // $8d cue
+  073c:38 008d          pushi 8d                       // $8d cue
   073f:76               push0 
   0740:54 04             self 4 
 
   0742:48                 ret 
     )
 
-    (method (doit) // method_0698
-  0698:3f 01             link 1 // (var $1)
+    (method (doit)                                     // method_0698
+  0698:3f 01             link 1                        // (var $1)
   069a:63 1c             pToa script 
   069c:30 0005            bnt code_06a4 
-  069f:39 3c            pushi 3c // $3c doit
+  069f:39 3c            pushi 3c                       // $3c doit
   06a1:76               push0 
   06a2:4a 04             send 4 
 
@@ -936,7 +936,7 @@
   06a9:6d 10            dpToa cycles 
   06ab:18                 not 
   06ac:30 0052            bnt code_0701 
-  06af:38 008d          pushi 8d // $8d cue
+  06af:38 008d          pushi 8d                       // $8d cue
   06b2:76               push0 
   06b3:54 04             self 4 
 
@@ -958,7 +958,7 @@
   06ce:6d 12            dpToa seconds 
   06d0:18                 not 
   06d1:30 002d            bnt code_0701 
-  06d4:38 008d          pushi 8d // $8d cue
+  06d4:38 008d          pushi 8d                       // $8d cue
   06d7:76               push0 
   06d8:54 04             self 4 
 
@@ -983,7 +983,7 @@
   06f4:30 000a            bnt code_0701 
   06f7:35 00              ldi 0 
   06f9:65 16             aTop ticks 
-  06fb:38 008d          pushi 8d // $8d cue
+  06fb:38 008d          pushi 8d                       // $8d cue
   06fe:76               push0 
   06ff:54 04             self 4 
 
@@ -994,14 +994,14 @@
   0705:48                 ret 
     )
 
-    (method (dispose) // method_0743
-  0743:3f 01             link 1 // (var $1)
+    (method (dispose)                                  // method_0743
+  0743:3f 01             link 1                        // (var $1)
   0745:78               push1 
   0746:67 1c             pTos script 
   0748:43 06 02         callk IsObject 2 
 
   074b:30 0007            bnt code_0755 
-  074e:39 6c            pushi 6c // $6c dispose
+  074e:39 6c            pushi 6c                       // $6c dispose
   0750:76               push0 
   0751:63 1c             pToa script 
   0753:4a 04             send 4 
@@ -1013,7 +1013,7 @@
   0758:43 06 02         callk IsObject 2 
 
   075b:30 0007            bnt code_0765 
-  075e:39 6c            pushi 6c // $6c dispose
+  075e:39 6c            pushi 6c                       // $6c dispose
   0760:76               push0 
   0761:63 0e             pToa timer 
   0763:4a 04             send 4 
@@ -1025,7 +1025,7 @@
   0768:43 06 02         callk IsObject 2 
 
   076b:30 0049            bnt code_07b7 
-  076e:38 008a          pushi 8a // $8a script
+  076e:38 008a          pushi 8a                       // $8a script
   0771:78               push1 
   0772:78               push1 
   0773:67 20             pTos next 
@@ -1060,7 +1060,7 @@
   079e:81 0b              lag  
   07a0:1a                 eq? 
   07a1:30 000c            bnt code_07b0 
-  07a4:39 6b            pushi 6b // $6b init
+  07a4:39 6b            pushi 6b                       // $6b init
   07a6:78               push1 
   07a7:67 08             pTos client 
   07a9:85 00              lat temp0 
@@ -1069,7 +1069,7 @@
   07ad:32 0007            jmp code_07b7 
 
         code_07b0
-  07b0:39 6c            pushi 6c // $6c dispose
+  07b0:39 6c            pushi 6c                       // $6c dispose
   07b2:76               push0 
   07b3:85 00              lat temp0 
   07b5:4a 04             send 4 
@@ -1085,7 +1085,7 @@
   07c2:81 0b              lag  
   07c4:1a                 eq? 
   07c5:30 000a            bnt code_07d2 
-  07c8:38 008d          pushi 8d // $8d cue
+  07c8:38 008d          pushi 8d                       // $8d cue
   07cb:78               push1 
   07cc:67 1a             pTos register 
   07ce:63 1e             pToa caller 
@@ -1099,23 +1099,23 @@
   07d8:65 08             aTop client 
   07da:65 0e             aTop timer 
   07dc:65 1c             aTop script 
-  07de:39 6c            pushi 6c // $6c dispose
+  07de:39 6c            pushi 6c                       // $6c dispose
   07e0:76               push0 
   07e1:57 00 04         super Obj 4 
 
   07e4:48                 ret 
     )
 
-    (method (changeState) // method_07e5
+    (method (changeState)                              // method_07e5
   07e5:87 01              lap param1 
   07e7:65 0a             aTop state 
   07e9:48                 ret 
     )
 
-    (method (cue) // method_07ea
+    (method (cue)                                      // method_07ea
   07ea:63 08             pToa client 
   07ec:30 000e            bnt code_07fd 
-  07ef:38 008c          pushi 8c // $8c changeState
+  07ef:38 008c          pushi 8c                       // $8c changeState
   07f2:78               push1 
   07f3:67 0a             pTos state 
   07f5:35 01              ldi 1 
@@ -1129,17 +1129,17 @@
   07fd:48                 ret 
     )
 
-    (method (handleEvent) // method_081c
+    (method (handleEvent)                              // method_081c
   081c:63 1c             pToa script 
   081e:30 0008            bnt code_0829 
-  0821:38 0081          pushi 81 // $81 handleEvent
+  0821:38 0081          pushi 81                       // $81 handleEvent
   0824:78               push1 
   0825:8f 01              lsp param1 
   0827:4a 06             send 6 
 
 
         code_0829
-  0829:39 4c            pushi 4c // $4c claimed
+  0829:39 4c            pushi 4c                       // $4c claimed
   082b:76               push0 
   082c:87 01              lap param1 
   082e:4a 04             send 4 
@@ -1148,13 +1148,13 @@
   0831:00                bnot 
     )
 
-    (method (setScript) // method_07fe
+    (method (setScript)                                // method_07fe
   07fe:78               push1 
   07ff:67 1c             pTos script 
   0801:43 06 02         callk IsObject 2 
 
   0804:30 0007            bnt code_080e 
-  0807:39 6c            pushi 6c // $6c dispose
+  0807:39 6c            pushi 6c                       // $6c dispose
   0809:76               push0 
   080a:63 1c             pToa script 
   080c:4a 04             send 4 
@@ -1163,7 +1163,7 @@
         code_080e
   080e:87 01              lap param1 
   0810:30 0008            bnt code_081b 
-  0813:39 6b            pushi 6b // $6b init
+  0813:39 6b            pushi 6b                       // $6b init
   0815:78               push1 
   0816:7c            pushSelf 
   0817:59 02            &rest 2 
@@ -1187,9 +1187,9 @@
         claimed $0
         port $0
     )
-    (method (new) // method_08a6
-  08a6:3f 01             link 1 // (var $1)
-  08a8:39 6a            pushi 6a // $6a new
+    (method (new)                                      // method_08a6
+  08a6:3f 01             link 1                        // (var $1)
+  08a8:39 6a            pushi 6a                       // $6a new
   08aa:76               push0 
   08ab:57 00 04         super Obj 4 
 
@@ -1212,8 +1212,8 @@
   08c6:48                 ret 
     )
 
-    (method (localize) // method_08c7
-  08c7:3f 01             link 1 // (var $1)
+    (method (localize)                                 // method_08c7
+  08c7:3f 01             link 1                        // (var $1)
   08c9:67 08             pTos type 
   08cb:34 4000            ldi 4000 
   08ce:1c                 ne? 
@@ -1262,8 +1262,8 @@
   0909:48                 ret 
     )
 
-    (method (globalize) // method_090a
-  090a:3f 01             link 1 // (var $1)
+    (method (globalize)                                // method_090a
+  090a:3f 01             link 1                        // (var $1)
   090c:67 08             pTos type 
   090e:34 4000            ldi 4000 
   0911:1c                 ne? 
@@ -1353,7 +1353,7 @@
 
 // EXPORTED procedure #2 ()
 (procedure proc_005b
-  005b:3f 01             link 1 // (var $1)
+  005b:3f 01             link 1                        // (var $1)
   005d:8f 00              lsp paramTotal 
   005f:35 01              ldi 1 
   0061:1a                 eq? 
@@ -1380,7 +1380,7 @@
 
 // EXPORTED procedure #3 ()
 (procedure proc_007c
-  007c:3f 01             link 1 // (var $1)
+  007c:3f 01             link 1                        // (var $1)
   007e:8f 00              lsp paramTotal 
   0080:35 01              ldi 1 
   0082:1a                 eq? 
@@ -1412,7 +1412,7 @@
   00a1:35 06              ldi 6 
   00a3:22                 lt? 
   00a4:30 000a            bnt code_00b1 
-  00a7:39 04            pushi 4 // $4 x
+  00a7:39 04            pushi 4                        // $4 x
   00a9:76               push0 
   00aa:87 05              lap param5 
   00ac:4a 04             send 4 
@@ -1434,7 +1434,7 @@
   00c2:35 06              ldi 6 
   00c4:22                 lt? 
   00c5:30 000a            bnt code_00d2 
-  00c8:39 03            pushi 3 // $3 y
+  00c8:39 03            pushi 3                        // $3 y
   00ca:76               push0 
   00cb:87 05              lap param5 
   00cd:4a 04             send 4 
@@ -1457,7 +1457,7 @@
 
 // EXPORTED procedure #5 ()
 (procedure proc_00dd
-  00dd:3f 01             link 1 // (var $1)
+  00dd:3f 01             link 1                        // (var $1)
   00df:35 00              ldi 0 
   00e1:a5 00              sat temp0 
 
@@ -1492,7 +1492,7 @@
 // EXPORTED procedure #6 ()
 (procedure proc_0108
   0108:7a               push2 
-  0109:39 05            pushi 5 // $5 view
+  0109:39 05            pushi 5                        // $5 view
   010b:8f 01              lsp param1 
   010d:7a               push2 
   010e:87 02              lap param2 

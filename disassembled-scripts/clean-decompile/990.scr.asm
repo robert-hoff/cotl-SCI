@@ -7,7 +7,8 @@
     string_0bd3 "Select the game that you would like to restore."
     string_0c03 "Type the description of this saved game."
     string_0c2c "This directory/disk can hold no more saved games. You must replace one of your saved games or use Change Directory to save on a different directory/disk."
-    string_0cc6 "Are you sure you want to\ndelete this saved game?"
+    string_0cc6 "Are you sure you want to
+\ndelete this saved game?"
     string_0cf8 " No "
     string_0cfd "Yes"
     string_0d01 "SRDialog"
@@ -22,7 +23,8 @@
     string_0d53 "okI"
     string_0d57 " Cancel "
     string_0d60 "cancelI"
-    string_0d68 "Change\nDirectory"
+    string_0d68 "Change
+\nDirectory"
     string_0d7a "changeDirI"
     string_0d85 " Delete "
     string_0d8e "deleteI"
@@ -74,17 +76,17 @@
         seconds $0
         lastSeconds $0
     )
-    (method (init) // method_0027
+    (method (init)                                     // method_0027
   0027:76               push0 
-  0028:46 03a4 0003 00  calle 3a4 procedure_0003 0 //  
+  0028:46 03a4 0003 00  calle 3a4 procedure_0003 0     //  
 
-  002e:39 56            pushi 56 // $56 parseLang
+  002e:39 56            pushi 56                       // $56 parseLang
   0030:76               push0 
   0031:81 01              lag  
   0033:4a 04             send 4 
 
   0035:a3 00              sal local0 
-  0037:39 56            pushi 56 // $56 parseLang
+  0037:39 56            pushi 56                       // $56 parseLang
   0039:78               push1 
   003a:78               push1 
   003b:81 01              lag  
@@ -94,8 +96,8 @@
   0041:65 0e             aTop window 
   0043:35 00              ldi 0 
   0045:65 16             aTop nsBottom 
-  0047:39 03            pushi 3 // $3 y
-  0049:39 17            pushi 17 // $17 name
+  0047:39 03            pushi 3                        // $3 y
+  0049:39 17            pushi 17                       // $17 name
   004b:76               push0 
   004c:81 01              lag  
   004e:4a 04             send 4 
@@ -122,7 +124,7 @@
   006c:35 01              ldi 1 
   006e:1a                 eq? 
   006f:30 002e            bnt code_00a0 
-  0072:39 1a            pushi 1a // $1a text
+  0072:39 1a            pushi 1a                       // $1a text
   0074:78               push1 
   0075:7a               push2 
   0076:8f 01              lsp param1 
@@ -130,74 +132,74 @@
   007a:43 47 04         callk StrCpy 4 
 
   007d:36                push 
-  007e:39 21            pushi 21 // $21 font
+  007e:39 21            pushi 21                       // $21 font
   0080:78               push1 
   0081:89 17              lsg  
-  0083:38 00aa          pushi aa // $aa setSize
+  0083:38 00aa          pushi aa                       // $aa setSize
   0086:76               push0 
-  0087:38 00ac          pushi ac // $ac moveTo
+  0087:38 00ac          pushi ac                       // $ac moveTo
   008a:7a               push2 
-  008b:39 04            pushi 4 // $4 x
+  008b:39 04            pushi 4                        // $4 x
   008d:3c                 dup 
-  008e:72 098a          lofsa $098a // editI
+  008e:72 098a          lofsa $098a                    // editI
   0091:4a 18             send 18 
 
-  0093:39 73            pushi 73 // $73 add
+  0093:39 73            pushi 73                       // $73 add
   0095:78               push1 
-  0096:72 098a          lofsa $098a // editI
+  0096:72 098a          lofsa $098a                    // editI
   0099:36                push 
-  009a:38 00aa          pushi aa // $aa setSize
+  009a:38 00aa          pushi aa                       // $aa setSize
   009d:76               push0 
   009e:54 0a             self a 
 
 
         code_00a0
-  00a0:39 1a            pushi 1a // $1a text
+  00a0:39 1a            pushi 1a                       // $1a text
   00a2:78               push1 
   00a3:8f 02              lsp param2 
-  00a5:39 21            pushi 21 // $21 font
+  00a5:39 21            pushi 21                       // $21 font
   00a7:78               push1 
   00a8:89 17              lsg  
-  00aa:38 00aa          pushi aa // $aa setSize
+  00aa:38 00aa          pushi aa                       // $aa setSize
   00ad:76               push0 
-  00ae:38 00ac          pushi ac // $ac moveTo
+  00ae:38 00ac          pushi ac                       // $ac moveTo
   00b1:7a               push2 
-  00b2:39 04            pushi 4 // $4 x
+  00b2:39 04            pushi 4                        // $4 x
   00b4:67 16             pTos nsBottom 
   00b6:35 04              ldi 4 
   00b8:02                 add 
   00b9:36                push 
-  00ba:39 20            pushi 20 // $20 state
+  00ba:39 20            pushi 20                       // $20 state
   00bc:78               push1 
   00bd:7a               push2 
-  00be:72 0952          lofsa $0952 // selectorI
+  00be:72 0952          lofsa $0952                    // selectorI
   00c1:4a 1e             send 1e 
 
-  00c3:39 0c            pushi c // $c nsRight
+  00c3:39 0c            pushi c                        // $c nsRight
   00c5:76               push0 
-  00c6:72 0952          lofsa $0952 // selectorI
+  00c6:72 0952          lofsa $0952                    // selectorI
   00c9:4a 04             send 4 
 
   00cb:36                push 
   00cc:35 04              ldi 4 
   00ce:02                 add 
   00cf:a3 02              sal local2 
-  00d1:39 1a            pushi 1a // $1a text
+  00d1:39 1a            pushi 1a                       // $1a text
   00d3:78               push1 
   00d4:83 05              lal local5 
   00d6:9b 06             lsli local6 
-  00d8:38 00aa          pushi aa // $aa setSize
+  00d8:38 00aa          pushi aa                       // $aa setSize
   00db:76               push0 
-  00dc:38 00ac          pushi ac // $ac moveTo
+  00dc:38 00ac          pushi ac                       // $ac moveTo
   00df:7a               push2 
   00e0:8b 02              lsl local2 
-  00e2:39 09            pushi 9 // $9 nsTop
+  00e2:39 09            pushi 9                        // $9 nsTop
   00e4:76               push0 
-  00e5:72 0952          lofsa $0952 // selectorI
+  00e5:72 0952          lofsa $0952                    // selectorI
   00e8:4a 04             send 4 
 
   00ea:36                push 
-  00eb:39 20            pushi 20 // $20 state
+  00eb:39 20            pushi 20                       // $20 state
   00ed:78               push1 
   00ee:8b 05              lsl local5 
   00f0:35 00              ldi 0 
@@ -222,24 +224,24 @@
 
         code_010b
   010b:36                push 
-  010c:72 09bc          lofsa $09bc // okI
+  010c:72 09bc          lofsa $09bc                    // okI
   010f:4a 18             send 18 
 
-  0111:38 00aa          pushi aa // $aa setSize
+  0111:38 00aa          pushi aa                       // $aa setSize
   0114:76               push0 
-  0115:38 00ac          pushi ac // $ac moveTo
+  0115:38 00ac          pushi ac                       // $ac moveTo
   0118:7a               push2 
   0119:8b 02              lsl local2 
-  011b:39 0b            pushi b // $b nsBottom
+  011b:39 0b            pushi b                        // $b nsBottom
   011d:76               push0 
-  011e:72 09bc          lofsa $09bc // okI
+  011e:72 09bc          lofsa $09bc                    // okI
   0121:4a 04             send 4 
 
   0123:36                push 
   0124:35 04              ldi 4 
   0126:02                 add 
   0127:36                push 
-  0128:39 20            pushi 20 // $20 state
+  0128:39 20            pushi 20                       // $20 state
   012a:78               push1 
   012b:83 03              lal local3 
   012d:18                 not 
@@ -252,86 +254,86 @@
 
         code_0138
   0138:36                push 
-  0139:72 0a46          lofsa $0a46 // deleteI
+  0139:72 0a46          lofsa $0a46                    // deleteI
   013c:4a 12             send 12 
 
-  013e:38 00aa          pushi aa // $aa setSize
+  013e:38 00aa          pushi aa                       // $aa setSize
   0141:76               push0 
-  0142:38 00ac          pushi ac // $ac moveTo
+  0142:38 00ac          pushi ac                       // $ac moveTo
   0145:7a               push2 
   0146:8b 02              lsl local2 
-  0148:39 0b            pushi b // $b nsBottom
+  0148:39 0b            pushi b                        // $b nsBottom
   014a:76               push0 
-  014b:72 0a46          lofsa $0a46 // deleteI
+  014b:72 0a46          lofsa $0a46                    // deleteI
   014e:4a 04             send 4 
 
   0150:36                push 
   0151:35 04              ldi 4 
   0153:02                 add 
   0154:36                push 
-  0155:39 20            pushi 20 // $20 state
+  0155:39 20            pushi 20                       // $20 state
   0157:78               push1 
-  0158:39 20            pushi 20 // $20 state
+  0158:39 20            pushi 20                       // $20 state
   015a:76               push0 
-  015b:72 0a18          lofsa $0a18 // changeDirI
+  015b:72 0a18          lofsa $0a18                    // changeDirI
   015e:4a 04             send 4 
 
   0160:36                push 
   0161:35 f7              ldi f7 
   0163:12                 and 
   0164:36                push 
-  0165:72 0a18          lofsa $0a18 // changeDirI
+  0165:72 0a18          lofsa $0a18                    // changeDirI
   0168:4a 12             send 12 
 
-  016a:38 00aa          pushi aa // $aa setSize
+  016a:38 00aa          pushi aa                       // $aa setSize
   016d:76               push0 
-  016e:38 00ac          pushi ac // $ac moveTo
+  016e:38 00ac          pushi ac                       // $ac moveTo
   0171:7a               push2 
   0172:8b 02              lsl local2 
-  0174:39 0b            pushi b // $b nsBottom
+  0174:39 0b            pushi b                        // $b nsBottom
   0176:76               push0 
-  0177:72 0a18          lofsa $0a18 // changeDirI
+  0177:72 0a18          lofsa $0a18                    // changeDirI
   017a:4a 04             send 4 
 
   017c:36                push 
   017d:35 04              ldi 4 
   017f:02                 add 
   0180:36                push 
-  0181:39 20            pushi 20 // $20 state
+  0181:39 20            pushi 20                       // $20 state
   0183:78               push1 
-  0184:39 20            pushi 20 // $20 state
+  0184:39 20            pushi 20                       // $20 state
   0186:76               push0 
-  0187:72 09ea          lofsa $09ea // cancelI
+  0187:72 09ea          lofsa $09ea                    // cancelI
   018a:4a 04             send 4 
 
   018c:36                push 
   018d:35 f7              ldi f7 
   018f:12                 and 
   0190:36                push 
-  0191:72 09ea          lofsa $09ea // cancelI
+  0191:72 09ea          lofsa $09ea                    // cancelI
   0194:4a 12             send 12 
 
-  0196:39 73            pushi 73 // $73 add
-  0198:39 05            pushi 5 // $5 view
-  019a:72 0952          lofsa $0952 // selectorI
+  0196:39 73            pushi 73                       // $73 add
+  0198:39 05            pushi 5                        // $5 view
+  019a:72 0952          lofsa $0952                    // selectorI
   019d:36                push 
-  019e:72 09bc          lofsa $09bc // okI
+  019e:72 09bc          lofsa $09bc                    // okI
   01a1:36                push 
-  01a2:72 0a46          lofsa $0a46 // deleteI
+  01a2:72 0a46          lofsa $0a46                    // deleteI
   01a5:36                push 
-  01a6:72 0a18          lofsa $0a18 // changeDirI
+  01a6:72 0a18          lofsa $0a18                    // changeDirI
   01a9:36                push 
-  01aa:72 09ea          lofsa $09ea // cancelI
+  01aa:72 09ea          lofsa $09ea                    // cancelI
   01ad:36                push 
-  01ae:38 00aa          pushi aa // $aa setSize
+  01ae:38 00aa          pushi aa                       // $aa setSize
   01b1:76               push0 
   01b2:54 12             self 12 
 
-  01b4:39 1a            pushi 1a // $1a text
+  01b4:39 1a            pushi 1a                       // $1a text
   01b6:78               push1 
   01b7:83 05              lal local5 
   01b9:9b 0a             lsli local10 
-  01bb:38 00aa          pushi aa // $aa setSize
+  01bb:38 00aa          pushi aa                       // $aa setSize
   01be:78               push1 
   01bf:67 18             pTos nsRight 
   01c1:63 14             pToa nsLeft 
@@ -340,51 +342,51 @@
   01c5:35 08              ldi 8 
   01c7:04                 sub 
   01c8:36                push 
-  01c9:38 00ac          pushi ac // $ac moveTo
+  01c9:38 00ac          pushi ac                       // $ac moveTo
   01cc:7a               push2 
-  01cd:39 04            pushi 4 // $4 x
+  01cd:39 04            pushi 4                        // $4 x
   01cf:3c                 dup 
-  01d0:72 0a74          lofsa $0a74 // textI
+  01d0:72 0a74          lofsa $0a74                    // textI
   01d3:4a 14             send 14 
 
-  01d5:39 0b            pushi b // $b nsBottom
+  01d5:39 0b            pushi b                        // $b nsBottom
   01d7:76               push0 
-  01d8:72 0a74          lofsa $0a74 // textI
+  01d8:72 0a74          lofsa $0a74                    // textI
   01db:4a 04             send 4 
 
   01dd:36                push 
   01de:35 04              ldi 4 
   01e0:02                 add 
   01e1:a3 02              sal local2 
-  01e3:39 74            pushi 74 // $74 eachElementDo
-  01e5:39 03            pushi 3 // $3 y
-  01e7:38 00ab          pushi ab // $ab move
+  01e3:39 74            pushi 74                       // $74 eachElementDo
+  01e5:39 03            pushi 3                        // $3 y
+  01e7:38 00ab          pushi ab                       // $ab move
   01ea:76               push0 
   01eb:36                push 
   01ec:54 0a             self a 
 
-  01ee:39 73            pushi 73 // $73 add
+  01ee:39 73            pushi 73                       // $73 add
   01f0:78               push1 
-  01f1:72 0a74          lofsa $0a74 // textI
+  01f1:72 0a74          lofsa $0a74                    // textI
   01f4:36                push 
-  01f5:38 00aa          pushi aa // $aa setSize
+  01f5:38 00aa          pushi aa                       // $aa setSize
   01f8:76               push0 
-  01f9:38 00b6          pushi b6 // $b6 center
+  01f9:38 00b6          pushi b6                       // $b6 center
   01fc:76               push0 
-  01fd:38 00b5          pushi b5 // $b5 open
+  01fd:38 00b5          pushi b5                       // $b5 open
   0200:7a               push2 
-  0201:39 04            pushi 4 // $4 x
-  0203:39 ff            pushi ff // $ff syncNum
+  0201:39 04            pushi 4                        // $4 x
+  0203:39 ff            pushi ff                       // $ff syncNum
   0205:54 16             self 16 
 
   0207:35 01              ldi 1 
   0209:48                 ret 
     )
 
-    (method (doit) // method_020a
-  020a:3e 020d           link 20d // (var $20d)
+    (method (doit)                                     // method_020a
+  020a:3e 020d           link 20d                      // (var $20d)
   020d:7c            pushSelf 
-  020e:72 064a          lofsa $064a // Restore
+  020e:72 064a          lofsa $064a                    // Restore
   0211:1a                 eq? 
   0212:30 0038            bnt code_024d 
   0215:87 00              lap paramTotal 
@@ -393,12 +395,12 @@
   021c:30 002e            bnt code_024d 
   021f:7a               push2 
   0220:76               push0 
-  0221:39 04            pushi 4 // $4 x
+  0221:39 04            pushi 4                        // $4 x
   0223:5a 0004 0181       lea 4 181 
   0228:36                push 
-  0229:38 03de          pushi 3de // $3de sel_990
+  0229:38 03de          pushi 3de                      // $3de sel_990
   022c:76               push0 
-  022d:39 17            pushi 17 // $17 name
+  022d:39 17            pushi 17                       // $17 name
   022f:76               push0 
   0230:81 01              lag  
   0232:4a 04             send 4 
@@ -424,8 +426,8 @@
 
 
         code_024d
-  024d:39 6b            pushi 6b // $6b init
-  024f:39 03            pushi 3 // $3 y
+  024d:39 6b            pushi 6b                       // $6b init
+  024f:39 03            pushi 3                        // $3 y
   0251:8f 01              lsp param1 
   0253:5b 04 03           lea 4 3 
   0256:36                push 
@@ -446,9 +448,9 @@
   026c:30 0011            bnt code_0280 
   026f:83 03              lal local3 
   0271:30 0029            bnt code_029d 
-  0274:72 09bc          lofsa $09bc // okI
+  0274:72 09bc          lofsa $09bc                    // okI
   0277:32 0023            jmp code_029d 
-  027a:72 0a18          lofsa $0a18 // changeDirI
+  027a:72 0a18          lofsa $0a18                    // changeDirI
   027d:32 001d            jmp code_029d 
 
         code_0280
@@ -456,7 +458,7 @@
   0281:35 01              ldi 1 
   0283:1a                 eq? 
   0284:30 0006            bnt code_028d 
-  0287:72 098a          lofsa $098a // editI
+  0287:72 098a          lofsa $098a                    // editI
   028a:32 0010            jmp code_029d 
 
         code_028d
@@ -464,30 +466,30 @@
   028e:35 02              ldi 2 
   0290:1a                 eq? 
   0291:30 0006            bnt code_029a 
-  0294:72 09bc          lofsa $09bc // okI
+  0294:72 09bc          lofsa $09bc                    // okI
   0297:32 0003            jmp code_029d 
 
         code_029a
-  029a:72 0a18          lofsa $0a18 // changeDirI
+  029a:72 0a18          lofsa $0a18                    // changeDirI
 
         code_029d
   029d:3a                toss 
   029e:a3 01              sal local1 
-  02a0:39 3c            pushi 3c // $3c doit
+  02a0:39 3c            pushi 3c                       // $3c doit
   02a2:78               push1 
   02a3:36                push 
   02a4:57 12 06         super Dialog 6 
 
   02a7:a3 02              sal local2 
-  02a9:38 0080          pushi 80 // $80 indexOf
+  02a9:38 0080          pushi 80                       // $80 indexOf
   02ac:78               push1 
-  02ad:39 24            pushi 24 // $24 cursor
+  02ad:39 24            pushi 24                       // $24 cursor
   02af:76               push0 
-  02b0:72 0952          lofsa $0952 // selectorI
+  02b0:72 0952          lofsa $0952                    // selectorI
   02b3:4a 04             send 4 
 
   02b5:36                push 
-  02b6:72 0952          lofsa $0952 // selectorI
+  02b6:72 0952          lofsa $0952                    // selectorI
   02b9:4a 06             send 6 
 
   02bb:a3 04              sal local4 
@@ -496,10 +498,10 @@
   02c0:06                 mul 
   02c1:a5 02              sat temp2 
   02c3:8b 02              lsl local2 
-  02c5:72 0a18          lofsa $0a18 // changeDirI
+  02c5:72 0a18          lofsa $0a18                    // changeDirI
   02c8:1a                 eq? 
   02c9:30 004b            bnt code_0317 
-  02cc:39 6c            pushi 6c // $6c dispose
+  02cc:39 6c            pushi 6c                       // $6c dispose
   02ce:76               push0 
   02cf:54 04             self 4 
 
@@ -508,8 +510,8 @@
   02d4:40 05b0 02        call proc_0888 2 
 
   02d8:30 0027            bnt code_0302 
-  02db:39 03            pushi 3 // $3 y
-  02dd:39 17            pushi 17 // $17 name
+  02db:39 03            pushi 3                        // $3 y
+  02dd:39 17            pushi 17                       // $17 name
   02df:76               push0 
   02e0:81 01              lag  
   02e2:4a 04             send 4 
@@ -531,8 +533,8 @@
   02ff:32 0294            jmp code_0596 
 
         code_0302
-  0302:39 6b            pushi 6b // $6b init
-  0304:39 03            pushi 3 // $3 y
+  0302:39 6b            pushi 6b                       // $6b init
+  0304:39 03            pushi 3                        // $3 y
   0306:8f 01              lsp param1 
   0308:5b 04 03           lea 4 3 
   030b:36                push 
@@ -548,14 +550,14 @@
   031b:1a                 eq? 
   031c:30 0045            bnt code_0364 
   031f:8b 02              lsl local2 
-  0321:72 09bc          lofsa $09bc // okI
+  0321:72 09bc          lofsa $09bc                    // okI
   0324:1a                 eq? 
   0325:30 003c            bnt code_0364 
-  0328:39 6c            pushi 6c // $6c dispose
+  0328:39 6c            pushi 6c                       // $6c dispose
   032a:76               push0 
   032b:54 04             self 4 
 
-  032d:39 3c            pushi 3c // $3c doit
+  032d:39 3c            pushi 3c                       // $3c doit
   032f:78               push1 
   0330:7a               push2 
   0331:8f 01              lsp param1 
@@ -565,7 +567,7 @@
   0339:43 47 04         callk StrCpy 4 
 
   033c:36                push 
-  033d:72 0858          lofsa $0858 // GetReplaceName
+  033d:72 0858          lofsa $0858                    // GetReplaceName
   0340:4a 06             send 6 
 
   0342:30 000a            bnt code_034f 
@@ -575,8 +577,8 @@
   034c:32 0247            jmp code_0596 
 
         code_034f
-  034f:39 6b            pushi 6b // $6b init
-  0351:39 03            pushi 3 // $3 y
+  034f:39 6b            pushi 6b                       // $6b init
+  0351:39 03            pushi 3                        // $3 y
   0353:8f 01              lsp param1 
   0355:5b 04 03           lea 4 3 
   0358:36                push 
@@ -592,11 +594,11 @@
   0368:1a                 eq? 
   0369:30 00c5            bnt code_0431 
   036c:8b 02              lsl local2 
-  036e:72 09bc          lofsa $09bc // okI
+  036e:72 09bc          lofsa $09bc                    // okI
   0371:1a                 eq? 
   0372:2e 0006             bt code_037b 
   0375:8b 02              lsl local2 
-  0377:72 098a          lofsa $098a // editI
+  0377:72 098a          lofsa $098a                    // editI
   037a:1a                 eq? 
 
         code_037b
@@ -609,15 +611,15 @@
   0385:35 00              ldi 0 
   0387:1a                 eq? 
   0388:30 001f            bnt code_03aa 
-  038b:39 6c            pushi 6c // $6c dispose
+  038b:39 6c            pushi 6c                       // $6c dispose
   038d:76               push0 
   038e:54 04             self 4 
 
   0390:76               push0 
   0391:40 05a1 00        call proc_0936 0 
 
-  0395:39 6b            pushi 6b // $6b init
-  0397:39 03            pushi 3 // $3 y
+  0395:39 6b            pushi 6b                       // $6b init
+  0397:39 03            pushi 3                        // $3 y
   0399:8f 01              lsp param1 
   039b:5b 04 03           lea 4 3 
   039e:36                push 
@@ -710,32 +712,33 @@
 
         code_0431
   0431:8b 02              lsl local2 
-  0433:72 0a46          lofsa $0a46 // deleteI
+  0433:72 0a46          lofsa $0a46                    // deleteI
   0436:1a                 eq? 
   0437:30 0103            bnt code_053d 
-  043a:39 6c            pushi 6c // $6c dispose
+  043a:39 6c            pushi 6c                       // $6c dispose
   043c:76               push0 
   043d:54 04             self 4 
 
-  043f:39 08            pushi 8 // $8 underBits
-  0441:72 0cc6          lofsa $0cc6 // Are you sure you want to
+  043f:39 08            pushi 8                        // $8 underBits
+  0441:72 0cc6          lofsa $0cc6                    // Are you sure you want to
+
 delete this saved game?
   0444:36                push 
-  0445:39 6a            pushi 6a // $6a new
-  0447:39 51            pushi 51 // $51 button
-  0449:72 0cf8          lofsa $0cf8 //  No 
+  0445:39 6a            pushi 6a                       // $6a new
+  0447:39 51            pushi 51                       // $51 button
+  0449:72 0cf8          lofsa $0cf8                    //  No 
   044c:36                push 
   044d:76               push0 
-  044e:39 51            pushi 51 // $51 button
-  0450:72 0cfd          lofsa $0cfd // Yes
+  044e:39 51            pushi 51                       // $51 button
+  0450:72 0cfd          lofsa $0cfd                    // Yes
   0453:36                push 
   0454:78               push1 
-  0455:46 03ac 0000 10  calle 3ac procedure_0000 10 //  
+  0455:46 03ac 0000 10  calle 3ac procedure_0000 10    //  
 
   045b:18                 not 
   045c:30 0015            bnt code_0474 
-  045f:39 6b            pushi 6b // $6b init
-  0461:39 03            pushi 3 // $3 y
+  045f:39 6b            pushi 6b                       // $6b init
+  0461:39 03            pushi 3                        // $3 y
   0463:8f 01              lsp param1 
   0465:5b 04 03           lea 4 3 
   0468:36                push 
@@ -746,13 +749,13 @@ delete this saved game?
   0471:32 fdf2            jmp code_0266 
 
         code_0474
-  0474:39 17            pushi 17 // $17 name
+  0474:39 17            pushi 17                       // $17 name
   0476:78               push1 
-  0477:39 03            pushi 3 // $3 y
-  0479:39 07            pushi 7 // $7 cel
+  0477:39 03            pushi 3                        // $3 y
+  0479:39 07            pushi 7                        // $7 cel
   047b:5a 0004 0181       lea 4 181 
   0480:36                push 
-  0481:39 17            pushi 17 // $17 name
+  0481:39 17            pushi 17                       // $17 name
   0483:76               push0 
   0484:81 01              lag  
   0486:4a 04             send 4 
@@ -761,10 +764,10 @@ delete this saved game?
   0489:43 63 06         callk DeviceInfo 6 
 
   048c:36                push 
-  048d:38 00b5          pushi b5 // $b5 open
+  048d:38 00b5          pushi b5                       // $b5 open
   0490:78               push1 
   0491:7a               push2 
-  0492:39 6a            pushi 6a // $6a new
+  0492:39 6a            pushi 6a                       // $6a new
   0494:76               push0 
   0495:51 36            class Class_993_0 
   0497:4a 04             send 4 
@@ -786,7 +789,7 @@ delete this saved game?
   04b0:83 04              lal local4 
   04b2:1c                 ne? 
   04b3:30 002f            bnt code_04e5 
-  04b6:38 014d          pushi 14d // $14d write
+  04b6:38 014d          pushi 14d                      // $14d write
   04b9:7a               push2 
   04ba:83 02              lal local2 
   04bc:5a 0014 016c       lea 14 16c 
@@ -795,7 +798,7 @@ delete this saved game?
   04c3:85 00              lat temp0 
   04c5:4a 08             send 8 
 
-  04c7:38 014c          pushi 14c // $14c writeString
+  04c7:38 014c          pushi 14c                      // $14c writeString
   04ca:78               push1 
   04cb:8b 02              lsl local2 
   04cd:35 12              ldi 12 
@@ -805,7 +808,7 @@ delete this saved game?
   04d4:85 00              lat temp0 
   04d6:4a 06             send 6 
 
-  04d8:38 014d          pushi 14d // $14d write
+  04d8:38 014d          pushi 14d                      // $14d write
   04db:7a               push2 
   04dc:5b 04 01           lea 4 1 
   04df:36                push 
@@ -821,23 +824,23 @@ delete this saved game?
         code_04ea
   04ea:35 ff              ldi ff 
   04ec:a5 01              sat temp1 
-  04ee:38 014d          pushi 14d // $14d write
+  04ee:38 014d          pushi 14d                      // $14d write
   04f1:7a               push2 
   04f2:5b 04 01           lea 4 1 
   04f5:36                push 
   04f6:7a               push2 
-  04f7:38 0150          pushi 150 // $150 close
+  04f7:38 0150          pushi 150                      // $150 close
   04fa:76               push0 
-  04fb:39 6c            pushi 6c // $6c dispose
+  04fb:39 6c            pushi 6c                       // $6c dispose
   04fd:76               push0 
   04fe:85 00              lat temp0 
   0500:4a 10             send 10 
 
-  0502:39 04            pushi 4 // $4 x
-  0504:39 08            pushi 8 // $8 underBits
+  0502:39 04            pushi 4                        // $4 x
+  0504:39 08            pushi 8                        // $8 underBits
   0506:5a 0004 0181       lea 4 181 
   050b:36                push 
-  050c:39 17            pushi 17 // $17 name
+  050c:39 17            pushi 17                       // $17 name
   050e:76               push0 
   050f:81 01              lag  
   0511:4a 04             send 4 
@@ -848,13 +851,13 @@ delete this saved game?
   0519:43 63 08         callk DeviceInfo 8 
 
   051c:7a               push2 
-  051d:39 04            pushi 4 // $4 x
+  051d:39 04            pushi 4                        // $4 x
   051f:5a 0004 0181       lea 4 181 
   0524:36                push 
   0525:43 74 04         callk FileIO 4 
 
-  0528:39 6b            pushi 6b // $6b init
-  052a:39 03            pushi 3 // $3 y
+  0528:39 6b            pushi 6b                       // $6b init
+  052a:39 03            pushi 3                        // $3 y
   052c:8f 01              lsp param1 
   052e:5b 04 03           lea 4 3 
   0531:36                push 
@@ -866,7 +869,7 @@ delete this saved game?
 
         code_053d
   053d:8b 02              lsl local2 
-  053f:72 09bc          lofsa $09bc // okI
+  053f:72 09bc          lofsa $09bc                    // okI
   0542:1a                 eq? 
   0543:30 000d            bnt code_0553 
   0546:83 04              lal local4 
@@ -881,7 +884,7 @@ delete this saved game?
   0557:1a                 eq? 
   0558:2e 0006             bt code_0561 
   055b:8b 02              lsl local2 
-  055d:72 09ea          lofsa $09ea // cancelI
+  055d:72 09ea          lofsa $09ea                    // cancelI
   0560:1a                 eq? 
 
         code_0561
@@ -896,7 +899,7 @@ delete this saved game?
   0570:35 01              ldi 1 
   0572:1a                 eq? 
   0573:30 fcf0            bnt code_0266 
-  0576:39 24            pushi 24 // $24 cursor
+  0576:39 24            pushi 24                       // $24 cursor
   0578:78               push1 
   0579:78               push1 
   057a:7a               push2 
@@ -910,45 +913,45 @@ delete this saved game?
   0587:43 46 02         callk StrLen 2 
 
   058a:36                push 
-  058b:39 53            pushi 53 // $53 draw
+  058b:39 53            pushi 53                       // $53 draw
   058d:76               push0 
-  058e:72 098a          lofsa $098a // editI
+  058e:72 098a          lofsa $098a                    // editI
   0591:4a 0a             send a 
 
   0593:32 fcd0            jmp code_0266 
 
         code_0596
   0596:78               push1 
-  0597:38 03e1          pushi 3e1 // $3e1 sel_993
+  0597:38 03e1          pushi 3e1                      // $3e1 sel_993
   059a:43 03 02         callk DisposeScript 2 
 
   059d:78               push1 
-  059e:38 03ac          pushi 3ac // $3ac sel_940
+  059e:38 03ac          pushi 3ac                      // $3ac sel_940
   05a1:43 03 02         callk DisposeScript 2 
 
-  05a4:39 6c            pushi 6c // $6c dispose
+  05a4:39 6c            pushi 6c                       // $6c dispose
   05a6:76               push0 
   05a7:54 04             self 4 
 
   05a9:78               push1 
-  05aa:38 03de          pushi 3de // $3de sel_990
+  05aa:38 03de          pushi 3de                      // $3de sel_990
   05ad:43 03 02         callk DisposeScript 2 
 
   05b0:85 01              lat temp1 
   05b2:48                 ret 
     )
 
-    (method (dispose) // method_000e
+    (method (dispose)                                  // method_000e
   000e:76               push0 
-  000f:46 03a4 0004 00  calle 3a4 procedure_0004 0 //  
+  000f:46 03a4 0004 00  calle 3a4 procedure_0004 0     //  
 
-  0015:39 56            pushi 56 // $56 parseLang
+  0015:39 56            pushi 56                       // $56 parseLang
   0017:78               push1 
   0018:8b 00              lsl local0 
   001a:81 01              lag  
   001c:4a 06             send 6 
 
-  001e:39 6c            pushi 6c // $6c dispose
+  001e:39 6c            pushi 6c                       // $6c dispose
   0020:76               push0 
   0021:59 01            &rest 1 
   0023:57 12 04         super Dialog 4 
@@ -1016,15 +1019,15 @@ delete this saved game?
         seconds $0
         lastSeconds $0
     )
-    (method (doit) // method_06f2
-  06f2:3f 02             link 2 // (var $2)
-  06f4:39 56            pushi 56 // $56 parseLang
+    (method (doit)                                     // method_06f2
+  06f2:3f 02             link 2                        // (var $2)
+  06f4:39 56            pushi 56                       // $56 parseLang
   06f6:76               push0 
   06f7:81 01              lag  
   06f9:4a 04             send 4 
 
   06fb:a5 01              sat temp1 
-  06fd:39 56            pushi 56 // $56 parseLang
+  06fd:39 56            pushi 56                       // $56 parseLang
   06ff:78               push1 
   0700:78               push1 
   0701:81 01              lag  
@@ -1032,114 +1035,114 @@ delete this saved game?
 
   0705:81 26              lag  
   0707:65 0e             aTop window 
-  0709:38 00aa          pushi aa // $aa setSize
+  0709:38 00aa          pushi aa                       // $aa setSize
   070c:76               push0 
-  070d:38 00ac          pushi ac // $ac moveTo
+  070d:38 00ac          pushi ac                       // $ac moveTo
   0710:7a               push2 
-  0711:39 04            pushi 4 // $4 x
+  0711:39 04            pushi 4                        // $4 x
   0713:3c                 dup 
-  0714:72 0aa4          lofsa $0aa4 // text1
+  0714:72 0aa4          lofsa $0aa4                    // text1
   0717:4a 0c             send c 
 
-  0719:39 73            pushi 73 // $73 add
+  0719:39 73            pushi 73                       // $73 add
   071b:78               push1 
-  071c:72 0aa4          lofsa $0aa4 // text1
+  071c:72 0aa4          lofsa $0aa4                    // text1
   071f:36                push 
-  0720:38 00aa          pushi aa // $aa setSize
+  0720:38 00aa          pushi aa                       // $aa setSize
   0723:76               push0 
   0724:54 0a             self a 
 
-  0726:39 1a            pushi 1a // $1a text
+  0726:39 1a            pushi 1a                       // $1a text
   0728:78               push1 
   0729:8f 01              lsp param1 
-  072b:39 21            pushi 21 // $21 font
+  072b:39 21            pushi 21                       // $21 font
   072d:78               push1 
   072e:89 17              lsg  
-  0730:38 00aa          pushi aa // $aa setSize
+  0730:38 00aa          pushi aa                       // $aa setSize
   0733:76               push0 
-  0734:38 00ac          pushi ac // $ac moveTo
+  0734:38 00ac          pushi ac                       // $ac moveTo
   0737:7a               push2 
-  0738:39 04            pushi 4 // $4 x
+  0738:39 04            pushi 4                        // $4 x
   073a:67 16             pTos nsBottom 
-  073c:72 0b04          lofsa $0b04 // oldName
+  073c:72 0b04          lofsa $0b04                    // oldName
   073f:4a 18             send 18 
 
-  0741:39 73            pushi 73 // $73 add
+  0741:39 73            pushi 73                       // $73 add
   0743:78               push1 
-  0744:72 0b04          lofsa $0b04 // oldName
+  0744:72 0b04          lofsa $0b04                    // oldName
   0747:36                push 
-  0748:38 00aa          pushi aa // $aa setSize
+  0748:38 00aa          pushi aa                       // $aa setSize
   074b:76               push0 
   074c:54 0a             self a 
 
-  074e:38 00aa          pushi aa // $aa setSize
+  074e:38 00aa          pushi aa                       // $aa setSize
   0751:76               push0 
-  0752:38 00ac          pushi ac // $ac moveTo
+  0752:38 00ac          pushi ac                       // $ac moveTo
   0755:7a               push2 
-  0756:39 04            pushi 4 // $4 x
+  0756:39 04            pushi 4                        // $4 x
   0758:67 16             pTos nsBottom 
-  075a:72 0ad4          lofsa $0ad4 // text2
+  075a:72 0ad4          lofsa $0ad4                    // text2
   075d:4a 0c             send c 
 
-  075f:39 73            pushi 73 // $73 add
+  075f:39 73            pushi 73                       // $73 add
   0761:78               push1 
-  0762:72 0ad4          lofsa $0ad4 // text2
+  0762:72 0ad4          lofsa $0ad4                    // text2
   0765:36                push 
-  0766:38 00aa          pushi aa // $aa setSize
+  0766:38 00aa          pushi aa                       // $aa setSize
   0769:76               push0 
   076a:54 0a             self a 
 
-  076c:39 1a            pushi 1a // $1a text
+  076c:39 1a            pushi 1a                       // $1a text
   076e:78               push1 
   076f:8f 01              lsp param1 
-  0771:39 21            pushi 21 // $21 font
+  0771:39 21            pushi 21                       // $21 font
   0773:78               push1 
   0774:89 17              lsg  
-  0776:38 00aa          pushi aa // $aa setSize
+  0776:38 00aa          pushi aa                       // $aa setSize
   0779:76               push0 
-  077a:38 00ac          pushi ac // $ac moveTo
+  077a:38 00ac          pushi ac                       // $ac moveTo
   077d:7a               push2 
-  077e:39 04            pushi 4 // $4 x
+  077e:39 04            pushi 4                        // $4 x
   0780:67 16             pTos nsBottom 
-  0782:72 0b34          lofsa $0b34 // newName
+  0782:72 0b34          lofsa $0b34                    // newName
   0785:4a 18             send 18 
 
-  0787:39 73            pushi 73 // $73 add
+  0787:39 73            pushi 73                       // $73 add
   0789:78               push1 
-  078a:72 0b34          lofsa $0b34 // newName
+  078a:72 0b34          lofsa $0b34                    // newName
   078d:36                push 
-  078e:38 00aa          pushi aa // $aa setSize
+  078e:38 00aa          pushi aa                       // $aa setSize
   0791:76               push0 
   0792:54 0a             self a 
 
-  0794:39 0a            pushi a // $a nsLeft
+  0794:39 0a            pushi a                        // $a nsLeft
   0796:78               push1 
   0797:76               push0 
-  0798:39 09            pushi 9 // $9 nsTop
+  0798:39 09            pushi 9                        // $9 nsTop
   079a:78               push1 
   079b:76               push0 
-  079c:38 00aa          pushi aa // $aa setSize
+  079c:38 00aa          pushi aa                       // $aa setSize
   079f:76               push0 
-  07a0:72 0b66          lofsa $0b66 // button1
+  07a0:72 0b66          lofsa $0b66                    // button1
   07a3:4a 10             send 10 
 
-  07a5:39 0a            pushi a // $a nsLeft
+  07a5:39 0a            pushi a                        // $a nsLeft
   07a7:78               push1 
   07a8:76               push0 
-  07a9:39 09            pushi 9 // $9 nsTop
+  07a9:39 09            pushi 9                        // $9 nsTop
   07ab:78               push1 
   07ac:76               push0 
-  07ad:38 00aa          pushi aa // $aa setSize
+  07ad:38 00aa          pushi aa                       // $aa setSize
   07b0:76               push0 
-  07b1:72 0b94          lofsa $0b94 // button2
+  07b1:72 0b94          lofsa $0b94                    // button2
   07b4:4a 10             send 10 
 
-  07b6:38 00ac          pushi ac // $ac moveTo
+  07b6:38 00ac          pushi ac                       // $ac moveTo
   07b9:7a               push2 
   07ba:67 18             pTos nsRight 
-  07bc:39 0c            pushi c // $c nsRight
+  07bc:39 0c            pushi c                        // $c nsRight
   07be:76               push0 
-  07bf:72 0b94          lofsa $0b94 // button2
+  07bf:72 0b94          lofsa $0b94                    // button2
   07c2:4a 04             send 4 
 
   07c4:36                push 
@@ -1148,20 +1151,20 @@ delete this saved game?
   07c8:04                 sub 
   07c9:36                push 
   07ca:67 16             pTos nsBottom 
-  07cc:72 0b94          lofsa $0b94 // button2
+  07cc:72 0b94          lofsa $0b94                    // button2
   07cf:4a 08             send 8 
 
-  07d1:38 00ac          pushi ac // $ac moveTo
+  07d1:38 00ac          pushi ac                       // $ac moveTo
   07d4:7a               push2 
-  07d5:39 0a            pushi a // $a nsLeft
+  07d5:39 0a            pushi a                        // $a nsLeft
   07d7:76               push0 
-  07d8:72 0b94          lofsa $0b94 // button2
+  07d8:72 0b94          lofsa $0b94                    // button2
   07db:4a 04             send 4 
 
   07dd:36                push 
-  07de:39 0c            pushi c // $c nsRight
+  07de:39 0c            pushi c                        // $c nsRight
   07e0:76               push0 
-  07e1:72 0b66          lofsa $0b66 // button1
+  07e1:72 0b66          lofsa $0b66                    // button1
   07e4:4a 04             send 4 
 
   07e6:36                push 
@@ -1170,33 +1173,33 @@ delete this saved game?
   07ea:04                 sub 
   07eb:36                push 
   07ec:67 16             pTos nsBottom 
-  07ee:72 0b66          lofsa $0b66 // button1
+  07ee:72 0b66          lofsa $0b66                    // button1
   07f1:4a 08             send 8 
 
-  07f3:39 73            pushi 73 // $73 add
+  07f3:39 73            pushi 73                       // $73 add
   07f5:7a               push2 
-  07f6:72 0b66          lofsa $0b66 // button1
+  07f6:72 0b66          lofsa $0b66                    // button1
   07f9:36                push 
-  07fa:72 0b94          lofsa $0b94 // button2
+  07fa:72 0b94          lofsa $0b94                    // button2
   07fd:36                push 
-  07fe:38 00aa          pushi aa // $aa setSize
+  07fe:38 00aa          pushi aa                       // $aa setSize
   0801:76               push0 
-  0802:38 00b6          pushi b6 // $b6 center
+  0802:38 00b6          pushi b6                       // $b6 center
   0805:76               push0 
-  0806:38 00b5          pushi b5 // $b5 open
+  0806:38 00b5          pushi b5                       // $b5 open
   0809:7a               push2 
   080a:76               push0 
-  080b:39 ff            pushi ff // $ff syncNum
+  080b:39 ff            pushi ff                       // $ff syncNum
   080d:54 18             self 18 
 
-  080f:39 3c            pushi 3c // $3c doit
+  080f:39 3c            pushi 3c                       // $3c doit
   0811:78               push1 
-  0812:72 0b34          lofsa $0b34 // newName
+  0812:72 0b34          lofsa $0b34                    // newName
   0815:36                push 
   0816:57 12 06         super Dialog 6 
 
   0819:a5 00              sat temp0 
-  081b:39 6c            pushi 6c // $6c dispose
+  081b:39 6c            pushi 6c                       // $6c dispose
   081d:76               push0 
   081e:54 04             self 4 
 
@@ -1213,18 +1216,18 @@ delete this saved game?
   0831:a5 00              sat temp0 
 
         code_0833
-  0833:39 56            pushi 56 // $56 parseLang
+  0833:39 56            pushi 56                       // $56 parseLang
   0835:78               push1 
   0836:8d 01              lst temp1 
   0838:81 01              lag  
   083a:4a 06             send 6 
 
   083c:8d 00              lst temp0 
-  083e:72 0b34          lofsa $0b34 // newName
+  083e:72 0b34          lofsa $0b34                    // newName
   0841:1a                 eq? 
   0842:2e 0006             bt code_084b 
   0845:8d 00              lst temp0 
-  0847:72 0b66          lofsa $0b66 // button1
+  0847:72 0b66          lofsa $0b66                    // button1
   084a:1a                 eq? 
 
         code_084b
@@ -1470,27 +1473,27 @@ delete this saved game?
 
 // EXPORTED procedure #0 ()
 (procedure proc_0888
-  0888:3f 87             link 87 // (var $87)
+  0888:3f 87             link 87                       // (var $87)
 
         code_088a
-  088a:39 56            pushi 56 // $56 parseLang
+  088a:39 56            pushi 56                       // $56 parseLang
   088c:76               push0 
   088d:81 01              lag  
   088f:4a 04             send 4 
 
   0891:a5 86              sat temp134 
-  0893:39 56            pushi 56 // $56 parseLang
+  0893:39 56            pushi 56                       // $56 parseLang
   0895:78               push1 
   0896:78               push1 
   0897:81 01              lag  
   0899:4a 06             send 6 
 
-  089b:39 0d            pushi d // $d lsTop
-  089d:38 03de          pushi 3de // $3de sel_990
+  089b:39 0d            pushi d                        // $d lsTop
+  089d:38 03de          pushi 3de                      // $3de sel_990
   08a0:78               push1 
-  08a1:39 21            pushi 21 // $21 font
+  08a1:39 21            pushi 21                       // $21 font
   08a3:76               push0 
-  08a4:39 29            pushi 29 // $29 edit
+  08a4:39 29            pushi 29                       // $29 edit
   08a6:7a               push2 
   08a7:5b 04 01           lea 4 1 
   08aa:36                push 
@@ -1498,19 +1501,19 @@ delete this saved game?
   08ad:43 47 04         callk StrCpy 4 
 
   08b0:36                push 
-  08b1:39 1d            pushi 1d // $1d back
-  08b3:39 51            pushi 51 // $51 button
-  08b5:72 0d39          lofsa $0d39 // OK
+  08b1:39 1d            pushi 1d                       // $1d back
+  08b3:39 51            pushi 51                       // $51 button
+  08b5:72 0d39          lofsa $0d39                    // OK
   08b8:36                push 
   08b9:78               push1 
-  08ba:39 51            pushi 51 // $51 button
-  08bc:72 0d3c          lofsa $0d3c // Cancel
+  08ba:39 51            pushi 51                       // $51 button
+  08bc:72 0d3c          lofsa $0d3c                    // Cancel
   08bf:36                push 
   08c0:76               push0 
-  08c1:47 ff 00 1a      calle ff procedure_0000 1a //  
+  08c1:47 ff 00 1a      calle ff procedure_0000 1a     //  
 
   08c5:a5 00              sat temp0 
-  08c7:39 56            pushi 56 // $56 parseLang
+  08c7:39 56            pushi 56                       // $56 parseLang
   08c9:78               push1 
   08ca:8d 86              lst temp134 
   08cc:81 01              lag  
@@ -1554,20 +1557,20 @@ delete this saved game?
   0905:32 ff82            jmp code_088a 
 
         code_0908
-  0908:39 03            pushi 3 // $3 y
-  090a:39 04            pushi 4 // $4 x
+  0908:39 03            pushi 3                        // $3 y
+  090a:39 04            pushi 4                        // $4 x
   090c:5b 04 22           lea 4 22 
   090f:36                push 
-  0910:38 03de          pushi 3de // $3de sel_990
+  0910:38 03de          pushi 3de                      // $3de sel_990
   0913:7a               push2 
   0914:5b 04 01           lea 4 1 
   0917:36                push 
   0918:43 48 08         callk Format 8 
 
   091b:36                push 
-  091c:39 21            pushi 21 // $21 font
+  091c:39 21            pushi 21                       // $21 font
   091e:76               push0 
-  091f:47 ff 00 06      calle ff procedure_0000 6 //  
+  091f:47 ff 00 06      calle ff procedure_0000 6      //  
 
   0923:32 ff64            jmp code_088a 
   0926:48                 ret 
@@ -1576,7 +1579,7 @@ delete this saved game?
 
 (procedure proc_05b3
   05b3:7c            pushSelf 
-  05b4:72 064a          lofsa $064a // Restore
+  05b4:72 064a          lofsa $064a                    // Restore
   05b7:1a                 eq? 
   05b8:30 0005            bnt code_05c0 
   05bb:35 00              ldi 0 
@@ -1618,12 +1621,12 @@ delete this saved game?
 )
 
 (procedure proc_0936
-  0936:39 04            pushi 4 // $4 x
-  0938:38 03de          pushi 3de // $3de sel_990
-  093b:39 03            pushi 3 // $3 y
-  093d:39 21            pushi 21 // $21 font
+  0936:39 04            pushi 4                        // $4 x
+  0938:38 03de          pushi 3de                      // $3de sel_990
+  093b:39 03            pushi 3                        // $3 y
+  093d:39 21            pushi 21                       // $21 font
   093f:76               push0 
-  0940:47 ff 00 08      calle ff procedure_0000 8 //  
+  0940:47 ff 00 08      calle ff procedure_0000 8      //  
 
   0944:48                 ret 
   0945:00                bnot 

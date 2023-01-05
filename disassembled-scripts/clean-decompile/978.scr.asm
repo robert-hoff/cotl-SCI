@@ -63,9 +63,9 @@
         signal $0
         palette $0
     )
-    (method (init) // method_006c
-  006c:3f 01             link 1 // (var $1)
-  006e:39 03            pushi 3 // $3 y
+    (method (init)                                     // method_006c
+  006c:3f 01             link 1                        // (var $1)
+  006e:39 03            pushi 3                        // $3 y
   0070:67 2c             pTos view 
   0072:67 2e             pTos loop 
   0074:67 30             pTos cel 
@@ -89,7 +89,7 @@
   0092:65 18             aTop nsRight 
   0094:67 0a             pTos y 
   0096:67 0c             pTos z 
-  0098:39 03            pushi 3 // $3 y
+  0098:39 03            pushi 3                        // $3 y
   009a:67 2c             pTos view 
   009c:67 2e             pTos loop 
   009e:67 30             pTos cel 
@@ -98,7 +98,7 @@
   00a3:02                 add 
   00a4:04                 sub 
   00a5:65 12             aTop nsTop 
-  00a7:39 6b            pushi 6b // $6b init
+  00a7:39 6b            pushi 6b                       // $6b init
   00a9:76               push0 
   00aa:57 2d 04         super PicView 4 
 

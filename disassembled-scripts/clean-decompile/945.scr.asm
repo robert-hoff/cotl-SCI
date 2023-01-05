@@ -35,7 +35,7 @@
         finalY $0
         obstacles $0
     )
-    (method (init) // method_0004
+    (method (init)                                     // method_0004
   0004:87 00              lap paramTotal 
   0006:30 008e            bnt code_0097 
   0009:87 01              lap param1 
@@ -59,7 +59,7 @@
 
   002a:18                 not 
   002b:30 000a            bnt code_0038 
-  002e:38 00ea          pushi ea // $ea obstacles
+  002e:38 00ea          pushi ea                       // $ea obstacles
   0031:76               push0 
   0032:81 02              lag  
   0034:4a 04             send 4 
@@ -70,20 +70,20 @@
   0038:63 28             pToa points 
   003a:30 0007            bnt code_0044 
   003d:7a               push2 
-  003e:39 03            pushi 3 // $3 y
+  003e:39 03            pushi 3                        // $3 y
   0040:36                push 
   0041:43 72 04         callk Memory 4 
 
 
         code_0044
-  0044:39 07            pushi 7 // $7 cel
-  0046:39 04            pushi 4 // $4 x
+  0044:39 07            pushi 7                        // $7 cel
+  0046:39 04            pushi 4                        // $4 x
   0048:76               push0 
   0049:87 01              lap param1 
   004b:4a 04             send 4 
 
   004d:36                push 
-  004e:39 03            pushi 3 // $3 y
+  004e:39 03            pushi 3                        // $3 y
   0050:76               push0 
   0051:87 01              lap param1 
   0053:4a 04             send 4 
@@ -97,7 +97,7 @@
   005f:36                push 
   0060:63 2e             pToa obstacles 
   0062:30 0005            bnt code_006a 
-  0065:39 1b            pushi 1b // $1b elements
+  0065:39 1b            pushi 1b                       // $1b elements
   0067:76               push0 
   0068:4a 04             send 4 
 
@@ -106,7 +106,7 @@
   006a:36                push 
   006b:63 2e             pToa obstacles 
   006d:30 0005            bnt code_0075 
-  0070:39 59            pushi 59 // $59 size
+  0070:39 59            pushi 59                       // $59 size
   0072:76               push0 
   0073:4a 04             send 4 
 
@@ -136,22 +136,22 @@
   0095:65 0a             aTop caller 
 
         code_0097
-  0097:38 00e2          pushi e2 // $e2 setTarget
+  0097:38 00e2          pushi e2                       // $e2 setTarget
   009a:76               push0 
   009b:54 04             self 4 
 
-  009d:39 6b            pushi 6b // $6b init
+  009d:39 6b            pushi 6b                       // $6b init
   009f:76               push0 
   00a0:57 1d 04         super Motion 4 
 
   00a3:48                 ret 
     )
 
-    (method (dispose) // method_00a4
+    (method (dispose)                                  // method_00a4
   00a4:63 28             pToa points 
   00a6:30 0007            bnt code_00b0 
   00a9:7a               push2 
-  00aa:39 03            pushi 3 // $3 y
+  00aa:39 03            pushi 3                        // $3 y
   00ac:36                push 
   00ad:43 72 04         callk Memory 4 
 
@@ -159,31 +159,31 @@
         code_00b0
   00b0:35 00              ldi 0 
   00b2:65 28             aTop points 
-  00b4:39 6c            pushi 6c // $6c dispose
+  00b4:39 6c            pushi 6c                       // $6c dispose
   00b6:76               push0 
   00b7:57 1d 04         super Motion 4 
 
   00ba:48                 ret 
     )
 
-    (method (moveDone) // method_00ec
+    (method (moveDone)                                 // method_00ec
   00ec:7a               push2 
   00ed:67 28             pTos points 
   00ef:67 26             pTos value 
-  00f1:46 03e7 0006 04  calle 3e7 procedure_0006 4 //  
+  00f1:46 03e7 0006 04  calle 3e7 procedure_0006 4     //  
 
   00f7:36                push 
   00f8:34 7777            ldi 7777 
   00fb:1a                 eq? 
   00fc:30 0009            bnt code_0108 
-  00ff:39 64            pushi 64 // $64 moveDone
+  00ff:39 64            pushi 64                       // $64 moveDone
   0101:76               push0 
   0102:57 1d 04         super Motion 4 
 
   0105:32 0005            jmp code_010d 
 
         code_0108
-  0108:39 6b            pushi 6b // $6b init
+  0108:39 6b            pushi 6b                       // $6b init
   010a:76               push0 
   010b:54 04             self 4 
 
@@ -192,11 +192,11 @@
   010d:48                 ret 
     )
 
-    (method (setTarget) // method_00bb
+    (method (setTarget)                                // method_00bb
   00bb:7a               push2 
   00bc:67 28             pTos points 
   00be:67 26             pTos value 
-  00c0:46 03e7 0006 04  calle 3e7 procedure_0006 4 //  
+  00c0:46 03e7 0006 04  calle 3e7 procedure_0006 4     //  
 
   00c6:36                push 
   00c7:34 7777            ldi 7777 
@@ -205,14 +205,14 @@
   00ce:7a               push2 
   00cf:67 28             pTos points 
   00d1:67 26             pTos value 
-  00d3:46 03e7 0006 04  calle 3e7 procedure_0006 4 //  
+  00d3:46 03e7 0006 04  calle 3e7 procedure_0006 4     //  
 
   00d9:65 0c             aTop x 
   00db:7a               push2 
   00dc:67 28             pTos points 
   00de:6b 26            ipToa value 
   00e0:36                push 
-  00e1:46 03e7 0006 04  calle 3e7 procedure_0006 4 //  
+  00e1:46 03e7 0006 04  calle 3e7 procedure_0006 4     //  
 
   00e7:65 0e             aTop y 
   00e9:6b 26            ipToa value 

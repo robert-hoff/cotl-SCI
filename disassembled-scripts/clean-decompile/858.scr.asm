@@ -22,8 +22,8 @@
         elements $0
         size $0
     )
-    (method (maxElement) // method_001f
-  001f:3f 06             link 6 // (var $6)
+    (method (maxElement)                               // method_001f
+  001f:3f 06             link 6                        // (var $6)
   0021:78               push1 
   0022:67 08             pTos elements 
   0024:43 31 02         callk FirstNode 2 
@@ -57,7 +57,7 @@
   0051:48                 ret 
 
         code_0052
-  0052:39 63            pushi 63 // $63 perform
+  0052:39 63            pushi 63                       // $63 perform
   0054:78               push1 
   0055:8f 01              lsp param1 
   0057:59 02            &rest 2 
@@ -152,8 +152,8 @@
         _technique $0
         _strength $0
     )
-    (method (doit) // method_010a
-  010a:39 3c            pushi 3c // $3c doit
+    (method (doit)                                     // method_010a
+  010a:39 3c            pushi 3c                       // $3c doit
   010c:76               push0 
   010d:59 01            &rest 1 
   010f:57 30 04         super Actor 4 
@@ -190,7 +190,7 @@
         code_013c
   013c:63 80             pToa _technique 
   013e:30 000a            bnt code_014b 
-  0141:39 3c            pushi 3c // $3c doit
+  0141:39 3c            pushi 3c                       // $3c doit
   0143:76               push0 
   0144:59 01            &rest 1 
   0146:4a 04             send 4 
@@ -203,7 +203,7 @@
         code_014d
   014d:63 7e             pToa _plan 
   014f:30 0007            bnt code_0159 
-  0152:39 3c            pushi 3c // $3c doit
+  0152:39 3c            pushi 3c                       // $3c doit
   0154:76               push0 
   0155:59 01            &rest 1 
   0157:4a 04             send 4 
@@ -213,10 +213,10 @@
   0159:48                 ret 
     )
 
-    (method (dispose) // method_01b5
+    (method (dispose)                                  // method_01b5
   01b5:63 7a             pToa _parts 
   01b7:30 0009            bnt code_01c3 
-  01ba:39 6c            pushi 6c // $6c dispose
+  01ba:39 6c            pushi 6c                       // $6c dispose
   01bc:76               push0 
   01bd:4a 04             send 4 
 
@@ -226,7 +226,7 @@
         code_01c3
   01c3:63 7c             pToa _techniques 
   01c5:30 0009            bnt code_01d1 
-  01c8:39 6c            pushi 6c // $6c dispose
+  01c8:39 6c            pushi 6c                       // $6c dispose
   01ca:76               push0 
   01cb:4a 04             send 4 
 
@@ -236,7 +236,7 @@
         code_01d1
   01d1:63 7e             pToa _plan 
   01d3:30 0009            bnt code_01df 
-  01d6:39 6c            pushi 6c // $6c dispose
+  01d6:39 6c            pushi 6c                       // $6c dispose
   01d8:76               push0 
   01d9:4a 04             send 4 
 
@@ -244,7 +244,7 @@
   01dd:65 7e             aTop _plan 
 
         code_01df
-  01df:39 6c            pushi 6c // $6c dispose
+  01df:39 6c            pushi 6c                       // $6c dispose
   01e1:76               push0 
   01e2:59 01            &rest 1 
   01e4:57 30 04         super Actor 4 
@@ -252,7 +252,7 @@
   01e7:48                 ret 
     )
 
-    (method (handleEvent) // method_015a
+    (method (handleEvent)                              // method_015a
   015a:67 82             pTos _strength 
   015c:35 00              ldi 0 
   015e:24                 le? 
@@ -261,7 +261,7 @@
   0164:48                 ret 
 
         code_0165
-  0165:38 0081          pushi 81 // $81 handleEvent
+  0165:38 0081          pushi 81                       // $81 handleEvent
   0168:78               push1 
   0169:8f 01              lsp param1 
   016b:59 02            &rest 2 
@@ -280,9 +280,9 @@
         code_017e
   017e:63 7c             pToa _techniques 
   0180:30 000c            bnt code_018f 
-  0183:39 75            pushi 75 // $75 firstTrue
-  0185:39 03            pushi 3 // $3 y
-  0187:38 0081          pushi 81 // $81 handleEvent
+  0183:39 75            pushi 75                       // $75 firstTrue
+  0185:39 03            pushi 3                        // $3 y
+  0187:38 0081          pushi 81                       // $81 handleEvent
   018a:8f 01              lsp param1 
   018c:7c            pushSelf 
   018d:4a 0a             send a 
@@ -291,7 +291,7 @@
         code_018f
   018f:63 7e             pToa _plan 
   0191:30 0009            bnt code_019d 
-  0194:38 0081          pushi 81 // $81 handleEvent
+  0194:38 0081          pushi 81                       // $81 handleEvent
   0197:7a               push2 
   0198:8f 01              lsp param1 
   019a:7c            pushSelf 
@@ -302,7 +302,7 @@
   019d:48                 ret 
     )
 
-    (method (doVerb) // method_019e
+    (method (doVerb)                                   // method_019e
   019e:63 6e             pToa fight 
   01a0:30 0006            bnt code_01a9 
   01a3:35 01              ldi 1 
@@ -310,7 +310,7 @@
   01a6:32 000b            jmp code_01b4 
 
         code_01a9
-  01a9:38 010c          pushi 10c // $10c doVerb
+  01a9:38 010c          pushi 10c                      // $10c doVerb
   01ac:78               push1 
   01ad:8f 01              lsp param1 
   01af:59 02            &rest 2 
@@ -321,12 +321,12 @@
   01b4:48                 ret 
     )
 
-    (method (parts) // method_0282
+    (method (parts)                                    // method_0282
   0282:87 00              lap paramTotal 
   0284:30 0022            bnt code_02a9 
   0287:63 7a             pToa _parts 
   0289:2e 0007             bt code_0293 
-  028c:39 6a            pushi 6a // $6a new
+  028c:39 6a            pushi 6a                       // $6a new
   028e:76               push0 
   028f:51 7f            class MList 
   0291:4a 04             send 4 
@@ -334,16 +334,16 @@
 
         code_0293
   0293:65 7a             aTop _parts 
-  0295:39 73            pushi 73 // $73 add
+  0295:39 73            pushi 73                       // $73 add
   0297:76               push0 
   0298:59 01            &rest 1 
-  029a:39 74            pushi 74 // $74 eachElementDo
+  029a:39 74            pushi 74                       // $74 eachElementDo
   029c:7a               push2 
-  029d:39 2d            pushi 2d // $2d client
+  029d:39 2d            pushi 2d                       // $2d client
   029f:7c            pushSelf 
-  02a0:39 74            pushi 74 // $74 eachElementDo
+  02a0:39 74            pushi 74                       // $74 eachElementDo
   02a2:78               push1 
-  02a3:39 6b            pushi 6b // $6b init
+  02a3:39 6b            pushi 6b                       // $6b init
   02a5:63 7a             pToa _parts 
   02a7:4a 12             send 12 
 
@@ -353,12 +353,12 @@
   02ab:48                 ret 
     )
 
-    (method (techniques) // method_02ac
+    (method (techniques)                               // method_02ac
   02ac:87 00              lap paramTotal 
   02ae:30 001d            bnt code_02ce 
   02b1:63 7c             pToa _techniques 
   02b3:2e 0007             bt code_02bd 
-  02b6:39 6a            pushi 6a // $6a new
+  02b6:39 6a            pushi 6a                       // $6a new
   02b8:76               push0 
   02b9:51 7f            class MList 
   02bb:4a 04             send 4 
@@ -366,12 +366,12 @@
 
         code_02bd
   02bd:65 7c             aTop _techniques 
-  02bf:39 73            pushi 73 // $73 add
+  02bf:39 73            pushi 73                       // $73 add
   02c1:76               push0 
   02c2:59 01            &rest 1 
-  02c4:39 74            pushi 74 // $74 eachElementDo
+  02c4:39 74            pushi 74                       // $74 eachElementDo
   02c6:7a               push2 
-  02c7:39 2d            pushi 2d // $2d client
+  02c7:39 2d            pushi 2d                       // $2d client
   02c9:7c            pushSelf 
   02ca:63 7c             pToa _techniques 
   02cc:4a 0c             send c 
@@ -382,13 +382,13 @@
   02d0:48                 ret 
     )
 
-    (method (notice) // method_02d1
-  02d1:3f 01             link 1 // (var $1)
+    (method (notice)                                   // method_02d1
+  02d1:3f 01             link 1                        // (var $1)
   02d3:63 7e             pToa _plan 
   02d5:30 0010            bnt code_02e8 
   02d8:63 4e             pToa script 
   02da:a5 00              sat temp0 
-  02dc:39 6b            pushi 6b // $6b init
+  02dc:39 6b            pushi 6b                       // $6b init
   02de:78               push1 
   02df:7c            pushSelf 
   02e0:63 7e             pToa _plan 
@@ -401,11 +401,11 @@
   02e8:48                 ret 
     )
 
-    (method (suffer) // method_02e9
-  02e9:3f 03             link 3 // (var $3)
-  02eb:39 75            pushi 75 // $75 firstTrue
+    (method (suffer)                                   // method_02e9
+  02e9:3f 03             link 3                        // (var $3)
+  02eb:39 75            pushi 75                       // $75 firstTrue
   02ed:7a               push2 
-  02ee:38 024a          pushi 24a // $24a suffer
+  02ee:38 024a          pushi 24a                      // $24a suffer
   02f1:8f 01              lsp param1 
   02f3:63 7a             pToa _parts 
   02f5:4a 08             send 8 
@@ -413,14 +413,14 @@
   02f7:a5 00              sat temp0 
   02f9:30 0035            bnt code_0331 
   02fc:67 82             pTos _strength 
-  02fe:38 0252          pushi 252 // $252 strength
+  02fe:38 0252          pushi 252                      // $252 strength
   0301:76               push0 
   0302:87 01              lap param1 
   0304:4a 04             send 4 
 
   0306:04                 sub 
   0307:65 82             aTop _strength 
-  0309:38 0252          pushi 252 // $252 strength
+  0309:38 0252          pushi 252                      // $252 strength
   030c:76               push0 
   030d:87 01              lap param1 
   030f:4a 04             send 4 
@@ -428,14 +428,14 @@
   0311:a5 01              sat temp1 
   0313:63 72             pToa ticks 
   0315:a5 02              sat temp2 
-  0317:39 03            pushi 3 // $3 y
+  0317:39 03            pushi 3                        // $3 y
   0319:67 78             pTos parriedCycles 
   031b:67 72             pTos ticks 
   031d:8d 01              lst temp1 
-  031f:46 03e7 0003 06  calle 3e7 procedure_0003 6 //  
+  031f:46 03e7 0003 06  calle 3e7 procedure_0003 6     //  
 
   0325:65 72             aTop ticks 
-  0327:38 024b          pushi 24b // $24b agonize
+  0327:38 024b          pushi 24b                      // $24b agonize
   032a:7a               push2 
   032b:8f 01              lsp param1 
   032d:8d 00              lst temp0 
@@ -446,13 +446,13 @@
   0331:48                 ret 
     )
 
-    (method (agonize) // method_0332
+    (method (agonize)                                  // method_0332
   0332:48                 ret 
   0333:00                bnot 
     )
 
-    (method (telegraph) // method_01e8
-  01e8:38 0249          pushi 249 // $249 notice
+    (method (telegraph)                                // method_01e8
+  01e8:38 0249          pushi 249                      // $249 notice
   01eb:78               push1 
   01ec:8f 01              lsp param1 
   01ee:63 70             pToa opponent 
@@ -461,12 +461,12 @@
   01f2:48                 ret 
     )
 
-    (method (inflict) // method_01f3
-  01f3:3f 04             link 4 // (var $4)
+    (method (inflict)                                  // method_01f3
+  01f3:3f 04             link 4                        // (var $4)
   01f5:7c            pushSelf 
-  01f6:39 2d            pushi 2d // $2d client
+  01f6:39 2d            pushi 2d                       // $2d client
   01f8:76               push0 
-  01f9:38 0250          pushi 250 // $250 target
+  01f9:38 0250          pushi 250                      // $250 target
   01fc:76               push0 
   01fd:87 01              lap param1 
   01ff:4a 04             send 4 
@@ -479,14 +479,14 @@
   0209:48                 ret 
 
         code_020a
-  020a:38 024f          pushi 24f // $24f technique
+  020a:38 024f          pushi 24f                      // $24f technique
   020d:76               push0 
   020e:63 70             pToa opponent 
   0210:4a 04             send 4 
 
   0212:a5 01              sat temp1 
   0214:30 000d            bnt code_0224 
-  0217:38 00d7          pushi d7 // $d7 completed
+  0217:38 00d7          pushi d7                       // $d7 completed
   021a:76               push0 
   021b:4a 04             send 4 
 
@@ -497,11 +497,11 @@
         code_0224
   0224:7a               push2 
   0225:76               push0 
-  0226:39 64            pushi 64 // $64 moveDone
+  0226:39 64            pushi 64                       // $64 moveDone
   0228:43 3c 04         callk Random 4 
 
   022b:a5 02              sat temp2 
-  022d:38 0251          pushi 251 // $251 success
+  022d:38 0251          pushi 251                      // $251 success
   0230:7a               push2 
   0231:8f 01              lsp param1 
   0233:8d 01              lst temp1 
@@ -513,7 +513,7 @@
   023d:24                 le? 
   023e:a5 00              sat temp0 
   0240:30 000f            bnt code_0252 
-  0243:38 024a          pushi 24a // $24a suffer
+  0243:38 024a          pushi 24a                      // $24a suffer
   0246:78               push1 
   0247:8f 01              lsp param1 
   0249:63 70             pToa opponent 
@@ -525,21 +525,21 @@
         code_0252
   0252:85 01              lat temp1 
   0254:30 0028            bnt code_027f 
-  0257:38 0250          pushi 250 // $250 target
+  0257:38 0250          pushi 250                      // $250 target
   025a:76               push0 
   025b:4a 04             send 4 
 
   025d:36                push 
-  025e:38 0250          pushi 250 // $250 target
+  025e:38 0250          pushi 250                      // $250 target
   0261:76               push0 
   0262:87 01              lap param1 
   0264:4a 04             send 4 
 
   0266:1a                 eq? 
   0267:30 0015            bnt code_027f 
-  026a:39 60            pushi 60 // $60 frame
-  026c:39 0c            pushi c // $c nsRight
-  026e:38 0252          pushi 252 // $252 strength
+  026a:39 60            pushi 60                       // $60 frame
+  026c:39 0c            pushi c                        // $c nsRight
+  026e:38 0252          pushi 252                      // $252 strength
   0271:76               push0 
   0272:87 01              lap param1 
   0274:4a 04             send 4 
@@ -557,8 +557,8 @@
   0281:48                 ret 
     )
 
-    (method (plan) // method_00a8
-  00a8:3f 01             link 1 // (var $1)
+    (method (plan)                                     // method_00a8
+  00a8:3f 01             link 1                        // (var $1)
   00aa:87 00              lap paramTotal 
   00ac:30 0027            bnt code_00d6 
   00af:63 4e             pToa script 
@@ -568,7 +568,7 @@
   00b6:43 06 02         callk IsObject 2 
 
   00b9:30 0007            bnt code_00c3 
-  00bc:39 6c            pushi 6c // $6c dispose
+  00bc:39 6c            pushi 6c                       // $6c dispose
   00be:76               push0 
   00bf:63 7e             pToa _plan 
   00c1:4a 04             send 4 
@@ -578,7 +578,7 @@
   00c3:87 01              lap param1 
   00c5:65 7e             aTop _plan 
   00c7:30 0008            bnt code_00d2 
-  00ca:39 6b            pushi 6b // $6b init
+  00ca:39 6b            pushi 6b                       // $6b init
   00cc:78               push1 
   00cd:7c            pushSelf 
   00ce:59 02            &rest 2 
@@ -594,8 +594,8 @@
   00d8:48                 ret 
     )
 
-    (method (technique) // method_00d9
-  00d9:3f 01             link 1 // (var $1)
+    (method (technique)                                // method_00d9
+  00d9:3f 01             link 1                        // (var $1)
   00db:87 00              lap paramTotal 
   00dd:30 0027            bnt code_0107 
   00e0:63 4e             pToa script 
@@ -605,7 +605,7 @@
   00e7:43 06 02         callk IsObject 2 
 
   00ea:30 0007            bnt code_00f4 
-  00ed:39 6c            pushi 6c // $6c dispose
+  00ed:39 6c            pushi 6c                       // $6c dispose
   00ef:76               push0 
   00f0:63 80             pToa _technique 
   00f2:4a 04             send 4 
@@ -615,7 +615,7 @@
   00f4:87 01              lap param1 
   00f6:65 80             aTop _technique 
   00f8:30 0008            bnt code_0103 
-  00fb:39 6b            pushi 6b // $6b init
+  00fb:39 6b            pushi 6b                       // $6b init
   00fd:78               push1 
   00fe:7c            pushSelf 
   00ff:59 02            &rest 2 
@@ -662,8 +662,8 @@
         type $0
         _success $64
     )
-    (method (init) // method_04ee
-  04ee:3f 02             link 2 // (var $2)
+    (method (init)                                     // method_04ee
+  04ee:3f 02             link 2                        // (var $2)
   04f0:81 58              lag  
   04f2:65 18             aTop lastTicks 
   04f4:35 00              ldi 0 
@@ -679,14 +679,14 @@
         code_0504
   0504:a5 00              sat temp0 
   0506:30 0008            bnt code_0511 
-  0509:38 008a          pushi 8a // $8a script
+  0509:38 008a          pushi 8a                       // $8a script
   050c:76               push0 
   050d:4a 04             send 4 
 
   050f:a5 01              sat temp1 
 
         code_0511
-  0511:39 6b            pushi 6b // $6b init
+  0511:39 6b            pushi 6b                       // $6b init
   0513:78               push1 
   0514:8d 00              lst temp0 
   0516:59 02            &rest 2 
@@ -694,7 +694,7 @@
 
   051b:85 00              lat temp0 
   051d:30 0008            bnt code_0528 
-  0520:38 008a          pushi 8a // $8a script
+  0520:38 008a          pushi 8a                       // $8a script
   0523:78               push1 
   0524:8d 01              lst temp1 
   0526:4a 06             send 6 
@@ -704,32 +704,32 @@
   0528:48                 ret 
     )
 
-    (method (dispose) // method_0499
-  0499:3f 02             link 2 // (var $2)
+    (method (dispose)                                  // method_0499
+  0499:3f 02             link 2                        // (var $2)
   049b:63 08             pToa client 
   049d:a5 00              sat temp0 
-  049f:38 008a          pushi 8a // $8a script
+  049f:38 008a          pushi 8a                       // $8a script
   04a2:76               push0 
   04a3:4a 04             send 4 
 
   04a5:a5 01              sat temp1 
-  04a7:38 0245          pushi 245 // $245 _technique
+  04a7:38 0245          pushi 245                      // $245 _technique
   04aa:78               push1 
   04ab:76               push0 
-  04ac:38 0240          pushi 240 // $240 idleCycles
+  04ac:38 0240          pushi 240                      // $240 idleCycles
   04af:78               push1 
   04b0:76               push0 
   04b1:63 08             pToa client 
   04b3:4a 0c             send c 
 
-  04b5:39 6c            pushi 6c // $6c dispose
+  04b5:39 6c            pushi 6c                       // $6c dispose
   04b7:76               push0 
   04b8:59 01            &rest 1 
   04ba:57 06 04         super Script 4 
 
   04bd:85 00              lat temp0 
   04bf:65 08             aTop client 
-  04c1:38 008a          pushi 8a // $8a script
+  04c1:38 008a          pushi 8a                       // $8a script
   04c4:78               push1 
   04c5:8d 01              lst temp1 
   04c7:4a 06             send 6 
@@ -737,8 +737,8 @@
   04c9:48                 ret 
     )
 
-    (method (handleEvent) // method_0547
-  0547:39 4c            pushi 4c // $4c claimed
+    (method (handleEvent)                              // method_0547
+  0547:39 4c            pushi 4c                       // $4c claimed
   0549:76               push0 
   054a:87 01              lap param1 
   054c:4a 04             send 4 
@@ -748,20 +748,20 @@
   0553:32 00ae            jmp code_0604 
 
         code_0556
-  0556:38 0241          pushi 241 // $241 parriedCycles
+  0556:38 0241          pushi 241                      // $241 parriedCycles
   0559:76               push0 
   055a:63 08             pToa client 
   055c:4a 04             send 4 
 
   055e:2e 0015             bt code_0576 
-  0561:38 0087          pushi 87 // $87 ticks
+  0561:38 0087          pushi 87                       // $87 ticks
   0564:76               push0 
   0565:63 08             pToa client 
   0567:4a 04             send 4 
 
   0569:30 0010            bnt code_057c 
   056c:67 08             pTos client 
-  056e:39 2d            pushi 2d // $2d client
+  056e:39 2d            pushi 2d                       // $2d client
   0570:76               push0 
   0571:63 30             pToa target 
   0573:4a 04             send 4 
@@ -775,7 +775,7 @@
         code_057c
   057c:63 24             pToa key 
   057e:30 0018            bnt code_0599 
-  0581:39 22            pushi 22 // $22 type
+  0581:39 22            pushi 22                       // $22 type
   0583:76               push0 
   0584:87 01              lap param1 
   0586:4a 04             send 4 
@@ -785,7 +785,7 @@
   058b:12                 and 
   058c:30 000a            bnt code_0599 
   058f:67 24             pTos key 
-  0591:39 28            pushi 28 // $28 message
+  0591:39 28            pushi 28                       // $28 message
   0593:76               push0 
   0594:87 01              lap param1 
   0596:4a 04             send 4 
@@ -796,7 +796,7 @@
   0599:2e 0038             bt code_05d4 
   059c:63 26             pToa dir 
   059e:30 0018            bnt code_05b9 
-  05a1:39 22            pushi 22 // $22 type
+  05a1:39 22            pushi 22                       // $22 type
   05a3:76               push0 
   05a4:87 01              lap param1 
   05a6:4a 04             send 4 
@@ -806,7 +806,7 @@
   05ab:12                 and 
   05ac:30 000a            bnt code_05b9 
   05af:67 26             pTos dir 
-  05b1:39 28            pushi 28 // $28 message
+  05b1:39 28            pushi 28                       // $28 message
   05b3:76               push0 
   05b4:87 01              lap param1 
   05b6:4a 04             send 4 
@@ -815,7 +815,7 @@
 
         code_05b9
   05b9:2e 0018             bt code_05d4 
-  05bc:39 22            pushi 22 // $22 type
+  05bc:39 22            pushi 22                       // $22 type
   05be:76               push0 
   05bf:87 01              lap param1 
   05c1:4a 04             send 4 
@@ -824,7 +824,7 @@
   05c4:35 01              ldi 1 
   05c6:12                 and 
   05c7:30 003a            bnt code_0604 
-  05ca:38 00c4          pushi c4 // $c4 onMe
+  05ca:38 00c4          pushi c4                       // $c4 onMe
   05cd:78               push1 
   05ce:8f 01              lsp param1 
   05d0:63 30             pToa target 
@@ -833,14 +833,14 @@
 
         code_05d4
   05d4:30 002d            bnt code_0604 
-  05d7:38 008a          pushi 8a // $8a script
+  05d7:38 008a          pushi 8a                       // $8a script
   05da:76               push0 
   05db:63 08             pToa client 
   05dd:4a 04             send 4 
 
   05df:18                 not 
   05e0:30 0017            bnt code_05fa 
-  05e3:38 0245          pushi 245 // $245 _technique
+  05e3:38 0245          pushi 245                      // $245 _technique
   05e6:76               push0 
   05e7:63 08             pToa client 
   05e9:4a 04             send 4 
@@ -849,7 +849,7 @@
   05ec:5c              selfID 
   05ed:1c                 ne? 
   05ee:30 0009            bnt code_05fa 
-  05f1:38 024f          pushi 24f // $24f technique
+  05f1:38 024f          pushi 24f                      // $24f technique
   05f4:78               push1 
   05f5:7c            pushSelf 
   05f6:63 08             pToa client 
@@ -857,7 +857,7 @@
 
 
         code_05fa
-  05fa:39 4c            pushi 4c // $4c claimed
+  05fa:39 4c            pushi 4c                       // $4c claimed
   05fc:78               push1 
   05fd:78               push1 
   05fe:87 01              lap param1 
@@ -870,12 +870,12 @@
   0605:00                bnot 
     )
 
-    (method (suffer) // method_0529
+    (method (suffer)                                   // method_0529
   0529:63 22             pToa completed 
   052b:30 000d            bnt code_053b 
   052e:63 30             pToa target 
   0530:30 0008            bnt code_053b 
-  0533:38 00c4          pushi c4 // $c4 onMe
+  0533:38 00c4          pushi c4                       // $c4 onMe
   0536:78               push1 
   0537:8f 01              lsp param1 
   0539:4a 06             send 6 
@@ -894,8 +894,8 @@
   0546:48                 ret 
     )
 
-    (method (onMe) // method_048e
-  048e:38 00c4          pushi c4 // $c4 onMe
+    (method (onMe)                                     // method_048e
+  048e:38 00c4          pushi c4                       // $c4 onMe
   0491:76               push0 
   0492:59 01            &rest 1 
   0494:63 30             pToa target 
@@ -904,7 +904,7 @@
   0498:48                 ret 
     )
 
-    (method (setTarget) // method_0484
+    (method (setTarget)                                // method_0484
   0484:87 00              lap paramTotal 
   0486:30 0004            bnt code_048d 
   0489:87 01              lap param1 
@@ -914,7 +914,7 @@
   048d:48                 ret 
     )
 
-    (method (success) // method_04ca
+    (method (success)                                  // method_04ca
   04ca:87 00              lap paramTotal 
   04cc:30 0004            bnt code_04d3 
   04cf:87 01              lap param1 
@@ -925,7 +925,7 @@
   04d5:48                 ret 
     )
 
-    (method (strength) // method_04d6
+    (method (strength)                                 // method_04d6
   04d6:87 00              lap paramTotal 
   04d8:30 0004            bnt code_04df 
   04db:87 01              lap param1 
@@ -936,7 +936,7 @@
   04e1:48                 ret 
     )
 
-    (method (delay) // method_04e2
+    (method (delay)                                    // method_04e2
   04e2:87 00              lap paramTotal 
   04e4:30 0004            bnt code_04eb 
   04e7:87 01              lap param1 
@@ -973,21 +973,21 @@
         client $0
         _strength $0
     )
-    (method (onMe) // method_06b2
+    (method (onMe)                                     // method_06b2
   06b2:78               push1 
   06b3:8f 01              lsp param1 
   06b5:43 06 02         callk IsObject 2 
 
   06b8:30 001a            bnt code_06d5 
-  06bb:39 71            pushi 71 // $71 respondsTo
+  06bb:39 71            pushi 71                       // $71 respondsTo
   06bd:78               push1 
-  06be:38 0250          pushi 250 // $250 target
+  06be:38 0250          pushi 250                      // $250 target
   06c1:87 01              lap param1 
   06c3:4a 06             send 6 
 
   06c5:30 000d            bnt code_06d5 
   06c8:7c            pushSelf 
-  06c9:38 0250          pushi 250 // $250 target
+  06c9:38 0250          pushi 250                      // $250 target
   06cc:76               push0 
   06cd:87 01              lap param1 
   06cf:4a 04             send 4 
@@ -996,7 +996,7 @@
   06d2:32 000b            jmp code_06e0 
 
         code_06d5
-  06d5:38 00c4          pushi c4 // $c4 onMe
+  06d5:38 00c4          pushi c4                       // $c4 onMe
   06d8:78               push1 
   06d9:8f 01              lsp param1 
   06db:59 02            &rest 2 
@@ -1007,15 +1007,15 @@
   06e0:48                 ret 
     )
 
-    (method (suffer) // method_06e1
-  06e1:38 00c4          pushi c4 // $c4 onMe
+    (method (suffer)                                   // method_06e1
+  06e1:38 00c4          pushi c4                       // $c4 onMe
   06e4:78               push1 
   06e5:8f 01              lsp param1 
   06e7:54 06             self 6 
 
   06e9:30 000f            bnt code_06fb 
   06ec:67 2e             pTos _strength 
-  06ee:38 0252          pushi 252 // $252 strength
+  06ee:38 0252          pushi 252                      // $252 strength
   06f1:76               push0 
   06f2:87 01              lap param1 
   06f4:4a 04             send 4 
@@ -1028,7 +1028,7 @@
   06fb:48                 ret 
     )
 
-    (method (strength) // method_06fc
+    (method (strength)                                 // method_06fc
   06fc:87 00              lap paramTotal 
   06fe:30 0004            bnt code_0705 
   0701:87 01              lap param1 
@@ -1061,14 +1061,14 @@
         badGuy $0
         chanceTable $0
     )
-    (method (init) // method_0788
+    (method (init)                                     // method_0788
   0788:63 22             pToa goodGuy 
   078a:18                 not 
   078b:30 0011            bnt code_079f 
-  078e:38 023e          pushi 23e // $23e fight
+  078e:38 023e          pushi 23e                      // $23e fight
   0791:78               push1 
   0792:7c            pushSelf 
-  0793:38 023f          pushi 23f // $23f opponent
+  0793:38 023f          pushi 23f                      // $23f opponent
   0796:78               push1 
   0797:8f 03              lsp param3 
   0799:87 02              lap param2 
@@ -1080,10 +1080,10 @@
   079f:63 24             pToa badGuy 
   07a1:18                 not 
   07a2:30 0011            bnt code_07b6 
-  07a5:38 023e          pushi 23e // $23e fight
+  07a5:38 023e          pushi 23e                      // $23e fight
   07a8:78               push1 
   07a9:7c            pushSelf 
-  07aa:38 023f          pushi 23f // $23f opponent
+  07aa:38 023f          pushi 23f                      // $23f opponent
   07ad:78               push1 
   07ae:8f 02              lsp param2 
   07b0:87 03              lap param3 
@@ -1094,7 +1094,7 @@
         code_07b6
   07b6:87 00              lap paramTotal 
   07b8:30 000a            bnt code_07c5 
-  07bb:39 6b            pushi 6b // $6b init
+  07bb:39 6b            pushi 6b                       // $6b init
   07bd:78               push1 
   07be:8f 01              lsp param1 
   07c0:59 05            &rest 5 
@@ -1102,12 +1102,12 @@
 
 
         code_07c5
-  07c5:39 6b            pushi 6b // $6b init
+  07c5:39 6b            pushi 6b                       // $6b init
   07c7:76               push0 
   07c8:63 22             pToa goodGuy 
   07ca:4a 04             send 4 
 
-  07cc:39 6b            pushi 6b // $6b init
+  07cc:39 6b            pushi 6b                       // $6b init
   07ce:76               push0 
   07cf:63 24             pToa badGuy 
   07d1:4a 04             send 4 
@@ -1115,14 +1115,14 @@
   07d3:63 26             pToa chanceTable 
   07d5:18                 not 
   07d6:30 0035            bnt code_080e 
-  07d9:38 023a          pushi 23a // $23a data
+  07d9:38 023a          pushi 23a                      // $23a data
   07dc:78               push1 
   07dd:8f 04              lsp param4 
-  07df:38 023b          pushi 23b // $23b columns
+  07df:38 023b          pushi 23b                      // $23b columns
   07e2:78               push1 
-  07e3:39 59            pushi 59 // $59 size
+  07e3:39 59            pushi 59                       // $59 size
   07e5:76               push0 
-  07e6:38 0248          pushi 248 // $248 techniques
+  07e6:38 0248          pushi 248                      // $248 techniques
   07e9:76               push0 
   07ea:63 22             pToa goodGuy 
   07ec:4a 04             send 4 
@@ -1130,11 +1130,11 @@
   07ee:4a 04             send 4 
 
   07f0:36                push 
-  07f1:38 023c          pushi 23c // $23c rows
+  07f1:38 023c          pushi 23c                      // $23c rows
   07f4:78               push1 
-  07f5:39 59            pushi 59 // $59 size
+  07f5:39 59            pushi 59                       // $59 size
   07f7:76               push0 
-  07f8:38 0248          pushi 248 // $248 techniques
+  07f8:38 0248          pushi 248                      // $248 techniques
   07fb:76               push0 
   07fc:63 24             pToa badGuy 
   07fe:4a 04             send 4 
@@ -1142,7 +1142,7 @@
   0800:4a 04             send 4 
 
   0802:36                push 
-  0803:39 6a            pushi 6a // $6a new
+  0803:39 6a            pushi 6a                       // $6a new
   0805:76               push0 
   0806:51 7e            class Table 
   0808:4a 04             send 4 
@@ -1155,10 +1155,10 @@
   080e:48                 ret 
     )
 
-    (method (dispose) // method_080f
+    (method (dispose)                                  // method_080f
   080f:63 26             pToa chanceTable 
   0811:30 0009            bnt code_081d 
-  0814:39 6c            pushi 6c // $6c dispose
+  0814:39 6c            pushi 6c                       // $6c dispose
   0816:76               push0 
   0817:4a 04             send 4 
 
@@ -1169,7 +1169,7 @@
   081d:35 00              ldi 0 
   081f:65 22             aTop goodGuy 
   0821:65 24             aTop badGuy 
-  0823:39 6c            pushi 6c // $6c dispose
+  0823:39 6c            pushi 6c                       // $6c dispose
   0825:76               push0 
   0826:59 01            &rest 1 
   0828:57 06 04         super Script 4 
@@ -1177,8 +1177,8 @@
   082b:48                 ret 
     )
 
-    (method (success) // method_082c
-  082c:3f 0b             link b // (var $b)
+    (method (success)                                  // method_082c
+  082c:3f 0b             link b                        // (var $b)
   082e:8f 00              lsp paramTotal 
   0830:35 02              ldi 2 
   0832:22                 lt? 
@@ -1188,7 +1188,7 @@
 
         code_0839
   0839:30 000b            bnt code_0847 
-  083c:38 0251          pushi 251 // $251 success
+  083c:38 0251          pushi 251                      // $251 success
   083f:76               push0 
   0840:87 01              lap param1 
   0842:4a 04             send 4 
@@ -1196,20 +1196,20 @@
   0844:32 006b            jmp code_08b2 
 
         code_0847
-  0847:38 0248          pushi 248 // $248 techniques
+  0847:38 0248          pushi 248                      // $248 techniques
   084a:76               push0 
   084b:63 22             pToa goodGuy 
   084d:4a 04             send 4 
 
   084f:a5 01              sat temp1 
-  0851:38 0248          pushi 248 // $248 techniques
+  0851:38 0248          pushi 248                      // $248 techniques
   0854:76               push0 
   0855:63 24             pToa badGuy 
   0857:4a 04             send 4 
 
   0859:a5 02              sat temp2 
   085b:67 22             pTos goodGuy 
-  085d:39 2d            pushi 2d // $2d client
+  085d:39 2d            pushi 2d                       // $2d client
   085f:76               push0 
   0860:87 01              lap param1 
   0862:4a 04             send 4 
@@ -1229,21 +1229,21 @@
   0879:a5 04              sat temp4 
 
         code_087b
-  087b:38 0080          pushi 80 // $80 indexOf
+  087b:38 0080          pushi 80                       // $80 indexOf
   087e:78               push1 
   087f:8d 04              lst temp4 
   0881:85 02              lat temp2 
   0883:4a 06             send 6 
 
   0885:a5 09              sat temp9 
-  0887:38 0080          pushi 80 // $80 indexOf
+  0887:38 0080          pushi 80                       // $80 indexOf
   088a:78               push1 
   088b:8d 03              lst temp3 
   088d:85 01              lat temp1 
   088f:4a 06             send 6 
 
   0891:a5 0a              sat temp10 
-  0893:39 43            pushi 43 // $43 at
+  0893:39 43            pushi 43                       // $43 at
   0895:7a               push2 
   0896:8d 09              lst temp9 
   0898:36                push 
@@ -1251,13 +1251,13 @@
   089b:4a 08             send 8 
 
   089d:a5 08              sat temp8 
-  089f:38 0251          pushi 251 // $251 success
+  089f:38 0251          pushi 251                      // $251 success
   08a2:76               push0 
   08a3:87 01              lap param1 
   08a5:4a 04             send 4 
 
   08a7:36                push 
-  08a8:39 64            pushi 64 // $64 moveDone
+  08a8:39 64            pushi 64                       // $64 moveDone
   08aa:85 08              lat temp8 
   08ac:04                 sub 
   08ad:06                 mul 

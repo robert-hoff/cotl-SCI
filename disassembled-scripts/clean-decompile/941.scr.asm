@@ -20,8 +20,8 @@
         completed $0
         count $ffff
     )
-    (method (init) // method_0004
-  0004:39 6b            pushi 6b // $6b init
+    (method (init)                                     // method_0004
+  0004:39 6b            pushi 6b                       // $6b init
   0006:78               push1 
   0007:8f 01              lsp param1 
   0009:57 16 06         super Cycle 6 
@@ -48,7 +48,7 @@
   002b:48                 ret 
     )
 
-    (method (doit) // method_002c
+    (method (doit)                                     // method_002c
   002c:78               push1 
   002d:89 58              lsg  
   002f:63 0e             pToa cycleCnt 
@@ -57,7 +57,7 @@
   0033:43 3d 02         callk Abs 2 
 
   0036:36                push 
-  0037:38 00db          pushi db // $db cycleSpeed
+  0037:38 00db          pushi db                       // $db cycleSpeed
   003a:76               push0 
   003b:63 08             pToa client 
   003d:4a 04             send 4 
@@ -73,9 +73,9 @@
   004f:6d 12            dpToa count 
 
         code_0051
-  0051:39 07            pushi 7 // $7 cel
+  0051:39 07            pushi 7                        // $7 cel
   0053:78               push1 
-  0054:38 00d8          pushi d8 // $d8 nextCel
+  0054:38 00d8          pushi d8                       // $d8 nextCel
   0057:76               push0 
   0058:54 04             self 4 
 
@@ -88,7 +88,7 @@
   0063:32 0006            jmp code_006c 
 
         code_0066
-  0066:38 00d9          pushi d9 // $d9 cycleDone
+  0066:38 00d9          pushi d9                       // $d9 cycleDone
   0069:76               push0 
   006a:54 04             self 4 
 
@@ -97,8 +97,8 @@
   006c:48                 ret 
     )
 
-    (method (nextCel) // method_006d
-  006d:3f 01             link 1 // (var $1)
+    (method (nextCel)                                  // method_006d
+  006d:3f 01             link 1                        // (var $1)
   006f:78               push1 
   0070:67 08             pTos client 
   0072:43 0e 02         callk NumCels 2 
@@ -111,7 +111,7 @@
         code_007c
   007c:7a               push2 
   007d:76               push0 
-  007e:38 00dd          pushi dd // $dd lastCel
+  007e:38 00dd          pushi dd                       // $dd lastCel
   0081:76               push0 
   0082:63 08             pToa client 
   0084:4a 04             send 4 
@@ -121,7 +121,7 @@
 
   008a:a5 00              sat temp0 
   008c:36                push 
-  008d:39 07            pushi 7 // $7 cel
+  008d:39 07            pushi 7                        // $7 cel
   008f:76               push0 
   0090:63 08             pToa client 
   0092:4a 04             send 4 
@@ -137,7 +137,7 @@
   009d:48                 ret 
     )
 
-    (method (cycleDone) // method_009e
+    (method (cycleDone)                                // method_009e
   009e:35 01              ldi 1 
   00a0:65 10             aTop completed 
   00a2:63 0a             pToa caller 
@@ -147,7 +147,7 @@
   00ab:32 0006            jmp code_00b4 
 
         code_00ae
-  00ae:38 00da          pushi da // $da motionCue
+  00ae:38 00da          pushi da                       // $da motionCue
   00b1:76               push0 
   00b2:54 04             self 4 
 

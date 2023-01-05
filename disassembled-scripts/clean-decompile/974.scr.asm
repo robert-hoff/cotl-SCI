@@ -15,10 +15,10 @@
 (instance NC of Code
     (properties
     )
-    (method (doit) // method_001f
+    (method (doit)                                     // method_001f
   001f:76               push0 
   0020:7a               push2 
-  0021:39 17            pushi 17 // $17 name
+  0021:39 17            pushi 17                       // $17 name
   0023:76               push0 
   0024:87 01              lap param1 
   0026:4a 04             send 4 
@@ -36,10 +36,10 @@
 
 // EXPORTED procedure #0 ()
 (procedure proc_000e
-  000e:39 75            pushi 75 // $75 firstTrue
-  0010:39 03            pushi 3 // $3 y
-  0012:39 63            pushi 63 // $63 perform
-  0014:72 003c          lofsa $003c // NC
+  000e:39 75            pushi 75                       // $75 firstTrue
+  0010:39 03            pushi 3                        // $3 y
+  0012:39 63            pushi 63                       // $63 perform
+  0014:72 003c          lofsa $003c                    // NC
   0017:36                push 
   0018:8f 01              lsp param1 
   001a:87 02              lap param2 

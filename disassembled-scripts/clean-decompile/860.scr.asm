@@ -35,21 +35,21 @@
         _approachVerbs $6789
         lookStr $0
     )
-    (method (onMe) // method_0004
-  0004:3f 02             link 2 // (var $2)
-  0006:39 03            pushi 3 // $3 y
-  0008:39 28            pushi 28 // $28 message
+    (method (onMe)                                     // method_0004
+  0004:3f 02             link 2                        // (var $2)
+  0006:39 03            pushi 3                        // $3 y
+  0008:39 28            pushi 28                       // $28 message
   000a:76               push0 
   000b:87 01              lap param1 
   000d:4a 04             send 4 
 
   000f:36                push 
   0010:7a               push2 
-  0011:39 05            pushi 5 // $5 view
-  0013:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  0011:39 05            pushi 5                        // $5 view
+  0013:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   0019:2e 0029             bt code_0045 
-  001c:39 03            pushi 3 // $3 y
+  001c:39 03            pushi 3                        // $3 y
   001e:76               push0 
   001f:81 00              lag  
   0021:4a 04             send 4 
@@ -64,7 +64,7 @@
 
         code_002f
   002f:2e 0013             bt code_0045 
-  0032:39 03            pushi 3 // $3 y
+  0032:39 03            pushi 3                        // $3 y
   0034:76               push0 
   0035:81 00              lag  
   0037:4a 04             send 4 
@@ -79,7 +79,7 @@
 
         code_0045
   0045:30 000c            bnt code_0054 
-  0048:38 00c4          pushi c4 // $c4 onMe
+  0048:38 00c4          pushi c4                       // $c4 onMe
   004b:78               push1 
   004c:8f 01              lsp param1 
   004e:57 2c 06         super Feature 6 
@@ -151,21 +151,21 @@
         avoider $0
         code $0
     )
-    (method (onMe) // method_00c8
-  00c8:3f 02             link 2 // (var $2)
-  00ca:39 03            pushi 3 // $3 y
-  00cc:39 28            pushi 28 // $28 message
+    (method (onMe)                                     // method_00c8
+  00c8:3f 02             link 2                        // (var $2)
+  00ca:39 03            pushi 3                        // $3 y
+  00cc:39 28            pushi 28                       // $28 message
   00ce:76               push0 
   00cf:87 01              lap param1 
   00d1:4a 04             send 4 
 
   00d3:36                push 
   00d4:7a               push2 
-  00d5:39 05            pushi 5 // $5 view
-  00d7:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  00d5:39 05            pushi 5                        // $5 view
+  00d7:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   00dd:2e 0029             bt code_0109 
-  00e0:39 03            pushi 3 // $3 y
+  00e0:39 03            pushi 3                        // $3 y
   00e2:76               push0 
   00e3:81 00              lag  
   00e5:4a 04             send 4 
@@ -180,7 +180,7 @@
 
         code_00f3
   00f3:2e 0013             bt code_0109 
-  00f6:39 03            pushi 3 // $3 y
+  00f6:39 03            pushi 3                        // $3 y
   00f8:76               push0 
   00f9:81 00              lag  
   00fb:4a 04             send 4 
@@ -195,7 +195,7 @@
 
         code_0109
   0109:30 000c            bnt code_0118 
-  010c:38 00c4          pushi c4 // $c4 onMe
+  010c:38 00c4          pushi c4                       // $c4 onMe
   010f:78               push1 
   0110:8f 01              lsp param1 
   0112:57 30 06         super Actor 6 
@@ -255,21 +255,21 @@
         timer $0
         detailLevel $0
     )
-    (method (onMe) // method_0210
-  0210:3f 02             link 2 // (var $2)
-  0212:39 03            pushi 3 // $3 y
-  0214:39 28            pushi 28 // $28 message
+    (method (onMe)                                     // method_0210
+  0210:3f 02             link 2                        // (var $2)
+  0212:39 03            pushi 3                        // $3 y
+  0214:39 28            pushi 28                       // $28 message
   0216:76               push0 
   0217:87 01              lap param1 
   0219:4a 04             send 4 
 
   021b:36                push 
   021c:7a               push2 
-  021d:39 05            pushi 5 // $5 view
-  021f:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  021d:39 05            pushi 5                        // $5 view
+  021f:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   0225:2e 0029             bt code_0251 
-  0228:39 03            pushi 3 // $3 y
+  0228:39 03            pushi 3                        // $3 y
   022a:76               push0 
   022b:81 00              lag  
   022d:4a 04             send 4 
@@ -284,7 +284,7 @@
 
         code_023b
   023b:2e 0013             bt code_0251 
-  023e:39 03            pushi 3 // $3 y
+  023e:39 03            pushi 3                        // $3 y
   0240:76               push0 
   0241:81 00              lag  
   0243:4a 04             send 4 
@@ -299,7 +299,7 @@
 
         code_0251
   0251:30 000c            bnt code_0260 
-  0254:38 00c4          pushi c4 // $c4 onMe
+  0254:38 00c4          pushi c4                       // $c4 onMe
   0257:78               push1 
   0258:8f 01              lsp param1 
   025a:57 2f 06         super Prop 6 
@@ -354,21 +354,21 @@
         brRight $0
         palette $0
     )
-    (method (onMe) // method_0328
-  0328:3f 02             link 2 // (var $2)
-  032a:39 03            pushi 3 // $3 y
-  032c:39 28            pushi 28 // $28 message
+    (method (onMe)                                     // method_0328
+  0328:3f 02             link 2                        // (var $2)
+  032a:39 03            pushi 3                        // $3 y
+  032c:39 28            pushi 28                       // $28 message
   032e:76               push0 
   032f:87 01              lap param1 
   0331:4a 04             send 4 
 
   0333:36                push 
   0334:7a               push2 
-  0335:39 05            pushi 5 // $5 view
-  0337:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  0335:39 05            pushi 5                        // $5 view
+  0337:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   033d:2e 0029             bt code_0369 
-  0340:39 03            pushi 3 // $3 y
+  0340:39 03            pushi 3                        // $3 y
   0342:76               push0 
   0343:81 00              lag  
   0345:4a 04             send 4 
@@ -383,7 +383,7 @@
 
         code_0353
   0353:2e 0013             bt code_0369 
-  0356:39 03            pushi 3 // $3 y
+  0356:39 03            pushi 3                        // $3 y
   0358:76               push0 
   0359:81 00              lag  
   035b:4a 04             send 4 
@@ -398,7 +398,7 @@
 
         code_0369
   0369:30 000c            bnt code_0378 
-  036c:38 00c4          pushi c4 // $c4 onMe
+  036c:38 00c4          pushi c4                       // $c4 onMe
   036f:78               push1 
   0370:8f 01              lsp param1 
   0372:57 2e 06         super View 6 

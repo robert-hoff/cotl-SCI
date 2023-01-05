@@ -93,79 +93,79 @@
         vanishingY $8ad0
         obstacles $0
     )
-    (method (init) // method_0184
-  0184:39 6b            pushi 6b // $6b init
+    (method (init)                                     // method_0184
+  0184:39 6b            pushi 6b                       // $6b init
   0186:76               push0 
-  0187:72 073a          lofsa $073a // johnHead
+  0187:72 073a          lofsa $073a                    // johnHead
   018a:4a 04             send 4 
 
-  018c:39 6b            pushi 6b // $6b init
+  018c:39 6b            pushi 6b                       // $6b init
   018e:76               push0 
-  018f:72 07a0          lofsa $07a0 // johnArm
+  018f:72 07a0          lofsa $07a0                    // johnArm
   0192:4a 04             send 4 
 
-  0194:39 6b            pushi 6b // $6b init
+  0194:39 6b            pushi 6b                       // $6b init
   0196:76               push0 
-  0197:72 0626          lofsa $0626 // tuckHead
+  0197:72 0626          lofsa $0626                    // tuckHead
   019a:4a 04             send 4 
 
-  019c:39 6b            pushi 6b // $6b init
+  019c:39 6b            pushi 6b                       // $6b init
   019e:76               push0 
-  019f:72 068c          lofsa $068c // tuckHands
+  019f:72 068c          lofsa $068c                    // tuckHands
   01a2:4a 04             send 4 
 
-  01a4:39 6b            pushi 6b // $6b init
+  01a4:39 6b            pushi 6b                       // $6b init
   01a6:76               push0 
-  01a7:72 084e          lofsa $084e // alanHead
+  01a7:72 084e          lofsa $084e                    // alanHead
   01aa:4a 04             send 4 
 
-  01ac:39 6b            pushi 6b // $6b init
+  01ac:39 6b            pushi 6b                       // $6b init
   01ae:76               push0 
-  01af:72 08b4          lofsa $08b4 // alanArm
+  01af:72 08b4          lofsa $08b4                    // alanArm
   01b2:4a 04             send 4 
 
-  01b4:39 6b            pushi 6b // $6b init
+  01b4:39 6b            pushi 6b                       // $6b init
   01b6:76               push0 
-  01b7:72 0964          lofsa $0964 // willHead
+  01b7:72 0964          lofsa $0964                    // willHead
   01ba:4a 04             send 4 
 
-  01bc:39 6b            pushi 6b // $6b init
+  01bc:39 6b            pushi 6b                       // $6b init
   01be:76               push0 
-  01bf:72 0a12          lofsa $0a12 // muchHead
+  01bf:72 0a12          lofsa $0a12                    // muchHead
   01c2:4a 04             send 4 
 
-  01c4:39 6b            pushi 6b // $6b init
+  01c4:39 6b            pushi 6b                       // $6b init
   01c6:76               push0 
   01c7:57 43 04         super Rm 4 
 
-  01ca:39 05            pushi 5 // $5 view
-  01cc:72 06f2          lofsa $06f2 // johnBody
+  01ca:39 05            pushi 5                        // $5 view
+  01cc:72 06f2          lofsa $06f2                    // johnBody
   01cf:36                push 
-  01d0:72 05de          lofsa $05de // tuckBody
+  01d0:72 05de          lofsa $05de                    // tuckBody
   01d3:36                push 
-  01d4:72 0806          lofsa $0806 // alanBody
+  01d4:72 0806          lofsa $0806                    // alanBody
   01d7:36                push 
-  01d8:72 091c          lofsa $091c // willBody
+  01d8:72 091c          lofsa $091c                    // willBody
   01db:36                push 
-  01dc:72 09ca          lofsa $09ca // muchBody
+  01dc:72 09ca          lofsa $09ca                    // muchBody
   01df:36                push 
-  01e0:46 0326 0002 0a  calle 326 procedure_0002 a //  
+  01e0:46 0326 0002 0a  calle 326 procedure_0002 a     //  
 
   01e6:76               push0 
-  01e7:45 03 00         callb procedure_0003 0 //  
+  01e7:45 03 00         callb procedure_0003 0         //  
 
-  01ea:38 00c9          pushi c9 // $c9 disable
+  01ea:38 00c9          pushi c9                       // $c9 disable
   01ed:76               push0 
   01ee:81 45              lag  
   01f0:4a 04             send 4 
 
-  01f2:39 2b            pushi 2b // $2b number
+  01f2:39 2b            pushi 2b                       // $2b number
   01f4:78               push1 
-  01f5:38 00ad          pushi ad // $ad setMark
-  01f8:39 06            pushi 6 // $6 loop
+  01f5:38 00ad          pushi ad                       // $ad setMark
+  01f8:39 06            pushi 6                        // $6 loop
   01fa:78               push1 
-  01fb:39 ff            pushi ff // $ff syncNum
-  01fd:39 2a            pushi 2a // $2a play
+  01fb:39 ff            pushi ff                       // $ff syncNum
+  01fd:39 2a            pushi 2a                       // $2a play
   01ff:76               push0 
   0200:81 64              lag  
   0202:4a 10             send 10 
@@ -175,9 +175,9 @@
   0207:35 00              ldi 0 
   0209:1a                 eq? 
   020a:30 000f            bnt code_021c 
-  020d:38 008e          pushi 8e // $8e setScript
+  020d:38 008e          pushi 8e                       // $8e setScript
   0210:78               push1 
-  0211:72 0b50          lofsa $0b50 // death2InRm120
+  0211:72 0b50          lofsa $0b50                    // death2InRm120
   0214:36                push 
   0215:81 02              lag  
   0217:4a 06             send 6 
@@ -189,9 +189,9 @@
   021d:35 01              ldi 1 
   021f:1a                 eq? 
   0220:30 000f            bnt code_0232 
-  0223:38 008e          pushi 8e // $8e setScript
+  0223:38 008e          pushi 8e                       // $8e setScript
   0226:78               push1 
-  0227:72 0c32          lofsa $0c32 // death3InRm120
+  0227:72 0c32          lofsa $0c32                    // death3InRm120
   022a:36                push 
   022b:81 02              lag  
   022d:4a 06             send 6 
@@ -203,9 +203,9 @@
   0233:35 02              ldi 2 
   0235:1a                 eq? 
   0236:30 000f            bnt code_0248 
-  0239:38 008e          pushi 8e // $8e setScript
+  0239:38 008e          pushi 8e                       // $8e setScript
   023c:78               push1 
-  023d:72 0d2e          lofsa $0d2e // death4InRm120
+  023d:72 0d2e          lofsa $0d2e                    // death4InRm120
   0240:36                push 
   0241:81 02              lag  
   0243:4a 06             send 6 
@@ -217,9 +217,9 @@
   0249:35 03              ldi 3 
   024b:1a                 eq? 
   024c:30 000f            bnt code_025e 
-  024f:38 008e          pushi 8e // $8e setScript
+  024f:38 008e          pushi 8e                       // $8e setScript
   0252:78               push1 
-  0253:72 2a9e          lofsa $2a9e // death5InRm120
+  0253:72 2a9e          lofsa $2a9e                    // death5InRm120
   0256:36                push 
   0257:81 02              lag  
   0259:4a 06             send 6 
@@ -231,9 +231,9 @@
   025f:35 04              ldi 4 
   0261:1a                 eq? 
   0262:30 000f            bnt code_0274 
-  0265:38 008e          pushi 8e // $8e setScript
+  0265:38 008e          pushi 8e                       // $8e setScript
   0268:78               push1 
-  0269:72 0e10          lofsa $0e10 // death1InFairRgn
+  0269:72 0e10          lofsa $0e10                    // death1InFairRgn
   026c:36                push 
   026d:81 02              lag  
   026f:4a 06             send 6 
@@ -245,9 +245,9 @@
   0275:35 05              ldi 5 
   0277:1a                 eq? 
   0278:30 000f            bnt code_028a 
-  027b:38 008e          pushi 8e // $8e setScript
+  027b:38 008e          pushi 8e                       // $8e setScript
   027e:78               push1 
-  027f:72 0ef2          lofsa $0ef2 // deathInRm360
+  027f:72 0ef2          lofsa $0ef2                    // deathInRm360
   0282:36                push 
   0283:81 02              lag  
   0285:4a 06             send 6 
@@ -259,9 +259,9 @@
   028b:35 06              ldi 6 
   028d:1a                 eq? 
   028e:30 000f            bnt code_02a0 
-  0291:38 008e          pushi 8e // $8e setScript
+  0291:38 008e          pushi 8e                       // $8e setScript
   0294:78               push1 
-  0295:72 0ff0          lofsa $0ff0 // death1InRm390
+  0295:72 0ff0          lofsa $0ff0                    // death1InRm390
   0298:36                push 
   0299:81 02              lag  
   029b:4a 06             send 6 
@@ -273,9 +273,9 @@
   02a1:35 07              ldi 7 
   02a3:1a                 eq? 
   02a4:30 000f            bnt code_02b6 
-  02a7:38 008e          pushi 8e // $8e setScript
+  02a7:38 008e          pushi 8e                       // $8e setScript
   02aa:78               push1 
-  02ab:72 10d2          lofsa $10d2 // death2InRm390
+  02ab:72 10d2          lofsa $10d2                    // death2InRm390
   02ae:36                push 
   02af:81 02              lag  
   02b1:4a 06             send 6 
@@ -287,9 +287,9 @@
   02b7:35 08              ldi 8 
   02b9:1a                 eq? 
   02ba:30 000f            bnt code_02cc 
-  02bd:38 008e          pushi 8e // $8e setScript
+  02bd:38 008e          pushi 8e                       // $8e setScript
   02c0:78               push1 
-  02c1:72 11ce          lofsa $11ce // death3InRm390
+  02c1:72 11ce          lofsa $11ce                    // death3InRm390
   02c4:36                push 
   02c5:81 02              lag  
   02c7:4a 06             send 6 
@@ -301,9 +301,9 @@
   02cd:35 09              ldi 9 
   02cf:1a                 eq? 
   02d0:30 000f            bnt code_02e2 
-  02d3:38 008e          pushi 8e // $8e setScript
+  02d3:38 008e          pushi 8e                       // $8e setScript
   02d6:78               push1 
-  02d7:72 12ca          lofsa $12ca // death4InRm390
+  02d7:72 12ca          lofsa $12ca                    // death4InRm390
   02da:36                push 
   02db:81 02              lag  
   02dd:4a 06             send 6 
@@ -315,9 +315,9 @@
   02e3:35 0a              ldi a 
   02e5:1a                 eq? 
   02e6:30 000f            bnt code_02f8 
-  02e9:38 008e          pushi 8e // $8e setScript
+  02e9:38 008e          pushi 8e                       // $8e setScript
   02ec:78               push1 
-  02ed:72 13c6          lofsa $13c6 // death1InAbyRegn
+  02ed:72 13c6          lofsa $13c6                    // death1InAbyRegn
   02f0:36                push 
   02f1:81 02              lag  
   02f3:4a 06             send 6 
@@ -329,9 +329,9 @@
   02f9:35 0b              ldi b 
   02fb:1a                 eq? 
   02fc:30 000f            bnt code_030e 
-  02ff:38 008e          pushi 8e // $8e setScript
+  02ff:38 008e          pushi 8e                       // $8e setScript
   0302:78               push1 
-  0303:72 14a8          lofsa $14a8 // death2InAbyRegn
+  0303:72 14a8          lofsa $14a8                    // death2InAbyRegn
   0306:36                push 
   0307:81 02              lag  
   0309:4a 06             send 6 
@@ -343,9 +343,9 @@
   030f:35 0c              ldi c 
   0311:1a                 eq? 
   0312:30 000f            bnt code_0324 
-  0315:38 008e          pushi 8e // $8e setScript
+  0315:38 008e          pushi 8e                       // $8e setScript
   0318:78               push1 
-  0319:72 15f6          lofsa $15f6 // death3InAbyRegn
+  0319:72 15f6          lofsa $15f6                    // death3InAbyRegn
   031c:36                push 
   031d:81 02              lag  
   031f:4a 06             send 6 
@@ -357,9 +357,9 @@
   0325:35 0d              ldi d 
   0327:1a                 eq? 
   0328:30 000f            bnt code_033a 
-  032b:38 008e          pushi 8e // $8e setScript
+  032b:38 008e          pushi 8e                       // $8e setScript
   032e:78               push1 
-  032f:72 16d8          lofsa $16d8 // death1InRm440
+  032f:72 16d8          lofsa $16d8                    // death1InRm440
   0332:36                push 
   0333:81 02              lag  
   0335:4a 06             send 6 
@@ -371,9 +371,9 @@
   033b:35 0e              ldi e 
   033d:1a                 eq? 
   033e:30 000f            bnt code_0350 
-  0341:38 008e          pushi 8e // $8e setScript
+  0341:38 008e          pushi 8e                       // $8e setScript
   0344:78               push1 
-  0345:72 17ba          lofsa $17ba // death2InRm440
+  0345:72 17ba          lofsa $17ba                    // death2InRm440
   0348:36                push 
   0349:81 02              lag  
   034b:4a 06             send 6 
@@ -385,9 +385,9 @@
   0351:35 0f              ldi f 
   0353:1a                 eq? 
   0354:30 000f            bnt code_0366 
-  0357:38 008e          pushi 8e // $8e setScript
+  0357:38 008e          pushi 8e                       // $8e setScript
   035a:78               push1 
-  035b:72 18b2          lofsa $18b2 // death1InRm460
+  035b:72 18b2          lofsa $18b2                    // death1InRm460
   035e:36                push 
   035f:81 02              lag  
   0361:4a 06             send 6 
@@ -399,9 +399,9 @@
   0367:35 10              ldi 10 
   0369:1a                 eq? 
   036a:30 000f            bnt code_037c 
-  036d:38 008e          pushi 8e // $8e setScript
+  036d:38 008e          pushi 8e                       // $8e setScript
   0370:78               push1 
-  0371:72 19ae          lofsa $19ae // death2InRm460
+  0371:72 19ae          lofsa $19ae                    // death2InRm460
   0374:36                push 
   0375:81 02              lag  
   0377:4a 06             send 6 
@@ -413,9 +413,9 @@
   037d:35 11              ldi 11 
   037f:1a                 eq? 
   0380:30 000f            bnt code_0392 
-  0383:38 008e          pushi 8e // $8e setScript
+  0383:38 008e          pushi 8e                       // $8e setScript
   0386:78               push1 
-  0387:72 1a90          lofsa $1a90 // death3InRm460
+  0387:72 1a90          lofsa $1a90                    // death3InRm460
   038a:36                push 
   038b:81 02              lag  
   038d:4a 06             send 6 
@@ -427,9 +427,9 @@
   0393:35 12              ldi 12 
   0395:1a                 eq? 
   0396:30 000f            bnt code_03a8 
-  0399:38 008e          pushi 8e // $8e setScript
+  0399:38 008e          pushi 8e                       // $8e setScript
   039c:78               push1 
-  039d:72 1bc2          lofsa $1bc2 // death4InRm460
+  039d:72 1bc2          lofsa $1bc2                    // death4InRm460
   03a0:36                push 
   03a1:81 02              lag  
   03a3:4a 06             send 6 
@@ -441,9 +441,9 @@
   03a9:35 13              ldi 13 
   03ab:1a                 eq? 
   03ac:30 000f            bnt code_03be 
-  03af:38 008e          pushi 8e // $8e setScript
+  03af:38 008e          pushi 8e                       // $8e setScript
   03b2:78               push1 
-  03b3:72 1c86          lofsa $1c86 // death1InRm620
+  03b3:72 1c86          lofsa $1c86                    // death1InRm620
   03b6:36                push 
   03b7:81 02              lag  
   03b9:4a 06             send 6 
@@ -455,9 +455,9 @@
   03bf:35 14              ldi 14 
   03c1:1a                 eq? 
   03c2:30 000f            bnt code_03d4 
-  03c5:38 008e          pushi 8e // $8e setScript
+  03c5:38 008e          pushi 8e                       // $8e setScript
   03c8:78               push1 
-  03c9:72 1d82          lofsa $1d82 // death2InRm620
+  03c9:72 1d82          lofsa $1d82                    // death2InRm620
   03cc:36                push 
   03cd:81 02              lag  
   03cf:4a 06             send 6 
@@ -469,9 +469,9 @@
   03d5:35 15              ldi 15 
   03d7:1a                 eq? 
   03d8:30 000f            bnt code_03ea 
-  03db:38 008e          pushi 8e // $8e setScript
+  03db:38 008e          pushi 8e                       // $8e setScript
   03de:78               push1 
-  03df:72 2bb6          lofsa $2bb6 // deathInRm620
+  03df:72 2bb6          lofsa $2bb6                    // deathInRm620
   03e2:36                push 
   03e3:81 02              lag  
   03e5:4a 06             send 6 
@@ -483,9 +483,9 @@
   03eb:35 16              ldi 16 
   03ed:1a                 eq? 
   03ee:30 000f            bnt code_0400 
-  03f1:38 008e          pushi 8e // $8e setScript
+  03f1:38 008e          pushi 8e                       // $8e setScript
   03f4:78               push1 
-  03f5:72 1e7e          lofsa $1e7e // deathInRm650
+  03f5:72 1e7e          lofsa $1e7e                    // deathInRm650
   03f8:36                push 
   03f9:81 02              lag  
   03fb:4a 06             send 6 
@@ -497,9 +497,9 @@
   0401:35 17              ldi 17 
   0403:1a                 eq? 
   0404:30 000f            bnt code_0416 
-  0407:38 008e          pushi 8e // $8e setScript
+  0407:38 008e          pushi 8e                       // $8e setScript
   040a:78               push1 
-  040b:72 1f7a          lofsa $1f7a // deathInWatrGate
+  040b:72 1f7a          lofsa $1f7a                    // deathInWatrGate
   040e:36                push 
   040f:81 02              lag  
   0411:4a 06             send 6 
@@ -511,9 +511,9 @@
   0417:35 18              ldi 18 
   0419:1a                 eq? 
   041a:30 000f            bnt code_042c 
-  041d:38 008e          pushi 8e // $8e setScript
+  041d:38 008e          pushi 8e                       // $8e setScript
   0420:78               push1 
-  0421:72 2076          lofsa $2076 // deathInRm470
+  0421:72 2076          lofsa $2076                    // deathInRm470
   0424:36                push 
   0425:81 02              lag  
   0427:4a 06             send 6 
@@ -525,9 +525,9 @@
   042d:35 19              ldi 19 
   042f:1a                 eq? 
   0430:30 000f            bnt code_0442 
-  0433:38 008e          pushi 8e // $8e setScript
+  0433:38 008e          pushi 8e                       // $8e setScript
   0436:78               push1 
-  0437:72 21a8          lofsa $21a8 // death1InRm500
+  0437:72 21a8          lofsa $21a8                    // death1InRm500
   043a:36                push 
   043b:81 02              lag  
   043d:4a 06             send 6 
@@ -539,9 +539,9 @@
   0443:35 1a              ldi 1a 
   0445:1a                 eq? 
   0446:30 000f            bnt code_0458 
-  0449:38 008e          pushi 8e // $8e setScript
+  0449:38 008e          pushi 8e                       // $8e setScript
   044c:78               push1 
-  044d:72 22c0          lofsa $22c0 // death2InRm500
+  044d:72 22c0          lofsa $22c0                    // death2InRm500
   0450:36                push 
   0451:81 02              lag  
   0453:4a 06             send 6 
@@ -553,9 +553,9 @@
   0459:35 1b              ldi 1b 
   045b:1a                 eq? 
   045c:30 000f            bnt code_046e 
-  045f:38 008e          pushi 8e // $8e setScript
+  045f:38 008e          pushi 8e                       // $8e setScript
   0462:78               push1 
-  0463:72 23bc          lofsa $23bc // death1InRm530
+  0463:72 23bc          lofsa $23bc                    // death1InRm530
   0466:36                push 
   0467:81 02              lag  
   0469:4a 06             send 6 
@@ -567,9 +567,9 @@
   046f:35 1c              ldi 1c 
   0471:1a                 eq? 
   0472:30 000f            bnt code_0484 
-  0475:38 008e          pushi 8e // $8e setScript
+  0475:38 008e          pushi 8e                       // $8e setScript
   0478:78               push1 
-  0479:72 2482          lofsa $2482 // death2InRm530
+  0479:72 2482          lofsa $2482                    // death2InRm530
   047c:36                push 
   047d:81 02              lag  
   047f:4a 06             send 6 
@@ -581,9 +581,9 @@
   0485:35 1d              ldi 1d 
   0487:1a                 eq? 
   0488:30 000f            bnt code_049a 
-  048b:38 008e          pushi 8e // $8e setScript
+  048b:38 008e          pushi 8e                       // $8e setScript
   048e:78               push1 
-  048f:72 257e          lofsa $257e // death3InRm530
+  048f:72 257e          lofsa $257e                    // death3InRm530
   0492:36                push 
   0493:81 02              lag  
   0495:4a 06             send 6 
@@ -595,9 +595,9 @@
   049b:35 1e              ldi 1e 
   049d:1a                 eq? 
   049e:30 000f            bnt code_04b0 
-  04a1:38 008e          pushi 8e // $8e setScript
+  04a1:38 008e          pushi 8e                       // $8e setScript
   04a4:78               push1 
-  04a5:72 267a          lofsa $267a // deathInRm550
+  04a5:72 267a          lofsa $267a                    // deathInRm550
   04a8:36                push 
   04a9:81 02              lag  
   04ab:4a 06             send 6 
@@ -609,9 +609,9 @@
   04b1:35 1f              ldi 1f 
   04b3:1a                 eq? 
   04b4:30 000f            bnt code_04c6 
-  04b7:38 008e          pushi 8e // $8e setScript
+  04b7:38 008e          pushi 8e                       // $8e setScript
   04ba:78               push1 
-  04bb:72 2792          lofsa $2792 // death1InRm570
+  04bb:72 2792          lofsa $2792                    // death1InRm570
   04be:36                push 
   04bf:81 02              lag  
   04c1:4a 06             send 6 
@@ -623,9 +623,9 @@
   04c7:35 20              ldi 20 
   04c9:1a                 eq? 
   04ca:30 000f            bnt code_04dc 
-  04cd:38 008e          pushi 8e // $8e setScript
+  04cd:38 008e          pushi 8e                       // $8e setScript
   04d0:78               push1 
-  04d1:72 28c0          lofsa $28c0 // death2InRm570
+  04d1:72 28c0          lofsa $28c0                    // death2InRm570
   04d4:36                push 
   04d5:81 02              lag  
   04d7:4a 06             send 6 
@@ -637,9 +637,9 @@
   04dd:35 21              ldi 21 
   04df:1a                 eq? 
   04e0:30 000f            bnt code_04f2 
-  04e3:38 008e          pushi 8e // $8e setScript
+  04e3:38 008e          pushi 8e                       // $8e setScript
   04e6:78               push1 
-  04e7:72 29a2          lofsa $29a2 // deathInForest
+  04e7:72 29a2          lofsa $29a2                    // deathInForest
   04ea:36                push 
   04eb:81 02              lag  
   04ed:4a 06             send 6 
@@ -651,9 +651,9 @@
   04f3:35 22              ldi 22 
   04f5:1a                 eq? 
   04f6:30 000f            bnt code_0508 
-  04f9:38 008e          pushi 8e // $8e setScript
+  04f9:38 008e          pushi 8e                       // $8e setScript
   04fc:78               push1 
-  04fd:72 2c98          lofsa $2c98 // deathInRm320
+  04fd:72 2c98          lofsa $2c98                    // deathInRm320
   0500:36                push 
   0501:81 02              lag  
   0503:4a 06             send 6 
@@ -665,9 +665,9 @@
   0509:35 23              ldi 23 
   050b:1a                 eq? 
   050c:30 000f            bnt code_051e 
-  050f:38 008e          pushi 8e // $8e setScript
+  050f:38 008e          pushi 8e                       // $8e setScript
   0512:78               push1 
-  0513:72 2d7a          lofsa $2d7a // getInBoatRm620
+  0513:72 2d7a          lofsa $2d7a                    // getInBoatRm620
   0516:36                push 
   0517:81 02              lag  
   0519:4a 06             send 6 
@@ -679,9 +679,9 @@
   051f:35 24              ldi 24 
   0521:1a                 eq? 
   0522:30 000f            bnt code_0534 
-  0525:38 008e          pushi 8e // $8e setScript
+  0525:38 008e          pushi 8e                       // $8e setScript
   0528:78               push1 
-  0529:72 2e76          lofsa $2e76 // death2InFairRgn
+  0529:72 2e76          lofsa $2e76                    // death2InFairRgn
   052c:36                push 
   052d:81 02              lag  
   052f:4a 06             send 6 
@@ -693,9 +693,9 @@
   0535:35 25              ldi 25 
   0537:1a                 eq? 
   0538:30 000f            bnt code_054a 
-  053b:38 008e          pushi 8e // $8e setScript
+  053b:38 008e          pushi 8e                       // $8e setScript
   053e:78               push1 
-  053f:72 2f72          lofsa $2f72 // deathInRm501
+  053f:72 2f72          lofsa $2f72                    // deathInRm501
   0542:36                push 
   0543:81 02              lag  
   0545:4a 06             send 6 
@@ -707,9 +707,9 @@
   054b:35 26              ldi 26 
   054d:1a                 eq? 
   054e:30 000f            bnt code_0560 
-  0551:38 008e          pushi 8e // $8e setScript
+  0551:38 008e          pushi 8e                       // $8e setScript
   0554:78               push1 
-  0555:72 3002          lofsa $3002 // deathInRm710
+  0555:72 3002          lofsa $3002                    // deathInRm710
   0558:36                push 
   0559:81 02              lag  
   055b:4a 06             send 6 
@@ -721,9 +721,9 @@
   0561:35 27              ldi 27 
   0563:1a                 eq? 
   0564:30 000f            bnt code_0576 
-  0567:38 008e          pushi 8e // $8e setScript
+  0567:38 008e          pushi 8e                       // $8e setScript
   056a:78               push1 
-  056b:72 3114          lofsa $3114 // death5InRm390
+  056b:72 3114          lofsa $3114                    // death5InRm390
   056e:36                push 
   056f:81 02              lag  
   0571:4a 06             send 6 
@@ -735,9 +735,9 @@
   0577:35 28              ldi 28 
   0579:1a                 eq? 
   057a:30 000c            bnt code_0589 
-  057d:38 008e          pushi 8e // $8e setScript
+  057d:38 008e          pushi 8e                       // $8e setScript
   0580:78               push1 
-  0581:72 322c          lofsa $322c // tooLateInTheHedge
+  0581:72 322c          lofsa $322c                    // tooLateInTheHedge
   0584:36                push 
   0585:81 02              lag  
   0587:4a 06             send 6 
@@ -749,13 +749,13 @@
   058b:00                bnot 
     )
 
-    (method (dispose) // method_0173
-  0173:38 009c          pushi 9c // $9c stop
+    (method (dispose)                                  // method_0173
+  0173:38 009c          pushi 9c                       // $9c stop
   0176:76               push0 
   0177:81 64              lag  
   0179:4a 04             send 4 
 
-  017b:39 6c            pushi 6c // $6c dispose
+  017b:39 6c            pushi 6c                       // $6c dispose
   017d:76               push0 
   017e:59 01            &rest 1 
   0180:57 43 04         super Rm 4 
@@ -1294,7 +1294,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_0a92
+    (method (changeState)                              // method_0a92
   0a92:87 01              lap param1 
   0a94:65 0a             aTop state 
   0a96:36                push 
@@ -1302,8 +1302,8 @@
   0a98:35 00              ldi 0 
   0a9a:1a                 eq? 
   0a9b:30 000e            bnt code_0aac 
-  0a9e:39 03            pushi 3 // $3 y
-  0aa0:38 0491          pushi 491 // $491 sel_1169
+  0a9e:39 03            pushi 3                        // $3 y
+  0aa0:38 0491          pushi 491                      // $491 sel_1169
   0aa3:76               push0 
   0aa4:7c            pushSelf 
   0aa5:40 f5ee 06        call proc_0097 6 
@@ -1318,8 +1318,8 @@
   0ab3:76               push0 
   0ab4:40 f688 00        call proc_0140 0 
 
-  0ab8:39 03            pushi 3 // $3 y
-  0aba:38 0491          pushi 491 // $491 sel_1169
+  0ab8:39 03            pushi 3                        // $3 y
+  0aba:38 0491          pushi 491                      // $491 sel_1169
   0abd:78               push1 
   0abe:7c            pushSelf 
   0abf:40 f574 06        call proc_0037 6 
@@ -1334,8 +1334,8 @@
   0acd:76               push0 
   0ace:40 f655 00        call proc_0127 0 
 
-  0ad2:39 03            pushi 3 // $3 y
-  0ad4:38 0491          pushi 491 // $491 sel_1169
+  0ad2:39 03            pushi 3                        // $3 y
+  0ad4:38 0491          pushi 491                      // $491 sel_1169
   0ad7:7a               push2 
   0ad8:7c            pushSelf 
   0ad9:40 f531 06        call proc_000e 6 
@@ -1350,9 +1350,9 @@
   0ae7:76               push0 
   0ae8:40 f608 00        call proc_00f4 0 
 
-  0aec:39 03            pushi 3 // $3 y
-  0aee:38 0491          pushi 491 // $491 sel_1169
-  0af1:39 03            pushi 3 // $3 y
+  0aec:39 03            pushi 3                        // $3 y
+  0aee:38 0491          pushi 491                      // $491 sel_1169
+  0af1:39 03            pushi 3                        // $3 y
   0af3:7c            pushSelf 
   0af4:40 f53f 06        call proc_0037 6 
 
@@ -1366,9 +1366,9 @@
   0b02:76               push0 
   0b03:40 f620 00        call proc_0127 0 
 
-  0b07:39 03            pushi 3 // $3 y
-  0b09:38 0491          pushi 491 // $491 sel_1169
-  0b0c:39 04            pushi 4 // $4 x
+  0b07:39 03            pushi 3                        // $3 y
+  0b09:38 0491          pushi 491                      // $491 sel_1169
+  0b0c:39 04            pushi 4                        // $4 x
   0b0e:7c            pushSelf 
   0b0f:40 f550 06        call proc_0063 6 
 
@@ -1382,9 +1382,9 @@
   0b1d:76               push0 
   0b1e:40 f5ec 00        call proc_010e 0 
 
-  0b22:39 03            pushi 3 // $3 y
-  0b24:38 0491          pushi 491 // $491 sel_1169
-  0b27:39 05            pushi 5 // $5 view
+  0b22:39 03            pushi 3                        // $3 y
+  0b24:38 0491          pushi 491                      // $491 sel_1169
+  0b27:39 05            pushi 5                        // $5 view
   0b29:7c            pushSelf 
   0b2a:40 f569 06        call proc_0097 6 
 
@@ -1398,7 +1398,7 @@
   0b38:76               push0 
   0b39:40 f61c 00        call proc_0159 0 
 
-  0b3d:39 6c            pushi 6c // $6c dispose
+  0b3d:39 6c            pushi 6c                       // $6c dispose
   0b3f:76               push0 
   0b40:54 04             self 4 
 
@@ -1408,7 +1408,7 @@
   0b43:48                 ret 
     )
 
-    (method (cue) // method_0a70
+    (method (cue)                                      // method_0a70
   0a70:87 00              lap paramTotal 
   0a72:30 0013            bnt code_0a88 
   0a75:87 01              lap param1 
@@ -1417,14 +1417,14 @@
   0a7b:76               push0 
   0a7c:40 f6d9 00        call proc_0159 0 
 
-  0a80:39 6c            pushi 6c // $6c dispose
+  0a80:39 6c            pushi 6c                       // $6c dispose
   0a82:76               push0 
   0a83:54 04             self 4 
 
   0a85:32 0009            jmp code_0a91 
 
         code_0a88
-  0a88:38 008d          pushi 8d // $8d cue
+  0a88:38 008d          pushi 8d                       // $8d cue
   0a8b:76               push0 
   0a8c:59 02            &rest 2 
   0a8e:57 9d 04         super TScript 4 
@@ -1454,7 +1454,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_0ba6
+    (method (changeState)                              // method_0ba6
   0ba6:87 01              lap param1 
   0ba8:65 0a             aTop state 
   0baa:36                push 
@@ -1462,9 +1462,9 @@
   0bac:35 00              ldi 0 
   0bae:1a                 eq? 
   0baf:30 000f            bnt code_0bc1 
-  0bb2:39 03            pushi 3 // $3 y
-  0bb4:38 0491          pushi 491 // $491 sel_1169
-  0bb7:39 06            pushi 6 // $6 loop
+  0bb2:39 03            pushi 3                        // $3 y
+  0bb4:38 0491          pushi 491                      // $491 sel_1169
+  0bb7:39 06            pushi 6                        // $6 loop
   0bb9:7c            pushSelf 
   0bba:40 f4a5 06        call proc_0063 6 
 
@@ -1478,9 +1478,9 @@
   0bc8:76               push0 
   0bc9:40 f541 00        call proc_010e 0 
 
-  0bcd:39 03            pushi 3 // $3 y
-  0bcf:38 0491          pushi 491 // $491 sel_1169
-  0bd2:39 07            pushi 7 // $7 cel
+  0bcd:39 03            pushi 3                        // $3 y
+  0bcf:38 0491          pushi 491                      // $491 sel_1169
+  0bd2:39 07            pushi 7                        // $7 cel
   0bd4:7c            pushSelf 
   0bd5:40 f45e 06        call proc_0037 6 
 
@@ -1494,9 +1494,9 @@
   0be3:76               push0 
   0be4:40 f53f 00        call proc_0127 0 
 
-  0be8:39 03            pushi 3 // $3 y
-  0bea:38 0491          pushi 491 // $491 sel_1169
-  0bed:39 08            pushi 8 // $8 underBits
+  0be8:39 03            pushi 3                        // $3 y
+  0bea:38 0491          pushi 491                      // $491 sel_1169
+  0bed:39 08            pushi 8                        // $8 underBits
   0bef:7c            pushSelf 
   0bf0:40 f4a3 06        call proc_0097 6 
 
@@ -1510,9 +1510,9 @@
   0bfe:76               push0 
   0bff:40 f53d 00        call proc_0140 0 
 
-  0c03:39 03            pushi 3 // $3 y
-  0c05:38 0491          pushi 491 // $491 sel_1169
-  0c08:39 09            pushi 9 // $9 nsTop
+  0c03:39 03            pushi 3                        // $3 y
+  0c05:38 0491          pushi 491                      // $491 sel_1169
+  0c08:39 09            pushi 9                        // $9 nsTop
   0c0a:7c            pushSelf 
   0c0b:40 f3ff 06        call proc_000e 6 
 
@@ -1526,7 +1526,7 @@
   0c19:76               push0 
   0c1a:40 f53b 00        call proc_0159 0 
 
-  0c1e:39 6c            pushi 6c // $6c dispose
+  0c1e:39 6c            pushi 6c                       // $6c dispose
   0c20:76               push0 
   0c21:54 04             self 4 
 
@@ -1537,7 +1537,7 @@
   0c25:00                bnot 
     )
 
-    (method (cue) // method_0b84
+    (method (cue)                                      // method_0b84
   0b84:87 00              lap paramTotal 
   0b86:30 0013            bnt code_0b9c 
   0b89:87 01              lap param1 
@@ -1546,14 +1546,14 @@
   0b8f:76               push0 
   0b90:40 f5c5 00        call proc_0159 0 
 
-  0b94:39 6c            pushi 6c // $6c dispose
+  0b94:39 6c            pushi 6c                       // $6c dispose
   0b96:76               push0 
   0b97:54 04             self 4 
 
   0b99:32 0009            jmp code_0ba5 
 
         code_0b9c
-  0b9c:38 008d          pushi 8d // $8d cue
+  0b9c:38 008d          pushi 8d                       // $8d cue
   0b9f:76               push0 
   0ba0:59 02            &rest 2 
   0ba2:57 9d 04         super TScript 4 
@@ -1583,7 +1583,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_0c88
+    (method (changeState)                              // method_0c88
   0c88:87 01              lap param1 
   0c8a:65 0a             aTop state 
   0c8c:36                push 
@@ -1591,9 +1591,9 @@
   0c8e:35 00              ldi 0 
   0c90:1a                 eq? 
   0c91:30 000f            bnt code_0ca3 
-  0c94:39 03            pushi 3 // $3 y
-  0c96:38 0491          pushi 491 // $491 sel_1169
-  0c99:39 0a            pushi a // $a nsLeft
+  0c94:39 03            pushi 3                        // $3 y
+  0c96:38 0491          pushi 491                      // $491 sel_1169
+  0c99:39 0a            pushi a                        // $a nsLeft
   0c9b:7c            pushSelf 
   0c9c:40 f36e 06        call proc_000e 6 
 
@@ -1607,9 +1607,9 @@
   0caa:76               push0 
   0cab:40 f445 00        call proc_00f4 0 
 
-  0caf:39 03            pushi 3 // $3 y
-  0cb1:38 0491          pushi 491 // $491 sel_1169
-  0cb4:39 0b            pushi b // $b nsBottom
+  0caf:39 03            pushi 3                        // $3 y
+  0cb1:38 0491          pushi 491                      // $491 sel_1169
+  0cb4:39 0b            pushi b                        // $b nsBottom
   0cb6:7c            pushSelf 
   0cb7:40 f3a8 06        call proc_0063 6 
 
@@ -1623,9 +1623,9 @@
   0cc5:76               push0 
   0cc6:40 f444 00        call proc_010e 0 
 
-  0cca:39 03            pushi 3 // $3 y
-  0ccc:38 0491          pushi 491 // $491 sel_1169
-  0ccf:39 0c            pushi c // $c nsRight
+  0cca:39 03            pushi 3                        // $3 y
+  0ccc:38 0491          pushi 491                      // $491 sel_1169
+  0ccf:39 0c            pushi c                        // $c nsRight
   0cd1:7c            pushSelf 
   0cd2:40 f361 06        call proc_0037 6 
 
@@ -1639,9 +1639,9 @@
   0ce0:76               push0 
   0ce1:40 f442 00        call proc_0127 0 
 
-  0ce5:39 03            pushi 3 // $3 y
-  0ce7:38 0491          pushi 491 // $491 sel_1169
-  0cea:39 0d            pushi d // $d lsTop
+  0ce5:39 03            pushi 3                        // $3 y
+  0ce7:38 0491          pushi 491                      // $491 sel_1169
+  0cea:39 0d            pushi d                        // $d lsTop
   0cec:7c            pushSelf 
   0ced:40 f3da 06        call proc_00cb 6 
 
@@ -1655,9 +1655,9 @@
   0cfb:76               push0 
   0cfc:40 f401 00        call proc_0101 0 
 
-  0d00:39 03            pushi 3 // $3 y
-  0d02:38 0491          pushi 491 // $491 sel_1169
-  0d05:39 0e            pushi e // $e lsLeft
+  0d00:39 03            pushi 3                        // $3 y
+  0d02:38 0491          pushi 491                      // $491 sel_1169
+  0d05:39 0e            pushi e                        // $e lsLeft
   0d07:7c            pushSelf 
   0d08:40 f38b 06        call proc_0097 6 
 
@@ -1671,7 +1671,7 @@
   0d16:76               push0 
   0d17:40 f43e 00        call proc_0159 0 
 
-  0d1b:39 6c            pushi 6c // $6c dispose
+  0d1b:39 6c            pushi 6c                       // $6c dispose
   0d1d:76               push0 
   0d1e:54 04             self 4 
 
@@ -1681,7 +1681,7 @@
   0d21:48                 ret 
     )
 
-    (method (cue) // method_0c66
+    (method (cue)                                      // method_0c66
   0c66:87 00              lap paramTotal 
   0c68:30 0013            bnt code_0c7e 
   0c6b:87 01              lap param1 
@@ -1690,14 +1690,14 @@
   0c71:76               push0 
   0c72:40 f4e3 00        call proc_0159 0 
 
-  0c76:39 6c            pushi 6c // $6c dispose
+  0c76:39 6c            pushi 6c                       // $6c dispose
   0c78:76               push0 
   0c79:54 04             self 4 
 
   0c7b:32 0009            jmp code_0c87 
 
         code_0c7e
-  0c7e:38 008d          pushi 8d // $8d cue
+  0c7e:38 008d          pushi 8d                       // $8d cue
   0c81:76               push0 
   0c82:59 02            &rest 2 
   0c84:57 9d 04         super TScript 4 
@@ -1727,7 +1727,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_0d84
+    (method (changeState)                              // method_0d84
   0d84:87 01              lap param1 
   0d86:65 0a             aTop state 
   0d88:36                push 
@@ -1735,9 +1735,9 @@
   0d8a:35 00              ldi 0 
   0d8c:1a                 eq? 
   0d8d:30 000f            bnt code_0d9f 
-  0d90:39 03            pushi 3 // $3 y
-  0d92:38 0491          pushi 491 // $491 sel_1169
-  0d95:39 0f            pushi f // $f lsBottom
+  0d90:39 03            pushi 3                        // $3 y
+  0d92:38 0491          pushi 491                      // $491 sel_1169
+  0d95:39 0f            pushi f                        // $f lsBottom
   0d97:7c            pushSelf 
   0d98:40 f2c7 06        call proc_0063 6 
 
@@ -1751,9 +1751,9 @@
   0da6:76               push0 
   0da7:40 f363 00        call proc_010e 0 
 
-  0dab:39 03            pushi 3 // $3 y
-  0dad:38 0491          pushi 491 // $491 sel_1169
-  0db0:39 10            pushi 10 // $10 lsRight
+  0dab:39 03            pushi 3                        // $3 y
+  0dad:38 0491          pushi 491                      // $491 sel_1169
+  0db0:39 10            pushi 10                       // $10 lsRight
   0db2:7c            pushSelf 
   0db3:40 f280 06        call proc_0037 6 
 
@@ -1767,9 +1767,9 @@
   0dc1:76               push0 
   0dc2:40 f361 00        call proc_0127 0 
 
-  0dc6:39 03            pushi 3 // $3 y
-  0dc8:38 0491          pushi 491 // $491 sel_1169
-  0dcb:39 11            pushi 11 // $11 signal
+  0dc6:39 03            pushi 3                        // $3 y
+  0dc8:38 0491          pushi 491                      // $491 sel_1169
+  0dcb:39 11            pushi 11                       // $11 signal
   0dcd:7c            pushSelf 
   0dce:40 f23c 06        call proc_000e 6 
 
@@ -1783,9 +1783,9 @@
   0ddc:76               push0 
   0ddd:40 f313 00        call proc_00f4 0 
 
-  0de1:39 03            pushi 3 // $3 y
-  0de3:38 0491          pushi 491 // $491 sel_1169
-  0de6:39 12            pushi 12 // $12 illegalBits
+  0de1:39 03            pushi 3                        // $3 y
+  0de3:38 0491          pushi 491                      // $491 sel_1169
+  0de6:39 12            pushi 12                       // $12 illegalBits
   0de8:7c            pushSelf 
   0de9:40 f2aa 06        call proc_0097 6 
 
@@ -1799,7 +1799,7 @@
   0df7:76               push0 
   0df8:40 f35d 00        call proc_0159 0 
 
-  0dfc:39 6c            pushi 6c // $6c dispose
+  0dfc:39 6c            pushi 6c                       // $6c dispose
   0dfe:76               push0 
   0dff:54 04             self 4 
 
@@ -1810,7 +1810,7 @@
   0e03:00                bnot 
     )
 
-    (method (cue) // method_0d62
+    (method (cue)                                      // method_0d62
   0d62:87 00              lap paramTotal 
   0d64:30 0013            bnt code_0d7a 
   0d67:87 01              lap param1 
@@ -1819,14 +1819,14 @@
   0d6d:76               push0 
   0d6e:40 f3e7 00        call proc_0159 0 
 
-  0d72:39 6c            pushi 6c // $6c dispose
+  0d72:39 6c            pushi 6c                       // $6c dispose
   0d74:76               push0 
   0d75:54 04             self 4 
 
   0d77:32 0009            jmp code_0d83 
 
         code_0d7a
-  0d7a:38 008d          pushi 8d // $8d cue
+  0d7a:38 008d          pushi 8d                       // $8d cue
   0d7d:76               push0 
   0d7e:59 02            &rest 2 
   0d80:57 9d 04         super TScript 4 
@@ -1856,7 +1856,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_0e66
+    (method (changeState)                              // method_0e66
   0e66:87 01              lap param1 
   0e68:65 0a             aTop state 
   0e6a:36                push 
@@ -1864,9 +1864,9 @@
   0e6c:35 00              ldi 0 
   0e6e:1a                 eq? 
   0e6f:30 000f            bnt code_0e81 
-  0e72:39 03            pushi 3 // $3 y
-  0e74:38 0491          pushi 491 // $491 sel_1169
-  0e77:39 13            pushi 13 // $13 brTop
+  0e72:39 03            pushi 3                        // $3 y
+  0e74:38 0491          pushi 491                      // $491 sel_1169
+  0e77:39 13            pushi 13                       // $13 brTop
   0e79:7c            pushSelf 
   0e7a:40 f219 06        call proc_0097 6 
 
@@ -1880,9 +1880,9 @@
   0e88:76               push0 
   0e89:40 f2b3 00        call proc_0140 0 
 
-  0e8d:39 03            pushi 3 // $3 y
-  0e8f:38 0491          pushi 491 // $491 sel_1169
-  0e92:39 14            pushi 14 // $14 brLeft
+  0e8d:39 03            pushi 3                        // $3 y
+  0e8f:38 0491          pushi 491                      // $491 sel_1169
+  0e92:39 14            pushi 14                       // $14 brLeft
   0e94:7c            pushSelf 
   0e95:40 f232 06        call proc_00cb 6 
 
@@ -1896,9 +1896,9 @@
   0ea3:76               push0 
   0ea4:40 f259 00        call proc_0101 0 
 
-  0ea8:39 03            pushi 3 // $3 y
-  0eaa:38 0491          pushi 491 // $491 sel_1169
-  0ead:39 15            pushi 15 // $15 brBottom
+  0ea8:39 03            pushi 3                        // $3 y
+  0eaa:38 0491          pushi 491                      // $491 sel_1169
+  0ead:39 15            pushi 15                       // $15 brBottom
   0eaf:7c            pushSelf 
   0eb0:40 f183 06        call proc_0037 6 
 
@@ -1912,9 +1912,9 @@
   0ebe:76               push0 
   0ebf:40 f264 00        call proc_0127 0 
 
-  0ec3:39 03            pushi 3 // $3 y
-  0ec5:38 0491          pushi 491 // $491 sel_1169
-  0ec8:39 16            pushi 16 // $16 brRight
+  0ec3:39 03            pushi 3                        // $3 y
+  0ec5:38 0491          pushi 491                      // $491 sel_1169
+  0ec8:39 16            pushi 16                       // $16 brRight
   0eca:7c            pushSelf 
   0ecb:40 f13f 06        call proc_000e 6 
 
@@ -1928,7 +1928,7 @@
   0ed9:76               push0 
   0eda:40 f27b 00        call proc_0159 0 
 
-  0ede:39 6c            pushi 6c // $6c dispose
+  0ede:39 6c            pushi 6c                       // $6c dispose
   0ee0:76               push0 
   0ee1:54 04             self 4 
 
@@ -1939,7 +1939,7 @@
   0ee5:00                bnot 
     )
 
-    (method (cue) // method_0e44
+    (method (cue)                                      // method_0e44
   0e44:87 00              lap paramTotal 
   0e46:30 0013            bnt code_0e5c 
   0e49:87 01              lap param1 
@@ -1948,14 +1948,14 @@
   0e4f:76               push0 
   0e50:40 f305 00        call proc_0159 0 
 
-  0e54:39 6c            pushi 6c // $6c dispose
+  0e54:39 6c            pushi 6c                       // $6c dispose
   0e56:76               push0 
   0e57:54 04             self 4 
 
   0e59:32 0009            jmp code_0e65 
 
         code_0e5c
-  0e5c:38 008d          pushi 8d // $8d cue
+  0e5c:38 008d          pushi 8d                       // $8d cue
   0e5f:76               push0 
   0e60:59 02            &rest 2 
   0e62:57 9d 04         super TScript 4 
@@ -1985,7 +1985,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_0f48
+    (method (changeState)                              // method_0f48
   0f48:87 01              lap param1 
   0f4a:65 0a             aTop state 
   0f4c:36                push 
@@ -1993,9 +1993,9 @@
   0f4e:35 00              ldi 0 
   0f50:1a                 eq? 
   0f51:30 000f            bnt code_0f63 
-  0f54:39 03            pushi 3 // $3 y
-  0f56:38 0491          pushi 491 // $491 sel_1169
-  0f59:39 17            pushi 17 // $17 name
+  0f54:39 03            pushi 3                        // $3 y
+  0f56:38 0491          pushi 491                      // $491 sel_1169
+  0f59:39 17            pushi 17                       // $17 name
   0f5b:7c            pushSelf 
   0f5c:40 f0d7 06        call proc_0037 6 
 
@@ -2009,9 +2009,9 @@
   0f6a:76               push0 
   0f6b:40 f1b8 00        call proc_0127 0 
 
-  0f6f:39 03            pushi 3 // $3 y
-  0f71:38 0491          pushi 491 // $491 sel_1169
-  0f74:39 18            pushi 18 // $18 key
+  0f6f:39 03            pushi 3                        // $3 y
+  0f71:38 0491          pushi 491                      // $491 sel_1169
+  0f74:39 18            pushi 18                       // $18 key
   0f76:7c            pushSelf 
   0f77:40 f093 06        call proc_000e 6 
 
@@ -2026,9 +2026,9 @@
   0f86:76               push0 
   0f87:40 f169 00        call proc_00f4 0 
 
-  0f8b:39 03            pushi 3 // $3 y
-  0f8d:38 0491          pushi 491 // $491 sel_1169
-  0f90:39 19            pushi 19 // $19 time
+  0f8b:39 03            pushi 3                        // $3 y
+  0f8d:38 0491          pushi 491                      // $491 sel_1169
+  0f90:39 19            pushi 19                       // $19 time
   0f92:7c            pushSelf 
   0f93:40 f0cc 06        call proc_0063 6 
 
@@ -2042,9 +2042,9 @@
   0fa1:76               push0 
   0fa2:40 f168 00        call proc_010e 0 
 
-  0fa6:39 03            pushi 3 // $3 y
-  0fa8:38 0491          pushi 491 // $491 sel_1169
-  0fab:39 1a            pushi 1a // $1a text
+  0fa6:39 03            pushi 3                        // $3 y
+  0fa8:38 0491          pushi 491                      // $491 sel_1169
+  0fab:39 1a            pushi 1a                       // $1a text
   0fad:7c            pushSelf 
   0fae:40 f0e5 06        call proc_0097 6 
 
@@ -2058,9 +2058,9 @@
   0fbc:76               push0 
   0fbd:40 f17f 00        call proc_0140 0 
 
-  0fc1:39 03            pushi 3 // $3 y
-  0fc3:38 0491          pushi 491 // $491 sel_1169
-  0fc6:39 1b            pushi 1b // $1b elements
+  0fc1:39 03            pushi 3                        // $3 y
+  0fc3:38 0491          pushi 491                      // $491 sel_1169
+  0fc6:39 1b            pushi 1b                       // $1b elements
   0fc8:7c            pushSelf 
   0fc9:40 f096 06        call proc_0063 6 
 
@@ -2074,7 +2074,7 @@
   0fd7:76               push0 
   0fd8:40 f17d 00        call proc_0159 0 
 
-  0fdc:39 6c            pushi 6c // $6c dispose
+  0fdc:39 6c            pushi 6c                       // $6c dispose
   0fde:76               push0 
   0fdf:54 04             self 4 
 
@@ -2085,7 +2085,7 @@
   0fe3:00                bnot 
     )
 
-    (method (cue) // method_0f26
+    (method (cue)                                      // method_0f26
   0f26:87 00              lap paramTotal 
   0f28:30 0013            bnt code_0f3e 
   0f2b:87 01              lap param1 
@@ -2094,14 +2094,14 @@
   0f31:76               push0 
   0f32:40 f223 00        call proc_0159 0 
 
-  0f36:39 6c            pushi 6c // $6c dispose
+  0f36:39 6c            pushi 6c                       // $6c dispose
   0f38:76               push0 
   0f39:54 04             self 4 
 
   0f3b:32 0009            jmp code_0f47 
 
         code_0f3e
-  0f3e:38 008d          pushi 8d // $8d cue
+  0f3e:38 008d          pushi 8d                       // $8d cue
   0f41:76               push0 
   0f42:59 02            &rest 2 
   0f44:57 9d 04         super TScript 4 
@@ -2131,7 +2131,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1046
+    (method (changeState)                              // method_1046
   1046:87 01              lap param1 
   1048:65 0a             aTop state 
   104a:36                push 
@@ -2139,9 +2139,9 @@
   104c:35 00              ldi 0 
   104e:1a                 eq? 
   104f:30 000f            bnt code_1061 
-  1052:39 03            pushi 3 // $3 y
-  1054:38 0491          pushi 491 // $491 sel_1169
-  1057:39 1c            pushi 1c // $1c color
+  1052:39 03            pushi 3                        // $3 y
+  1054:38 0491          pushi 491                      // $491 sel_1169
+  1057:39 1c            pushi 1c                       // $1c color
   1059:7c            pushSelf 
   105a:40 f039 06        call proc_0097 6 
 
@@ -2155,9 +2155,9 @@
   1068:76               push0 
   1069:40 f0d3 00        call proc_0140 0 
 
-  106d:39 03            pushi 3 // $3 y
-  106f:38 0491          pushi 491 // $491 sel_1169
-  1072:39 1d            pushi 1d // $1d back
+  106d:39 03            pushi 3                        // $3 y
+  106f:38 0491          pushi 491                      // $491 sel_1169
+  1072:39 1d            pushi 1d                       // $1d back
   1074:7c            pushSelf 
   1075:40 ef95 06        call proc_000e 6 
 
@@ -2171,9 +2171,9 @@
   1083:76               push0 
   1084:40 f06c 00        call proc_00f4 0 
 
-  1088:39 03            pushi 3 // $3 y
-  108a:38 0491          pushi 491 // $491 sel_1169
-  108d:39 1e            pushi 1e // $1e mode
+  1088:39 03            pushi 3                        // $3 y
+  108a:38 0491          pushi 491                      // $491 sel_1169
+  108d:39 1e            pushi 1e                       // $1e mode
   108f:7c            pushSelf 
   1090:40 efa3 06        call proc_0037 6 
 
@@ -2187,9 +2187,9 @@
   109e:76               push0 
   109f:40 f084 00        call proc_0127 0 
 
-  10a3:39 03            pushi 3 // $3 y
-  10a5:38 0491          pushi 491 // $491 sel_1169
-  10a8:39 1f            pushi 1f // $1f style
+  10a3:39 03            pushi 3                        // $3 y
+  10a5:38 0491          pushi 491                      // $491 sel_1169
+  10a8:39 1f            pushi 1f                       // $1f style
   10aa:7c            pushSelf 
   10ab:40 efe8 06        call proc_0097 6 
 
@@ -2203,7 +2203,7 @@
   10b9:76               push0 
   10ba:40 f09b 00        call proc_0159 0 
 
-  10be:39 6c            pushi 6c // $6c dispose
+  10be:39 6c            pushi 6c                       // $6c dispose
   10c0:76               push0 
   10c1:54 04             self 4 
 
@@ -2214,7 +2214,7 @@
   10c5:00                bnot 
     )
 
-    (method (cue) // method_1024
+    (method (cue)                                      // method_1024
   1024:87 00              lap paramTotal 
   1026:30 0013            bnt code_103c 
   1029:87 01              lap param1 
@@ -2223,14 +2223,14 @@
   102f:76               push0 
   1030:40 f125 00        call proc_0159 0 
 
-  1034:39 6c            pushi 6c // $6c dispose
+  1034:39 6c            pushi 6c                       // $6c dispose
   1036:76               push0 
   1037:54 04             self 4 
 
   1039:32 0009            jmp code_1045 
 
         code_103c
-  103c:38 008d          pushi 8d // $8d cue
+  103c:38 008d          pushi 8d                       // $8d cue
   103f:76               push0 
   1040:59 02            &rest 2 
   1042:57 9d 04         super TScript 4 
@@ -2260,7 +2260,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1128
+    (method (changeState)                              // method_1128
   1128:87 01              lap param1 
   112a:65 0a             aTop state 
   112c:36                push 
@@ -2268,9 +2268,9 @@
   112e:35 00              ldi 0 
   1130:1a                 eq? 
   1131:30 000f            bnt code_1143 
-  1134:39 03            pushi 3 // $3 y
-  1136:38 0491          pushi 491 // $491 sel_1169
-  1139:39 20            pushi 20 // $20 state
+  1134:39 03            pushi 3                        // $3 y
+  1136:38 0491          pushi 491                      // $491 sel_1169
+  1139:39 20            pushi 20                       // $20 state
   113b:7c            pushSelf 
   113c:40 eef7 06        call proc_0037 6 
 
@@ -2284,9 +2284,9 @@
   114a:76               push0 
   114b:40 efd8 00        call proc_0127 0 
 
-  114f:39 03            pushi 3 // $3 y
-  1151:38 0491          pushi 491 // $491 sel_1169
-  1154:39 21            pushi 21 // $21 font
+  114f:39 03            pushi 3                        // $3 y
+  1151:38 0491          pushi 491                      // $491 sel_1169
+  1154:39 21            pushi 21                       // $21 font
   1156:7c            pushSelf 
   1157:40 ef08 06        call proc_0063 6 
 
@@ -2300,9 +2300,9 @@
   1165:76               push0 
   1166:40 efa4 00        call proc_010e 0 
 
-  116a:39 03            pushi 3 // $3 y
-  116c:38 0491          pushi 491 // $491 sel_1169
-  116f:39 22            pushi 22 // $22 type
+  116a:39 03            pushi 3                        // $3 y
+  116c:38 0491          pushi 491                      // $491 sel_1169
+  116f:39 22            pushi 22                       // $22 type
   1171:7c            pushSelf 
   1172:40 ef55 06        call proc_00cb 6 
 
@@ -2316,9 +2316,9 @@
   1180:76               push0 
   1181:40 ef7c 00        call proc_0101 0 
 
-  1185:39 03            pushi 3 // $3 y
-  1187:38 0491          pushi 491 // $491 sel_1169
-  118a:39 23            pushi 23 // $23 window
+  1185:39 03            pushi 3                        // $3 y
+  1187:38 0491          pushi 491                      // $491 sel_1169
+  118a:39 23            pushi 23                       // $23 window
   118c:7c            pushSelf 
   118d:40 ee7d 06        call proc_000e 6 
 
@@ -2332,9 +2332,9 @@
   119b:76               push0 
   119c:40 ef54 00        call proc_00f4 0 
 
-  11a0:39 03            pushi 3 // $3 y
-  11a2:38 0491          pushi 491 // $491 sel_1169
-  11a5:39 24            pushi 24 // $24 cursor
+  11a0:39 03            pushi 3                        // $3 y
+  11a2:38 0491          pushi 491                      // $491 sel_1169
+  11a5:39 24            pushi 24                       // $24 cursor
   11a7:7c            pushSelf 
   11a8:40 eeeb 06        call proc_0097 6 
 
@@ -2348,7 +2348,7 @@
   11b6:76               push0 
   11b7:40 ef9e 00        call proc_0159 0 
 
-  11bb:39 6c            pushi 6c // $6c dispose
+  11bb:39 6c            pushi 6c                       // $6c dispose
   11bd:76               push0 
   11be:54 04             self 4 
 
@@ -2358,7 +2358,7 @@
   11c1:48                 ret 
     )
 
-    (method (cue) // method_1106
+    (method (cue)                                      // method_1106
   1106:87 00              lap paramTotal 
   1108:30 0013            bnt code_111e 
   110b:87 01              lap param1 
@@ -2367,14 +2367,14 @@
   1111:76               push0 
   1112:40 f043 00        call proc_0159 0 
 
-  1116:39 6c            pushi 6c // $6c dispose
+  1116:39 6c            pushi 6c                       // $6c dispose
   1118:76               push0 
   1119:54 04             self 4 
 
   111b:32 0009            jmp code_1127 
 
         code_111e
-  111e:38 008d          pushi 8d // $8d cue
+  111e:38 008d          pushi 8d                       // $8d cue
   1121:76               push0 
   1122:59 02            &rest 2 
   1124:57 9d 04         super TScript 4 
@@ -2404,7 +2404,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1224
+    (method (changeState)                              // method_1224
   1224:87 01              lap param1 
   1226:65 0a             aTop state 
   1228:36                push 
@@ -2412,9 +2412,9 @@
   122a:35 00              ldi 0 
   122c:1a                 eq? 
   122d:30 000f            bnt code_123f 
-  1230:39 03            pushi 3 // $3 y
-  1232:38 0491          pushi 491 // $491 sel_1169
-  1235:39 25            pushi 25 // $25 max
+  1230:39 03            pushi 3                        // $3 y
+  1232:38 0491          pushi 491                      // $491 sel_1169
+  1235:39 25            pushi 25                       // $25 max
   1237:7c            pushSelf 
   1238:40 ee5b 06        call proc_0097 6 
 
@@ -2428,9 +2428,9 @@
   1246:76               push0 
   1247:40 eef5 00        call proc_0140 0 
 
-  124b:39 03            pushi 3 // $3 y
-  124d:38 0491          pushi 491 // $491 sel_1169
-  1250:39 26            pushi 26 // $26 mark
+  124b:39 03            pushi 3                        // $3 y
+  124d:38 0491          pushi 491                      // $491 sel_1169
+  1250:39 26            pushi 26                       // $26 mark
   1252:7c            pushSelf 
   1253:40 ee0c 06        call proc_0063 6 
 
@@ -2444,9 +2444,9 @@
   1261:76               push0 
   1262:40 eea8 00        call proc_010e 0 
 
-  1266:39 03            pushi 3 // $3 y
-  1268:38 0491          pushi 491 // $491 sel_1169
-  126b:39 27            pushi 27 // $27 who
+  1266:39 03            pushi 3                        // $3 y
+  1268:38 0491          pushi 491                      // $491 sel_1169
+  126b:39 27            pushi 27                       // $27 who
   126d:7c            pushSelf 
   126e:40 edc5 06        call proc_0037 6 
 
@@ -2460,9 +2460,9 @@
   127c:76               push0 
   127d:40 eea6 00        call proc_0127 0 
 
-  1281:39 03            pushi 3 // $3 y
-  1283:38 0491          pushi 491 // $491 sel_1169
-  1286:39 28            pushi 28 // $28 message
+  1281:39 03            pushi 3                        // $3 y
+  1283:38 0491          pushi 491                      // $491 sel_1169
+  1286:39 28            pushi 28                       // $28 message
   1288:7c            pushSelf 
   1289:40 ed81 06        call proc_000e 6 
 
@@ -2476,9 +2476,9 @@
   1297:76               push0 
   1298:40 ee58 00        call proc_00f4 0 
 
-  129c:39 03            pushi 3 // $3 y
-  129e:38 0491          pushi 491 // $491 sel_1169
-  12a1:39 29            pushi 29 // $29 edit
+  129c:39 03            pushi 3                        // $3 y
+  129e:38 0491          pushi 491                      // $491 sel_1169
+  12a1:39 29            pushi 29                       // $29 edit
   12a3:7c            pushSelf 
   12a4:40 edef 06        call proc_0097 6 
 
@@ -2492,7 +2492,7 @@
   12b2:76               push0 
   12b3:40 eea2 00        call proc_0159 0 
 
-  12b7:39 6c            pushi 6c // $6c dispose
+  12b7:39 6c            pushi 6c                       // $6c dispose
   12b9:76               push0 
   12ba:54 04             self 4 
 
@@ -2502,7 +2502,7 @@
   12bd:48                 ret 
     )
 
-    (method (cue) // method_1202
+    (method (cue)                                      // method_1202
   1202:87 00              lap paramTotal 
   1204:30 0013            bnt code_121a 
   1207:87 01              lap param1 
@@ -2511,14 +2511,14 @@
   120d:76               push0 
   120e:40 ef47 00        call proc_0159 0 
 
-  1212:39 6c            pushi 6c // $6c dispose
+  1212:39 6c            pushi 6c                       // $6c dispose
   1214:76               push0 
   1215:54 04             self 4 
 
   1217:32 0009            jmp code_1223 
 
         code_121a
-  121a:38 008d          pushi 8d // $8d cue
+  121a:38 008d          pushi 8d                       // $8d cue
   121d:76               push0 
   121e:59 02            &rest 2 
   1220:57 9d 04         super TScript 4 
@@ -2548,7 +2548,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1320
+    (method (changeState)                              // method_1320
   1320:87 01              lap param1 
   1322:65 0a             aTop state 
   1324:36                push 
@@ -2556,9 +2556,9 @@
   1326:35 00              ldi 0 
   1328:1a                 eq? 
   1329:30 000f            bnt code_133b 
-  132c:39 03            pushi 3 // $3 y
-  132e:38 0491          pushi 491 // $491 sel_1169
-  1331:39 2a            pushi 2a // $2a play
+  132c:39 03            pushi 3                        // $3 y
+  132e:38 0491          pushi 491                      // $491 sel_1169
+  1331:39 2a            pushi 2a                       // $2a play
   1333:7c            pushSelf 
   1334:40 ecff 06        call proc_0037 6 
 
@@ -2572,9 +2572,9 @@
   1342:76               push0 
   1343:40 ede0 00        call proc_0127 0 
 
-  1347:39 03            pushi 3 // $3 y
-  1349:38 0491          pushi 491 // $491 sel_1169
-  134c:39 2b            pushi 2b // $2b number
+  1347:39 03            pushi 3                        // $3 y
+  1349:38 0491          pushi 491                      // $491 sel_1169
+  134c:39 2b            pushi 2b                       // $2b number
   134e:7c            pushSelf 
   134f:40 ed10 06        call proc_0063 6 
 
@@ -2588,9 +2588,9 @@
   135d:76               push0 
   135e:40 edac 00        call proc_010e 0 
 
-  1362:39 03            pushi 3 // $3 y
-  1364:38 0491          pushi 491 // $491 sel_1169
-  1367:39 2c            pushi 2c // $2c nodePtr
+  1362:39 03            pushi 3                        // $3 y
+  1364:38 0491          pushi 491                      // $491 sel_1169
+  1367:39 2c            pushi 2c                       // $2c nodePtr
   1369:7c            pushSelf 
   136a:40 ed29 06        call proc_0097 6 
 
@@ -2604,9 +2604,9 @@
   1378:76               push0 
   1379:40 edc3 00        call proc_0140 0 
 
-  137d:39 03            pushi 3 // $3 y
-  137f:38 0491          pushi 491 // $491 sel_1169
-  1382:39 2d            pushi 2d // $2d client
+  137d:39 03            pushi 3                        // $3 y
+  137f:38 0491          pushi 491                      // $491 sel_1169
+  1382:39 2d            pushi 2d                       // $2d client
   1384:7c            pushSelf 
   1385:40 ed42 06        call proc_00cb 6 
 
@@ -2620,9 +2620,9 @@
   1393:76               push0 
   1394:40 ed69 00        call proc_0101 0 
 
-  1398:39 03            pushi 3 // $3 y
-  139a:38 0491          pushi 491 // $491 sel_1169
-  139d:39 2e            pushi 2e // $2e dx
+  1398:39 03            pushi 3                        // $3 y
+  139a:38 0491          pushi 491                      // $491 sel_1169
+  139d:39 2e            pushi 2e                       // $2e dx
   139f:7c            pushSelf 
   13a0:40 ecf3 06        call proc_0097 6 
 
@@ -2636,7 +2636,7 @@
   13ae:76               push0 
   13af:40 eda6 00        call proc_0159 0 
 
-  13b3:39 6c            pushi 6c // $6c dispose
+  13b3:39 6c            pushi 6c                       // $6c dispose
   13b5:76               push0 
   13b6:54 04             self 4 
 
@@ -2646,7 +2646,7 @@
   13b9:48                 ret 
     )
 
-    (method (cue) // method_12fe
+    (method (cue)                                      // method_12fe
   12fe:87 00              lap paramTotal 
   1300:30 0013            bnt code_1316 
   1303:87 01              lap param1 
@@ -2655,14 +2655,14 @@
   1309:76               push0 
   130a:40 ee4b 00        call proc_0159 0 
 
-  130e:39 6c            pushi 6c // $6c dispose
+  130e:39 6c            pushi 6c                       // $6c dispose
   1310:76               push0 
   1311:54 04             self 4 
 
   1313:32 0009            jmp code_131f 
 
         code_1316
-  1316:38 008d          pushi 8d // $8d cue
+  1316:38 008d          pushi 8d                       // $8d cue
   1319:76               push0 
   131a:59 02            &rest 2 
   131c:57 9d 04         super TScript 4 
@@ -2692,7 +2692,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_141c
+    (method (changeState)                              // method_141c
   141c:87 01              lap param1 
   141e:65 0a             aTop state 
   1420:36                push 
@@ -2700,9 +2700,9 @@
   1422:35 00              ldi 0 
   1424:1a                 eq? 
   1425:30 000f            bnt code_1437 
-  1428:39 03            pushi 3 // $3 y
-  142a:38 0491          pushi 491 // $491 sel_1169
-  142d:39 2f            pushi 2f // $2f dy
+  1428:39 03            pushi 3                        // $3 y
+  142a:38 0491          pushi 491                      // $491 sel_1169
+  142d:39 2f            pushi 2f                       // $2f dy
   142f:7c            pushSelf 
   1430:40 ec97 06        call proc_00cb 6 
 
@@ -2716,9 +2716,9 @@
   143e:76               push0 
   143f:40 ecbe 00        call proc_0101 0 
 
-  1443:39 03            pushi 3 // $3 y
-  1445:38 0491          pushi 491 // $491 sel_1169
-  1448:39 30            pushi 30 // $30 b-moveCnt
+  1443:39 03            pushi 3                        // $3 y
+  1445:38 0491          pushi 491                      // $491 sel_1169
+  1448:39 30            pushi 30                       // $30 b-moveCnt
   144a:7c            pushSelf 
   144b:40 ec14 06        call proc_0063 6 
 
@@ -2732,9 +2732,9 @@
   1459:76               push0 
   145a:40 ecb0 00        call proc_010e 0 
 
-  145e:39 03            pushi 3 // $3 y
-  1460:38 0491          pushi 491 // $491 sel_1169
-  1463:39 31            pushi 31 // $31 b-i1
+  145e:39 03            pushi 3                        // $3 y
+  1460:38 0491          pushi 491                      // $491 sel_1169
+  1463:39 31            pushi 31                       // $31 b-i1
   1465:7c            pushSelf 
   1466:40 ebcd 06        call proc_0037 6 
 
@@ -2748,9 +2748,9 @@
   1474:76               push0 
   1475:40 ecae 00        call proc_0127 0 
 
-  1479:39 03            pushi 3 // $3 y
-  147b:38 0491          pushi 491 // $491 sel_1169
-  147e:39 32            pushi 32 // $32 b-i2
+  1479:39 03            pushi 3                        // $3 y
+  147b:38 0491          pushi 491                      // $491 sel_1169
+  147e:39 32            pushi 32                       // $32 b-i2
   1480:7c            pushSelf 
   1481:40 eb89 06        call proc_000e 6 
 
@@ -2764,7 +2764,7 @@
   148f:76               push0 
   1490:40 ecc5 00        call proc_0159 0 
 
-  1494:39 6c            pushi 6c // $6c dispose
+  1494:39 6c            pushi 6c                       // $6c dispose
   1496:76               push0 
   1497:54 04             self 4 
 
@@ -2775,7 +2775,7 @@
   149b:00                bnot 
     )
 
-    (method (cue) // method_13fa
+    (method (cue)                                      // method_13fa
   13fa:87 00              lap paramTotal 
   13fc:30 0013            bnt code_1412 
   13ff:87 01              lap param1 
@@ -2784,14 +2784,14 @@
   1405:76               push0 
   1406:40 ed4f 00        call proc_0159 0 
 
-  140a:39 6c            pushi 6c // $6c dispose
+  140a:39 6c            pushi 6c                       // $6c dispose
   140c:76               push0 
   140d:54 04             self 4 
 
   140f:32 0009            jmp code_141b 
 
         code_1412
-  1412:38 008d          pushi 8d // $8d cue
+  1412:38 008d          pushi 8d                       // $8d cue
   1415:76               push0 
   1416:59 02            &rest 2 
   1418:57 9d 04         super TScript 4 
@@ -2821,7 +2821,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_14fe
+    (method (changeState)                              // method_14fe
   14fe:87 01              lap param1 
   1500:65 0a             aTop state 
   1502:36                push 
@@ -2829,9 +2829,9 @@
   1504:35 00              ldi 0 
   1506:1a                 eq? 
   1507:30 000f            bnt code_1519 
-  150a:39 03            pushi 3 // $3 y
-  150c:38 0491          pushi 491 // $491 sel_1169
-  150f:39 33            pushi 33 // $33 b-di
+  150a:39 03            pushi 3                        // $3 y
+  150c:38 0491          pushi 491                      // $491 sel_1169
+  150f:39 33            pushi 33                       // $33 b-di
   1511:7c            pushSelf 
   1512:40 eaf8 06        call proc_000e 6 
 
@@ -2845,9 +2845,9 @@
   1520:76               push0 
   1521:40 ebcf 00        call proc_00f4 0 
 
-  1525:39 03            pushi 3 // $3 y
-  1527:38 0491          pushi 491 // $491 sel_1169
-  152a:39 34            pushi 34 // $34 b-xAxis
+  1525:39 03            pushi 3                        // $3 y
+  1527:38 0491          pushi 491                      // $491 sel_1169
+  152a:39 34            pushi 34                       // $34 b-xAxis
   152c:7c            pushSelf 
   152d:40 eb06 06        call proc_0037 6 
 
@@ -2861,9 +2861,9 @@
   153b:76               push0 
   153c:40 ebe7 00        call proc_0127 0 
 
-  1540:39 03            pushi 3 // $3 y
-  1542:38 0491          pushi 491 // $491 sel_1169
-  1545:39 35            pushi 35 // $35 b-incr
+  1540:39 03            pushi 3                        // $3 y
+  1542:38 0491          pushi 491                      // $491 sel_1169
+  1545:39 35            pushi 35                       // $35 b-incr
   1547:7c            pushSelf 
   1548:40 eb17 06        call proc_0063 6 
 
@@ -2877,9 +2877,9 @@
   1556:76               push0 
   1557:40 ebb3 00        call proc_010e 0 
 
-  155b:39 03            pushi 3 // $3 y
-  155d:38 0491          pushi 491 // $491 sel_1169
-  1560:39 36            pushi 36 // $36 xStep
+  155b:39 03            pushi 3                        // $3 y
+  155d:38 0491          pushi 491                      // $491 sel_1169
+  1560:39 36            pushi 36                       // $36 xStep
   1562:7c            pushSelf 
   1563:40 eb30 06        call proc_0097 6 
 
@@ -2893,9 +2893,9 @@
   1571:76               push0 
   1572:40 ebca 00        call proc_0140 0 
 
-  1576:39 03            pushi 3 // $3 y
-  1578:38 0491          pushi 491 // $491 sel_1169
-  157b:39 37            pushi 37 // $37 yStep
+  1576:39 03            pushi 3                        // $3 y
+  1578:38 0491          pushi 491                      // $491 sel_1169
+  157b:39 37            pushi 37                       // $37 yStep
   157d:7c            pushSelf 
   157e:40 eae1 06        call proc_0063 6 
 
@@ -2909,9 +2909,9 @@
   158c:76               push0 
   158d:40 eb7d 00        call proc_010e 0 
 
-  1591:39 03            pushi 3 // $3 y
-  1593:38 0491          pushi 491 // $491 sel_1169
-  1596:39 38            pushi 38 // $38 moveSpeed
+  1591:39 03            pushi 3                        // $3 y
+  1593:38 0491          pushi 491                      // $491 sel_1169
+  1596:39 38            pushi 38                       // $38 moveSpeed
   1598:7c            pushSelf 
   1599:40 eafa 06        call proc_0097 6 
 
@@ -2925,9 +2925,9 @@
   15a7:76               push0 
   15a8:40 eb94 00        call proc_0140 0 
 
-  15ac:39 03            pushi 3 // $3 y
-  15ae:38 0491          pushi 491 // $491 sel_1169
-  15b1:39 39            pushi 39 // $39 cantBeHere
+  15ac:39 03            pushi 3                        // $3 y
+  15ae:38 0491          pushi 491                      // $491 sel_1169
+  15b1:39 39            pushi 39                       // $39 cantBeHere
   15b3:7c            pushSelf 
   15b4:40 ea7f 06        call proc_0037 6 
 
@@ -2941,9 +2941,9 @@
   15c2:76               push0 
   15c3:40 eb60 00        call proc_0127 0 
 
-  15c7:39 03            pushi 3 // $3 y
-  15c9:38 0491          pushi 491 // $491 sel_1169
-  15cc:39 3a            pushi 3a // $3a heading
+  15c7:39 03            pushi 3                        // $3 y
+  15c9:38 0491          pushi 491                      // $491 sel_1169
+  15cc:39 3a            pushi 3a                       // $3a heading
   15ce:7c            pushSelf 
   15cf:40 eac4 06        call proc_0097 6 
 
@@ -2957,7 +2957,7 @@
   15dd:76               push0 
   15de:40 eb77 00        call proc_0159 0 
 
-  15e2:39 6c            pushi 6c // $6c dispose
+  15e2:39 6c            pushi 6c                       // $6c dispose
   15e4:76               push0 
   15e5:54 04             self 4 
 
@@ -2968,7 +2968,7 @@
   15e9:00                bnot 
     )
 
-    (method (cue) // method_14dc
+    (method (cue)                                      // method_14dc
   14dc:87 00              lap paramTotal 
   14de:30 0013            bnt code_14f4 
   14e1:87 01              lap param1 
@@ -2977,14 +2977,14 @@
   14e7:76               push0 
   14e8:40 ec6d 00        call proc_0159 0 
 
-  14ec:39 6c            pushi 6c // $6c dispose
+  14ec:39 6c            pushi 6c                       // $6c dispose
   14ee:76               push0 
   14ef:54 04             self 4 
 
   14f1:32 0009            jmp code_14fd 
 
         code_14f4
-  14f4:38 008d          pushi 8d // $8d cue
+  14f4:38 008d          pushi 8d                       // $8d cue
   14f7:76               push0 
   14f8:59 02            &rest 2 
   14fa:57 9d 04         super TScript 4 
@@ -3014,7 +3014,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_164c
+    (method (changeState)                              // method_164c
   164c:87 01              lap param1 
   164e:65 0a             aTop state 
   1650:36                push 
@@ -3022,9 +3022,9 @@
   1652:35 00              ldi 0 
   1654:1a                 eq? 
   1655:30 000f            bnt code_1667 
-  1658:39 03            pushi 3 // $3 y
-  165a:38 0491          pushi 491 // $491 sel_1169
-  165d:39 3b            pushi 3b // $3b mover
+  1658:39 03            pushi 3                        // $3 y
+  165a:38 0491          pushi 491                      // $491 sel_1169
+  165d:39 3b            pushi 3b                       // $3b mover
   165f:7c            pushSelf 
   1660:40 e9ff 06        call proc_0063 6 
 
@@ -3038,9 +3038,9 @@
   166e:76               push0 
   166f:40 ea9b 00        call proc_010e 0 
 
-  1673:39 03            pushi 3 // $3 y
-  1675:38 0491          pushi 491 // $491 sel_1169
-  1678:39 3c            pushi 3c // $3c doit
+  1673:39 03            pushi 3                        // $3 y
+  1675:38 0491          pushi 491                      // $491 sel_1169
+  1678:39 3c            pushi 3c                       // $3c doit
   167a:7c            pushSelf 
   167b:40 e9b8 06        call proc_0037 6 
 
@@ -3054,9 +3054,9 @@
   1689:76               push0 
   168a:40 ea99 00        call proc_0127 0 
 
-  168e:39 03            pushi 3 // $3 y
-  1690:38 0491          pushi 491 // $491 sel_1169
-  1693:39 3d            pushi 3d // $3d isBlocked
+  168e:39 03            pushi 3                        // $3 y
+  1690:38 0491          pushi 491                      // $491 sel_1169
+  1693:39 3d            pushi 3d                       // $3d isBlocked
   1695:7c            pushSelf 
   1696:40 e974 06        call proc_000e 6 
 
@@ -3070,9 +3070,9 @@
   16a4:76               push0 
   16a5:40 ea4b 00        call proc_00f4 0 
 
-  16a9:39 03            pushi 3 // $3 y
-  16ab:38 0491          pushi 491 // $491 sel_1169
-  16ae:39 3e            pushi 3e // $3e looper
+  16a9:39 03            pushi 3                        // $3 y
+  16ab:38 0491          pushi 491                      // $491 sel_1169
+  16ae:39 3e            pushi 3e                       // $3e looper
   16b0:7c            pushSelf 
   16b1:40 e9ae 06        call proc_0063 6 
 
@@ -3086,7 +3086,7 @@
   16bf:76               push0 
   16c0:40 ea95 00        call proc_0159 0 
 
-  16c4:39 6c            pushi 6c // $6c dispose
+  16c4:39 6c            pushi 6c                       // $6c dispose
   16c6:76               push0 
   16c7:54 04             self 4 
 
@@ -3097,7 +3097,7 @@
   16cb:00                bnot 
     )
 
-    (method (cue) // method_162a
+    (method (cue)                                      // method_162a
   162a:87 00              lap paramTotal 
   162c:30 0013            bnt code_1642 
   162f:87 01              lap param1 
@@ -3106,14 +3106,14 @@
   1635:76               push0 
   1636:40 eb1f 00        call proc_0159 0 
 
-  163a:39 6c            pushi 6c // $6c dispose
+  163a:39 6c            pushi 6c                       // $6c dispose
   163c:76               push0 
   163d:54 04             self 4 
 
   163f:32 0009            jmp code_164b 
 
         code_1642
-  1642:38 008d          pushi 8d // $8d cue
+  1642:38 008d          pushi 8d                       // $8d cue
   1645:76               push0 
   1646:59 02            &rest 2 
   1648:57 9d 04         super TScript 4 
@@ -3143,7 +3143,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_172e
+    (method (changeState)                              // method_172e
   172e:87 01              lap param1 
   1730:65 0a             aTop state 
   1732:36                push 
@@ -3151,9 +3151,9 @@
   1734:35 00              ldi 0 
   1736:1a                 eq? 
   1737:30 000f            bnt code_1749 
-  173a:39 03            pushi 3 // $3 y
-  173c:38 0491          pushi 491 // $491 sel_1169
-  173f:39 3f            pushi 3f // $3f priority
+  173a:39 03            pushi 3                        // $3 y
+  173c:38 0491          pushi 491                      // $491 sel_1169
+  173f:39 3f            pushi 3f                       // $3f priority
   1741:7c            pushSelf 
   1742:40 e8c8 06        call proc_000e 6 
 
@@ -3167,9 +3167,9 @@
   1750:76               push0 
   1751:40 e99f 00        call proc_00f4 0 
 
-  1755:39 03            pushi 3 // $3 y
-  1757:38 0491          pushi 491 // $491 sel_1169
-  175a:39 40            pushi 40 // $40 modifiers
+  1755:39 03            pushi 3                        // $3 y
+  1757:38 0491          pushi 491                      // $491 sel_1169
+  175a:39 40            pushi 40                       // $40 modifiers
   175c:7c            pushSelf 
   175d:40 e936 06        call proc_0097 6 
 
@@ -3183,9 +3183,9 @@
   176b:76               push0 
   176c:40 e9d0 00        call proc_0140 0 
 
-  1770:39 03            pushi 3 // $3 y
-  1772:38 0491          pushi 491 // $491 sel_1169
-  1775:39 41            pushi 41 // $41 replay
+  1770:39 03            pushi 3                        // $3 y
+  1772:38 0491          pushi 491                      // $491 sel_1169
+  1775:39 41            pushi 41                       // $41 replay
   1777:7c            pushSelf 
   1778:40 e8bb 06        call proc_0037 6 
 
@@ -3199,9 +3199,9 @@
   1786:76               push0 
   1787:40 e99c 00        call proc_0127 0 
 
-  178b:39 03            pushi 3 // $3 y
-  178d:38 0491          pushi 491 // $491 sel_1169
-  1790:39 42            pushi 42 // $42 setPri
+  178b:39 03            pushi 3                        // $3 y
+  178d:38 0491          pushi 491                      // $491 sel_1169
+  1790:39 42            pushi 42                       // $42 setPri
   1792:7c            pushSelf 
   1793:40 e8cc 06        call proc_0063 6 
 
@@ -3215,7 +3215,7 @@
   17a1:76               push0 
   17a2:40 e9b3 00        call proc_0159 0 
 
-  17a6:39 6c            pushi 6c // $6c dispose
+  17a6:39 6c            pushi 6c                       // $6c dispose
   17a8:76               push0 
   17a9:54 04             self 4 
 
@@ -3226,7 +3226,7 @@
   17ad:00                bnot 
     )
 
-    (method (cue) // method_170c
+    (method (cue)                                      // method_170c
   170c:87 00              lap paramTotal 
   170e:30 0013            bnt code_1724 
   1711:87 01              lap param1 
@@ -3235,14 +3235,14 @@
   1717:76               push0 
   1718:40 ea3d 00        call proc_0159 0 
 
-  171c:39 6c            pushi 6c // $6c dispose
+  171c:39 6c            pushi 6c                       // $6c dispose
   171e:76               push0 
   171f:54 04             self 4 
 
   1721:32 0009            jmp code_172d 
 
         code_1724
-  1724:38 008d          pushi 8d // $8d cue
+  1724:38 008d          pushi 8d                       // $8d cue
   1727:76               push0 
   1728:59 02            &rest 2 
   172a:57 9d 04         super TScript 4 
@@ -3272,7 +3272,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1810
+    (method (changeState)                              // method_1810
   1810:87 01              lap param1 
   1812:65 0a             aTop state 
   1814:36                push 
@@ -3280,9 +3280,9 @@
   1816:35 00              ldi 0 
   1818:1a                 eq? 
   1819:30 000f            bnt code_182b 
-  181c:39 03            pushi 3 // $3 y
-  181e:38 0491          pushi 491 // $491 sel_1169
-  1821:39 43            pushi 43 // $43 at
+  181c:39 03            pushi 3                        // $3 y
+  181e:38 0491          pushi 491                      // $491 sel_1169
+  1821:39 43            pushi 43                       // $43 at
   1823:7c            pushSelf 
   1824:40 e83b 06        call proc_0063 6 
 
@@ -3296,9 +3296,9 @@
   1832:76               push0 
   1833:40 e8d7 00        call proc_010e 0 
 
-  1837:39 03            pushi 3 // $3 y
-  1839:38 0491          pushi 491 // $491 sel_1169
-  183c:39 44            pushi 44 // $44 next
+  1837:39 03            pushi 3                        // $3 y
+  1839:38 0491          pushi 491                      // $491 sel_1169
+  183c:39 44            pushi 44                       // $44 next
   183e:7c            pushSelf 
   183f:40 e7f4 06        call proc_0037 6 
 
@@ -3312,9 +3312,9 @@
   184d:76               push0 
   184e:40 e8d5 00        call proc_0127 0 
 
-  1852:39 03            pushi 3 // $3 y
-  1854:38 0491          pushi 491 // $491 sel_1169
-  1857:39 45            pushi 45 // $45 done
+  1852:39 03            pushi 3                        // $3 y
+  1854:38 0491          pushi 491                      // $491 sel_1169
+  1857:39 45            pushi 45                       // $45 done
   1859:7c            pushSelf 
   185a:40 e7b0 06        call proc_000e 6 
 
@@ -3325,9 +3325,9 @@
   1862:35 03              ldi 3 
   1864:1a                 eq? 
   1865:30 000f            bnt code_1877 
-  1868:39 03            pushi 3 // $3 y
-  186a:38 0491          pushi 491 // $491 sel_1169
-  186d:39 46            pushi 46 // $46 width
+  1868:39 03            pushi 3                        // $3 y
+  186a:38 0491          pushi 491                      // $491 sel_1169
+  186d:39 46            pushi 46                       // $46 width
   186f:7c            pushSelf 
   1870:40 e79a 06        call proc_000e 6 
 
@@ -3341,9 +3341,9 @@
   187e:76               push0 
   187f:40 e871 00        call proc_00f4 0 
 
-  1883:39 03            pushi 3 // $3 y
-  1885:38 0491          pushi 491 // $491 sel_1169
-  1888:39 47            pushi 47 // $47 wordFail
+  1883:39 03            pushi 3                        // $3 y
+  1885:38 0491          pushi 491                      // $491 sel_1169
+  1888:39 47            pushi 47                       // $47 wordFail
   188a:7c            pushSelf 
   188b:40 e808 06        call proc_0097 6 
 
@@ -3357,7 +3357,7 @@
   1899:76               push0 
   189a:40 e8bb 00        call proc_0159 0 
 
-  189e:39 6c            pushi 6c // $6c dispose
+  189e:39 6c            pushi 6c                       // $6c dispose
   18a0:76               push0 
   18a1:54 04             self 4 
 
@@ -3368,7 +3368,7 @@
   18a5:00                bnot 
     )
 
-    (method (cue) // method_17ee
+    (method (cue)                                      // method_17ee
   17ee:87 00              lap paramTotal 
   17f0:30 0013            bnt code_1806 
   17f3:87 01              lap param1 
@@ -3377,14 +3377,14 @@
   17f9:76               push0 
   17fa:40 e95b 00        call proc_0159 0 
 
-  17fe:39 6c            pushi 6c // $6c dispose
+  17fe:39 6c            pushi 6c                       // $6c dispose
   1800:76               push0 
   1801:54 04             self 4 
 
   1803:32 0009            jmp code_180f 
 
         code_1806
-  1806:38 008d          pushi 8d // $8d cue
+  1806:38 008d          pushi 8d                       // $8d cue
   1809:76               push0 
   180a:59 02            &rest 2 
   180c:57 9d 04         super TScript 4 
@@ -3414,7 +3414,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1908
+    (method (changeState)                              // method_1908
   1908:87 01              lap param1 
   190a:65 0a             aTop state 
   190c:36                push 
@@ -3422,9 +3422,9 @@
   190e:35 00              ldi 0 
   1910:1a                 eq? 
   1911:30 000f            bnt code_1923 
-  1914:39 03            pushi 3 // $3 y
-  1916:38 0491          pushi 491 // $491 sel_1169
-  1919:39 48            pushi 48 // $48 syntaxFail
+  1914:39 03            pushi 3                        // $3 y
+  1916:38 0491          pushi 491                      // $491 sel_1169
+  1919:39 48            pushi 48                       // $48 syntaxFail
   191b:7c            pushSelf 
   191c:40 e743 06        call proc_0063 6 
 
@@ -3438,9 +3438,9 @@
   192a:76               push0 
   192b:40 e7df 00        call proc_010e 0 
 
-  192f:39 03            pushi 3 // $3 y
-  1931:38 0491          pushi 491 // $491 sel_1169
-  1934:39 49            pushi 49 // $49 semanticFail
+  192f:39 03            pushi 3                        // $3 y
+  1931:38 0491          pushi 491                      // $491 sel_1169
+  1934:39 49            pushi 49                       // $49 semanticFail
   1936:7c            pushSelf 
   1937:40 e75c 06        call proc_0097 6 
 
@@ -3454,9 +3454,9 @@
   1945:76               push0 
   1946:40 e7f6 00        call proc_0140 0 
 
-  194a:39 03            pushi 3 // $3 y
-  194c:38 0491          pushi 491 // $491 sel_1169
-  194f:39 4a            pushi 4a // $4a pragmaFail
+  194a:39 03            pushi 3                        // $3 y
+  194c:38 0491          pushi 491                      // $491 sel_1169
+  194f:39 4a            pushi 4a                       // $4a pragmaFail
   1951:7c            pushSelf 
   1952:40 e6e1 06        call proc_0037 6 
 
@@ -3470,9 +3470,9 @@
   1960:76               push0 
   1961:40 e7c2 00        call proc_0127 0 
 
-  1965:39 03            pushi 3 // $3 y
-  1967:38 0491          pushi 491 // $491 sel_1169
-  196a:39 4b            pushi 4b // $4b said
+  1965:39 03            pushi 3                        // $3 y
+  1967:38 0491          pushi 491                      // $491 sel_1169
+  196a:39 4b            pushi 4b                       // $4b said
   196c:7c            pushSelf 
   196d:40 e69d 06        call proc_000e 6 
 
@@ -3486,9 +3486,9 @@
   197b:76               push0 
   197c:40 e774 00        call proc_00f4 0 
 
-  1980:39 03            pushi 3 // $3 y
-  1982:38 0491          pushi 491 // $491 sel_1169
-  1985:39 4c            pushi 4c // $4c claimed
+  1980:39 03            pushi 3                        // $3 y
+  1982:38 0491          pushi 491                      // $491 sel_1169
+  1985:39 4c            pushi 4c                       // $4c claimed
   1987:7c            pushSelf 
   1988:40 e6d7 06        call proc_0063 6 
 
@@ -3502,7 +3502,7 @@
   1996:76               push0 
   1997:40 e7be 00        call proc_0159 0 
 
-  199b:39 6c            pushi 6c // $6c dispose
+  199b:39 6c            pushi 6c                       // $6c dispose
   199d:76               push0 
   199e:54 04             self 4 
 
@@ -3512,7 +3512,7 @@
   19a1:48                 ret 
     )
 
-    (method (cue) // method_18e6
+    (method (cue)                                      // method_18e6
   18e6:87 00              lap paramTotal 
   18e8:30 0013            bnt code_18fe 
   18eb:87 01              lap param1 
@@ -3521,14 +3521,14 @@
   18f1:76               push0 
   18f2:40 e863 00        call proc_0159 0 
 
-  18f6:39 6c            pushi 6c // $6c dispose
+  18f6:39 6c            pushi 6c                       // $6c dispose
   18f8:76               push0 
   18f9:54 04             self 4 
 
   18fb:32 0009            jmp code_1907 
 
         code_18fe
-  18fe:38 008d          pushi 8d // $8d cue
+  18fe:38 008d          pushi 8d                       // $8d cue
   1901:76               push0 
   1902:59 02            &rest 2 
   1904:57 9d 04         super TScript 4 
@@ -3558,7 +3558,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1a04
+    (method (changeState)                              // method_1a04
   1a04:87 01              lap param1 
   1a06:65 0a             aTop state 
   1a08:36                push 
@@ -3566,9 +3566,9 @@
   1a0a:35 00              ldi 0 
   1a0c:1a                 eq? 
   1a0d:30 000f            bnt code_1a1f 
-  1a10:39 03            pushi 3 // $3 y
-  1a12:38 0491          pushi 491 // $491 sel_1169
-  1a15:39 4d            pushi 4d // $4d value
+  1a10:39 03            pushi 3                        // $3 y
+  1a12:38 0491          pushi 491                      // $491 sel_1169
+  1a15:39 4d            pushi 4d                       // $4d value
   1a17:7c            pushSelf 
   1a18:40 e67b 06        call proc_0097 6 
 
@@ -3582,9 +3582,9 @@
   1a26:76               push0 
   1a27:40 e715 00        call proc_0140 0 
 
-  1a2b:39 03            pushi 3 // $3 y
-  1a2d:38 0491          pushi 491 // $491 sel_1169
-  1a30:39 4e            pushi 4e // $4e save
+  1a2b:39 03            pushi 3                        // $3 y
+  1a2d:38 0491          pushi 491                      // $491 sel_1169
+  1a30:39 4e            pushi 4e                       // $4e save
   1a32:7c            pushSelf 
   1a33:40 e600 06        call proc_0037 6 
 
@@ -3598,9 +3598,9 @@
   1a41:76               push0 
   1a42:40 e6e1 00        call proc_0127 0 
 
-  1a46:39 03            pushi 3 // $3 y
-  1a48:38 0491          pushi 491 // $491 sel_1169
-  1a4b:39 4f            pushi 4f // $4f restore
+  1a46:39 03            pushi 3                        // $3 y
+  1a48:38 0491          pushi 491                      // $491 sel_1169
+  1a4b:39 4f            pushi 4f                       // $4f restore
   1a4d:7c            pushSelf 
   1a4e:40 e611 06        call proc_0063 6 
 
@@ -3614,9 +3614,9 @@
   1a5c:76               push0 
   1a5d:40 e6ad 00        call proc_010e 0 
 
-  1a61:39 03            pushi 3 // $3 y
-  1a63:38 0491          pushi 491 // $491 sel_1169
-  1a66:39 50            pushi 50 // $50 title
+  1a61:39 03            pushi 3                        // $3 y
+  1a63:38 0491          pushi 491                      // $491 sel_1169
+  1a66:39 50            pushi 50                       // $50 title
   1a68:7c            pushSelf 
   1a69:40 e5a1 06        call proc_000e 6 
 
@@ -3630,7 +3630,7 @@
   1a77:76               push0 
   1a78:40 e6dd 00        call proc_0159 0 
 
-  1a7c:39 6c            pushi 6c // $6c dispose
+  1a7c:39 6c            pushi 6c                       // $6c dispose
   1a7e:76               push0 
   1a7f:54 04             self 4 
 
@@ -3641,7 +3641,7 @@
   1a83:00                bnot 
     )
 
-    (method (cue) // method_19e2
+    (method (cue)                                      // method_19e2
   19e2:87 00              lap paramTotal 
   19e4:30 0013            bnt code_19fa 
   19e7:87 01              lap param1 
@@ -3650,14 +3650,14 @@
   19ed:76               push0 
   19ee:40 e767 00        call proc_0159 0 
 
-  19f2:39 6c            pushi 6c // $6c dispose
+  19f2:39 6c            pushi 6c                       // $6c dispose
   19f4:76               push0 
   19f5:54 04             self 4 
 
   19f7:32 0009            jmp code_1a03 
 
         code_19fa
-  19fa:38 008d          pushi 8d // $8d cue
+  19fa:38 008d          pushi 8d                       // $8d cue
   19fd:76               push0 
   19fe:59 02            &rest 2 
   1a00:57 9d 04         super TScript 4 
@@ -3687,7 +3687,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1ae6
+    (method (changeState)                              // method_1ae6
   1ae6:87 01              lap param1 
   1ae8:65 0a             aTop state 
   1aea:36                push 
@@ -3695,9 +3695,9 @@
   1aec:35 00              ldi 0 
   1aee:1a                 eq? 
   1aef:30 000f            bnt code_1b01 
-  1af2:39 03            pushi 3 // $3 y
-  1af4:38 0491          pushi 491 // $491 sel_1169
-  1af7:39 51            pushi 51 // $51 button
+  1af2:39 03            pushi 3                        // $3 y
+  1af4:38 0491          pushi 491                      // $491 sel_1169
+  1af7:39 51            pushi 51                       // $51 button
   1af9:7c            pushSelf 
   1afa:40 e539 06        call proc_0037 6 
 
@@ -3711,9 +3711,9 @@
   1b08:76               push0 
   1b09:40 e61a 00        call proc_0127 0 
 
-  1b0d:39 03            pushi 3 // $3 y
-  1b0f:38 0491          pushi 491 // $491 sel_1169
-  1b12:39 52            pushi 52 // $52 icon
+  1b0d:39 03            pushi 3                        // $3 y
+  1b0f:38 0491          pushi 491                      // $491 sel_1169
+  1b12:39 52            pushi 52                       // $52 icon
   1b14:7c            pushSelf 
   1b15:40 e5b2 06        call proc_00cb 6 
 
@@ -3727,9 +3727,9 @@
   1b23:76               push0 
   1b24:40 e5d9 00        call proc_0101 0 
 
-  1b28:39 03            pushi 3 // $3 y
-  1b2a:38 0491          pushi 491 // $491 sel_1169
-  1b2d:39 53            pushi 53 // $53 draw
+  1b28:39 03            pushi 3                        // $3 y
+  1b2a:38 0491          pushi 491                      // $491 sel_1169
+  1b2d:39 53            pushi 53                       // $53 draw
   1b2f:7c            pushSelf 
   1b30:40 e563 06        call proc_0097 6 
 
@@ -3743,9 +3743,9 @@
   1b3e:76               push0 
   1b3f:40 e5fd 00        call proc_0140 0 
 
-  1b43:39 03            pushi 3 // $3 y
-  1b45:38 0491          pushi 491 // $491 sel_1169
-  1b48:39 54            pushi 54 // $54 delete
+  1b43:39 03            pushi 3                        // $3 y
+  1b45:38 0491          pushi 491                      // $491 sel_1169
+  1b48:39 54            pushi 54                       // $54 delete
   1b4a:7c            pushSelf 
   1b4b:40 e57c 06        call proc_00cb 6 
 
@@ -3759,9 +3759,9 @@
   1b59:76               push0 
   1b5a:40 e5a3 00        call proc_0101 0 
 
-  1b5e:39 03            pushi 3 // $3 y
-  1b60:38 0491          pushi 491 // $491 sel_1169
-  1b63:39 55            pushi 55 // $55 z
+  1b5e:39 03            pushi 3                        // $3 y
+  1b60:38 0491          pushi 491                      // $491 sel_1169
+  1b63:39 55            pushi 55                       // $55 z
   1b65:7c            pushSelf 
   1b66:40 e4cd 06        call proc_0037 6 
 
@@ -3775,9 +3775,9 @@
   1b74:76               push0 
   1b75:40 e5ae 00        call proc_0127 0 
 
-  1b79:39 03            pushi 3 // $3 y
-  1b7b:38 0491          pushi 491 // $491 sel_1169
-  1b7e:39 56            pushi 56 // $56 parseLang
+  1b79:39 03            pushi 3                        // $3 y
+  1b7b:38 0491          pushi 491                      // $491 sel_1169
+  1b7e:39 56            pushi 56                       // $56 parseLang
   1b80:7c            pushSelf 
   1b81:40 e546 06        call proc_00cb 6 
 
@@ -3791,9 +3791,9 @@
   1b8f:76               push0 
   1b90:40 e56d 00        call proc_0101 0 
 
-  1b94:39 03            pushi 3 // $3 y
-  1b96:38 0491          pushi 491 // $491 sel_1169
-  1b99:39 57            pushi 57 // $57 printLang
+  1b94:39 03            pushi 3                        // $3 y
+  1b96:38 0491          pushi 491                      // $491 sel_1169
+  1b99:39 57            pushi 57                       // $57 printLang
   1b9b:7c            pushSelf 
   1b9c:40 e497 06        call proc_0037 6 
 
@@ -3807,7 +3807,7 @@
   1baa:76               push0 
   1bab:40 e5aa 00        call proc_0159 0 
 
-  1baf:39 6c            pushi 6c // $6c dispose
+  1baf:39 6c            pushi 6c                       // $6c dispose
   1bb1:76               push0 
   1bb2:54 04             self 4 
 
@@ -3817,7 +3817,7 @@
   1bb5:48                 ret 
     )
 
-    (method (cue) // method_1ac4
+    (method (cue)                                      // method_1ac4
   1ac4:87 00              lap paramTotal 
   1ac6:30 0013            bnt code_1adc 
   1ac9:87 01              lap param1 
@@ -3826,14 +3826,14 @@
   1acf:76               push0 
   1ad0:40 e685 00        call proc_0159 0 
 
-  1ad4:39 6c            pushi 6c // $6c dispose
+  1ad4:39 6c            pushi 6c                       // $6c dispose
   1ad6:76               push0 
   1ad7:54 04             self 4 
 
   1ad9:32 0009            jmp code_1ae5 
 
         code_1adc
-  1adc:38 008d          pushi 8d // $8d cue
+  1adc:38 008d          pushi 8d                       // $8d cue
   1adf:76               push0 
   1ae0:59 02            &rest 2 
   1ae2:57 9d 04         super TScript 4 
@@ -3863,7 +3863,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1c18
+    (method (changeState)                              // method_1c18
   1c18:87 01              lap param1 
   1c1a:65 0a             aTop state 
   1c1c:36                push 
@@ -3871,8 +3871,8 @@
   1c1e:35 00              ldi 0 
   1c20:1a                 eq? 
   1c21:30 000e            bnt code_1c32 
-  1c24:39 03            pushi 3 // $3 y
-  1c26:38 0492          pushi 492 // $492 sel_1170
+  1c24:39 03            pushi 3                        // $3 y
+  1c26:38 0492          pushi 492                      // $492 sel_1170
   1c29:76               push0 
   1c2a:7c            pushSelf 
   1c2b:40 e408 06        call proc_0037 6 
@@ -3887,8 +3887,8 @@
   1c39:76               push0 
   1c3a:40 e4e9 00        call proc_0127 0 
 
-  1c3e:39 03            pushi 3 // $3 y
-  1c40:38 0492          pushi 492 // $492 sel_1170
+  1c3e:39 03            pushi 3                        // $3 y
+  1c40:38 0492          pushi 492                      // $492 sel_1170
   1c43:78               push1 
   1c44:7c            pushSelf 
   1c45:40 e3c5 06        call proc_000e 6 
@@ -3903,8 +3903,8 @@
   1c53:76               push0 
   1c54:40 e49c 00        call proc_00f4 0 
 
-  1c58:39 03            pushi 3 // $3 y
-  1c5a:38 0492          pushi 492 // $492 sel_1170
+  1c58:39 03            pushi 3                        // $3 y
+  1c5a:38 0492          pushi 492                      // $492 sel_1170
   1c5d:7a               push2 
   1c5e:7c            pushSelf 
   1c5f:40 e400 06        call proc_0063 6 
@@ -3919,7 +3919,7 @@
   1c6d:76               push0 
   1c6e:40 e4e7 00        call proc_0159 0 
 
-  1c72:39 6c            pushi 6c // $6c dispose
+  1c72:39 6c            pushi 6c                       // $6c dispose
   1c74:76               push0 
   1c75:54 04             self 4 
 
@@ -3930,7 +3930,7 @@
   1c79:00                bnot 
     )
 
-    (method (cue) // method_1bf6
+    (method (cue)                                      // method_1bf6
   1bf6:87 00              lap paramTotal 
   1bf8:30 0013            bnt code_1c0e 
   1bfb:87 01              lap param1 
@@ -3939,14 +3939,14 @@
   1c01:76               push0 
   1c02:40 e553 00        call proc_0159 0 
 
-  1c06:39 6c            pushi 6c // $6c dispose
+  1c06:39 6c            pushi 6c                       // $6c dispose
   1c08:76               push0 
   1c09:54 04             self 4 
 
   1c0b:32 0009            jmp code_1c17 
 
         code_1c0e
-  1c0e:38 008d          pushi 8d // $8d cue
+  1c0e:38 008d          pushi 8d                       // $8d cue
   1c11:76               push0 
   1c12:59 02            &rest 2 
   1c14:57 9d 04         super TScript 4 
@@ -3976,7 +3976,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1cdc
+    (method (changeState)                              // method_1cdc
   1cdc:87 01              lap param1 
   1cde:65 0a             aTop state 
   1ce0:36                push 
@@ -3984,9 +3984,9 @@
   1ce2:35 00              ldi 0 
   1ce4:1a                 eq? 
   1ce5:30 000f            bnt code_1cf7 
-  1ce8:39 03            pushi 3 // $3 y
-  1cea:38 0492          pushi 492 // $492 sel_1170
-  1ced:39 03            pushi 3 // $3 y
+  1ce8:39 03            pushi 3                        // $3 y
+  1cea:38 0492          pushi 492                      // $492 sel_1170
+  1ced:39 03            pushi 3                        // $3 y
   1cef:7c            pushSelf 
   1cf0:40 e36f 06        call proc_0063 6 
 
@@ -4000,9 +4000,9 @@
   1cfe:76               push0 
   1cff:40 e40b 00        call proc_010e 0 
 
-  1d03:39 03            pushi 3 // $3 y
-  1d05:38 0492          pushi 492 // $492 sel_1170
-  1d08:39 04            pushi 4 // $4 x
+  1d03:39 03            pushi 3                        // $3 y
+  1d05:38 0492          pushi 492                      // $492 sel_1170
+  1d08:39 04            pushi 4                        // $4 x
   1d0a:7c            pushSelf 
   1d0b:40 e328 06        call proc_0037 6 
 
@@ -4016,9 +4016,9 @@
   1d19:76               push0 
   1d1a:40 e409 00        call proc_0127 0 
 
-  1d1e:39 03            pushi 3 // $3 y
-  1d20:38 0492          pushi 492 // $492 sel_1170
-  1d23:39 05            pushi 5 // $5 view
+  1d1e:39 03            pushi 3                        // $3 y
+  1d20:38 0492          pushi 492                      // $492 sel_1170
+  1d23:39 05            pushi 5                        // $5 view
   1d25:7c            pushSelf 
   1d26:40 e2e4 06        call proc_000e 6 
 
@@ -4032,9 +4032,9 @@
   1d34:76               push0 
   1d35:40 e3bb 00        call proc_00f4 0 
 
-  1d39:39 03            pushi 3 // $3 y
-  1d3b:38 0492          pushi 492 // $492 sel_1170
-  1d3e:39 06            pushi 6 // $6 loop
+  1d39:39 03            pushi 3                        // $3 y
+  1d3b:38 0492          pushi 492                      // $492 sel_1170
+  1d3e:39 06            pushi 6                        // $6 loop
   1d40:7c            pushSelf 
   1d41:40 e386 06        call proc_00cb 6 
 
@@ -4048,9 +4048,9 @@
   1d4f:76               push0 
   1d50:40 e3ad 00        call proc_0101 0 
 
-  1d54:39 03            pushi 3 // $3 y
-  1d56:38 0492          pushi 492 // $492 sel_1170
-  1d59:39 07            pushi 7 // $7 cel
+  1d54:39 03            pushi 3                        // $3 y
+  1d56:38 0492          pushi 492                      // $492 sel_1170
+  1d59:39 07            pushi 7                        // $7 cel
   1d5b:7c            pushSelf 
   1d5c:40 e337 06        call proc_0097 6 
 
@@ -4064,7 +4064,7 @@
   1d6a:76               push0 
   1d6b:40 e3ea 00        call proc_0159 0 
 
-  1d6f:39 6c            pushi 6c // $6c dispose
+  1d6f:39 6c            pushi 6c                       // $6c dispose
   1d71:76               push0 
   1d72:54 04             self 4 
 
@@ -4074,7 +4074,7 @@
   1d75:48                 ret 
     )
 
-    (method (cue) // method_1cba
+    (method (cue)                                      // method_1cba
   1cba:87 00              lap paramTotal 
   1cbc:30 0013            bnt code_1cd2 
   1cbf:87 01              lap param1 
@@ -4083,14 +4083,14 @@
   1cc5:76               push0 
   1cc6:40 e48f 00        call proc_0159 0 
 
-  1cca:39 6c            pushi 6c // $6c dispose
+  1cca:39 6c            pushi 6c                       // $6c dispose
   1ccc:76               push0 
   1ccd:54 04             self 4 
 
   1ccf:32 0009            jmp code_1cdb 
 
         code_1cd2
-  1cd2:38 008d          pushi 8d // $8d cue
+  1cd2:38 008d          pushi 8d                       // $8d cue
   1cd5:76               push0 
   1cd6:59 02            &rest 2 
   1cd8:57 9d 04         super TScript 4 
@@ -4120,7 +4120,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1dd8
+    (method (changeState)                              // method_1dd8
   1dd8:87 01              lap param1 
   1dda:65 0a             aTop state 
   1ddc:36                push 
@@ -4128,9 +4128,9 @@
   1dde:35 00              ldi 0 
   1de0:1a                 eq? 
   1de1:30 000f            bnt code_1df3 
-  1de4:39 03            pushi 3 // $3 y
-  1de6:38 0492          pushi 492 // $492 sel_1170
-  1de9:39 08            pushi 8 // $8 underBits
+  1de4:39 03            pushi 3                        // $3 y
+  1de6:38 0492          pushi 492                      // $492 sel_1170
+  1de9:39 08            pushi 8                        // $8 underBits
   1deb:7c            pushSelf 
   1dec:40 e2a7 06        call proc_0097 6 
 
@@ -4144,9 +4144,9 @@
   1dfa:76               push0 
   1dfb:40 e341 00        call proc_0140 0 
 
-  1dff:39 03            pushi 3 // $3 y
-  1e01:38 0492          pushi 492 // $492 sel_1170
-  1e04:39 09            pushi 9 // $9 nsTop
+  1dff:39 03            pushi 3                        // $3 y
+  1e01:38 0492          pushi 492                      // $492 sel_1170
+  1e04:39 09            pushi 9                        // $9 nsTop
   1e06:7c            pushSelf 
   1e07:40 e258 06        call proc_0063 6 
 
@@ -4160,9 +4160,9 @@
   1e15:76               push0 
   1e16:40 e2f4 00        call proc_010e 0 
 
-  1e1a:39 03            pushi 3 // $3 y
-  1e1c:38 0492          pushi 492 // $492 sel_1170
-  1e1f:39 0a            pushi a // $a nsLeft
+  1e1a:39 03            pushi 3                        // $3 y
+  1e1c:38 0492          pushi 492                      // $492 sel_1170
+  1e1f:39 0a            pushi a                        // $a nsLeft
   1e21:7c            pushSelf 
   1e22:40 e211 06        call proc_0037 6 
 
@@ -4176,9 +4176,9 @@
   1e30:76               push0 
   1e31:40 e2f2 00        call proc_0127 0 
 
-  1e35:39 03            pushi 3 // $3 y
-  1e37:38 0492          pushi 492 // $492 sel_1170
-  1e3a:39 0b            pushi b // $b nsBottom
+  1e35:39 03            pushi 3                        // $3 y
+  1e37:38 0492          pushi 492                      // $492 sel_1170
+  1e3a:39 0b            pushi b                        // $b nsBottom
   1e3c:7c            pushSelf 
   1e3d:40 e1cd 06        call proc_000e 6 
 
@@ -4192,9 +4192,9 @@
   1e4b:76               push0 
   1e4c:40 e2a4 00        call proc_00f4 0 
 
-  1e50:39 03            pushi 3 // $3 y
-  1e52:38 0492          pushi 492 // $492 sel_1170
-  1e55:39 0c            pushi c // $c nsRight
+  1e50:39 03            pushi 3                        // $3 y
+  1e52:38 0492          pushi 492                      // $492 sel_1170
+  1e55:39 0c            pushi c                        // $c nsRight
   1e57:7c            pushSelf 
   1e58:40 e26f 06        call proc_00cb 6 
 
@@ -4208,7 +4208,7 @@
   1e66:76               push0 
   1e67:40 e2ee 00        call proc_0159 0 
 
-  1e6b:39 6c            pushi 6c // $6c dispose
+  1e6b:39 6c            pushi 6c                       // $6c dispose
   1e6d:76               push0 
   1e6e:54 04             self 4 
 
@@ -4218,7 +4218,7 @@
   1e71:48                 ret 
     )
 
-    (method (cue) // method_1db6
+    (method (cue)                                      // method_1db6
   1db6:87 00              lap paramTotal 
   1db8:30 0013            bnt code_1dce 
   1dbb:87 01              lap param1 
@@ -4227,14 +4227,14 @@
   1dc1:76               push0 
   1dc2:40 e393 00        call proc_0159 0 
 
-  1dc6:39 6c            pushi 6c // $6c dispose
+  1dc6:39 6c            pushi 6c                       // $6c dispose
   1dc8:76               push0 
   1dc9:54 04             self 4 
 
   1dcb:32 0009            jmp code_1dd7 
 
         code_1dce
-  1dce:38 008d          pushi 8d // $8d cue
+  1dce:38 008d          pushi 8d                       // $8d cue
   1dd1:76               push0 
   1dd2:59 02            &rest 2 
   1dd4:57 9d 04         super TScript 4 
@@ -4264,7 +4264,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1ed4
+    (method (changeState)                              // method_1ed4
   1ed4:87 01              lap param1 
   1ed6:65 0a             aTop state 
   1ed8:36                push 
@@ -4272,9 +4272,9 @@
   1eda:35 00              ldi 0 
   1edc:1a                 eq? 
   1edd:30 000f            bnt code_1eef 
-  1ee0:39 03            pushi 3 // $3 y
-  1ee2:38 0492          pushi 492 // $492 sel_1170
-  1ee5:39 5a            pushi 5a // $5a points
+  1ee0:39 03            pushi 3                        // $3 y
+  1ee2:38 0492          pushi 492                      // $492 sel_1170
+  1ee5:39 5a            pushi 5a                       // $5a points
   1ee7:7c            pushSelf 
   1ee8:40 e1ab 06        call proc_0097 6 
 
@@ -4288,9 +4288,9 @@
   1ef6:76               push0 
   1ef7:40 e245 00        call proc_0140 0 
 
-  1efb:39 03            pushi 3 // $3 y
-  1efd:38 0492          pushi 492 // $492 sel_1170
-  1f00:39 5b            pushi 5b // $5b palette
+  1efb:39 03            pushi 3                        // $3 y
+  1efd:38 0492          pushi 492                      // $492 sel_1170
+  1f00:39 5b            pushi 5b                       // $5b palette
   1f02:7c            pushSelf 
   1f03:40 e15c 06        call proc_0063 6 
 
@@ -4304,9 +4304,9 @@
   1f11:76               push0 
   1f12:40 e1f8 00        call proc_010e 0 
 
-  1f16:39 03            pushi 3 // $3 y
-  1f18:38 0492          pushi 492 // $492 sel_1170
-  1f1b:39 5c            pushi 5c // $5c dataInc
+  1f16:39 03            pushi 3                        // $3 y
+  1f18:38 0492          pushi 492                      // $492 sel_1170
+  1f1b:39 5c            pushi 5c                       // $5c dataInc
   1f1d:7c            pushSelf 
   1f1e:40 e1a9 06        call proc_00cb 6 
 
@@ -4320,9 +4320,9 @@
   1f2c:76               push0 
   1f2d:40 e1d0 00        call proc_0101 0 
 
-  1f31:39 03            pushi 3 // $3 y
-  1f33:38 0492          pushi 492 // $492 sel_1170
-  1f36:39 5d            pushi 5d // $5d handle
+  1f31:39 03            pushi 3                        // $3 y
+  1f33:38 0492          pushi 492                      // $492 sel_1170
+  1f36:39 5d            pushi 5d                       // $5d handle
   1f38:7c            pushSelf 
   1f39:40 e0fa 06        call proc_0037 6 
 
@@ -4336,9 +4336,9 @@
   1f47:76               push0 
   1f48:40 e1db 00        call proc_0127 0 
 
-  1f4c:39 03            pushi 3 // $3 y
-  1f4e:38 0492          pushi 492 // $492 sel_1170
-  1f51:39 5e            pushi 5e // $5e min
+  1f4c:39 03            pushi 3                        // $3 y
+  1f4e:38 0492          pushi 492                      // $492 sel_1170
+  1f51:39 5e            pushi 5e                       // $5e min
   1f53:7c            pushSelf 
   1f54:40 e0b6 06        call proc_000e 6 
 
@@ -4352,7 +4352,7 @@
   1f62:76               push0 
   1f63:40 e1f2 00        call proc_0159 0 
 
-  1f67:39 6c            pushi 6c // $6c dispose
+  1f67:39 6c            pushi 6c                       // $6c dispose
   1f69:76               push0 
   1f6a:54 04             self 4 
 
@@ -4362,7 +4362,7 @@
   1f6d:48                 ret 
     )
 
-    (method (cue) // method_1eb2
+    (method (cue)                                      // method_1eb2
   1eb2:87 00              lap paramTotal 
   1eb4:30 0013            bnt code_1eca 
   1eb7:87 01              lap param1 
@@ -4371,14 +4371,14 @@
   1ebd:76               push0 
   1ebe:40 e297 00        call proc_0159 0 
 
-  1ec2:39 6c            pushi 6c // $6c dispose
+  1ec2:39 6c            pushi 6c                       // $6c dispose
   1ec4:76               push0 
   1ec5:54 04             self 4 
 
   1ec7:32 0009            jmp code_1ed3 
 
         code_1eca
-  1eca:38 008d          pushi 8d // $8d cue
+  1eca:38 008d          pushi 8d                       // $8d cue
   1ecd:76               push0 
   1ece:59 02            &rest 2 
   1ed0:57 9d 04         super TScript 4 
@@ -4408,7 +4408,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1fd0
+    (method (changeState)                              // method_1fd0
   1fd0:87 01              lap param1 
   1fd2:65 0a             aTop state 
   1fd4:36                push 
@@ -4416,9 +4416,9 @@
   1fd6:35 00              ldi 0 
   1fd8:1a                 eq? 
   1fd9:30 000f            bnt code_1feb 
-  1fdc:39 03            pushi 3 // $3 y
-  1fde:38 0492          pushi 492 // $492 sel_1170
-  1fe1:39 0d            pushi d // $d lsTop
+  1fdc:39 03            pushi 3                        // $3 y
+  1fde:38 0492          pushi 492                      // $492 sel_1170
+  1fe1:39 0d            pushi d                        // $d lsTop
   1fe3:7c            pushSelf 
   1fe4:40 e026 06        call proc_000e 6 
 
@@ -4432,9 +4432,9 @@
   1ff2:76               push0 
   1ff3:40 e0fd 00        call proc_00f4 0 
 
-  1ff7:39 03            pushi 3 // $3 y
-  1ff9:38 0492          pushi 492 // $492 sel_1170
-  1ffc:39 0e            pushi e // $e lsLeft
+  1ff7:39 03            pushi 3                        // $3 y
+  1ff9:38 0492          pushi 492                      // $492 sel_1170
+  1ffc:39 0e            pushi e                        // $e lsLeft
   1ffe:7c            pushSelf 
   1fff:40 e060 06        call proc_0063 6 
 
@@ -4448,9 +4448,9 @@
   200d:76               push0 
   200e:40 e0fc 00        call proc_010e 0 
 
-  2012:39 03            pushi 3 // $3 y
-  2014:38 0492          pushi 492 // $492 sel_1170
-  2017:39 0f            pushi f // $f lsBottom
+  2012:39 03            pushi 3                        // $3 y
+  2014:38 0492          pushi 492                      // $492 sel_1170
+  2017:39 0f            pushi f                        // $f lsBottom
   2019:7c            pushSelf 
   201a:40 e019 06        call proc_0037 6 
 
@@ -4464,9 +4464,9 @@
   2028:76               push0 
   2029:40 e0fa 00        call proc_0127 0 
 
-  202d:39 03            pushi 3 // $3 y
-  202f:38 0492          pushi 492 // $492 sel_1170
-  2032:39 10            pushi 10 // $10 lsRight
+  202d:39 03            pushi 3                        // $3 y
+  202f:38 0492          pushi 492                      // $492 sel_1170
+  2032:39 10            pushi 10                       // $10 lsRight
   2034:7c            pushSelf 
   2035:40 e05e 06        call proc_0097 6 
 
@@ -4480,9 +4480,9 @@
   2043:76               push0 
   2044:40 e0f8 00        call proc_0140 0 
 
-  2048:39 03            pushi 3 // $3 y
-  204a:38 0492          pushi 492 // $492 sel_1170
-  204d:39 11            pushi 11 // $11 signal
+  2048:39 03            pushi 3                        // $3 y
+  204a:38 0492          pushi 492                      // $492 sel_1170
+  204d:39 11            pushi 11                       // $11 signal
   204f:7c            pushSelf 
   2050:40 e00f 06        call proc_0063 6 
 
@@ -4496,7 +4496,7 @@
   205e:76               push0 
   205f:40 e0f6 00        call proc_0159 0 
 
-  2063:39 6c            pushi 6c // $6c dispose
+  2063:39 6c            pushi 6c                       // $6c dispose
   2065:76               push0 
   2066:54 04             self 4 
 
@@ -4506,7 +4506,7 @@
   2069:48                 ret 
     )
 
-    (method (cue) // method_1fae
+    (method (cue)                                      // method_1fae
   1fae:87 00              lap paramTotal 
   1fb0:30 0013            bnt code_1fc6 
   1fb3:87 01              lap param1 
@@ -4515,14 +4515,14 @@
   1fb9:76               push0 
   1fba:40 e19b 00        call proc_0159 0 
 
-  1fbe:39 6c            pushi 6c // $6c dispose
+  1fbe:39 6c            pushi 6c                       // $6c dispose
   1fc0:76               push0 
   1fc1:54 04             self 4 
 
   1fc3:32 0009            jmp code_1fcf 
 
         code_1fc6
-  1fc6:38 008d          pushi 8d // $8d cue
+  1fc6:38 008d          pushi 8d                       // $8d cue
   1fc9:76               push0 
   1fca:59 02            &rest 2 
   1fcc:57 9d 04         super TScript 4 
@@ -4552,7 +4552,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_20cc
+    (method (changeState)                              // method_20cc
   20cc:87 01              lap param1 
   20ce:65 0a             aTop state 
   20d0:36                push 
@@ -4560,9 +4560,9 @@
   20d2:35 00              ldi 0 
   20d4:1a                 eq? 
   20d5:30 000f            bnt code_20e7 
-  20d8:39 03            pushi 3 // $3 y
-  20da:38 0492          pushi 492 // $492 sel_1170
-  20dd:39 12            pushi 12 // $12 illegalBits
+  20d8:39 03            pushi 3                        // $3 y
+  20da:38 0492          pushi 492                      // $492 sel_1170
+  20dd:39 12            pushi 12                       // $12 illegalBits
   20df:7c            pushSelf 
   20e0:40 df53 06        call proc_0037 6 
 
@@ -4576,9 +4576,9 @@
   20ee:76               push0 
   20ef:40 e034 00        call proc_0127 0 
 
-  20f3:39 03            pushi 3 // $3 y
-  20f5:38 0492          pushi 492 // $492 sel_1170
-  20f8:39 13            pushi 13 // $13 brTop
+  20f3:39 03            pushi 3                        // $3 y
+  20f5:38 0492          pushi 492                      // $492 sel_1170
+  20f8:39 13            pushi 13                       // $13 brTop
   20fa:7c            pushSelf 
   20fb:40 df64 06        call proc_0063 6 
 
@@ -4592,9 +4592,9 @@
   2109:76               push0 
   210a:40 e000 00        call proc_010e 0 
 
-  210e:39 03            pushi 3 // $3 y
-  2110:38 0492          pushi 492 // $492 sel_1170
-  2113:39 14            pushi 14 // $14 brLeft
+  210e:39 03            pushi 3                        // $3 y
+  2110:38 0492          pushi 492                      // $492 sel_1170
+  2113:39 14            pushi 14                       // $14 brLeft
   2115:7c            pushSelf 
   2116:40 def4 06        call proc_000e 6 
 
@@ -4608,9 +4608,9 @@
   2124:76               push0 
   2125:40 dfcb 00        call proc_00f4 0 
 
-  2129:39 03            pushi 3 // $3 y
-  212b:38 0492          pushi 492 // $492 sel_1170
-  212e:39 15            pushi 15 // $15 brBottom
+  2129:39 03            pushi 3                        // $3 y
+  212b:38 0492          pushi 492                      // $492 sel_1170
+  212e:39 15            pushi 15                       // $15 brBottom
   2130:7c            pushSelf 
   2131:40 df62 06        call proc_0097 6 
 
@@ -4624,9 +4624,9 @@
   213f:76               push0 
   2140:40 dffc 00        call proc_0140 0 
 
-  2144:39 03            pushi 3 // $3 y
-  2146:38 0492          pushi 492 // $492 sel_1170
-  2149:39 16            pushi 16 // $16 brRight
+  2144:39 03            pushi 3                        // $3 y
+  2146:38 0492          pushi 492                      // $492 sel_1170
+  2149:39 16            pushi 16                       // $16 brRight
   214b:7c            pushSelf 
   214c:40 dee7 06        call proc_0037 6 
 
@@ -4640,9 +4640,9 @@
   215a:76               push0 
   215b:40 dfc8 00        call proc_0127 0 
 
-  215f:39 03            pushi 3 // $3 y
-  2161:38 0492          pushi 492 // $492 sel_1170
-  2164:39 17            pushi 17 // $17 name
+  215f:39 03            pushi 3                        // $3 y
+  2161:38 0492          pushi 492                      // $492 sel_1170
+  2164:39 17            pushi 17                       // $17 name
   2166:7c            pushSelf 
   2167:40 df2c 06        call proc_0097 6 
 
@@ -4656,9 +4656,9 @@
   2175:76               push0 
   2176:40 dfc6 00        call proc_0140 0 
 
-  217a:39 03            pushi 3 // $3 y
-  217c:38 0492          pushi 492 // $492 sel_1170
-  217f:39 18            pushi 18 // $18 key
+  217a:39 03            pushi 3                        // $3 y
+  217c:38 0492          pushi 492                      // $492 sel_1170
+  217f:39 18            pushi 18                       // $18 key
   2181:7c            pushSelf 
   2182:40 deb1 06        call proc_0037 6 
 
@@ -4672,7 +4672,7 @@
   2190:76               push0 
   2191:40 dfc4 00        call proc_0159 0 
 
-  2195:39 6c            pushi 6c // $6c dispose
+  2195:39 6c            pushi 6c                       // $6c dispose
   2197:76               push0 
   2198:54 04             self 4 
 
@@ -4682,7 +4682,7 @@
   219b:48                 ret 
     )
 
-    (method (cue) // method_20aa
+    (method (cue)                                      // method_20aa
   20aa:87 00              lap paramTotal 
   20ac:30 0013            bnt code_20c2 
   20af:87 01              lap param1 
@@ -4691,14 +4691,14 @@
   20b5:76               push0 
   20b6:40 e09f 00        call proc_0159 0 
 
-  20ba:39 6c            pushi 6c // $6c dispose
+  20ba:39 6c            pushi 6c                       // $6c dispose
   20bc:76               push0 
   20bd:54 04             self 4 
 
   20bf:32 0009            jmp code_20cb 
 
         code_20c2
-  20c2:38 008d          pushi 8d // $8d cue
+  20c2:38 008d          pushi 8d                       // $8d cue
   20c5:76               push0 
   20c6:59 02            &rest 2 
   20c8:57 9d 04         super TScript 4 
@@ -4728,7 +4728,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_21fe
+    (method (changeState)                              // method_21fe
   21fe:87 01              lap param1 
   2200:65 0a             aTop state 
   2202:36                push 
@@ -4736,9 +4736,9 @@
   2204:35 00              ldi 0 
   2206:1a                 eq? 
   2207:30 000f            bnt code_2219 
-  220a:39 03            pushi 3 // $3 y
-  220c:38 0492          pushi 492 // $492 sel_1170
-  220f:39 19            pushi 19 // $19 time
+  220a:39 03            pushi 3                        // $3 y
+  220c:38 0492          pushi 492                      // $492 sel_1170
+  220f:39 19            pushi 19                       // $19 time
   2211:7c            pushSelf 
   2212:40 de21 06        call proc_0037 6 
 
@@ -4752,9 +4752,9 @@
   2220:76               push0 
   2221:40 df02 00        call proc_0127 0 
 
-  2225:39 03            pushi 3 // $3 y
-  2227:38 0492          pushi 492 // $492 sel_1170
-  222a:39 1a            pushi 1a // $1a text
+  2225:39 03            pushi 3                        // $3 y
+  2227:38 0492          pushi 492                      // $492 sel_1170
+  222a:39 1a            pushi 1a                       // $1a text
   222c:7c            pushSelf 
   222d:40 de9a 06        call proc_00cb 6 
 
@@ -4768,9 +4768,9 @@
   223b:76               push0 
   223c:40 dec1 00        call proc_0101 0 
 
-  2240:39 03            pushi 3 // $3 y
-  2242:38 0492          pushi 492 // $492 sel_1170
-  2245:39 1b            pushi 1b // $1b elements
+  2240:39 03            pushi 3                        // $3 y
+  2242:38 0492          pushi 492                      // $492 sel_1170
+  2245:39 1b            pushi 1b                       // $1b elements
   2247:7c            pushSelf 
   2248:40 ddeb 06        call proc_0037 6 
 
@@ -4784,9 +4784,9 @@
   2256:76               push0 
   2257:40 decc 00        call proc_0127 0 
 
-  225b:39 03            pushi 3 // $3 y
-  225d:38 0492          pushi 492 // $492 sel_1170
-  2260:39 1c            pushi 1c // $1c color
+  225b:39 03            pushi 3                        // $3 y
+  225d:38 0492          pushi 492                      // $492 sel_1170
+  2260:39 1c            pushi 1c                       // $1c color
   2262:7c            pushSelf 
   2263:40 de30 06        call proc_0097 6 
 
@@ -4800,9 +4800,9 @@
   2271:76               push0 
   2272:40 deca 00        call proc_0140 0 
 
-  2276:39 03            pushi 3 // $3 y
-  2278:38 0492          pushi 492 // $492 sel_1170
-  227b:39 1d            pushi 1d // $1d back
+  2276:39 03            pushi 3                        // $3 y
+  2278:38 0492          pushi 492                      // $492 sel_1170
+  227b:39 1d            pushi 1d                       // $1d back
   227d:7c            pushSelf 
   227e:40 dde1 06        call proc_0063 6 
 
@@ -4816,9 +4816,9 @@
   228c:76               push0 
   228d:40 de7d 00        call proc_010e 0 
 
-  2291:39 03            pushi 3 // $3 y
-  2293:38 0492          pushi 492 // $492 sel_1170
-  2296:39 1e            pushi 1e // $1e mode
+  2291:39 03            pushi 3                        // $3 y
+  2293:38 0492          pushi 492                      // $492 sel_1170
+  2296:39 1e            pushi 1e                       // $1e mode
   2298:7c            pushSelf 
   2299:40 dd71 06        call proc_000e 6 
 
@@ -4832,7 +4832,7 @@
   22a7:76               push0 
   22a8:40 dead 00        call proc_0159 0 
 
-  22ac:39 6c            pushi 6c // $6c dispose
+  22ac:39 6c            pushi 6c                       // $6c dispose
   22ae:76               push0 
   22af:54 04             self 4 
 
@@ -4843,7 +4843,7 @@
   22b3:00                bnot 
     )
 
-    (method (cue) // method_21dc
+    (method (cue)                                      // method_21dc
   21dc:87 00              lap paramTotal 
   21de:30 0013            bnt code_21f4 
   21e1:87 01              lap param1 
@@ -4852,14 +4852,14 @@
   21e7:76               push0 
   21e8:40 df6d 00        call proc_0159 0 
 
-  21ec:39 6c            pushi 6c // $6c dispose
+  21ec:39 6c            pushi 6c                       // $6c dispose
   21ee:76               push0 
   21ef:54 04             self 4 
 
   21f1:32 0009            jmp code_21fd 
 
         code_21f4
-  21f4:38 008d          pushi 8d // $8d cue
+  21f4:38 008d          pushi 8d                       // $8d cue
   21f7:76               push0 
   21f8:59 02            &rest 2 
   21fa:57 9d 04         super TScript 4 
@@ -4889,7 +4889,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_2316
+    (method (changeState)                              // method_2316
   2316:87 01              lap param1 
   2318:65 0a             aTop state 
   231a:36                push 
@@ -4897,9 +4897,9 @@
   231c:35 00              ldi 0 
   231e:1a                 eq? 
   231f:30 000f            bnt code_2331 
-  2322:39 03            pushi 3 // $3 y
-  2324:38 0492          pushi 492 // $492 sel_1170
-  2327:39 1f            pushi 1f // $1f style
+  2322:39 03            pushi 3                        // $3 y
+  2324:38 0492          pushi 492                      // $492 sel_1170
+  2327:39 1f            pushi 1f                       // $1f style
   2329:7c            pushSelf 
   232a:40 dd9d 06        call proc_00cb 6 
 
@@ -4913,9 +4913,9 @@
   2338:76               push0 
   2339:40 ddc4 00        call proc_0101 0 
 
-  233d:39 03            pushi 3 // $3 y
-  233f:38 0492          pushi 492 // $492 sel_1170
-  2342:39 20            pushi 20 // $20 state
+  233d:39 03            pushi 3                        // $3 y
+  233f:38 0492          pushi 492                      // $492 sel_1170
+  2342:39 20            pushi 20                       // $20 state
   2344:7c            pushSelf 
   2345:40 dd1a 06        call proc_0063 6 
 
@@ -4929,9 +4929,9 @@
   2353:76               push0 
   2354:40 ddb6 00        call proc_010e 0 
 
-  2358:39 03            pushi 3 // $3 y
-  235a:38 0492          pushi 492 // $492 sel_1170
-  235d:39 21            pushi 21 // $21 font
+  2358:39 03            pushi 3                        // $3 y
+  235a:38 0492          pushi 492                      // $492 sel_1170
+  235d:39 21            pushi 21                       // $21 font
   235f:7c            pushSelf 
   2360:40 dcd3 06        call proc_0037 6 
 
@@ -4945,9 +4945,9 @@
   236e:76               push0 
   236f:40 ddb4 00        call proc_0127 0 
 
-  2373:39 03            pushi 3 // $3 y
-  2375:38 0492          pushi 492 // $492 sel_1170
-  2378:39 22            pushi 22 // $22 type
+  2373:39 03            pushi 3                        // $3 y
+  2375:38 0492          pushi 492                      // $492 sel_1170
+  2378:39 22            pushi 22                       // $22 type
   237a:7c            pushSelf 
   237b:40 dc8f 06        call proc_000e 6 
 
@@ -4961,9 +4961,9 @@
   2389:76               push0 
   238a:40 dd66 00        call proc_00f4 0 
 
-  238e:39 03            pushi 3 // $3 y
-  2390:38 0492          pushi 492 // $492 sel_1170
-  2393:39 23            pushi 23 // $23 window
+  238e:39 03            pushi 3                        // $3 y
+  2390:38 0492          pushi 492                      // $492 sel_1170
+  2393:39 23            pushi 23                       // $23 window
   2395:7c            pushSelf 
   2396:40 dcfd 06        call proc_0097 6 
 
@@ -4977,7 +4977,7 @@
   23a4:76               push0 
   23a5:40 ddb0 00        call proc_0159 0 
 
-  23a9:39 6c            pushi 6c // $6c dispose
+  23a9:39 6c            pushi 6c                       // $6c dispose
   23ab:76               push0 
   23ac:54 04             self 4 
 
@@ -4987,7 +4987,7 @@
   23af:48                 ret 
     )
 
-    (method (cue) // method_22f4
+    (method (cue)                                      // method_22f4
   22f4:87 00              lap paramTotal 
   22f6:30 0013            bnt code_230c 
   22f9:87 01              lap param1 
@@ -4996,14 +4996,14 @@
   22ff:76               push0 
   2300:40 de55 00        call proc_0159 0 
 
-  2304:39 6c            pushi 6c // $6c dispose
+  2304:39 6c            pushi 6c                       // $6c dispose
   2306:76               push0 
   2307:54 04             self 4 
 
   2309:32 0009            jmp code_2315 
 
         code_230c
-  230c:38 008d          pushi 8d // $8d cue
+  230c:38 008d          pushi 8d                       // $8d cue
   230f:76               push0 
   2310:59 02            &rest 2 
   2312:57 9d 04         super TScript 4 
@@ -5033,7 +5033,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_2412
+    (method (changeState)                              // method_2412
   2412:87 01              lap param1 
   2414:65 0a             aTop state 
   2416:36                push 
@@ -5041,9 +5041,9 @@
   2418:35 00              ldi 0 
   241a:1a                 eq? 
   241b:30 000f            bnt code_242d 
-  241e:39 03            pushi 3 // $3 y
-  2420:38 0492          pushi 492 // $492 sel_1170
-  2423:39 24            pushi 24 // $24 cursor
+  241e:39 03            pushi 3                        // $3 y
+  2420:38 0492          pushi 492                      // $492 sel_1170
+  2423:39 24            pushi 24                       // $24 cursor
   2425:7c            pushSelf 
   2426:40 dc39 06        call proc_0063 6 
 
@@ -5057,9 +5057,9 @@
   2434:76               push0 
   2435:40 dcd5 00        call proc_010e 0 
 
-  2439:39 03            pushi 3 // $3 y
-  243b:38 0492          pushi 492 // $492 sel_1170
-  243e:39 25            pushi 25 // $25 max
+  2439:39 03            pushi 3                        // $3 y
+  243b:38 0492          pushi 492                      // $492 sel_1170
+  243e:39 25            pushi 25                       // $25 max
   2440:7c            pushSelf 
   2441:40 dbf2 06        call proc_0037 6 
 
@@ -5073,9 +5073,9 @@
   244f:76               push0 
   2450:40 dcd3 00        call proc_0127 0 
 
-  2454:39 03            pushi 3 // $3 y
-  2456:38 0492          pushi 492 // $492 sel_1170
-  2459:39 26            pushi 26 // $26 mark
+  2454:39 03            pushi 3                        // $3 y
+  2456:38 0492          pushi 492                      // $492 sel_1170
+  2459:39 26            pushi 26                       // $26 mark
   245b:7c            pushSelf 
   245c:40 dc6b 06        call proc_00cb 6 
 
@@ -5089,7 +5089,7 @@
   246a:76               push0 
   246b:40 dcea 00        call proc_0159 0 
 
-  246f:39 6c            pushi 6c // $6c dispose
+  246f:39 6c            pushi 6c                       // $6c dispose
   2471:76               push0 
   2472:54 04             self 4 
 
@@ -5099,7 +5099,7 @@
   2475:48                 ret 
     )
 
-    (method (cue) // method_23f0
+    (method (cue)                                      // method_23f0
   23f0:87 00              lap paramTotal 
   23f2:30 0013            bnt code_2408 
   23f5:87 01              lap param1 
@@ -5108,14 +5108,14 @@
   23fb:76               push0 
   23fc:40 dd59 00        call proc_0159 0 
 
-  2400:39 6c            pushi 6c // $6c dispose
+  2400:39 6c            pushi 6c                       // $6c dispose
   2402:76               push0 
   2403:54 04             self 4 
 
   2405:32 0009            jmp code_2411 
 
         code_2408
-  2408:38 008d          pushi 8d // $8d cue
+  2408:38 008d          pushi 8d                       // $8d cue
   240b:76               push0 
   240c:59 02            &rest 2 
   240e:57 9d 04         super TScript 4 
@@ -5145,7 +5145,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_24d8
+    (method (changeState)                              // method_24d8
   24d8:87 01              lap param1 
   24da:65 0a             aTop state 
   24dc:36                push 
@@ -5153,9 +5153,9 @@
   24de:35 00              ldi 0 
   24e0:1a                 eq? 
   24e1:30 000f            bnt code_24f3 
-  24e4:39 03            pushi 3 // $3 y
-  24e6:38 0492          pushi 492 // $492 sel_1170
-  24e9:39 27            pushi 27 // $27 who
+  24e4:39 03            pushi 3                        // $3 y
+  24e6:38 0492          pushi 492                      // $492 sel_1170
+  24e9:39 27            pushi 27                       // $27 who
   24eb:7c            pushSelf 
   24ec:40 db73 06        call proc_0063 6 
 
@@ -5169,9 +5169,9 @@
   24fa:76               push0 
   24fb:40 dc0f 00        call proc_010e 0 
 
-  24ff:39 03            pushi 3 // $3 y
-  2501:38 0492          pushi 492 // $492 sel_1170
-  2504:39 28            pushi 28 // $28 message
+  24ff:39 03            pushi 3                        // $3 y
+  2501:38 0492          pushi 492                      // $492 sel_1170
+  2504:39 28            pushi 28                       // $28 message
   2506:7c            pushSelf 
   2507:40 dbc0 06        call proc_00cb 6 
 
@@ -5185,9 +5185,9 @@
   2515:76               push0 
   2516:40 dbe7 00        call proc_0101 0 
 
-  251a:39 03            pushi 3 // $3 y
-  251c:38 0492          pushi 492 // $492 sel_1170
-  251f:39 29            pushi 29 // $29 edit
+  251a:39 03            pushi 3                        // $3 y
+  251c:38 0492          pushi 492                      // $492 sel_1170
+  251f:39 29            pushi 29                       // $29 edit
   2521:7c            pushSelf 
   2522:40 dae8 06        call proc_000e 6 
 
@@ -5201,9 +5201,9 @@
   2530:76               push0 
   2531:40 dbbf 00        call proc_00f4 0 
 
-  2535:39 03            pushi 3 // $3 y
-  2537:38 0492          pushi 492 // $492 sel_1170
-  253a:39 2a            pushi 2a // $2a play
+  2535:39 03            pushi 3                        // $3 y
+  2537:38 0492          pushi 492                      // $492 sel_1170
+  253a:39 2a            pushi 2a                       // $2a play
   253c:7c            pushSelf 
   253d:40 daf6 06        call proc_0037 6 
 
@@ -5217,9 +5217,9 @@
   254b:76               push0 
   254c:40 dbd7 00        call proc_0127 0 
 
-  2550:39 03            pushi 3 // $3 y
-  2552:38 0492          pushi 492 // $492 sel_1170
-  2555:39 2b            pushi 2b // $2b number
+  2550:39 03            pushi 3                        // $3 y
+  2552:38 0492          pushi 492                      // $492 sel_1170
+  2555:39 2b            pushi 2b                       // $2b number
   2557:7c            pushSelf 
   2558:40 db07 06        call proc_0063 6 
 
@@ -5233,7 +5233,7 @@
   2566:76               push0 
   2567:40 dbee 00        call proc_0159 0 
 
-  256b:39 6c            pushi 6c // $6c dispose
+  256b:39 6c            pushi 6c                       // $6c dispose
   256d:76               push0 
   256e:54 04             self 4 
 
@@ -5243,7 +5243,7 @@
   2571:48                 ret 
     )
 
-    (method (cue) // method_24b6
+    (method (cue)                                      // method_24b6
   24b6:87 00              lap paramTotal 
   24b8:30 0013            bnt code_24ce 
   24bb:87 01              lap param1 
@@ -5252,14 +5252,14 @@
   24c1:76               push0 
   24c2:40 dc93 00        call proc_0159 0 
 
-  24c6:39 6c            pushi 6c // $6c dispose
+  24c6:39 6c            pushi 6c                       // $6c dispose
   24c8:76               push0 
   24c9:54 04             self 4 
 
   24cb:32 0009            jmp code_24d7 
 
         code_24ce
-  24ce:38 008d          pushi 8d // $8d cue
+  24ce:38 008d          pushi 8d                       // $8d cue
   24d1:76               push0 
   24d2:59 02            &rest 2 
   24d4:57 9d 04         super TScript 4 
@@ -5289,7 +5289,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_25d4
+    (method (changeState)                              // method_25d4
   25d4:87 01              lap param1 
   25d6:65 0a             aTop state 
   25d8:36                push 
@@ -5297,9 +5297,9 @@
   25da:35 00              ldi 0 
   25dc:1a                 eq? 
   25dd:30 000f            bnt code_25ef 
-  25e0:39 03            pushi 3 // $3 y
-  25e2:38 0492          pushi 492 // $492 sel_1170
-  25e5:39 2c            pushi 2c // $2c nodePtr
+  25e0:39 03            pushi 3                        // $3 y
+  25e2:38 0492          pushi 492                      // $492 sel_1170
+  25e5:39 2c            pushi 2c                       // $2c nodePtr
   25e7:7c            pushSelf 
   25e8:40 daab 06        call proc_0097 6 
 
@@ -5313,9 +5313,9 @@
   25f6:76               push0 
   25f7:40 db45 00        call proc_0140 0 
 
-  25fb:39 03            pushi 3 // $3 y
-  25fd:38 0492          pushi 492 // $492 sel_1170
-  2600:39 2d            pushi 2d // $2d client
+  25fb:39 03            pushi 3                        // $3 y
+  25fd:38 0492          pushi 492                      // $492 sel_1170
+  2600:39 2d            pushi 2d                       // $2d client
   2602:7c            pushSelf 
   2603:40 da30 06        call proc_0037 6 
 
@@ -5329,9 +5329,9 @@
   2611:76               push0 
   2612:40 db11 00        call proc_0127 0 
 
-  2616:39 03            pushi 3 // $3 y
-  2618:38 0492          pushi 492 // $492 sel_1170
-  261b:39 2e            pushi 2e // $2e dx
+  2616:39 03            pushi 3                        // $3 y
+  2618:38 0492          pushi 492                      // $492 sel_1170
+  261b:39 2e            pushi 2e                       // $2e dx
   261d:7c            pushSelf 
   261e:40 daa9 06        call proc_00cb 6 
 
@@ -5345,9 +5345,9 @@
   262c:76               push0 
   262d:40 dad0 00        call proc_0101 0 
 
-  2631:39 03            pushi 3 // $3 y
-  2633:38 0492          pushi 492 // $492 sel_1170
-  2636:39 2f            pushi 2f // $2f dy
+  2631:39 03            pushi 3                        // $3 y
+  2633:38 0492          pushi 492                      // $492 sel_1170
+  2636:39 2f            pushi 2f                       // $2f dy
   2638:7c            pushSelf 
   2639:40 d9d1 06        call proc_000e 6 
 
@@ -5361,9 +5361,9 @@
   2647:76               push0 
   2648:40 daa8 00        call proc_00f4 0 
 
-  264c:39 03            pushi 3 // $3 y
-  264e:38 0492          pushi 492 // $492 sel_1170
-  2651:39 30            pushi 30 // $30 b-moveCnt
+  264c:39 03            pushi 3                        // $3 y
+  264e:38 0492          pushi 492                      // $492 sel_1170
+  2651:39 30            pushi 30                       // $30 b-moveCnt
   2653:7c            pushSelf 
   2654:40 da0b 06        call proc_0063 6 
 
@@ -5377,7 +5377,7 @@
   2662:76               push0 
   2663:40 daf2 00        call proc_0159 0 
 
-  2667:39 6c            pushi 6c // $6c dispose
+  2667:39 6c            pushi 6c                       // $6c dispose
   2669:76               push0 
   266a:54 04             self 4 
 
@@ -5387,7 +5387,7 @@
   266d:48                 ret 
     )
 
-    (method (cue) // method_25b2
+    (method (cue)                                      // method_25b2
   25b2:87 00              lap paramTotal 
   25b4:30 0013            bnt code_25ca 
   25b7:87 01              lap param1 
@@ -5396,14 +5396,14 @@
   25bd:76               push0 
   25be:40 db97 00        call proc_0159 0 
 
-  25c2:39 6c            pushi 6c // $6c dispose
+  25c2:39 6c            pushi 6c                       // $6c dispose
   25c4:76               push0 
   25c5:54 04             self 4 
 
   25c7:32 0009            jmp code_25d3 
 
         code_25ca
-  25ca:38 008d          pushi 8d // $8d cue
+  25ca:38 008d          pushi 8d                       // $8d cue
   25cd:76               push0 
   25ce:59 02            &rest 2 
   25d0:57 9d 04         super TScript 4 
@@ -5433,7 +5433,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_26d0
+    (method (changeState)                              // method_26d0
   26d0:87 01              lap param1 
   26d2:65 0a             aTop state 
   26d4:36                push 
@@ -5441,9 +5441,9 @@
   26d6:35 00              ldi 0 
   26d8:1a                 eq? 
   26d9:30 000f            bnt code_26eb 
-  26dc:39 03            pushi 3 // $3 y
-  26de:38 0492          pushi 492 // $492 sel_1170
-  26e1:39 31            pushi 31 // $31 b-i1
+  26dc:39 03            pushi 3                        // $3 y
+  26de:38 0492          pushi 492                      // $492 sel_1170
+  26e1:39 31            pushi 31                       // $31 b-i1
   26e3:7c            pushSelf 
   26e4:40 d9af 06        call proc_0097 6 
 
@@ -5457,9 +5457,9 @@
   26f2:76               push0 
   26f3:40 da49 00        call proc_0140 0 
 
-  26f7:39 03            pushi 3 // $3 y
-  26f9:38 0492          pushi 492 // $492 sel_1170
-  26fc:39 32            pushi 32 // $32 b-i2
+  26f7:39 03            pushi 3                        // $3 y
+  26f9:38 0492          pushi 492                      // $492 sel_1170
+  26fc:39 32            pushi 32                       // $32 b-i2
   26fe:7c            pushSelf 
   26ff:40 d934 06        call proc_0037 6 
 
@@ -5473,9 +5473,9 @@
   270d:76               push0 
   270e:40 da15 00        call proc_0127 0 
 
-  2712:39 03            pushi 3 // $3 y
-  2714:38 0492          pushi 492 // $492 sel_1170
-  2717:39 33            pushi 33 // $33 b-di
+  2712:39 03            pushi 3                        // $3 y
+  2714:38 0492          pushi 492                      // $492 sel_1170
+  2717:39 33            pushi 33                       // $33 b-di
   2719:7c            pushSelf 
   271a:40 d945 06        call proc_0063 6 
 
@@ -5489,9 +5489,9 @@
   2728:76               push0 
   2729:40 d9e1 00        call proc_010e 0 
 
-  272d:39 03            pushi 3 // $3 y
-  272f:38 0492          pushi 492 // $492 sel_1170
-  2732:39 34            pushi 34 // $34 b-xAxis
+  272d:39 03            pushi 3                        // $3 y
+  272f:38 0492          pushi 492                      // $492 sel_1170
+  2732:39 34            pushi 34                       // $34 b-xAxis
   2734:7c            pushSelf 
   2735:40 d992 06        call proc_00cb 6 
 
@@ -5505,9 +5505,9 @@
   2743:76               push0 
   2744:40 d9b9 00        call proc_0101 0 
 
-  2748:39 03            pushi 3 // $3 y
-  274a:38 0492          pushi 492 // $492 sel_1170
-  274d:39 35            pushi 35 // $35 b-incr
+  2748:39 03            pushi 3                        // $3 y
+  274a:38 0492          pushi 492                      // $492 sel_1170
+  274d:39 35            pushi 35                       // $35 b-incr
   274f:7c            pushSelf 
   2750:40 d8ba 06        call proc_000e 6 
 
@@ -5521,9 +5521,9 @@
   275e:76               push0 
   275f:40 d991 00        call proc_00f4 0 
 
-  2763:39 03            pushi 3 // $3 y
-  2765:38 0492          pushi 492 // $492 sel_1170
-  2768:39 36            pushi 36 // $36 xStep
+  2763:39 03            pushi 3                        // $3 y
+  2765:38 0492          pushi 492                      // $492 sel_1170
+  2768:39 36            pushi 36                       // $36 xStep
   276a:7c            pushSelf 
   276b:40 d8c8 06        call proc_0037 6 
 
@@ -5537,7 +5537,7 @@
   2779:76               push0 
   277a:40 d9db 00        call proc_0159 0 
 
-  277e:39 6c            pushi 6c // $6c dispose
+  277e:39 6c            pushi 6c                       // $6c dispose
   2780:76               push0 
   2781:54 04             self 4 
 
@@ -5548,7 +5548,7 @@
   2785:00                bnot 
     )
 
-    (method (cue) // method_26ae
+    (method (cue)                                      // method_26ae
   26ae:87 00              lap paramTotal 
   26b0:30 0013            bnt code_26c6 
   26b3:87 01              lap param1 
@@ -5557,14 +5557,14 @@
   26b9:76               push0 
   26ba:40 da9b 00        call proc_0159 0 
 
-  26be:39 6c            pushi 6c // $6c dispose
+  26be:39 6c            pushi 6c                       // $6c dispose
   26c0:76               push0 
   26c1:54 04             self 4 
 
   26c3:32 0009            jmp code_26cf 
 
         code_26c6
-  26c6:38 008d          pushi 8d // $8d cue
+  26c6:38 008d          pushi 8d                       // $8d cue
   26c9:76               push0 
   26ca:59 02            &rest 2 
   26cc:57 9d 04         super TScript 4 
@@ -5594,7 +5594,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_27e8
+    (method (changeState)                              // method_27e8
   27e8:87 01              lap param1 
   27ea:65 0a             aTop state 
   27ec:36                push 
@@ -5602,9 +5602,9 @@
   27ee:35 00              ldi 0 
   27f0:1a                 eq? 
   27f1:30 000f            bnt code_2803 
-  27f4:39 03            pushi 3 // $3 y
-  27f6:38 0492          pushi 492 // $492 sel_1170
-  27f9:39 37            pushi 37 // $37 yStep
+  27f4:39 03            pushi 3                        // $3 y
+  27f6:38 0492          pushi 492                      // $492 sel_1170
+  27f9:39 37            pushi 37                       // $37 yStep
   27fb:7c            pushSelf 
   27fc:40 d897 06        call proc_0097 6 
 
@@ -5618,9 +5618,9 @@
   280a:76               push0 
   280b:40 d931 00        call proc_0140 0 
 
-  280f:39 03            pushi 3 // $3 y
-  2811:38 0492          pushi 492 // $492 sel_1170
-  2814:39 38            pushi 38 // $38 moveSpeed
+  280f:39 03            pushi 3                        // $3 y
+  2811:38 0492          pushi 492                      // $492 sel_1170
+  2814:39 38            pushi 38                       // $38 moveSpeed
   2816:7c            pushSelf 
   2817:40 d81c 06        call proc_0037 6 
 
@@ -5634,9 +5634,9 @@
   2825:76               push0 
   2826:40 d8fd 00        call proc_0127 0 
 
-  282a:39 03            pushi 3 // $3 y
-  282c:38 0492          pushi 492 // $492 sel_1170
-  282f:39 39            pushi 39 // $39 cantBeHere
+  282a:39 03            pushi 3                        // $3 y
+  282c:38 0492          pushi 492                      // $492 sel_1170
+  282f:39 39            pushi 39                       // $39 cantBeHere
   2831:7c            pushSelf 
   2832:40 d82d 06        call proc_0063 6 
 
@@ -5650,9 +5650,9 @@
   2840:76               push0 
   2841:40 d8c9 00        call proc_010e 0 
 
-  2845:39 03            pushi 3 // $3 y
-  2847:38 0492          pushi 492 // $492 sel_1170
-  284a:39 3a            pushi 3a // $3a heading
+  2845:39 03            pushi 3                        // $3 y
+  2847:38 0492          pushi 492                      // $492 sel_1170
+  284a:39 3a            pushi 3a                       // $3a heading
   284c:7c            pushSelf 
   284d:40 d7bd 06        call proc_000e 6 
 
@@ -5666,9 +5666,9 @@
   285b:76               push0 
   285c:40 d894 00        call proc_00f4 0 
 
-  2860:39 03            pushi 3 // $3 y
-  2862:38 0492          pushi 492 // $492 sel_1170
-  2865:39 3b            pushi 3b // $3b mover
+  2860:39 03            pushi 3                        // $3 y
+  2862:38 0492          pushi 492                      // $492 sel_1170
+  2865:39 3b            pushi 3b                       // $3b mover
   2867:7c            pushSelf 
   2868:40 d85f 06        call proc_00cb 6 
 
@@ -5682,9 +5682,9 @@
   2876:76               push0 
   2877:40 d886 00        call proc_0101 0 
 
-  287b:39 03            pushi 3 // $3 y
-  287d:38 0492          pushi 492 // $492 sel_1170
-  2880:39 3c            pushi 3c // $3c doit
+  287b:39 03            pushi 3                        // $3 y
+  287d:38 0492          pushi 492                      // $492 sel_1170
+  2880:39 3c            pushi 3c                       // $3c doit
   2882:7c            pushSelf 
   2883:40 d7b0 06        call proc_0037 6 
 
@@ -5695,9 +5695,9 @@
   288b:35 06              ldi 6 
   288d:1a                 eq? 
   288e:30 000f            bnt code_28a0 
-  2891:39 03            pushi 3 // $3 y
-  2893:38 0492          pushi 492 // $492 sel_1170
-  2896:39 3d            pushi 3d // $3d isBlocked
+  2891:39 03            pushi 3                        // $3 y
+  2893:38 0492          pushi 492                      // $492 sel_1170
+  2896:39 3d            pushi 3d                       // $3d isBlocked
   2898:7c            pushSelf 
   2899:40 d79a 06        call proc_0037 6 
 
@@ -5711,7 +5711,7 @@
   28a7:76               push0 
   28a8:40 d8ad 00        call proc_0159 0 
 
-  28ac:39 6c            pushi 6c // $6c dispose
+  28ac:39 6c            pushi 6c                       // $6c dispose
   28ae:76               push0 
   28af:54 04             self 4 
 
@@ -5722,7 +5722,7 @@
   28b3:00                bnot 
     )
 
-    (method (cue) // method_27c6
+    (method (cue)                                      // method_27c6
   27c6:87 00              lap paramTotal 
   27c8:30 0013            bnt code_27de 
   27cb:87 01              lap param1 
@@ -5731,14 +5731,14 @@
   27d1:76               push0 
   27d2:40 d983 00        call proc_0159 0 
 
-  27d6:39 6c            pushi 6c // $6c dispose
+  27d6:39 6c            pushi 6c                       // $6c dispose
   27d8:76               push0 
   27d9:54 04             self 4 
 
   27db:32 0009            jmp code_27e7 
 
         code_27de
-  27de:38 008d          pushi 8d // $8d cue
+  27de:38 008d          pushi 8d                       // $8d cue
   27e1:76               push0 
   27e2:59 02            &rest 2 
   27e4:57 9d 04         super TScript 4 
@@ -5768,7 +5768,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_2916
+    (method (changeState)                              // method_2916
   2916:87 01              lap param1 
   2918:65 0a             aTop state 
   291a:36                push 
@@ -5776,9 +5776,9 @@
   291c:35 00              ldi 0 
   291e:1a                 eq? 
   291f:30 000f            bnt code_2931 
-  2922:39 03            pushi 3 // $3 y
-  2924:38 0492          pushi 492 // $492 sel_1170
-  2927:39 3e            pushi 3e // $3e looper
+  2922:39 03            pushi 3                        // $3 y
+  2924:38 0492          pushi 492                      // $492 sel_1170
+  2927:39 3e            pushi 3e                       // $3e looper
   2929:7c            pushSelf 
   292a:40 d6e0 06        call proc_000e 6 
 
@@ -5792,9 +5792,9 @@
   2938:76               push0 
   2939:40 d7b7 00        call proc_00f4 0 
 
-  293d:39 03            pushi 3 // $3 y
-  293f:38 0492          pushi 492 // $492 sel_1170
-  2942:39 3f            pushi 3f // $3f priority
+  293d:39 03            pushi 3                        // $3 y
+  293f:38 0492          pushi 492                      // $492 sel_1170
+  2942:39 3f            pushi 3f                       // $3f priority
   2944:7c            pushSelf 
   2945:40 d6ee 06        call proc_0037 6 
 
@@ -5808,9 +5808,9 @@
   2953:76               push0 
   2954:40 d7cf 00        call proc_0127 0 
 
-  2958:39 03            pushi 3 // $3 y
-  295a:38 0492          pushi 492 // $492 sel_1170
-  295d:39 40            pushi 40 // $40 modifiers
+  2958:39 03            pushi 3                        // $3 y
+  295a:38 0492          pushi 492                      // $492 sel_1170
+  295d:39 40            pushi 40                       // $40 modifiers
   295f:7c            pushSelf 
   2960:40 d6ff 06        call proc_0063 6 
 
@@ -5824,9 +5824,9 @@
   296e:76               push0 
   296f:40 d79b 00        call proc_010e 0 
 
-  2973:39 03            pushi 3 // $3 y
-  2975:38 0492          pushi 492 // $492 sel_1170
-  2978:39 41            pushi 41 // $41 replay
+  2973:39 03            pushi 3                        // $3 y
+  2975:38 0492          pushi 492                      // $492 sel_1170
+  2978:39 41            pushi 41                       // $41 replay
   297a:7c            pushSelf 
   297b:40 d718 06        call proc_0097 6 
 
@@ -5840,7 +5840,7 @@
   2989:76               push0 
   298a:40 d7cb 00        call proc_0159 0 
 
-  298e:39 6c            pushi 6c // $6c dispose
+  298e:39 6c            pushi 6c                       // $6c dispose
   2990:76               push0 
   2991:54 04             self 4 
 
@@ -5851,7 +5851,7 @@
   2995:00                bnot 
     )
 
-    (method (cue) // method_28f4
+    (method (cue)                                      // method_28f4
   28f4:87 00              lap paramTotal 
   28f6:30 0013            bnt code_290c 
   28f9:87 01              lap param1 
@@ -5860,14 +5860,14 @@
   28ff:76               push0 
   2900:40 d855 00        call proc_0159 0 
 
-  2904:39 6c            pushi 6c // $6c dispose
+  2904:39 6c            pushi 6c                       // $6c dispose
   2906:76               push0 
   2907:54 04             self 4 
 
   2909:32 0009            jmp code_2915 
 
         code_290c
-  290c:38 008d          pushi 8d // $8d cue
+  290c:38 008d          pushi 8d                       // $8d cue
   290f:76               push0 
   2910:59 02            &rest 2 
   2912:57 9d 04         super TScript 4 
@@ -5897,7 +5897,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_29f8
+    (method (changeState)                              // method_29f8
   29f8:87 01              lap param1 
   29fa:65 0a             aTop state 
   29fc:36                push 
@@ -5905,9 +5905,9 @@
   29fe:35 00              ldi 0 
   2a00:1a                 eq? 
   2a01:30 000f            bnt code_2a13 
-  2a04:39 03            pushi 3 // $3 y
-  2a06:38 0492          pushi 492 // $492 sel_1170
-  2a09:39 42            pushi 42 // $42 setPri
+  2a04:39 03            pushi 3                        // $3 y
+  2a06:38 0492          pushi 492                      // $492 sel_1170
+  2a09:39 42            pushi 42                       // $42 setPri
   2a0b:7c            pushSelf 
   2a0c:40 d627 06        call proc_0037 6 
 
@@ -5921,9 +5921,9 @@
   2a1a:76               push0 
   2a1b:40 d708 00        call proc_0127 0 
 
-  2a1f:39 03            pushi 3 // $3 y
-  2a21:38 0492          pushi 492 // $492 sel_1170
-  2a24:39 43            pushi 43 // $43 at
+  2a1f:39 03            pushi 3                        // $3 y
+  2a21:38 0492          pushi 492                      // $492 sel_1170
+  2a24:39 43            pushi 43                       // $43 at
   2a26:7c            pushSelf 
   2a27:40 d638 06        call proc_0063 6 
 
@@ -5937,9 +5937,9 @@
   2a35:76               push0 
   2a36:40 d6d4 00        call proc_010e 0 
 
-  2a3a:39 03            pushi 3 // $3 y
-  2a3c:38 0492          pushi 492 // $492 sel_1170
-  2a3f:39 44            pushi 44 // $44 next
+  2a3a:39 03            pushi 3                        // $3 y
+  2a3c:38 0492          pushi 492                      // $492 sel_1170
+  2a3f:39 44            pushi 44                       // $44 next
   2a41:7c            pushSelf 
   2a42:40 d5c8 06        call proc_000e 6 
 
@@ -5953,9 +5953,9 @@
   2a50:76               push0 
   2a51:40 d69f 00        call proc_00f4 0 
 
-  2a55:39 03            pushi 3 // $3 y
-  2a57:38 0492          pushi 492 // $492 sel_1170
-  2a5a:39 45            pushi 45 // $45 done
+  2a55:39 03            pushi 3                        // $3 y
+  2a57:38 0492          pushi 492                      // $492 sel_1170
+  2a5a:39 45            pushi 45                       // $45 done
   2a5c:7c            pushSelf 
   2a5d:40 d636 06        call proc_0097 6 
 
@@ -5969,9 +5969,9 @@
   2a6b:76               push0 
   2a6c:40 d6d0 00        call proc_0140 0 
 
-  2a70:39 03            pushi 3 // $3 y
-  2a72:38 0492          pushi 492 // $492 sel_1170
-  2a75:39 46            pushi 46 // $46 width
+  2a70:39 03            pushi 3                        // $3 y
+  2a72:38 0492          pushi 492                      // $492 sel_1170
+  2a75:39 46            pushi 46                       // $46 width
   2a77:7c            pushSelf 
   2a78:40 d5bb 06        call proc_0037 6 
 
@@ -5985,7 +5985,7 @@
   2a86:76               push0 
   2a87:40 d6ce 00        call proc_0159 0 
 
-  2a8b:39 6c            pushi 6c // $6c dispose
+  2a8b:39 6c            pushi 6c                       // $6c dispose
   2a8d:76               push0 
   2a8e:54 04             self 4 
 
@@ -5995,7 +5995,7 @@
   2a91:48                 ret 
     )
 
-    (method (cue) // method_29d6
+    (method (cue)                                      // method_29d6
   29d6:87 00              lap paramTotal 
   29d8:30 0013            bnt code_29ee 
   29db:87 01              lap param1 
@@ -6004,14 +6004,14 @@
   29e1:76               push0 
   29e2:40 d773 00        call proc_0159 0 
 
-  29e6:39 6c            pushi 6c // $6c dispose
+  29e6:39 6c            pushi 6c                       // $6c dispose
   29e8:76               push0 
   29e9:54 04             self 4 
 
   29eb:32 0009            jmp code_29f7 
 
         code_29ee
-  29ee:38 008d          pushi 8d // $8d cue
+  29ee:38 008d          pushi 8d                       // $8d cue
   29f1:76               push0 
   29f2:59 02            &rest 2 
   29f4:57 9d 04         super TScript 4 
@@ -6041,7 +6041,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_2af4
+    (method (changeState)                              // method_2af4
   2af4:87 01              lap param1 
   2af6:65 0a             aTop state 
   2af8:36                push 
@@ -6049,9 +6049,9 @@
   2afa:35 00              ldi 0 
   2afc:1a                 eq? 
   2afd:30 000f            bnt code_2b0f 
-  2b00:39 03            pushi 3 // $3 y
-  2b02:38 0492          pushi 492 // $492 sel_1170
-  2b05:39 47            pushi 47 // $47 wordFail
+  2b00:39 03            pushi 3                        // $3 y
+  2b02:38 0492          pushi 492                      // $492 sel_1170
+  2b05:39 47            pushi 47                       // $47 wordFail
   2b07:7c            pushSelf 
   2b08:40 d5bf 06        call proc_00cb 6 
 
@@ -6065,9 +6065,9 @@
   2b16:76               push0 
   2b17:40 d5e6 00        call proc_0101 0 
 
-  2b1b:39 03            pushi 3 // $3 y
-  2b1d:38 0492          pushi 492 // $492 sel_1170
-  2b20:39 48            pushi 48 // $48 syntaxFail
+  2b1b:39 03            pushi 3                        // $3 y
+  2b1d:38 0492          pushi 492                      // $492 sel_1170
+  2b20:39 48            pushi 48                       // $48 syntaxFail
   2b22:7c            pushSelf 
   2b23:40 d53c 06        call proc_0063 6 
 
@@ -6081,9 +6081,9 @@
   2b31:76               push0 
   2b32:40 d5d8 00        call proc_010e 0 
 
-  2b36:39 03            pushi 3 // $3 y
-  2b38:38 0492          pushi 492 // $492 sel_1170
-  2b3b:39 49            pushi 49 // $49 semanticFail
+  2b36:39 03            pushi 3                        // $3 y
+  2b38:38 0492          pushi 492                      // $492 sel_1170
+  2b3b:39 49            pushi 49                       // $49 semanticFail
   2b3d:7c            pushSelf 
   2b3e:40 d4f5 06        call proc_0037 6 
 
@@ -6097,9 +6097,9 @@
   2b4c:76               push0 
   2b4d:40 d5d6 00        call proc_0127 0 
 
-  2b51:39 03            pushi 3 // $3 y
-  2b53:38 0492          pushi 492 // $492 sel_1170
-  2b56:39 4a            pushi 4a // $4a pragmaFail
+  2b51:39 03            pushi 3                        // $3 y
+  2b53:38 0492          pushi 492                      // $492 sel_1170
+  2b56:39 4a            pushi 4a                       // $4a pragmaFail
   2b58:7c            pushSelf 
   2b59:40 d4b1 06        call proc_000e 6 
 
@@ -6113,9 +6113,9 @@
   2b67:76               push0 
   2b68:40 d588 00        call proc_00f4 0 
 
-  2b6c:39 03            pushi 3 // $3 y
-  2b6e:38 0492          pushi 492 // $492 sel_1170
-  2b71:39 4b            pushi 4b // $4b said
+  2b6c:39 03            pushi 3                        // $3 y
+  2b6e:38 0492          pushi 492                      // $492 sel_1170
+  2b71:39 4b            pushi 4b                       // $4b said
   2b73:7c            pushSelf 
   2b74:40 d4bf 06        call proc_0037 6 
 
@@ -6129,9 +6129,9 @@
   2b82:76               push0 
   2b83:40 d5a0 00        call proc_0127 0 
 
-  2b87:39 03            pushi 3 // $3 y
-  2b89:38 0492          pushi 492 // $492 sel_1170
-  2b8c:39 4c            pushi 4c // $4c claimed
+  2b87:39 03            pushi 3                        // $3 y
+  2b89:38 0492          pushi 492                      // $492 sel_1170
+  2b8c:39 4c            pushi 4c                       // $4c claimed
   2b8e:7c            pushSelf 
   2b8f:40 d47b 06        call proc_000e 6 
 
@@ -6145,7 +6145,7 @@
   2b9d:76               push0 
   2b9e:40 d5b7 00        call proc_0159 0 
 
-  2ba2:39 6c            pushi 6c // $6c dispose
+  2ba2:39 6c            pushi 6c                       // $6c dispose
   2ba4:76               push0 
   2ba5:54 04             self 4 
 
@@ -6156,7 +6156,7 @@
   2ba9:00                bnot 
     )
 
-    (method (cue) // method_2ad2
+    (method (cue)                                      // method_2ad2
   2ad2:87 00              lap paramTotal 
   2ad4:30 0013            bnt code_2aea 
   2ad7:87 01              lap param1 
@@ -6165,14 +6165,14 @@
   2add:76               push0 
   2ade:40 d677 00        call proc_0159 0 
 
-  2ae2:39 6c            pushi 6c // $6c dispose
+  2ae2:39 6c            pushi 6c                       // $6c dispose
   2ae4:76               push0 
   2ae5:54 04             self 4 
 
   2ae7:32 0009            jmp code_2af3 
 
         code_2aea
-  2aea:38 008d          pushi 8d // $8d cue
+  2aea:38 008d          pushi 8d                       // $8d cue
   2aed:76               push0 
   2aee:59 02            &rest 2 
   2af0:57 9d 04         super TScript 4 
@@ -6202,7 +6202,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_2c0c
+    (method (changeState)                              // method_2c0c
   2c0c:87 01              lap param1 
   2c0e:65 0a             aTop state 
   2c10:36                push 
@@ -6210,9 +6210,9 @@
   2c12:35 00              ldi 0 
   2c14:1a                 eq? 
   2c15:30 000f            bnt code_2c27 
-  2c18:39 03            pushi 3 // $3 y
-  2c1a:38 0492          pushi 492 // $492 sel_1170
-  2c1d:39 4d            pushi 4d // $4d value
+  2c18:39 03            pushi 3                        // $3 y
+  2c1a:38 0492          pushi 492                      // $492 sel_1170
+  2c1d:39 4d            pushi 4d                       // $4d value
   2c1f:7c            pushSelf 
   2c20:40 d473 06        call proc_0097 6 
 
@@ -6226,9 +6226,9 @@
   2c2e:76               push0 
   2c2f:40 d50d 00        call proc_0140 0 
 
-  2c33:39 03            pushi 3 // $3 y
-  2c35:38 0492          pushi 492 // $492 sel_1170
-  2c38:39 4e            pushi 4e // $4e save
+  2c33:39 03            pushi 3                        // $3 y
+  2c35:38 0492          pushi 492                      // $492 sel_1170
+  2c38:39 4e            pushi 4e                       // $4e save
   2c3a:7c            pushSelf 
   2c3b:40 d424 06        call proc_0063 6 
 
@@ -6242,9 +6242,9 @@
   2c49:76               push0 
   2c4a:40 d4c0 00        call proc_010e 0 
 
-  2c4e:39 03            pushi 3 // $3 y
-  2c50:38 0492          pushi 492 // $492 sel_1170
-  2c53:39 4f            pushi 4f // $4f restore
+  2c4e:39 03            pushi 3                        // $3 y
+  2c50:38 0492          pushi 492                      // $492 sel_1170
+  2c53:39 4f            pushi 4f                       // $4f restore
   2c55:7c            pushSelf 
   2c56:40 d3b4 06        call proc_000e 6 
 
@@ -6258,9 +6258,9 @@
   2c64:76               push0 
   2c65:40 d48b 00        call proc_00f4 0 
 
-  2c69:39 03            pushi 3 // $3 y
-  2c6b:38 0492          pushi 492 // $492 sel_1170
-  2c6e:39 50            pushi 50 // $50 title
+  2c69:39 03            pushi 3                        // $3 y
+  2c6b:38 0492          pushi 492                      // $492 sel_1170
+  2c6e:39 50            pushi 50                       // $50 title
   2c70:7c            pushSelf 
   2c71:40 d3c2 06        call proc_0037 6 
 
@@ -6274,7 +6274,7 @@
   2c7f:76               push0 
   2c80:40 d4d5 00        call proc_0159 0 
 
-  2c84:39 6c            pushi 6c // $6c dispose
+  2c84:39 6c            pushi 6c                       // $6c dispose
   2c86:76               push0 
   2c87:54 04             self 4 
 
@@ -6285,7 +6285,7 @@
   2c8b:00                bnot 
     )
 
-    (method (cue) // method_2bea
+    (method (cue)                                      // method_2bea
   2bea:87 00              lap paramTotal 
   2bec:30 0013            bnt code_2c02 
   2bef:87 01              lap param1 
@@ -6294,14 +6294,14 @@
   2bf5:76               push0 
   2bf6:40 d55f 00        call proc_0159 0 
 
-  2bfa:39 6c            pushi 6c // $6c dispose
+  2bfa:39 6c            pushi 6c                       // $6c dispose
   2bfc:76               push0 
   2bfd:54 04             self 4 
 
   2bff:32 0009            jmp code_2c0b 
 
         code_2c02
-  2c02:38 008d          pushi 8d // $8d cue
+  2c02:38 008d          pushi 8d                       // $8d cue
   2c05:76               push0 
   2c06:59 02            &rest 2 
   2c08:57 9d 04         super TScript 4 
@@ -6331,7 +6331,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_2cee
+    (method (changeState)                              // method_2cee
   2cee:87 01              lap param1 
   2cf0:65 0a             aTop state 
   2cf2:36                push 
@@ -6339,9 +6339,9 @@
   2cf4:35 00              ldi 0 
   2cf6:1a                 eq? 
   2cf7:30 000f            bnt code_2d09 
-  2cfa:39 03            pushi 3 // $3 y
-  2cfc:38 0492          pushi 492 // $492 sel_1170
-  2cff:39 51            pushi 51 // $51 button
+  2cfa:39 03            pushi 3                        // $3 y
+  2cfc:38 0492          pushi 492                      // $492 sel_1170
+  2cff:39 51            pushi 51                       // $51 button
   2d01:7c            pushSelf 
   2d02:40 d331 06        call proc_0037 6 
 
@@ -6355,9 +6355,9 @@
   2d10:76               push0 
   2d11:40 d412 00        call proc_0127 0 
 
-  2d15:39 03            pushi 3 // $3 y
-  2d17:38 0492          pushi 492 // $492 sel_1170
-  2d1a:39 52            pushi 52 // $52 icon
+  2d15:39 03            pushi 3                        // $3 y
+  2d17:38 0492          pushi 492                      // $492 sel_1170
+  2d1a:39 52            pushi 52                       // $52 icon
   2d1c:7c            pushSelf 
   2d1d:40 d342 06        call proc_0063 6 
 
@@ -6371,9 +6371,9 @@
   2d2b:76               push0 
   2d2c:40 d3de 00        call proc_010e 0 
 
-  2d30:39 03            pushi 3 // $3 y
-  2d32:38 0492          pushi 492 // $492 sel_1170
-  2d35:39 53            pushi 53 // $53 draw
+  2d30:39 03            pushi 3                        // $3 y
+  2d32:38 0492          pushi 492                      // $492 sel_1170
+  2d35:39 53            pushi 53                       // $53 draw
   2d37:7c            pushSelf 
   2d38:40 d2d2 06        call proc_000e 6 
 
@@ -6387,9 +6387,9 @@
   2d46:76               push0 
   2d47:40 d3a9 00        call proc_00f4 0 
 
-  2d4b:39 03            pushi 3 // $3 y
-  2d4d:38 0492          pushi 492 // $492 sel_1170
-  2d50:39 54            pushi 54 // $54 delete
+  2d4b:39 03            pushi 3                        // $3 y
+  2d4d:38 0492          pushi 492                      // $492 sel_1170
+  2d50:39 54            pushi 54                       // $54 delete
   2d52:7c            pushSelf 
   2d53:40 d340 06        call proc_0097 6 
 
@@ -6403,7 +6403,7 @@
   2d61:76               push0 
   2d62:40 d3f3 00        call proc_0159 0 
 
-  2d66:39 6c            pushi 6c // $6c dispose
+  2d66:39 6c            pushi 6c                       // $6c dispose
   2d68:76               push0 
   2d69:54 04             self 4 
 
@@ -6414,7 +6414,7 @@
   2d6d:00                bnot 
     )
 
-    (method (cue) // method_2ccc
+    (method (cue)                                      // method_2ccc
   2ccc:87 00              lap paramTotal 
   2cce:30 0013            bnt code_2ce4 
   2cd1:87 01              lap param1 
@@ -6423,14 +6423,14 @@
   2cd7:76               push0 
   2cd8:40 d47d 00        call proc_0159 0 
 
-  2cdc:39 6c            pushi 6c // $6c dispose
+  2cdc:39 6c            pushi 6c                       // $6c dispose
   2cde:76               push0 
   2cdf:54 04             self 4 
 
   2ce1:32 0009            jmp code_2ced 
 
         code_2ce4
-  2ce4:38 008d          pushi 8d // $8d cue
+  2ce4:38 008d          pushi 8d                       // $8d cue
   2ce7:76               push0 
   2ce8:59 02            &rest 2 
   2cea:57 9d 04         super TScript 4 
@@ -6460,7 +6460,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_2dd0
+    (method (changeState)                              // method_2dd0
   2dd0:87 01              lap param1 
   2dd2:65 0a             aTop state 
   2dd4:36                push 
@@ -6468,9 +6468,9 @@
   2dd6:35 00              ldi 0 
   2dd8:1a                 eq? 
   2dd9:30 000f            bnt code_2deb 
-  2ddc:39 03            pushi 3 // $3 y
-  2dde:38 0492          pushi 492 // $492 sel_1170
-  2de1:39 55            pushi 55 // $55 z
+  2ddc:39 03            pushi 3                        // $3 y
+  2dde:38 0492          pushi 492                      // $492 sel_1170
+  2de1:39 55            pushi 55                       // $55 z
   2de3:7c            pushSelf 
   2de4:40 d27b 06        call proc_0063 6 
 
@@ -6484,9 +6484,9 @@
   2df2:76               push0 
   2df3:40 d317 00        call proc_010e 0 
 
-  2df7:39 03            pushi 3 // $3 y
-  2df9:38 0492          pushi 492 // $492 sel_1170
-  2dfc:39 56            pushi 56 // $56 parseLang
+  2df7:39 03            pushi 3                        // $3 y
+  2df9:38 0492          pushi 492                      // $492 sel_1170
+  2dfc:39 56            pushi 56                       // $56 parseLang
   2dfe:7c            pushSelf 
   2dff:40 d234 06        call proc_0037 6 
 
@@ -6500,9 +6500,9 @@
   2e0d:76               push0 
   2e0e:40 d315 00        call proc_0127 0 
 
-  2e12:39 03            pushi 3 // $3 y
-  2e14:38 0492          pushi 492 // $492 sel_1170
-  2e17:39 57            pushi 57 // $57 printLang
+  2e12:39 03            pushi 3                        // $3 y
+  2e14:38 0492          pushi 492                      // $492 sel_1170
+  2e17:39 57            pushi 57                       // $57 printLang
   2e19:7c            pushSelf 
   2e1a:40 d2ad 06        call proc_00cb 6 
 
@@ -6516,9 +6516,9 @@
   2e28:76               push0 
   2e29:40 d2d4 00        call proc_0101 0 
 
-  2e2d:39 03            pushi 3 // $3 y
-  2e2f:38 0492          pushi 492 // $492 sel_1170
-  2e32:39 58            pushi 58 // $58 subtitleLang
+  2e2d:39 03            pushi 3                        // $3 y
+  2e2f:38 0492          pushi 492                      // $492 sel_1170
+  2e32:39 58            pushi 58                       // $58 subtitleLang
   2e34:7c            pushSelf 
   2e35:40 d1d5 06        call proc_000e 6 
 
@@ -6532,9 +6532,9 @@
   2e43:76               push0 
   2e44:40 d2ac 00        call proc_00f4 0 
 
-  2e48:39 03            pushi 3 // $3 y
-  2e4a:38 0492          pushi 492 // $492 sel_1170
-  2e4d:39 59            pushi 59 // $59 size
+  2e48:39 03            pushi 3                        // $3 y
+  2e4a:38 0492          pushi 492                      // $492 sel_1170
+  2e4d:39 59            pushi 59                       // $59 size
   2e4f:7c            pushSelf 
   2e50:40 d243 06        call proc_0097 6 
 
@@ -6548,7 +6548,7 @@
   2e5e:76               push0 
   2e5f:40 d2f6 00        call proc_0159 0 
 
-  2e63:39 6c            pushi 6c // $6c dispose
+  2e63:39 6c            pushi 6c                       // $6c dispose
   2e65:76               push0 
   2e66:54 04             self 4 
 
@@ -6558,7 +6558,7 @@
   2e69:48                 ret 
     )
 
-    (method (cue) // method_2dae
+    (method (cue)                                      // method_2dae
   2dae:87 00              lap paramTotal 
   2db0:30 0013            bnt code_2dc6 
   2db3:87 01              lap param1 
@@ -6567,14 +6567,14 @@
   2db9:76               push0 
   2dba:40 d39b 00        call proc_0159 0 
 
-  2dbe:39 6c            pushi 6c // $6c dispose
+  2dbe:39 6c            pushi 6c                       // $6c dispose
   2dc0:76               push0 
   2dc1:54 04             self 4 
 
   2dc3:32 0009            jmp code_2dcf 
 
         code_2dc6
-  2dc6:38 008d          pushi 8d // $8d cue
+  2dc6:38 008d          pushi 8d                       // $8d cue
   2dc9:76               push0 
   2dca:59 02            &rest 2 
   2dcc:57 9d 04         super TScript 4 
@@ -6604,7 +6604,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_2ecc
+    (method (changeState)                              // method_2ecc
   2ecc:87 01              lap param1 
   2ece:65 0a             aTop state 
   2ed0:36                push 
@@ -6612,9 +6612,9 @@
   2ed2:35 00              ldi 0 
   2ed4:1a                 eq? 
   2ed5:30 000f            bnt code_2ee7 
-  2ed8:39 03            pushi 3 // $3 y
-  2eda:38 0492          pushi 492 // $492 sel_1170
-  2edd:39 5f            pushi 5f // $5f sec
+  2ed8:39 03            pushi 3                        // $3 y
+  2eda:38 0492          pushi 492                      // $492 sel_1170
+  2edd:39 5f            pushi 5f                       // $5f sec
   2edf:7c            pushSelf 
   2ee0:40 d17f 06        call proc_0063 6 
 
@@ -6628,9 +6628,9 @@
   2eee:76               push0 
   2eef:40 d21b 00        call proc_010e 0 
 
-  2ef3:39 03            pushi 3 // $3 y
-  2ef5:38 0492          pushi 492 // $492 sel_1170
-  2ef8:39 60            pushi 60 // $60 frame
+  2ef3:39 03            pushi 3                        // $3 y
+  2ef5:38 0492          pushi 492                      // $492 sel_1170
+  2ef8:39 60            pushi 60                       // $60 frame
   2efa:7c            pushSelf 
   2efb:40 d138 06        call proc_0037 6 
 
@@ -6644,9 +6644,9 @@
   2f09:76               push0 
   2f0a:40 d219 00        call proc_0127 0 
 
-  2f0e:39 03            pushi 3 // $3 y
-  2f10:38 0492          pushi 492 // $492 sel_1170
-  2f13:39 61            pushi 61 // $61 vol
+  2f0e:39 03            pushi 3                        // $3 y
+  2f10:38 0492          pushi 492                      // $492 sel_1170
+  2f13:39 61            pushi 61                       // $61 vol
   2f15:7c            pushSelf 
   2f16:40 d17d 06        call proc_0097 6 
 
@@ -6660,9 +6660,9 @@
   2f24:76               push0 
   2f25:40 d217 00        call proc_0140 0 
 
-  2f29:39 03            pushi 3 // $3 y
-  2f2b:38 0492          pushi 492 // $492 sel_1170
-  2f2e:39 62            pushi 62 // $62 pri
+  2f29:39 03            pushi 3                        // $3 y
+  2f2b:38 0492          pushi 492                      // $492 sel_1170
+  2f2e:39 62            pushi 62                       // $62 pri
   2f30:7c            pushSelf 
   2f31:40 d0d9 06        call proc_000e 6 
 
@@ -6676,9 +6676,9 @@
   2f3f:76               push0 
   2f40:40 d1b0 00        call proc_00f4 0 
 
-  2f44:39 03            pushi 3 // $3 y
-  2f46:38 0492          pushi 492 // $492 sel_1170
-  2f49:39 63            pushi 63 // $63 perform
+  2f44:39 03            pushi 3                        // $3 y
+  2f46:38 0492          pushi 492                      // $492 sel_1170
+  2f49:39 63            pushi 63                       // $63 perform
   2f4b:7c            pushSelf 
   2f4c:40 d147 06        call proc_0097 6 
 
@@ -6692,7 +6692,7 @@
   2f5a:76               push0 
   2f5b:40 d1fa 00        call proc_0159 0 
 
-  2f5f:39 6c            pushi 6c // $6c dispose
+  2f5f:39 6c            pushi 6c                       // $6c dispose
   2f61:76               push0 
   2f62:54 04             self 4 
 
@@ -6702,7 +6702,7 @@
   2f65:48                 ret 
     )
 
-    (method (cue) // method_2eaa
+    (method (cue)                                      // method_2eaa
   2eaa:87 00              lap paramTotal 
   2eac:30 0013            bnt code_2ec2 
   2eaf:87 01              lap param1 
@@ -6711,14 +6711,14 @@
   2eb5:76               push0 
   2eb6:40 d29f 00        call proc_0159 0 
 
-  2eba:39 6c            pushi 6c // $6c dispose
+  2eba:39 6c            pushi 6c                       // $6c dispose
   2ebc:76               push0 
   2ebd:54 04             self 4 
 
   2ebf:32 0009            jmp code_2ecb 
 
         code_2ec2
-  2ec2:38 008d          pushi 8d // $8d cue
+  2ec2:38 008d          pushi 8d                       // $8d cue
   2ec5:76               push0 
   2ec6:59 02            &rest 2 
   2ec8:57 9d 04         super TScript 4 
@@ -6748,7 +6748,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_2fc8
+    (method (changeState)                              // method_2fc8
   2fc8:87 01              lap param1 
   2fca:65 0a             aTop state 
   2fcc:36                push 
@@ -6756,9 +6756,9 @@
   2fce:35 00              ldi 0 
   2fd0:1a                 eq? 
   2fd1:30 000f            bnt code_2fe3 
-  2fd4:39 03            pushi 3 // $3 y
-  2fd6:38 0492          pushi 492 // $492 sel_1170
-  2fd9:39 64            pushi 64 // $64 moveDone
+  2fd4:39 03            pushi 3                        // $3 y
+  2fd6:38 0492          pushi 492                      // $492 sel_1170
+  2fd9:39 64            pushi 64                       // $64 moveDone
   2fdb:7c            pushSelf 
   2fdc:40 d0b7 06        call proc_0097 6 
 
@@ -6772,7 +6772,7 @@
   2fea:76               push0 
   2feb:40 d16a 00        call proc_0159 0 
 
-  2fef:39 6c            pushi 6c // $6c dispose
+  2fef:39 6c            pushi 6c                       // $6c dispose
   2ff1:76               push0 
   2ff2:54 04             self 4 
 
@@ -6782,7 +6782,7 @@
   2ff5:48                 ret 
     )
 
-    (method (cue) // method_2fa6
+    (method (cue)                                      // method_2fa6
   2fa6:87 00              lap paramTotal 
   2fa8:30 0013            bnt code_2fbe 
   2fab:87 01              lap param1 
@@ -6791,14 +6791,14 @@
   2fb1:76               push0 
   2fb2:40 d1a3 00        call proc_0159 0 
 
-  2fb6:39 6c            pushi 6c // $6c dispose
+  2fb6:39 6c            pushi 6c                       // $6c dispose
   2fb8:76               push0 
   2fb9:54 04             self 4 
 
   2fbb:32 0009            jmp code_2fc7 
 
         code_2fbe
-  2fbe:38 008d          pushi 8d // $8d cue
+  2fbe:38 008d          pushi 8d                       // $8d cue
   2fc1:76               push0 
   2fc2:59 02            &rest 2 
   2fc4:57 9d 04         super TScript 4 
@@ -6828,7 +6828,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_3058
+    (method (changeState)                              // method_3058
   3058:87 01              lap param1 
   305a:65 0a             aTop state 
   305c:36                push 
@@ -6836,9 +6836,9 @@
   305e:35 00              ldi 0 
   3060:1a                 eq? 
   3061:30 000f            bnt code_3073 
-  3064:39 03            pushi 3 // $3 y
-  3066:38 0492          pushi 492 // $492 sel_1170
-  3069:39 65            pushi 65 // $65 topString
+  3064:39 03            pushi 3                        // $3 y
+  3066:38 0492          pushi 492                      // $492 sel_1170
+  3069:39 65            pushi 65                       // $65 topString
   306b:7c            pushSelf 
   306c:40 cf9e 06        call proc_000e 6 
 
@@ -6852,9 +6852,9 @@
   307a:76               push0 
   307b:40 d075 00        call proc_00f4 0 
 
-  307f:39 03            pushi 3 // $3 y
-  3081:38 0492          pushi 492 // $492 sel_1170
-  3084:39 66            pushi 66 // $66 flags
+  307f:39 03            pushi 3                        // $3 y
+  3081:38 0492          pushi 492                      // $492 sel_1170
+  3084:39 66            pushi 66                       // $66 flags
   3086:7c            pushSelf 
   3087:40 cfac 06        call proc_0037 6 
 
@@ -6868,9 +6868,9 @@
   3095:76               push0 
   3096:40 d08d 00        call proc_0127 0 
 
-  309a:39 03            pushi 3 // $3 y
-  309c:38 0492          pushi 492 // $492 sel_1170
-  309f:39 67            pushi 67 // $67 quitGame
+  309a:39 03            pushi 3                        // $3 y
+  309c:38 0492          pushi 492                      // $492 sel_1170
+  309f:39 67            pushi 67                       // $67 quitGame
   30a1:7c            pushSelf 
   30a2:40 cff1 06        call proc_0097 6 
 
@@ -6884,9 +6884,9 @@
   30b0:76               push0 
   30b1:40 d08b 00        call proc_0140 0 
 
-  30b5:39 03            pushi 3 // $3 y
-  30b7:38 0492          pushi 492 // $492 sel_1170
-  30ba:39 68            pushi 68 // $68 restart
+  30b5:39 03            pushi 3                        // $3 y
+  30b7:38 0492          pushi 492                      // $492 sel_1170
+  30ba:39 68            pushi 68                       // $68 restart
   30bc:7c            pushSelf 
   30bd:40 cfa2 06        call proc_0063 6 
 
@@ -6897,9 +6897,9 @@
   30c5:35 04              ldi 4 
   30c7:1a                 eq? 
   30c8:30 000f            bnt code_30da 
-  30cb:39 03            pushi 3 // $3 y
-  30cd:38 0492          pushi 492 // $492 sel_1170
-  30d0:39 69            pushi 69 // $69 hide
+  30cb:39 03            pushi 3                        // $3 y
+  30cd:38 0492          pushi 492                      // $492 sel_1170
+  30d0:39 69            pushi 69                       // $69 hide
   30d2:7c            pushSelf 
   30d3:40 cf8c 06        call proc_0063 6 
 
@@ -6913,9 +6913,9 @@
   30e1:76               push0 
   30e2:40 d028 00        call proc_010e 0 
 
-  30e6:39 03            pushi 3 // $3 y
-  30e8:38 0492          pushi 492 // $492 sel_1170
-  30eb:39 6a            pushi 6a // $6a new
+  30e6:39 03            pushi 3                        // $3 y
+  30e8:38 0492          pushi 492                      // $492 sel_1170
+  30eb:39 6a            pushi 6a                       // $6a new
   30ed:7c            pushSelf 
   30ee:40 cf1c 06        call proc_000e 6 
 
@@ -6929,7 +6929,7 @@
   30fc:76               push0 
   30fd:40 d058 00        call proc_0159 0 
 
-  3101:39 6c            pushi 6c // $6c dispose
+  3101:39 6c            pushi 6c                       // $6c dispose
   3103:76               push0 
   3104:54 04             self 4 
 
@@ -6939,7 +6939,7 @@
   3107:48                 ret 
     )
 
-    (method (cue) // method_3036
+    (method (cue)                                      // method_3036
   3036:87 00              lap paramTotal 
   3038:30 0013            bnt code_304e 
   303b:87 01              lap param1 
@@ -6948,14 +6948,14 @@
   3041:76               push0 
   3042:40 d113 00        call proc_0159 0 
 
-  3046:39 6c            pushi 6c // $6c dispose
+  3046:39 6c            pushi 6c                       // $6c dispose
   3048:76               push0 
   3049:54 04             self 4 
 
   304b:32 0009            jmp code_3057 
 
         code_304e
-  304e:38 008d          pushi 8d // $8d cue
+  304e:38 008d          pushi 8d                       // $8d cue
   3051:76               push0 
   3052:59 02            &rest 2 
   3054:57 9d 04         super TScript 4 
@@ -6985,7 +6985,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_316a
+    (method (changeState)                              // method_316a
   316a:87 01              lap param1 
   316c:65 0a             aTop state 
   316e:36                push 
@@ -6993,9 +6993,9 @@
   3170:35 00              ldi 0 
   3172:1a                 eq? 
   3173:30 000f            bnt code_3185 
-  3176:39 03            pushi 3 // $3 y
-  3178:38 0492          pushi 492 // $492 sel_1170
-  317b:39 6b            pushi 6b // $6b init
+  3176:39 03            pushi 3                        // $3 y
+  3178:38 0492          pushi 492                      // $492 sel_1170
+  317b:39 6b            pushi 6b                       // $6b init
   317d:7c            pushSelf 
   317e:40 cee1 06        call proc_0063 6 
 
@@ -7009,9 +7009,9 @@
   318c:76               push0 
   318d:40 cf7d 00        call proc_010e 0 
 
-  3191:39 03            pushi 3 // $3 y
-  3193:38 0492          pushi 492 // $492 sel_1170
-  3196:39 6c            pushi 6c // $6c dispose
+  3191:39 03            pushi 3                        // $3 y
+  3193:38 0492          pushi 492                      // $492 sel_1170
+  3196:39 6c            pushi 6c                       // $6c dispose
   3198:7c            pushSelf 
   3199:40 ce71 06        call proc_000e 6 
 
@@ -7025,9 +7025,9 @@
   31a7:76               push0 
   31a8:40 cf48 00        call proc_00f4 0 
 
-  31ac:39 03            pushi 3 // $3 y
-  31ae:38 0492          pushi 492 // $492 sel_1170
-  31b1:39 6d            pushi 6d // $6d showStr
+  31ac:39 03            pushi 3                        // $3 y
+  31ae:38 0492          pushi 492                      // $492 sel_1170
+  31b1:39 6d            pushi 6d                       // $6d showStr
   31b3:7c            pushSelf 
   31b4:40 cf13 06        call proc_00cb 6 
 
@@ -7041,9 +7041,9 @@
   31c2:76               push0 
   31c3:40 cf3a 00        call proc_0101 0 
 
-  31c7:39 03            pushi 3 // $3 y
-  31c9:38 0492          pushi 492 // $492 sel_1170
-  31cc:39 6e            pushi 6e // $6e showSelf
+  31c7:39 03            pushi 3                        // $3 y
+  31c9:38 0492          pushi 492                      // $492 sel_1170
+  31cc:39 6e            pushi 6e                       // $6e showSelf
   31ce:7c            pushSelf 
   31cf:40 cec4 06        call proc_0097 6 
 
@@ -7057,9 +7057,9 @@
   31dd:76               push0 
   31de:40 cf5e 00        call proc_0140 0 
 
-  31e2:39 03            pushi 3 // $3 y
-  31e4:38 0492          pushi 492 // $492 sel_1170
-  31e7:39 6f            pushi 6f // $6f isKindOf
+  31e2:39 03            pushi 3                        // $3 y
+  31e4:38 0492          pushi 492                      // $492 sel_1170
+  31e7:39 6f            pushi 6f                       // $6f isKindOf
   31e9:7c            pushSelf 
   31ea:40 ce49 06        call proc_0037 6 
 
@@ -7073,9 +7073,9 @@
   31f8:76               push0 
   31f9:40 cf2a 00        call proc_0127 0 
 
-  31fd:39 03            pushi 3 // $3 y
-  31ff:38 0492          pushi 492 // $492 sel_1170
-  3202:39 70            pushi 70 // $70 isMemberOf
+  31fd:39 03            pushi 3                        // $3 y
+  31ff:38 0492          pushi 492                      // $492 sel_1170
+  3202:39 70            pushi 70                       // $70 isMemberOf
   3204:7c            pushSelf 
   3205:40 ce5a 06        call proc_0063 6 
 
@@ -7089,7 +7089,7 @@
   3213:76               push0 
   3214:40 cf41 00        call proc_0159 0 
 
-  3218:39 6c            pushi 6c // $6c dispose
+  3218:39 6c            pushi 6c                       // $6c dispose
   321a:76               push0 
   321b:54 04             self 4 
 
@@ -7100,7 +7100,7 @@
   321f:00                bnot 
     )
 
-    (method (cue) // method_3148
+    (method (cue)                                      // method_3148
   3148:87 00              lap paramTotal 
   314a:30 0013            bnt code_3160 
   314d:87 01              lap param1 
@@ -7109,14 +7109,14 @@
   3153:76               push0 
   3154:40 d001 00        call proc_0159 0 
 
-  3158:39 6c            pushi 6c // $6c dispose
+  3158:39 6c            pushi 6c                       // $6c dispose
   315a:76               push0 
   315b:54 04             self 4 
 
   315d:32 0009            jmp code_3169 
 
         code_3160
-  3160:38 008d          pushi 8d // $8d cue
+  3160:38 008d          pushi 8d                       // $8d cue
   3163:76               push0 
   3164:59 02            &rest 2 
   3166:57 9d 04         super TScript 4 
@@ -7131,221 +7131,221 @@
 
 
 (procedure proc_000e
-  000e:38 0096          pushi 96 // $96 setCycle
+  000e:38 0096          pushi 96                       // $96 setCycle
   0011:78               push1 
   0012:51 17            class Fwd 
   0014:36                push 
-  0015:72 0964          lofsa $0964 // willHead
+  0015:72 0964          lofsa $0964                    // willHead
   0018:4a 06             send 6 
 
   001a:78               push1 
   001b:7a               push2 
-  001c:47 0d 06 02      calle d procedure_0006 2 //  
+  001c:47 0d 06 02      calle d procedure_0006 2       //  
 
-  0020:39 08            pushi 8 // $8 underBits
+  0020:39 08            pushi 8                        // $8 underBits
   0022:8f 01              lsp param1 
   0024:8f 02              lsp param2 
   0026:7c            pushSelf 
-  0027:39 43            pushi 43 // $43 at
-  0029:39 0a            pushi a // $a nsLeft
+  0027:39 43            pushi 43                       // $43 at
+  0029:39 0a            pushi a                        // $a nsLeft
   002b:3c                 dup 
-  002c:39 50            pushi 50 // $50 title
-  002e:72 3260          lofsa $3260 // Will
+  002c:39 50            pushi 50                       // $50 title
+  002e:72 3260          lofsa $3260                    // Will
   0031:36                push 
-  0032:47 0d 04 10      calle d procedure_0004 10 //  
+  0032:47 0d 04 10      calle d procedure_0004 10      //  
 
   0036:48                 ret 
 )
 
 (procedure proc_0037
-  0037:38 0096          pushi 96 // $96 setCycle
+  0037:38 0096          pushi 96                       // $96 setCycle
   003a:78               push1 
   003b:51 17            class Fwd 
   003d:36                push 
-  003e:72 073a          lofsa $073a // johnHead
+  003e:72 073a          lofsa $073a                    // johnHead
   0041:4a 06             send 6 
 
-  0043:38 0096          pushi 96 // $96 setCycle
+  0043:38 0096          pushi 96                       // $96 setCycle
   0046:78               push1 
   0047:51 17            class Fwd 
   0049:36                push 
-  004a:72 07a0          lofsa $07a0 // johnArm
+  004a:72 07a0          lofsa $07a0                    // johnArm
   004d:4a 06             send 6 
 
   004f:78               push1 
   0050:78               push1 
-  0051:47 0d 06 02      calle d procedure_0006 2 //  
+  0051:47 0d 06 02      calle d procedure_0006 2       //  
 
   0055:7a               push2 
   0056:59 01            &rest 1 
-  0058:39 50            pushi 50 // $50 title
-  005a:72 3265          lofsa $3265 // John
+  0058:39 50            pushi 50                       // $50 title
+  005a:72 3265          lofsa $3265                    // John
   005d:36                push 
-  005e:47 0d 04 04      calle d procedure_0004 4 //  
+  005e:47 0d 04 04      calle d procedure_0004 4       //  
 
   0062:48                 ret 
 )
 
 (procedure proc_0063
-  0063:38 0096          pushi 96 // $96 setCycle
+  0063:38 0096          pushi 96                       // $96 setCycle
   0066:78               push1 
   0067:51 17            class Fwd 
   0069:36                push 
-  006a:72 0626          lofsa $0626 // tuckHead
+  006a:72 0626          lofsa $0626                    // tuckHead
   006d:4a 06             send 6 
 
-  006f:38 0096          pushi 96 // $96 setCycle
+  006f:38 0096          pushi 96                       // $96 setCycle
   0072:78               push1 
   0073:51 17            class Fwd 
   0075:36                push 
-  0076:72 068c          lofsa $068c // tuckHands
+  0076:72 068c          lofsa $068c                    // tuckHands
   0079:4a 06             send 6 
 
   007b:78               push1 
-  007c:39 03            pushi 3 // $3 y
-  007e:47 0d 06 02      calle d procedure_0006 2 //  
+  007c:39 03            pushi 3                        // $3 y
+  007e:47 0d 06 02      calle d procedure_0006 2       //  
 
-  0082:39 05            pushi 5 // $5 view
+  0082:39 05            pushi 5                        // $5 view
   0084:59 01            &rest 1 
-  0086:39 43            pushi 43 // $43 at
-  0088:39 50            pushi 50 // $50 title
-  008a:39 14            pushi 14 // $14 brLeft
-  008c:39 50            pushi 50 // $50 title
-  008e:72 326a          lofsa $326a // Tuck
+  0086:39 43            pushi 43                       // $43 at
+  0088:39 50            pushi 50                       // $50 title
+  008a:39 14            pushi 14                       // $14 brLeft
+  008c:39 50            pushi 50                       // $50 title
+  008e:72 326a          lofsa $326a                    // Tuck
   0091:36                push 
-  0092:47 0d 04 0a      calle d procedure_0004 a //  
+  0092:47 0d 04 0a      calle d procedure_0004 a       //  
 
   0096:48                 ret 
 )
 
 (procedure proc_0097
-  0097:38 0096          pushi 96 // $96 setCycle
+  0097:38 0096          pushi 96                       // $96 setCycle
   009a:78               push1 
   009b:51 17            class Fwd 
   009d:36                push 
-  009e:72 084e          lofsa $084e // alanHead
+  009e:72 084e          lofsa $084e                    // alanHead
   00a1:4a 06             send 6 
 
-  00a3:38 0096          pushi 96 // $96 setCycle
+  00a3:38 0096          pushi 96                       // $96 setCycle
   00a6:78               push1 
   00a7:51 17            class Fwd 
   00a9:36                push 
-  00aa:72 08b4          lofsa $08b4 // alanArm
+  00aa:72 08b4          lofsa $08b4                    // alanArm
   00ad:4a 06             send 6 
 
   00af:78               push1 
-  00b0:39 04            pushi 4 // $4 x
-  00b2:47 0d 06 02      calle d procedure_0006 2 //  
+  00b0:39 04            pushi 4                        // $4 x
+  00b2:47 0d 06 02      calle d procedure_0006 2       //  
 
-  00b6:39 05            pushi 5 // $5 view
+  00b6:39 05            pushi 5                        // $5 view
   00b8:59 01            &rest 1 
-  00ba:39 43            pushi 43 // $43 at
-  00bc:39 64            pushi 64 // $64 moveDone
-  00be:39 19            pushi 19 // $19 time
-  00c0:39 50            pushi 50 // $50 title
-  00c2:72 326f          lofsa $326f // Alan
+  00ba:39 43            pushi 43                       // $43 at
+  00bc:39 64            pushi 64                       // $64 moveDone
+  00be:39 19            pushi 19                       // $19 time
+  00c0:39 50            pushi 50                       // $50 title
+  00c2:72 326f          lofsa $326f                    // Alan
   00c5:36                push 
-  00c6:47 0d 04 0a      calle d procedure_0004 a //  
+  00c6:47 0d 04 0a      calle d procedure_0004 a       //  
 
   00ca:48                 ret 
 )
 
 (procedure proc_00cb
-  00cb:38 0096          pushi 96 // $96 setCycle
+  00cb:38 0096          pushi 96                       // $96 setCycle
   00ce:78               push1 
   00cf:51 17            class Fwd 
   00d1:36                push 
-  00d2:72 0a12          lofsa $0a12 // muchHead
+  00d2:72 0a12          lofsa $0a12                    // muchHead
   00d5:4a 06             send 6 
 
   00d7:78               push1 
-  00d8:39 05            pushi 5 // $5 view
-  00da:47 0d 06 02      calle d procedure_0006 2 //  
+  00d8:39 05            pushi 5                        // $5 view
+  00da:47 0d 06 02      calle d procedure_0006 2       //  
 
-  00de:39 05            pushi 5 // $5 view
+  00de:39 05            pushi 5                        // $5 view
   00e0:59 01            &rest 1 
-  00e2:39 43            pushi 43 // $43 at
-  00e4:38 0082          pushi 82 // $82 start
-  00e7:39 0a            pushi a // $a nsLeft
-  00e9:39 50            pushi 50 // $50 title
-  00eb:72 3274          lofsa $3274 // Much
+  00e2:39 43            pushi 43                       // $43 at
+  00e4:38 0082          pushi 82                       // $82 start
+  00e7:39 0a            pushi a                        // $a nsLeft
+  00e9:39 50            pushi 50                       // $50 title
+  00eb:72 3274          lofsa $3274                    // Much
   00ee:36                push 
-  00ef:47 0d 04 0a      calle d procedure_0004 a //  
+  00ef:47 0d 04 0a      calle d procedure_0004 a       //  
 
   00f3:48                 ret 
 )
 
 (procedure proc_00f4
-  00f4:38 0096          pushi 96 // $96 setCycle
+  00f4:38 0096          pushi 96                       // $96 setCycle
   00f7:78               push1 
   00f8:51 1b            class Beg 
   00fa:36                push 
-  00fb:72 0964          lofsa $0964 // willHead
+  00fb:72 0964          lofsa $0964                    // willHead
   00fe:4a 06             send 6 
 
   0100:48                 ret 
 )
 
 (procedure proc_0101
-  0101:38 0096          pushi 96 // $96 setCycle
+  0101:38 0096          pushi 96                       // $96 setCycle
   0104:78               push1 
   0105:51 1b            class Beg 
   0107:36                push 
-  0108:72 0a12          lofsa $0a12 // muchHead
+  0108:72 0a12          lofsa $0a12                    // muchHead
   010b:4a 06             send 6 
 
   010d:48                 ret 
 )
 
 (procedure proc_010e
-  010e:38 0096          pushi 96 // $96 setCycle
+  010e:38 0096          pushi 96                       // $96 setCycle
   0111:78               push1 
   0112:51 1b            class Beg 
   0114:36                push 
-  0115:72 0626          lofsa $0626 // tuckHead
+  0115:72 0626          lofsa $0626                    // tuckHead
   0118:4a 06             send 6 
 
-  011a:38 0096          pushi 96 // $96 setCycle
+  011a:38 0096          pushi 96                       // $96 setCycle
   011d:78               push1 
   011e:51 1b            class Beg 
   0120:36                push 
-  0121:72 068c          lofsa $068c // tuckHands
+  0121:72 068c          lofsa $068c                    // tuckHands
   0124:4a 06             send 6 
 
   0126:48                 ret 
 )
 
 (procedure proc_0127
-  0127:38 0096          pushi 96 // $96 setCycle
+  0127:38 0096          pushi 96                       // $96 setCycle
   012a:78               push1 
   012b:51 1b            class Beg 
   012d:36                push 
-  012e:72 073a          lofsa $073a // johnHead
+  012e:72 073a          lofsa $073a                    // johnHead
   0131:4a 06             send 6 
 
-  0133:38 0096          pushi 96 // $96 setCycle
+  0133:38 0096          pushi 96                       // $96 setCycle
   0136:78               push1 
   0137:51 1b            class Beg 
   0139:36                push 
-  013a:72 07a0          lofsa $07a0 // johnArm
+  013a:72 07a0          lofsa $07a0                    // johnArm
   013d:4a 06             send 6 
 
   013f:48                 ret 
 )
 
 (procedure proc_0140
-  0140:38 0096          pushi 96 // $96 setCycle
+  0140:38 0096          pushi 96                       // $96 setCycle
   0143:78               push1 
   0144:51 1b            class Beg 
   0146:36                push 
-  0147:72 084e          lofsa $084e // alanHead
+  0147:72 084e          lofsa $084e                    // alanHead
   014a:4a 06             send 6 
 
-  014c:38 0096          pushi 96 // $96 setCycle
+  014c:38 0096          pushi 96                       // $96 setCycle
   014f:78               push1 
   0150:51 1b            class Beg 
   0152:36                push 
-  0153:72 08b4          lofsa $08b4 // alanArm
+  0153:72 08b4          lofsa $08b4                    // alanArm
   0156:4a 06             send 6 
 
   0158:48                 ret 
@@ -7353,19 +7353,19 @@
 
 (procedure proc_0159
   0159:76               push0 
-  015a:45 04 00         callb procedure_0004 0 //  
+  015a:45 04 00         callb procedure_0004 0         //  
 
-  015d:38 00a7          pushi a7 // $a7 enable
+  015d:38 00a7          pushi a7                       // $a7 enable
   0160:76               push0 
   0161:81 45              lag  
   0163:4a 04             send 4 
 
   0165:78               push1 
   0166:76               push0 
-  0167:47 0d 06 02      calle d procedure_0006 2 //  
+  0167:47 0d 06 02      calle d procedure_0006 2       //  
 
   016b:76               push0 
-  016c:46 0326 0000 00  calle 326 procedure_0000 0 //  
+  016c:46 0326 0000 00  calle 326 procedure_0000 0     //  
 
   0172:48                 ret 
 )

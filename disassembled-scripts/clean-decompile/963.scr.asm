@@ -32,8 +32,8 @@
         points $0
         value $0
     )
-    (method (setTarget) // method_0004
-  0004:39 43            pushi 43 // $43 at
+    (method (setTarget)                                // method_0004
+  0004:39 43            pushi 43                       // $43 at
   0006:78               push1 
   0007:67 28             pTos value 
   0009:63 26             pToa points 
@@ -44,7 +44,7 @@
   0011:1c                 ne? 
   0012:30 001f            bnt code_0034 
   0015:67 0c             pTos x 
-  0017:39 43            pushi 43 // $43 at
+  0017:39 43            pushi 43                       // $43 at
   0019:78               push1 
   001a:67 28             pTos value 
   001c:63 26             pToa points 
@@ -53,7 +53,7 @@
   0020:02                 add 
   0021:65 0c             aTop x 
   0023:67 0e             pTos y 
-  0025:39 43            pushi 43 // $43 at
+  0025:39 43            pushi 43                       // $43 at
   0027:78               push1 
   0028:6b 28            ipToa value 
   002a:36                push 

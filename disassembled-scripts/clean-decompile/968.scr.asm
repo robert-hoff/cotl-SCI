@@ -25,9 +25,9 @@
         vNormal $0
         vChangeDir $0
     )
-    (method (doit) // method_000e
-  000e:3f 02             link 2 // (var $2)
-  0010:39 11            pushi 11 // $11 signal
+    (method (doit)                                     // method_000e
+  000e:3f 02             link 2                        // (var $2)
+  0010:39 11            pushi 11                       // $11 signal
   0012:76               push0 
   0013:87 01              lap param1 
   0015:4a 04             send 4 
@@ -45,19 +45,19 @@
   0026:30 001f            bnt code_0048 
   0029:63 10             pToa newMover 
   002b:30 0005            bnt code_0033 
-  002e:39 6c            pushi 6c // $6c dispose
+  002e:39 6c            pushi 6c                       // $6c dispose
   0030:76               push0 
   0031:4a 04             send 4 
 
 
         code_0033
-  0033:39 3b            pushi 3b // $3b mover
+  0033:39 3b            pushi 3b                       // $3b mover
   0035:76               push0 
   0036:87 01              lap param1 
   0038:4a 04             send 4 
 
   003a:65 10             aTop newMover 
-  003c:39 3b            pushi 3b // $3b mover
+  003c:39 3b            pushi 3b                       // $3b mover
   003e:78               push1 
   003f:76               push0 
   0040:87 01              lap param1 
@@ -70,7 +70,7 @@
   0048:63 18             pToa vNormal 
   004a:18                 not 
   004b:30 0009            bnt code_0057 
-  004e:39 05            pushi 5 // $5 view
+  004e:39 05            pushi 5                        // $5 view
   0050:76               push0 
   0051:87 01              lap param1 
   0053:4a 04             send 4 
@@ -84,7 +84,7 @@
   005d:65 16             aTop inProgress 
 
         code_005f
-  005f:39 06            pushi 6 // $6 loop
+  005f:39 06            pushi 6                        // $6 loop
   0061:76               push0 
   0062:63 0a             pToa client 
   0064:4a 04             send 4 
@@ -93,7 +93,7 @@
   0067:35 03              ldi 3 
   0069:1e                 gt? 
   006a:30 0037            bnt code_00a4 
-  006d:39 05            pushi 5 // $5 view
+  006d:39 05            pushi 5                        // $5 view
   006f:76               push0 
   0070:63 0a             pToa client 
   0072:4a 04             send 4 
@@ -109,7 +109,7 @@
   0083:43 06 02         callk IsObject 2 
 
   0086:30 001b            bnt code_00a4 
-  0089:39 6c            pushi 6c // $6c dispose
+  0089:39 6c            pushi 6c                       // $6c dispose
   008b:76               push0 
   008c:63 0e             pToa oldMover 
   008e:4a 04             send 4 
@@ -117,7 +117,7 @@
   0090:32 0011            jmp code_00a4 
 
         code_0093
-  0093:39 05            pushi 5 // $5 view
+  0093:39 05            pushi 5                        // $5 view
   0095:78               push1 
   0096:67 18             pTos vNormal 
   0098:63 0a             pToa client 
@@ -130,7 +130,7 @@
 
 
         code_00a4
-  00a4:39 06            pushi 6 // $6 loop
+  00a4:39 06            pushi 6                        // $6 loop
   00a6:76               push0 
   00a7:63 0a             pToa client 
   00a9:4a 04             send 4 
@@ -361,34 +361,34 @@
   0233:3a                toss 
   0234:85 01              lat temp1 
   0236:30 003a            bnt code_0273 
-  0239:38 00dc          pushi dc // $dc cycler
+  0239:38 00dc          pushi dc                       // $dc cycler
   023c:76               push0 
   023d:63 0a             pToa client 
   023f:4a 04             send 4 
 
   0241:65 0c             aTop oldCycler 
-  0243:39 3b            pushi 3b // $3b mover
+  0243:39 3b            pushi 3b                       // $3b mover
   0245:76               push0 
   0246:63 0a             pToa client 
   0248:4a 04             send 4 
 
   024a:65 0e             aTop oldMover 
-  024c:39 05            pushi 5 // $5 view
+  024c:39 05            pushi 5                        // $5 view
   024e:78               push1 
   024f:67 1a             pTos vChangeDir 
-  0251:39 3b            pushi 3b // $3b mover
+  0251:39 3b            pushi 3b                       // $3b mover
   0253:78               push1 
   0254:76               push0 
-  0255:38 00dc          pushi dc // $dc cycler
+  0255:38 00dc          pushi dc                       // $dc cycler
   0258:78               push1 
   0259:76               push0 
-  025a:39 06            pushi 6 // $6 loop
+  025a:39 06            pushi 6                        // $6 loop
   025c:78               push1 
   025d:8d 00              lst temp0 
-  025f:39 07            pushi 7 // $7 cel
+  025f:39 07            pushi 7                        // $7 cel
   0261:78               push1 
-  0262:39 ff            pushi ff // $ff syncNum
-  0264:38 0096          pushi 96 // $96 setCycle
+  0262:39 ff            pushi ff                       // $ff syncNum
+  0264:38 0096          pushi 96                       // $96 setCycle
   0267:7a               push2 
   0268:51 1a            class End 
   026a:36                push 
@@ -406,10 +406,10 @@
   0277:48                 ret 
     )
 
-    (method (dispose) // method_0308
+    (method (dispose)                                  // method_0308
   0308:63 0e             pToa oldMover 
   030a:30 0005            bnt code_0312 
-  030d:39 6c            pushi 6c // $6c dispose
+  030d:39 6c            pushi 6c                       // $6c dispose
   030f:76               push0 
   0310:4a 04             send 4 
 
@@ -417,7 +417,7 @@
         code_0312
   0312:63 10             pToa newMover 
   0314:30 0005            bnt code_031c 
-  0317:39 6c            pushi 6c // $6c dispose
+  0317:39 6c            pushi 6c                       // $6c dispose
   0319:76               push0 
   031a:4a 04             send 4 
 
@@ -425,16 +425,16 @@
         code_031c
   031c:63 0c             pToa oldCycler 
   031e:30 0005            bnt code_0326 
-  0321:39 6c            pushi 6c // $6c dispose
+  0321:39 6c            pushi 6c                       // $6c dispose
   0323:76               push0 
   0324:4a 04             send 4 
 
 
         code_0326
-  0326:39 05            pushi 5 // $5 view
+  0326:39 05            pushi 5                        // $5 view
   0328:78               push1 
   0329:67 18             pTos vNormal 
-  032b:39 3e            pushi 3e // $3e looper
+  032b:39 3e            pushi 3e                       // $3e looper
   032d:78               push1 
   032e:76               push0 
   032f:63 0a             pToa client 
@@ -442,7 +442,7 @@
 
   0333:7a               push2 
   0334:67 0a             pTos client 
-  0336:39 3a            pushi 3a // $3a heading
+  0336:39 3a            pushi 3a                       // $3a heading
   0338:76               push0 
   0339:63 0a             pToa client 
   033b:4a 04             send 4 
@@ -450,29 +450,29 @@
   033d:36                push 
   033e:43 4c 04         callk DirLoop 4 
 
-  0341:39 6c            pushi 6c // $6c dispose
+  0341:39 6c            pushi 6c                       // $6c dispose
   0343:76               push0 
   0344:57 01 04         super Code 4 
 
   0347:48                 ret 
     )
 
-    (method (cue) // method_0278
-  0278:3f 02             link 2 // (var $2)
+    (method (cue)                                      // method_0278
+  0278:3f 02             link 2                        // (var $2)
   027a:67 08             pTos nextLoop 
   027c:35 0f              ldi f 
   027e:22                 lt? 
   027f:30 0036            bnt code_02b8 
-  0282:39 05            pushi 5 // $5 view
+  0282:39 05            pushi 5                        // $5 view
   0284:78               push1 
   0285:67 18             pTos vNormal 
-  0287:39 06            pushi 6 // $6 loop
+  0287:39 06            pushi 6                        // $6 loop
   0289:78               push1 
   028a:67 08             pTos nextLoop 
-  028c:39 3b            pushi 3b // $3b mover
+  028c:39 3b            pushi 3b                       // $3b mover
   028e:78               push1 
   028f:67 0e             pTos oldMover 
-  0291:38 00dc          pushi dc // $dc cycler
+  0291:38 00dc          pushi dc                       // $dc cycler
   0294:78               push1 
   0295:67 0c             pTos oldCycler 
   0297:63 0a             pToa client 
@@ -484,7 +484,7 @@
   02a1:65 16             aTop inProgress 
   02a3:63 10             pToa newMover 
   02a5:30 005f            bnt code_0307 
-  02a8:38 011b          pushi 11b // $11b setMotion
+  02a8:38 011b          pushi 11b                      // $11b setMotion
   02ab:78               push1 
   02ac:36                push 
   02ad:63 0a             pToa client 
@@ -499,13 +499,13 @@
   02ba:35 10              ldi 10 
   02bc:04                 sub 
   02bd:65 08             aTop nextLoop 
-  02bf:39 06            pushi 6 // $6 loop
+  02bf:39 06            pushi 6                        // $6 loop
   02c1:78               push1 
   02c2:67 08             pTos nextLoop 
-  02c4:39 07            pushi 7 // $7 cel
+  02c4:39 07            pushi 7                        // $7 cel
   02c6:78               push1 
-  02c7:39 ff            pushi ff // $ff syncNum
-  02c9:38 0096          pushi 96 // $96 setCycle
+  02c7:39 ff            pushi ff                       // $ff syncNum
+  02c9:38 0096          pushi 96                       // $96 setCycle
   02cc:7a               push2 
   02cd:51 1a            class End 
   02cf:36                push 

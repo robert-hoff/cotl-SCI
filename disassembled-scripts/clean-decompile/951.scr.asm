@@ -34,20 +34,20 @@
         finalY $0
         obstacles $0
     )
-    (method (init) // method_0004
+    (method (init)                                     // method_0004
   0004:87 00              lap paramTotal 
   0006:30 0047            bnt code_0050 
-  0009:39 6b            pushi 6b // $6b init
-  000b:39 04            pushi 4 // $4 x
+  0009:39 6b            pushi 6b                       // $6b init
+  000b:39 04            pushi 4                        // $4 x
   000d:8f 01              lsp param1 
-  000f:39 04            pushi 4 // $4 x
+  000f:39 04            pushi 4                        // $4 x
   0011:76               push0 
   0012:87 01              lap param1 
   0014:4a 04             send 4 
 
   0016:36                push 
   0017:7a               push2 
-  0018:39 3a            pushi 3a // $3a heading
+  0018:39 3a            pushi 3a                       // $3a heading
   001a:76               push0 
   001b:87 01              lap param1 
   001d:4a 04             send 4 
@@ -58,14 +58,14 @@
 
   0025:02                 add 
   0026:36                push 
-  0027:39 03            pushi 3 // $3 y
+  0027:39 03            pushi 3                        // $3 y
   0029:76               push0 
   002a:87 01              lap param1 
   002c:4a 04             send 4 
 
   002e:36                push 
   002f:7a               push2 
-  0030:39 3a            pushi 3a // $3a heading
+  0030:39 3a            pushi 3a                       // $3a heading
   0032:76               push0 
   0033:87 01              lap param1 
   0035:4a 04             send 4 
@@ -89,7 +89,7 @@
   004d:32 0006            jmp code_0056 
 
         code_0050
-  0050:39 6b            pushi 6b // $6b init
+  0050:39 6b            pushi 6b                       // $6b init
   0052:76               push0 
   0053:57 24 04         super PolyPath 4 
 

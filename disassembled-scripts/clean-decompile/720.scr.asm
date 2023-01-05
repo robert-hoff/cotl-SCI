@@ -24,17 +24,17 @@
         outBoat $0
         ivyDone $0
     )
-    (method (newRoom) // method_000e
-  000e:39 04            pushi 4 // $4 x
+    (method (newRoom)                                  // method_000e
+  000e:39 04            pushi 4                        // $4 x
   0010:8f 01              lsp param1 
-  0012:38 02bd          pushi 2bd // $2bd sel_701
-  0015:38 02be          pushi 2be // $2be sel_702
-  0018:38 02c1          pushi 2c1 // $2c1 sel_705
-  001b:46 03e7 0005 08  calle 3e7 procedure_0005 8 //  
+  0012:38 02bd          pushi 2bd                      // $2bd sel_701
+  0015:38 02be          pushi 2be                      // $2be sel_702
+  0018:38 02c1          pushi 2c1                      // $2c1 sel_705
+  001b:46 03e7 0005 08  calle 3e7 procedure_0005 8     //  
 
   0021:18                 not 
   0022:30 0007            bnt code_002c 
-  0025:38 0181          pushi 181 // $181 keep
+  0025:38 0181          pushi 181                      // $181 keep
   0028:78               push1 
   0029:76               push0 
   002a:54 06             self 6 

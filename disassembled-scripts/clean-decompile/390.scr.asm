@@ -571,7 +571,7 @@
         caller $0
         next $0
     )
-    (method (changeState) // method_005a
+    (method (changeState)                              // method_005a
   005a:87 01              lap param1 
   005c:65 0a             aTop state 
   005e:36                push 
@@ -584,11 +584,11 @@
   006a:1a                 eq? 
   006b:30 0004            bnt code_0072 
   006e:76               push0 
-  006f:45 02 00         callb procedure_0002 0 //  
+  006f:45 02 00         callb procedure_0002 0         //  
 
 
         code_0072
-  0072:38 00e4          pushi e4 // $e4 setHeading
+  0072:38 00e4          pushi e4                       // $e4 setHeading
   0075:7a               push2 
   0076:76               push0 
   0077:7c            pushSelf 
@@ -602,14 +602,14 @@
   0080:35 01              ldi 1 
   0082:1a                 eq? 
   0083:30 001f            bnt code_00a5 
-  0086:38 0096          pushi 96 // $96 setCycle
+  0086:38 0096          pushi 96                       // $96 setCycle
   0089:78               push1 
   008a:51 1f            class Rev 
   008c:36                push 
-  008d:38 00a2          pushi a2 // $a2 setLoop
+  008d:38 00a2          pushi a2                       // $a2 setLoop
   0090:76               push0 
-  0091:38 011b          pushi 11b // $11b setMotion
-  0094:39 03            pushi 3 // $3 y
+  0091:38 011b          pushi 11b                      // $11b setMotion
+  0094:39 03            pushi 3                        // $3 y
   0096:51 5c            class MoveFwd 
   0098:36                push 
   0099:63 1a             pToa register 
@@ -631,24 +631,24 @@
   00b0:1a                 eq? 
   00b1:30 0007            bnt code_00bb 
   00b4:76               push0 
-  00b5:45 02 00         callb procedure_0002 0 //  
+  00b5:45 02 00         callb procedure_0002 0         //  
 
   00b8:32 0011            jmp code_00cc 
 
         code_00bb
-  00bb:38 0096          pushi 96 // $96 setCycle
+  00bb:38 0096          pushi 96                       // $96 setCycle
   00be:78               push1 
   00bf:51 18            class Walk 
   00c1:36                push 
-  00c2:38 00a2          pushi a2 // $a2 setLoop
+  00c2:38 00a2          pushi a2                       // $a2 setLoop
   00c5:78               push1 
-  00c6:39 ff            pushi ff // $ff syncNum
+  00c6:39 ff            pushi ff                       // $ff syncNum
   00c8:63 08             pToa client 
   00ca:4a 0c             send c 
 
 
         code_00cc
-  00cc:39 6c            pushi 6c // $6c dispose
+  00cc:39 6c            pushi 6c                       // $6c dispose
   00ce:76               push0 
   00cf:54 04             self 4 
 
@@ -684,10 +684,10 @@
         vanishingY $8ad0
         obstacles $0
     )
-    (method (init) // method_0150
+    (method (init)                                     // method_0150
   0150:7a               push2 
-  0151:38 0083          pushi 83 // $83 timer
-  0154:38 056e          pushi 56e // $56e sel_1390
+  0151:38 0083          pushi 83                       // $83 timer
+  0154:38 056e          pushi 56e                      // $56e sel_1390
   0157:43 00 04         callk Load 4 
 
   015a:89 7e              lsg  
@@ -696,8 +696,8 @@
   015f:1a                 eq? 
   0160:30 0009            bnt code_016c 
   0163:78               push1 
-  0164:39 50            pushi 50 // $50 title
-  0166:45 06 02         callb procedure_0006 2 //  
+  0164:39 50            pushi 50                       // $50 title
+  0166:45 06 02         callb procedure_0006 2         //  
 
   0169:32 000d            jmp code_0179 
 
@@ -707,55 +707,55 @@
   016f:1a                 eq? 
   0170:30 0006            bnt code_0179 
   0173:78               push1 
-  0174:39 3f            pushi 3f // $3f priority
-  0176:45 06 02         callb procedure_0006 2 //  
+  0174:39 3f            pushi 3f                       // $3f priority
+  0176:45 06 02         callb procedure_0006 2         //  
 
 
         code_0179
   0179:3a                toss 
-  017a:39 6b            pushi 6b // $6b init
+  017a:39 6b            pushi 6b                       // $6b init
   017c:76               push0 
   017d:59 01            &rest 1 
   017f:57 43 04         super Rm 4 
 
   0182:76               push0 
-  0183:45 03 00         callb procedure_0003 0 //  
+  0183:45 03 00         callb procedure_0003 0         //  
 
   0186:7a               push2 
-  0187:72 0624          lofsa $0624 // castle
+  0187:72 0624          lofsa $0624                    // castle
   018a:36                push 
-  018b:72 069c          lofsa $069c // arch
+  018b:72 069c          lofsa $069c                    // arch
   018e:36                push 
-  018f:46 0326 0003 04  calle 326 procedure_0003 4 //  
+  018f:46 0326 0003 04  calle 326 procedure_0003 4     //  
 
-  0195:38 0176          pushi 176 // $176 addObstacle
+  0195:38 0176          pushi 176                      // $176 addObstacle
   0198:78               push1 
-  0199:39 22            pushi 22 // $22 type
+  0199:39 22            pushi 22                       // $22 type
   019b:78               push1 
   019c:7a               push2 
-  019d:39 6b            pushi 6b // $6b init
-  019f:39 12            pushi 12 // $12 illegalBits
-  01a1:39 71            pushi 71 // $71 respondsTo
-  01a3:38 00bd          pushi bd // $bd maskView
+  019d:39 6b            pushi 6b                       // $6b init
+  019f:39 12            pushi 12                       // $12 illegalBits
+  01a1:39 71            pushi 71                       // $71 respondsTo
+  01a3:38 00bd          pushi bd                       // $bd maskView
   01a6:76               push0 
-  01a7:38 00bd          pushi bd // $bd maskView
+  01a7:38 00bd          pushi bd                       // $bd maskView
   01aa:76               push0 
   01ab:76               push0 
-  01ac:38 013f          pushi 13f // $13f inputLineAddr
+  01ac:38 013f          pushi 13f                      // $13f inputLineAddr
   01af:76               push0 
-  01b0:38 013f          pushi 13f // $13f inputLineAddr
-  01b3:38 00bd          pushi bd // $bd maskView
-  01b6:38 00ce          pushi ce // $ce curIcon
-  01b9:38 00bd          pushi bd // $bd maskView
-  01bc:38 00b3          pushi b3 // $b3 theItem
+  01b0:38 013f          pushi 13f                      // $13f inputLineAddr
+  01b3:38 00bd          pushi bd                       // $bd maskView
+  01b6:38 00ce          pushi ce                       // $ce curIcon
+  01b9:38 00bd          pushi bd                       // $bd maskView
+  01bc:38 00b3          pushi b3                       // $b3 theItem
   01bf:3c                 dup 
-  01c0:38 0094          pushi 94 // $94 lastTime
-  01c3:38 00b3          pushi b3 // $b3 theItem
-  01c6:39 73            pushi 73 // $73 add
-  01c8:38 00bd          pushi bd // $bd maskView
-  01cb:39 72            pushi 72 // $72 yourself
+  01c0:38 0094          pushi 94                       // $94 lastTime
+  01c3:38 00b3          pushi b3                       // $b3 theItem
+  01c6:39 73            pushi 73                       // $73 add
+  01c8:38 00bd          pushi bd                       // $bd maskView
+  01cb:39 72            pushi 72                       // $72 yourself
   01cd:76               push0 
-  01ce:39 6a            pushi 6a // $6a new
+  01ce:39 6a            pushi 6a                       // $6a new
   01d0:76               push0 
   01d1:51 23            class Polygon 
   01d3:4a 04             send 4 
@@ -766,42 +766,42 @@
   01d8:81 02              lag  
   01da:4a 06             send 6 
 
-  01dc:39 6b            pushi 6b // $6b init
+  01dc:39 6b            pushi 6b                       // $6b init
   01de:76               push0 
-  01df:72 0ae6          lofsa $0ae6 // Hubert
+  01df:72 0ae6          lofsa $0ae6                    // Hubert
   01e2:4a 04             send 4 
 
-  01e4:38 0119          pushi 119 // $119 approachVerbs
-  01e7:39 03            pushi 3 // $3 y
+  01e4:38 0119          pushi 119                      // $119 approachVerbs
+  01e7:39 03            pushi 3                        // $3 y
   01e9:3c                 dup 
-  01ea:39 04            pushi 4 // $4 x
-  01ec:39 05            pushi 5 // $5 view
-  01ee:72 0ae6          lofsa $0ae6 // Hubert
+  01ea:39 04            pushi 4                        // $4 x
+  01ec:39 05            pushi 5                        // $5 view
+  01ee:72 0ae6          lofsa $0ae6                    // Hubert
   01f1:4a 0a             send a 
 
-  01f3:38 011c          pushi 11c // $11c posn
+  01f3:38 011c          pushi 11c                      // $11c posn
   01f6:7a               push2 
-  01f7:39 04            pushi 4 // $4 x
+  01f7:39 04            pushi 4                        // $4 x
   01f9:76               push0 
-  01fa:72 0ae6          lofsa $0ae6 // Hubert
+  01fa:72 0ae6          lofsa $0ae6                    // Hubert
   01fd:4a 04             send 4 
 
   01ff:36                push 
   0200:35 1e              ldi 1e 
   0202:02                 add 
   0203:36                push 
-  0204:38 00b9          pushi b9 // $b9 bottom
-  0207:39 6b            pushi 6b // $6b init
+  0204:38 00b9          pushi b9                       // $b9 bottom
+  0207:39 6b            pushi 6b                       // $6b init
   0209:76               push0 
   020a:81 00              lag  
   020c:4a 0c             send c 
 
   020e:78               push1 
-  020f:39 03            pushi 3 // $3 y
+  020f:39 03            pushi 3                        // $3 y
   0211:89 0c              lsg  
-  0213:38 0190          pushi 190 // $190 roomToEdge
-  0216:38 023a          pushi 23a // $23a data
-  0219:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  0213:38 0190          pushi 190                      // $190 roomToEdge
+  0216:38 023a          pushi 23a                      // $23a data
+  0219:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   021f:30 0005            bnt code_0227 
   0222:35 02              ldi 2 
@@ -812,64 +812,64 @@
 
         code_0229
   0229:36                push 
-  022a:45 02 02         callb procedure_0002 2 //  
+  022a:45 02 02         callb procedure_0002 2         //  
 
-  022d:39 2b            pushi 2b // $2b number
+  022d:39 2b            pushi 2b                       // $2b number
   022f:78               push1 
-  0230:38 0186          pushi 186 // $186 south
-  0233:39 06            pushi 6 // $6 loop
+  0230:38 0186          pushi 186                      // $186 south
+  0233:39 06            pushi 6                        // $6 loop
   0235:78               push1 
-  0236:39 ff            pushi ff // $ff syncNum
-  0238:39 2a            pushi 2a // $2a play
+  0236:39 ff            pushi ff                       // $ff syncNum
+  0238:39 2a            pushi 2a                       // $2a play
   023a:76               push0 
   023b:81 64              lag  
   023d:4a 10             send 10 
 
-  023f:38 008e          pushi 8e // $8e setScript
+  023f:38 008e          pushi 8e                       // $8e setScript
   0242:78               push1 
-  0243:72 02e8          lofsa $02e8 // roomInit
+  0243:72 02e8          lofsa $02e8                    // roomInit
   0246:36                push 
   0247:54 06             self 6 
 
   0249:48                 ret 
     )
 
-    (method (newRoom) // method_010e
+    (method (newRoom)                                  // method_010e
   010e:8f 01              lsp param1 
   0110:3c                 dup 
   0111:34 023a            ldi 23a 
   0114:1a                 eq? 
   0115:30 0018            bnt code_0130 
   0118:78               push1 
-  0119:39 51            pushi 51 // $51 button
-  011b:45 06 02         callb procedure_0006 2 //  
+  0119:39 51            pushi 51                       // $51 button
+  011b:45 06 02         callb procedure_0006 2         //  
 
   011e:89 7e              lsg  
   0120:35 05              ldi 5 
   0122:1c                 ne? 
   0123:30 000a            bnt code_0130 
   0126:7a               push2 
-  0127:38 0186          pushi 186 // $186 south
+  0127:38 0186          pushi 186                      // $186 south
   012a:76               push0 
-  012b:47 ff 00 04      calle ff procedure_0000 4 //  
+  012b:47 ff 00 04      calle ff procedure_0000 4      //  
 
   012f:48                 ret 
 
         code_0130
   0130:3a                toss 
-  0131:38 009f          pushi 9f // $9f fade
-  0134:39 04            pushi 4 // $4 x
+  0131:38 009f          pushi 9f                       // $9f fade
+  0134:39 04            pushi 4                        // $4 x
   0136:76               push0 
-  0137:39 14            pushi 14 // $14 brLeft
-  0139:39 0c            pushi c // $c nsRight
+  0137:39 14            pushi 14                       // $14 brLeft
+  0139:39 0c            pushi c                        // $c nsRight
   013b:78               push1 
   013c:81 64              lag  
   013e:4a 0c             send c 
 
   0140:76               push0 
-  0141:45 04 00         callb procedure_0004 0 //  
+  0141:45 04 00         callb procedure_0004 0         //  
 
-  0144:38 0179          pushi 179 // $179 newRoom
+  0144:38 0179          pushi 179                      // $179 newRoom
   0147:78               push1 
   0148:8f 01              lsp param1 
   014a:59 02            &rest 2 
@@ -898,7 +898,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_0294
+    (method (changeState)                              // method_0294
   0294:87 01              lap param1 
   0296:65 0a             aTop state 
   0298:36                push 
@@ -911,8 +911,8 @@
   02a4:1a                 eq? 
   02a5:30 0006            bnt code_02ae 
   02a8:78               push1 
-  02a9:39 50            pushi 50 // $50 title
-  02ab:45 05 02         callb procedure_0005 2 //  
+  02a9:39 50            pushi 50                       // $50 title
+  02ab:45 05 02         callb procedure_0005 2         //  
 
 
         code_02ae
@@ -922,15 +922,15 @@
   02b5:1a                 eq? 
   02b6:30 0018            bnt code_02d1 
   02b9:78               push1 
-  02ba:39 3f            pushi 3f // $3f priority
-  02bc:45 05 02         callb procedure_0005 2 //  
+  02ba:39 3f            pushi 3f                       // $3f priority
+  02bc:45 05 02         callb procedure_0005 2         //  
 
 
         code_02bf
   02bf:30 000f            bnt code_02d1 
-  02c2:38 008e          pushi 8e // $8e setScript
+  02c2:38 008e          pushi 8e                       // $8e setScript
   02c5:78               push1 
-  02c6:72 048c          lofsa $048c // BeardChanged
+  02c6:72 048c          lofsa $048c                    // BeardChanged
   02c9:36                push 
   02ca:63 08             pToa client 
   02cc:4a 06             send 6 
@@ -939,9 +939,9 @@
 
         code_02d1
   02d1:76               push0 
-  02d2:45 04 00         callb procedure_0004 0 //  
+  02d2:45 04 00         callb procedure_0004 0         //  
 
-  02d5:39 6c            pushi 6c // $6c dispose
+  02d5:39 6c            pushi 6c                       // $6c dispose
   02d7:76               push0 
   02d8:54 04             self 4 
 
@@ -971,7 +971,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_0318
+    (method (changeState)                              // method_0318
   0318:87 01              lap param1 
   031a:65 0a             aTop state 
   031c:36                push 
@@ -979,33 +979,33 @@
   031e:35 00              ldi 0 
   0320:1a                 eq? 
   0321:30 0034            bnt code_0358 
-  0324:39 6b            pushi 6b // $6b init
+  0324:39 6b            pushi 6b                       // $6b init
   0326:76               push0 
-  0327:39 42            pushi 42 // $42 setPri
+  0327:39 42            pushi 42                       // $42 setPri
   0329:78               push1 
-  032a:39 09            pushi 9 // $9 nsTop
-  032c:39 12            pushi 12 // $12 illegalBits
+  032a:39 09            pushi 9                        // $9 nsTop
+  032c:39 12            pushi 12                       // $12 illegalBits
   032e:78               push1 
   032f:76               push0 
-  0330:38 012c          pushi 12c // $12c ignoreHorizon
+  0330:38 012c          pushi 12c                      // $12c ignoreHorizon
   0333:76               push0 
-  0334:38 0096          pushi 96 // $96 setCycle
+  0334:38 0096          pushi 96                       // $96 setCycle
   0337:78               push1 
   0338:51 18            class Walk 
   033a:36                push 
-  033b:38 011b          pushi 11b // $11b setMotion
-  033e:39 04            pushi 4 // $4 x
+  033b:38 011b          pushi 11b                      // $11b setMotion
+  033e:39 04            pushi 4                        // $4 x
   0340:51 1e            class MoveTo 
   0342:36                push 
-  0343:38 009e          pushi 9e // $9e hold
-  0346:39 03            pushi 3 // $3 y
+  0343:38 009e          pushi 9e                       // $9e hold
+  0346:39 03            pushi 3                        // $3 y
   0348:76               push0 
-  0349:72 04c4          lofsa $04c4 // Giles
+  0349:72 04c4          lofsa $04c4                    // Giles
   034c:4a 04             send 4 
 
   034e:36                push 
   034f:7c            pushSelf 
-  0350:72 04c4          lofsa $04c4 // Giles
+  0350:72 04c4          lofsa $04c4                    // Giles
   0353:4a 26             send 26 
 
   0355:32 0042            jmp code_039a 
@@ -1015,30 +1015,30 @@
   0359:35 01              ldi 1 
   035b:1a                 eq? 
   035c:30 002f            bnt code_038e 
-  035f:39 6b            pushi 6b // $6b init
+  035f:39 6b            pushi 6b                       // $6b init
   0361:76               push0 
-  0362:39 12            pushi 12 // $12 illegalBits
+  0362:39 12            pushi 12                       // $12 illegalBits
   0364:78               push1 
   0365:76               push0 
-  0366:38 012c          pushi 12c // $12c ignoreHorizon
+  0366:38 012c          pushi 12c                      // $12c ignoreHorizon
   0369:76               push0 
-  036a:38 0096          pushi 96 // $96 setCycle
+  036a:38 0096          pushi 96                       // $96 setCycle
   036d:78               push1 
   036e:51 18            class Walk 
   0370:36                push 
-  0371:38 011b          pushi 11b // $11b setMotion
-  0374:39 04            pushi 4 // $4 x
+  0371:38 011b          pushi 11b                      // $11b setMotion
+  0374:39 04            pushi 4                        // $4 x
   0376:51 1e            class MoveTo 
   0378:36                push 
-  0379:38 00a8          pushi a8 // $a8 select
-  037c:39 03            pushi 3 // $3 y
+  0379:38 00a8          pushi a8                       // $a8 select
+  037c:39 03            pushi 3                        // $3 y
   037e:76               push0 
-  037f:72 0542          lofsa $0542 // Roger
+  037f:72 0542          lofsa $0542                    // Roger
   0382:4a 04             send 4 
 
   0384:36                push 
   0385:7c            pushSelf 
-  0386:72 0542          lofsa $0542 // Roger
+  0386:72 0542          lofsa $0542                    // Roger
   0389:4a 20             send 20 
 
   038b:32 000c            jmp code_039a 
@@ -1048,7 +1048,7 @@
   038f:35 02              ldi 2 
   0391:1a                 eq? 
   0392:30 0005            bnt code_039a 
-  0395:39 6c            pushi 6c // $6c dispose
+  0395:39 6c            pushi 6c                       // $6c dispose
   0397:76               push0 
   0398:54 04             self 4 
 
@@ -1078,7 +1078,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_03d8
+    (method (changeState)                              // method_03d8
   03d8:87 01              lap param1 
   03da:65 0a             aTop state 
   03dc:36                push 
@@ -1087,14 +1087,14 @@
   03e0:1a                 eq? 
   03e1:30 0013            bnt code_03f7 
   03e4:76               push0 
-  03e5:45 03 00         callb procedure_0003 0 //  
+  03e5:45 03 00         callb procedure_0003 0         //  
 
-  03e8:39 03            pushi 3 // $3 y
+  03e8:39 03            pushi 3                        // $3 y
   03ea:89 00              lsg  
-  03ec:72 0ae6          lofsa $0ae6 // Hubert
+  03ec:72 0ae6          lofsa $0ae6                    // Hubert
   03ef:36                push 
   03f0:7c            pushSelf 
-  03f1:45 09 06         callb procedure_0009 6 //  
+  03f1:45 09 06         callb procedure_0009 6         //  
 
   03f4:32 0086            jmp code_047d 
 
@@ -1126,9 +1126,9 @@
   041a:35 02              ldi 2 
   041c:1a                 eq? 
   041d:30 0013            bnt code_0433 
-  0420:38 008e          pushi 8e // $8e setScript
-  0423:39 04            pushi 4 // $4 x
-  0425:72 03a8          lofsa $03a8 // GilesAndRogerAppear
+  0420:38 008e          pushi 8e                       // $8e setScript
+  0423:39 04            pushi 4                        // $4 x
+  0425:72 03a8          lofsa $03a8                    // GilesAndRogerAppear
   0428:36                push 
   0429:7c            pushSelf 
   042a:67 1a             pTos register 
@@ -1177,13 +1177,13 @@
 
         code_046b
   046b:a1 91              sag  
-  046d:38 0179          pushi 179 // $179 newRoom
+  046d:38 0179          pushi 179                      // $179 newRoom
   0470:78               push1 
-  0471:38 00aa          pushi aa // $aa setSize
+  0471:38 00aa          pushi aa                       // $aa setSize
   0474:81 02              lag  
   0476:4a 06             send 6 
 
-  0478:39 6c            pushi 6c // $6c dispose
+  0478:39 6c            pushi 6c                       // $6c dispose
   047a:76               push0 
   047b:54 04             self 4 
 
@@ -1332,43 +1332,43 @@
         _approachVerbs $6789
         lookStr $22a8
     )
-    (method (init) // method_05b8
-  05b8:39 22            pushi 22 // $22 type
+    (method (init)                                     // method_05b8
+  05b8:39 22            pushi 22                       // $22 type
   05ba:78               push1 
   05bb:76               push0 
-  05bc:39 6b            pushi 6b // $6b init
-  05be:39 1c            pushi 1c // $1c color
+  05bc:39 6b            pushi 6b                       // $6b init
+  05be:39 1c            pushi 1c                       // $1c color
   05c0:76               push0 
-  05c1:39 44            pushi 44 // $44 next
-  05c3:39 0c            pushi c // $c nsRight
-  05c5:39 42            pushi 42 // $42 setPri
-  05c7:39 0f            pushi f // $f lsBottom
-  05c9:39 14            pushi 14 // $14 brLeft
-  05cb:39 33            pushi 33 // $33 b-di
-  05cd:39 05            pushi 5 // $5 view
-  05cf:39 58            pushi 58 // $58 subtitleLang
-  05d1:39 05            pushi 5 // $5 view
-  05d3:38 0081          pushi 81 // $81 handleEvent
-  05d6:39 16            pushi 16 // $16 brRight
-  05d8:38 00b9          pushi b9 // $b9 bottom
-  05db:39 16            pushi 16 // $16 brRight
-  05dd:38 00de          pushi de // $de isStopped
-  05e0:39 05            pushi 5 // $5 view
-  05e2:38 0111          pushi 111 // $111 approachX
-  05e5:39 04            pushi 4 // $4 x
-  05e7:38 0130          pushi 130 // $130 ignoreBlocks
-  05ea:39 14            pushi 14 // $14 brLeft
-  05ec:38 0130          pushi 130 // $130 ignoreBlocks
-  05ef:39 46            pushi 46 // $46 width
-  05f1:38 013e          pushi 13e // $13e prompt
-  05f4:39 47            pushi 47 // $47 wordFail
-  05f6:38 013f          pushi 13f // $13f inputLineAddr
-  05f9:38 00bd          pushi bd // $bd maskView
+  05c1:39 44            pushi 44                       // $44 next
+  05c3:39 0c            pushi c                        // $c nsRight
+  05c5:39 42            pushi 42                       // $42 setPri
+  05c7:39 0f            pushi f                        // $f lsBottom
+  05c9:39 14            pushi 14                       // $14 brLeft
+  05cb:39 33            pushi 33                       // $33 b-di
+  05cd:39 05            pushi 5                        // $5 view
+  05cf:39 58            pushi 58                       // $58 subtitleLang
+  05d1:39 05            pushi 5                        // $5 view
+  05d3:38 0081          pushi 81                       // $81 handleEvent
+  05d6:39 16            pushi 16                       // $16 brRight
+  05d8:38 00b9          pushi b9                       // $b9 bottom
+  05db:39 16            pushi 16                       // $16 brRight
+  05dd:38 00de          pushi de                       // $de isStopped
+  05e0:39 05            pushi 5                        // $5 view
+  05e2:38 0111          pushi 111                      // $111 approachX
+  05e5:39 04            pushi 4                        // $4 x
+  05e7:38 0130          pushi 130                      // $130 ignoreBlocks
+  05ea:39 14            pushi 14                       // $14 brLeft
+  05ec:38 0130          pushi 130                      // $130 ignoreBlocks
+  05ef:39 46            pushi 46                       // $46 width
+  05f1:38 013e          pushi 13e                      // $13e prompt
+  05f4:39 47            pushi 47                       // $47 wordFail
+  05f6:38 013f          pushi 13f                      // $13f inputLineAddr
+  05f9:38 00bd          pushi bd                       // $bd maskView
   05fc:76               push0 
-  05fd:38 00bd          pushi bd // $bd maskView
-  0600:39 72            pushi 72 // $72 yourself
+  05fd:38 00bd          pushi bd                       // $bd maskView
+  0600:39 72            pushi 72                       // $72 yourself
   0602:76               push0 
-  0603:39 6a            pushi 6a // $6a new
+  0603:39 6a            pushi 6a                       // $6a new
   0605:76               push0 
   0606:51 23            class Polygon 
   0608:4a 04             send 4 
@@ -1376,7 +1376,7 @@
   060a:4a 46             send 46 
 
   060c:65 20             aTop onMeCheck 
-  060e:39 6b            pushi 6b // $6b init
+  060e:39 6b            pushi 6b                       // $6b init
   0610:76               push0 
   0611:59 01            &rest 1 
   0613:57 2c 04         super Feature 4 
@@ -1409,23 +1409,23 @@
         _approachVerbs $6789
         lookStr $22f3
     )
-    (method (init) // method_065c
-  065c:39 22            pushi 22 // $22 type
+    (method (init)                                     // method_065c
+  065c:39 22            pushi 22                       // $22 type
   065e:78               push1 
   065f:76               push0 
-  0660:39 6b            pushi 6b // $6b init
-  0662:39 08            pushi 8 // $8 underBits
-  0664:39 73            pushi 73 // $73 add
-  0666:39 32            pushi 32 // $32 b-i2
-  0668:38 00ce          pushi ce // $ce curIcon
-  066b:39 31            pushi 31 // $31 b-i1
-  066d:38 00cf          pushi cf // $cf highlightedIcon
-  0670:38 00b0          pushi b0 // $b0 cycle
-  0673:39 72            pushi 72 // $72 yourself
-  0675:38 00b1          pushi b1 // $b1 advance
-  0678:39 72            pushi 72 // $72 yourself
+  0660:39 6b            pushi 6b                       // $6b init
+  0662:39 08            pushi 8                        // $8 underBits
+  0664:39 73            pushi 73                       // $73 add
+  0666:39 32            pushi 32                       // $32 b-i2
+  0668:38 00ce          pushi ce                       // $ce curIcon
+  066b:39 31            pushi 31                       // $31 b-i1
+  066d:38 00cf          pushi cf                       // $cf highlightedIcon
+  0670:38 00b0          pushi b0                       // $b0 cycle
+  0673:39 72            pushi 72                       // $72 yourself
+  0675:38 00b1          pushi b1                       // $b1 advance
+  0678:39 72            pushi 72                       // $72 yourself
   067a:76               push0 
-  067b:39 6a            pushi 6a // $6a new
+  067b:39 6a            pushi 6a                       // $6a new
   067d:76               push0 
   067e:51 23            class Polygon 
   0680:4a 04             send 4 
@@ -1433,7 +1433,7 @@
   0682:4a 1e             send 1e 
 
   0684:65 20             aTop onMeCheck 
-  0686:39 6b            pushi 6b // $6b init
+  0686:39 6b            pushi 6b                       // $6b init
   0688:76               push0 
   0689:59 01            &rest 1 
   068b:57 2c 04         super Feature 4 
@@ -1462,7 +1462,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_06d4
+    (method (changeState)                              // method_06d4
   06d4:87 01              lap param1 
   06d6:65 0a             aTop state 
   06d8:36                push 
@@ -1471,10 +1471,10 @@
   06dc:1a                 eq? 
   06dd:30 002e            bnt code_070e 
   06e0:76               push0 
-  06e1:45 03 00         callb procedure_0003 0 //  
+  06e1:45 03 00         callb procedure_0003 0         //  
 
   06e4:6b 1a            ipToa register 
-  06e6:38 011b          pushi 11b // $11b setMotion
+  06e6:38 011b          pushi 11b                      // $11b setMotion
   06e9:78               push1 
   06ea:76               push0 
   06eb:81 00              lag  
@@ -1484,9 +1484,9 @@
   06f1:35 01              ldi 1 
   06f3:1a                 eq? 
   06f4:30 000e            bnt code_0705 
-  06f7:38 008e          pushi 8e // $8e setScript
+  06f7:38 008e          pushi 8e                       // $8e setScript
   06fa:7a               push2 
-  06fb:72 19b4          lofsa $19b4 // KickBeggar
+  06fb:72 19b4          lofsa $19b4                    // KickBeggar
   06fe:36                push 
   06ff:7c            pushSelf 
   0700:54 08             self 8 
@@ -1494,7 +1494,7 @@
   0702:32 004d            jmp code_0752 
 
         code_0705
-  0705:38 008d          pushi 8d // $8d cue
+  0705:38 008d          pushi 8d                       // $8d cue
   0708:76               push0 
   0709:54 04             self 4 
 
@@ -1529,19 +1529,19 @@
   0733:35 02              ldi 2 
   0735:1a                 eq? 
   0736:30 0019            bnt code_0752 
-  0739:38 008e          pushi 8e // $8e setScript
-  073c:39 03            pushi 3 // $3 y
-  073e:72 00e0          lofsa $00e0 // MoveBack
+  0739:38 008e          pushi 8e                       // $8e setScript
+  073c:39 03            pushi 3                        // $3 y
+  073e:72 00e0          lofsa $00e0                    // MoveBack
   0741:36                push 
   0742:7c            pushSelf 
-  0743:39 04            pushi 4 // $4 x
+  0743:39 04            pushi 4                        // $4 x
   0745:81 00              lag  
   0747:4a 0a             send a 
 
   0749:76               push0 
-  074a:45 04 00         callb procedure_0004 0 //  
+  074a:45 04 00         callb procedure_0004 0         //  
 
-  074d:39 6c            pushi 6c // $6c dispose
+  074d:39 6c            pushi 6c                       // $6c dispose
   074f:76               push0 
   0750:54 04             self 4 
 
@@ -1608,12 +1608,12 @@
         avoider $0
         code $0
     )
-    (method (doit) // method_0790
-  0790:3f 02             link 2 // (var $2)
+    (method (doit)                                     // method_0790
+  0790:3f 02             link 2                        // (var $2)
   0792:63 4e             pToa script 
   0794:18                 not 
   0795:30 0033            bnt code_07cb 
-  0798:39 3b            pushi 3b // $3b mover
+  0798:39 3b            pushi 3b                       // $3b mover
   079a:76               push0 
   079b:81 00              lag  
   079d:4a 04             send 4 
@@ -1624,7 +1624,7 @@
   07a6:35 06              ldi 6 
   07a8:02                 add 
   07a9:36                push 
-  07aa:39 03            pushi 3 // $3 y
+  07aa:39 03            pushi 3                        // $3 y
   07ac:76               push0 
   07ad:81 00              lag  
   07af:4a 04             send 4 
@@ -1632,22 +1632,22 @@
   07b1:20                 ge? 
   07b2:30 0016            bnt code_07cb 
   07b5:60               pprev 
-  07b6:39 03            pushi 3 // $3 y
+  07b6:39 03            pushi 3                        // $3 y
   07b8:76               push0 
   07b9:85 00              lat temp0 
   07bb:4a 04             send 4 
 
   07bd:20                 ge? 
   07be:30 000a            bnt code_07cb 
-  07c1:38 008e          pushi 8e // $8e setScript
+  07c1:38 008e          pushi 8e                       // $8e setScript
   07c4:78               push1 
-  07c5:72 0760          lofsa $0760 // stopTresspasser
+  07c5:72 0760          lofsa $0760                    // stopTresspasser
   07c8:36                push 
   07c9:54 06             self 6 
 
 
         code_07cb
-  07cb:39 3c            pushi 3c // $3c doit
+  07cb:39 3c            pushi 3c                       // $3c doit
   07cd:76               push0 
   07ce:59 01            &rest 1 
   07d0:57 30 04         super Actor 4 
@@ -1655,24 +1655,24 @@
   07d3:48                 ret 
     )
 
-    (method (doVerb) // method_07d4
+    (method (doVerb)                                   // method_07d4
   07d4:8f 01              lsp param1 
   07d6:3c                 dup 
   07d7:35 03              ldi 3 
   07d9:1a                 eq? 
   07da:30 001d            bnt code_07fa 
-  07dd:38 008e          pushi 8e // $8e setScript
+  07dd:38 008e          pushi 8e                       // $8e setScript
   07e0:78               push1 
   07e1:89 7e              lsg  
   07e3:3c                 dup 
   07e4:35 01              ldi 1 
   07e6:1a                 eq? 
   07e7:30 0006            bnt code_07f0 
-  07ea:72 1854          lofsa $1854 // BeggarTouchesHubert
+  07ea:72 1854          lofsa $1854                    // BeggarTouchesHubert
   07ed:32 0003            jmp code_07f3 
 
         code_07f0
-  07f0:72 1b78          lofsa $1b78 // TryToTouchHubert
+  07f0:72 1b78          lofsa $1b78                    // TryToTouchHubert
 
         code_07f3
   07f3:3a                toss 
@@ -1691,9 +1691,9 @@
   0804:35 01              ldi 1 
   0806:1a                 eq? 
   0807:30 000d            bnt code_0817 
-  080a:38 008e          pushi 8e // $8e setScript
+  080a:38 008e          pushi 8e                       // $8e setScript
   080d:78               push1 
-  080e:72 1a88          lofsa $1a88 // BeggarTalkToHubert
+  080e:72 1a88          lofsa $1a88                    // BeggarTalkToHubert
   0811:36                push 
   0812:54 06             self 6 
 
@@ -1704,9 +1704,9 @@
   0818:35 04              ldi 4 
   081a:1a                 eq? 
   081b:30 000d            bnt code_082b 
-  081e:38 008e          pushi 8e // $8e setScript
+  081e:38 008e          pushi 8e                       // $8e setScript
   0821:78               push1 
-  0822:72 1db2          lofsa $1db2 // PuckTalkToHubert
+  0822:72 1db2          lofsa $1db2                    // PuckTalkToHubert
   0825:36                push 
   0826:54 06             self 6 
 
@@ -1717,9 +1717,9 @@
   082c:35 06              ldi 6 
   082e:1a                 eq? 
   082f:30 000d            bnt code_083f 
-  0832:38 008e          pushi 8e // $8e setScript
+  0832:38 008e          pushi 8e                       // $8e setScript
   0835:78               push1 
-  0836:72 1f66          lofsa $1f66 // FensTalkToHubert
+  0836:72 1f66          lofsa $1f66                    // FensTalkToHubert
   0839:36                push 
   083a:54 06             self 6 
 
@@ -1730,9 +1730,9 @@
   0840:35 05              ldi 5 
   0842:1a                 eq? 
   0843:30 000d            bnt code_0853 
-  0846:38 008e          pushi 8e // $8e setScript
+  0846:38 008e          pushi 8e                       // $8e setScript
   0849:78               push1 
-  084a:72 20c2          lofsa $20c2 // AbbeyTalkToHubert
+  084a:72 20c2          lofsa $20c2                    // AbbeyTalkToHubert
   084d:36                push 
   084e:54 06             self 6 
 
@@ -1743,9 +1743,9 @@
   0854:35 02              ldi 2 
   0856:1a                 eq? 
   0857:30 000d            bnt code_0867 
-  085a:38 008e          pushi 8e // $8e setScript
+  085a:38 008e          pushi 8e                       // $8e setScript
   085d:78               push1 
-  085e:72 21e8          lofsa $21e8 // JewelerTalkToHubert
+  085e:72 21e8          lofsa $21e8                    // JewelerTalkToHubert
   0861:36                push 
   0862:54 06             self 6 
 
@@ -1756,9 +1756,9 @@
   0868:35 03              ldi 3 
   086a:1a                 eq? 
   086b:30 000d            bnt code_087b 
-  086e:38 008e          pushi 8e // $8e setScript
+  086e:38 008e          pushi 8e                       // $8e setScript
   0871:78               push1 
-  0872:72 21e8          lofsa $21e8 // JewelerTalkToHubert
+  0872:72 21e8          lofsa $21e8                    // JewelerTalkToHubert
   0875:36                push 
   0876:54 06             self 6 
 
@@ -1766,9 +1766,9 @@
 
         code_087b
   087b:7a               push2 
-  087c:38 0186          pushi 186 // $186 south
+  087c:38 0186          pushi 186                      // $186 south
   087f:78               push1 
-  0880:47 0d 04 04      calle d procedure_0004 4 //  
+  0880:47 0d 04 04      calle d procedure_0004 4       //  
 
 
         code_0884
@@ -1789,7 +1789,7 @@
   089a:9b ea             lsli local234 
   089c:35 01              ldi 1 
   089e:9b ea             lsli local234 
-  08a0:47 0d 04 04      calle d procedure_0004 4 //  
+  08a0:47 0d 04 04      calle d procedure_0004 4       //  
 
   08a4:32 0230            jmp code_0ad7 
 
@@ -1798,9 +1798,9 @@
   08a8:35 0b              ldi b 
   08aa:1a                 eq? 
   08ab:30 000e            bnt code_08bc 
-  08ae:38 0179          pushi 179 // $179 newRoom
+  08ae:38 0179          pushi 179                      // $179 newRoom
   08b1:78               push1 
-  08b2:38 0104          pushi 104 // $104 gx
+  08b2:38 0104          pushi 104                      // $104 gx
   08b5:81 02              lag  
   08b7:4a 06             send 6 
 
@@ -1821,9 +1821,9 @@
   08cf:35 01              ldi 1 
   08d1:1a                 eq? 
   08d2:30 000d            bnt code_08e2 
-  08d5:38 008e          pushi 8e // $8e setScript
+  08d5:38 008e          pushi 8e                       // $8e setScript
   08d8:78               push1 
-  08d9:72 17d4          lofsa $17d4 // BeggarBribesHubert
+  08d9:72 17d4          lofsa $17d4                    // BeggarBribesHubert
   08dc:36                push 
   08dd:54 06             self 6 
 
@@ -1834,9 +1834,9 @@
   08e3:35 05              ldi 5 
   08e5:1a                 eq? 
   08e6:30 000d            bnt code_08f6 
-  08e9:38 008e          pushi 8e // $8e setScript
+  08e9:38 008e          pushi 8e                       // $8e setScript
   08ec:78               push1 
-  08ed:72 12b0          lofsa $12b0 // AbbeyBribesHubert
+  08ed:72 12b0          lofsa $12b0                    // AbbeyBribesHubert
   08f0:36                push 
   08f1:54 06             self 6 
 
@@ -1847,9 +1847,9 @@
   08f7:35 06              ldi 6 
   08f9:1a                 eq? 
   08fa:30 000d            bnt code_090a 
-  08fd:38 008e          pushi 8e // $8e setScript
+  08fd:38 008e          pushi 8e                       // $8e setScript
   0900:78               push1 
-  0901:72 145c          lofsa $145c // FensBribesHubert
+  0901:72 145c          lofsa $145c                    // FensBribesHubert
   0904:36                push 
   0905:54 06             self 6 
 
@@ -1860,9 +1860,9 @@
   090b:35 04              ldi 4 
   090d:1a                 eq? 
   090e:30 000d            bnt code_091e 
-  0911:38 008e          pushi 8e // $8e setScript
+  0911:38 008e          pushi 8e                       // $8e setScript
   0914:78               push1 
-  0915:72 161a          lofsa $161a // PuckBribesHubert
+  0915:72 161a          lofsa $161a                    // PuckBribesHubert
   0918:36                push 
   0919:54 06             self 6 
 
@@ -1873,9 +1873,9 @@
   091f:35 02              ldi 2 
   0921:1a                 eq? 
   0922:30 000d            bnt code_0932 
-  0925:38 008e          pushi 8e // $8e setScript
+  0925:38 008e          pushi 8e                       // $8e setScript
   0928:78               push1 
-  0929:72 16dc          lofsa $16dc // JewelerBribesHubert
+  0929:72 16dc          lofsa $16dc                    // JewelerBribesHubert
   092c:36                push 
   092d:54 06             self 6 
 
@@ -1886,9 +1886,9 @@
   0933:35 03              ldi 3 
   0935:1a                 eq? 
   0936:30 000a            bnt code_0943 
-  0939:38 008e          pushi 8e // $8e setScript
+  0939:38 008e          pushi 8e                       // $8e setScript
   093c:78               push1 
-  093d:72 16dc          lofsa $16dc // JewelerBribesHubert
+  093d:72 16dc          lofsa $16dc                    // JewelerBribesHubert
   0940:36                push 
   0941:54 06             self 6 
 
@@ -1902,11 +1902,11 @@
   0948:35 02              ldi 2 
   094a:1a                 eq? 
   094b:30 003c            bnt code_098a 
-  094e:39 03            pushi 3 // $3 y
+  094e:39 03            pushi 3                        // $3 y
   0950:89 7e              lsg  
-  0952:39 05            pushi 5 // $5 view
-  0954:39 06            pushi 6 // $6 loop
-  0956:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  0952:39 05            pushi 5                        // $5 view
+  0954:39 06            pushi 6                        // $6 loop
+  0956:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   095c:30 000e            bnt code_096d 
   095f:78               push1 
@@ -1917,16 +1917,16 @@
   096a:32 0159            jmp code_0ac6 
 
         code_096d
-  096d:39 03            pushi 3 // $3 y
+  096d:39 03            pushi 3                        // $3 y
   096f:89 7e              lsg  
   0971:7a               push2 
-  0972:39 03            pushi 3 // $3 y
-  0974:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  0972:39 03            pushi 3                        // $3 y
+  0974:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   097a:30 0149            bnt code_0ac6 
-  097d:38 008e          pushi 8e // $8e setScript
+  097d:38 008e          pushi 8e                       // $8e setScript
   0980:78               push1 
-  0981:72 0fdc          lofsa $0fdc // JewelerGivesEmeraldToHubert
+  0981:72 0fdc          lofsa $0fdc                    // JewelerGivesEmeraldToHubert
   0984:36                push 
   0985:54 06             self 6 
 
@@ -1937,9 +1937,9 @@
   098b:35 03              ldi 3 
   098d:1a                 eq? 
   098e:30 000d            bnt code_099e 
-  0991:38 008e          pushi 8e // $8e setScript
+  0991:38 008e          pushi 8e                       // $8e setScript
   0994:78               push1 
-  0995:72 10da          lofsa $10da // GiveSlipperToHubert
+  0995:72 10da          lofsa $10da                    // GiveSlipperToHubert
   0998:36                push 
   0999:54 06             self 6 
 
@@ -1958,9 +1958,9 @@
   09af:35 03              ldi 3 
   09b1:1a                 eq? 
   09b2:30 0111            bnt code_0ac6 
-  09b5:38 008e          pushi 8e // $8e setScript
+  09b5:38 008e          pushi 8e                       // $8e setScript
   09b8:78               push1 
-  09b9:72 104c          lofsa $104c // GiveCombToHubert
+  09b9:72 104c          lofsa $104c                    // GiveCombToHubert
   09bc:36                push 
   09bd:54 06             self 6 
 
@@ -1972,8 +1972,8 @@
   09c5:1a                 eq? 
   09c6:30 0025            bnt code_09ee 
   09c9:78               push1 
-  09ca:39 1f            pushi 1f // $1f style
-  09cc:45 05 02         callb procedure_0005 2 //  
+  09ca:39 1f            pushi 1f                       // $1f style
+  09cc:45 05 02         callb procedure_0005 2         //  
 
   09cf:30 000e            bnt code_09e0 
   09d2:78               push1 
@@ -1996,9 +1996,9 @@
   09ef:35 0e              ldi e 
   09f1:1a                 eq? 
   09f2:30 000d            bnt code_0a02 
-  09f5:38 008e          pushi 8e // $8e setScript
+  09f5:38 008e          pushi 8e                       // $8e setScript
   09f8:78               push1 
-  09f9:72 0c14          lofsa $0c14 // GiveAmethystToHubert
+  09f9:72 0c14          lofsa $0c14                    // GiveAmethystToHubert
   09fc:36                push 
   09fd:54 06             self 6 
 
@@ -2045,9 +2045,9 @@
   0a42:35 06              ldi 6 
   0a44:1a                 eq? 
   0a45:30 000d            bnt code_0a55 
-  0a48:38 008e          pushi 8e // $8e setScript
+  0a48:38 008e          pushi 8e                       // $8e setScript
   0a4b:78               push1 
-  0a4c:72 0c14          lofsa $0c14 // GiveAmethystToHubert
+  0a4c:72 0c14          lofsa $0c14                    // GiveAmethystToHubert
   0a4f:36                push 
   0a50:54 06             self 6 
 
@@ -2058,9 +2058,9 @@
   0a56:35 07              ldi 7 
   0a58:1a                 eq? 
   0a59:30 000d            bnt code_0a69 
-  0a5c:38 008e          pushi 8e // $8e setScript
+  0a5c:38 008e          pushi 8e                       // $8e setScript
   0a5f:78               push1 
-  0a60:72 0d70          lofsa $0d70 // GiveJewelsToHubert
+  0a60:72 0d70          lofsa $0d70                    // GiveJewelsToHubert
   0a63:36                push 
   0a64:54 06             self 6 
 
@@ -2079,27 +2079,27 @@
   0a7b:32 0048            jmp code_0ac6 
 
         code_0a7e
-  0a7e:39 03            pushi 3 // $3 y
+  0a7e:39 03            pushi 3                        // $3 y
   0a80:8f 02              lsp param2 
-  0a82:39 0a            pushi a // $a nsLeft
-  0a84:39 12            pushi 12 // $12 illegalBits
-  0a86:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  0a82:39 0a            pushi a                        // $a nsLeft
+  0a84:39 12            pushi 12                       // $12 illegalBits
+  0a86:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   0a8c:30 000d            bnt code_0a9c 
-  0a8f:38 008e          pushi 8e // $8e setScript
+  0a8f:38 008e          pushi 8e                       // $8e setScript
   0a92:78               push1 
-  0a93:72 0e9e          lofsa $0e9e // GiveRingToHubert
+  0a93:72 0e9e          lofsa $0e9e                    // GiveRingToHubert
   0a96:36                push 
   0a97:54 06             self 6 
 
   0a99:32 002a            jmp code_0ac6 
 
         code_0a9c
-  0a9c:39 03            pushi 3 // $3 y
+  0a9c:39 03            pushi 3                        // $3 y
   0a9e:8f 02              lsp param2 
-  0aa0:39 10            pushi 10 // $10 lsRight
-  0aa2:39 11            pushi 11 // $11 signal
-  0aa4:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  0aa0:39 10            pushi 10                       // $10 lsRight
+  0aa2:39 11            pushi 11                       // $11 signal
+  0aa4:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   0aaa:30 000e            bnt code_0abb 
   0aad:78               push1 
@@ -2110,7 +2110,7 @@
   0ab8:32 000b            jmp code_0ac6 
 
         code_0abb
-  0abb:38 010c          pushi 10c // $10c doVerb
+  0abb:38 010c          pushi 10c                      // $10c doVerb
   0abe:78               push1 
   0abf:8f 01              lsp param1 
   0ac1:59 03            &rest 3 
@@ -2122,7 +2122,7 @@
   0ac7:32 000d            jmp code_0ad7 
 
         code_0aca
-  0aca:38 010c          pushi 10c // $10c doVerb
+  0aca:38 010c          pushi 10c                      // $10c doVerb
   0acd:7a               push2 
   0ace:8f 01              lsp param1 
   0ad0:8f 02              lsp param2 
@@ -2156,7 +2156,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_0b64
+    (method (changeState)                              // method_0b64
   0b64:87 01              lap param1 
   0b66:65 0a             aTop state 
   0b68:36                push 
@@ -2165,11 +2165,11 @@
   0b6c:1a                 eq? 
   0b6d:30 0089            bnt code_0bf9 
   0b70:6b 1a            ipToa register 
-  0b72:39 03            pushi 3 // $3 y
+  0b72:39 03            pushi 3                        // $3 y
   0b74:89 7e              lsg  
-  0b76:39 05            pushi 5 // $5 view
-  0b78:39 06            pushi 6 // $6 loop
-  0b7a:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  0b76:39 05            pushi 5                        // $5 view
+  0b78:39 06            pushi 6                        // $6 loop
+  0b7a:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   0b80:30 000f            bnt code_0b92 
   0b83:7a               push2 
@@ -2181,16 +2181,16 @@
   0b8f:32 0073            jmp code_0c05 
 
         code_0b92
-  0b92:39 03            pushi 3 // $3 y
+  0b92:39 03            pushi 3                        // $3 y
   0b94:89 7e              lsg  
   0b96:7a               push2 
-  0b97:39 03            pushi 3 // $3 y
-  0b99:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  0b97:39 03            pushi 3                        // $3 y
+  0b99:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   0b9f:30 0063            bnt code_0c05 
   0ba2:78               push1 
-  0ba3:38 0091          pushi 91 // $91 globalize
-  0ba6:45 05 02         callb procedure_0005 2 //  
+  0ba3:38 0091          pushi 91                       // $91 globalize
+  0ba6:45 05 02         callb procedure_0005 2         //  
 
   0ba9:18                 not 
   0baa:30 0026            bnt code_0bd3 
@@ -2242,7 +2242,7 @@
   0bfa:35 01              ldi 1 
   0bfc:1a                 eq? 
   0bfd:30 0005            bnt code_0c05 
-  0c00:39 6c            pushi 6c // $6c dispose
+  0c00:39 6c            pushi 6c                       // $6c dispose
   0c02:76               push0 
   0c03:54 04             self 4 
 
@@ -2273,7 +2273,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_0c44
+    (method (changeState)                              // method_0c44
   0c44:87 01              lap param1 
   0c46:65 0a             aTop state 
   0c48:36                push 
@@ -2282,18 +2282,18 @@
   0c4c:1a                 eq? 
   0c4d:30 0063            bnt code_0cb3 
   0c50:76               push0 
-  0c51:45 03 00         callb procedure_0003 0 //  
+  0c51:45 03 00         callb procedure_0003 0         //  
 
   0c54:6b 1a            ipToa register 
-  0c56:39 03            pushi 3 // $3 y
+  0c56:39 03            pushi 3                        // $3 y
   0c58:89 7e              lsg  
   0c5a:7a               push2 
-  0c5b:39 03            pushi 3 // $3 y
-  0c5d:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  0c5b:39 03            pushi 3                        // $3 y
+  0c5d:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   0c63:18                 not 
   0c64:30 0008            bnt code_0c6f 
-  0c67:39 6c            pushi 6c // $6c dispose
+  0c67:39 6c            pushi 6c                       // $6c dispose
   0c69:76               push0 
   0c6a:54 04             self 4 
 
@@ -2301,8 +2301,8 @@
 
         code_0c6f
   0c6f:78               push1 
-  0c70:38 0091          pushi 91 // $91 globalize
-  0c73:45 05 02         callb procedure_0005 2 //  
+  0c70:38 0091          pushi 91                       // $91 globalize
+  0c73:45 05 02         callb procedure_0005 2         //  
 
   0c76:18                 not 
   0c77:30 0013            bnt code_0c8d 
@@ -2347,9 +2347,9 @@
   0cbc:35 ff              ldi ff 
   0cbe:1a                 eq? 
   0cbf:30 0013            bnt code_0cd5 
-  0cc2:38 008e          pushi 8e // $8e setScript
-  0cc5:39 04            pushi 4 // $4 x
-  0cc7:72 03a8          lofsa $03a8 // GilesAndRogerAppear
+  0cc2:38 008e          pushi 8e                       // $8e setScript
+  0cc5:39 04            pushi 4                        // $4 x
+  0cc7:72 03a8          lofsa $03a8                    // GilesAndRogerAppear
   0cca:36                push 
   0ccb:7c            pushSelf 
   0ccc:67 1a             pTos register 
@@ -2360,9 +2360,9 @@
 
         code_0cd5
   0cd5:76               push0 
-  0cd6:45 04 00         callb procedure_0004 0 //  
+  0cd6:45 04 00         callb procedure_0004 0         //  
 
-  0cd9:39 6c            pushi 6c // $6c dispose
+  0cd9:39 6c            pushi 6c                       // $6c dispose
   0cdb:76               push0 
   0cdc:54 04             self 4 
 
@@ -2373,18 +2373,18 @@
   0ce2:35 02              ldi 2 
   0ce4:1a                 eq? 
   0ce5:30 001a            bnt code_0d02 
-  0ce8:38 00a2          pushi a2 // $a2 setLoop
+  0ce8:38 00a2          pushi a2                       // $a2 setLoop
   0ceb:78               push1 
-  0cec:39 03            pushi 3 // $3 y
-  0cee:39 07            pushi 7 // $7 cel
+  0cec:39 03            pushi 3                        // $3 y
+  0cee:39 07            pushi 7                        // $7 cel
   0cf0:78               push1 
   0cf1:76               push0 
-  0cf2:38 0096          pushi 96 // $96 setCycle
+  0cf2:38 0096          pushi 96                       // $96 setCycle
   0cf5:7a               push2 
   0cf6:51 1a            class End 
   0cf8:36                push 
   0cf9:7c            pushSelf 
-  0cfa:72 0ae6          lofsa $0ae6 // Hubert
+  0cfa:72 0ae6          lofsa $0ae6                    // Hubert
   0cfd:4a 14             send 14 
 
   0cff:32 005f            jmp code_0d61 
@@ -2407,15 +2407,15 @@
   0d19:35 04              ldi 4 
   0d1b:1a                 eq? 
   0d1c:30 001e            bnt code_0d3d 
-  0d1f:39 3a            pushi 3a // $3a heading
+  0d1f:39 3a            pushi 3a                       // $3a heading
   0d21:78               push1 
   0d22:76               push0 
-  0d23:38 011b          pushi 11b // $11b setMotion
-  0d26:39 03            pushi 3 // $3 y
+  0d23:38 011b          pushi 11b                      // $11b setMotion
+  0d26:39 03            pushi 3                        // $3 y
   0d28:51 5c            class MoveFwd 
   0d2a:36                push 
   0d2b:7a               push2 
-  0d2c:39 37            pushi 37 // $37 yStep
+  0d2c:39 37            pushi 37                       // $37 yStep
   0d2e:76               push0 
   0d2f:81 00              lag  
   0d31:4a 04             send 4 
@@ -2434,19 +2434,19 @@
   0d40:1a                 eq? 
   0d41:30 001d            bnt code_0d61 
   0d44:76               push0 
-  0d45:45 04 00         callb procedure_0004 0 //  
+  0d45:45 04 00         callb procedure_0004 0         //  
 
   0d48:78               push1 
-  0d49:39 0a            pushi a // $a nsLeft
-  0d4b:46 0326 0001 02  calle 326 procedure_0001 2 //  
+  0d49:39 0a            pushi a                        // $a nsLeft
+  0d4b:46 0326 0001 02  calle 326 procedure_0001 2     //  
 
-  0d51:38 0179          pushi 179 // $179 newRoom
+  0d51:38 0179          pushi 179                      // $179 newRoom
   0d54:78               push1 
-  0d55:38 0190          pushi 190 // $190 roomToEdge
+  0d55:38 0190          pushi 190                      // $190 roomToEdge
   0d58:81 02              lag  
   0d5a:4a 06             send 6 
 
-  0d5c:39 6c            pushi 6c // $6c dispose
+  0d5c:39 6c            pushi 6c                       // $6c dispose
   0d5e:76               push0 
   0d5f:54 04             self 4 
 
@@ -2477,7 +2477,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_0da0
+    (method (changeState)                              // method_0da0
   0da0:87 01              lap param1 
   0da2:65 0a             aTop state 
   0da4:36                push 
@@ -2486,26 +2486,26 @@
   0da8:1a                 eq? 
   0da9:30 0085            bnt code_0e31 
   0dac:76               push0 
-  0dad:45 03 00         callb procedure_0003 0 //  
+  0dad:45 03 00         callb procedure_0003 0         //  
 
   0db0:6b 1a            ipToa register 
-  0db2:39 03            pushi 3 // $3 y
+  0db2:39 03            pushi 3                        // $3 y
   0db4:89 7e              lsg  
-  0db6:39 06            pushi 6 // $6 loop
-  0db8:39 05            pushi 5 // $5 view
-  0dba:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  0db6:39 06            pushi 6                        // $6 loop
+  0db8:39 05            pushi 5                        // $5 view
+  0dba:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   0dc0:2e 0018             bt code_0ddb 
-  0dc3:39 03            pushi 3 // $3 y
+  0dc3:39 03            pushi 3                        // $3 y
   0dc5:89 7e              lsg  
   0dc7:7a               push2 
-  0dc8:39 03            pushi 3 // $3 y
-  0dca:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  0dc8:39 03            pushi 3                        // $3 y
+  0dca:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   0dd0:30 001e            bnt code_0df1 
   0dd3:78               push1 
-  0dd4:38 0091          pushi 91 // $91 globalize
-  0dd7:45 05 02         callb procedure_0005 2 //  
+  0dd4:38 0091          pushi 91                       // $91 globalize
+  0dd7:45 05 02         callb procedure_0005 2         //  
 
   0dda:18                 not 
 
@@ -2522,16 +2522,16 @@
   0dee:32 009f            jmp code_0e90 
 
         code_0df1
-  0df1:39 03            pushi 3 // $3 y
+  0df1:39 03            pushi 3                        // $3 y
   0df3:89 7e              lsg  
   0df5:7a               push2 
-  0df6:39 03            pushi 3 // $3 y
-  0df8:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  0df6:39 03            pushi 3                        // $3 y
+  0df8:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   0dfe:30 008f            bnt code_0e90 
   0e01:78               push1 
-  0e02:38 0091          pushi 91 // $91 globalize
-  0e05:45 05 02         callb procedure_0005 2 //  
+  0e02:38 0091          pushi 91                       // $91 globalize
+  0e05:45 05 02         callb procedure_0005 2         //  
 
   0e08:30 0085            bnt code_0e90 
   0e0b:67 1a             pTos register 
@@ -2564,9 +2564,9 @@
   0e3a:35 ff              ldi ff 
   0e3c:1a                 eq? 
   0e3d:30 0013            bnt code_0e53 
-  0e40:38 008e          pushi 8e // $8e setScript
-  0e43:39 04            pushi 4 // $4 x
-  0e45:72 03a8          lofsa $03a8 // GilesAndRogerAppear
+  0e40:38 008e          pushi 8e                       // $8e setScript
+  0e43:39 04            pushi 4                        // $4 x
+  0e45:72 03a8          lofsa $03a8                    // GilesAndRogerAppear
   0e48:36                push 
   0e49:7c            pushSelf 
   0e4a:67 1a             pTos register 
@@ -2577,9 +2577,9 @@
 
         code_0e53
   0e53:76               push0 
-  0e54:45 04 00         callb procedure_0004 0 //  
+  0e54:45 04 00         callb procedure_0004 0         //  
 
-  0e57:39 6c            pushi 6c // $6c dispose
+  0e57:39 6c            pushi 6c                       // $6c dispose
   0e59:76               push0 
   0e5a:54 04             self 4 
 
@@ -2605,13 +2605,13 @@
   0e79:30 0014            bnt code_0e90 
   0e7c:35 08              ldi 8 
   0e7e:a1 91              sag  
-  0e80:38 0179          pushi 179 // $179 newRoom
+  0e80:38 0179          pushi 179                      // $179 newRoom
   0e83:78               push1 
-  0e84:38 00aa          pushi aa // $aa setSize
+  0e84:38 00aa          pushi aa                       // $aa setSize
   0e87:81 02              lag  
   0e89:4a 06             send 6 
 
-  0e8b:39 6c            pushi 6c // $6c dispose
+  0e8b:39 6c            pushi 6c                       // $6c dispose
   0e8d:76               push0 
   0e8e:54 04             self 4 
 
@@ -2641,7 +2641,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_0ece
+    (method (changeState)                              // method_0ece
   0ece:87 01              lap param1 
   0ed0:65 0a             aTop state 
   0ed2:36                push 
@@ -2650,12 +2650,12 @@
   0ed6:1a                 eq? 
   0ed7:30 0046            bnt code_0f20 
   0eda:76               push0 
-  0edb:45 03 00         callb procedure_0003 0 //  
+  0edb:45 03 00         callb procedure_0003 0         //  
 
   0ede:6b 1a            ipToa register 
   0ee0:78               push1 
-  0ee1:38 0091          pushi 91 // $91 globalize
-  0ee4:45 05 02         callb procedure_0005 2 //  
+  0ee1:38 0091          pushi 91                       // $91 globalize
+  0ee4:45 05 02         callb procedure_0005 2         //  
 
   0ee7:18                 not 
   0ee8:30 000f            bnt code_0efa 
@@ -2695,14 +2695,14 @@
   0f23:1a                 eq? 
   0f24:30 002a            bnt code_0f51 
   0f27:78               push1 
-  0f28:38 0091          pushi 91 // $91 globalize
-  0f2b:45 05 02         callb procedure_0005 2 //  
+  0f28:38 0091          pushi 91                       // $91 globalize
+  0f2b:45 05 02         callb procedure_0005 2         //  
 
   0f2e:18                 not 
   0f2f:30 0013            bnt code_0f45 
-  0f32:38 008e          pushi 8e // $8e setScript
-  0f35:39 04            pushi 4 // $4 x
-  0f37:72 03a8          lofsa $03a8 // GilesAndRogerAppear
+  0f32:38 008e          pushi 8e                       // $8e setScript
+  0f35:39 04            pushi 4                        // $4 x
+  0f37:72 03a8          lofsa $03a8                    // GilesAndRogerAppear
   0f3a:36                push 
   0f3b:7c            pushSelf 
   0f3c:67 1a             pTos register 
@@ -2713,9 +2713,9 @@
 
         code_0f45
   0f45:76               push0 
-  0f46:45 04 00         callb procedure_0004 0 //  
+  0f46:45 04 00         callb procedure_0004 0         //  
 
-  0f49:39 6c            pushi 6c // $6c dispose
+  0f49:39 6c            pushi 6c                       // $6c dispose
   0f4b:76               push0 
   0f4c:54 04             self 4 
 
@@ -2726,18 +2726,18 @@
   0f52:35 02              ldi 2 
   0f54:1a                 eq? 
   0f55:30 001a            bnt code_0f72 
-  0f58:38 00a2          pushi a2 // $a2 setLoop
+  0f58:38 00a2          pushi a2                       // $a2 setLoop
   0f5b:78               push1 
-  0f5c:39 03            pushi 3 // $3 y
-  0f5e:39 07            pushi 7 // $7 cel
+  0f5c:39 03            pushi 3                        // $3 y
+  0f5e:39 07            pushi 7                        // $7 cel
   0f60:78               push1 
   0f61:76               push0 
-  0f62:38 0096          pushi 96 // $96 setCycle
+  0f62:38 0096          pushi 96                       // $96 setCycle
   0f65:7a               push2 
   0f66:51 1a            class End 
   0f68:36                push 
   0f69:7c            pushSelf 
-  0f6a:72 0ae6          lofsa $0ae6 // Hubert
+  0f6a:72 0ae6          lofsa $0ae6                    // Hubert
   0f6d:4a 14             send 14 
 
   0f6f:32 005b            jmp code_0fcd 
@@ -2760,15 +2760,15 @@
   0f89:35 04              ldi 4 
   0f8b:1a                 eq? 
   0f8c:30 001e            bnt code_0fad 
-  0f8f:39 3a            pushi 3a // $3a heading
+  0f8f:39 3a            pushi 3a                       // $3a heading
   0f91:78               push1 
   0f92:76               push0 
-  0f93:38 011b          pushi 11b // $11b setMotion
-  0f96:39 03            pushi 3 // $3 y
+  0f93:38 011b          pushi 11b                      // $11b setMotion
+  0f96:39 03            pushi 3                        // $3 y
   0f98:51 5c            class MoveFwd 
   0f9a:36                push 
   0f9b:7a               push2 
-  0f9c:39 37            pushi 37 // $37 yStep
+  0f9c:39 37            pushi 37                       // $37 yStep
   0f9e:76               push0 
   0f9f:81 00              lag  
   0fa1:4a 04             send 4 
@@ -2787,16 +2787,16 @@
   0fb0:1a                 eq? 
   0fb1:30 0019            bnt code_0fcd 
   0fb4:78               push1 
-  0fb5:39 0a            pushi a // $a nsLeft
-  0fb7:46 0326 0001 02  calle 326 procedure_0001 2 //  
+  0fb5:39 0a            pushi a                        // $a nsLeft
+  0fb7:46 0326 0001 02  calle 326 procedure_0001 2     //  
 
-  0fbd:38 0179          pushi 179 // $179 newRoom
+  0fbd:38 0179          pushi 179                      // $179 newRoom
   0fc0:78               push1 
-  0fc1:38 0190          pushi 190 // $190 roomToEdge
+  0fc1:38 0190          pushi 190                      // $190 roomToEdge
   0fc4:81 02              lag  
   0fc6:4a 06             send 6 
 
-  0fc8:39 6c            pushi 6c // $6c dispose
+  0fc8:39 6c            pushi 6c                       // $6c dispose
   0fca:76               push0 
   0fcb:54 04             self 4 
 
@@ -2827,7 +2827,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_100c
+    (method (changeState)                              // method_100c
   100c:87 01              lap param1 
   100e:65 0a             aTop state 
   1010:36                push 
@@ -2850,9 +2850,9 @@
   102b:30 000f            bnt code_103d 
   102e:35 06              ldi 6 
   1030:a1 91              sag  
-  1032:38 0179          pushi 179 // $179 newRoom
+  1032:38 0179          pushi 179                      // $179 newRoom
   1035:78               push1 
-  1036:38 00aa          pushi aa // $aa setSize
+  1036:38 00aa          pushi aa                       // $aa setSize
   1039:81 02              lag  
   103b:4a 06             send 6 
 
@@ -2883,7 +2883,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_107c
+    (method (changeState)                              // method_107c
   107c:87 01              lap param1 
   107e:65 0a             aTop state 
   1080:36                push 
@@ -2926,7 +2926,7 @@
   10c1:35 01              ldi 1 
   10c3:1a                 eq? 
   10c4:30 0005            bnt code_10cc 
-  10c7:39 6c            pushi 6c // $6c dispose
+  10c7:39 6c            pushi 6c                       // $6c dispose
   10c9:76               push0 
   10ca:54 04             self 4 
 
@@ -2956,7 +2956,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_110a
+    (method (changeState)                              // method_110a
   110a:87 01              lap param1 
   110c:65 0a             aTop state 
   110e:36                push 
@@ -2965,7 +2965,7 @@
   1112:1a                 eq? 
   1113:30 00e6            bnt code_11fc 
   1116:76               push0 
-  1117:45 03 00         callb procedure_0003 0 //  
+  1117:45 03 00         callb procedure_0003 0         //  
 
   111a:6b 1a            ipToa register 
   111c:89 82              lsg  
@@ -2973,8 +2973,8 @@
   1120:1a                 eq? 
   1121:30 0006            bnt code_112a 
   1124:78               push1 
-  1125:39 19            pushi 19 // $19 time
-  1127:45 05 02         callb procedure_0005 2 //  
+  1125:39 19            pushi 19                       // $19 time
+  1127:45 05 02         callb procedure_0005 2         //  
 
 
         code_112a
@@ -2984,16 +2984,16 @@
   1131:1a                 eq? 
   1132:30 0071            bnt code_11a6 
   1135:78               push1 
-  1136:39 19            pushi 19 // $19 time
-  1138:45 05 02         callb procedure_0005 2 //  
+  1136:39 19            pushi 19                       // $19 time
+  1138:45 05 02         callb procedure_0005 2         //  
 
   113b:18                 not 
 
         code_113c
   113c:30 0067            bnt code_11a6 
   113f:78               push1 
-  1140:39 51            pushi 51 // $51 button
-  1142:45 05 02         callb procedure_0005 2 //  
+  1140:39 51            pushi 51                       // $51 button
+  1142:45 05 02         callb procedure_0005 2         //  
 
   1145:30 000f            bnt code_1157 
   1148:7a               push2 
@@ -3005,7 +3005,7 @@
   1154:32 014a            jmp code_12a1 
 
         code_1157
-  1157:39 3c            pushi 3c // $3c doit
+  1157:39 3c            pushi 3c                       // $3c doit
   1159:76               push0 
   115a:81 98              lag  
   115c:4a 04             send 4 
@@ -3013,14 +3013,14 @@
   115e:18                 not 
   115f:30 000b            bnt code_116d 
   1162:6d 1a            dpToa register 
-  1164:38 008d          pushi 8d // $8d cue
+  1164:38 008d          pushi 8d                       // $8d cue
   1167:76               push0 
   1168:54 04             self 4 
 
   116a:32 0134            jmp code_12a1 
 
         code_116d
-  116d:38 029a          pushi 29a // $29a taken
+  116d:38 029a          pushi 29a                      // $29a taken
   1170:76               push0 
   1171:81 98              lag  
   1173:4a 04             send 4 
@@ -3029,7 +3029,7 @@
   1176:35 03              ldi 3 
   1178:22                 lt? 
   1179:30 0017            bnt code_1193 
-  117c:38 0148          pushi 148 // $148 put
+  117c:38 0148          pushi 148                      // $148 put
   117f:76               push0 
   1180:81 98              lag  
   1182:4a 04             send 4 
@@ -3059,17 +3059,17 @@
   11aa:1a                 eq? 
   11ab:30 0006            bnt code_11b4 
   11ae:78               push1 
-  11af:39 19            pushi 19 // $19 time
-  11b1:45 05 02         callb procedure_0005 2 //  
+  11af:39 19            pushi 19                       // $19 time
+  11b1:45 05 02         callb procedure_0005 2         //  
 
 
         code_11b4
   11b4:2e 000e             bt code_11c5 
-  11b7:39 03            pushi 3 // $3 y
+  11b7:39 03            pushi 3                        // $3 y
   11b9:89 82              lsg  
-  11bb:39 07            pushi 7 // $7 cel
-  11bd:39 08            pushi 8 // $8 underBits
-  11bf:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  11bb:39 07            pushi 7                        // $7 cel
+  11bd:39 08            pushi 8                        // $8 underBits
+  11bf:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
 
         code_11c5
@@ -3096,8 +3096,8 @@
   11eb:32 00b3            jmp code_12a1 
 
         code_11ee
-  11ee:39 03            pushi 3 // $3 y
-  11f0:38 0186          pushi 186 // $186 south
+  11ee:39 03            pushi 3                        // $3 y
+  11f0:38 0186          pushi 186                      // $186 south
   11f3:7a               push2 
   11f4:7c            pushSelf 
   11f5:40 ee15 06        call proc_000e 6 
@@ -3114,12 +3114,12 @@
   1207:1a                 eq? 
   1208:30 001c            bnt code_1227 
   120b:78               push1 
-  120c:39 32            pushi 32 // $32 b-i2
-  120e:46 0326 0001 02  calle 326 procedure_0001 2 //  
+  120c:39 32            pushi 32                       // $32 b-i2
+  120e:46 0326 0001 02  calle 326 procedure_0001 2     //  
 
-  1214:38 008e          pushi 8e // $8e setScript
-  1217:39 04            pushi 4 // $4 x
-  1219:72 03a8          lofsa $03a8 // GilesAndRogerAppear
+  1214:38 008e          pushi 8e                       // $8e setScript
+  1217:39 04            pushi 4                        // $4 x
+  1219:72 03a8          lofsa $03a8                    // GilesAndRogerAppear
   121c:36                push 
   121d:7c            pushSelf 
   121e:67 1a             pTos register 
@@ -3130,9 +3130,9 @@
 
         code_1227
   1227:76               push0 
-  1228:45 04 00         callb procedure_0004 0 //  
+  1228:45 04 00         callb procedure_0004 0         //  
 
-  122b:39 6c            pushi 6c // $6c dispose
+  122b:39 6c            pushi 6c                       // $6c dispose
   122d:76               push0 
   122e:54 04             self 4 
 
@@ -3143,18 +3143,18 @@
   1234:35 02              ldi 2 
   1236:1a                 eq? 
   1237:30 001a            bnt code_1254 
-  123a:38 00a2          pushi a2 // $a2 setLoop
+  123a:38 00a2          pushi a2                       // $a2 setLoop
   123d:78               push1 
-  123e:39 03            pushi 3 // $3 y
-  1240:39 07            pushi 7 // $7 cel
+  123e:39 03            pushi 3                        // $3 y
+  1240:39 07            pushi 7                        // $7 cel
   1242:78               push1 
   1243:76               push0 
-  1244:38 0096          pushi 96 // $96 setCycle
+  1244:38 0096          pushi 96                       // $96 setCycle
   1247:7a               push2 
   1248:51 1a            class End 
   124a:36                push 
   124b:7c            pushSelf 
-  124c:72 0ae6          lofsa $0ae6 // Hubert
+  124c:72 0ae6          lofsa $0ae6                    // Hubert
   124f:4a 14             send 14 
 
   1251:32 004d            jmp code_12a1 
@@ -3177,15 +3177,15 @@
   126b:35 04              ldi 4 
   126d:1a                 eq? 
   126e:30 001e            bnt code_128f 
-  1271:39 3a            pushi 3a // $3a heading
+  1271:39 3a            pushi 3a                       // $3a heading
   1273:78               push1 
   1274:76               push0 
-  1275:38 011b          pushi 11b // $11b setMotion
-  1278:39 03            pushi 3 // $3 y
+  1275:38 011b          pushi 11b                      // $11b setMotion
+  1278:39 03            pushi 3                        // $3 y
   127a:51 5c            class MoveFwd 
   127c:36                push 
   127d:7a               push2 
-  127e:39 37            pushi 37 // $37 yStep
+  127e:39 37            pushi 37                       // $37 yStep
   1280:76               push0 
   1281:81 00              lag  
   1283:4a 04             send 4 
@@ -3203,9 +3203,9 @@
   1290:35 05              ldi 5 
   1292:1a                 eq? 
   1293:30 000b            bnt code_12a1 
-  1296:38 0179          pushi 179 // $179 newRoom
+  1296:38 0179          pushi 179                      // $179 newRoom
   1299:78               push1 
-  129a:38 023a          pushi 23a // $23a data
+  129a:38 023a          pushi 23a                      // $23a data
   129d:81 02              lag  
   129f:4a 06             send 6 
 
@@ -3236,7 +3236,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_12e0
+    (method (changeState)                              // method_12e0
   12e0:87 01              lap param1 
   12e2:65 0a             aTop state 
   12e4:36                push 
@@ -3245,7 +3245,7 @@
   12e8:1a                 eq? 
   12e9:30 00c5            bnt code_13b1 
   12ec:76               push0 
-  12ed:45 03 00         callb procedure_0003 0 //  
+  12ed:45 03 00         callb procedure_0003 0         //  
 
   12f0:6b 1a            ipToa register 
   12f2:89 82              lsg  
@@ -3253,14 +3253,14 @@
   12f6:1a                 eq? 
   12f7:30 004c            bnt code_1346 
   12fa:78               push1 
-  12fb:39 19            pushi 19 // $19 time
-  12fd:45 05 02         callb procedure_0005 2 //  
+  12fb:39 19            pushi 19                       // $19 time
+  12fd:45 05 02         callb procedure_0005 2         //  
 
   1300:18                 not 
   1301:30 0042            bnt code_1346 
   1304:78               push1 
-  1305:38 0090          pushi 90 // $90 localize
-  1308:45 05 02         callb procedure_0005 2 //  
+  1305:38 0090          pushi 90                       // $90 localize
+  1308:45 05 02         callb procedure_0005 2         //  
 
   130b:30 000f            bnt code_131d 
   130e:7a               push2 
@@ -3272,7 +3272,7 @@
   131a:32 0130            jmp code_144d 
 
         code_131d
-  131d:39 3c            pushi 3c // $3c doit
+  131d:39 3c            pushi 3c                       // $3c doit
   131f:76               push0 
   1320:81 98              lag  
   1322:4a 04             send 4 
@@ -3280,7 +3280,7 @@
   1324:18                 not 
   1325:30 000b            bnt code_1333 
   1328:6d 1a            dpToa register 
-  132a:38 008d          pushi 8d // $8d cue
+  132a:38 008d          pushi 8d                       // $8d cue
   132d:76               push0 
   132e:54 04             self 4 
 
@@ -3303,8 +3303,8 @@
   134a:1a                 eq? 
   134b:30 0007            bnt code_1355 
   134e:78               push1 
-  134f:39 19            pushi 19 // $19 time
-  1351:45 05 02         callb procedure_0005 2 //  
+  134f:39 19            pushi 19                       // $19 time
+  1351:45 05 02         callb procedure_0005 2         //  
 
   1354:18                 not 
 
@@ -3315,18 +3315,18 @@
   135c:1a                 eq? 
   135d:30 0006            bnt code_1366 
   1360:78               push1 
-  1361:39 19            pushi 19 // $19 time
-  1363:45 05 02         callb procedure_0005 2 //  
+  1361:39 19            pushi 19                       // $19 time
+  1363:45 05 02         callb procedure_0005 2         //  
 
 
         code_1366
   1366:2e 0010             bt code_1379 
-  1369:39 04            pushi 4 // $4 x
+  1369:39 04            pushi 4                        // $4 x
   136b:89 82              lsg  
-  136d:39 07            pushi 7 // $7 cel
-  136f:39 08            pushi 8 // $8 underBits
-  1371:39 09            pushi 9 // $9 nsTop
-  1373:46 03e7 0005 08  calle 3e7 procedure_0005 8 //  
+  136d:39 07            pushi 7                        // $7 cel
+  136f:39 08            pushi 8                        // $8 underBits
+  1371:39 09            pushi 9                        // $9 nsTop
+  1373:46 03e7 0005 08  calle 3e7 procedure_0005 8     //  
 
 
         code_1379
@@ -3353,9 +3353,9 @@
   139f:32 00ab            jmp code_144d 
 
         code_13a2
-  13a2:39 03            pushi 3 // $3 y
-  13a4:38 0186          pushi 186 // $186 south
-  13a7:39 03            pushi 3 // $3 y
+  13a2:39 03            pushi 3                        // $3 y
+  13a4:38 0186          pushi 186                      // $186 south
+  13a7:39 03            pushi 3                        // $3 y
   13a9:7c            pushSelf 
   13aa:40 ec60 06        call proc_000e 6 
 
@@ -3370,9 +3370,9 @@
   13ba:35 ff              ldi ff 
   13bc:1a                 eq? 
   13bd:30 0013            bnt code_13d3 
-  13c0:38 008e          pushi 8e // $8e setScript
-  13c3:39 04            pushi 4 // $4 x
-  13c5:72 03a8          lofsa $03a8 // GilesAndRogerAppear
+  13c0:38 008e          pushi 8e                       // $8e setScript
+  13c3:39 04            pushi 4                        // $4 x
+  13c5:72 03a8          lofsa $03a8                    // GilesAndRogerAppear
   13c8:36                push 
   13c9:7c            pushSelf 
   13ca:67 1a             pTos register 
@@ -3383,9 +3383,9 @@
 
         code_13d3
   13d3:76               push0 
-  13d4:45 04 00         callb procedure_0004 0 //  
+  13d4:45 04 00         callb procedure_0004 0         //  
 
-  13d7:39 6c            pushi 6c // $6c dispose
+  13d7:39 6c            pushi 6c                       // $6c dispose
   13d9:76               push0 
   13da:54 04             self 4 
 
@@ -3396,18 +3396,18 @@
   13e0:35 02              ldi 2 
   13e2:1a                 eq? 
   13e3:30 001a            bnt code_1400 
-  13e6:38 00a2          pushi a2 // $a2 setLoop
+  13e6:38 00a2          pushi a2                       // $a2 setLoop
   13e9:78               push1 
-  13ea:39 03            pushi 3 // $3 y
-  13ec:39 07            pushi 7 // $7 cel
+  13ea:39 03            pushi 3                        // $3 y
+  13ec:39 07            pushi 7                        // $7 cel
   13ee:78               push1 
   13ef:76               push0 
-  13f0:38 0096          pushi 96 // $96 setCycle
+  13f0:38 0096          pushi 96                       // $96 setCycle
   13f3:7a               push2 
   13f4:51 1a            class End 
   13f6:36                push 
   13f7:7c            pushSelf 
-  13f8:72 0ae6          lofsa $0ae6 // Hubert
+  13f8:72 0ae6          lofsa $0ae6                    // Hubert
   13fb:4a 14             send 14 
 
   13fd:32 004d            jmp code_144d 
@@ -3430,15 +3430,15 @@
   1417:35 04              ldi 4 
   1419:1a                 eq? 
   141a:30 001e            bnt code_143b 
-  141d:39 3a            pushi 3a // $3a heading
+  141d:39 3a            pushi 3a                       // $3a heading
   141f:78               push1 
   1420:76               push0 
-  1421:38 011b          pushi 11b // $11b setMotion
-  1424:39 03            pushi 3 // $3 y
+  1421:38 011b          pushi 11b                      // $11b setMotion
+  1424:39 03            pushi 3                        // $3 y
   1426:51 5c            class MoveFwd 
   1428:36                push 
   1429:7a               push2 
-  142a:39 37            pushi 37 // $37 yStep
+  142a:39 37            pushi 37                       // $37 yStep
   142c:76               push0 
   142d:81 00              lag  
   142f:4a 04             send 4 
@@ -3456,9 +3456,9 @@
   143c:35 05              ldi 5 
   143e:1a                 eq? 
   143f:30 000b            bnt code_144d 
-  1442:38 0179          pushi 179 // $179 newRoom
+  1442:38 0179          pushi 179                      // $179 newRoom
   1445:78               push1 
-  1446:38 0190          pushi 190 // $190 roomToEdge
+  1446:38 0190          pushi 190                      // $190 roomToEdge
   1449:81 02              lag  
   144b:4a 06             send 6 
 
@@ -3489,7 +3489,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_148c
+    (method (changeState)                              // method_148c
   148c:87 01              lap param1 
   148e:65 0a             aTop state 
   1490:36                push 
@@ -3498,7 +3498,7 @@
   1494:1a                 eq? 
   1495:30 00cf            bnt code_1567 
   1498:76               push0 
-  1499:45 03 00         callb procedure_0003 0 //  
+  1499:45 03 00         callb procedure_0003 0         //  
 
   149c:6b 1a            ipToa register 
   149e:89 82              lsg  
@@ -3510,18 +3510,18 @@
   14a9:35 01              ldi 1 
   14ab:1e                 gt? 
   14ac:30 0014            bnt code_14c3 
-  14af:39 03            pushi 3 // $3 y
+  14af:39 03            pushi 3                        // $3 y
   14b1:35 00              ldi 0 
   14b3:9a 0145           lsli local325 
   14b6:35 01              ldi 1 
   14b8:9a 0145           lsli local325 
   14bb:7c            pushSelf 
-  14bc:47 0d 04 06      calle d procedure_0004 6 //  
+  14bc:47 0d 04 06      calle d procedure_0004 6       //  
 
   14c0:32 00a0            jmp code_1563 
 
         code_14c3
-  14c3:39 3c            pushi 3c // $3c doit
+  14c3:39 3c            pushi 3c                       // $3c doit
   14c5:76               push0 
   14c6:81 98              lag  
   14c8:4a 04             send 4 
@@ -3529,7 +3529,7 @@
   14ca:18                 not 
   14cb:30 000b            bnt code_14d9 
   14ce:6d 1a            dpToa register 
-  14d0:38 008d          pushi 8d // $8d cue
+  14d0:38 008d          pushi 8d                       // $8d cue
   14d3:76               push0 
   14d4:54 04             self 4 
 
@@ -3550,8 +3550,8 @@
   14eb:1a                 eq? 
   14ec:30 0068            bnt code_1557 
   14ef:78               push1 
-  14f0:38 0092          pushi 92 // $92 cycleCnt
-  14f3:45 05 02         callb procedure_0005 2 //  
+  14f0:38 0092          pushi 92                       // $92 cycleCnt
+  14f3:45 05 02         callb procedure_0005 2         //  
 
   14f6:30 000f            bnt code_1508 
   14f9:7a               push2 
@@ -3563,7 +3563,7 @@
   1505:32 005b            jmp code_1563 
 
         code_1508
-  1508:39 3c            pushi 3c // $3c doit
+  1508:39 3c            pushi 3c                       // $3c doit
   150a:76               push0 
   150b:81 98              lag  
   150d:4a 04             send 4 
@@ -3571,14 +3571,14 @@
   150f:18                 not 
   1510:30 000b            bnt code_151e 
   1513:6d 1a            dpToa register 
-  1515:38 008d          pushi 8d // $8d cue
+  1515:38 008d          pushi 8d                       // $8d cue
   1518:76               push0 
   1519:54 04             self 4 
 
   151b:32 0045            jmp code_1563 
 
         code_151e
-  151e:38 029a          pushi 29a // $29a taken
+  151e:38 029a          pushi 29a                      // $29a taken
   1521:76               push0 
   1522:81 98              lag  
   1524:4a 04             send 4 
@@ -3587,7 +3587,7 @@
   1527:35 03              ldi 3 
   1529:22                 lt? 
   152a:30 0017            bnt code_1544 
-  152d:38 0148          pushi 148 // $148 put
+  152d:38 0148          pushi 148                      // $148 put
   1530:76               push0 
   1531:81 98              lag  
   1533:4a 04             send 4 
@@ -3612,9 +3612,9 @@
   1554:32 000c            jmp code_1563 
 
         code_1557
-  1557:39 03            pushi 3 // $3 y
-  1559:38 0186          pushi 186 // $186 south
-  155c:39 04            pushi 4 // $4 x
+  1557:39 03            pushi 3                        // $3 y
+  1559:38 0186          pushi 186                      // $186 south
+  155c:39 04            pushi 4                        // $4 x
   155e:7c            pushSelf 
   155f:40 eaab 06        call proc_000e 6 
 
@@ -3633,12 +3633,12 @@
   1572:1a                 eq? 
   1573:30 001c            bnt code_1592 
   1576:78               push1 
-  1577:39 32            pushi 32 // $32 b-i2
-  1579:46 0326 0001 02  calle 326 procedure_0001 2 //  
+  1577:39 32            pushi 32                       // $32 b-i2
+  1579:46 0326 0001 02  calle 326 procedure_0001 2     //  
 
-  157f:38 008e          pushi 8e // $8e setScript
-  1582:39 04            pushi 4 // $4 x
-  1584:72 03a8          lofsa $03a8 // GilesAndRogerAppear
+  157f:38 008e          pushi 8e                       // $8e setScript
+  1582:39 04            pushi 4                        // $4 x
+  1584:72 03a8          lofsa $03a8                    // GilesAndRogerAppear
   1587:36                push 
   1588:7c            pushSelf 
   1589:67 1a             pTos register 
@@ -3649,9 +3649,9 @@
 
         code_1592
   1592:76               push0 
-  1593:45 04 00         callb procedure_0004 0 //  
+  1593:45 04 00         callb procedure_0004 0         //  
 
-  1596:39 6c            pushi 6c // $6c dispose
+  1596:39 6c            pushi 6c                       // $6c dispose
   1598:76               push0 
   1599:54 04             self 4 
 
@@ -3662,18 +3662,18 @@
   159f:35 02              ldi 2 
   15a1:1a                 eq? 
   15a2:30 001a            bnt code_15bf 
-  15a5:38 00a2          pushi a2 // $a2 setLoop
+  15a5:38 00a2          pushi a2                       // $a2 setLoop
   15a8:78               push1 
-  15a9:39 03            pushi 3 // $3 y
-  15ab:39 07            pushi 7 // $7 cel
+  15a9:39 03            pushi 3                        // $3 y
+  15ab:39 07            pushi 7                        // $7 cel
   15ad:78               push1 
   15ae:76               push0 
-  15af:38 0096          pushi 96 // $96 setCycle
+  15af:38 0096          pushi 96                       // $96 setCycle
   15b2:7a               push2 
   15b3:51 1a            class End 
   15b5:36                push 
   15b6:7c            pushSelf 
-  15b7:72 0ae6          lofsa $0ae6 // Hubert
+  15b7:72 0ae6          lofsa $0ae6                    // Hubert
   15ba:4a 14             send 14 
 
   15bc:32 004d            jmp code_160c 
@@ -3696,15 +3696,15 @@
   15d6:35 04              ldi 4 
   15d8:1a                 eq? 
   15d9:30 001e            bnt code_15fa 
-  15dc:39 3a            pushi 3a // $3a heading
+  15dc:39 3a            pushi 3a                       // $3a heading
   15de:78               push1 
   15df:76               push0 
-  15e0:38 011b          pushi 11b // $11b setMotion
-  15e3:39 03            pushi 3 // $3 y
+  15e0:38 011b          pushi 11b                      // $11b setMotion
+  15e3:39 03            pushi 3                        // $3 y
   15e5:51 5c            class MoveFwd 
   15e7:36                push 
   15e8:7a               push2 
-  15e9:39 37            pushi 37 // $37 yStep
+  15e9:39 37            pushi 37                       // $37 yStep
   15eb:76               push0 
   15ec:81 00              lag  
   15ee:4a 04             send 4 
@@ -3722,9 +3722,9 @@
   15fb:35 05              ldi 5 
   15fd:1a                 eq? 
   15fe:30 000b            bnt code_160c 
-  1601:38 0179          pushi 179 // $179 newRoom
+  1601:38 0179          pushi 179                      // $179 newRoom
   1604:78               push1 
-  1605:38 0190          pushi 190 // $190 roomToEdge
+  1605:38 0190          pushi 190                      // $190 roomToEdge
   1608:81 02              lag  
   160a:4a 06             send 6 
 
@@ -3754,7 +3754,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_164a
+    (method (changeState)                              // method_164a
   164a:87 01              lap param1 
   164c:65 0a             aTop state 
   164e:36                push 
@@ -3763,16 +3763,16 @@
   1652:1a                 eq? 
   1653:30 0068            bnt code_16be 
   1656:76               push0 
-  1657:45 03 00         callb procedure_0003 0 //  
+  1657:45 03 00         callb procedure_0003 0         //  
 
-  165a:39 3c            pushi 3c // $3c doit
+  165a:39 3c            pushi 3c                       // $3c doit
   165c:76               push0 
   165d:81 98              lag  
   165f:4a 04             send 4 
 
   1661:18                 not 
   1662:30 0009            bnt code_166e 
-  1665:38 008d          pushi 8d // $8d cue
+  1665:38 008d          pushi 8d                       // $8d cue
   1668:76               push0 
   1669:54 04             self 4 
 
@@ -3784,8 +3784,8 @@
   1672:1a                 eq? 
   1673:30 0031            bnt code_16a7 
   1676:78               push1 
-  1677:38 0091          pushi 91 // $91 globalize
-  167a:45 05 02         callb procedure_0005 2 //  
+  1677:38 0091          pushi 91                       // $91 globalize
+  167a:45 05 02         callb procedure_0005 2         //  
 
   167d:18                 not 
   167e:30 000f            bnt code_1690 
@@ -3798,7 +3798,7 @@
   168d:32 003e            jmp code_16ce 
 
         code_1690
-  1690:38 0148          pushi 148 // $148 put
+  1690:38 0148          pushi 148                      // $148 put
   1693:76               push0 
   1694:81 98              lag  
   1696:4a 04             send 4 
@@ -3812,14 +3812,14 @@
   16a4:32 0027            jmp code_16ce 
 
         code_16a7
-  16a7:38 0148          pushi 148 // $148 put
+  16a7:38 0148          pushi 148                      // $148 put
   16aa:76               push0 
   16ab:81 98              lag  
   16ad:4a 04             send 4 
 
-  16af:39 03            pushi 3 // $3 y
-  16b1:38 0186          pushi 186 // $186 south
-  16b4:39 05            pushi 5 // $5 view
+  16af:39 03            pushi 3                        // $3 y
+  16b1:38 0186          pushi 186                      // $186 south
+  16b4:39 05            pushi 5                        // $5 view
   16b6:7c            pushSelf 
   16b7:40 e953 06        call proc_000e 6 
 
@@ -3831,9 +3831,9 @@
   16c1:1a                 eq? 
   16c2:30 0009            bnt code_16ce 
   16c5:76               push0 
-  16c6:45 04 00         callb procedure_0004 0 //  
+  16c6:45 04 00         callb procedure_0004 0         //  
 
-  16c9:39 6c            pushi 6c // $6c dispose
+  16c9:39 6c            pushi 6c                       // $6c dispose
   16cb:76               push0 
   16cc:54 04             self 4 
 
@@ -3863,7 +3863,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_170c
+    (method (changeState)                              // method_170c
   170c:87 01              lap param1 
   170e:65 0a             aTop state 
   1710:36                push 
@@ -3876,23 +3876,23 @@
   171c:35 01              ldi 1 
   171e:1e                 gt? 
   171f:30 000f            bnt code_1731 
-  1722:39 03            pushi 3 // $3 y
-  1724:38 056e          pushi 56e // $56e sel_1390
-  1727:39 74            pushi 74 // $74 eachElementDo
+  1722:39 03            pushi 3                        // $3 y
+  1724:38 056e          pushi 56e                      // $56e sel_1390
+  1727:39 74            pushi 74                       // $74 eachElementDo
   1729:7c            pushSelf 
-  172a:47 0d 04 06      calle d procedure_0004 6 //  
+  172a:47 0d 04 06      calle d procedure_0004 6       //  
 
   172e:32 0095            jmp code_17c6 
 
         code_1731
-  1731:39 3c            pushi 3c // $3c doit
+  1731:39 3c            pushi 3c                       // $3c doit
   1733:76               push0 
   1734:81 98              lag  
   1736:4a 04             send 4 
 
   1738:18                 not 
   1739:30 0008            bnt code_1744 
-  173c:39 6c            pushi 6c // $6c dispose
+  173c:39 6c            pushi 6c                       // $6c dispose
   173e:76               push0 
   173f:54 04             self 4 
 
@@ -3900,7 +3900,7 @@
 
         code_1744
   1744:76               push0 
-  1745:45 03 00         callb procedure_0003 0 //  
+  1745:45 03 00         callb procedure_0003 0         //  
 
   1748:67 1a             pTos register 
   174a:35 01              ldi 1 
@@ -3924,23 +3924,23 @@
   1768:1e                 gt? 
   1769:30 0014            bnt code_1780 
   176c:76               push0 
-  176d:45 04 00         callb procedure_0004 0 //  
+  176d:45 04 00         callb procedure_0004 0         //  
 
-  1770:38 0148          pushi 148 // $148 put
+  1770:38 0148          pushi 148                      // $148 put
   1773:76               push0 
   1774:81 98              lag  
   1776:4a 04             send 4 
 
-  1778:39 6c            pushi 6c // $6c dispose
+  1778:39 6c            pushi 6c                       // $6c dispose
   177a:76               push0 
   177b:54 04             self 4 
 
   177d:32 0046            jmp code_17c6 
 
         code_1780
-  1780:38 008e          pushi 8e // $8e setScript
+  1780:38 008e          pushi 8e                       // $8e setScript
   1783:7a               push2 
-  1784:72 19b4          lofsa $19b4 // KickBeggar
+  1784:72 19b4          lofsa $19b4                    // KickBeggar
   1787:36                push 
   1788:7c            pushSelf 
   1789:54 08             self 8 
@@ -3979,9 +3979,9 @@
   17b9:1a                 eq? 
   17ba:30 0009            bnt code_17c6 
   17bd:76               push0 
-  17be:45 04 00         callb procedure_0004 0 //  
+  17be:45 04 00         callb procedure_0004 0         //  
 
-  17c1:39 6c            pushi 6c // $6c dispose
+  17c1:39 6c            pushi 6c                       // $6c dispose
   17c3:76               push0 
   17c4:54 04             self 4 
 
@@ -4011,7 +4011,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1804
+    (method (changeState)                              // method_1804
   1804:87 01              lap param1 
   1806:65 0a             aTop state 
   1808:36                push 
@@ -4020,11 +4020,11 @@
   180c:1a                 eq? 
   180d:30 0012            bnt code_1822 
   1810:76               push0 
-  1811:45 03 00         callb procedure_0003 0 //  
+  1811:45 03 00         callb procedure_0003 0         //  
 
-  1814:38 008e          pushi 8e // $8e setScript
+  1814:38 008e          pushi 8e                       // $8e setScript
   1817:7a               push2 
-  1818:72 19b4          lofsa $19b4 // KickBeggar
+  1818:72 19b4          lofsa $19b4                    // KickBeggar
   181b:36                push 
   181c:7c            pushSelf 
   181d:54 08             self 8 
@@ -4050,9 +4050,9 @@
   1839:1a                 eq? 
   183a:30 0009            bnt code_1846 
   183d:76               push0 
-  183e:45 04 00         callb procedure_0004 0 //  
+  183e:45 04 00         callb procedure_0004 0         //  
 
-  1841:39 6c            pushi 6c // $6c dispose
+  1841:39 6c            pushi 6c                       // $6c dispose
   1843:76               push0 
   1844:54 04             self 4 
 
@@ -4081,7 +4081,7 @@
         caller $0
         next $0
     )
-    (method (changeState) // method_1884
+    (method (changeState)                              // method_1884
   1884:87 01              lap param1 
   1886:65 0a             aTop state 
   1888:36                push 
@@ -4089,20 +4089,20 @@
   188a:35 00              ldi 0 
   188c:1a                 eq? 
   188d:30 001b            bnt code_18ab 
-  1890:39 06            pushi 6 // $6 loop
+  1890:39 06            pushi 6                        // $6 loop
   1892:78               push1 
   1893:78               push1 
-  1894:39 07            pushi 7 // $7 cel
+  1894:39 07            pushi 7                        // $7 cel
   1896:78               push1 
   1897:76               push0 
-  1898:38 0096          pushi 96 // $96 setCycle
-  189b:39 04            pushi 4 // $4 x
+  1898:38 0096          pushi 96                       // $96 setCycle
+  189b:39 04            pushi 4                        // $4 x
   189d:51 19            class CT 
   189f:36                push 
   18a0:7a               push2 
   18a1:78               push1 
   18a2:7c            pushSelf 
-  18a3:72 0ae6          lofsa $0ae6 // Hubert
+  18a3:72 0ae6          lofsa $0ae6                    // Hubert
   18a6:4a 18             send 18 
 
   18a8:32 00fa            jmp code_19a5 
@@ -4112,16 +4112,16 @@
   18ac:35 01              ldi 1 
   18ae:1a                 eq? 
   18af:30 0048            bnt code_18fa 
-  18b2:39 05            pushi 5 // $5 view
+  18b2:39 05            pushi 5                        // $5 view
   18b4:78               push1 
-  18b5:38 0188          pushi 188 // $188 picAngle
-  18b8:39 06            pushi 6 // $6 loop
+  18b5:38 0188          pushi 188                      // $188 picAngle
+  18b8:39 06            pushi 6                        // $6 loop
   18ba:78               push1 
   18bb:7a               push2 
-  18bc:39 07            pushi 7 // $7 cel
+  18bc:39 07            pushi 7                        // $7 cel
   18be:78               push1 
   18bf:76               push0 
-  18c0:38 0096          pushi 96 // $96 setCycle
+  18c0:38 0096          pushi 96                       // $96 setCycle
   18c3:7a               push2 
   18c4:51 1a            class End 
   18c6:36                push 
@@ -4129,14 +4129,14 @@
   18c8:81 00              lag  
   18ca:4a 1a             send 1a 
 
-  18cc:39 fc            pushi fc // $fc syncTime
-  18ce:39 04            pushi 4 // $4 x
+  18cc:39 fc            pushi fc                       // $fc syncTime
+  18ce:39 04            pushi 4                        // $4 x
   18d0:76               push0 
-  18d1:72 0ae6          lofsa $0ae6 // Hubert
+  18d1:72 0ae6          lofsa $0ae6                    // Hubert
   18d4:4a 04             send 4 
 
   18d6:36                push 
-  18d7:39 04            pushi 4 // $4 x
+  18d7:39 04            pushi 4                        // $4 x
   18d9:76               push0 
   18da:81 00              lag  
   18dc:4a 04             send 4 
@@ -4144,12 +4144,12 @@
   18de:04                 sub 
   18df:20                 ge? 
   18e0:30 0010            bnt code_18f3 
-  18e3:38 0096          pushi 96 // $96 setCycle
+  18e3:38 0096          pushi 96                       // $96 setCycle
   18e6:7a               push2 
   18e7:51 1a            class End 
   18e9:36                push 
   18ea:7c            pushSelf 
-  18eb:72 0ae6          lofsa $0ae6 // Hubert
+  18eb:72 0ae6          lofsa $0ae6                    // Hubert
   18ee:4a 08             send 8 
 
   18f0:32 00b2            jmp code_19a5 
@@ -4164,14 +4164,14 @@
   18fb:35 02              ldi 2 
   18fd:1a                 eq? 
   18fe:30 0037            bnt code_1938 
-  1901:39 fc            pushi fc // $fc syncTime
-  1903:39 04            pushi 4 // $4 x
+  1901:39 fc            pushi fc                       // $fc syncTime
+  1903:39 04            pushi 4                        // $4 x
   1905:76               push0 
-  1906:72 0ae6          lofsa $0ae6 // Hubert
+  1906:72 0ae6          lofsa $0ae6                    // Hubert
   1909:4a 04             send 4 
 
   190b:36                push 
-  190c:39 04            pushi 4 // $4 x
+  190c:39 04            pushi 4                        // $4 x
   190e:76               push0 
   190f:81 00              lag  
   1911:4a 04             send 4 
@@ -4179,12 +4179,12 @@
   1913:04                 sub 
   1914:20                 ge? 
   1915:30 0010            bnt code_1928 
-  1918:38 0096          pushi 96 // $96 setCycle
+  1918:38 0096          pushi 96                       // $96 setCycle
   191b:7a               push2 
   191c:51 1b            class Beg 
   191e:36                push 
   191f:7c            pushSelf 
-  1920:72 0ae6          lofsa $0ae6 // Hubert
+  1920:72 0ae6          lofsa $0ae6                    // Hubert
   1923:4a 08             send 8 
 
   1925:32 0004            jmp code_192c 
@@ -4194,10 +4194,10 @@
   192a:65 10             aTop cycles 
 
         code_192c
-  192c:39 06            pushi 6 // $6 loop
+  192c:39 06            pushi 6                        // $6 loop
   192e:78               push1 
   192f:76               push0 
-  1930:72 0ae6          lofsa $0ae6 // Hubert
+  1930:72 0ae6          lofsa $0ae6                    // Hubert
   1933:4a 06             send 6 
 
   1935:32 006d            jmp code_19a5 
@@ -4229,13 +4229,13 @@
   195b:35 05              ldi 5 
   195d:1a                 eq? 
   195e:30 0019            bnt code_197a 
-  1961:39 05            pushi 5 // $5 view
+  1961:39 05            pushi 5                        // $5 view
   1963:78               push1 
-  1964:38 0188          pushi 188 // $188 picAngle
-  1967:39 06            pushi 6 // $6 loop
+  1964:38 0188          pushi 188                      // $188 picAngle
+  1967:39 06            pushi 6                        // $6 loop
   1969:78               push1 
   196a:7a               push2 
-  196b:38 0096          pushi 96 // $96 setCycle
+  196b:38 0096          pushi 96                       // $96 setCycle
   196e:7a               push2 
   196f:51 1b            class Beg 
   1971:36                push 
@@ -4251,12 +4251,12 @@
   197d:1a                 eq? 
   197e:30 0018            bnt code_1999 
   1981:78               push1 
-  1982:39 03            pushi 3 // $3 y
-  1984:45 02 02         callb procedure_0002 2 //  
+  1982:39 03            pushi 3                        // $3 y
+  1984:45 02 02         callb procedure_0002 2         //  
 
-  1987:38 008e          pushi 8e // $8e setScript
-  198a:39 03            pushi 3 // $3 y
-  198c:72 00e0          lofsa $00e0 // MoveBack
+  1987:38 008e          pushi 8e                       // $8e setScript
+  198a:39 03            pushi 3                        // $3 y
+  198c:72 00e0          lofsa $00e0                    // MoveBack
   198f:36                push 
   1990:7c            pushSelf 
   1991:7a               push2 
@@ -4270,7 +4270,7 @@
   199a:35 07              ldi 7 
   199c:1a                 eq? 
   199d:30 0005            bnt code_19a5 
-  19a0:39 6c            pushi 6c // $6c dispose
+  19a0:39 6c            pushi 6c                       // $6c dispose
   19a2:76               push0 
   19a3:54 04             self 4 
 
@@ -4301,7 +4301,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_19e2
+    (method (changeState)                              // method_19e2
   19e2:87 01              lap param1 
   19e4:65 0a             aTop state 
   19e6:36                push 
@@ -4310,15 +4310,15 @@
   19ea:1a                 eq? 
   19eb:30 0015            bnt code_1a03 
   19ee:76               push0 
-  19ef:45 03 00         callb procedure_0003 0 //  
+  19ef:45 03 00         callb procedure_0003 0         //  
 
   19f2:6b 1a            ipToa register 
-  19f4:39 03            pushi 3 // $3 y
+  19f4:39 03            pushi 3                        // $3 y
   19f6:89 00              lsg  
-  19f8:72 0ae6          lofsa $0ae6 // Hubert
+  19f8:72 0ae6          lofsa $0ae6                    // Hubert
   19fb:36                push 
   19fc:7c            pushSelf 
-  19fd:45 09 06         callb procedure_0009 6 //  
+  19fd:45 09 06         callb procedure_0009 6         //  
 
   1a00:32 0077            jmp code_1a7a 
 
@@ -4353,9 +4353,9 @@
   1a2d:35 02              ldi 2 
   1a2f:1a                 eq? 
   1a30:30 000e            bnt code_1a41 
-  1a33:38 008e          pushi 8e // $8e setScript
+  1a33:38 008e          pushi 8e                       // $8e setScript
   1a36:7a               push2 
-  1a37:72 19b4          lofsa $19b4 // KickBeggar
+  1a37:72 19b4          lofsa $19b4                    // KickBeggar
   1a3a:36                push 
   1a3b:7c            pushSelf 
   1a3c:54 08             self 8 
@@ -4394,9 +4394,9 @@
   1a6d:1a                 eq? 
   1a6e:30 0009            bnt code_1a7a 
   1a71:76               push0 
-  1a72:45 04 00         callb procedure_0004 0 //  
+  1a72:45 04 00         callb procedure_0004 0         //  
 
-  1a75:39 6c            pushi 6c // $6c dispose
+  1a75:39 6c            pushi 6c                       // $6c dispose
   1a77:76               push0 
   1a78:54 04             self 4 
 
@@ -4426,7 +4426,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1ab8
+    (method (changeState)                              // method_1ab8
   1ab8:87 01              lap param1 
   1aba:65 0a             aTop state 
   1abc:36                push 
@@ -4435,7 +4435,7 @@
   1ac0:1a                 eq? 
   1ac1:30 0077            bnt code_1b3b 
   1ac4:76               push0 
-  1ac5:45 03 00         callb procedure_0003 0 //  
+  1ac5:45 03 00         callb procedure_0003 0         //  
 
   1ac8:6b 1a            ipToa register 
   1aca:89 7e              lsg  
@@ -4491,11 +4491,11 @@
   1b1a:32 001a            jmp code_1b37 
 
         code_1b1d
-  1b1d:39 03            pushi 3 // $3 y
+  1b1d:39 03            pushi 3                        // $3 y
   1b1f:89 7e              lsg  
   1b21:7a               push2 
-  1b22:39 03            pushi 3 // $3 y
-  1b24:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  1b22:39 03            pushi 3                        // $3 y
+  1b24:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   1b2a:30 000a            bnt code_1b37 
   1b2d:7a               push2 
@@ -4515,12 +4515,12 @@
   1b3e:1a                 eq? 
   1b3f:30 0018            bnt code_1b5a 
   1b42:78               push1 
-  1b43:39 03            pushi 3 // $3 y
-  1b45:45 02 02         callb procedure_0002 2 //  
+  1b43:39 03            pushi 3                        // $3 y
+  1b45:45 02 02         callb procedure_0002 2         //  
 
-  1b48:38 008e          pushi 8e // $8e setScript
-  1b4b:39 03            pushi 3 // $3 y
-  1b4d:72 00e0          lofsa $00e0 // MoveBack
+  1b48:38 008e          pushi 8e                       // $8e setScript
+  1b4b:39 03            pushi 3                        // $3 y
+  1b4d:72 00e0          lofsa $00e0                    // MoveBack
   1b50:36                push 
   1b51:7c            pushSelf 
   1b52:7a               push2 
@@ -4535,9 +4535,9 @@
   1b5d:1a                 eq? 
   1b5e:30 0009            bnt code_1b6a 
   1b61:76               push0 
-  1b62:45 04 00         callb procedure_0004 0 //  
+  1b62:45 04 00         callb procedure_0004 0         //  
 
-  1b65:39 6c            pushi 6c // $6c dispose
+  1b65:39 6c            pushi 6c                       // $6c dispose
   1b67:76               push0 
   1b68:54 04             self 4 
 
@@ -4567,7 +4567,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1ba8
+    (method (changeState)                              // method_1ba8
   1ba8:87 01              lap param1 
   1baa:65 0a             aTop state 
   1bac:36                push 
@@ -4576,7 +4576,7 @@
   1bb0:1a                 eq? 
   1bb1:30 0138            bnt code_1cec 
   1bb4:76               push0 
-  1bb5:45 03 00         callb procedure_0003 0 //  
+  1bb5:45 03 00         callb procedure_0003 0         //  
 
   1bb8:6b 1a            ipToa register 
   1bba:89 82              lsg  
@@ -4589,8 +4589,8 @@
   1bc7:20                 ge? 
   1bc8:30 0042            bnt code_1c0d 
   1bcb:78               push1 
-  1bcc:39 0a            pushi a // $a nsLeft
-  1bce:45 05 02         callb procedure_0005 2 //  
+  1bcc:39 0a            pushi a                        // $a nsLeft
+  1bce:45 05 02         callb procedure_0005 2         //  
 
   1bd1:18                 not 
   1bd2:30 0038            bnt code_1c0d 
@@ -4677,13 +4677,13 @@
   1c48:1a                 eq? 
   1c49:30 0090            bnt code_1cdc 
   1c4c:78               push1 
-  1c4d:39 0a            pushi a // $a nsLeft
-  1c4f:45 05 02         callb procedure_0005 2 //  
+  1c4d:39 0a            pushi a                        // $a nsLeft
+  1c4f:45 05 02         callb procedure_0005 2         //  
 
   1c52:30 004f            bnt code_1ca4 
   1c55:78               push1 
-  1c56:38 0092          pushi 92 // $92 cycleCnt
-  1c59:45 05 02         callb procedure_0005 2 //  
+  1c56:38 0092          pushi 92                       // $92 cycleCnt
+  1c59:45 05 02         callb procedure_0005 2         //  
 
   1c5c:30 000d            bnt code_1c6c 
   1c5f:7a               push2 
@@ -4773,9 +4773,9 @@
   1cd9:32 000c            jmp code_1ce8 
 
         code_1cdc
-  1cdc:39 03            pushi 3 // $3 y
-  1cde:38 0186          pushi 186 // $186 south
-  1ce1:39 06            pushi 6 // $6 loop
+  1cdc:39 03            pushi 3                        // $3 y
+  1cde:38 0186          pushi 186                      // $186 south
+  1ce1:39 06            pushi 6                        // $6 loop
   1ce3:7c            pushSelf 
   1ce4:40 e326 06        call proc_000e 6 
 
@@ -4790,8 +4790,8 @@
   1cef:1a                 eq? 
   1cf0:30 003b            bnt code_1d2e 
   1cf3:78               push1 
-  1cf4:39 0a            pushi a // $a nsLeft
-  1cf6:45 05 02         callb procedure_0005 2 //  
+  1cf4:39 0a            pushi a                        // $a nsLeft
+  1cf6:45 05 02         callb procedure_0005 2         //  
 
   1cf9:30 0026            bnt code_1d22 
   1cfc:67 1a             pTos register 
@@ -4799,14 +4799,14 @@
   1d00:20                 ge? 
   1d01:30 001e            bnt code_1d22 
   1d04:78               push1 
-  1d05:38 0092          pushi 92 // $92 cycleCnt
-  1d08:45 05 02         callb procedure_0005 2 //  
+  1d05:38 0092          pushi 92                       // $92 cycleCnt
+  1d08:45 05 02         callb procedure_0005 2         //  
 
   1d0b:18                 not 
   1d0c:30 0013            bnt code_1d22 
-  1d0f:38 008e          pushi 8e // $8e setScript
-  1d12:39 04            pushi 4 // $4 x
-  1d14:72 03a8          lofsa $03a8 // GilesAndRogerAppear
+  1d0f:38 008e          pushi 8e                       // $8e setScript
+  1d12:39 04            pushi 4                        // $4 x
+  1d14:72 03a8          lofsa $03a8                    // GilesAndRogerAppear
   1d17:36                push 
   1d18:7c            pushSelf 
   1d19:67 1a             pTos register 
@@ -4817,9 +4817,9 @@
 
         code_1d22
   1d22:76               push0 
-  1d23:45 04 00         callb procedure_0004 0 //  
+  1d23:45 04 00         callb procedure_0004 0         //  
 
-  1d26:39 6c            pushi 6c // $6c dispose
+  1d26:39 6c            pushi 6c                       // $6c dispose
   1d28:76               push0 
   1d29:54 04             self 4 
 
@@ -4830,18 +4830,18 @@
   1d2f:35 02              ldi 2 
   1d31:1a                 eq? 
   1d32:30 001a            bnt code_1d4f 
-  1d35:38 00a2          pushi a2 // $a2 setLoop
+  1d35:38 00a2          pushi a2                       // $a2 setLoop
   1d38:78               push1 
-  1d39:39 03            pushi 3 // $3 y
-  1d3b:39 07            pushi 7 // $7 cel
+  1d39:39 03            pushi 3                        // $3 y
+  1d3b:39 07            pushi 7                        // $7 cel
   1d3d:78               push1 
   1d3e:76               push0 
-  1d3f:38 0096          pushi 96 // $96 setCycle
+  1d3f:38 0096          pushi 96                       // $96 setCycle
   1d42:7a               push2 
   1d43:51 1a            class End 
   1d45:36                push 
   1d46:7c            pushSelf 
-  1d47:72 0ae6          lofsa $0ae6 // Hubert
+  1d47:72 0ae6          lofsa $0ae6                    // Hubert
   1d4a:4a 14             send 14 
 
   1d4c:32 0054            jmp code_1da3 
@@ -4852,8 +4852,8 @@
   1d52:1a                 eq? 
   1d53:30 0016            bnt code_1d6c 
   1d56:78               push1 
-  1d57:39 4b            pushi 4b // $4b said
-  1d59:46 0326 0001 02  calle 326 procedure_0001 2 //  
+  1d57:39 4b            pushi 4b                       // $4b said
+  1d59:46 0326 0001 02  calle 326 procedure_0001 2     //  
 
   1d5f:7a               push2 
   1d60:5b 02 ba           lea 2 ba 
@@ -4868,15 +4868,15 @@
   1d6d:35 04              ldi 4 
   1d6f:1a                 eq? 
   1d70:30 001e            bnt code_1d91 
-  1d73:39 3a            pushi 3a // $3a heading
+  1d73:39 3a            pushi 3a                       // $3a heading
   1d75:78               push1 
   1d76:76               push0 
-  1d77:38 011b          pushi 11b // $11b setMotion
-  1d7a:39 03            pushi 3 // $3 y
+  1d77:38 011b          pushi 11b                      // $11b setMotion
+  1d7a:39 03            pushi 3                        // $3 y
   1d7c:51 5c            class MoveFwd 
   1d7e:36                push 
   1d7f:7a               push2 
-  1d80:39 37            pushi 37 // $37 yStep
+  1d80:39 37            pushi 37                       // $37 yStep
   1d82:76               push0 
   1d83:81 00              lag  
   1d85:4a 04             send 4 
@@ -4894,9 +4894,9 @@
   1d92:35 05              ldi 5 
   1d94:1a                 eq? 
   1d95:30 000b            bnt code_1da3 
-  1d98:38 0179          pushi 179 // $179 newRoom
+  1d98:38 0179          pushi 179                      // $179 newRoom
   1d9b:78               push1 
-  1d9c:38 0190          pushi 190 // $190 roomToEdge
+  1d9c:38 0190          pushi 190                      // $190 roomToEdge
   1d9f:81 02              lag  
   1da1:4a 06             send 6 
 
@@ -4927,7 +4927,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1de2
+    (method (changeState)                              // method_1de2
   1de2:87 01              lap param1 
   1de4:65 0a             aTop state 
   1de6:36                push 
@@ -4936,7 +4936,7 @@
   1dea:1a                 eq? 
   1deb:30 00d0            bnt code_1ebe 
   1dee:76               push0 
-  1def:45 03 00         callb procedure_0003 0 //  
+  1def:45 03 00         callb procedure_0003 0         //  
 
   1df2:6b 1a            ipToa register 
   1df4:89 82              lsg  
@@ -4944,8 +4944,8 @@
   1df8:1a                 eq? 
   1df9:30 002b            bnt code_1e27 
   1dfc:78               push1 
-  1dfd:39 19            pushi 19 // $19 time
-  1dff:45 05 02         callb procedure_0005 2 //  
+  1dfd:39 19            pushi 19                       // $19 time
+  1dff:45 05 02         callb procedure_0005 2         //  
 
   1e02:30 0022            bnt code_1e27 
   1e05:67 1a             pTos register 
@@ -4988,8 +4988,8 @@
   1e40:1a                 eq? 
   1e41:30 003b            bnt code_1e7f 
   1e44:78               push1 
-  1e45:39 19            pushi 19 // $19 time
-  1e47:45 05 02         callb procedure_0005 2 //  
+  1e45:39 19            pushi 19                       // $19 time
+  1e47:45 05 02         callb procedure_0005 2         //  
 
   1e4a:18                 not 
   1e4b:30 0031            bnt code_1e7f 
@@ -4998,8 +4998,8 @@
   1e52:1a                 eq? 
   1e53:30 001c            bnt code_1e72 
   1e56:78               push1 
-  1e57:38 0090          pushi 90 // $90 localize
-  1e5a:45 05 02         callb procedure_0005 2 //  
+  1e57:38 0090          pushi 90                       // $90 localize
+  1e5a:45 05 02         callb procedure_0005 2         //  
 
   1e5d:18                 not 
   1e5e:30 0011            bnt code_1e72 
@@ -5023,11 +5023,11 @@
   1e7c:32 00d9            jmp code_1f58 
 
         code_1e7f
-  1e7f:39 03            pushi 3 // $3 y
+  1e7f:39 03            pushi 3                        // $3 y
   1e81:89 82              lsg  
-  1e83:39 07            pushi 7 // $7 cel
-  1e85:39 09            pushi 9 // $9 nsTop
-  1e87:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  1e83:39 07            pushi 7                        // $7 cel
+  1e85:39 09            pushi 9                        // $9 nsTop
+  1e87:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   1e8d:2e 000f             bt code_1e9f 
   1e90:89 82              lsg  
@@ -5035,8 +5035,8 @@
   1e94:1a                 eq? 
   1e95:30 0017            bnt code_1eaf 
   1e98:78               push1 
-  1e99:39 19            pushi 19 // $19 time
-  1e9b:45 05 02         callb procedure_0005 2 //  
+  1e99:39 19            pushi 19                       // $19 time
+  1e9b:45 05 02         callb procedure_0005 2         //  
 
   1e9e:18                 not 
 
@@ -5051,9 +5051,9 @@
   1eac:32 00a9            jmp code_1f58 
 
         code_1eaf
-  1eaf:39 03            pushi 3 // $3 y
-  1eb1:38 0186          pushi 186 // $186 south
-  1eb4:39 07            pushi 7 // $7 cel
+  1eaf:39 03            pushi 3                        // $3 y
+  1eb1:38 0186          pushi 186                      // $186 south
+  1eb4:39 07            pushi 7                        // $7 cel
   1eb6:7c            pushSelf 
   1eb7:40 e153 06        call proc_000e 6 
 
@@ -5068,9 +5068,9 @@
   1ec7:35 ff              ldi ff 
   1ec9:1a                 eq? 
   1eca:30 0013            bnt code_1ee0 
-  1ecd:38 008e          pushi 8e // $8e setScript
-  1ed0:39 04            pushi 4 // $4 x
-  1ed2:72 03a8          lofsa $03a8 // GilesAndRogerAppear
+  1ecd:38 008e          pushi 8e                       // $8e setScript
+  1ed0:39 04            pushi 4                        // $4 x
+  1ed2:72 03a8          lofsa $03a8                    // GilesAndRogerAppear
   1ed5:36                push 
   1ed6:7c            pushSelf 
   1ed7:67 1a             pTos register 
@@ -5081,9 +5081,9 @@
 
         code_1ee0
   1ee0:76               push0 
-  1ee1:45 04 00         callb procedure_0004 0 //  
+  1ee1:45 04 00         callb procedure_0004 0         //  
 
-  1ee4:39 6c            pushi 6c // $6c dispose
+  1ee4:39 6c            pushi 6c                       // $6c dispose
   1ee6:76               push0 
   1ee7:54 04             self 4 
 
@@ -5094,18 +5094,18 @@
   1eed:35 02              ldi 2 
   1eef:1a                 eq? 
   1ef0:30 001a            bnt code_1f0d 
-  1ef3:38 00a2          pushi a2 // $a2 setLoop
+  1ef3:38 00a2          pushi a2                       // $a2 setLoop
   1ef6:78               push1 
-  1ef7:39 03            pushi 3 // $3 y
-  1ef9:39 07            pushi 7 // $7 cel
+  1ef7:39 03            pushi 3                        // $3 y
+  1ef9:39 07            pushi 7                        // $7 cel
   1efb:78               push1 
   1efc:76               push0 
-  1efd:38 0096          pushi 96 // $96 setCycle
+  1efd:38 0096          pushi 96                       // $96 setCycle
   1f00:7a               push2 
   1f01:51 1a            class End 
   1f03:36                push 
   1f04:7c            pushSelf 
-  1f05:72 0ae6          lofsa $0ae6 // Hubert
+  1f05:72 0ae6          lofsa $0ae6                    // Hubert
   1f08:4a 14             send 14 
 
   1f0a:32 004b            jmp code_1f58 
@@ -5128,15 +5128,15 @@
   1f22:35 04              ldi 4 
   1f24:1a                 eq? 
   1f25:30 001e            bnt code_1f46 
-  1f28:39 3a            pushi 3a // $3a heading
+  1f28:39 3a            pushi 3a                       // $3a heading
   1f2a:78               push1 
   1f2b:76               push0 
-  1f2c:38 011b          pushi 11b // $11b setMotion
-  1f2f:39 03            pushi 3 // $3 y
+  1f2c:38 011b          pushi 11b                      // $11b setMotion
+  1f2f:39 03            pushi 3                        // $3 y
   1f31:51 5c            class MoveFwd 
   1f33:36                push 
   1f34:7a               push2 
-  1f35:39 37            pushi 37 // $37 yStep
+  1f35:39 37            pushi 37                       // $37 yStep
   1f37:76               push0 
   1f38:81 00              lag  
   1f3a:4a 04             send 4 
@@ -5154,9 +5154,9 @@
   1f47:35 05              ldi 5 
   1f49:1a                 eq? 
   1f4a:30 000b            bnt code_1f58 
-  1f4d:38 0179          pushi 179 // $179 newRoom
+  1f4d:38 0179          pushi 179                      // $179 newRoom
   1f50:78               push1 
-  1f51:38 0190          pushi 190 // $190 roomToEdge
+  1f51:38 0190          pushi 190                      // $190 roomToEdge
   1f54:81 02              lag  
   1f56:4a 06             send 6 
 
@@ -5186,7 +5186,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_1f96
+    (method (changeState)                              // method_1f96
   1f96:87 01              lap param1 
   1f98:65 0a             aTop state 
   1f9a:36                push 
@@ -5195,7 +5195,7 @@
   1f9e:1a                 eq? 
   1f9f:30 0102            bnt code_20a4 
   1fa2:76               push0 
-  1fa3:45 03 00         callb procedure_0003 0 //  
+  1fa3:45 03 00         callb procedure_0003 0         //  
 
   1fa6:6b 1a            ipToa register 
   1fa8:89 82              lsg  
@@ -5203,8 +5203,8 @@
   1fac:1a                 eq? 
   1fad:30 0006            bnt code_1fb6 
   1fb0:78               push1 
-  1fb1:39 19            pushi 19 // $19 time
-  1fb3:45 05 02         callb procedure_0005 2 //  
+  1fb1:39 19            pushi 19                       // $19 time
+  1fb3:45 05 02         callb procedure_0005 2         //  
 
 
         code_1fb6
@@ -5214,16 +5214,16 @@
   1fbd:1a                 eq? 
   1fbe:30 006e            bnt code_202f 
   1fc1:78               push1 
-  1fc2:39 19            pushi 19 // $19 time
-  1fc4:45 05 02         callb procedure_0005 2 //  
+  1fc2:39 19            pushi 19                       // $19 time
+  1fc4:45 05 02         callb procedure_0005 2         //  
 
   1fc7:18                 not 
 
         code_1fc8
   1fc8:30 0064            bnt code_202f 
   1fcb:78               push1 
-  1fcc:39 51            pushi 51 // $51 button
-  1fce:45 05 02         callb procedure_0005 2 //  
+  1fcc:39 51            pushi 51                       // $51 button
+  1fce:45 05 02         callb procedure_0005 2         //  
 
   1fd1:18                 not 
   1fd2:30 0038            bnt code_200d 
@@ -5232,14 +5232,14 @@
   1fd9:1a                 eq? 
   1fda:30 001d            bnt code_1ffa 
   1fdd:78               push1 
-  1fde:39 11            pushi 11 // $11 signal
-  1fe0:45 05 02         callb procedure_0005 2 //  
+  1fde:39 11            pushi 11                       // $11 signal
+  1fe0:45 05 02         callb procedure_0005 2         //  
 
   1fe3:18                 not 
   1fe4:30 0013            bnt code_1ffa 
   1fe7:78               push1 
-  1fe8:39 11            pushi 11 // $11 signal
-  1fea:45 06 02         callb procedure_0006 2 //  
+  1fe8:39 11            pushi 11                       // $11 signal
+  1fea:45 06 02         callb procedure_0006 2         //  
 
   1fed:7a               push2 
   1fee:5b 02 4b           lea 2 4b 
@@ -5251,8 +5251,8 @@
 
         code_1ffa
   1ffa:78               push1 
-  1ffb:39 11            pushi 11 // $11 signal
-  1ffd:45 06 02         callb procedure_0006 2 //  
+  1ffb:39 11            pushi 11                       // $11 signal
+  1ffd:45 06 02         callb procedure_0006 2         //  
 
   2000:7a               push2 
   2001:5b 02 53           lea 2 53 
@@ -5290,8 +5290,8 @@
   2033:1a                 eq? 
   2034:30 002b            bnt code_2062 
   2037:78               push1 
-  2038:39 19            pushi 19 // $19 time
-  203a:45 05 02         callb procedure_0005 2 //  
+  2038:39 19            pushi 19                       // $19 time
+  203a:45 05 02         callb procedure_0005 2         //  
 
   203d:30 0022            bnt code_2062 
   2040:67 1a             pTos register 
@@ -5316,11 +5316,11 @@
   205f:32 0052            jmp code_20b4 
 
         code_2062
-  2062:39 03            pushi 3 // $3 y
+  2062:39 03            pushi 3                        // $3 y
   2064:89 82              lsg  
-  2066:39 07            pushi 7 // $7 cel
-  2068:39 09            pushi 9 // $9 nsTop
-  206a:46 03e7 0005 06  calle 3e7 procedure_0005 6 //  
+  2066:39 07            pushi 7                        // $7 cel
+  2068:39 09            pushi 9                        // $9 nsTop
+  206a:46 03e7 0005 06  calle 3e7 procedure_0005 6     //  
 
   2070:30 000d            bnt code_2080 
   2073:7a               push2 
@@ -5345,9 +5345,9 @@
   2092:32 001f            jmp code_20b4 
 
         code_2095
-  2095:39 03            pushi 3 // $3 y
-  2097:38 0186          pushi 186 // $186 south
-  209a:39 08            pushi 8 // $8 underBits
+  2095:39 03            pushi 3                        // $3 y
+  2097:38 0186          pushi 186                      // $186 south
+  209a:39 08            pushi 8                        // $8 underBits
   209c:7c            pushSelf 
   209d:40 df6d 06        call proc_000e 6 
 
@@ -5359,9 +5359,9 @@
   20a7:1a                 eq? 
   20a8:30 0009            bnt code_20b4 
   20ab:76               push0 
-  20ac:45 04 00         callb procedure_0004 0 //  
+  20ac:45 04 00         callb procedure_0004 0         //  
 
-  20af:39 6c            pushi 6c // $6c dispose
+  20af:39 6c            pushi 6c                       // $6c dispose
   20b1:76               push0 
   20b2:54 04             self 4 
 
@@ -5391,7 +5391,7 @@
         next $0
         notKilled $1
     )
-    (method (changeState) // method_20f2
+    (method (changeState)                              // method_20f2
   20f2:87 01              lap param1 
   20f4:65 0a             aTop state 
   20f6:36                push 
@@ -5400,12 +5400,12 @@
   20fa:1a                 eq? 
   20fb:30 0040            bnt code_213e 
   20fe:76               push0 
-  20ff:45 03 00         callb procedure_0003 0 //  
+  20ff:45 03 00         callb procedure_0003 0         //  
 
   2102:6b 1a            ipToa register 
   2104:78               push1 
-  2105:38 0091          pushi 91 // $91 globalize
-  2108:45 05 02         callb procedure_0005 2 //  
+  2105:38 0091          pushi 91                       // $91 globalize
+  2108:45 05 02         callb procedure_0005 2         //  
 
   210b:18                 not 
   210c:30 000d            bnt code_211c 
@@ -5445,14 +5445,14 @@
   2141:1a                 eq? 
   2142:30 002a            bnt code_216f 
   2145:78               push1 
-  2146:38 0091          pushi 91 // $91 globalize
-  2149:45 05 02         callb procedure_0005 2 //  
+  2146:38 0091          pushi 91                       // $91 globalize
+  2149:45 05 02         callb procedure_0005 2         //  
 
   214c:18                 not 
   214d:30 0013            bnt code_2163 
-  2150:38 008e          pushi 8e // $8e setScript
-  2153:39 04            pushi 4 // $4 x
-  2155:72 03a8          lofsa $03a8 // GilesAndRogerAppear
+  2150:38 008e          pushi 8e                       // $8e setScript
+  2153:39 04            pushi 4                        // $4 x
+  2155:72 03a8          lofsa $03a8                    // GilesAndRogerAppear
   2158:36                push 
   2159:7c            pushSelf 
   215a:67 1a             pTos register 
@@ -5463,9 +5463,9 @@
 
         code_2163
   2163:76               push0 
-  2164:45 04 00         callb procedure_0004 0 //  
+  2164:45 04 00         callb procedure_0004 0         //  
 
-  2167:39 6c            pushi 6c // $6c dispose
+  2167:39 6c            pushi 6c                       // $6c dispose
   2169:76               push0 
   216a:54 04             self 4 
 
@@ -5476,18 +5476,18 @@
   2170:35 02              ldi 2 
   2172:1a                 eq? 
   2173:30 001a            bnt code_2190 
-  2176:38 00a2          pushi a2 // $a2 setLoop
+  2176:38 00a2          pushi a2                       // $a2 setLoop
   2179:78               push1 
-  217a:39 03            pushi 3 // $3 y
-  217c:39 07            pushi 7 // $7 cel
+  217a:39 03            pushi 3                        // $3 y
+  217c:39 07            pushi 7                        // $7 cel
   217e:78               push1 
   217f:76               push0 
-  2180:38 0096          pushi 96 // $96 setCycle
+  2180:38 0096          pushi 96                       // $96 setCycle
   2183:7a               push2 
   2184:51 1a            class End 
   2186:36                push 
   2187:7c            pushSelf 
-  2188:72 0ae6          lofsa $0ae6 // Hubert
+  2188:72 0ae6          lofsa $0ae6                    // Hubert
   218b:4a 14             send 14 
 
   218d:32 004a            jmp code_21da 
@@ -5510,15 +5510,15 @@
   21a5:35 04              ldi 4 
   21a7:1a                 eq? 
   21a8:30 002f            bnt code_21da 
-  21ab:39 3a            pushi 3a // $3a heading
+  21ab:39 3a            pushi 3a                       // $3a heading
   21ad:78               push1 
   21ae:76               push0 
-  21af:38 011b          pushi 11b // $11b setMotion
-  21b2:39 03            pushi 3 // $3 y
+  21af:38 011b          pushi 11b                      // $11b setMotion
+  21b2:39 03            pushi 3                        // $3 y
   21b4:51 5c            class MoveFwd 
   21b6:36                push 
   21b7:7a               push2 
-  21b8:39 37            pushi 37 // $37 yStep
+  21b8:39 37            pushi 37                       // $37 yStep
   21ba:76               push0 
   21bb:81 00              lag  
   21bd:4a 04             send 4 
@@ -5530,12 +5530,12 @@
   21c4:4a 10             send 10 
 
   21c6:78               push1 
-  21c7:39 0a            pushi a // $a nsLeft
-  21c9:46 0326 0001 02  calle 326 procedure_0001 2 //  
+  21c7:39 0a            pushi a                        // $a nsLeft
+  21c9:46 0326 0001 02  calle 326 procedure_0001 2     //  
 
-  21cf:38 0179          pushi 179 // $179 newRoom
+  21cf:38 0179          pushi 179                      // $179 newRoom
   21d2:78               push1 
-  21d3:38 0190          pushi 190 // $190 roomToEdge
+  21d3:38 0190          pushi 190                      // $190 roomToEdge
   21d6:81 02              lag  
   21d8:4a 06             send 6 
 
@@ -5558,13 +5558,13 @@
 
         code_0018
   0018:30 0010            bnt code_002b 
-  001b:39 04            pushi 4 // $4 x
+  001b:39 04            pushi 4                        // $4 x
   001d:8f 01              lsp param1 
   001f:8f 02              lsp param2 
-  0021:39 50            pushi 50 // $50 title
-  0023:72 221f          lofsa $221f // ***STUB:
+  0021:39 50            pushi 50                       // $50 title
+  0023:72 221f          lofsa $221f                    // ***STUB:
   0026:36                push 
-  0027:47 ff 00 08      calle ff procedure_0000 8 //  
+  0027:47 ff 00 08      calle ff procedure_0000 8      //  
 
 
         code_002b
@@ -5574,7 +5574,7 @@
   0030:30 000d            bnt code_0040 
   0033:87 03              lap param3 
   0035:30 0008            bnt code_0040 
-  0038:38 008d          pushi 8d // $8d cue
+  0038:38 008d          pushi 8d                       // $8d cue
   003b:76               push0 
   003c:87 03              lap param3 
   003e:4a 04             send 4 
@@ -5585,16 +5585,16 @@
 )
 
 (procedure proc_0041
-  0041:39 06            pushi 6 // $6 loop
+  0041:39 06            pushi 6                        // $6 loop
   0043:7a               push2 
   0044:8f 01              lsp param1 
-  0046:38 03e7          pushi 3e7 // $3e7 sel_999
+  0046:38 03e7          pushi 3e7                      // $3e7 sel_999
   0049:78               push1 
   004a:5a 0002 01f2       lea 2 1f2 
   004f:36                push 
   0050:76               push0 
   0051:59 02            &rest 2 
-  0053:46 0353 0000 0c  calle 353 procedure_0000 c //  
+  0053:46 0353 0000 0c  calle 353 procedure_0000 c     //  
 
   0059:48                 ret 
 )

@@ -175,8 +175,8 @@
         themThreat $0
         themMills $0
     )
-    (method (minimax) // method_000e
-  000e:3f 09             link 9 // (var $9)
+    (method (minimax)                                  // method_000e
+  000e:3f 09             link 9                        // (var $9)
   0010:87 01              lap param1 
   0012:30 00d7            bnt code_00ec 
   0015:34 8000            ldi 8000 
@@ -195,7 +195,7 @@
   002c:a5 04              sat temp4 
   002e:a5 03              sat temp3 
   0030:a5 02              sat temp2 
-  0032:38 0222          pushi 222 // $222 findLoners
+  0032:38 0222          pushi 222                      // $222 findLoners
   0035:78               push1 
   0036:8f 04              lsp param4 
   0038:54 06             self 6 
@@ -204,8 +204,8 @@
   003c:6b 22            ipToa moves 
 
         code_003e
-  003e:38 0221          pushi 221 // $221 tryAMove
-  0041:39 06            pushi 6 // $6 loop
+  003e:38 0221          pushi 221                      // $221 tryAMove
+  0041:39 06            pushi 6                        // $6 loop
   0043:8d 05              lst temp5 
   0045:8d 06              lst temp6 
   0047:8d 07              lst temp7 
@@ -221,8 +221,8 @@
   005a:a5 06              sat temp6 
   005c:63 2a             pToa doTake 
   005e:a5 07              sat temp7 
-  0060:38 021a          pushi 21a // $21a minimax
-  0063:39 05            pushi 5 // $5 view
+  0060:38 021a          pushi 21a                      // $21a minimax
+  0063:39 05            pushi 5                        // $5 view
   0065:8f 01              lsp param1 
   0067:35 01              ldi 1 
   0069:04                 sub 
@@ -276,7 +276,7 @@
   00b5:65 28             aTop doTo 
   00b7:85 07              lat temp7 
   00b9:65 2a             aTop doTake 
-  00bb:38 0225          pushi 225 // $225 unDoMove
+  00bb:38 0225          pushi 225                      // $225 unDoMove
   00be:7a               push2 
   00bf:8f 03              lsp param3 
   00c1:8f 04              lsp param4 
@@ -307,7 +307,7 @@
   00e9:32 0008            jmp code_00f4 
 
         code_00ec
-  00ec:38 021b          pushi 21b // $21b eval
+  00ec:38 021b          pushi 21b                      // $21b eval
   00ef:76               push0 
   00f0:54 04             self 4 
 
@@ -318,8 +318,8 @@
   00f6:48                 ret 
     )
 
-    (method (eval) // method_0528
-  0528:3f 02             link 2 // (var $2)
+    (method (eval)                                     // method_0528
+  0528:3f 02             link 2                        // (var $2)
   052a:67 22             pTos moves 
   052c:35 10              ldi 10 
   052e:22                 lt? 
@@ -338,11 +338,11 @@
   0543:63 34             pToa themThreat 
   0545:02                 add 
   0546:a5 01              sat temp1 
-  0548:39 1f            pushi 1f // $1f style
+  0548:39 1f            pushi 1f                       // $1f style
   054a:85 00              lat temp0 
   054c:06                 mul 
   054d:36                push 
-  054e:39 20            pushi 20 // $20 state
+  054e:39 20            pushi 20                       // $20 state
   0550:85 01              lat temp1 
   0552:06                 mul 
   0553:04                 sub 
@@ -350,14 +350,14 @@
   0555:32 0016            jmp code_056e 
 
         code_0558
-  0558:39 1f            pushi 1f // $1f style
+  0558:39 1f            pushi 1f                       // $1f style
   055a:63 2c             pToa us 
   055c:06                 mul 
   055d:36                push 
   055e:63 30             pToa usMills 
   0560:02                 add 
   0561:a5 00              sat temp0 
-  0563:39 20            pushi 20 // $20 state
+  0563:39 20            pushi 20                       // $20 state
   0565:63 32             pToa them 
   0567:06                 mul 
   0568:36                push 
@@ -372,8 +372,8 @@
   0573:48                 ret 
     )
 
-    (method (tally) // method_0574
-  0574:3f 03             link 3 // (var $3)
+    (method (tally)                                    // method_0574
+  0574:3f 03             link 3                        // (var $3)
   0576:8f 01              lsp param1 
   0578:35 fc              ldi fc 
   057a:12                 and 
@@ -469,8 +469,8 @@
   0600:35 02              ldi 2 
   0602:24                 le? 
   0603:30 000e            bnt code_0614 
-  0606:38 021c          pushi 21c // $21c tally
-  0609:39 03            pushi 3 // $3 y
+  0606:38 021c          pushi 21c                      // $21c tally
+  0609:39 03            pushi 3                        // $3 y
   060b:87 01              lap param1 
   060d:9b 44             lsli local68 
   060f:8f 02              lsp param2 
@@ -482,12 +482,12 @@
   0614:48                 ret 
     )
 
-    (method (tryAPlace) // method_0305
+    (method (tryAPlace)                                // method_0305
   0305:8f 01              lsp param1 
   0307:35 ec              ldi ec 
   0309:1c                 ne? 
   030a:30 001b            bnt code_0328 
-  030d:38 021c          pushi 21c // $21c tally
+  030d:38 021c          pushi 21c                      // $21c tally
   0310:7a               push2 
   0311:8f 01              lsp param1 
   0313:87 02              lap param2 
@@ -532,7 +532,7 @@
   034d:35 00              ldi 0 
   034f:1a                 eq? 
   0350:30 ffd9            bnt code_032c 
-  0353:38 021c          pushi 21c // $21c tally
+  0353:38 021c          pushi 21c                      // $21c tally
   0356:7a               push2 
   0357:8f 01              lsp param1 
   0359:8f 02              lsp param2 
@@ -553,12 +553,12 @@
   0371:48                 ret 
     )
 
-    (method (tryAFrom) // method_0372
+    (method (tryAFrom)                                 // method_0372
   0372:8f 01              lsp param1 
   0374:35 ec              ldi ec 
   0376:1c                 ne? 
   0377:30 001b            bnt code_0395 
-  037a:38 021c          pushi 21c // $21c tally
+  037a:38 021c          pushi 21c                      // $21c tally
   037d:7a               push2 
   037e:8f 01              lsp param1 
   0380:8f 02              lsp param2 
@@ -601,7 +601,7 @@
   03ba:87 02              lap param2 
   03bc:1a                 eq? 
   03bd:30 ffd9            bnt code_0399 
-  03c0:38 021c          pushi 21c // $21c tally
+  03c0:38 021c          pushi 21c                      // $21c tally
   03c3:7a               push2 
   03c4:8f 01              lsp param1 
   03c6:87 02              lap param2 
@@ -624,12 +624,12 @@
   03de:48                 ret 
     )
 
-    (method (tryATo) // method_03df
+    (method (tryATo)                                   // method_03df
   03df:8f 02              lsp param2 
   03e1:35 ec              ldi ec 
   03e3:1c                 ne? 
   03e4:30 0018            bnt code_03ff 
-  03e7:38 021c          pushi 21c // $21c tally
+  03e7:38 021c          pushi 21c                      // $21c tally
   03ea:7a               push2 
   03eb:8f 02              lsp param2 
   03ed:87 03              lap param3 
@@ -711,7 +711,7 @@
   0465:35 00              ldi 0 
   0467:1a                 eq? 
   0468:30 ff94            bnt code_03ff 
-  046b:38 021c          pushi 21c // $21c tally
+  046b:38 021c          pushi 21c                      // $21c tally
   046e:7a               push2 
   046f:8f 02              lsp param2 
   0471:8f 03              lsp param3 
@@ -732,12 +732,12 @@
   0489:48                 ret 
     )
 
-    (method (tryATake) // method_048a
+    (method (tryATake)                                 // method_048a
   048a:8f 01              lsp param1 
   048c:35 ec              ldi ec 
   048e:1c                 ne? 
   048f:30 002a            bnt code_04bc 
-  0492:38 021c          pushi 21c // $21c tally
+  0492:38 021c          pushi 21c                      // $21c tally
   0495:7a               push2 
   0496:8f 01              lsp param1 
   0498:8f 03              lsp param3 
@@ -793,7 +793,7 @@
   04e4:30 ffd9            bnt code_04c0 
   04e7:87 02              lap param2 
   04e9:2e 000b             bt code_04f7 
-  04ec:38 0223          pushi 223 // $223 inMill
+  04ec:38 0223          pushi 223                      // $223 inMill
   04ef:7a               push2 
   04f0:8f 01              lsp param1 
   04f2:8f 03              lsp param3 
@@ -803,7 +803,7 @@
 
         code_04f7
   04f7:30 ffc6            bnt code_04c0 
-  04fa:38 021c          pushi 21c // $21c tally
+  04fa:38 021c          pushi 21c                      // $21c tally
   04fd:7a               push2 
   04fe:8f 01              lsp param1 
   0500:87 03              lap param3 
@@ -837,7 +837,7 @@
   0527:48                 ret 
     )
 
-    (method (tryAMove) // method_00f7
+    (method (tryAMove)                                 // method_00f7
   00f7:87 01              lap param1 
   00f9:65 26             aTop doFrom 
   00fb:87 02              lap param2 
@@ -848,8 +848,8 @@
   0105:35 ec              ldi ec 
   0107:1c                 ne? 
   0108:30 002f            bnt code_013a 
-  010b:38 0220          pushi 220 // $220 tryATake
-  010e:39 03            pushi 3 // $3 y
+  010b:38 0220          pushi 220                      // $220 tryATake
+  010e:39 03            pushi 3                        // $3 y
   0110:67 2a             pTos doTake 
   0112:8f 06              lsp param6 
   0114:8f 05              lsp param5 
@@ -864,8 +864,8 @@
   0123:32 0013            jmp code_0139 
 
         code_0126
-  0126:38 0221          pushi 221 // $221 tryAMove
-  0129:39 06            pushi 6 // $6 loop
+  0126:38 0221          pushi 221                      // $221 tryAMove
+  0129:39 06            pushi 6                        // $6 loop
   012b:67 26             pTos doFrom 
   012d:67 28             pTos doTo 
   012f:67 2a             pTos doTake 
@@ -883,7 +883,7 @@
   013c:35 12              ldi 12 
   013e:24                 le? 
   013f:30 0039            bnt code_017b 
-  0142:38 021d          pushi 21d // $21d tryAPlace
+  0142:38 021d          pushi 21d                      // $21d tryAPlace
   0145:7a               push2 
   0146:67 28             pTos doTo 
   0148:8f 04              lsp param4 
@@ -894,15 +894,15 @@
   014f:35 ec              ldi ec 
   0151:1c                 ne? 
   0152:30 0020            bnt code_0175 
-  0155:38 0223          pushi 223 // $223 inMill
+  0155:38 0223          pushi 223                      // $223 inMill
   0158:78               push1 
   0159:67 28             pTos doTo 
   015b:54 06             self 6 
 
   015d:30 000f            bnt code_016f 
-  0160:38 0220          pushi 220 // $220 tryATake
-  0163:39 03            pushi 3 // $3 y
-  0165:39 ec            pushi ec // $ec pickLoop
+  0160:38 0220          pushi 220                      // $220 tryATake
+  0163:39 03            pushi 3                        // $3 y
+  0165:39 ec            pushi ec                       // $ec pickLoop
   0167:8f 06              lsp param6 
   0169:8f 05              lsp param5 
   016b:54 0a             self a 
@@ -924,8 +924,8 @@
   017d:35 ec              ldi ec 
   017f:1c                 ne? 
   0180:30 004a            bnt code_01cd 
-  0183:38 021f          pushi 21f // $21f tryATo
-  0186:39 03            pushi 3 // $3 y
+  0183:38 021f          pushi 21f                      // $21f tryATo
+  0186:39 03            pushi 3                        // $3 y
   0188:67 26             pTos doFrom 
   018a:67 28             pTos doTo 
   018c:8f 04              lsp param4 
@@ -936,15 +936,15 @@
   0193:35 ec              ldi ec 
   0195:1c                 ne? 
   0196:30 0020            bnt code_01b9 
-  0199:38 0223          pushi 223 // $223 inMill
+  0199:38 0223          pushi 223                      // $223 inMill
   019c:78               push1 
   019d:67 28             pTos doTo 
   019f:54 06             self 6 
 
   01a1:30 000f            bnt code_01b3 
-  01a4:38 0220          pushi 220 // $220 tryATake
-  01a7:39 03            pushi 3 // $3 y
-  01a9:39 ec            pushi ec // $ec pickLoop
+  01a4:38 0220          pushi 220                      // $220 tryATake
+  01a7:39 03            pushi 3                        // $3 y
+  01a9:39 ec            pushi ec                       // $ec pickLoop
   01ab:8f 06              lsp param6 
   01ad:8f 05              lsp param5 
   01af:54 0a             self a 
@@ -957,8 +957,8 @@
   01b6:32 0014            jmp code_01cd 
 
         code_01b9
-  01b9:38 0221          pushi 221 // $221 tryAMove
-  01bc:39 06            pushi 6 // $6 loop
+  01b9:38 0221          pushi 221                      // $221 tryAMove
+  01bc:39 06            pushi 6                        // $6 loop
   01be:67 26             pTos doFrom 
   01c0:67 28             pTos doTo 
   01c2:67 2a             pTos doTake 
@@ -970,7 +970,7 @@
   01cc:48                 ret 
 
         code_01cd
-  01cd:38 021e          pushi 21e // $21e tryAFrom
+  01cd:38 021e          pushi 21e                      // $21e tryAFrom
   01d0:7a               push2 
   01d1:67 26             pTos doFrom 
   01d3:8f 04              lsp param4 
@@ -981,8 +981,8 @@
   01da:35 ec              ldi ec 
   01dc:1c                 ne? 
   01dd:30 004d            bnt code_022d 
-  01e0:38 021f          pushi 21f // $21f tryATo
-  01e3:39 03            pushi 3 // $3 y
+  01e0:38 021f          pushi 21f                      // $21f tryATo
+  01e3:39 03            pushi 3                        // $3 y
   01e5:67 26             pTos doFrom 
   01e7:67 28             pTos doTo 
   01e9:8f 04              lsp param4 
@@ -993,15 +993,15 @@
   01f0:35 ec              ldi ec 
   01f2:1c                 ne? 
   01f3:30 0020            bnt code_0216 
-  01f6:38 0223          pushi 223 // $223 inMill
+  01f6:38 0223          pushi 223                      // $223 inMill
   01f9:78               push1 
   01fa:67 28             pTos doTo 
   01fc:54 06             self 6 
 
   01fe:30 000f            bnt code_0210 
-  0201:38 0220          pushi 220 // $220 tryATake
-  0204:39 03            pushi 3 // $3 y
-  0206:39 ec            pushi ec // $ec pickLoop
+  0201:38 0220          pushi 220                      // $220 tryATake
+  0204:39 03            pushi 3                        // $3 y
+  0206:39 ec            pushi ec                       // $ec pickLoop
   0208:8f 06              lsp param6 
   020a:8f 05              lsp param5 
   020c:54 0a             self a 
@@ -1014,8 +1014,8 @@
   0213:32 001a            jmp code_0230 
 
         code_0216
-  0216:38 0221          pushi 221 // $221 tryAMove
-  0219:39 06            pushi 6 // $6 loop
+  0216:38 0221          pushi 221                      // $221 tryAMove
+  0219:39 06            pushi 6                        // $6 loop
   021b:67 26             pTos doFrom 
   021d:67 28             pTos doTo 
   021f:67 2a             pTos doTake 
@@ -1035,8 +1035,8 @@
   0230:48                 ret 
     )
 
-    (method (findLoners) // method_0716
-  0716:3f 01             link 1 // (var $1)
+    (method (findLoners)                               // method_0716
+  0716:3f 01             link 1                        // (var $1)
   0718:35 00              ldi 0 
   071a:a5 00              sat temp0 
 
@@ -1050,7 +1050,7 @@
   0728:87 01              lap param1 
   072a:1a                 eq? 
   072b:30 000f            bnt code_073d 
-  072e:38 0223          pushi 223 // $223 inMill
+  072e:38 0223          pushi 223                      // $223 inMill
   0731:78               push1 
   0732:8d 00              lst temp0 
   0734:54 06             self 6 
@@ -1069,8 +1069,8 @@
   0744:48                 ret 
     )
 
-    (method (inMill) // method_06a8
-  06a8:3f 04             link 4 // (var $4)
+    (method (inMill)                                   // method_06a8
+  06a8:3f 04             link 4                        // (var $4)
   06aa:87 01              lap param1 
   06ac:9b 00             lsli local0 
   06ae:35 03              ldi 3 
@@ -1141,12 +1141,12 @@
   0715:48                 ret 
     )
 
-    (method (doMove) // method_0231
+    (method (doMove)                                   // method_0231
   0231:67 26             pTos doFrom 
   0233:35 ec              ldi ec 
   0235:1c                 ne? 
   0236:30 0018            bnt code_0251 
-  0239:38 021c          pushi 21c // $21c tally
+  0239:38 021c          pushi 21c                      // $21c tally
   023c:7a               push2 
   023d:67 26             pTos doFrom 
   023f:87 01              lap param1 
@@ -1163,7 +1163,7 @@
   024f:b3 00             sali local0 
 
         code_0251
-  0251:38 021c          pushi 21c // $21c tally
+  0251:38 021c          pushi 21c                      // $21c tally
   0254:7a               push2 
   0255:67 28             pTos doTo 
   0257:8f 01              lsp param1 
@@ -1180,7 +1180,7 @@
   026b:35 ec              ldi ec 
   026d:1c                 ne? 
   026e:30 0027            bnt code_0298 
-  0271:38 021c          pushi 21c // $21c tally
+  0271:38 021c          pushi 21c                      // $21c tally
   0274:7a               push2 
   0275:67 2a             pTos doTake 
   0277:87 02              lap param2 
@@ -1212,12 +1212,12 @@
   029a:48                 ret 
     )
 
-    (method (unDoMove) // method_029b
+    (method (unDoMove)                                 // method_029b
   029b:67 2a             pTos doTake 
   029d:35 ec              ldi ec 
   029f:1c                 ne? 
   02a0:30 0027            bnt code_02ca 
-  02a3:38 021c          pushi 21c // $21c tally
+  02a3:38 021c          pushi 21c                      // $21c tally
   02a6:7a               push2 
   02a7:67 2a             pTos doTake 
   02a9:8f 02              lsp param2 
@@ -1243,7 +1243,7 @@
   02c8:b3 00             sali local0 
 
         code_02ca
-  02ca:38 021c          pushi 21c // $21c tally
+  02ca:38 021c          pushi 21c                      // $21c tally
   02cd:7a               push2 
   02ce:67 28             pTos doTo 
   02d0:87 01              lap param1 
@@ -1262,7 +1262,7 @@
   02e4:35 ec              ldi ec 
   02e6:1c                 ne? 
   02e7:30 0018            bnt code_0302 
-  02ea:38 021c          pushi 21c // $21c tally
+  02ea:38 021c          pushi 21c                      // $21c tally
   02ed:7a               push2 
   02ee:67 26             pTos doFrom 
   02f0:8f 01              lsp param1 
@@ -1281,8 +1281,8 @@
   0304:48                 ret 
     )
 
-    (method (isValid) // method_0615
-  0615:3f 01             link 1 // (var $1)
+    (method (isValid)                                  // method_0615
+  0615:3f 01             link 1                        // (var $1)
   0617:8f 01              lsp param1 
   0619:35 ec              ldi ec 
   061b:1c                 ne? 
@@ -1358,14 +1358,14 @@
   0689:48                 ret 
 
         code_068a
-  068a:38 0223          pushi 223 // $223 inMill
+  068a:38 0223          pushi 223                      // $223 inMill
   068d:7a               push2 
   068e:8f 03              lsp param3 
-  0690:39 10            pushi 10 // $10 lsRight
+  0690:39 10            pushi 10                       // $10 lsRight
   0692:54 08             self 8 
 
   0694:30 000e            bnt code_06a5 
-  0697:38 0222          pushi 222 // $222 findLoners
+  0697:38 0222          pushi 222                      // $222 findLoners
   069a:78               push1 
   069b:78               push1 
   069c:54 06             self 6 
@@ -1380,7 +1380,7 @@
   06a7:48                 ret 
     )
 
-    (method (lowerize) // method_0745
+    (method (lowerize)                                 // method_0745
   0745:8f 01              lsp param1 
   0747:35 20              ldi 20 
   0749:1e                 gt? 

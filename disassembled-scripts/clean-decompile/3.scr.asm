@@ -34,24 +34,24 @@
         caller $0
         next $0
     )
-    (method (dispose) // method_0125
-  0125:39 6c            pushi 6c // $6c dispose
+    (method (dispose)                                  // method_0125
+  0125:39 6c            pushi 6c                       // $6c dispose
   0127:76               push0
-  0128:72 0304          lofsa $0304 // pipeSound
+  0128:72 0304          lofsa $0304                    // pipeSound
   012b:4a 04             send 4
 
-  012d:39 6c            pushi 6c // $6c dispose
+  012d:39 6c            pushi 6c                       // $6c dispose
   012f:76               push0
   0130:57 06 04         super Script 4
 
   0133:78               push1
-  0134:39 03            pushi 3 // $3 y
+  0134:39 03            pushi 3                        // $3 y
   0136:43 03 02         callk DisposeScript 2
 
   0139:48                 ret
     )
 
-    (method (changeState) // method_000e
+    (method (changeState)                              // method_000e
   000e:87 01              lap param1
   0010:65 0a             aTop state
   0012:36                push
@@ -65,28 +65,28 @@
   0020:35 01              ldi 1
   0022:a3 00              sal local0
   0024:76               push0
-  0025:45 03 00         callb procedure_0003 0 //
+  0025:45 03 00         callb procedure_0003 0         //
 
 
         code_0028
-  0028:39 6b            pushi 6b // $6b init
+  0028:39 6b            pushi 6b                       // $6b init
   002a:76               push0
-  002b:72 0180          lofsa $0180 // theFrame
+  002b:72 0180          lofsa $0180                    // theFrame
   002e:4a 04             send 4
 
-  0030:39 6b            pushi 6b // $6b init
+  0030:39 6b            pushi 6b                       // $6b init
   0032:76               push0
-  0033:72 01dc          lofsa $01dc // blowFace
+  0033:72 01dc          lofsa $01dc                    // blowFace
   0036:4a 04             send 4
 
-  0038:39 6b            pushi 6b // $6b init
+  0038:39 6b            pushi 6b                       // $6b init
   003a:76               push0
-  003b:72 0238          lofsa $0238 // blowPeepers
+  003b:72 0238          lofsa $0238                    // blowPeepers
   003e:4a 04             send 4
 
-  0040:39 6b            pushi 6b // $6b init
+  0040:39 6b            pushi 6b                       // $6b init
   0042:76               push0
-  0043:72 029e          lofsa $029e // blowMouth
+  0043:72 029e          lofsa $029e                    // blowMouth
   0046:4a 04             send 4
 
   0048:35 1e              ldi 1e
@@ -98,19 +98,19 @@
   0050:35 01              ldi 1
   0052:1a                 eq?
   0053:30 001c            bnt code_0072
-  0056:38 0096          pushi 96 // $96 setCycle
+  0056:38 0096          pushi 96                       // $96 setCycle
   0059:78               push1
   005a:51 1a            class End
   005c:36                push
-  005d:72 0238          lofsa $0238 // blowPeepers
+  005d:72 0238          lofsa $0238                    // blowPeepers
   0060:4a 06             send 6
 
-  0062:38 0096          pushi 96 // $96 setCycle
+  0062:38 0096          pushi 96                       // $96 setCycle
   0065:7a               push2
   0066:51 1b            class Beg
   0068:36                push
   0069:7c            pushSelf
-  006a:72 029e          lofsa $029e // blowMouth
+  006a:72 029e          lofsa $029e                    // blowMouth
   006d:4a 08             send 8
 
   006f:32 00b1            jmp code_0123
@@ -120,17 +120,17 @@
   0073:35 02              ldi 2
   0075:1a                 eq?
   0076:30 001c            bnt code_0095
-  0079:39 2a            pushi 2a // $2a play
+  0079:39 2a            pushi 2a                       // $2a play
   007b:76               push0
-  007c:72 0304          lofsa $0304 // pipeSound
+  007c:72 0304          lofsa $0304                    // pipeSound
   007f:4a 04             send 4
 
-  0081:38 0096          pushi 96 // $96 setCycle
+  0081:38 0096          pushi 96                       // $96 setCycle
   0084:7a               push2
   0085:51 17            class Fwd
   0087:36                push
   0088:7c            pushSelf
-  0089:72 029e          lofsa $029e // blowMouth
+  0089:72 029e          lofsa $029e                    // blowMouth
   008c:4a 08             send 8
 
   008e:35 5a              ldi 5a
@@ -142,11 +142,11 @@
   0096:35 03              ldi 3
   0098:1a                 eq?
   0099:30 0013            bnt code_00af
-  009c:38 0096          pushi 96 // $96 setCycle
+  009c:38 0096          pushi 96                       // $96 setCycle
   009f:78               push1
   00a0:51 1a            class End
   00a2:36                push
-  00a3:72 029e          lofsa $029e // blowMouth
+  00a3:72 029e          lofsa $029e                    // blowMouth
   00a6:4a 06             send 6
 
   00a8:35 78              ldi 78
@@ -158,12 +158,12 @@
   00b0:35 04              ldi 4
   00b2:1a                 eq?
   00b3:30 0010            bnt code_00c6
-  00b6:38 0096          pushi 96 // $96 setCycle
+  00b6:38 0096          pushi 96                       // $96 setCycle
   00b9:7a               push2
   00ba:51 1b            class Beg
   00bc:36                push
   00bd:7c            pushSelf
-  00be:72 0238          lofsa $0238 // blowPeepers
+  00be:72 0238          lofsa $0238                    // blowPeepers
   00c1:4a 08             send 8
 
   00c3:32 005d            jmp code_0123
@@ -182,24 +182,24 @@
   00d5:35 06              ldi 6
   00d7:1a                 eq?
   00d8:30 0027            bnt code_0102
-  00db:39 6c            pushi 6c // $6c dispose
+  00db:39 6c            pushi 6c                       // $6c dispose
   00dd:76               push0
-  00de:72 01dc          lofsa $01dc // blowFace
+  00de:72 01dc          lofsa $01dc                    // blowFace
   00e1:4a 04             send 4
 
-  00e3:39 6c            pushi 6c // $6c dispose
+  00e3:39 6c            pushi 6c                       // $6c dispose
   00e5:76               push0
-  00e6:72 0238          lofsa $0238 // blowPeepers
+  00e6:72 0238          lofsa $0238                    // blowPeepers
   00e9:4a 04             send 4
 
-  00eb:39 6c            pushi 6c // $6c dispose
+  00eb:39 6c            pushi 6c                       // $6c dispose
   00ed:76               push0
-  00ee:72 029e          lofsa $029e // blowMouth
+  00ee:72 029e          lofsa $029e                    // blowMouth
   00f1:4a 04             send 4
 
-  00f3:39 6c            pushi 6c // $6c dispose
+  00f3:39 6c            pushi 6c                       // $6c dispose
   00f5:76               push0
-  00f6:72 0180          lofsa $0180 // theFrame
+  00f6:72 0180          lofsa $0180                    // theFrame
   00f9:4a 04             send 4
 
   00fb:35 03              ldi 3
@@ -214,18 +214,18 @@
   0109:83 00              lal local0
   010b:30 0004            bnt code_0112
   010e:76               push0
-  010f:45 04 00         callb procedure_0004 0 //
+  010f:45 04 00         callb procedure_0004 0         //
 
 
         code_0112
-  0112:38 00c9          pushi c9 // $c9 disable
+  0112:38 00c9          pushi c9                       // $c9 disable
   0115:7a               push2
-  0116:39 04            pushi 4 // $4 x
-  0118:39 05            pushi 5 // $5 view
+  0116:39 04            pushi 4                        // $4 x
+  0118:39 05            pushi 5                        // $5 view
   011a:81 45              lag
   011c:4a 08             send 8
 
-  011e:39 6c            pushi 6c // $6c dispose
+  011e:39 6c            pushi 6c                       // $6c dispose
   0120:76               push0
   0121:54 04             self 4
 

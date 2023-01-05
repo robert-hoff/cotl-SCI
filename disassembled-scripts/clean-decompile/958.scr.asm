@@ -12,7 +12,7 @@
 
 // EXPORTED procedure #0 ()
 (procedure proc_000e
-  000e:3f 02             link 2 // (var $2)
+  000e:3f 02             link 2                        // (var $2)
   0010:8f 00              lsp paramTotal 
   0012:35 02              ldi 2 
   0014:04                 sub 
@@ -49,7 +49,7 @@
 
         code_0043
   0043:78               push1 
-  0044:38 03be          pushi 3be // $3be sel_958
+  0044:38 03be          pushi 3be                      // $3be sel_958
   0047:43 03 02         callk DisposeScript 2 
 
   004a:48                 ret 

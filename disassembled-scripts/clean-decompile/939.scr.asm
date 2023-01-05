@@ -20,7 +20,7 @@
         completed $0
         howManyCycles $ffff
     )
-    (method (init) // method_0004
+    (method (init)                                     // method_0004
   0004:8f 00              lsp paramTotal 
   0006:35 02              ldi 2 
   0008:20                 ge? 
@@ -35,7 +35,7 @@
   001a:65 0a             aTop caller 
 
         code_001c
-  001c:39 6b            pushi 6b // $6b init
+  001c:39 6b            pushi 6b                       // $6b init
   001e:78               push1 
   001f:8f 01              lsp param1 
   0021:57 16 06         super Cycle 6 
@@ -43,15 +43,15 @@
   0024:48                 ret 
     )
 
-    (method (doit) // method_0025
-  0025:3f 01             link 1 // (var $1)
-  0027:38 00d8          pushi d8 // $d8 nextCel
+    (method (doit)                                     // method_0025
+  0025:3f 01             link 1                        // (var $1)
+  0027:38 00d8          pushi d8                       // $d8 nextCel
   002a:76               push0 
   002b:54 04             self 4 
 
   002d:a5 00              sat temp0 
   002f:36                push 
-  0030:38 00dd          pushi dd // $dd lastCel
+  0030:38 00dd          pushi dd                       // $dd lastCel
   0033:76               push0 
   0034:63 08             pToa client 
   0036:4a 04             send 4 
@@ -67,14 +67,14 @@
   0044:63 0c             pToa cycleDir 
   0046:16                 neg 
   0047:65 0c             aTop cycleDir 
-  0049:38 00d9          pushi d9 // $d9 cycleDone
+  0049:38 00d9          pushi d9                       // $d9 cycleDone
   004c:76               push0 
   004d:54 04             self 4 
 
   004f:32 0009            jmp code_005b 
 
         code_0052
-  0052:39 07            pushi 7 // $7 cel
+  0052:39 07            pushi 7                        // $7 cel
   0054:78               push1 
   0055:8d 00              lst temp0 
   0057:63 08             pToa client 
@@ -85,12 +85,12 @@
   005b:48                 ret 
     )
 
-    (method (cycleDone) // method_005c
+    (method (cycleDone)                                // method_005c
   005c:63 12             pToa howManyCycles 
   005e:30 001b            bnt code_007c 
-  0061:39 07            pushi 7 // $7 cel
+  0061:39 07            pushi 7                        // $7 cel
   0063:78               push1 
-  0064:38 00d8          pushi d8 // $d8 nextCel
+  0064:38 00d8          pushi d8                       // $d8 nextCel
   0067:76               push0 
   0068:54 04             self 4 
 
@@ -108,7 +108,7 @@
         code_007c
   007c:35 01              ldi 1 
   007e:65 10             aTop completed 
-  0080:38 00da          pushi da // $da motionCue
+  0080:38 00da          pushi da                       // $da motionCue
   0083:76               push0 
   0084:54 04             self 4 
 

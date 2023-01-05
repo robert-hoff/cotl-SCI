@@ -99,8 +99,8 @@
         vWalking $0
         vStopped $0
     )
-    (method (init) // method_002e
-  002e:39 6b            pushi 6b // $6b init
+    (method (init)                                     // method_002e
+  002e:39 6b            pushi 6b                       // $6b init
   0030:76               push0 
   0031:59 01            &rest 1 
   0033:57 56 04         super StopWalk 4 
@@ -165,33 +165,33 @@
   008a:48                 ret 
     )
 
-    (method (doit) // method_008b
-  008b:3f 01             link 1 // (var $1)
-  008d:39 07            pushi 7 // $7 cel
+    (method (doit)                                     // method_008b
+  008b:3f 01             link 1                        // (var $1)
+  008d:39 07            pushi 7                        // $7 cel
   008f:76               push0 
   0090:63 08             pToa client 
   0092:4a 04             send 4 
 
   0094:a5 00              sat temp0 
-  0096:39 3c            pushi 3c // $3c doit
+  0096:39 3c            pushi 3c                       // $3c doit
   0098:76               push0 
   0099:57 56 04         super StopWalk 4 
 
   009c:8d 00              lst temp0 
-  009e:39 07            pushi 7 // $7 cel
+  009e:39 07            pushi 7                        // $7 cel
   00a0:76               push0 
   00a1:63 08             pToa client 
   00a3:4a 04             send 4 
 
   00a5:1c                 ne? 
   00a6:30 0031            bnt code_00da 
-  00a9:39 07            pushi 7 // $7 cel
+  00a9:39 07            pushi 7                        // $7 cel
   00ab:76               push0 
   00ac:63 08             pToa client 
   00ae:4a 04             send 4 
 
   00b0:9b 44             lsli local68 
-  00b2:39 06            pushi 6 // $6 loop
+  00b2:39 06            pushi 6                        // $6 loop
   00b4:76               push0 
   00b5:63 08             pToa client 
   00b7:4a 04             send 4 
@@ -208,12 +208,12 @@
   00c6:43 3c 04         callk Random 4 
 
   00c9:a3 00              sal local0 
-  00cb:39 2b            pushi 2b // $2b number
+  00cb:39 2b            pushi 2b                       // $2b number
   00cd:78               push1 
   00ce:9b 02             lsli local2 
-  00d0:39 2a            pushi 2a // $2a play
+  00d0:39 2a            pushi 2a                       // $2a play
   00d2:76               push0 
-  00d3:72 012c          lofsa $012c // stepSound
+  00d3:72 012c          lofsa $012c                    // stepSound
   00d6:4a 0a             send a 
 
   00d8:c1 a4              +ag  
@@ -249,7 +249,7 @@
 
 
 (procedure proc_0004
-  0004:3f 01             link 1 // (var $1)
+  0004:3f 01             link 1                        // (var $1)
   0006:35 00              ldi 0 
   0008:a5 00              sat temp0 
 
@@ -260,14 +260,14 @@
   000f:30 001b            bnt code_002d 
   0012:85 00              lat temp0 
   0014:9b 05             lsli local5 
-  0016:39 05            pushi 5 // $5 view
+  0016:39 05            pushi 5                        // $5 view
   0018:76               push0 
   0019:81 00              lag  
   001b:4a 04             send 4 
 
   001d:1a                 eq? 
   001e:30 0007            bnt code_0028 
-  0021:39 08            pushi 8 // $8 underBits
+  0021:39 08            pushi 8                        // $8 underBits
   0023:85 00              lat temp0 
   0025:06                 mul 
   0026:a3 01              sal local1 

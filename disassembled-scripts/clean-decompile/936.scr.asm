@@ -43,25 +43,25 @@
         lsBottom $0
         lsRight $0
     )
-    (method (dispose) // method_00b1
+    (method (dispose)                                  // method_00b1
   00b1:78               push1 
   00b2:76               push0 
   00b3:43 15 02         callk SetPort 2 
 
   00b6:7a               push2 
-  00b7:39 08            pushi 8 // $8 underBits
+  00b7:39 08            pushi 8                        // $8 underBits
   00b9:67 26             pTos underBits 
   00bb:43 6c 04         callk Graph 4 
 
   00be:7a               push2 
-  00bf:39 08            pushi 8 // $8 underBits
+  00bf:39 08            pushi 8                        // $8 underBits
   00c1:67 28             pTos pUnderBits 
   00c3:43 6c 04         callk Graph 4 
 
   00c6:63 24             pToa eraseOnly 
   00c8:30 0013            bnt code_00de 
-  00cb:39 06            pushi 6 // $6 loop
-  00cd:39 0c            pushi c // $c nsRight
+  00cb:39 06            pushi 6                        // $6 loop
+  00cd:39 0c            pushi c                        // $c nsRight
   00cf:67 36             pTos lsTop 
   00d1:67 38             pTos lsLeft 
   00d3:67 3a             pTos lsBottom 
@@ -72,8 +72,8 @@
   00db:32 000f            jmp code_00ed 
 
         code_00de
-  00de:39 05            pushi 5 // $5 view
-  00e0:39 0d            pushi d // $d lsTop
+  00de:39 05            pushi 5                        // $5 view
+  00e0:39 0d            pushi d                        // $d lsTop
   00e2:67 36             pTos lsTop 
   00e4:67 38             pTos lsLeft 
   00e6:67 3a             pTos lsBottom 
@@ -101,8 +101,8 @@
   0103:00                bnot 
     )
 
-    (method (open) // method_0004
-  0004:3f 02             link 2 // (var $2)
+    (method (open)                                     // method_0004
+  0004:3f 02             link 2                        // (var $2)
   0006:78               push1 
   0007:76               push0 
   0008:43 15 02         callk SetPort 2 
@@ -145,8 +145,8 @@
   0043:63 34             pToa shadowWid 
   0045:02                 add 
   0046:65 3a             aTop lsBottom 
-  0048:39 06            pushi 6 // $6 loop
-  004a:39 07            pushi 7 // $7 cel
+  0048:39 06            pushi 6                        // $6 loop
+  004a:39 07            pushi 7                        // $7 cel
   004c:67 36             pTos lsTop 
   004e:67 38             pTos lsLeft 
   0050:67 3a             pTos lsBottom 
@@ -159,8 +159,8 @@
   005c:35 ff              ldi ff 
   005e:1c                 ne? 
   005f:30 0012            bnt code_0074 
-  0062:39 06            pushi 6 // $6 loop
-  0064:39 07            pushi 7 // $7 cel
+  0062:39 06            pushi 6                        // $6 loop
+  0064:39 07            pushi 7                        // $7 cel
   0066:67 36             pTos lsTop 
   0068:67 38             pTos lsLeft 
   006a:67 3a             pTos lsBottom 
@@ -171,7 +171,7 @@
   0072:65 28             aTop pUnderBits 
 
         code_0074
-  0074:39 0d            pushi d // $d lsTop
+  0074:39 0d            pushi d                        // $d lsTop
   0076:67 08             pTos top 
   0078:67 0a             pTos left 
   007a:67 0c             pTos bottom 
@@ -187,8 +187,8 @@
   008e:8d 01              lst temp1 
   0090:40 0284 1a        call proc_0318 1a 
 
-  0094:39 06            pushi 6 // $6 loop
-  0096:39 0c            pushi c // $c nsRight
+  0094:39 06            pushi 6                        // $6 loop
+  0096:39 0c            pushi c                        // $c nsRight
   0098:67 36             pTos lsTop 
   009a:67 38             pTos lsLeft 
   009c:67 3a             pTos lsBottom 
@@ -198,7 +198,7 @@
 
   00a4:34 0081            ldi 81 
   00a7:65 18             aTop type 
-  00a9:38 00b5          pushi b5 // $b5 open
+  00a9:38 00b5          pushi b5                       // $b5 open
   00ac:76               push0 
   00ad:57 38 04         super SysWindow 4 
 
@@ -251,8 +251,8 @@
         xOffset $0
         yOffset $0
     )
-    (method (open) // method_019c
-  019c:3f 06             link 6 // (var $6)
+    (method (open)                                     // method_019c
+  019c:3f 06             link 6                        // (var $6)
   019e:35 01              ldi 1 
   01a0:a5 00              sat temp0 
   01a2:67 14             pTos priority 
@@ -305,11 +305,11 @@
   01f2:63 4a             pToa topBordHgt 
   01f4:02                 add 
   01f5:65 56             aTop yOffset 
-  01f7:38 00b5          pushi b5 // $b5 open
+  01f7:38 00b5          pushi b5                       // $b5 open
   01fa:76               push0 
   01fb:57 3d 04         super BorderWindow 4 
 
-  01fe:39 0d            pushi d // $d lsTop
+  01fe:39 0d            pushi d                        // $d lsTop
   0200:8d 02              lst temp2 
   0202:8d 03              lst temp3 
   0204:8d 04              lst temp4 
@@ -333,8 +333,8 @@
   0225:76               push0 
   0226:43 15 02         callk SetPort 2 
 
-  0229:39 06            pushi 6 // $6 loop
-  022b:39 0c            pushi c // $c nsRight
+  0229:39 06            pushi 6                        // $6 loop
+  022b:39 0c            pushi c                        // $c nsRight
   022d:8d 02              lst temp2 
   022f:63 52             pToa bevWid 
   0231:04                 sub 
@@ -366,7 +366,7 @@
 
 
 (procedure proc_0318
-  0318:3f 02             link 2 // (var $2)
+  0318:3f 02             link 2                        // (var $2)
   031a:76               push0 
   031b:43 14 00         callk GetPort 0 
 
@@ -375,8 +375,8 @@
   0321:76               push0 
   0322:43 15 02         callk SetPort 2 
 
-  0325:39 08            pushi 8 // $8 underBits
-  0327:39 0b            pushi b // $b nsBottom
+  0325:39 08            pushi 8                        // $8 underBits
+  0327:39 0b            pushi b                        // $b nsBottom
   0329:8f 01              lsp param1 
   032b:8f 02              lsp param2 
   032d:8f 03              lsp param3 
@@ -408,8 +408,8 @@
   0359:87 0a              lap param10 
   035b:02                 add 
   035c:a7 03              sap param3 
-  035e:39 08            pushi 8 // $8 underBits
-  0360:39 0b            pushi b // $b nsBottom
+  035e:39 08            pushi 8                        // $8 underBits
+  0360:39 0b            pushi b                        // $b nsBottom
   0362:8f 01              lsp param1 
   0364:8f 02              lsp param2 
   0366:8f 01              lsp param1 
@@ -422,8 +422,8 @@
   0372:8f 0c              lsp param12 
   0374:43 6c 10         callk Graph 10 
 
-  0377:39 08            pushi 8 // $8 underBits
-  0379:39 0b            pushi b // $b nsBottom
+  0377:39 08            pushi 8                        // $8 underBits
+  0379:39 0b            pushi b                        // $b nsBottom
   037b:8f 03              lsp param3 
   037d:87 0a              lap param10 
   037f:04                 sub 
@@ -444,8 +444,8 @@
   0396:87 0a              lap param10 
   0398:22                 lt? 
   0399:30 005b            bnt code_03f7 
-  039c:39 08            pushi 8 // $8 underBits
-  039e:39 04            pushi 4 // $4 x
+  039c:39 08            pushi 8                        // $8 underBits
+  039e:39 04            pushi 4                        // $4 x
   03a0:8f 01              lsp param1 
   03a2:85 01              lat temp1 
   03a4:02                 add 
@@ -466,11 +466,11 @@
   03ba:36                push 
   03bb:8f 07              lsp param7 
   03bd:8f 0c              lsp param12 
-  03bf:39 ff            pushi ff // $ff syncNum
+  03bf:39 ff            pushi ff                       // $ff syncNum
   03c1:43 6c 10         callk Graph 10 
 
-  03c4:39 08            pushi 8 // $8 underBits
-  03c6:39 04            pushi 4 // $4 x
+  03c4:39 08            pushi 8                        // $8 underBits
+  03c6:39 04            pushi 4                        // $4 x
   03c8:8f 01              lsp param1 
   03ca:85 01              lat temp1 
   03cc:02                 add 
@@ -495,7 +495,7 @@
   03e8:36                push 
   03e9:8f 09              lsp param9 
   03eb:8f 0c              lsp param12 
-  03ed:39 ff            pushi ff // $ff syncNum
+  03ed:39 ff            pushi ff                       // $ff syncNum
   03ef:43 6c 10         callk Graph 10 
 
   03f2:c5 01              +at temp1 
@@ -504,8 +504,8 @@
         code_03f7
   03f7:87 0b              lap param11 
   03f9:30 003a            bnt code_0436 
-  03fc:39 08            pushi 8 // $8 underBits
-  03fe:39 0b            pushi b // $b nsBottom
+  03fc:39 08            pushi 8                        // $8 underBits
+  03fe:39 0b            pushi b                        // $b nsBottom
   0400:8f 01              lsp param1 
   0402:02                 add 
   0403:36                push 
@@ -523,8 +523,8 @@
   0415:8f 0c              lsp param12 
   0417:43 6c 10         callk Graph 10 
 
-  041a:39 08            pushi 8 // $8 underBits
-  041c:39 0b            pushi b // $b nsBottom
+  041a:39 08            pushi 8                        // $8 underBits
+  041c:39 0b            pushi b                        // $b nsBottom
   041e:8f 03              lsp param3 
   0420:8f 02              lsp param2 
   0422:87 0b              lap param11 
@@ -550,8 +550,8 @@
 )
 
 (procedure proc_043d
-  043d:3f 02             link 2 // (var $2)
-  043f:38 00b9          pushi b9 // $b9 bottom
+  043d:3f 02             link 2                        // (var $2)
+  043f:38 00b9          pushi b9                       // $b9 bottom
   0442:76               push0 
   0443:87 01              lap param1 
   0445:4a 04             send 4 
@@ -560,7 +560,7 @@
   0448:34 00b9            ldi b9 
   044b:1e                 gt? 
   044c:30 000d            bnt code_045c 
-  044f:38 00b9          pushi b9 // $b9 bottom
+  044f:38 00b9          pushi b9                       // $b9 bottom
   0452:3c                 dup 
   0453:76               push0 
   0454:87 01              lap param1 
@@ -570,7 +570,7 @@
   0459:32 001f            jmp code_047b 
 
         code_045c
-  045c:38 00b7          pushi b7 // $b7 top
+  045c:38 00b7          pushi b7                       // $b7 top
   045f:76               push0 
   0460:87 01              lap param1 
   0462:4a 04             send 4 
@@ -579,8 +579,8 @@
   0465:35 0a              ldi a 
   0467:22                 lt? 
   0468:30 000e            bnt code_0479 
-  046b:39 0a            pushi a // $a nsLeft
-  046d:38 00b7          pushi b7 // $b7 top
+  046b:39 0a            pushi a                        // $a nsLeft
+  046d:38 00b7          pushi b7                       // $b7 top
   0470:76               push0 
   0471:87 01              lap param1 
   0473:4a 04             send 4 
@@ -593,7 +593,7 @@
 
         code_047b
   047b:a5 01              sat temp1 
-  047d:38 00ba          pushi ba // $ba right
+  047d:38 00ba          pushi ba                       // $ba right
   0480:76               push0 
   0481:87 01              lap param1 
   0483:4a 04             send 4 
@@ -602,8 +602,8 @@
   0486:34 013b            ldi 13b 
   0489:1e                 gt? 
   048a:30 000f            bnt code_049c 
-  048d:38 013b          pushi 13b // $13b controls
-  0490:38 00ba          pushi ba // $ba right
+  048d:38 013b          pushi 13b                      // $13b controls
+  0490:38 00ba          pushi ba                       // $ba right
   0493:76               push0 
   0494:87 01              lap param1 
   0496:4a 04             send 4 
@@ -612,7 +612,7 @@
   0499:32 001f            jmp code_04bb 
 
         code_049c
-  049c:38 00b8          pushi b8 // $b8 left
+  049c:38 00b8          pushi b8                       // $b8 left
   049f:76               push0 
   04a0:87 01              lap param1 
   04a2:4a 04             send 4 
@@ -621,8 +621,8 @@
   04a5:35 05              ldi 5 
   04a7:22                 lt? 
   04a8:30 000e            bnt code_04b9 
-  04ab:39 05            pushi 5 // $5 view
-  04ad:38 00b8          pushi b8 // $b8 left
+  04ab:39 05            pushi 5                        // $5 view
+  04ad:38 00b8          pushi b8                       // $b8 left
   04b0:76               push0 
   04b1:87 01              lap param1 
   04b3:4a 04             send 4 
@@ -635,9 +635,9 @@
 
         code_04bb
   04bb:a5 00              sat temp0 
-  04bd:38 00b7          pushi b7 // $b7 top
+  04bd:38 00b7          pushi b7                       // $b7 top
   04c0:78               push1 
-  04c1:38 00b7          pushi b7 // $b7 top
+  04c1:38 00b7          pushi b7                       // $b7 top
   04c4:76               push0 
   04c5:87 01              lap param1 
   04c7:4a 04             send 4 
@@ -646,9 +646,9 @@
   04ca:85 01              lat temp1 
   04cc:02                 add 
   04cd:36                push 
-  04ce:38 00b9          pushi b9 // $b9 bottom
+  04ce:38 00b9          pushi b9                       // $b9 bottom
   04d1:78               push1 
-  04d2:38 00b9          pushi b9 // $b9 bottom
+  04d2:38 00b9          pushi b9                       // $b9 bottom
   04d5:76               push0 
   04d6:87 01              lap param1 
   04d8:4a 04             send 4 
@@ -657,9 +657,9 @@
   04db:85 01              lat temp1 
   04dd:02                 add 
   04de:36                push 
-  04df:38 00b8          pushi b8 // $b8 left
+  04df:38 00b8          pushi b8                       // $b8 left
   04e2:78               push1 
-  04e3:38 00b8          pushi b8 // $b8 left
+  04e3:38 00b8          pushi b8                       // $b8 left
   04e6:76               push0 
   04e7:87 01              lap param1 
   04e9:4a 04             send 4 
@@ -668,9 +668,9 @@
   04ec:85 00              lat temp0 
   04ee:02                 add 
   04ef:36                push 
-  04f0:38 00ba          pushi ba // $ba right
+  04f0:38 00ba          pushi ba                       // $ba right
   04f3:78               push1 
-  04f4:38 00ba          pushi ba // $ba right
+  04f4:38 00ba          pushi ba                       // $ba right
   04f7:76               push0 
   04f8:87 01              lap param1 
   04fa:4a 04             send 4 

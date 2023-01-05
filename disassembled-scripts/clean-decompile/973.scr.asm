@@ -21,12 +21,12 @@
         lastTime $ffff
         client $0
     )
-    (method (new) // method_0043
+    (method (new)                                      // method_0043
   0043:7c            pushSelf 
   0044:51 08            class Timer 
   0046:1a                 eq? 
   0047:30 0009            bnt code_0053 
-  004a:39 6a            pushi 6a // $6a new
+  004a:39 6a            pushi 6a                       // $6a new
   004c:76               push0 
   004d:57 00 04         super Obj 4 
 
@@ -39,24 +39,24 @@
   0054:48                 ret 
     )
 
-    (method (init) // method_0055
+    (method (init)                                     // method_0055
   0055:87 01              lap param1 
   0057:65 10             aTop client 
-  0059:39 73            pushi 73 // $73 add
+  0059:39 73            pushi 73                       // $73 add
   005b:78               push1 
   005c:7c            pushSelf 
   005d:81 07              lag  
   005f:4a 06             send 6 
 
-  0061:39 71            pushi 71 // $71 respondsTo
+  0061:39 71            pushi 71                       // $71 respondsTo
   0063:78               push1 
-  0064:38 0083          pushi 83 // $83 timer
+  0064:38 0083          pushi 83                       // $83 timer
   0067:87 01              lap param1 
   0069:4a 06             send 6 
 
   006b:30 0026            bnt code_0094 
   006e:78               push1 
-  006f:38 0083          pushi 83 // $83 timer
+  006f:38 0083          pushi 83                       // $83 timer
   0072:76               push0 
   0073:87 01              lap param1 
   0075:4a 04             send 4 
@@ -65,9 +65,9 @@
   0078:43 06 02         callk IsObject 2 
 
   007b:30 000d            bnt code_008b 
-  007e:39 6c            pushi 6c // $6c dispose
+  007e:39 6c            pushi 6c                       // $6c dispose
   0080:76               push0 
-  0081:38 0083          pushi 83 // $83 timer
+  0081:38 0083          pushi 83                       // $83 timer
   0084:76               push0 
   0085:87 01              lap param1 
   0087:4a 04             send 4 
@@ -76,7 +76,7 @@
 
 
         code_008b
-  008b:38 0083          pushi 83 // $83 timer
+  008b:38 0083          pushi 83                       // $83 timer
   008e:78               push1 
   008f:7c            pushSelf 
   0090:87 01              lap param1 
@@ -87,8 +87,8 @@
   0094:48                 ret 
     )
 
-    (method (doit) // method_0095
-  0095:3f 01             link 1 // (var $1)
+    (method (doit)                                     // method_0095
+  0095:3f 01             link 1                        // (var $1)
   0097:67 08             pTos cycleCnt 
   0099:35 ff              ldi ff 
   009b:1c                 ne? 
@@ -157,20 +157,20 @@
   00fd:48                 ret 
     )
 
-    (method (dispose) // method_00fe
+    (method (dispose)                                  // method_00fe
   00fe:78               push1 
   00ff:67 10             pTos client 
   0101:43 06 02         callk IsObject 2 
 
   0104:30 0016            bnt code_011d 
-  0107:39 71            pushi 71 // $71 respondsTo
+  0107:39 71            pushi 71                       // $71 respondsTo
   0109:78               push1 
-  010a:38 0083          pushi 83 // $83 timer
+  010a:38 0083          pushi 83                       // $83 timer
   010d:63 10             pToa client 
   010f:4a 06             send 6 
 
   0111:30 0009            bnt code_011d 
-  0114:38 0083          pushi 83 // $83 timer
+  0114:38 0083          pushi 83                       // $83 timer
   0117:78               push1 
   0118:76               push0 
   0119:63 10             pToa client 
@@ -183,8 +183,8 @@
   0121:48                 ret 
     )
 
-    (method (set) // method_015f
-  015f:3f 35             link 35 // (var $35)
+    (method (set)                                      // method_015f
+  015f:3f 35             link 35                       // (var $35)
   0161:81 03              lag  
   0163:a5 02              sat temp2 
   0165:36                push 
@@ -239,7 +239,7 @@
   01af:34 8000            ldi 8000 
   01b2:12                 and 
   01b3:30 0008            bnt code_01be 
-  01b6:39 6a            pushi 6a // $6a new
+  01b6:39 6a            pushi 6a                       // $6a new
   01b8:76               push0 
   01b9:54 04             self 4 
 
@@ -250,10 +250,10 @@
 
         code_01bf
   01bf:a5 00              sat temp0 
-  01c1:39 6b            pushi 6b // $6b init
+  01c1:39 6b            pushi 6b                       // $6b init
   01c3:78               push1 
   01c4:8f 01              lsp param1 
-  01c6:38 0092          pushi 92 // $92 cycleCnt
+  01c6:38 0092          pushi 92                       // $92 cycleCnt
   01c9:78               push1 
   01ca:8d 01              lst temp1 
   01cc:4a 0c             send c 
@@ -262,13 +262,13 @@
   01d0:48                 ret 
     )
 
-    (method (setCycle) // method_0139
-  0139:3f 01             link 1 // (var $1)
+    (method (setCycle)                                 // method_0139
+  0139:3f 01             link 1                        // (var $1)
   013b:67 04             pTos -info- 
   013d:34 8000            ldi 8000 
   0140:12                 and 
   0141:30 0008            bnt code_014c 
-  0144:39 6a            pushi 6a // $6a new
+  0144:39 6a            pushi 6a                       // $6a new
   0146:76               push0 
   0147:54 04             self 4 
 
@@ -279,10 +279,10 @@
 
         code_014d
   014d:a5 00              sat temp0 
-  014f:39 6b            pushi 6b // $6b init
+  014f:39 6b            pushi 6b                       // $6b init
   0151:78               push1 
   0152:8f 01              lsp param1 
-  0154:38 0092          pushi 92 // $92 cycleCnt
+  0154:38 0092          pushi 92                       // $92 cycleCnt
   0157:78               push1 
   0158:8f 02              lsp param2 
   015a:4a 0c             send c 
@@ -291,8 +291,8 @@
   015e:48                 ret 
     )
 
-    (method (setReal) // method_01d1
-  01d1:3f 02             link 2 // (var $2)
+    (method (setReal)                                  // method_01d1
+  01d1:3f 02             link 2                        // (var $2)
   01d3:87 02              lap param2 
   01d5:a5 01              sat temp1 
   01d7:8f 00              lsp paramTotal 
@@ -323,7 +323,7 @@
   01fe:34 8000            ldi 8000 
   0201:12                 and 
   0202:30 0008            bnt code_020d 
-  0205:39 6a            pushi 6a // $6a new
+  0205:39 6a            pushi 6a                       // $6a new
   0207:76               push0 
   0208:54 04             self 4 
 
@@ -334,10 +334,10 @@
 
         code_020e
   020e:a5 00              sat temp0 
-  0210:39 6b            pushi 6b // $6b init
+  0210:39 6b            pushi 6b                       // $6b init
   0212:78               push1 
   0213:8f 01              lsp param1 
-  0215:38 0085          pushi 85 // $85 seconds
+  0215:38 0085          pushi 85                       // $85 seconds
   0218:78               push1 
   0219:8d 01              lst temp1 
   021b:4a 0c             send c 
@@ -346,18 +346,18 @@
   021f:48                 ret 
     )
 
-    (method (delete) // method_0122
+    (method (delete)                                   // method_0122
   0122:67 10             pTos client 
   0124:35 00              ldi 0 
   0126:1a                 eq? 
   0127:30 000e            bnt code_0138 
-  012a:39 54            pushi 54 // $54 delete
+  012a:39 54            pushi 54                       // $54 delete
   012c:78               push1 
   012d:7c            pushSelf 
   012e:81 07              lag  
   0130:4a 06             send 6 
 
-  0132:39 6c            pushi 6c // $6c dispose
+  0132:39 6c            pushi 6c                       // $6c dispose
   0134:76               push0 
   0135:57 00 04         super Obj 4 
 
@@ -366,8 +366,8 @@
   0138:48                 ret 
     )
 
-    (method (set60ths) // method_0220
-  0220:3f 01             link 1 // (var $1)
+    (method (set60ths)                                 // method_0220
+  0220:3f 01             link 1                        // (var $1)
   0222:76               push0 
   0223:43 42 00         callk GetTime 0 
 
@@ -376,7 +376,7 @@
   022a:34 8000            ldi 8000 
   022d:12                 and 
   022e:30 0008            bnt code_0239 
-  0231:39 6a            pushi 6a // $6a new
+  0231:39 6a            pushi 6a                       // $6a new
   0233:76               push0 
   0234:54 04             self 4 
 
@@ -387,13 +387,13 @@
 
         code_023a
   023a:a5 00              sat temp0 
-  023c:39 6b            pushi 6b // $6b init
+  023c:39 6b            pushi 6b                       // $6b init
   023e:78               push1 
   023f:8f 01              lsp param1 
-  0241:38 0093          pushi 93 // $93 ticksToDo
+  0241:38 0093          pushi 93                       // $93 ticksToDo
   0244:78               push1 
   0245:8f 02              lsp param2 
-  0247:38 0094          pushi 94 // $94 lastTime
+  0247:38 0094          pushi 94                       // $94 lastTime
   024a:78               push1 
   024b:76               push0 
   024c:43 42 00         callk GetTime 0 
@@ -414,7 +414,7 @@
     (properties
         timeLeft $0
     )
-    (method (doit) // method_02b9
+    (method (doit)                                     // method_02b9
   02b9:63 08             pToa timeLeft 
   02bb:30 0002            bnt code_02c0 
   02be:6d 08            dpToa timeLeft 
@@ -424,7 +424,7 @@
   02c1:00                bnot 
     )
 
-    (method (set) // method_02b4
+    (method (set)                                      // method_02b4
   02b4:87 01              lap param1 
   02b6:65 08             aTop timeLeft 
   02b8:48                 ret 
@@ -435,24 +435,24 @@
 
 
 (procedure proc_0004
-  0004:3f 01             link 1 // (var $1)
-  0006:63 10             pToa  // (property opcode in procedure) 
+  0004:3f 01             link 1                        // (var $1)
+  0006:63 10             pToa                          // (property opcode in procedure) 
   0008:a5 00              sat temp0 
   000a:35 00              ldi 0 
-  000c:65 10             aTop  // (property opcode in procedure) 
+  000c:65 10             aTop                          // (property opcode in procedure) 
   000e:78               push1 
   000f:8d 00              lst temp0 
   0011:43 06 02         callk IsObject 2 
 
   0014:30 002b            bnt code_0042 
-  0017:39 71            pushi 71 // $71 respondsTo
+  0017:39 71            pushi 71                       // $71 respondsTo
   0019:78               push1 
-  001a:38 0083          pushi 83 // $83 timer
+  001a:38 0083          pushi 83                       // $83 timer
   001d:85 00              lat temp0 
   001f:4a 06             send 6 
 
   0021:30 0009            bnt code_002d 
-  0024:38 0083          pushi 83 // $83 timer
+  0024:38 0083          pushi 83                       // $83 timer
   0027:78               push1 
   0028:76               push0 
   0029:85 00              lat temp0 
@@ -460,14 +460,14 @@
 
 
         code_002d
-  002d:39 71            pushi 71 // $71 respondsTo
+  002d:39 71            pushi 71                       // $71 respondsTo
   002f:78               push1 
-  0030:38 008d          pushi 8d // $8d cue
+  0030:38 008d          pushi 8d                       // $8d cue
   0033:85 00              lat temp0 
   0035:4a 06             send 6 
 
   0037:30 0008            bnt code_0042 
-  003a:38 008d          pushi 8d // $8d cue
+  003a:38 008d          pushi 8d                       // $8d cue
   003d:76               push0 
   003e:85 00              lat temp0 
   0040:4a 04             send 4 

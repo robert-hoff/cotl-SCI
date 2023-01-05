@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Diagnostics.Metrics;
 using System.Text.RegularExpressions;
 using cotl_SCI.DataFileIO;
 
@@ -6,7 +7,7 @@ namespace cotl_SCI.AssemblyDecoding
 {
     class ParseAssembly
     {
-        private const string SCRIPT_DIR = "../../../../disassembled-scripts/";
+        private const string SCRIPT_DIR = "../../../../disassembled-scripts/clean-decompile/";
         private const string OUTPUT_DIR = "../../../../output/";
         private const string FILE_EXT = ".scr.asm";
 
@@ -20,8 +21,8 @@ namespace cotl_SCI.AssemblyDecoding
             // CollectAndShowNonDuplicatedOpcodes();
             // ShowUniqueCommands("51");
             // ShowBinaryCode();
-            Debug.WriteLine($"{1026:X}");
-
+            // PushCommentsForwardForAllScripts();
+            PushCommentsForwardForFile($"{SCRIPT_DIR}../annotated/140-gamestart-hideout-cave.asm");
         }
 
         public static void ShowBinaryCode()
@@ -44,7 +45,54 @@ namespace cotl_SCI.AssemblyDecoding
             }
         }
 
+        public static void PushCommentsForwardForAllScripts()
+        {
+            foreach (string filename in GetFileNames(SCRIPT_DIR))
+            {
+                PushCommentsForwardForFile(SCRIPT_DIR+filename);
+            }
+        }
 
+
+        public static void PushCommentsForwardForFile(string filenamepath)
+        {
+            string[] lines = File.ReadAllLines(filenamepath);
+            Debug.WriteLine($"fixing comments for {filenamepath}");
+
+            FileWriter fw = new(filenamepath);
+            foreach (string line in lines)
+            {
+                string fixedLine = PushScriptCommentForward(line);
+                fw.WriteLine(fixedLine);
+            }
+            fw.CloseStreamWriter();
+        }
+
+        /*
+         * change
+         *      "  0125:39 6c            pushi 6c // $6c dispose"
+         * into
+         *      "  0125:39 6c            pushi 6c             // $6c dispose"
+         *
+         * the index of the double slashes is 45, the length of the leading part is also 45
+         *
+         */
+        const int NEW_COMMENT_POSITION = 55;
+        public static string PushScriptCommentForward(string line)
+        {
+            int commentPos = line.IndexOf("//");
+            if (commentPos > 0 && commentPos < NEW_COMMENT_POSITION)
+            {
+                string str1 = line.Substring(0, commentPos);
+                string str2 = line.Substring(commentPos);
+                string strSpacing = new string(' ', NEW_COMMENT_POSITION - commentPos);
+                return $"{str1}{strSpacing}{str2}";
+            }
+            else
+            {
+                return line;
+            }
+        }
 
         public static void ShowUniqueCommands(string opCode)
         {
@@ -62,8 +110,6 @@ namespace cotl_SCI.AssemblyDecoding
                 }
             }
         }
-
-
 
         public static void CollectAndShowNonDuplicatedOpcodes()
         {
@@ -140,7 +186,6 @@ namespace cotl_SCI.AssemblyDecoding
             }
             return linesWithOpcodes;
         }
-
 
         public static void ChangeAssemblyFileExtension()
         {

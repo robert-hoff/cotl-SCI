@@ -35,7 +35,7 @@
         oldCycSpd $0
         oldMvSpd $0
     )
-    (method (init) // method_0004
+    (method (init)                                     // method_0004
   0004:8f 00              lsp paramTotal 
   0006:35 05              ldi 5 
   0008:20                 ge? 
@@ -56,8 +56,8 @@
   0026:65 2a             aTop cycleCnt 
 
         code_0028
-  0028:39 6b            pushi 6b // $6b init
-  002a:39 04            pushi 4 // $4 x
+  0028:39 6b            pushi 6b                       // $6b init
+  002a:39 04            pushi 4                        // $4 x
   002c:8f 01              lsp param1 
   002e:8f 02              lsp param2 
   0030:8f 03              lsp param3 
@@ -65,13 +65,13 @@
   0034:59 08            &rest 8 
   0036:57 1e 0c         super MoveTo c 
 
-  0039:38 00db          pushi db // $db cycleSpeed
+  0039:38 00db          pushi db                       // $db cycleSpeed
   003c:76               push0 
   003d:63 08             pToa client 
   003f:4a 04             send 4 
 
   0041:65 2c             aTop oldCycSpd 
-  0043:39 38            pushi 38 // $38 moveSpeed
+  0043:39 38            pushi 38                       // $38 moveSpeed
   0045:76               push0 
   0046:63 08             pToa client 
   0048:4a 04             send 4 
@@ -80,9 +80,9 @@
   004c:48                 ret 
     )
 
-    (method (doit) // method_004d
+    (method (doit)                                     // method_004d
   004d:78               push1 
-  004e:39 04            pushi 4 // $4 x
+  004e:39 04            pushi 4                        // $4 x
   0050:76               push0 
   0051:63 08             pToa client 
   0053:4a 04             send 4 
@@ -95,7 +95,7 @@
 
   005d:36                push 
   005e:67 2a             pTos cycleCnt 
-  0060:39 36            pushi 36 // $36 xStep
+  0060:39 36            pushi 36                       // $36 xStep
   0062:76               push0 
   0063:63 08             pToa client 
   0065:4a 04             send 4 
@@ -104,7 +104,7 @@
   0068:24                 le? 
   0069:30 002e            bnt code_009a 
   006c:78               push1 
-  006d:39 03            pushi 3 // $3 y
+  006d:39 03            pushi 3                        // $3 y
   006f:76               push0 
   0070:63 08             pToa client 
   0072:4a 04             send 4 
@@ -117,7 +117,7 @@
 
   007c:36                push 
   007d:67 2a             pTos cycleCnt 
-  007f:39 37            pushi 37 // $37 yStep
+  007f:39 37            pushi 37                       // $37 yStep
   0081:76               push0 
   0082:63 08             pToa client 
   0084:4a 04             send 4 
@@ -125,10 +125,10 @@
   0086:06                 mul 
   0087:24                 le? 
   0088:30 000f            bnt code_009a 
-  008b:38 00db          pushi db // $db cycleSpeed
+  008b:38 00db          pushi db                       // $db cycleSpeed
   008e:78               push1 
   008f:67 26             pTos cycleSpeed 
-  0091:39 38            pushi 38 // $38 moveSpeed
+  0091:39 38            pushi 38                       // $38 moveSpeed
   0093:78               push1 
   0094:67 28             pTos moveSpeed 
   0096:63 08             pToa client 
@@ -136,7 +136,7 @@
 
 
         code_009a
-  009a:39 3c            pushi 3c // $3c doit
+  009a:39 3c            pushi 3c                       // $3c doit
   009c:76               push0 
   009d:59 01            &rest 1 
   009f:57 1e 04         super MoveTo 4 
@@ -144,17 +144,17 @@
   00a2:48                 ret 
     )
 
-    (method (dispose) // method_00a3
-  00a3:38 00db          pushi db // $db cycleSpeed
+    (method (dispose)                                  // method_00a3
+  00a3:38 00db          pushi db                       // $db cycleSpeed
   00a6:78               push1 
   00a7:67 2c             pTos oldCycSpd 
-  00a9:39 38            pushi 38 // $38 moveSpeed
+  00a9:39 38            pushi 38                       // $38 moveSpeed
   00ab:78               push1 
   00ac:67 2e             pTos oldMvSpd 
   00ae:63 08             pToa client 
   00b0:4a 0c             send c 
 
-  00b2:39 6c            pushi 6c // $6c dispose
+  00b2:39 6c            pushi 6c                       // $6c dispose
   00b4:76               push0 
   00b5:59 01            &rest 1 
   00b7:57 1e 04         super MoveTo 4 

@@ -33,7 +33,7 @@
         yOffset $0
         zOffset $0
     )
-    (method (init) // method_0004
+    (method (init)                                     // method_0004
   0004:87 01              lap param1 
   0006:65 08             aTop client 
   0008:87 02              lap param2 
@@ -64,35 +64,35 @@
   003a:65 0a             aTop caller 
 
         code_003c
-  003c:38 0121          pushi 121 // $121 ignoreActors
+  003c:38 0121          pushi 121                      // $121 ignoreActors
   003f:76               push0 
-  0040:39 12            pushi 12 // $12 illegalBits
+  0040:39 12            pushi 12                       // $12 illegalBits
   0042:78               push1 
   0043:76               push0 
   0044:63 08             pToa client 
   0046:4a 0a             send a 
 
-  0048:39 3c            pushi 3c // $3c doit
+  0048:39 3c            pushi 3c                       // $3c doit
   004a:76               push0 
   004b:54 04             self 4 
 
   004d:48                 ret 
     )
 
-    (method (doit) // method_004e
-  004e:3f 01             link 1 // (var $1)
-  0050:39 3a            pushi 3a // $3a heading
+    (method (doit)                                     // method_004e
+  004e:3f 01             link 1                        // (var $1)
+  0050:39 3a            pushi 3a                       // $3a heading
   0052:76               push0 
   0053:63 26             pToa who 
   0055:4a 04             send 4 
 
   0057:a5 00              sat temp0 
-  0059:39 3a            pushi 3a // $3a heading
+  0059:39 3a            pushi 3a                       // $3a heading
   005b:78               push1 
   005c:36                push 
-  005d:39 04            pushi 4 // $4 x
+  005d:39 04            pushi 4                        // $4 x
   005f:78               push1 
-  0060:39 04            pushi 4 // $4 x
+  0060:39 04            pushi 4                        // $4 x
   0062:76               push0 
   0063:63 26             pToa who 
   0065:4a 04             send 4 
@@ -101,9 +101,9 @@
   0068:63 28             pToa xOffset 
   006a:02                 add 
   006b:36                push 
-  006c:39 03            pushi 3 // $3 y
+  006c:39 03            pushi 3                        // $3 y
   006e:78               push1 
-  006f:39 03            pushi 3 // $3 y
+  006f:39 03            pushi 3                        // $3 y
   0071:76               push0 
   0072:63 26             pToa who 
   0074:4a 04             send 4 
@@ -112,9 +112,9 @@
   0077:63 2a             pToa yOffset 
   0079:02                 add 
   007a:36                push 
-  007b:39 55            pushi 55 // $55 z
+  007b:39 55            pushi 55                       // $55 z
   007d:78               push1 
-  007e:39 55            pushi 55 // $55 z
+  007e:39 55            pushi 55                       // $55 z
   0080:76               push0 
   0081:63 26             pToa who 
   0083:4a 04             send 4 
@@ -126,17 +126,17 @@
   008a:63 08             pToa client 
   008c:4a 18             send 18 
 
-  008e:39 3e            pushi 3e // $3e looper
+  008e:39 3e            pushi 3e                       // $3e looper
   0090:76               push0 
   0091:63 08             pToa client 
   0093:4a 04             send 4 
 
   0095:30 0013            bnt code_00ab 
-  0098:39 3c            pushi 3c // $3c doit
+  0098:39 3c            pushi 3c                       // $3c doit
   009a:7a               push2 
   009b:67 08             pTos client 
   009d:8d 00              lst temp0 
-  009f:39 3e            pushi 3e // $3e looper
+  009f:39 3e            pushi 3e                       // $3e looper
   00a1:76               push0 
   00a2:63 08             pToa client 
   00a4:4a 04             send 4 
