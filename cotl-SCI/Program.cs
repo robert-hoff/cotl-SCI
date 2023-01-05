@@ -30,7 +30,9 @@ namespace cotl_SCI
             // ShowEventPointerValues();
             // TestMousePress.RunTrials();
             // TestKeyPress.RunTrials();
-            ClockTests.TestGameClockDuration();
+            // ClockTests.TestGameClockDuration();
+
+            ScummVmBasePointerSearch.RunTrials();
         }
 
 
