@@ -33,7 +33,8 @@ namespace cotl_SCI
             // TestKeyPress.RunTrials();
             // ClockTests.TestGameClockDuration();
             // ScummVmBasePointerSearch.RunTrials();
-            ParseAssembly.RunTrials();
+            // ParseAssembly.RunTrials();
+            ShowFlagAddresses();
         }
 
 
@@ -144,6 +145,30 @@ namespace cotl_SCI
             Debug.WriteLine($"0x{baseAddress:X}");
         }
 
+
+        public static void ShowFlagAddresses()
+        {
+            string header = $"{"flag",-8} {"offset",10} {"bitPosition",14}";
+            Debug.WriteLine($"{header}");
+            Debug.WriteLine($"{new string('-', header.Length)}");
+            for (int flagId = 0; flagId < 192; flagId = flagId != 19 ? flagId + 1 : 182)
+            {
+                int offset = flagId / 16;
+                int bitPosition = 15 - flagId % 16;
+                Debug.WriteLine($"flag_{flagId:000} {offset,10} {bitPosition,14}");
+                if (flagId == 19)
+                    Debug.WriteLine("...");
+            }
+
+            /*
+            for (int flagId = 0; flagId < 192; flagId++)
+            {
+                int offset = flagId / 16;
+                int bitPosition = 15 - flagId % 16;
+                Debug.WriteLine($"flag_{flagId:000} {offset,10} {bitPosition,14}");
+            }
+            */
+        }
 
 
 
