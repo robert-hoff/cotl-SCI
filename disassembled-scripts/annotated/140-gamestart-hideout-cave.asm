@@ -82,18 +82,13 @@
 )
 
 
-// one way to arrive at this figure is allocating 2 bytes for each 470 character,
-// 1 byte for each string pointer, and 2 bytes for each local variable
-// 470*2 + 46 + 2 * 20
-// This doesn't seem to make all that good sense though .. the string pointers for example
-
-
-// I believe the strings should be null-terminated. Instead of assigning 2-bytes to each character it
-// makes better sense that the dataload takes 470 + 46 = 516 bytes. This matches the anotations shown in the string-labels
+// I think this number is related to the program counter but
+// don't know why it's ahead of the starting position of the method 0x0d4a
 // 1026
 
-
-
+// I think this declaration is understood to be an object
+// the code that follows in this bracket has 4 methods decared as method(name)
+// init, doit, dispose, doVerb
 
 (instance publicrm140 of Rm
     (properties
@@ -118,8 +113,23 @@
         obstacles $0
     )
     (method (init)                                     // method_0d4a
+
+
+
+
   0d4a:76               push0
-  0d4b:45 03 00         callb procedure_0003 0         //
+
+// 3 = the displacement modifier, 0 = framesize
+// external procedure in script0 is called.
+// this procedure sets up whether the player can be controlled, movement speed and starting x,y
+
+  0d4b:45 03 00         callb procedure_0003 0
+
+
+
+
+
+
 
   0d4e:39 2b            pushi 2b                       // $2b number
   0d50:78               push1
@@ -596,6 +606,8 @@
 
 )
 
+
+
 // 11f2
 (instance floor of Feature
     (properties
@@ -805,6 +817,8 @@
 
 )
 
+
+
 // 12cc
 (instance vines of Feature
     (properties
@@ -920,6 +934,9 @@
     )
 
 )
+
+
+
 
 // 138e
 (instance skin1 of Feature
@@ -1111,8 +1128,9 @@
 
   145f:48                 ret
     )
-
 )
+
+
 
 // 152a
 (instance skin3 of Feature
@@ -1209,6 +1227,9 @@
     )
 
 )
+
+
+
 
 // 160e
 (instance bed of Feature

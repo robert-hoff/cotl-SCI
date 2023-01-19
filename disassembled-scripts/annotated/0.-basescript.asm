@@ -901,18 +901,30 @@
     )
 )
 
+
+
+
+
 // 0634
 (instance publicstatLine of Code
-    (properties
-    )
+
+    (properties)
+
+// does `link e3` here mean copy 227 variables onto the stack, *or* doesn it mean
+// copy temp-variable e3 onto the stack.
+
+// this `link e3` I guess there is a chance it concerns a lot of variables .. yea very suspect ..
+
+
+
     (method (doit)                                     // method_053c
   053c:3f e3             link e3                       // (var $e3)
   053e:7a               push2
-  053f:5b 04 aa           lea 4 aa
+  053f:5b 04 aa           lea 4 aa                     // 'load effective address', I think it must load it onto the accumulator, then onto the stack with the push
   0542:36                push
-  0543:72 3275          lofsa $3275                    // Ransom:
+  0543:72 3275          lofsa $3275                    // Ransom:     $3275 is the string "Random: "
   0546:36                push
-  0547:43 47 04         callk StrCpy 4
+  0547:43 47 04         callk StrCpy 4                 // StrCpy references the heap, which must be where the string resides
 
   054a:7a               push2
   054b:5b 04 b2           lea 4 b2
@@ -6600,6 +6612,19 @@
   2ddb:48                 ret
 )
 
+
+// the operation `link 1` according to the Scumm docs does
+// sp += (size * 2);
+// apparently this is related to 'temporary variables'
+
+// but there are places in the code (in this file) that has stuff like `link e3`
+// can this really increment the stack-pointer by 0xe3 * 2?
+
+// 0xe3 = 227, wouldn't that imply that there are 227 variables on the stack?
+
+
+
+
 // EXPORTED procedure #3 ()
 (procedure proc_2ddc
   2ddc:3f 01             link 1                        // (var $1)
@@ -6949,6 +6974,8 @@
   3026:48                 ret
 )
 
+
+
 // EXPORTED procedure #5 ()
 (procedure proc_3027
   3027:8f 01              lsp param1
@@ -6963,6 +6990,8 @@
   3037:12                 and
   3038:48                 ret
 )
+
+
 
 // EXPORTED procedure #6 ()
 (procedure proc_3039
