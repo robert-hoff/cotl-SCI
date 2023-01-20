@@ -19,11 +19,10 @@ namespace cotl_SCI.AssemblyDecoding
             // ExtractAllOpCodes();
             // CollectAndWriteAllOpcodesToFile("all-opcodes.txt");
             // CollectAndShowNonDuplicatedOpcodes();
-            // ShowUniqueCommands("3e");
+            ShowUniqueCommands("38");
             // ShowBinaryCode();
             // PushCommentsForwardForAllScripts();
             // PushCommentsForwardForFile($"{SCRIPT_DIR}../annotated/140-gamestart-hideout-cave.asm");
-            Debug.WriteLine($"{0xe3}");
         }
 
         public static void ShowBinaryCode()
