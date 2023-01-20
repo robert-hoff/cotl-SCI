@@ -1,0 +1,89 @@
+
+                        defined in
+                        ----------
+class Collect           999.scr
+class List              999.scr
+class Set               999.scr
+class EventHandler      999.scr
+class Event             999.scr
+class Timer             973.scr
+class Sound             983.scr
+class DText             255.scr
+class DIcon             255.scr
+class DButton           255.scr
+class DEdit             255.scr
+class Dialog            255.scr
+class IconI             937.scr
+class IconBar           937.scr
+class Fwd               992.scr
+class Walk              992.scr
+class CT                992.scr
+class End               992.scr
+class Beg               992.scr
+class SyncWalk          992.scr
+class Motion            992.scr
+class MoveTo            992.scr
+class Rev               969.scr
+class Wander            970.scr
+class Polygon           946.scr
+class PolyPath          945.scr
+class JumpTo            991.scr
+class CueObj            950.scr
+class PicView           998.scr
+class View              998.scr
+class Prop              998.scr
+class Actor             998.scr
+class User              996.scr
+class Ego               996.scr
+class Class_993_0       993.scr
+class SysWindow         981.scr
+class Restore           990.scr
+class Save              990.scr
+class InvI              995.scr
+class Inv               995.scr
+class SL                994.scr
+class Grooper           977.scr
+class DPath             964.scr
+class StopWalk          961.scr     defined as (class publicStopWalk of Fwd
+class ForwardCounter    956.scr
+class Approach          953.scr
+class MoveFwd           951.scr
+class RandCycle         941.scr
+class Osc               939.scr
+class Class_943_3       943.scr
+class _EditablePolygon  943.scr
+class GameControls      934.scr     defined as (class publicGameControls of IconBar
+class PseudoMouse       933.scr
+class PChase            930.scr
+class PFollow           930.scr
+class PAvoider          927.scr
+class RTRandCycle       928.scr
+class SyncStop          892.scr     defined as (class publicSyncStop of Fwd
+class FuzzyStop         891.scr
+class SlowDown          890.scr
+class Wat               125.scr     defined as (class publicWat of Rgn
+class Table             893.scr
+class MList             858.scr
+class Monastery         625.scr     defined as (class publicMonastery of Rgn
+class PPath             852.scr
+class TheDungeon        564.scr     defined as (class publicTheDungeon of Rgn
+class Fair              860.scr
+class GiveOrTakeIcon    857.scr
+class MoneyDialog       857.scr
+class FootstepWalk      807.scr
+class RTEyeCycle        851.scr
+class Conversation      851.scr
+class GuardFollow       400.scr
+class GuardStopWalk     400.scr
+class Rgn               994.scr
+
+
+
+
+
+
+
+
+
+
+
