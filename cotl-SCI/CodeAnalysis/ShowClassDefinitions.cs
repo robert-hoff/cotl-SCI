@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace cotl_SCI.AssemblyDecoding
+namespace cotl_SCI.CodeAnalysis
 {
     class ShowClassDefinitions
     {

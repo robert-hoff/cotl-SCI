@@ -1,9 +1,8 @@
 using System.Diagnostics;
-using System.Diagnostics.Metrics;
 using System.Text.RegularExpressions;
 using cotl_SCI.DataFileIO;
 
-namespace cotl_SCI.AssemblyDecoding
+namespace cotl_SCI.CodeAnalysis
 {
     class ParseAssembly
     {
