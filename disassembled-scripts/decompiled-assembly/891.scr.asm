@@ -110,7 +110,7 @@
   00b2:1c                 ne?
   00b3:30 003b            bnt code_00f1
   00b6:78               push1
-  00b7:89 58              lsg
+  00b7:89 58              lsg global88
   00b9:63 0e             pToa cycleCnt
   00bb:04                 sub
   00bc:36                push
@@ -124,7 +124,7 @@
 
   00c9:20                 ge?
   00ca:30 0024            bnt code_00f1
-  00cd:81 58              lag
+  00cd:81 58              lag global88
   00cf:65 0e             aTop cycleCnt
   00d1:38 0120          pushi 120                      // $120 setCel
   00d4:78               push1

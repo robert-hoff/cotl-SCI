@@ -224,12 +224,12 @@
   004d:30 0012            bnt code_0062
   0050:78               push1
   0051:76               push0
-  0052:47 0d 06 02      calle d procedure_0006 2       //
+  0052:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0056:7a               push2
   0057:38 03fb          pushi 3fb                      // $3fb sel_1019
   005a:76               push0
-  005b:47 0d 04 04      calle d procedure_0004 4       //
+  005b:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   005f:32 033d            jmp code_039f
 
@@ -238,12 +238,12 @@
   0064:a3 00              sal local0
   0066:78               push1
   0067:76               push0
-  0068:47 0d 06 02      calle d procedure_0006 2       //
+  0068:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   006c:7a               push2
   006d:38 03fb          pushi 3fb                      // $3fb sel_1019
   0070:78               push1
-  0071:47 0d 04 04      calle d procedure_0004 4       //
+  0071:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0075:32 0327            jmp code_039f
 
@@ -267,7 +267,7 @@
   0093:35 05              ldi 5
   0095:1a                 eq?
   0096:30 00d6            bnt code_016f
-  0099:89 7e              lsg
+  0099:89 7e              lsg global126
   009b:3c                 dup
   009c:35 00              ldi 0
   009e:1a                 eq?
@@ -332,7 +332,7 @@
   0104:35 04              ldi 4
   0106:1a                 eq?
   0107:30 004a            bnt code_0154
-  010a:89 82              lsg
+  010a:89 82              lsg global130
   010c:3c                 dup
   010d:35 08              ldi 8
   010f:1a                 eq?
@@ -491,7 +491,7 @@
   0214:7a               push2
   0215:39 0b            pushi b                        // $b nsBottom
   0217:7c            pushSelf
-  0218:81 00              lag
+  0218:81 00              lag gEgo
   021a:4a 08             send 8
 
   021c:32 015d            jmp code_037c
@@ -711,7 +711,7 @@
   0387:7a               push2
   0388:38 03fb          pushi 3fb                      // $3fb sel_1019
   038b:39 1c            pushi 1c                       // $1c color
-  038d:47 0d 04 04      calle d procedure_0004 4       //
+  038d:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0391:32 000b            jmp code_039f
 

@@ -485,15 +485,15 @@
   0384:1a                 eq?
   0385:30 00bb            bnt code_0443
   0388:76               push0
-  0389:45 03 00         callb procedure_0003 0         //
+  0389:45 03 00         callb procedure_0003 0         // proc0_3
 
   038c:78               push1
   038d:39 7a            pushi 7a                       // $7a release
-  038f:45 06 02         callb procedure_0006 2         //
+  038f:45 06 02         callb procedure_0006 2         // proc0_6
 
   0392:78               push1
   0393:38 00b5          pushi b5                       // $b5 open
-  0396:45 05 02         callb procedure_0005 2         //
+  0396:45 05 02         callb procedure_0005 2         // proc0_5
 
   0399:30 000a            bnt code_03a6
   039c:78               push1
@@ -504,7 +504,7 @@
         code_03a6
   03a6:78               push1
   03a7:38 00b4          pushi b4                       // $b4 busy
-  03aa:45 05 02         callb procedure_0005 2         //
+  03aa:45 05 02         callb procedure_0005 2         // proc0_5
 
   03ad:30 000a            bnt code_03ba
   03b0:78               push1
@@ -638,7 +638,7 @@
   0486:76               push0
   0487:78               push1
   0488:7c            pushSelf
-  0489:81 00              lag
+  0489:81 00              lag gEgo
   048b:4a 2a             send 2a
 
   048d:32 01f5            jmp code_0685
@@ -654,8 +654,8 @@
   049b:43 02 02         callk ScriptID 2
 
   049e:36                push
-  049f:89 00              lsg
-  04a1:45 09 04         callb procedure_0009 4         //
+  049f:89 00              lsg gEgo
+  04a1:45 09 04         callb procedure_0009 4         // proc0_9
 
   04a4:39 05            pushi 5                        // $5 view
   04a6:78               push1
@@ -876,7 +876,7 @@
 
   05fd:39 69            pushi 69                       // $69 hide
   05ff:76               push0
-  0600:81 00              lag
+  0600:81 00              lag gEgo
   0602:4a 04             send 4
 
   0604:39 6c            pushi 6c                       // $6c dispose
@@ -951,13 +951,13 @@
   066a:7a               push2
   066b:38 0323          pushi 323                      // $323 sel_803
   066e:38 8006          pushi 8006                     // $8006 sel_32774
-  0671:81 02              lag
+  0671:81 02              lag global2
   0673:4a 08             send 8
 
   0675:38 0179          pushi 179                      // $179 newRoom
   0678:78               push1
   0679:38 00f0          pushi f0                       // $f0 thisTurn
-  067c:81 02              lag
+  067c:81 02              lag global2
   067e:4a 06             send 6
 
   0680:39 6c            pushi 6c                       // $6c dispose

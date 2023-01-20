@@ -245,7 +245,7 @@
   005d:30 00af            bnt code_010f
   0060:39 3c            pushi 3c                       // $3c doit
   0062:76               push0
-  0063:81 98              lag
+  0063:81 98              lag gMoney
   0065:4a 04             send 4
 
   0067:65 1a             aTop register
@@ -261,7 +261,7 @@
         code_0075
   0075:78               push1
   0076:39 56            pushi 56                       // $56 parseLang
-  0078:45 05 02         callb procedure_0005 2         //
+  0078:45 05 02         callb procedure_0005 2         // proc0_5
 
   007b:30 003d            bnt code_00bb
   007e:67 1a             pTos register
@@ -270,7 +270,7 @@
   0083:30 002e            bnt code_00b4
   0086:78               push1
   0087:39 74            pushi 74                       // $74 eachElementDo
-  0089:45 05 02         callb procedure_0005 2         //
+  0089:45 05 02         callb procedure_0005 2         // proc0_5
 
   008c:18                 not
   008d:30 0024            bnt code_00b4
@@ -302,7 +302,7 @@
   00be:30 0025            bnt code_00e6
   00c1:78               push1
   00c2:39 1f            pushi 1f                       // $1f style
-  00c4:45 05 02         callb procedure_0005 2         //
+  00c4:45 05 02         callb procedure_0005 2         // proc0_5
 
   00c7:30 001c            bnt code_00e6
   00ca:35 01              ldi 1
@@ -410,20 +410,20 @@
   0186:1a                 eq?
   0187:30 0100            bnt code_028a
   018a:76               push0
-  018b:45 03 00         callb procedure_0003 0         //
+  018b:45 03 00         callb procedure_0003 0         // proc0_3
 
   018e:78               push1
   018f:39 19            pushi 19                       // $19 time
-  0191:45 05 02         callb procedure_0005 2         //
+  0191:45 05 02         callb procedure_0005 2         // proc0_5
 
   0194:30 0005            bnt code_019c
-  0197:89 82              lsg
+  0197:89 82              lsg global130
   0199:35 06              ldi 6
   019b:1a                 eq?
 
         code_019c
   019c:2e 0005             bt code_01a4
-  019f:89 82              lsg
+  019f:89 82              lsg global130
   01a1:35 06              ldi 6
   01a3:1e                 gt?
 
@@ -447,13 +447,13 @@
         code_01c3
   01c3:78               push1
   01c4:39 1f            pushi 1f                       // $1f style
-  01c6:45 05 02         callb procedure_0005 2         //
+  01c6:45 05 02         callb procedure_0005 2         // proc0_5
 
   01c9:30 0022            bnt code_01ee
   01cc:38 00d5          pushi d5                       // $d5 has
   01cf:78               push1
   01d0:39 0b            pushi b                        // $b nsBottom
-  01d2:81 00              lag
+  01d2:81 00              lag gEgo
   01d4:4a 06             send 6
 
   01d6:30 0015            bnt code_01ee
@@ -471,12 +471,12 @@
         code_01ee
   01ee:78               push1
   01ef:39 75            pushi 75                       // $75 firstTrue
-  01f1:45 05 02         callb procedure_0005 2         //
+  01f1:45 05 02         callb procedure_0005 2         // proc0_5
 
   01f4:30 0077            bnt code_026e
   01f7:78               push1
   01f8:39 74            pushi 74                       // $74 eachElementDo
-  01fa:45 05 02         callb procedure_0005 2         //
+  01fa:45 05 02         callb procedure_0005 2         // proc0_5
 
   01fd:30 0015            bnt code_0215
   0200:39 04            pushi 4                        // $4 x
@@ -508,7 +508,7 @@
   022f:38 00d5          pushi d5                       // $d5 has
   0232:78               push1
   0233:39 0b            pushi b                        // $b nsBottom
-  0235:81 00              lag
+  0235:81 00              lag gEgo
   0237:4a 06             send 6
 
   0239:18                 not
@@ -626,7 +626,7 @@
   02f1:38 0179          pushi 179                      // $179 newRoom
   02f4:78               push1
   02f5:38 0226          pushi 226                      // $226 isValid
-  02f8:81 02              lag
+  02f8:81 02              lag global2
   02fa:4a 06             send 6
 
   02fc:32 004f            jmp code_034e
@@ -676,7 +676,7 @@
   0341:1a                 eq?
   0342:30 0009            bnt code_034e
   0345:76               push0
-  0346:45 04 00         callb procedure_0004 0         //
+  0346:45 04 00         callb procedure_0004 0         // proc0_4
 
   0349:39 6c            pushi 6c                       // $6c dispose
   034b:76               push0
@@ -782,7 +782,7 @@
   03fd:30 001c            bnt code_041c
   0400:78               push1
   0401:39 1f            pushi 1f                       // $1f style
-  0403:45 06 02         callb procedure_0006 2         //
+  0403:45 06 02         callb procedure_0006 2         // proc0_6
 
   0406:39 04            pushi 4                        // $4 x
   0408:5b 02 55           lea 2 55
@@ -824,12 +824,12 @@
   046a:30 01be            bnt code_062b
   046d:78               push1
   046e:39 75            pushi 75                       // $75 firstTrue
-  0470:45 05 02         callb procedure_0005 2         //
+  0470:45 05 02         callb procedure_0005 2         // proc0_5
 
   0473:30 00fe            bnt code_0574
   0476:78               push1
   0477:39 74            pushi 74                       // $74 eachElementDo
-  0479:45 05 02         callb procedure_0005 2         //
+  0479:45 05 02         callb procedure_0005 2         // proc0_5
 
   047c:30 0005            bnt code_0484
   047f:35 02              ldi 2
@@ -864,16 +864,16 @@
   04ab:30 003d            bnt code_04eb
   04ae:78               push1
   04af:39 19            pushi 19                       // $19 time
-  04b1:45 05 02         callb procedure_0005 2         //
+  04b1:45 05 02         callb procedure_0005 2         // proc0_5
 
   04b4:30 0005            bnt code_04bc
-  04b7:89 82              lsg
+  04b7:89 82              lsg global130
   04b9:35 06              ldi 6
   04bb:1a                 eq?
 
         code_04bc
   04bc:2e 0005             bt code_04c4
-  04bf:89 82              lsg
+  04bf:89 82              lsg global130
   04c1:35 06              ldi 6
   04c3:1e                 gt?
 
@@ -905,16 +905,16 @@
   04ef:30 003d            bnt code_052f
   04f2:78               push1
   04f3:39 19            pushi 19                       // $19 time
-  04f5:45 05 02         callb procedure_0005 2         //
+  04f5:45 05 02         callb procedure_0005 2         // proc0_5
 
   04f8:30 0005            bnt code_0500
-  04fb:89 82              lsg
+  04fb:89 82              lsg global130
   04fd:35 06              ldi 6
   04ff:1a                 eq?
 
         code_0500
   0500:2e 0005             bt code_0508
-  0503:89 82              lsg
+  0503:89 82              lsg global130
   0505:35 06              ldi 6
   0507:1e                 gt?
 
@@ -946,16 +946,16 @@
   0533:30 003a            bnt code_0570
   0536:78               push1
   0537:39 19            pushi 19                       // $19 time
-  0539:45 05 02         callb procedure_0005 2         //
+  0539:45 05 02         callb procedure_0005 2         // proc0_5
 
   053c:30 0005            bnt code_0544
-  053f:89 82              lsg
+  053f:89 82              lsg global130
   0541:35 06              ldi 6
   0543:1a                 eq?
 
         code_0544
   0544:2e 0005             bt code_054c
-  0547:89 82              lsg
+  0547:89 82              lsg global130
   0549:35 06              ldi 6
   054b:1e                 gt?
 
@@ -986,13 +986,13 @@
         code_0574
   0574:78               push1
   0575:39 1f            pushi 1f                       // $1f style
-  0577:45 05 02         callb procedure_0005 2         //
+  0577:45 05 02         callb procedure_0005 2         // proc0_5
 
   057a:30 003d            bnt code_05ba
   057d:38 00d5          pushi d5                       // $d5 has
   0580:78               push1
   0581:39 0b            pushi b                        // $b nsBottom
-  0583:81 00              lag
+  0583:81 00              lag gEgo
   0585:4a 06             send 6
 
   0587:30 0030            bnt code_05ba
@@ -1029,7 +1029,7 @@
   05c3:c3 a3              +al local163
   05c5:78               push1
   05c6:38 00bb          pushi bb                       // $bb setCursor
-  05c9:45 06 02         callb procedure_0006 2         //
+  05c9:45 06 02         callb procedure_0006 2         // proc0_6
 
   05cc:18                 not
   05cd:30 0015            bnt code_05e5
@@ -1115,7 +1115,7 @@
   0657:30 00b2            bnt code_070c
   065a:78               push1
   065b:39 1f            pushi 1f                       // $1f style
-  065d:45 05 02         callb procedure_0005 2         //
+  065d:45 05 02         callb procedure_0005 2         // proc0_5
 
   0660:30 0012            bnt code_0675
   0663:7a               push2
@@ -1130,16 +1130,16 @@
         code_0675
   0675:78               push1
   0676:39 19            pushi 19                       // $19 time
-  0678:45 05 02         callb procedure_0005 2         //
+  0678:45 05 02         callb procedure_0005 2         // proc0_5
 
   067b:30 0005            bnt code_0683
-  067e:89 82              lsg
+  067e:89 82              lsg global130
   0680:35 06              ldi 6
   0682:1a                 eq?
 
         code_0683
   0683:2e 0005             bt code_068b
-  0686:89 82              lsg
+  0686:89 82              lsg global130
   0688:35 06              ldi 6
   068a:1e                 gt?
 
@@ -1148,7 +1148,7 @@
   068e:38 0148          pushi 148                      // $148 put
   0691:78               push1
   0692:39 0b            pushi b                        // $b nsBottom
-  0694:81 00              lag
+  0694:81 00              lag gEgo
   0696:4a 06             send 6
 
   0698:7a               push2
@@ -1163,13 +1163,13 @@
         code_06aa
   06aa:78               push1
   06ab:39 75            pushi 75                       // $75 firstTrue
-  06ad:45 05 02         callb procedure_0005 2         //
+  06ad:45 05 02         callb procedure_0005 2         // proc0_5
 
   06b0:30 0046            bnt code_06f9
   06b3:38 0148          pushi 148                      // $148 put
   06b6:78               push1
   06b7:39 0b            pushi b                        // $b nsBottom
-  06b9:81 00              lag
+  06b9:81 00              lag gEgo
   06bb:4a 06             send 6
 
   06bd:78               push1
@@ -1178,7 +1178,7 @@
 
   06c6:78               push1
   06c7:39 74            pushi 74                       // $74 eachElementDo
-  06c9:45 05 02         callb procedure_0005 2         //
+  06c9:45 05 02         callb procedure_0005 2         // proc0_5
 
   06cc:30 0015            bnt code_06e4
   06cf:39 03            pushi 3                        // $3 y
@@ -1207,7 +1207,7 @@
   06fc:78               push1
   06fd:72 0436          lofsa $0436                    // fillCask
   0700:36                push
-  0701:81 02              lag
+  0701:81 02              lag global2
   0703:4a 06             send 6
 
 
@@ -1249,7 +1249,7 @@
   0744:78               push1
   0745:72 035c          lofsa $035c                    // tryNOpen
   0748:36                push
-  0749:81 02              lag
+  0749:81 02              lag global2
   074b:4a 06             send 6
 
   074d:35 01              ldi 1

@@ -59,13 +59,13 @@
   0014:35 00              ldi 0
   0016:1a                 eq?
   0017:30 0035            bnt code_004f
-  001a:81 8f              lag
+  001a:81 8f              lag global143
   001c:18                 not
   001d:30 0008            bnt code_0028
   0020:35 01              ldi 1
   0022:a3 00              sal local0
   0024:76               push0
-  0025:45 03 00         callb procedure_0003 0         //
+  0025:45 03 00         callb procedure_0003 0         // proc0_3
 
 
         code_0028
@@ -214,7 +214,7 @@
   0109:83 00              lal local0
   010b:30 0004            bnt code_0112
   010e:76               push0
-  010f:45 04 00         callb procedure_0004 0         //
+  010f:45 04 00         callb procedure_0004 0         // proc0_4
 
 
         code_0112
@@ -222,7 +222,7 @@
   0115:7a               push2
   0116:39 04            pushi 4                        // $4 x
   0118:39 05            pushi 5                        // $5 view
-  011a:81 45              lag
+  011a:81 45              lag gIconBar
   011c:4a 08             send 8
 
   011e:39 6c            pushi 6c                       // $6c dispose

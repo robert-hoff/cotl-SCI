@@ -23,13 +23,13 @@
   00d4:3f 02             link 2                        // (var $2)
   00d6:39 04            pushi 4                        // $4 x
   00d8:76               push0
-  00d9:81 18              lag
+  00d9:81 18              lag global24
   00db:4a 04             send 4
 
   00dd:a5 00              sat temp0
   00df:39 03            pushi 3                        // $3 y
   00e1:76               push0
-  00e2:81 18              lag
+  00e2:81 18              lag global24
   00e4:4a 04             send 4
 
   00e6:a5 01              sat temp1
@@ -140,11 +140,11 @@
   018b:3a                toss
   018c:38 00bb          pushi bb                       // $bb setCursor
   018f:39 04            pushi 4                        // $4 x
-  0191:89 13              lsg
+  0191:89 13              lsg global19
   0193:78               push1
   0194:8d 00              lst temp0
   0196:8d 01              lst temp1
-  0198:81 01              lag
+  0198:81 01              lag global1
   019a:4a 0c             send c
 
   019c:48                 ret
@@ -154,7 +154,7 @@
     (method (handleEvent)                              // method_0004
   0004:38 0144          pushi 144                      // $144 canInput
   0007:76               push0
-  0008:81 50              lag
+  0008:81 50              lag global80
   000a:4a 04             send 4
 
   000c:30 00a5            bnt code_00b4
@@ -167,14 +167,14 @@
   0017:35 40              ldi 40
   0019:12                 and
   001a:30 0097            bnt code_00b4
-  001d:81 45              lag
+  001d:81 45              lag gIconBar
   001f:18                 not
   0020:2e 0011             bt code_0034
   0023:39 28            pushi 28                       // $28 message
   0025:76               push0
   0026:38 00ce          pushi ce                       // $ce curIcon
   0029:76               push0
-  002a:81 45              lag
+  002a:81 45              lag gIconBar
   002c:4a 04             send 4
 
   002e:4a 04             send 4
@@ -293,7 +293,7 @@
   00be:39 73            pushi 73                       // $73 add
   00c0:78               push1
   00c1:7c            pushSelf
-  00c2:81 4e              lag
+  00c2:81 4e              lag global78
   00c4:4a 06             send 6
 
   00c6:48                 ret
@@ -305,7 +305,7 @@
   00cb:39 54            pushi 54                       // $54 delete
   00cd:78               push1
   00ce:7c            pushSelf
-  00cf:81 4e              lag
+  00cf:81 4e              lag global78
   00d1:4a 06             send 6
 
   00d3:48                 ret

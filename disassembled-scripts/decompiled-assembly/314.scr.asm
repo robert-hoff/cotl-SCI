@@ -269,12 +269,12 @@
     )
 
     (method (dispose)                                  // method_02a5
-  02a5:89 c5              lsg
+  02a5:89 c5              lsg global197
   02a7:35 02              ldi 2
   02a9:1a                 eq?
   02aa:30 0004            bnt code_02b1
   02ad:35 03              ldi 3
-  02af:a1 c5              sag
+  02af:a1 c5              sag global197
 
         code_02b1
   02b1:39 6c            pushi 6c                       // $6c dispose
@@ -292,7 +292,7 @@
   00c9:30 00e4            bnt code_01b0
   00cc:38 008a          pushi 8a                       // $8a script
   00cf:76               push0
-  00d0:81 02              lag
+  00d0:81 02              lag global2
   00d2:4a 04             send 4
 
   00d4:30 000e            bnt code_00e5
@@ -309,7 +309,7 @@
   00e8:78               push1
   00e9:72 02c4          lofsa $02c4                    // scholar3
   00ec:36                push
-  00ed:81 00              lag
+  00ed:81 00              lag gEgo
   00ef:4a 06             send 6
 
   00f1:36                push
@@ -339,12 +339,12 @@
   0117:7a               push2
   0118:38 051f          pushi 51f                      // $51f sel_1311
   011b:76               push0
-  011c:47 0d 04 04      calle d procedure_0004 4       //
+  011c:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0120:32 0172            jmp code_0295
 
         code_0123
-  0123:81 c5              lag
+  0123:81 c5              lag global197
   0125:30 0079            bnt code_01a1
   0128:36                push
   0129:3c                 dup
@@ -362,7 +362,7 @@
   013f:46 0353 0000 0a  calle 353 procedure_0000 a     //
 
   0145:35 02              ldi 2
-  0147:a1 c5              sag
+  0147:a1 c5              sag global197
   0149:32 0051            jmp code_019d
 
         code_014c
@@ -391,7 +391,7 @@
   0175:78               push1
   0176:72 0706          lofsa $0706                    // converse
   0179:36                push
-  017a:81 02              lag
+  017a:81 02              lag global2
   017c:4a 06             send 6
 
   017e:32 001c            jmp code_019d
@@ -421,7 +421,7 @@
   01a4:78               push1
   01a5:72 0706          lofsa $0706                    // converse
   01a8:36                push
-  01a9:81 02              lag
+  01a9:81 02              lag global2
   01ab:4a 06             send 6
 
   01ad:32 00e5            jmp code_0295
@@ -436,7 +436,7 @@
   01bc:7a               push2
   01bd:38 051f          pushi 51f                      // $51f sel_1311
   01c0:7a               push2
-  01c1:47 0d 04 04      calle d procedure_0004 4       //
+  01c1:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   01c5:35 00              ldi 0
   01c7:a3 00              sal local0
@@ -446,7 +446,7 @@
   01cc:7a               push2
   01cd:38 051f          pushi 51f                      // $51f sel_1311
   01d0:39 03            pushi 3                        // $3 y
-  01d2:47 0d 04 04      calle d procedure_0004 4       //
+  01d2:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   01d6:32 00bc            jmp code_0295
 
@@ -459,7 +459,7 @@
   01e3:78               push1
   01e4:72 02c4          lofsa $02c4                    // scholar3
   01e7:36                push
-  01e8:81 00              lag
+  01e8:81 00              lag gEgo
   01ea:4a 06             send 6
 
   01ec:36                push
@@ -489,7 +489,7 @@
   0212:7a               push2
   0213:38 051f          pushi 51f                      // $51f sel_1311
   0216:76               push0
-  0217:47 0d 04 04      calle d procedure_0004 4       //
+  0217:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   021b:32 0077            jmp code_0295
 
@@ -516,7 +516,7 @@
   0240:35 00              ldi 0
   0242:1a                 eq?
   0243:30 0035            bnt code_027b
-  0246:81 c5              lag
+  0246:81 c5              lag global197
   0248:30 0018            bnt code_0263
   024b:39 05            pushi 5                        // $5 view
   024d:5b 02 35           lea 2 35
@@ -642,7 +642,7 @@
   03a4:1a                 eq?
   03a5:30 0014            bnt code_03bc
   03a8:76               push0
-  03a9:45 03 00         callb procedure_0003 0         //
+  03a9:45 03 00         callb procedure_0003 0         // proc0_3
 
   03ac:38 0096          pushi 96                       // $96 setCycle
   03af:7a               push2
@@ -828,7 +828,7 @@
   04c8:1a                 eq?
   04c9:30 008e            bnt code_055a
   04cc:76               push0
-  04cd:45 03 00         callb procedure_0003 0         //
+  04cd:45 03 00         callb procedure_0003 0         // proc0_3
 
   04d0:35 00              ldi 0
   04d2:a5 00              sat temp0
@@ -845,7 +845,7 @@
 
   04e3:65 1a             aTop register
   04e5:67 1a             pTos register
-  04e7:81 7b              lag
+  04e7:81 7b              lag global123
   04e9:24                 le?
   04ea:30 0002            bnt code_04ef
   04ed:6d 1a            dpToa register
@@ -901,7 +901,7 @@
   0538:36                push
   0539:39 04            pushi 4                        // $4 x
   053b:76               push0
-  053c:81 00              lag
+  053c:81 00              lag gEgo
   053e:4a 04             send 4
 
   0540:1e                 gt?
@@ -913,11 +913,11 @@
   0549:4a 0c             send c
 
   054b:39 03            pushi 3                        // $3 y
-  054d:89 00              lsg
+  054d:89 00              lsg gEgo
   054f:72 02c4          lofsa $02c4                    // scholar3
   0552:36                push
   0553:7c            pushSelf
-  0554:45 09 06         callb procedure_0009 6         //
+  0554:45 09 06         callb procedure_0009 6         // proc0_9
 
   0557:32 0181            jmp code_06db
 
@@ -952,7 +952,7 @@
   0582:35 02              ldi 2
   0584:1a                 eq?
   0585:30 003f            bnt code_05c7
-  0588:89 c5              lsg
+  0588:89 c5              lsg global197
   058a:35 03              ldi 3
   058c:1a                 eq?
   058d:30 001f            bnt code_05af
@@ -999,7 +999,7 @@
 
   05dc:39 03            pushi 3                        // $3 y
   05de:38 0525          pushi 525                      // $525 sel_1317
-  05e1:89 7b              lsg
+  05e1:89 7b              lsg global123
   05e3:5b 04 02           lea 4 2
   05e6:36                push
   05e7:78               push1
@@ -1066,7 +1066,7 @@
   0647:35 06              ldi 6
   0649:1a                 eq?
   064a:30 007e            bnt code_06cb
-  064d:89 c5              lsg
+  064d:89 c5              lsg global197
   064f:35 03              ldi 3
   0651:1a                 eq?
   0652:30 0039            bnt code_068e
@@ -1098,14 +1098,14 @@
 
         code_0687
   0687:35 04              ldi 4
-  0689:a1 c5              sag
+  0689:a1 c5              sag global197
   068b:32 004d            jmp code_06db
 
         code_068e
   068e:83 01              lal local1
   0690:30 001c            bnt code_06af
   0693:35 01              ldi 1
-  0695:a1 c5              sag
+  0695:a1 c5              sag global197
   0697:39 05            pushi 5                        // $5 view
   0699:5b 02 11           lea 2 11
   069c:36                push
@@ -1120,7 +1120,7 @@
 
         code_06af
   06af:35 02              ldi 2
-  06b1:a1 c5              sag
+  06b1:a1 c5              sag global197
   06b3:39 05            pushi 5                        // $5 view
   06b5:5b 02 0d           lea 2 d
   06b8:36                push
@@ -1139,7 +1139,7 @@
   06ce:1a                 eq?
   06cf:30 0009            bnt code_06db
   06d2:76               push0
-  06d3:45 04 00         callb procedure_0004 0         //
+  06d3:45 04 00         callb procedure_0004 0         // proc0_4
 
   06d6:39 6c            pushi 6c                       // $6c dispose
   06d8:76               push0

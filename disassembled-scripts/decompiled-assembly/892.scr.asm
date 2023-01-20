@@ -82,7 +82,7 @@
 
         code_00af
   00af:78               push1
-  00b0:89 58              lsg
+  00b0:89 58              lsg global88
   00b2:63 0e             pToa cycleCnt
   00b4:04                 sub
   00b5:36                push
@@ -96,7 +96,7 @@
 
   00c2:20                 ge?
   00c3:30 0040            bnt code_0106
-  00c6:81 58              lag
+  00c6:81 58              lag global88
   00c8:65 0e             aTop cycleCnt
   00ca:39 05            pushi 5                        // $5 view
   00cc:76               push0

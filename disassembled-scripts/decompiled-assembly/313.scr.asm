@@ -610,7 +610,7 @@
 
         code_0253
   0253:8d 00              lst temp0
-  0255:81 0b              lag
+  0255:81 0b              lag global11
   0257:24                 le?
   0258:30 006c            bnt code_02c7
   025b:8d 02              lst temp2
@@ -684,7 +684,7 @@
   02cd:30 008a            bnt code_035a
   02d0:38 008a          pushi 8a                       // $8a script
   02d3:76               push0
-  02d4:81 02              lag
+  02d4:81 02              lag global2
   02d6:4a 04             send 4
 
   02d8:30 000e            bnt code_02e9
@@ -701,7 +701,7 @@
   02ec:78               push1
   02ed:72 042c          lofsa $042c                    // scholar2
   02f0:36                push
-  02f1:81 00              lag
+  02f1:81 00              lag gEgo
   02f3:4a 06             send 6
 
   02f5:36                push
@@ -731,14 +731,14 @@
   031b:7a               push2
   031c:38 051f          pushi 51f                      // $51f sel_1311
   031f:76               push0
-  0320:47 0d 04 04      calle d procedure_0004 4       //
+  0320:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0324:32 00e9            jmp code_0410
 
         code_0327
   0327:38 008e          pushi 8e                       // $8e setScript
   032a:78               push1
-  032b:89 c4              lsg
+  032b:89 c4              lsg global196
   032d:3c                 dup
   032e:35 00              ldi 0
   0330:1a                 eq?
@@ -764,7 +764,7 @@
         code_0351
   0351:3a                toss
   0352:36                push
-  0353:81 02              lag
+  0353:81 02              lag global2
   0355:4a 06             send 6
 
   0357:32 00b6            jmp code_0410
@@ -779,7 +779,7 @@
   0366:7a               push2
   0367:38 051f          pushi 51f                      // $51f sel_1311
   036a:7a               push2
-  036b:47 0d 04 04      calle d procedure_0004 4       //
+  036b:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   036f:35 00              ldi 0
   0371:a3 00              sal local0
@@ -789,7 +789,7 @@
   0376:7a               push2
   0377:38 051f          pushi 51f                      // $51f sel_1311
   037a:39 03            pushi 3                        // $3 y
-  037c:47 0d 04 04      calle d procedure_0004 4       //
+  037c:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0380:32 008d            jmp code_0410
 
@@ -802,7 +802,7 @@
   038d:78               push1
   038e:72 042c          lofsa $042c                    // scholar2
   0391:36                push
-  0392:81 00              lag
+  0392:81 00              lag gEgo
   0394:4a 06             send 6
 
   0396:36                push
@@ -832,7 +832,7 @@
   03bc:7a               push2
   03bd:38 051f          pushi 51f                      // $51f sel_1311
   03c0:78               push1
-  03c1:47 0d 04 04      calle d procedure_0004 4       //
+  03c1:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   03c5:32 0048            jmp code_0410
 
@@ -846,7 +846,7 @@
   03d4:78               push1
   03d5:72 0b70          lofsa $0b70                    // rottingRichard
   03d8:36                push
-  03d9:81 02              lag
+  03d9:81 02              lag global2
   03db:4a 06             send 6
 
   03dd:32 0021            jmp code_0401
@@ -860,7 +860,7 @@
   03ea:78               push1
   03eb:72 091a          lofsa $091a                    // offerBucks
   03ee:36                push
-  03ef:81 02              lag
+  03ef:81 02              lag global2
   03f1:4a 06             send 6
 
   03f3:32 000b            jmp code_0401
@@ -948,7 +948,7 @@
   04d3:78               push1
   04d4:72 0016          lofsa $0016                    // roger
   04d7:36                push
-  04d8:81 05              lag
+  04d8:81 05              lag global5
   04da:4a 06             send 6
 
   04dc:18                 not
@@ -1148,7 +1148,7 @@
   0630:1a                 eq?
   0631:30 003a            bnt code_066e
   0634:76               push0
-  0635:45 03 00         callb procedure_0003 0         //
+  0635:45 03 00         callb procedure_0003 0         // proc0_3
 
   0638:39 06            pushi 6                        // $6 loop
   063a:78               push1
@@ -1160,7 +1160,7 @@
   0643:36                push
   0644:39 04            pushi 4                        // $4 x
   0646:76               push0
-  0647:81 00              lag
+  0647:81 00              lag gEgo
   0649:4a 04             send 4
 
   064b:1e                 gt?
@@ -1207,7 +1207,7 @@
   068d:78               push1
   068e:72 0fa8          lofsa $0fa8                    // sDieNow
   0691:36                push
-  0692:81 02              lag
+  0692:81 02              lag global2
   0694:4a 06             send 6
 
 
@@ -1274,7 +1274,7 @@
   070b:67 1a             pTos register
   070d:39 03            pushi 3                        // $3 y
   070f:76               push0
-  0710:81 00              lag
+  0710:81 00              lag gEgo
   0712:4a 04             send 4
 
   0714:36                push
@@ -1295,7 +1295,7 @@
   072c:67 1a             pTos register
   072e:39 03            pushi 3                        // $3 y
   0730:76               push0
-  0731:81 00              lag
+  0731:81 00              lag gEgo
   0733:4a 04             send 4
 
   0735:36                push
@@ -1316,7 +1316,7 @@
   074d:78               push1
   074e:72 0094          lofsa $0094                    // giles
   0751:36                push
-  0752:81 05              lag
+  0752:81 05              lag global5
   0754:4a 06             send 6
 
   0756:30 001a            bnt code_0773
@@ -1342,7 +1342,7 @@
   0775:78               push1
   0776:72 0016          lofsa $0016                    // roger
   0779:36                push
-  077a:81 05              lag
+  077a:81 05              lag global5
   077c:4a 06             send 6
 
   077e:30 008b            bnt code_080c
@@ -1375,7 +1375,7 @@
   07ab:78               push1
   07ac:72 0094          lofsa $0094                    // giles
   07af:36                push
-  07b0:81 05              lag
+  07b0:81 05              lag global5
   07b2:4a 06             send 6
 
   07b4:30 001a            bnt code_07d1
@@ -1401,7 +1401,7 @@
   07d3:78               push1
   07d4:72 0016          lofsa $0016                    // roger
   07d7:36                push
-  07d8:81 05              lag
+  07d8:81 05              lag global5
   07da:4a 06             send 6
 
   07dc:30 001a            bnt code_07f9
@@ -1471,11 +1471,11 @@
   0852:1a                 eq?
   0853:30 0052            bnt code_08a8
   0856:76               push0
-  0857:45 03 00         callb procedure_0003 0         //
+  0857:45 03 00         callb procedure_0003 0         // proc0_3
 
   085a:39 04            pushi 4                        // $4 x
   085c:76               push0
-  085d:81 00              lag
+  085d:81 00              lag gEgo
   085f:4a 04             send 4
 
   0861:36                push
@@ -1505,7 +1505,7 @@
   0884:36                push
   0885:39 04            pushi 4                        // $4 x
   0887:76               push0
-  0888:81 00              lag
+  0888:81 00              lag gEgo
   088a:4a 04             send 4
 
   088c:1e                 gt?
@@ -1517,10 +1517,10 @@
   0895:4a 0c             send c
 
   0897:7a               push2
-  0898:89 00              lsg
+  0898:89 00              lsg gEgo
   089a:72 042c          lofsa $042c                    // scholar2
   089d:36                push
-  089e:45 09 04         callb procedure_0009 4         //
+  089e:45 09 04         callb procedure_0009 4         // proc0_9
 
   08a1:35 0a              ldi a
   08a3:65 16             aTop ticks
@@ -1584,7 +1584,7 @@
   08fe:1a                 eq?
   08ff:30 0009            bnt code_090b
   0902:76               push0
-  0903:45 04 00         callb procedure_0004 0         //
+  0903:45 04 00         callb procedure_0004 0         // proc0_4
 
   0906:39 6c            pushi 6c                       // $6c dispose
   0908:76               push0
@@ -1660,11 +1660,11 @@
   09a4:1a                 eq?
   09a5:30 005c            bnt code_0a04
   09a8:76               push0
-  09a9:45 03 00         callb procedure_0003 0         //
+  09a9:45 03 00         callb procedure_0003 0         // proc0_3
 
   09ac:39 04            pushi 4                        // $4 x
   09ae:76               push0
-  09af:81 00              lag
+  09af:81 00              lag gEgo
   09b1:4a 04             send 4
 
   09b3:36                push
@@ -1694,7 +1694,7 @@
   09d6:36                push
   09d7:39 04            pushi 4                        // $4 x
   09d9:76               push0
-  09da:81 00              lag
+  09da:81 00              lag gEgo
   09dc:4a 04             send 4
 
   09de:1e                 gt?
@@ -1706,18 +1706,18 @@
   09e7:4a 0c             send c
 
   09e9:39 03            pushi 3                        // $3 y
-  09eb:89 00              lsg
+  09eb:89 00              lsg gEgo
   09ed:72 042c          lofsa $042c                    // scholar2
   09f0:36                push
   09f1:7c            pushSelf
-  09f2:45 09 06         callb procedure_0009 6         //
+  09f2:45 09 06         callb procedure_0009 6         // proc0_9
 
   09f5:39 03            pushi 3                        // $3 y
   09f7:72 042c          lofsa $042c                    // scholar2
   09fa:36                push
-  09fb:89 00              lsg
+  09fb:89 00              lsg gEgo
   09fd:7c            pushSelf
-  09fe:45 09 06         callb procedure_0009 6         //
+  09fe:45 09 06         callb procedure_0009 6         // proc0_9
 
   0a01:32 015e            jmp code_0b62
 
@@ -1783,7 +1783,7 @@
   0a60:78               push1
   0a61:39 03            pushi 3                        // $3 y
   0a63:76               push0
-  0a64:81 00              lag
+  0a64:81 00              lag gEgo
   0a66:4a 04             send 4
 
   0a68:36                push
@@ -1817,8 +1817,8 @@
   0a96:7a               push2
   0a97:72 0094          lofsa $0094                    // giles
   0a9a:36                push
-  0a9b:89 00              lsg
-  0a9d:45 09 04         callb procedure_0009 4         //
+  0a9b:89 00              lsg gEgo
+  0a9d:45 09 04         callb procedure_0009 4         // proc0_9
 
   0aa0:39 04            pushi 4                        // $4 x
   0aa2:78               push1
@@ -1843,7 +1843,7 @@
   0abe:78               push1
   0abf:39 03            pushi 3                        // $3 y
   0ac1:76               push0
-  0ac2:81 00              lag
+  0ac2:81 00              lag gEgo
   0ac4:4a 04             send 4
 
   0ac6:36                push
@@ -1877,8 +1877,8 @@
   0af4:7a               push2
   0af5:72 0016          lofsa $0016                    // roger
   0af8:36                push
-  0af9:89 00              lsg
-  0afb:45 09 04         callb procedure_0009 4         //
+  0af9:89 00              lsg gEgo
+  0afb:45 09 04         callb procedure_0009 4         // proc0_9
 
   0afe:35 02              ldi 2
   0b00:65 10             aTop cycles
@@ -1895,7 +1895,7 @@
   0b11:38 011b          pushi 11b                      // $11b setMotion
   0b14:78               push1
   0b15:76               push0
-  0b16:81 00              lag
+  0b16:81 00              lag gEgo
   0b18:4a 0c             send c
 
   0b1a:38 012b          pushi 12b                      // $12b setAvoider
@@ -1934,11 +1934,11 @@
   0b51:4a 0c             send c
 
   0b53:35 24              ldi 24
-  0b55:a1 91              sag
+  0b55:a1 91              sag global145
   0b57:38 0179          pushi 179                      // $179 newRoom
   0b5a:78               push1
   0b5b:38 00aa          pushi aa                       // $aa setSize
-  0b5e:81 02              lag
+  0b5e:81 02              lag global2
   0b60:4a 06             send 6
 
 
@@ -1976,7 +1976,7 @@
   0ba8:1a                 eq?
   0ba9:30 007e            bnt code_0c2a
   0bac:76               push0
-  0bad:45 03 00         callb procedure_0003 0         //
+  0bad:45 03 00         callb procedure_0003 0         // proc0_3
 
   0bb0:35 00              ldi 0
   0bb2:a5 00              sat temp0
@@ -1993,7 +1993,7 @@
 
   0bc3:65 1a             aTop register
   0bc5:67 1a             pTos register
-  0bc7:81 7b              lag
+  0bc7:81 7b              lag global123
   0bc9:24                 le?
   0bca:30 0002            bnt code_0bcf
   0bcd:6d 1a            dpToa register
@@ -2039,7 +2039,7 @@
   0c08:36                push
   0c09:39 04            pushi 4                        // $4 x
   0c0b:76               push0
-  0c0c:81 00              lag
+  0c0c:81 00              lag gEgo
   0c0e:4a 04             send 4
 
   0c10:1e                 gt?
@@ -2051,11 +2051,11 @@
   0c19:4a 0c             send c
 
   0c1b:39 03            pushi 3                        // $3 y
-  0c1d:89 00              lsg
+  0c1d:89 00              lsg gEgo
   0c1f:72 042c          lofsa $042c                    // scholar2
   0c22:36                push
   0c23:7c            pushSelf
-  0c24:45 09 06         callb procedure_0009 6         //
+  0c24:45 09 06         callb procedure_0009 6         // proc0_9
 
   0c27:32 01f3            jmp code_0e1d
 
@@ -2090,7 +2090,7 @@
   0c52:35 02              ldi 2
   0c54:1a                 eq?
   0c55:30 0029            bnt code_0c81
-  0c58:89 c4              lsg
+  0c58:89 c4              lsg global196
   0c5a:35 01              ldi 1
   0c5c:22                 lt?
   0c5d:30 0018            bnt code_0c78
@@ -2126,7 +2126,7 @@
 
   0c96:39 03            pushi 3                        // $3 y
   0c98:38 0525          pushi 525                      // $525 sel_1317
-  0c9b:89 7b              lsg
+  0c9b:89 7b              lsg global123
   0c9d:5b 04 02           lea 4 2
   0ca0:36                push
   0ca1:78               push1
@@ -2163,9 +2163,9 @@
   0ccf:1a                 eq?
   0cd0:30 003c            bnt code_0d0f
   0cd3:76               push0
-  0cd4:45 03 00         callb procedure_0003 0         //
+  0cd4:45 03 00         callb procedure_0003 0         // proc0_3
 
-  0cd7:89 c4              lsg
+  0cd7:89 c4              lsg global196
   0cd9:35 01              ldi 1
   0cdb:22                 lt?
   0cdc:30 0018            bnt code_0cf7
@@ -2235,7 +2235,7 @@
   0d4c:78               push1
   0d4d:46 0353 0000 0c  calle 353 procedure_0000 c     //
 
-  0d53:c1 c4              +ag
+  0d53:c1 c4              +ag global196
   0d55:6b 0a            ipToa state
   0d57:38 008e          pushi 8e                       // $8e setScript
   0d5a:7a               push2
@@ -2267,7 +2267,7 @@
   0d80:35 08              ldi 8
   0d82:1a                 eq?
   0d83:30 0053            bnt code_0dd9
-  0d86:89 c4              lsg
+  0d86:89 c4              lsg global196
   0d88:35 01              ldi 1
   0d8a:22                 lt?
   0d8b:30 0027            bnt code_0db5
@@ -2283,7 +2283,7 @@
   0d9d:46 0353 0000 0c  calle 353 procedure_0000 c     //
 
   0da3:35 01              ldi 1
-  0da5:a1 c4              sag
+  0da5:a1 c4              sag global196
   0da7:38 008e          pushi 8e                       // $8e setScript
   0daa:7a               push2
   0dab:72 081a          lofsa $081a                    // menLeave
@@ -2308,7 +2308,7 @@
   0dcd:78               push1
   0dce:72 0fa8          lofsa $0fa8                    // sDieNow
   0dd1:36                push
-  0dd2:81 02              lag
+  0dd2:81 02              lag global2
   0dd4:4a 06             send 6
 
   0dd6:32 0044            jmp code_0e1d
@@ -2353,7 +2353,7 @@
   0e10:1a                 eq?
   0e11:30 0009            bnt code_0e1d
   0e14:76               push0
-  0e15:45 04 00         callb procedure_0004 0         //
+  0e15:45 04 00         callb procedure_0004 0         // proc0_4
 
   0e18:39 6c            pushi 6c                       // $6c dispose
   0e1a:76               push0
@@ -2407,7 +2407,7 @@
   0e7a:8b 5a              lsl local90
   0e7c:8b 5b              lsl local91
   0e7e:7c            pushSelf
-  0e7f:81 00              lag
+  0e7f:81 00              lag gEgo
   0e81:4a 18             send 18
 
   0e83:38 012b          pushi 12b                      // $12b setAvoider
@@ -2420,7 +2420,7 @@
   0e90:39 04            pushi 4                        // $4 x
   0e92:51 6b            class PChase
   0e94:36                push
-  0e95:89 00              lsg
+  0e95:89 00              lsg gEgo
   0e97:39 50            pushi 50                       // $50 title
   0e99:7c            pushSelf
   0e9a:72 0094          lofsa $0094                    // giles
@@ -2453,7 +2453,7 @@
   0eca:39 04            pushi 4                        // $4 x
   0ecc:51 6b            class PChase
   0ece:36                push
-  0ecf:89 00              lsg
+  0ecf:89 00              lsg gEgo
   0ed1:39 28            pushi 28                       // $28 message
   0ed3:7c            pushSelf
   0ed4:72 0016          lofsa $0016                    // roger
@@ -2488,16 +2488,16 @@
   0efd:1a                 eq?
   0efe:30 001b            bnt code_0f1c
   0f01:7a               push2
-  0f02:89 00              lsg
+  0f02:89 00              lsg gEgo
   0f04:72 042c          lofsa $042c                    // scholar2
   0f07:36                push
-  0f08:45 09 04         callb procedure_0009 4         //
+  0f08:45 09 04         callb procedure_0009 4         // proc0_9
 
   0f0b:7a               push2
   0f0c:72 042c          lofsa $042c                    // scholar2
   0f0f:36                push
-  0f10:89 00              lsg
-  0f12:45 09 04         callb procedure_0009 4         //
+  0f10:89 00              lsg gEgo
+  0f12:45 09 04         callb procedure_0009 4         // proc0_9
 
   0f15:35 0a              ldi a
   0f17:65 16             aTop ticks
@@ -2532,7 +2532,7 @@
   0f48:38 011b          pushi 11b                      // $11b setMotion
   0f4b:78               push1
   0f4c:76               push0
-  0f4d:81 00              lag
+  0f4d:81 00              lag gEgo
   0f4f:4a 0c             send c
 
   0f51:38 012b          pushi 12b                      // $12b setAvoider
@@ -2571,11 +2571,11 @@
   0f88:4a 0c             send c
 
   0f8a:35 24              ldi 24
-  0f8c:a1 91              sag
+  0f8c:a1 91              sag global145
   0f8e:38 0179          pushi 179                      // $179 newRoom
   0f91:78               push1
   0f92:38 00aa          pushi aa                       // $aa setSize
-  0f95:81 02              lag
+  0f95:81 02              lag global2
   0f97:4a 06             send 6
 
 
@@ -2635,7 +2635,7 @@
   1000:78               push1
   1001:39 03            pushi 3                        // $3 y
   1003:76               push0
-  1004:81 00              lag
+  1004:81 00              lag gEgo
   1006:4a 04             send 4
 
   1008:36                push
@@ -2673,7 +2673,7 @@
   103d:78               push1
   103e:39 04            pushi 4                        // $4 x
   1040:76               push0
-  1041:81 00              lag
+  1041:81 00              lag gEgo
   1043:4a 04             send 4
 
   1045:36                push
@@ -2730,7 +2730,7 @@
   1090:78               push1
   1091:39 03            pushi 3                        // $3 y
   1093:76               push0
-  1094:81 00              lag
+  1094:81 00              lag gEgo
   1096:4a 04             send 4
 
   1098:36                push
@@ -2768,7 +2768,7 @@
   10cd:78               push1
   10ce:39 04            pushi 4                        // $4 x
   10d0:76               push0
-  10d1:81 00              lag
+  10d1:81 00              lag gEgo
   10d3:4a 04             send 4
 
   10d5:36                push

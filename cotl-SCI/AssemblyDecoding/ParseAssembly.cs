@@ -7,8 +7,7 @@ namespace cotl_SCI.AssemblyDecoding
 {
     class ParseAssembly
     {
-        // private const string SCRIPT_DIR = "../../../../disassembled-scripts/decompiled-assembly/";
-        private const string SCRIPT_DIR = "X:\\checkouts\\cotl-SCI\\cheat-engine-configuration\\";
+        private const string SCRIPT_DIR = "../../../../disassembled-scripts/decompiled-assembly/";
         private const string OUTPUT_DIR = "../../../../output/";
         private const string FILE_EXT = ".scr.asm";
 

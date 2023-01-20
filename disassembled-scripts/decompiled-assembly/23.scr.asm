@@ -237,12 +237,12 @@
   004d:30 0012            bnt code_0062
   0050:78               push1
   0051:76               push0
-  0052:47 0d 06 02      calle d procedure_0006 2       //
+  0052:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0056:7a               push2
   0057:38 03ff          pushi 3ff                      // $3ff sel_1023
   005a:76               push0
-  005b:47 0d 04 04      calle d procedure_0004 4       //
+  005b:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   005f:32 0416            jmp code_0478
 
@@ -251,12 +251,12 @@
   0064:a3 00              sal local0
   0066:78               push1
   0067:76               push0
-  0068:47 0d 06 02      calle d procedure_0006 2       //
+  0068:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   006c:7a               push2
   006d:38 03ff          pushi 3ff                      // $3ff sel_1023
   0070:78               push1
-  0071:47 0d 04 04      calle d procedure_0004 4       //
+  0071:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0075:32 0400            jmp code_0478
 
@@ -280,7 +280,7 @@
   0098:38 0147          pushi 147                      // $147 get
   009b:78               push1
   009c:39 0c            pushi c                        // $c nsRight
-  009e:81 00              lag
+  009e:81 00              lag gEgo
   00a0:4a 06             send 6
 
   00a2:32 03d3            jmp code_0478
@@ -291,7 +291,7 @@
   00a9:39 43            pushi 43                       // $43 at
   00ab:78               push1
   00ac:39 0c            pushi c                        // $c nsRight
-  00ae:81 09              lag
+  00ae:81 09              lag global9
   00b0:4a 06             send 6
 
   00b2:4a 04             send 4
@@ -311,7 +311,7 @@
   00ca:32 03ab            jmp code_0478
 
         code_00cd
-  00cd:89 7e              lsg
+  00cd:89 7e              lsg global126
   00cf:3c                 dup
   00d0:35 01              ldi 1
   00d2:1a                 eq?
@@ -361,7 +361,7 @@
   011e:35 04              ldi 4
   0120:1a                 eq?
   0121:30 004a            bnt code_016e
-  0124:89 82              lsg
+  0124:89 82              lsg global130
   0126:3c                 dup
   0127:35 08              ldi 8
   0129:1a                 eq?
@@ -474,7 +474,7 @@
   01dd:39 43            pushi 43                       // $43 at
   01df:78               push1
   01e0:39 0c            pushi c                        // $c nsRight
-  01e2:81 09              lag
+  01e2:81 09              lag global9
   01e4:4a 06             send 6
 
   01e6:4a 04             send 4
@@ -601,7 +601,7 @@
   02b9:7a               push2
   02ba:39 0b            pushi b                        // $b nsBottom
   02bc:7c            pushSelf
-  02bd:81 00              lag
+  02bd:81 00              lag gEgo
   02bf:4a 08             send 8
 
   02c1:32 0191            jmp code_0455
@@ -638,7 +638,7 @@
   02f8:7a               push2
   02f9:39 0c            pushi c                        // $c nsRight
   02fb:7c            pushSelf
-  02fc:81 00              lag
+  02fc:81 00              lag gEgo
   02fe:4a 08             send 8
 
   0300:35 01              ldi 1
@@ -680,7 +680,7 @@
   033c:35 0d              ldi d
   033e:1a                 eq?
   033f:30 0038            bnt code_037a
-  0342:89 82              lsg
+  0342:89 82              lsg global130
   0344:35 07              ldi 7
   0346:22                 lt?
   0347:30 0013            bnt code_035d
@@ -706,7 +706,7 @@
   036d:38 0148          pushi 148                      // $148 put
   0370:78               push1
   0371:39 0d            pushi d                        // $d lsTop
-  0373:81 00              lag
+  0373:81 00              lag gEgo
   0375:4a 06             send 6
 
   0377:32 00db            jmp code_0455
@@ -851,7 +851,7 @@
   0460:7a               push2
   0461:38 03ff          pushi 3ff                      // $3ff sel_1023
   0464:39 20            pushi 20                       // $20 state
-  0466:47 0d 04 04      calle d procedure_0004 4       //
+  0466:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   046a:32 000b            jmp code_0478
 

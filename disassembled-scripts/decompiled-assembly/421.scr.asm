@@ -181,18 +181,18 @@
   0060:39 05            pushi 5                        // $5 view
   0062:39 06            pushi 6                        // $6 loop
   0064:39 07            pushi 7                        // $7 cel
-  0066:81 45              lag
+  0066:81 45              lag gIconBar
   0068:4a 14             send 14
 
   006a:76               push0
-  006b:45 03 00         callb procedure_0003 0         //
+  006b:45 03 00         callb procedure_0003 0         // proc0_3
 
   006e:39 6b            pushi 6b                       // $6b init
   0070:76               push0
   0071:72 072e          lofsa $072e                    // scribe
   0074:4a 04             send 4
 
-  0076:89 97              lsg
+  0076:89 97              lsg global151
   0078:3c                 dup
   0079:35 0a              ldi a
   007b:1a                 eq?
@@ -201,14 +201,14 @@
   0081:78               push1
   0082:72 057e          lofsa $057e                    // marianM
   0085:36                push
-  0086:81 0a              lag
+  0086:81 0a              lag global10
   0088:4a 06             send 6
 
   008a:39 73            pushi 73                       // $73 add
   008c:78               push1
   008d:72 05c6          lofsa $05c6                    // tuckie
   0090:36                push
-  0091:81 0a              lag
+  0091:81 0a              lag global10
   0093:4a 06             send 6
 
   0095:39 6b            pushi 6b                       // $6b init
@@ -235,14 +235,14 @@
   00b9:39 06            pushi 6                        // $6 loop
   00bb:39 0c            pushi c                        // $c nsRight
   00bd:76               push0
-  00be:81 64              lag
+  00be:81 64              lag gRgnMusic
   00c0:4a 1c             send 1c
 
   00c2:38 008e          pushi 8e                       // $8e setScript
   00c5:78               push1
   00c6:72 0c44          lofsa $0c44                    // deliverJudgement1
   00c9:36                push
-  00ca:81 02              lag
+  00ca:81 02              lag global2
   00cc:4a 06             send 6
 
   00ce:32 01c2            jmp code_0293
@@ -310,7 +310,7 @@
   0131:78               push1
   0132:72 057e          lofsa $057e                    // marianM
   0135:36                push
-  0136:81 0a              lag
+  0136:81 0a              lag global10
   0138:4a 06             send 6
 
   013a:39 04            pushi 4                        // $4 x
@@ -386,14 +386,14 @@
   01b7:39 06            pushi 6                        // $6 loop
   01b9:39 0c            pushi c                        // $c nsRight
   01bb:76               push0
-  01bc:81 64              lag
+  01bc:81 64              lag gRgnMusic
   01be:4a 1c             send 1c
 
   01c0:38 008e          pushi 8e                       // $8e setScript
   01c3:78               push1
   01c4:72 0fa6          lofsa $0fa6                    // deliverJudgement2
   01c7:36                push
-  01c8:81 02              lag
+  01c8:81 02              lag global2
   01ca:4a 06             send 6
 
   01cc:32 00c4            jmp code_0293
@@ -507,14 +507,14 @@
   027e:39 06            pushi 6                        // $6 loop
   0280:39 0c            pushi c                        // $c nsRight
   0282:76               push0
-  0283:81 64              lag
+  0283:81 64              lag gRgnMusic
   0285:4a 1c             send 1c
 
   0287:38 008e          pushi 8e                       // $8e setScript
   028a:78               push1
   028b:72 111e          lofsa $111e                    // deliverJudgement3
   028e:36                push
-  028f:81 02              lag
+  028f:81 02              lag global2
   0291:4a 06             send 6
 
 
@@ -549,7 +549,7 @@
   02c7:39 6b            pushi 6b                       // $6b init
   02c9:39 3c            pushi 3c                       // $3c doit
   02cb:76               push0
-  02cc:81 0a              lag
+  02cc:81 0a              lag global10
   02ce:4a 24             send 24
 
   02d0:48                 ret
@@ -1690,20 +1690,20 @@
   0c7e:39 74            pushi 74                       // $74 eachElementDo
   0c80:78               push1
   0c81:39 6c            pushi 6c                       // $6c dispose
-  0c83:81 0a              lag
+  0c83:81 0a              lag global10
   0c85:4a 06             send 6
 
   0c87:39 74            pushi 74                       // $74 eachElementDo
   0c89:78               push1
   0c8a:39 6c            pushi 6c                       // $6c dispose
-  0c8c:81 05              lag
+  0c8c:81 05              lag global5
   0c8e:4a 06             send 6
 
   0c90:38 018c          pushi 18c                      // $18c drawPic
   0c93:7a               push2
   0c94:38 0323          pushi 323                      // $323 sel_803
   0c97:38 8006          pushi 8006                     // $8006 sel_32774
-  0c9a:81 02              lag
+  0c9a:81 02              lag global2
   0c9c:4a 08             send 8
 
   0c9e:39 2b            pushi 2b                       // $2b number
@@ -1720,7 +1720,7 @@
   0cb1:39 06            pushi 6                        // $6 loop
   0cb3:39 0c            pushi c                        // $c nsRight
   0cb5:76               push0
-  0cb6:81 64              lag
+  0cb6:81 64              lag gRgnMusic
   0cb8:4a 1c             send 1c
 
   0cba:35 1e              ldi 1e
@@ -1756,7 +1756,7 @@
   0ceb:7a               push2
   0cec:38 01e0          pushi 1e0                      // $1e0 addPt
   0cef:38 8007          pushi 8007                     // $8007 sel_32775
-  0cf2:81 02              lag
+  0cf2:81 02              lag global2
   0cf4:4a 08             send 8
 
   0cf6:35 1e              ldi 1e
@@ -1787,7 +1787,7 @@
   0d1d:38 058c          pushi 58c                      // $58c sel_1420
   0d20:39 70            pushi 70                       // $70 isMemberOf
   0d22:7c            pushSelf
-  0d23:47 0d 04 06      calle d procedure_0004 6       //
+  0d23:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   0d27:32 00d5            jmp code_0dff
 
@@ -1833,7 +1833,7 @@
   0d67:38 058c          pushi 58c                      // $58c sel_1420
   0d6a:39 71            pushi 71                       // $71 respondsTo
   0d6c:7c            pushSelf
-  0d6d:47 0d 04 06      calle d procedure_0004 6       //
+  0d6d:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   0d71:32 008b            jmp code_0dff
 
@@ -1918,7 +1918,7 @@
   0df0:38 0179          pushi 179                      // $179 newRoom
   0df3:78               push1
   0df4:39 61            pushi 61                       // $61 vol
-  0df6:81 02              lag
+  0df6:81 02              lag global2
   0df8:4a 06             send 6
 
   0dfa:39 6c            pushi 6c                       // $6c dispose
@@ -2027,20 +2027,20 @@
   0eb4:39 74            pushi 74                       // $74 eachElementDo
   0eb6:78               push1
   0eb7:39 6c            pushi 6c                       // $6c dispose
-  0eb9:81 0a              lag
+  0eb9:81 0a              lag global10
   0ebb:4a 06             send 6
 
   0ebd:39 74            pushi 74                       // $74 eachElementDo
   0ebf:78               push1
   0ec0:39 6c            pushi 6c                       // $6c dispose
-  0ec2:81 05              lag
+  0ec2:81 05              lag global5
   0ec4:4a 06             send 6
 
   0ec6:38 018c          pushi 18c                      // $18c drawPic
   0ec9:7a               push2
   0eca:38 0323          pushi 323                      // $323 sel_803
   0ecd:38 8006          pushi 8006                     // $8006 sel_32774
-  0ed0:81 02              lag
+  0ed0:81 02              lag global2
   0ed2:4a 08             send 8
 
   0ed4:35 1e              ldi 1e
@@ -2056,7 +2056,7 @@
   0ee5:7a               push2
   0ee6:38 0320          pushi 320                      // $320 sel_800
   0ee9:38 8007          pushi 8007                     // $8007 sel_32775
-  0eec:81 02              lag
+  0eec:81 02              lag global2
   0eee:4a 08             send 8
 
   0ef0:39 6b            pushi 6b                       // $6b init
@@ -2102,7 +2102,7 @@
   0f37:39 43            pushi 43                       // $43 at
   0f39:39 37            pushi 37                       // $37 yStep
   0f3b:38 0096          pushi 96                       // $96 setCycle
-  0f3e:47 0d 04 0c      calle d procedure_0004 c       //
+  0f3e:47 0d 04 0c      calle d procedure_0004 c       // proc13_4
 
   0f42:32 0052            jmp code_0f97
 
@@ -2118,7 +2118,7 @@
   0f55:39 43            pushi 43                       // $43 at
   0f57:39 37            pushi 37                       // $37 yStep
   0f59:38 0096          pushi 96                       // $96 setCycle
-  0f5c:47 0d 04 0c      calle d procedure_0004 c       //
+  0f5c:47 0d 04 0c      calle d procedure_0004 c       // proc13_4
 
   0f60:32 0034            jmp code_0f97
 
@@ -2133,7 +2133,7 @@
   0f71:39 06            pushi 6                        // $6 loop
   0f73:39 0c            pushi c                        // $c nsRight
   0f75:76               push0
-  0f76:81 64              lag
+  0f76:81 64              lag gRgnMusic
   0f78:4a 0c             send c
 
   0f7a:35 48              ldi 48
@@ -2148,7 +2148,7 @@
   0f88:38 0179          pushi 179                      // $179 newRoom
   0f8b:78               push1
   0f8c:39 61            pushi 61                       // $61 vol
-  0f8e:81 02              lag
+  0f8e:81 02              lag global2
   0f90:4a 06             send 6
 
   0f92:39 6c            pushi 6c                       // $6c dispose
@@ -2238,20 +2238,20 @@
   102c:39 74            pushi 74                       // $74 eachElementDo
   102e:78               push1
   102f:39 6c            pushi 6c                       // $6c dispose
-  1031:81 0a              lag
+  1031:81 0a              lag global10
   1033:4a 06             send 6
 
   1035:39 74            pushi 74                       // $74 eachElementDo
   1037:78               push1
   1038:39 6c            pushi 6c                       // $6c dispose
-  103a:81 05              lag
+  103a:81 05              lag global5
   103c:4a 06             send 6
 
   103e:38 018c          pushi 18c                      // $18c drawPic
   1041:7a               push2
   1042:38 0323          pushi 323                      // $323 sel_803
   1045:38 8006          pushi 8006                     // $8006 sel_32774
-  1048:81 02              lag
+  1048:81 02              lag global2
   104a:4a 08             send 8
 
   104c:35 1e              ldi 1e
@@ -2267,7 +2267,7 @@
   105d:7a               push2
   105e:38 0320          pushi 320                      // $320 sel_800
   1061:38 8007          pushi 8007                     // $8007 sel_32775
-  1064:81 02              lag
+  1064:81 02              lag global2
   1066:4a 08             send 8
 
   1068:39 6b            pushi 6b                       // $6b init
@@ -2313,7 +2313,7 @@
   10af:39 43            pushi 43                       // $43 at
   10b1:39 37            pushi 37                       // $37 yStep
   10b3:38 0096          pushi 96                       // $96 setCycle
-  10b6:47 0d 04 0c      calle d procedure_0004 c       //
+  10b6:47 0d 04 0c      calle d procedure_0004 c       // proc13_4
 
   10ba:32 0052            jmp code_110f
 
@@ -2329,7 +2329,7 @@
   10cd:39 43            pushi 43                       // $43 at
   10cf:39 37            pushi 37                       // $37 yStep
   10d1:38 0096          pushi 96                       // $96 setCycle
-  10d4:47 0d 04 0c      calle d procedure_0004 c       //
+  10d4:47 0d 04 0c      calle d procedure_0004 c       // proc13_4
 
   10d8:32 0034            jmp code_110f
 
@@ -2344,7 +2344,7 @@
   10e9:39 06            pushi 6                        // $6 loop
   10eb:39 0c            pushi c                        // $c nsRight
   10ed:76               push0
-  10ee:81 64              lag
+  10ee:81 64              lag gRgnMusic
   10f0:4a 0c             send c
 
   10f2:35 48              ldi 48
@@ -2359,7 +2359,7 @@
   1100:38 0179          pushi 179                      // $179 newRoom
   1103:78               push1
   1104:39 61            pushi 61                       // $61 vol
-  1106:81 02              lag
+  1106:81 02              lag global2
   1108:4a 06             send 6
 
   110a:39 6c            pushi 6c                       // $6c dispose

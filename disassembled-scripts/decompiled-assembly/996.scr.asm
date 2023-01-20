@@ -163,13 +163,13 @@
   0094:87 01              lap param1
   0096:4a 04             send 4
 
-  0098:a1 46              sag
+  0098:a1 46              sag global70
   009a:39 03            pushi 3                        // $3 y
   009c:76               push0
   009d:87 01              lap param1
   009f:4a 04             send 4
 
-  00a1:a1 47              sag
+  00a1:a1 47              sag global71
   00a3:39 22            pushi 22                       // $22 type
   00a5:76               push0
   00a6:87 01              lap param1
@@ -177,7 +177,7 @@
 
   00aa:30 00e6            bnt code_0193
   00ad:87 01              lap param1
-  00af:a1 18              sag
+  00af:a1 18              sag global24
   00b1:63 1a             pToa mapKeyToDir
   00b3:30 0006            bnt code_00bc
   00b6:78               push1
@@ -231,7 +231,7 @@
   00f6:4a 04             send 4
 
   00f8:a5 00              sat temp0
-  00fa:81 44              lag
+  00fa:81 44              lag global68
   00fc:30 000a            bnt code_0109
   00ff:38 0081          pushi 81                       // $81 handleEvent
   0102:7a               push2
@@ -255,7 +255,7 @@
   0119:35 40              ldi 40
   011b:12                 and
   011c:30 0047            bnt code_0166
-  011f:81 4d              lag
+  011f:81 4d              lag global77
   0121:30 0008            bnt code_012c
   0124:38 0081          pushi 81                       // $81 handleEvent
   0127:78               push1
@@ -265,7 +265,7 @@
 
         code_012c
   012c:2e 0064             bt code_0193
-  012f:81 4a              lag
+  012f:81 4a              lag gDH
   0131:30 0008            bnt code_013c
   0134:38 0081          pushi 81                       // $81 handleEvent
   0137:78               push1
@@ -288,7 +288,7 @@
 
         code_0153
   0153:2e 003d             bt code_0193
-  0156:81 45              lag
+  0156:81 45              lag gIconBar
   0158:30 0038            bnt code_0193
   015b:38 0081          pushi 81                       // $81 handleEvent
   015e:78               push1
@@ -302,7 +302,7 @@
   0168:35 04              ldi 4
   016a:1a                 eq?
   016b:30 0010            bnt code_017e
-  016e:81 48              lag
+  016e:81 48              lag gKH
   0170:30 0020            bnt code_0193
   0173:38 0081          pushi 81                       // $81 handleEvent
   0176:78               push1
@@ -316,7 +316,7 @@
   0180:35 01              ldi 1
   0182:1a                 eq?
   0183:30 000d            bnt code_0193
-  0186:81 49              lag
+  0186:81 49              lag gMH
   0188:30 0008            bnt code_0193
   018b:38 0081          pushi 81                       // $81 handleEvent
   018e:78               push1
@@ -332,7 +332,7 @@
 
   019a:18                 not
   019b:30 00f1            bnt code_028f
-  019e:81 45              lag
+  019e:81 45              lag gIconBar
   01a0:30 0008            bnt code_01ab
   01a3:38 0081          pushi 81                       // $81 handleEvent
   01a6:78               push1
@@ -374,7 +374,7 @@
   01e1:32 006e            jmp code_0252
 
         code_01e4
-  01e4:81 22              lag
+  01e4:81 22              lag global34
   01e6:30 0048            bnt code_0231
   01e9:39 6b            pushi 6b                       // $6b init
   01eb:76               push0
@@ -387,7 +387,7 @@
   01f7:72 06ec          lofsa $06ec                    // OnMeAndLowY
   01fa:36                push
   01fb:8f 01              lsp param1
-  01fd:81 05              lag
+  01fd:81 05              lag global5
   01ff:4a 0a             send a
 
   0201:39 74            pushi 74                       // $74 eachElementDo
@@ -396,7 +396,7 @@
   0207:72 06ec          lofsa $06ec                    // OnMeAndLowY
   020a:36                push
   020b:8f 01              lsp param1
-  020d:81 20              lag
+  020d:81 20              lag global32
   020f:4a 0a             send a
 
   0211:38 0145          pushi 145                      // $145 theObj
@@ -421,7 +421,7 @@
   0231:38 0081          pushi 81                       // $81 handleEvent
   0234:78               push1
   0235:8f 01              lsp param1
-  0237:81 05              lag
+  0237:81 05              lag global5
   0239:4a 06             send 6
 
   023b:30 0005            bnt code_0243
@@ -432,7 +432,7 @@
   0243:38 0081          pushi 81                       // $81 handleEvent
   0246:78               push1
   0247:8f 01              lsp param1
-  0249:81 20              lag
+  0249:81 20              lag global32
   024b:4a 06             send 6
 
   024d:30 0002            bnt code_0252
@@ -452,7 +452,7 @@
   0261:38 0081          pushi 81                       // $81 handleEvent
   0264:78               push1
   0265:8f 01              lsp param1
-  0267:81 06              lag
+  0267:81 06              lag global6
   0269:4a 06             send 6
 
   026b:30 0002            bnt code_0270
@@ -475,7 +475,7 @@
   0285:38 0081          pushi 81                       // $81 handleEvent
   0288:78               push1
   0289:8f 01              lsp param1
-  028b:81 01              lag
+  028b:81 01              lag global1
   028d:4a 06             send 6
 
 
@@ -603,7 +603,7 @@
   035b:67 0a             pTos y
   035d:38 0136          pushi 136                      // $136 horizon
   0360:76               push0
-  0361:81 02              lag
+  0361:81 02              lag global2
   0363:4a 04             send 4
 
   0365:24                 le?
@@ -639,7 +639,7 @@
   042c:39 77            pushi 77                       // $77 contains
   042e:78               push1
   042f:7c            pushSelf
-  0430:81 05              lag
+  0430:81 05              lag global5
   0432:4a 06             send 6
 
   0434:18                 not
@@ -661,7 +661,7 @@
   0448:30 0069            bnt code_04b4
   044b:38 013b          pushi 13b                      // $13b controls
   044e:76               push0
-  044f:81 50              lag
+  044f:81 50              lag global80
   0451:4a 04             send 4
 
   0453:30 005e            bnt code_04b4
@@ -695,7 +695,7 @@
   047c:8d 00              lst temp0
   047e:38 013d          pushi 13d                      // $13d prevDir
   0481:76               push0
-  0482:81 50              lag
+  0482:81 50              lag global80
   0484:4a 04             send 4
 
   0486:1a                 eq?
@@ -712,7 +712,7 @@
   0497:38 013d          pushi 13d                      // $13d prevDir
   049a:78               push1
   049b:8d 00              lst temp0
-  049d:81 50              lag
+  049d:81 50              lag global80
   049f:4a 06             send 6
 
   04a1:38 0135          pushi 135                      // $135 setDirection
@@ -771,11 +771,11 @@
   04ea:30 0099            bnt code_0586
   04ed:38 013b          pushi 13b                      // $13b controls
   04f0:76               push0
-  04f1:81 50              lag
+  04f1:81 50              lag global80
   04f3:4a 04             send 4
 
   04f5:30 008e            bnt code_0586
-  04f8:89 43              lsg
+  04f8:89 43              lsg global67
   04fa:3c                 dup
   04fb:35 00              ldi 0
   04fd:1a                 eq?
@@ -865,7 +865,7 @@
   0572:38 013d          pushi 13d                      // $13d prevDir
   0575:78               push1
   0576:76               push0
-  0577:81 50              lag
+  0577:81 50              lag global80
   0579:4a 06             send 6
 
   057b:39 4c            pushi 4c                       // $4c claimed
@@ -918,7 +918,7 @@
   0388:78               push1
   0389:85 00              lat temp0
   038b:9f 01             lspi param1
-  038d:81 09              lag
+  038d:81 09              lag global9
   038f:4a 06             send 6
 
   0391:4a 06             send 6
@@ -955,13 +955,13 @@
   03ba:39 43            pushi 43                       // $43 at
   03bc:78               push1
   03bd:8f 01              lsp param1
-  03bf:81 09              lag
+  03bf:81 09              lag global9
   03c1:4a 06             send 6
 
   03c3:a5 00              sat temp0
   03c5:4a 06             send 6
 
-  03c7:81 45              lag
+  03c7:81 45              lag gIconBar
   03c9:30 002e            bnt code_03fa
   03cc:38 00d1          pushi d1                       // $d1 curInvIcon
   03cf:76               push0
@@ -983,13 +983,13 @@
   03ea:76               push0
   03eb:38 00d2          pushi d2                       // $d2 useIconItem
   03ee:76               push0
-  03ef:81 45              lag
+  03ef:81 45              lag gIconBar
   03f1:4a 04             send 4
 
   03f3:4a 0a             send a
 
   03f5:36                push
-  03f6:81 45              lag
+  03f6:81 45              lag gIconBar
   03f8:4a 0c             send c
 
 
@@ -1002,7 +1002,7 @@
   03fd:39 43            pushi 43                       // $43 at
   03ff:78               push1
   0400:8f 01              lsp param1
-  0402:81 09              lag
+  0402:81 09              lag global9
   0404:4a 06             send 6
 
   0406:a5 00              sat temp0

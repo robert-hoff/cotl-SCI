@@ -12,11 +12,11 @@
 
 // EXPORTED procedure #0 ()
 (procedure proc_000e
-  000e:89 70              lsg
+  000e:89 70              lsg global112
   0010:35 16              ldi 16
   0012:1a                 eq?
   0013:2e 0005             bt code_001b
-  0016:89 70              lsg
+  0016:89 70              lsg global112
   0018:35 7a              ldi 7a
   001a:1a                 eq?
 
@@ -240,13 +240,13 @@
   01af:4a 26             send 26
 
   01b1:36                push
-  01b2:81 02              lag
+  01b2:81 02              lag global2
   01b4:4a 14             send 14
 
   01b6:32 0d6c            jmp code_0f25
 
         code_01b9
-  01b9:89 70              lsg
+  01b9:89 70              lsg global112
   01bb:35 22              ldi 22
   01bd:1a                 eq?
   01be:30 01a5            bnt code_0366
@@ -472,17 +472,17 @@
   035c:4a 26             send 26
 
   035e:36                push
-  035f:81 02              lag
+  035f:81 02              lag global2
   0361:4a 14             send 14
 
   0363:32 0bbf            jmp code_0f25
 
         code_0366
-  0366:89 70              lsg
+  0366:89 70              lsg global112
   0368:35 58              ldi 58
   036a:1a                 eq?
   036b:2e 0005             bt code_0373
-  036e:89 70              lsg
+  036e:89 70              lsg global112
   0370:35 31              ldi 31
   0372:1a                 eq?
 
@@ -714,37 +714,37 @@
   0514:4a 26             send 26
 
   0516:36                push
-  0517:81 02              lag
+  0517:81 02              lag global2
   0519:4a 14             send 14
 
   051b:32 0a07            jmp code_0f25
 
         code_051e
-  051e:89 70              lsg
+  051e:89 70              lsg global112
   0520:35 03              ldi 3
   0522:1a                 eq?
   0523:2e 002d             bt code_0553
-  0526:89 70              lsg
+  0526:89 70              lsg global112
   0528:35 04              ldi 4
   052a:1a                 eq?
   052b:2e 0025             bt code_0553
-  052e:89 70              lsg
+  052e:89 70              lsg global112
   0530:35 05              ldi 5
   0532:1a                 eq?
   0533:2e 001d             bt code_0553
-  0536:89 70              lsg
+  0536:89 70              lsg global112
   0538:35 06              ldi 6
   053a:1a                 eq?
   053b:2e 0015             bt code_0553
-  053e:89 70              lsg
+  053e:89 70              lsg global112
   0540:35 18              ldi 18
   0542:1a                 eq?
   0543:2e 000d             bt code_0553
-  0546:89 70              lsg
+  0546:89 70              lsg global112
   0548:35 19              ldi 19
   054a:1a                 eq?
   054b:2e 0005             bt code_0553
-  054e:89 70              lsg
+  054e:89 70              lsg global112
   0550:35 1a              ldi 1a
   0552:1a                 eq?
 
@@ -914,21 +914,21 @@
   067d:4a 22             send 22
 
   067f:36                push
-  0680:81 02              lag
+  0680:81 02              lag global2
   0682:4a 10             send 10
 
   0684:32 089e            jmp code_0f25
 
         code_0687
-  0687:89 70              lsg
+  0687:89 70              lsg global112
   0689:35 07              ldi 7
   068b:1a                 eq?
   068c:2e 000d             bt code_069c
-  068f:89 70              lsg
+  068f:89 70              lsg global112
   0691:35 1b              ldi 1b
   0693:1a                 eq?
   0694:2e 0005             bt code_069c
-  0697:89 70              lsg
+  0697:89 70              lsg global112
   0699:35 3c              ldi 3c
   069b:1a                 eq?
 
@@ -1052,29 +1052,29 @@
   076d:4a 22             send 22
 
   076f:36                push
-  0770:81 02              lag
+  0770:81 02              lag global2
   0772:4a 0c             send c
 
   0774:32 07ae            jmp code_0f25
 
         code_0777
-  0777:89 70              lsg
+  0777:89 70              lsg global112
   0779:35 2b              ldi 2b
   077b:1a                 eq?
   077c:2e 001e             bt code_079d
-  077f:89 70              lsg
+  077f:89 70              lsg global112
   0781:35 5b              ldi 5b
   0783:1a                 eq?
   0784:2e 0016             bt code_079d
-  0787:89 70              lsg
+  0787:89 70              lsg global112
   0789:35 6b              ldi 6b
   078b:1a                 eq?
   078c:2e 000e             bt code_079d
-  078f:89 70              lsg
+  078f:89 70              lsg global112
   0791:35 7b              ldi 7b
   0793:1a                 eq?
   0794:2e 0006             bt code_079d
-  0797:89 70              lsg
+  0797:89 70              lsg global112
   0799:34 008b            ldi 8b
   079c:1a                 eq?
 
@@ -1231,21 +1231,21 @@
   08b0:4a 22             send 22
 
   08b2:36                push
-  08b3:81 02              lag
+  08b3:81 02              lag global2
   08b5:4a 0e             send e
 
   08b7:32 066b            jmp code_0f25
 
         code_08ba
-  08ba:89 70              lsg
+  08ba:89 70              lsg global112
   08bc:35 4c              ldi 4c
   08be:1a                 eq?
   08bf:2e 000f             bt code_08d1
-  08c2:89 70              lsg
+  08c2:89 70              lsg global112
   08c4:34 00ab            ldi ab
   08c7:1a                 eq?
   08c8:2e 0006             bt code_08d1
-  08cb:89 70              lsg
+  08cb:89 70              lsg global112
   08cd:34 00b7            ldi b7
   08d0:1a                 eq?
 
@@ -1375,37 +1375,37 @@
   09ab:4a 22             send 22
 
   09ad:36                push
-  09ae:81 02              lag
+  09ae:81 02              lag global2
   09b0:4a 0c             send c
 
   09b2:32 0570            jmp code_0f25
 
         code_09b5
-  09b5:89 70              lsg
+  09b5:89 70              lsg global112
   09b7:34 0093            ldi 93
   09ba:1a                 eq?
   09bb:2e 0033             bt code_09f1
-  09be:89 70              lsg
+  09be:89 70              lsg global112
   09c0:34 0094            ldi 94
   09c3:1a                 eq?
   09c4:2e 002a             bt code_09f1
-  09c7:89 70              lsg
+  09c7:89 70              lsg global112
   09c9:34 0095            ldi 95
   09cc:1a                 eq?
   09cd:2e 0021             bt code_09f1
-  09d0:89 70              lsg
+  09d0:89 70              lsg global112
   09d2:34 00a8            ldi a8
   09d5:1a                 eq?
   09d6:2e 0018             bt code_09f1
-  09d9:89 70              lsg
+  09d9:89 70              lsg global112
   09db:34 00a9            ldi a9
   09de:1a                 eq?
   09df:2e 000f             bt code_09f1
-  09e2:89 70              lsg
+  09e2:89 70              lsg global112
   09e4:34 00aa            ldi aa
   09e7:1a                 eq?
   09e8:2e 0006             bt code_09f1
-  09eb:89 70              lsg
+  09eb:89 70              lsg global112
   09ed:34 00b6            ldi b6
   09f0:1a                 eq?
 
@@ -1598,21 +1598,21 @@
   0b3a:4a 22             send 22
 
   0b3c:36                push
-  0b3d:81 02              lag
+  0b3d:81 02              lag global2
   0b3f:4a 12             send 12
 
   0b41:32 03e1            jmp code_0f25
 
         code_0b44
-  0b44:89 70              lsg
+  0b44:89 70              lsg global112
   0b46:35 40              ldi 40
   0b48:1a                 eq?
   0b49:2e 000f             bt code_0b5b
-  0b4c:89 70              lsg
+  0b4c:89 70              lsg global112
   0b4e:34 0081            ldi 81
   0b51:1a                 eq?
   0b52:2e 0006             bt code_0b5b
-  0b55:89 70              lsg
+  0b55:89 70              lsg global112
   0b57:34 0092            ldi 92
   0b5a:1a                 eq?
 
@@ -1725,25 +1725,25 @@
   0c28:4a 26             send 26
 
   0c2a:36                push
-  0c2b:81 02              lag
+  0c2b:81 02              lag global2
   0c2d:4a 0a             send a
 
   0c2f:32 02f3            jmp code_0f25
 
         code_0c32
-  0c32:89 70              lsg
+  0c32:89 70              lsg global112
   0c34:35 30              ldi 30
   0c36:1a                 eq?
   0c37:2e 0015             bt code_0c4f
-  0c3a:89 70              lsg
+  0c3a:89 70              lsg global112
   0c3c:35 51              ldi 51
   0c3e:1a                 eq?
   0c3f:2e 000d             bt code_0c4f
-  0c42:89 70              lsg
+  0c42:89 70              lsg global112
   0c44:35 61              ldi 61
   0c46:1a                 eq?
   0c47:2e 0005             bt code_0c4f
-  0c4a:89 70              lsg
+  0c4a:89 70              lsg global112
   0c4c:35 71              ldi 71
   0c4e:1a                 eq?
 
@@ -1883,7 +1883,7 @@
   0d54:4a 26             send 26
 
   0d56:36                push
-  0d57:81 02              lag
+  0d57:81 02              lag global2
   0d59:4a 0c             send c
 
   0d5b:32 01c7            jmp code_0f25
@@ -2136,7 +2136,7 @@
   0f1e:4a 22             send 22
 
   0f20:36                push
-  0f21:81 02              lag
+  0f21:81 02              lag global2
   0f23:4a 16             send 16
 
 

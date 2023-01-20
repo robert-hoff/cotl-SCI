@@ -219,24 +219,24 @@
   004d:30 0012            bnt code_0062
   0050:78               push1
   0051:76               push0
-  0052:47 0d 06 02      calle d procedure_0006 2       //
+  0052:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0056:7a               push2
   0057:38 03fc          pushi 3fc                      // $3fc sel_1020
   005a:76               push0
-  005b:47 0d 04 04      calle d procedure_0004 4       //
+  005b:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   005f:32 0318            jmp code_037a
 
         code_0062
   0062:78               push1
   0063:76               push0
-  0064:47 0d 06 02      calle d procedure_0006 2       //
+  0064:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0068:7a               push2
   0069:38 03fc          pushi 3fc                      // $3fc sel_1020
   006c:78               push1
-  006d:47 0d 04 04      calle d procedure_0004 4       //
+  006d:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0071:35 01              ldi 1
   0073:a3 00              sal local0
@@ -262,7 +262,7 @@
   0093:35 05              ldi 5
   0095:1a                 eq?
   0096:30 00bc            bnt code_0155
-  0099:89 7e              lsg
+  0099:89 7e              lsg global126
   009b:3c                 dup
   009c:35 01              ldi 1
   009e:1a                 eq?
@@ -312,7 +312,7 @@
   00ea:35 04              ldi 4
   00ec:1a                 eq?
   00ed:30 0037            bnt code_0127
-  00f0:89 82              lsg
+  00f0:89 82              lsg global130
   00f2:3c                 dup
   00f3:35 08              ldi 8
   00f5:1a                 eq?
@@ -684,7 +684,7 @@
   0362:7a               push2
   0363:38 03fc          pushi 3fc                      // $3fc sel_1020
   0366:39 1b            pushi 1b                       // $1b elements
-  0368:47 0d 04 04      calle d procedure_0004 4       //
+  0368:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   036c:32 000b            jmp code_037a
 

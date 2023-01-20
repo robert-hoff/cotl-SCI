@@ -300,7 +300,7 @@
   01e0:39 43            pushi 43                       // $43 at
   01e2:78               push1
   01e3:67 22             pTos number
-  01e5:81 09              lag
+  01e5:81 09              lag global9
   01e7:4a 06             send 6
 
   01e9:4a 06             send 6
@@ -309,13 +309,13 @@
 
         code_01ee
   01ee:67 20             pTos owner
-  01f0:81 00              lag
+  01f0:81 00              lag gEgo
   01f2:1a                 eq?
   01f3:30 000d            bnt code_0203
   01f6:38 0148          pushi 148                      // $148 put
   01f9:78               push1
   01fa:67 22             pTos number
-  01fc:81 00              lag
+  01fc:81 00              lag gEgo
   01fe:4a 06             send 6
 
   0200:32 0010            jmp code_0213
@@ -327,7 +327,7 @@
   0208:39 43            pushi 43                       // $43 at
   020a:78               push1
   020b:67 22             pTos number
-  020d:81 09              lag
+  020d:81 09              lag global9
   020f:4a 06             send 6
 
   0211:4a 06             send 6

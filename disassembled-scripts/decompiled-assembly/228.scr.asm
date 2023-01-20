@@ -12,7 +12,7 @@
 
 // EXPORTED procedure #0 ()
 (procedure proc_000e
-  000e:89 70              lsg
+  000e:89 70              lsg global112
   0010:3c                 dup
   0011:35 15              ldi 15
   0013:1a                 eq?
@@ -181,7 +181,7 @@
   013f:4a 26             send 26
 
   0141:36                push
-  0142:81 02              lag
+  0142:81 02              lag global2
   0144:4a 10             send 10
 
   0146:32 138d            jmp code_14d6
@@ -422,7 +422,7 @@
   02ee:4a 22             send 22
 
   02f0:36                push
-  02f1:81 02              lag
+  02f1:81 02              lag global2
   02f3:4a 16             send 16
 
   02f5:32 11de            jmp code_14d6
@@ -696,7 +696,7 @@
   04db:4a 22             send 22
 
   04dd:36                push
-  04de:81 02              lag
+  04de:81 02              lag global2
   04e0:4a 18             send 18
 
   04e2:32 0ff1            jmp code_14d6
@@ -916,7 +916,7 @@
   0667:4a 22             send 22
 
   0669:36                push
-  066a:81 02              lag
+  066a:81 02              lag global2
   066c:4a 14             send 14
 
   066e:32 0e65            jmp code_14d6
@@ -1239,7 +1239,7 @@
   08cd:4a 2a             send 2a
 
   08cf:36                push
-  08d0:81 02              lag
+  08d0:81 02              lag global2
   08d2:4a 1a             send 1a
 
   08d4:32 0bff            jmp code_14d6
@@ -1415,7 +1415,7 @@
   0a0a:4a 26             send 26
 
   0a0c:36                push
-  0a0d:81 02              lag
+  0a0d:81 02              lag global2
   0a0f:4a 10             send 10
 
   0a11:32 0ac2            jmp code_14d6
@@ -1662,7 +1662,7 @@
   0bc9:4a 2e             send 2e
 
   0bcb:36                push
-  0bcc:81 02              lag
+  0bcc:81 02              lag global2
   0bce:4a 16             send 16
 
   0bd0:32 0903            jmp code_14d6
@@ -1909,7 +1909,7 @@
   0d88:4a 2e             send 2e
 
   0d8a:36                push
-  0d8b:81 02              lag
+  0d8b:81 02              lag global2
   0d8d:4a 16             send 16
 
   0d8f:32 0744            jmp code_14d6
@@ -2160,7 +2160,7 @@
   0f4f:4a 2e             send 2e
 
   0f51:36                push
-  0f52:81 02              lag
+  0f52:81 02              lag global2
   0f54:4a 16             send 16
 
   0f56:32 057d            jmp code_14d6
@@ -2376,7 +2376,7 @@
   10d7:4a 26             send 26
 
   10d9:36                push
-  10da:81 02              lag
+  10da:81 02              lag global2
   10dc:4a 14             send 14
 
   10de:32 03f5            jmp code_14d6
@@ -2596,7 +2596,7 @@
   126a:4a 22             send 22
 
   126c:36                push
-  126d:81 02              lag
+  126d:81 02              lag global2
   126f:4a 14             send 14
 
   1271:32 0262            jmp code_14d6
@@ -2934,7 +2934,7 @@
   14cf:4a 2a             send 2a
 
   14d1:36                push
-  14d2:81 02              lag
+  14d2:81 02              lag global2
   14d4:4a 1c             send 1c
 
 

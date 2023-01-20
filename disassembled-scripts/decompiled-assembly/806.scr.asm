@@ -125,12 +125,12 @@
   02e0:38 011b          pushi 11b                      // $11b setMotion
   02e3:78               push1
   02e4:76               push0
-  02e5:81 00              lag
+  02e5:81 00              lag gEgo
   02e7:4a 06             send 6
 
   02e9:38 00c9          pushi c9                       // $c9 disable
   02ec:76               push0
-  02ed:81 45              lag
+  02ed:81 45              lag gIconBar
   02ef:4a 04             send 4
 
   02f1:35 02              ldi 2
@@ -170,7 +170,7 @@
   0323:30 000e            bnt code_0334
   0326:39 6e            pushi 6e                       // $6e showSelf
   0328:76               push0
-  0329:81 09              lag
+  0329:81 09              lag global9
   032b:4a 04             send 4
 
   032d:35 02              ldi 2
@@ -184,7 +184,7 @@
   0338:30 0014            bnt code_034f
   033b:38 00a7          pushi a7                       // $a7 enable
   033e:76               push0
-  033f:81 45              lag
+  033f:81 45              lag gIconBar
   0341:4a 04             send 4
 
   0343:39 6c            pushi 6c                       // $6c dispose
@@ -212,22 +212,22 @@
   002f:7a               push2
   0030:38 03e7          pushi 3e7                      // $3e7 sel_999
   0033:78               push1
-  0034:81 01              lag
+  0034:81 01              lag global1
   0036:4a 08             send 8
 
   0038:38 009c          pushi 9c                       // $9c stop
   003b:76               push0
-  003c:81 64              lag
+  003c:81 64              lag gRgnMusic
   003e:4a 04             send 4
 
   0040:38 009c          pushi 9c                       // $9c stop
   0043:76               push0
-  0044:81 71              lag
+  0044:81 71              lag gSFX
   0046:4a 04             send 4
 
   0048:38 009c          pushi 9c                       // $9c stop
   004b:76               push0
-  004c:81 72              lag
+  004c:81 72              lag gSFX2
   004e:4a 04             send 4
 
   0050:39 2b            pushi 2b                       // $2b number
@@ -291,7 +291,7 @@
   00b0:30 000a            bnt code_00bd
   00b3:39 4f            pushi 4f                       // $4f restore
   00b5:76               push0
-  00b6:81 01              lag
+  00b6:81 01              lag global1
   00b8:4a 04             send 4
 
   00ba:32 001f            jmp code_00dc
@@ -303,7 +303,7 @@
   00c1:30 000a            bnt code_00ce
   00c4:39 68            pushi 68                       // $68 restart
   00c6:76               push0
-  00c7:81 01              lag
+  00c7:81 01              lag global1
   00c9:4a 04             send 4
 
   00cb:32 000e            jmp code_00dc
@@ -314,7 +314,7 @@
   00d1:1a                 eq?
   00d2:30 0007            bnt code_00dc
   00d5:35 01              ldi 1
-  00d7:a1 04              sag
+  00d7:a1 04              sag global4
   00d9:32 0004            jmp code_00e0
 
         code_00dc
@@ -333,7 +333,7 @@
   00e6:30 0045            bnt code_012e
   00e9:78               push1
   00ea:8f 02              lsp param2
-  00ec:45 05 02         callb procedure_0005 2         //
+  00ec:45 05 02         callb procedure_0005 2         // proc0_5
 
   00ef:18                 not
   00f0:30 006d            bnt code_0160
@@ -358,10 +358,10 @@
   010e:72 0254          lofsa $0254                    // specialSound
   0111:4a 0e             send e
 
-  0113:89 0f              lsg
+  0113:89 0f              lsg global15
   0115:87 01              lap param1
   0117:02                 add
-  0118:a1 0f              sag
+  0118:a1 0f              sag global15
   011a:39 3c            pushi 3c                       // $3c doit
   011c:76               push0
   011d:7a               push2
@@ -373,7 +373,7 @@
 
   0125:78               push1
   0126:8f 02              lsp param2
-  0128:45 06 02         callb procedure_0006 2         //
+  0128:45 06 02         callb procedure_0006 2         // proc0_6
 
   012b:32 0032            jmp code_0160
 
@@ -399,10 +399,10 @@
   0149:72 0254          lofsa $0254                    // specialSound
   014c:4a 0e             send e
 
-  014e:89 0f              lsg
+  014e:89 0f              lsg global15
   0150:87 01              lap param1
   0152:02                 add
-  0153:a1 0f              sag
+  0153:a1 0f              sag global15
   0155:39 3c            pushi 3c                       // $3c doit
   0157:76               push0
   0158:7a               push2
@@ -414,7 +414,7 @@
 
 
         code_0160
-  0160:81 8f              lag
+  0160:81 8f              lag global143
   0162:30 0001            bnt code_0166
   0165:48                 ret
 
@@ -432,7 +432,7 @@
   016f:39 6b            pushi 6b                       // $6b init
   0171:39 3c            pushi 3c                       // $3c doit
   0173:76               push0
-  0174:81 0a              lag
+  0174:81 0a              lag global10
   0176:4a 0e             send e
 
   0178:78               push1
@@ -450,7 +450,7 @@
   0185:39 74            pushi 74                       // $74 eachElementDo
   0187:78               push1
   0188:39 6b            pushi 6b                       // $6b init
-  018a:81 20              lag
+  018a:81 20              lag global32
   018c:4a 0a             send a
 
   018e:78               push1
@@ -462,10 +462,10 @@
 
 // EXPORTED procedure #4 ()
 (procedure proc_0196
-  0196:89 8b              lsg
+  0196:89 8b              lsg global139
   0198:87 01              lap param1
   019a:02                 add
-  019b:a1 8b              sag
+  019b:a1 8b              sag global139
   019d:39 3c            pushi 3c                       // $3c doit
   019f:76               push0
   01a0:7a               push2
@@ -484,10 +484,10 @@
 
 // EXPORTED procedure #5 ()
 (procedure proc_01b0
-  01b0:89 8a              lsg
+  01b0:89 8a              lsg global138
   01b2:87 01              lap param1
   01b4:02                 add
-  01b5:a1 8a              sag
+  01b5:a1 8a              sag global138
   01b7:39 3c            pushi 3c                       // $3c doit
   01b9:76               push0
   01ba:7a               push2
@@ -523,14 +523,14 @@
   01e3:39 43            pushi 43                       // $43 at
   01e5:78               push1
   01e6:39 06            pushi 6                        // $6 loop
-  01e8:81 45              lag
+  01e8:81 45              lag gIconBar
   01ea:4a 06             send 6
 
   01ec:36                push
   01ed:38 00d1          pushi d1                       // $d1 curInvIcon
   01f0:78               push1
   01f1:8d 00              lst temp0
-  01f3:81 45              lag
+  01f3:81 45              lag gIconBar
   01f5:4a 0c             send c
 
   01f7:32 0014            jmp code_020e
@@ -539,14 +539,14 @@
   01fa:39 43            pushi 43                       // $43 at
   01fc:78               push1
   01fd:8f 01              lsp param1
-  01ff:81 45              lag
+  01ff:81 45              lag gIconBar
   0201:4a 06             send 6
 
   0203:a5 00              sat temp0
   0205:38 00a8          pushi a8                       // $a8 select
   0208:78               push1
   0209:36                push
-  020a:81 45              lag
+  020a:81 45              lag gIconBar
   020c:4a 06             send 6
 
 
@@ -560,7 +560,7 @@
 
   0219:36                push
   021a:78               push1
-  021b:81 01              lag
+  021b:81 01              lag global1
   021d:4a 08             send 8
 
   021f:78               push1

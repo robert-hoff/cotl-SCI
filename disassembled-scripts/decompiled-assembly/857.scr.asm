@@ -451,7 +451,7 @@
   02db:4a 04             send 4
 
   02dd:2e 0002             bt code_02e2
-  02e0:81 26              lag
+  02e0:81 26              lag global38
 
         code_02e2
   02e2:65 0e             aTop window
@@ -755,7 +755,7 @@
   04a6:4a 04             send 4
 
   04a8:36                push
-  04a9:81 09              lag
+  04a9:81 09              lag global9
   04ab:4a 06             send 6
 
   04ad:4a 04             send 4
@@ -768,7 +768,7 @@
   04b7:38 00bb          pushi bb                       // $bb setCursor
   04ba:78               push1
   04bb:36                push
-  04bc:81 01              lag
+  04bc:81 01              lag global1
   04be:4a 06             send 6
 
   04c0:a5 01              sat temp1
@@ -821,7 +821,7 @@
   0507:38 00bb          pushi bb                       // $bb setCursor
   050a:78               push1
   050b:8d 01              lst temp1
-  050d:81 01              lag
+  050d:81 01              lag global1
   050f:4a 06             send 6
 
   0511:32 0023            jmp code_0537
@@ -832,12 +832,12 @@
   0518:39 43            pushi 43                       // $43 at
   051a:78               push1
   051b:76               push0
-  051c:81 45              lag
+  051c:81 45              lag gIconBar
   051e:4a 06             send 6
 
   0520:a5 02              sat temp2
   0522:36                push
-  0523:81 45              lag
+  0523:81 45              lag gIconBar
   0525:4a 06             send 6
 
   0527:38 00bb          pushi bb                       // $bb setCursor
@@ -848,7 +848,7 @@
   0530:4a 04             send 4
 
   0532:36                push
-  0533:81 01              lag
+  0533:81 01              lag global1
   0535:4a 06             send 6
 
 

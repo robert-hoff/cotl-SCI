@@ -82,24 +82,24 @@
 
   002e:39 56            pushi 56                       // $56 parseLang
   0030:76               push0
-  0031:81 01              lag
+  0031:81 01              lag global1
   0033:4a 04             send 4
 
   0035:a3 00              sal local0
   0037:39 56            pushi 56                       // $56 parseLang
   0039:78               push1
   003a:78               push1
-  003b:81 01              lag
+  003b:81 01              lag global1
   003d:4a 06             send 6
 
-  003f:81 26              lag
+  003f:81 26              lag global38
   0041:65 0e             aTop window
   0043:35 00              ldi 0
   0045:65 16             aTop nsBottom
   0047:39 03            pushi 3                        // $3 y
   0049:39 17            pushi 17                       // $17 name
   004b:76               push0
-  004c:81 01              lag
+  004c:81 01              lag global1
   004e:4a 04             send 4
 
   0050:36                push
@@ -134,7 +134,7 @@
   007d:36                push
   007e:39 21            pushi 21                       // $21 font
   0080:78               push1
-  0081:89 17              lsg
+  0081:89 17              lsg global23
   0083:38 00aa          pushi aa                       // $aa setSize
   0086:76               push0
   0087:38 00ac          pushi ac                       // $ac moveTo
@@ -159,7 +159,7 @@
   00a3:8f 02              lsp param2
   00a5:39 21            pushi 21                       // $21 font
   00a7:78               push1
-  00a8:89 17              lsg
+  00a8:89 17              lsg global23
   00aa:38 00aa          pushi aa                       // $aa setSize
   00ad:76               push0
   00ae:38 00ac          pushi ac                       // $ac moveTo
@@ -402,7 +402,7 @@
   022c:76               push0
   022d:39 17            pushi 17                       // $17 name
   022f:76               push0
-  0230:81 01              lag
+  0230:81 01              lag global1
   0232:4a 04             send 4
 
   0234:36                push
@@ -506,14 +506,14 @@
   02cf:54 04             self 4
 
   02d1:78               push1
-  02d2:89 1d              lsg
+  02d2:89 1d              lsg global29
   02d4:40 05b0 02        call proc_0888 2
 
   02d8:30 0027            bnt code_0302
   02db:39 03            pushi 3                        // $3 y
   02dd:39 17            pushi 17                       // $17 name
   02df:76               push0
-  02e0:81 01              lag
+  02e0:81 01              lag global1
   02e2:4a 04             send 4
 
   02e4:36                push
@@ -757,7 +757,7 @@ delete this saved game?
   0480:36                push
   0481:39 17            pushi 17                       // $17 name
   0483:76               push0
-  0484:81 01              lag
+  0484:81 01              lag global1
   0486:4a 04             send 4
 
   0488:36                push
@@ -842,7 +842,7 @@ delete this saved game?
   050b:36                push
   050c:39 17            pushi 17                       // $17 name
   050e:76               push0
-  050f:81 01              lag
+  050f:81 01              lag global1
   0511:4a 04             send 4
 
   0513:36                push
@@ -948,7 +948,7 @@ delete this saved game?
   0015:39 56            pushi 56                       // $56 parseLang
   0017:78               push1
   0018:8b 00              lsl local0
-  001a:81 01              lag
+  001a:81 01              lag global1
   001c:4a 06             send 6
 
   001e:39 6c            pushi 6c                       // $6c dispose
@@ -1023,17 +1023,17 @@ delete this saved game?
   06f2:3f 02             link 2                        // (var $2)
   06f4:39 56            pushi 56                       // $56 parseLang
   06f6:76               push0
-  06f7:81 01              lag
+  06f7:81 01              lag global1
   06f9:4a 04             send 4
 
   06fb:a5 01              sat temp1
   06fd:39 56            pushi 56                       // $56 parseLang
   06ff:78               push1
   0700:78               push1
-  0701:81 01              lag
+  0701:81 01              lag global1
   0703:4a 06             send 6
 
-  0705:81 26              lag
+  0705:81 26              lag global38
   0707:65 0e             aTop window
   0709:38 00aa          pushi aa                       // $aa setSize
   070c:76               push0
@@ -1057,7 +1057,7 @@ delete this saved game?
   0729:8f 01              lsp param1
   072b:39 21            pushi 21                       // $21 font
   072d:78               push1
-  072e:89 17              lsg
+  072e:89 17              lsg global23
   0730:38 00aa          pushi aa                       // $aa setSize
   0733:76               push0
   0734:38 00ac          pushi ac                       // $ac moveTo
@@ -1097,7 +1097,7 @@ delete this saved game?
   076f:8f 01              lsp param1
   0771:39 21            pushi 21                       // $21 font
   0773:78               push1
-  0774:89 17              lsg
+  0774:89 17              lsg global23
   0776:38 00aa          pushi aa                       // $aa setSize
   0779:76               push0
   077a:38 00ac          pushi ac                       // $ac moveTo
@@ -1219,7 +1219,7 @@ delete this saved game?
   0833:39 56            pushi 56                       // $56 parseLang
   0835:78               push1
   0836:8d 01              lst temp1
-  0838:81 01              lag
+  0838:81 01              lag global1
   083a:4a 06             send 6
 
   083c:8d 00              lst temp0
@@ -1478,14 +1478,14 @@ delete this saved game?
         code_088a
   088a:39 56            pushi 56                       // $56 parseLang
   088c:76               push0
-  088d:81 01              lag
+  088d:81 01              lag global1
   088f:4a 04             send 4
 
   0891:a5 86              sat temp134
   0893:39 56            pushi 56                       // $56 parseLang
   0895:78               push1
   0896:78               push1
-  0897:81 01              lag
+  0897:81 01              lag global1
   0899:4a 06             send 6
 
   089b:39 0d            pushi d                        // $d lsTop
@@ -1516,7 +1516,7 @@ delete this saved game?
   08c7:39 56            pushi 56                       // $56 parseLang
   08c9:78               push1
   08ca:8d 86              lst temp134
-  08cc:81 01              lag
+  08cc:81 01              lag global1
   08ce:4a 06             send 6
 
   08d0:85 00              lat temp0
@@ -1612,7 +1612,7 @@ delete this saved game?
   092b:22                 lt?
   092c:30 0006            bnt code_0935
   092f:78               push1
-  0930:89 1d              lsg
+  0930:89 1d              lsg global29
   0932:43 5f 02         callk CheckFreeSpace 2
 
 

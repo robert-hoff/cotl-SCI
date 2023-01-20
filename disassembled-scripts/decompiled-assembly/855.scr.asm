@@ -31,7 +31,7 @@
     (method (init)                                     // method_000e
   000e:78               push1
   000f:39 21            pushi 21                       // $21 font
-  0011:47 0d 06 02      calle d procedure_0006 2       //
+  0011:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0015:39 6b            pushi 6b                       // $6b init
   0017:76               push0
@@ -44,7 +44,7 @@
     (method (dispose)                                  // method_001e
   001e:78               push1
   001f:76               push0
-  0020:47 0d 06 02      calle d procedure_0006 2       //
+  0020:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0024:39 6c            pushi 6c                       // $6c dispose
   0026:76               push0
@@ -69,7 +69,7 @@
   0041:7c            pushSelf
   0042:39 21            pushi 21                       // $21 font
   0044:39 03            pushi 3                        // $3 y
-  0046:47 0d 04 0a      calle d procedure_0004 a       //
+  0046:47 0d 04 0a      calle d procedure_0004 a       // proc13_4
 
   004a:32 013b            jmp code_0188
 
@@ -78,7 +78,7 @@
   004e:35 01              ldi 1
   0050:1a                 eq?
   0051:30 0107            bnt code_015b
-  0054:89 90              lsg
+  0054:89 90              lsg global144
   0056:3c                 dup
   0057:35 00              ldi 0
   0059:1a                 eq?
@@ -89,7 +89,7 @@
   0063:7c            pushSelf
   0064:39 21            pushi 21                       // $21 font
   0066:39 03            pushi 3                        // $3 y
-  0068:47 0d 04 0a      calle d procedure_0004 a       //
+  0068:47 0d 04 0a      calle d procedure_0004 a       // proc13_4
 
   006c:32 00e6            jmp code_0155
 
@@ -104,7 +104,7 @@
   007c:7c            pushSelf
   007d:39 21            pushi 21                       // $21 font
   007f:39 03            pushi 3                        // $3 y
-  0081:47 0d 04 0a      calle d procedure_0004 a       //
+  0081:47 0d 04 0a      calle d procedure_0004 a       // proc13_4
 
   0085:32 00cd            jmp code_0155
 
@@ -119,7 +119,7 @@
   0096:7c            pushSelf
   0097:39 21            pushi 21                       // $21 font
   0099:39 03            pushi 3                        // $3 y
-  009b:47 0d 04 0a      calle d procedure_0004 a       //
+  009b:47 0d 04 0a      calle d procedure_0004 a       // proc13_4
 
   009f:32 00b3            jmp code_0155
 
@@ -134,7 +134,7 @@
   00b0:7c            pushSelf
   00b1:39 21            pushi 21                       // $21 font
   00b3:39 03            pushi 3                        // $3 y
-  00b5:47 0d 04 0a      calle d procedure_0004 a       //
+  00b5:47 0d 04 0a      calle d procedure_0004 a       // proc13_4
 
   00b9:32 0099            jmp code_0155
 
@@ -149,7 +149,7 @@
   00ca:7c            pushSelf
   00cb:39 21            pushi 21                       // $21 font
   00cd:39 03            pushi 3                        // $3 y
-  00cf:47 0d 04 0a      calle d procedure_0004 a       //
+  00cf:47 0d 04 0a      calle d procedure_0004 a       // proc13_4
 
   00d3:32 007f            jmp code_0155
 
@@ -164,7 +164,7 @@
   00e4:7c            pushSelf
   00e5:39 21            pushi 21                       // $21 font
   00e7:39 03            pushi 3                        // $3 y
-  00e9:47 0d 04 0a      calle d procedure_0004 a       //
+  00e9:47 0d 04 0a      calle d procedure_0004 a       // proc13_4
 
   00ed:32 0065            jmp code_0155
 
@@ -179,7 +179,7 @@
   00fe:7c            pushSelf
   00ff:39 21            pushi 21                       // $21 font
   0101:39 03            pushi 3                        // $3 y
-  0103:47 0d 04 0a      calle d procedure_0004 a       //
+  0103:47 0d 04 0a      calle d procedure_0004 a       // proc13_4
 
   0107:32 004b            jmp code_0155
 
@@ -194,7 +194,7 @@
   0118:7c            pushSelf
   0119:39 21            pushi 21                       // $21 font
   011b:39 03            pushi 3                        // $3 y
-  011d:47 0d 04 0a      calle d procedure_0004 a       //
+  011d:47 0d 04 0a      calle d procedure_0004 a       // proc13_4
 
   0121:32 0031            jmp code_0155
 
@@ -209,7 +209,7 @@
   0132:7c            pushSelf
   0133:39 21            pushi 21                       // $21 font
   0135:39 03            pushi 3                        // $3 y
-  0137:47 0d 04 0a      calle d procedure_0004 a       //
+  0137:47 0d 04 0a      calle d procedure_0004 a       // proc13_4
 
   013b:32 0017            jmp code_0155
 
@@ -224,7 +224,7 @@
   014c:7c            pushSelf
   014d:39 21            pushi 21                       // $21 font
   014f:39 03            pushi 3                        // $3 y
-  0151:47 0d 04 0a      calle d procedure_0004 a       //
+  0151:47 0d 04 0a      calle d procedure_0004 a       // proc13_4
 
 
         code_0155
@@ -243,7 +243,7 @@
   0169:7c            pushSelf
   016a:39 21            pushi 21                       // $21 font
   016c:39 03            pushi 3                        // $3 y
-  016e:47 0d 04 0a      calle d procedure_0004 a       //
+  016e:47 0d 04 0a      calle d procedure_0004 a       // proc13_4
 
   0172:32 0013            jmp code_0188
 

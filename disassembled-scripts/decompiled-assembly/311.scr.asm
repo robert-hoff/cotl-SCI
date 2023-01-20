@@ -218,19 +218,19 @@
   0031:38 00d5          pushi d5                       // $d5 has
   0034:78               push1
   0035:39 11            pushi 11                       // $11 signal
-  0037:81 00              lag
+  0037:81 00              lag gEgo
   0039:4a 06             send 6
 
   003b:18                 not
   003c:30 0002            bnt code_0041
-  003f:c1 9b              +ag
+  003f:c1 9b              +ag global155
 
         code_0041
   0041:35 00              ldi 0
   0043:a3 00              sal local0
   0045:39 04            pushi 4                        // $4 x
   0047:76               push0
-  0048:81 00              lag
+  0048:81 00              lag gEgo
   004a:4a 04             send 4
 
   004c:36                push
@@ -240,14 +240,14 @@
   0053:39 04            pushi 4                        // $4 x
   0055:78               push1
   0056:39 f6            pushi f6                       // $f6 nonBumps
-  0058:81 00              lag
+  0058:81 00              lag gEgo
   005a:4a 06             send 6
 
 
         code_005c
   005c:39 04            pushi 4                        // $4 x
   005e:76               push0
-  005f:81 00              lag
+  005f:81 00              lag gEgo
   0061:4a 04             send 4
 
   0063:36                push
@@ -257,7 +257,7 @@
   006b:39 04            pushi 4                        // $4 x
   006d:78               push1
   006e:38 014a          pushi 14a                      // $14a lastY
-  0071:81 00              lag
+  0071:81 00              lag gEgo
   0073:4a 06             send 6
 
 
@@ -295,10 +295,10 @@
   011b:30 0039            bnt code_0157
   011e:78               push1
   011f:39 3a            pushi 3a                       // $3a heading
-  0121:45 05 02         callb procedure_0005 2         //
+  0121:45 05 02         callb procedure_0005 2         // proc0_5
 
   0124:30 0028            bnt code_014f
-  0127:89 9b              lsg
+  0127:89 9b              lsg global155
   0129:35 32              ldi 32
   012b:1e                 gt?
   012c:30 0020            bnt code_014f
@@ -314,7 +314,7 @@
   0144:38 0186          pushi 186                      // $186 south
   0147:78               push1
   0148:38 00a0          pushi a0                       // $a0 mute
-  014b:81 02              lag
+  014b:81 02              lag global2
   014d:4a 18             send 18
 
 
@@ -337,17 +337,17 @@
   0166:22                 lt?
   0167:30 00db            bnt code_0245
   016a:85 00              lat temp0
-  016c:99 78             lsgi
+  016c:99 78             lsgi global120
   016e:83 02              lal local2
   0170:1c                 ne?
   0171:30 00cc            bnt code_0240
   0174:85 00              lat temp0
-  0176:99 78             lsgi
+  0176:99 78             lsgi global120
   0178:83 03              lal local3
   017a:1c                 ne?
   017b:30 00c2            bnt code_0240
   017e:85 00              lat temp0
-  0180:99 78             lsgi
+  0180:99 78             lsgi global120
   0182:7a               push2
   0183:78               push1
   0184:39 03            pushi 3                        // $3 y
@@ -375,20 +375,20 @@
 
         code_01a7
   01a7:8d 02              lst temp2
-  01a9:81 78              lag
+  01a9:81 78              lag global120
   01ab:1c                 ne?
   01ac:30 0091            bnt code_0240
   01af:8d 02              lst temp2
-  01b1:81 79              lag
+  01b1:81 79              lag global121
   01b3:1c                 ne?
   01b4:30 0089            bnt code_0240
   01b7:8d 02              lst temp2
-  01b9:81 7a              lag
+  01b9:81 7a              lag global122
   01bb:1c                 ne?
   01bc:30 0081            bnt code_0240
   01bf:8d 02              lst temp2
   01c1:85 00              lat temp0
-  01c3:91 78             lagi
+  01c3:91 78             lagi global120
   01c5:04                 sub
   01c6:a5 03              sat temp3
   01c8:36                push
@@ -417,18 +417,18 @@
 
         code_01ec
   01ec:30 0045            bnt code_0234
-  01ef:81 c6              lag
+  01ef:81 c6              lag global198
   01f1:30 0040            bnt code_0234
   01f4:83 00              lal local0
   01f6:18                 not
   01f7:30 003a            bnt code_0234
   01fa:78               push1
   01fb:38 00d9          pushi d9                       // $d9 cycleDone
-  01fe:45 05 02         callb procedure_0005 2         //
+  01fe:45 05 02         callb procedure_0005 2         // proc0_5
 
   0201:18                 not
   0202:30 002f            bnt code_0234
-  0205:89 c6              lsg
+  0205:89 c6              lsg global198
   0207:34 0118            ldi 118
   020a:22                 lt?
   020b:30 0026            bnt code_0234
@@ -459,7 +459,7 @@
         code_0234
   0234:8d 02              lst temp2
   0236:85 00              lat temp0
-  0238:b1 78             sagi
+  0238:b1 78             sagi global120
   023a:8d 03              lst temp3
   023c:85 00              lat temp0
   023e:b3 8e             sali local142
@@ -788,7 +788,7 @@
 // EXPORTED procedure #3 ()
 (procedure proc_0430
   0430:3f 01             link 1                        // (var $1)
-  0432:89 0b              lsg
+  0432:89 0b              lsg global11
   0434:35 0a              ldi a
   0436:08                 div
   0437:36                push
@@ -797,7 +797,7 @@
   043b:a3 02              sal local2
   043d:39 03            pushi 3                        // $3 y
   043f:76               push0
-  0440:81 00              lag
+  0440:81 00              lag gEgo
   0442:4a 04             send 4
 
   0444:36                push
@@ -821,29 +821,29 @@
   045f:22                 lt?
   0460:30 006b            bnt code_04ce
   0463:85 00              lat temp0
-  0465:99 78             lsgi
+  0465:99 78             lsgi global120
   0467:83 02              lal local2
   0469:1a                 eq?
   046a:2e 0007             bt code_0474
   046d:85 00              lat temp0
-  046f:99 78             lsgi
+  046f:99 78             lsgi global120
   0471:83 03              lal local3
   0473:1a                 eq?
 
         code_0474
   0474:30 0052            bnt code_04c9
-  0477:81 c6              lag
+  0477:81 c6              lag global198
   0479:30 004d            bnt code_04c9
   047c:83 00              lal local0
   047e:18                 not
   047f:30 0047            bnt code_04c9
   0482:78               push1
   0483:38 00d9          pushi d9                       // $d9 cycleDone
-  0486:45 05 02         callb procedure_0005 2         //
+  0486:45 05 02         callb procedure_0005 2         // proc0_5
 
   0489:18                 not
   048a:30 003c            bnt code_04c9
-  048d:89 c6              lsg
+  048d:89 c6              lsg global198
   048f:34 0118            ldi 118
   0492:22                 lt?
   0493:30 0033            bnt code_04c9
@@ -853,14 +853,14 @@
   049c:39 05            pushi 5                        // $5 view
   049e:85 00              lat temp0
   04a0:9b 8e             lsli local142
-  04a2:99 78             lsgi
+  04a2:99 78             lsgi global120
   04a4:78               push1
-  04a5:99 78             lsgi
+  04a5:99 78             lsgi global120
   04a7:40 ff36 02        call proc_03e1 2
 
   04ab:36                push
   04ac:85 00              lat temp0
-  04ae:91 78             lagi
+  04ae:91 78             lagi global120
   04b0:9b 87             lsli local135
   04b2:38 0087          pushi 87                       // $87 ticks
   04b5:76               push0
@@ -926,11 +926,11 @@
   0504:35 03              ldi 3
   0506:1a                 eq?
   0507:30 0059            bnt code_0563
-  050a:89 0b              lsg
+  050a:89 0b              lsg global11
   050c:34 012c            ldi 12c
   050f:1a                 eq?
   0510:2e 0006             bt code_0519
-  0513:89 0b              lsg
+  0513:89 0b              lsg global11
   0515:34 0122            ldi 122
   0518:1a                 eq?
 
@@ -940,7 +940,7 @@
   051c:38 4010          pushi 4010                     // $4010 sel_16400
   051f:39 3f            pushi 3f                       // $3f priority
   0521:78               push1
-  0522:89 0b              lsg
+  0522:89 0b              lsg global11
   0524:34 0122            ldi 122
   0527:1a                 eq?
   0528:30 0005            bnt code_0530
@@ -1001,7 +1001,7 @@
   030f:22                 lt?
   0310:30 00cb            bnt code_03de
   0313:85 00              lat temp0
-  0315:99 78             lsgi
+  0315:99 78             lsgi global120
   0317:87 01              lap param1
   0319:1a                 eq?
   031a:30 00bc            bnt code_03d9
@@ -1064,22 +1064,22 @@
   0374:30 005f            bnt code_03d6
   0377:8f 01              lsp param1
   0379:85 00              lat temp0
-  037b:b1 78             sagi
+  037b:b1 78             sagi global120
   037d:8d 01              lst temp1
   037f:85 00              lat temp0
   0381:b3 8e             sali local142
-  0383:81 c6              lag
+  0383:81 c6              lag global198
   0385:30 0048            bnt code_03d0
   0388:83 00              lal local0
   038a:18                 not
   038b:30 0042            bnt code_03d0
-  038e:89 c6              lsg
+  038e:89 c6              lsg global198
   0390:34 0118            ldi 118
   0393:22                 lt?
   0394:30 0039            bnt code_03d0
   0397:78               push1
   0398:38 00d9          pushi d9                       // $d9 cycleDone
-  039b:45 05 02         callb procedure_0005 2         //
+  039b:45 05 02         callb procedure_0005 2         // proc0_5
 
   039e:18                 not
   039f:30 002e            bnt code_03d0

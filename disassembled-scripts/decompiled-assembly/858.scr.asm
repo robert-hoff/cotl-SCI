@@ -162,7 +162,7 @@
   0114:30 001e            bnt code_0135
   0117:36                push
   0118:78               push1
-  0119:89 58              lsg
+  0119:89 58              lsg global88
   011b:63 74             pToa lastTicks
   011d:04                 sub
   011e:36                push
@@ -176,7 +176,7 @@
   0129:30 0008            bnt code_0134
   012c:35 00              ldi 0
   012e:65 72             aTop ticks
-  0130:81 58              lag
+  0130:81 58              lag global88
   0132:65 74             aTop lastTicks
 
         code_0134
@@ -664,7 +664,7 @@
     )
     (method (init)                                     // method_04ee
   04ee:3f 02             link 2                        // (var $2)
-  04f0:81 58              lag
+  04f0:81 58              lag global88
   04f2:65 18             aTop lastTicks
   04f4:35 00              ldi 0
   04f6:65 22             aTop completed

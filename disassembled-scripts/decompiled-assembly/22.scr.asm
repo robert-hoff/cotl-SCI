@@ -220,24 +220,24 @@
   004d:30 0012            bnt code_0062
   0050:78               push1
   0051:76               push0
-  0052:47 0d 06 02      calle d procedure_0006 2       //
+  0052:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0056:7a               push2
   0057:38 03fe          pushi 3fe                      // $3fe sel_1022
   005a:76               push0
-  005b:47 0d 04 04      calle d procedure_0004 4       //
+  005b:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   005f:32 0384            jmp code_03e6
 
         code_0062
   0062:78               push1
   0063:76               push0
-  0064:47 0d 06 02      calle d procedure_0006 2       //
+  0064:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0068:7a               push2
   0069:38 03fe          pushi 3fe                      // $3fe sel_1022
   006c:78               push1
-  006d:47 0d 04 04      calle d procedure_0004 4       //
+  006d:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0071:35 01              ldi 1
   0073:a3 00              sal local0
@@ -263,7 +263,7 @@
   0093:35 05              ldi 5
   0095:1a                 eq?
   0096:30 010f            bnt code_01a8
-  0099:89 7e              lsg
+  0099:89 7e              lsg global126
   009b:3c                 dup
   009c:35 01              ldi 1
   009e:1a                 eq?
@@ -343,7 +343,7 @@
   0122:35 04              ldi 4
   0124:1a                 eq?
   0125:30 0038            bnt code_0160
-  0128:89 82              lsg
+  0128:89 82              lsg global130
   012a:35 08              ldi 8
   012c:1a                 eq?
   012d:30 001d            bnt code_014d
@@ -444,7 +444,7 @@
   01cf:30 0021            bnt code_01f3
   01d2:39 3c            pushi 3c                       // $3c doit
   01d4:76               push0
-  01d5:81 98              lag
+  01d5:81 98              lag gMoney
   01d7:4a 04             send 4
 
   01d9:36                push
@@ -523,7 +523,7 @@
   025b:7a               push2
   025c:39 0b            pushi b                        // $b nsBottom
   025e:7c            pushSelf
-  025f:81 00              lag
+  025f:81 00              lag gEgo
   0261:4a 08             send 8
 
   0263:32 015d            jmp code_03c3
@@ -743,7 +743,7 @@
   03ce:7a               push2
   03cf:38 03fe          pushi 3fe                      // $3fe sel_1022
   03d2:39 1b            pushi 1b                       // $1b elements
-  03d4:47 0d 04 04      calle d procedure_0004 4       //
+  03d4:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   03d8:32 000b            jmp code_03e6
 

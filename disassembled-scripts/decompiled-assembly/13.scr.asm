@@ -42,13 +42,13 @@
   041e:39 7d            pushi 7d                       // $7d addToFront
   0420:78               push1
   0421:7c            pushSelf
-  0422:81 48              lag
+  0422:81 48              lag gKH
   0424:4a 06             send 6
 
   0426:39 7d            pushi 7d                       // $7d addToFront
   0428:78               push1
   0429:7c            pushSelf
-  042a:81 49              lag
+  042a:81 49              lag gMH
   042c:4a 06             send 6
 
   042e:48                 ret
@@ -58,13 +58,13 @@
   042f:39 54            pushi 54                       // $54 delete
   0431:78               push1
   0432:7c            pushSelf
-  0433:81 48              lag
+  0433:81 48              lag gKH
   0435:4a 06             send 6
 
   0437:39 54            pushi 54                       // $54 delete
   0439:78               push1
   043a:7c            pushSelf
-  043b:81 49              lag
+  043b:81 49              lag gMH
   043d:4a 06             send 6
 
   043f:76               push0
@@ -137,7 +137,7 @@
   049a:65 1a             aTop register
 
         code_049c
-  049c:81 19              lag
+  049c:81 19              lag global25
   049e:30 0005            bnt code_04a6
   04a1:39 6c            pushi 6c                       // $6c dispose
   04a3:76               push0
@@ -152,10 +152,10 @@
 )
 
 
-// EXPORTED procedure #0 ()
+// EXPORTED procedure #0 (proc13_0)
 (procedure proc_006b
   006b:3f 01             link 1                        // (var $1)
-  006d:81 19              lag
+  006d:81 19              lag global25
   006f:30 0005            bnt code_0077
   0072:39 6c            pushi 6c                       // $6c dispose
   0074:76               push0
@@ -229,7 +229,7 @@
   00e2:48                 ret
 )
 
-// EXPORTED procedure #1 ()
+// EXPORTED procedure #1 (proc13_1)
 (procedure proc_00e3
   00e3:39 04            pushi 4                        // $4 x
   00e5:8f 01              lsp param1
@@ -242,7 +242,7 @@
   00f3:48                 ret
 )
 
-// EXPORTED procedure #2 ()
+// EXPORTED procedure #2 (proc13_2)
 (procedure proc_00f4
   00f4:3f 01             link 1                        // (var $1)
   00f6:7a               push2
@@ -267,10 +267,10 @@
   0119:48                 ret
 )
 
-// EXPORTED procedure #4 ()
+// EXPORTED procedure #4 (proc13_4)
 (procedure proc_011a
   011a:3f c8             link c8                       // (var $c8)
-  011c:81 19              lag
+  011c:81 19              lag global25
   011e:30 0005            bnt code_0126
   0121:39 6c            pushi 6c                       // $6c dispose
   0123:76               push0
@@ -278,7 +278,7 @@
 
 
         code_0126
-  0126:89 13              lsg
+  0126:89 13              lsg global19
   0128:35 05              ldi 5
   012a:1a                 eq?
   012b:a3 06              sal local6
@@ -289,8 +289,8 @@
   0136:36                push
   0137:43 49 06         callk GetFarText 6
 
-  013a:89 a2              lsg
-  013c:89 a3              lsg
+  013a:89 a2              lsg global162
+  013c:89 a3              lsg global163
   013e:78               push1
   013f:5b 04 00           lea 4 0
   0142:36                push
@@ -311,7 +311,7 @@
 
   015c:18                 not
   015d:36                push
-  015e:81 01              lag
+  015e:81 01              lag global1
   0160:4a 08             send 8
 
   0162:39 04            pushi 4                        // $4 x
@@ -364,7 +364,7 @@
 
   01b2:18                 not
   01b3:36                push
-  01b4:81 01              lag
+  01b4:81 01              lag global1
   01b6:4a 08             send 8
 
   01b8:39 6b            pushi 6b                       // $6b init
@@ -411,7 +411,7 @@
 
   0202:18                 not
   0203:36                push
-  0204:81 01              lag
+  0204:81 01              lag global1
   0206:4a 08             send 8
 
   0208:39 6b            pushi 6b                       // $6b init
@@ -457,7 +457,7 @@
 
   0251:18                 not
   0252:36                push
-  0253:81 01              lag
+  0253:81 01              lag global1
   0255:4a 08             send 8
 
   0257:39 6b            pushi 6b                       // $6b init
@@ -499,7 +499,7 @@
 
   0297:18                 not
   0298:36                push
-  0299:81 01              lag
+  0299:81 01              lag global1
   029b:4a 08             send 8
 
   029d:39 05            pushi 5                        // $5 view
@@ -520,10 +520,10 @@
   02b6:48                 ret
 )
 
-// EXPORTED procedure #5 ()
+// EXPORTED procedure #5 (proc13_5)
 (procedure proc_02b7
   02b7:3f c8             link c8                       // (var $c8)
-  02b9:81 19              lag
+  02b9:81 19              lag global25
   02bb:30 0005            bnt code_02c3
   02be:39 6c            pushi 6c                       // $6c dispose
   02c0:76               push0
@@ -531,7 +531,7 @@
 
 
         code_02c3
-  02c3:89 13              lsg
+  02c3:89 13              lsg global19
   02c5:35 05              ldi 5
   02c7:1a                 eq?
   02c8:a3 06              sal local6
@@ -542,8 +542,8 @@
   02d3:36                push
   02d4:43 49 06         callk GetFarText 6
 
-  02d7:89 a2              lsg
-  02d9:89 a3              lsg
+  02d7:89 a2              lsg global162
+  02d9:89 a3              lsg global163
   02db:78               push1
   02dc:5b 04 00           lea 4 0
   02df:36                push
@@ -564,7 +564,7 @@
 
   02f9:18                 not
   02fa:36                push
-  02fb:81 01              lag
+  02fb:81 01              lag global1
   02fd:4a 08             send 8
 
   02ff:78               push1
@@ -614,7 +614,7 @@
 
   0348:18                 not
   0349:36                push
-  034a:81 01              lag
+  034a:81 01              lag global1
   034c:4a 08             send 8
 
   034e:39 6b            pushi 6b                       // $6b init
@@ -653,7 +653,7 @@
 
   0388:18                 not
   0389:36                push
-  038a:81 01              lag
+  038a:81 01              lag global1
   038c:4a 08             send 8
 
   038e:39 6b            pushi 6b                       // $6b init
@@ -691,7 +691,7 @@
 
   03c7:18                 not
   03c8:36                push
-  03c9:81 01              lag
+  03c9:81 01              lag global1
   03cb:4a 08             send 8
 
   03cd:39 6b            pushi 6b                       // $6b init
@@ -725,7 +725,7 @@
 
   03fd:18                 not
   03fe:36                push
-  03ff:81 01              lag
+  03ff:81 01              lag global1
   0401:4a 08             send 8
 
   0403:7a               push2
@@ -743,7 +743,7 @@
   0415:48                 ret
 )
 
-// EXPORTED procedure #6 ()
+// EXPORTED procedure #6 (proc13_6)
 (procedure proc_04ea
   04ea:8f 01              lsp param1
   04ec:35 21              ldi 21
@@ -760,7 +760,7 @@
   04fc:35 00              ldi 0
   04fe:1a                 eq?
   04ff:30 0005            bnt code_0507
-  0502:81 bb              lag
+  0502:81 bb              lag global187
   0504:32 0189            jmp code_0690
 
         code_0507
@@ -768,7 +768,7 @@
   0508:35 01              ldi 1
   050a:1a                 eq?
   050b:30 0005            bnt code_0513
-  050e:81 b4              lag
+  050e:81 b4              lag global180
   0510:32 017d            jmp code_0690
 
         code_0513
@@ -776,7 +776,7 @@
   0514:35 02              ldi 2
   0516:1a                 eq?
   0517:30 0005            bnt code_051f
-  051a:81 b0              lag
+  051a:81 b0              lag global176
   051c:32 0171            jmp code_0690
 
         code_051f
@@ -784,7 +784,7 @@
   0520:35 03              ldi 3
   0522:1a                 eq?
   0523:30 0005            bnt code_052b
-  0526:81 b8              lag
+  0526:81 b8              lag global184
   0528:32 0165            jmp code_0690
 
         code_052b
@@ -792,7 +792,7 @@
   052c:35 04              ldi 4
   052e:1a                 eq?
   052f:30 0005            bnt code_0537
-  0532:81 b5              lag
+  0532:81 b5              lag global181
   0534:32 0159            jmp code_0690
 
         code_0537
@@ -800,7 +800,7 @@
   0538:35 05              ldi 5
   053a:1a                 eq?
   053b:30 0005            bnt code_0543
-  053e:81 ac              lag
+  053e:81 ac              lag global172
   0540:32 014d            jmp code_0690
 
         code_0543
@@ -808,7 +808,7 @@
   0544:35 06              ldi 6
   0546:1a                 eq?
   0547:30 0005            bnt code_054f
-  054a:81 b0              lag
+  054a:81 b0              lag global176
   054c:32 0141            jmp code_0690
 
         code_054f
@@ -816,7 +816,7 @@
   0550:35 07              ldi 7
   0552:1a                 eq?
   0553:30 0005            bnt code_055b
-  0556:81 ac              lag
+  0556:81 ac              lag global172
   0558:32 0135            jmp code_0690
 
         code_055b
@@ -824,7 +824,7 @@
   055c:35 08              ldi 8
   055e:1a                 eq?
   055f:30 0005            bnt code_0567
-  0562:81 b4              lag
+  0562:81 b4              lag global180
   0564:32 0129            jmp code_0690
 
         code_0567
@@ -832,7 +832,7 @@
   0568:35 09              ldi 9
   056a:1a                 eq?
   056b:30 0005            bnt code_0573
-  056e:81 ac              lag
+  056e:81 ac              lag global172
   0570:32 011d            jmp code_0690
 
         code_0573
@@ -840,7 +840,7 @@
   0574:35 0a              ldi a
   0576:1a                 eq?
   0577:30 0005            bnt code_057f
-  057a:81 b9              lag
+  057a:81 b9              lag global185
   057c:32 0111            jmp code_0690
 
         code_057f
@@ -848,7 +848,7 @@
   0580:35 0b              ldi b
   0582:1a                 eq?
   0583:30 0005            bnt code_058b
-  0586:81 b1              lag
+  0586:81 b1              lag global177
   0588:32 0105            jmp code_0690
 
         code_058b
@@ -856,7 +856,7 @@
   058c:35 0c              ldi c
   058e:1a                 eq?
   058f:30 0005            bnt code_0597
-  0592:81 b1              lag
+  0592:81 b1              lag global177
   0594:32 00f9            jmp code_0690
 
         code_0597
@@ -864,7 +864,7 @@
   0598:35 0d              ldi d
   059a:1a                 eq?
   059b:30 0005            bnt code_05a3
-  059e:81 b1              lag
+  059e:81 b1              lag global177
   05a0:32 00ed            jmp code_0690
 
         code_05a3
@@ -872,7 +872,7 @@
   05a4:35 0e              ldi e
   05a6:1a                 eq?
   05a7:30 0005            bnt code_05af
-  05aa:81 b6              lag
+  05aa:81 b6              lag global182
   05ac:32 00e1            jmp code_0690
 
         code_05af
@@ -880,7 +880,7 @@
   05b0:35 0f              ldi f
   05b2:1a                 eq?
   05b3:30 0005            bnt code_05bb
-  05b6:81 ab              lag
+  05b6:81 ab              lag global171
   05b8:32 00d5            jmp code_0690
 
         code_05bb
@@ -888,7 +888,7 @@
   05bc:35 10              ldi 10
   05be:1a                 eq?
   05bf:30 0005            bnt code_05c7
-  05c2:81 ab              lag
+  05c2:81 ab              lag global171
   05c4:32 00c9            jmp code_0690
 
         code_05c7
@@ -896,7 +896,7 @@
   05c8:35 11              ldi 11
   05ca:1a                 eq?
   05cb:30 0005            bnt code_05d3
-  05ce:81 b8              lag
+  05ce:81 b8              lag global184
   05d0:32 00bd            jmp code_0690
 
         code_05d3
@@ -904,7 +904,7 @@
   05d4:35 12              ldi 12
   05d6:1a                 eq?
   05d7:30 0005            bnt code_05df
-  05da:81 ab              lag
+  05da:81 ab              lag global171
   05dc:32 00b1            jmp code_0690
 
         code_05df
@@ -912,7 +912,7 @@
   05e0:35 13              ldi 13
   05e2:1a                 eq?
   05e3:30 0005            bnt code_05eb
-  05e6:81 ab              lag
+  05e6:81 ab              lag global171
   05e8:32 00a5            jmp code_0690
 
         code_05eb
@@ -920,7 +920,7 @@
   05ec:35 14              ldi 14
   05ee:1a                 eq?
   05ef:30 0005            bnt code_05f7
-  05f2:81 b9              lag
+  05f2:81 b9              lag global185
   05f4:32 0099            jmp code_0690
 
         code_05f7
@@ -928,7 +928,7 @@
   05f8:35 15              ldi 15
   05fa:1a                 eq?
   05fb:30 0005            bnt code_0603
-  05fe:81 af              lag
+  05fe:81 af              lag global175
   0600:32 008d            jmp code_0690
 
         code_0603
@@ -936,7 +936,7 @@
   0604:35 16              ldi 16
   0606:1a                 eq?
   0607:30 0005            bnt code_060f
-  060a:81 b9              lag
+  060a:81 b9              lag global185
   060c:32 0081            jmp code_0690
 
         code_060f
@@ -944,7 +944,7 @@
   0610:35 17              ldi 17
   0612:1a                 eq?
   0613:30 0005            bnt code_061b
-  0616:81 b4              lag
+  0616:81 b4              lag global180
   0618:32 0075            jmp code_0690
 
         code_061b
@@ -952,7 +952,7 @@
   061c:35 18              ldi 18
   061e:1a                 eq?
   061f:30 0005            bnt code_0627
-  0622:81 b9              lag
+  0622:81 b9              lag global185
   0624:32 0069            jmp code_0690
 
         code_0627
@@ -960,7 +960,7 @@
   0628:35 19              ldi 19
   062a:1a                 eq?
   062b:30 0005            bnt code_0633
-  062e:81 b7              lag
+  062e:81 b7              lag global183
   0630:32 005d            jmp code_0690
 
         code_0633
@@ -968,7 +968,7 @@
   0634:35 1a              ldi 1a
   0636:1a                 eq?
   0637:30 0005            bnt code_063f
-  063a:81 b7              lag
+  063a:81 b7              lag global183
   063c:32 0051            jmp code_0690
 
         code_063f
@@ -976,7 +976,7 @@
   0640:35 1b              ldi 1b
   0642:1a                 eq?
   0643:30 0005            bnt code_064b
-  0646:81 aa              lag
+  0646:81 aa              lag global170
   0648:32 0045            jmp code_0690
 
         code_064b
@@ -984,7 +984,7 @@
   064c:35 1c              ldi 1c
   064e:1a                 eq?
   064f:30 0005            bnt code_0657
-  0652:81 b7              lag
+  0652:81 b7              lag global183
   0654:32 0039            jmp code_0690
 
         code_0657
@@ -992,7 +992,7 @@
   0658:35 1d              ldi 1d
   065a:1a                 eq?
   065b:30 0005            bnt code_0663
-  065e:81 b9              lag
+  065e:81 b9              lag global185
   0660:32 002d            jmp code_0690
 
         code_0663
@@ -1000,7 +1000,7 @@
   0664:35 1e              ldi 1e
   0666:1a                 eq?
   0667:30 0005            bnt code_066f
-  066a:81 af              lag
+  066a:81 af              lag global175
   066c:32 0021            jmp code_0690
 
         code_066f
@@ -1008,7 +1008,7 @@
   0670:35 1f              ldi 1f
   0672:1a                 eq?
   0673:30 0005            bnt code_067b
-  0676:81 b8              lag
+  0676:81 b8              lag global184
   0678:32 0015            jmp code_0690
 
         code_067b
@@ -1016,7 +1016,7 @@
   067c:35 20              ldi 20
   067e:1a                 eq?
   067f:30 0005            bnt code_0687
-  0682:81 aa              lag
+  0682:81 aa              lag global170
   0684:32 0009            jmp code_0690
 
         code_0687
@@ -1024,7 +1024,7 @@
   0688:35 21              ldi 21
   068a:1a                 eq?
   068b:30 0002            bnt code_0690
-  068e:81 b8              lag
+  068e:81 b8              lag global184
 
         code_0690
   0690:3a                toss
@@ -1036,7 +1036,7 @@
   0698:35 00              ldi 0
   069a:1a                 eq?
   069b:30 0005            bnt code_06a3
-  069e:81 ba              lag
+  069e:81 ba              lag global186
   06a0:32 0189            jmp code_082c
 
         code_06a3
@@ -1044,7 +1044,7 @@
   06a4:35 01              ldi 1
   06a6:1a                 eq?
   06a7:30 0005            bnt code_06af
-  06aa:81 b0              lag
+  06aa:81 b0              lag global176
   06ac:32 017d            jmp code_082c
 
         code_06af
@@ -1052,7 +1052,7 @@
   06b0:35 02              ldi 2
   06b2:1a                 eq?
   06b3:30 0005            bnt code_06bb
-  06b6:81 b4              lag
+  06b6:81 b4              lag global180
   06b8:32 0171            jmp code_082c
 
         code_06bb
@@ -1060,7 +1060,7 @@
   06bc:35 03              ldi 3
   06be:1a                 eq?
   06bf:30 0005            bnt code_06c7
-  06c2:81 b0              lag
+  06c2:81 b0              lag global176
   06c4:32 0165            jmp code_082c
 
         code_06c7
@@ -1068,7 +1068,7 @@
   06c8:35 04              ldi 4
   06ca:1a                 eq?
   06cb:30 0005            bnt code_06d3
-  06ce:81 b0              lag
+  06ce:81 b0              lag global176
   06d0:32 0159            jmp code_082c
 
         code_06d3
@@ -1076,7 +1076,7 @@
   06d4:35 05              ldi 5
   06d6:1a                 eq?
   06d7:30 0005            bnt code_06df
-  06da:81 b8              lag
+  06da:81 b8              lag global184
   06dc:32 014d            jmp code_082c
 
         code_06df
@@ -1084,7 +1084,7 @@
   06e0:35 06              ldi 6
   06e2:1a                 eq?
   06e3:30 0005            bnt code_06eb
-  06e6:81 b9              lag
+  06e6:81 b9              lag global185
   06e8:32 0141            jmp code_082c
 
         code_06eb
@@ -1092,7 +1092,7 @@
   06ec:35 07              ldi 7
   06ee:1a                 eq?
   06ef:30 0005            bnt code_06f7
-  06f2:81 b4              lag
+  06f2:81 b4              lag global180
   06f4:32 0135            jmp code_082c
 
         code_06f7
@@ -1100,7 +1100,7 @@
   06f8:35 08              ldi 8
   06fa:1a                 eq?
   06fb:30 0005            bnt code_0703
-  06fe:81 ac              lag
+  06fe:81 ac              lag global172
   0700:32 0129            jmp code_082c
 
         code_0703
@@ -1108,7 +1108,7 @@
   0704:35 09              ldi 9
   0706:1a                 eq?
   0707:30 0005            bnt code_070f
-  070a:81 b9              lag
+  070a:81 b9              lag global185
   070c:32 011d            jmp code_082c
 
         code_070f
@@ -1116,7 +1116,7 @@
   0710:35 0a              ldi a
   0712:1a                 eq?
   0713:30 0005            bnt code_071b
-  0716:81 ab              lag
+  0716:81 ab              lag global171
   0718:32 0111            jmp code_082c
 
         code_071b
@@ -1124,7 +1124,7 @@
   071c:35 0b              ldi b
   071e:1a                 eq?
   071f:30 0005            bnt code_0727
-  0722:81 b4              lag
+  0722:81 b4              lag global180
   0724:32 0105            jmp code_082c
 
         code_0727
@@ -1132,7 +1132,7 @@
   0728:35 0c              ldi c
   072a:1a                 eq?
   072b:30 0005            bnt code_0733
-  072e:81 b5              lag
+  072e:81 b5              lag global181
   0730:32 00f9            jmp code_082c
 
         code_0733
@@ -1140,7 +1140,7 @@
   0734:35 0d              ldi d
   0736:1a                 eq?
   0737:30 0005            bnt code_073f
-  073a:81 b9              lag
+  073a:81 b9              lag global185
   073c:32 00ed            jmp code_082c
 
         code_073f
@@ -1148,7 +1148,7 @@
   0740:35 0e              ldi e
   0742:1a                 eq?
   0743:30 0005            bnt code_074b
-  0746:81 b0              lag
+  0746:81 b0              lag global176
   0748:32 00e1            jmp code_082c
 
         code_074b
@@ -1156,7 +1156,7 @@
   074c:35 0f              ldi f
   074e:1a                 eq?
   074f:30 0005            bnt code_0757
-  0752:81 b5              lag
+  0752:81 b5              lag global181
   0754:32 00d5            jmp code_082c
 
         code_0757
@@ -1164,7 +1164,7 @@
   0758:35 10              ldi 10
   075a:1a                 eq?
   075b:30 0005            bnt code_0763
-  075e:81 b2              lag
+  075e:81 b2              lag global178
   0760:32 00c9            jmp code_082c
 
         code_0763
@@ -1172,7 +1172,7 @@
   0764:35 11              ldi 11
   0766:1a                 eq?
   0767:30 0005            bnt code_076f
-  076a:81 ab              lag
+  076a:81 ab              lag global171
   076c:32 00bd            jmp code_082c
 
         code_076f
@@ -1180,7 +1180,7 @@
   0770:35 12              ldi 12
   0772:1a                 eq?
   0773:30 0005            bnt code_077b
-  0776:81 b7              lag
+  0776:81 b7              lag global183
   0778:32 00b1            jmp code_082c
 
         code_077b
@@ -1188,7 +1188,7 @@
   077c:35 13              ldi 13
   077e:1a                 eq?
   077f:30 0005            bnt code_0787
-  0782:81 b8              lag
+  0782:81 b8              lag global184
   0784:32 00a5            jmp code_082c
 
         code_0787
@@ -1196,7 +1196,7 @@
   0788:35 14              ldi 14
   078a:1a                 eq?
   078b:30 0005            bnt code_0793
-  078e:81 b0              lag
+  078e:81 b0              lag global176
   0790:32 0099            jmp code_082c
 
         code_0793
@@ -1204,7 +1204,7 @@
   0794:35 15              ldi 15
   0796:1a                 eq?
   0797:30 0005            bnt code_079f
-  079a:81 b8              lag
+  079a:81 b8              lag global184
   079c:32 008d            jmp code_082c
 
         code_079f
@@ -1212,7 +1212,7 @@
   07a0:35 16              ldi 16
   07a2:1a                 eq?
   07a3:30 0005            bnt code_07ab
-  07a6:81 b1              lag
+  07a6:81 b1              lag global177
   07a8:32 0081            jmp code_082c
 
         code_07ab
@@ -1220,7 +1220,7 @@
   07ac:35 17              ldi 17
   07ae:1a                 eq?
   07af:30 0005            bnt code_07b7
-  07b2:81 ae              lag
+  07b2:81 ae              lag global174
   07b4:32 0075            jmp code_082c
 
         code_07b7
@@ -1228,7 +1228,7 @@
   07b8:35 18              ldi 18
   07ba:1a                 eq?
   07bb:30 0005            bnt code_07c3
-  07be:81 ab              lag
+  07be:81 ab              lag global171
   07c0:32 0069            jmp code_082c
 
         code_07c3
@@ -1236,7 +1236,7 @@
   07c4:35 19              ldi 19
   07c6:1a                 eq?
   07c7:30 0005            bnt code_07cf
-  07ca:81 af              lag
+  07ca:81 af              lag global175
   07cc:32 005d            jmp code_082c
 
         code_07cf
@@ -1244,7 +1244,7 @@
   07d0:35 1a              ldi 1a
   07d2:1a                 eq?
   07d3:30 0005            bnt code_07db
-  07d6:81 b0              lag
+  07d6:81 b0              lag global176
   07d8:32 0051            jmp code_082c
 
         code_07db
@@ -1252,7 +1252,7 @@
   07dc:35 1b              ldi 1b
   07de:1a                 eq?
   07df:30 0005            bnt code_07e7
-  07e2:81 b4              lag
+  07e2:81 b4              lag global180
   07e4:32 0045            jmp code_082c
 
         code_07e7
@@ -1260,7 +1260,7 @@
   07e8:35 1c              ldi 1c
   07ea:1a                 eq?
   07eb:30 0005            bnt code_07f3
-  07ee:81 aa              lag
+  07ee:81 aa              lag global170
   07f0:32 0039            jmp code_082c
 
         code_07f3
@@ -1268,7 +1268,7 @@
   07f4:35 1d              ldi 1d
   07f6:1a                 eq?
   07f7:30 0005            bnt code_07ff
-  07fa:81 aa              lag
+  07fa:81 aa              lag global170
   07fc:32 002d            jmp code_082c
 
         code_07ff
@@ -1276,7 +1276,7 @@
   0800:35 1e              ldi 1e
   0802:1a                 eq?
   0803:30 0005            bnt code_080b
-  0806:81 b5              lag
+  0806:81 b5              lag global181
   0808:32 0021            jmp code_082c
 
         code_080b
@@ -1284,7 +1284,7 @@
   080c:35 1f              ldi 1f
   080e:1a                 eq?
   080f:30 0005            bnt code_0817
-  0812:81 ae              lag
+  0812:81 ae              lag global174
   0814:32 0015            jmp code_082c
 
         code_0817
@@ -1292,7 +1292,7 @@
   0818:35 20              ldi 20
   081a:1a                 eq?
   081b:30 0005            bnt code_0823
-  081e:81 b9              lag
+  081e:81 b9              lag global185
   0820:32 0009            jmp code_082c
 
         code_0823
@@ -1300,34 +1300,34 @@
   0824:35 21              ldi 21
   0826:1a                 eq?
   0827:30 0002            bnt code_082c
-  082a:81 af              lag
+  082a:81 af              lag global175
 
         code_082c
   082c:3a                toss
   082d:36                push
-  082e:81 26              lag
+  082e:81 26              lag global38
   0830:4a 0c             send c
 
   0832:48                 ret
 )
 
-// EXPORTED procedure #7 ()
+// EXPORTED procedure #7 (proc13_7)
 (procedure proc_0833
   0833:3f 01             link 1                        // (var $1)
   0835:39 20            pushi 20                       // $20 state
   0837:76               push0
-  0838:81 09              lag
+  0838:81 09              lag global9
   083a:4a 04             send 4
 
   083c:36                push
   083d:35 20              ldi 20
   083f:12                 and
   0840:30 0005            bnt code_0848
-  0843:81 09              lag
+  0843:81 09              lag global9
   0845:32 0002            jmp code_084a
 
         code_0848
-  0848:81 45              lag
+  0848:81 45              lag gIconBar
 
         code_084a
   084a:a5 00              sat temp0
@@ -1339,9 +1339,9 @@
   0857:32 0017            jmp code_0871
 
         code_085a
-  085a:81 8f              lag
+  085a:81 8f              lag global143
   085c:30 0005            bnt code_0864
-  085f:81 15              lag
+  085f:81 15              lag global21
   0861:32 000d            jmp code_0871
 
         code_0864
@@ -1358,7 +1358,7 @@
         code_0871
   0871:36                push
   0872:78               push1
-  0873:81 01              lag
+  0873:81 01              lag global1
   0875:4a 08             send 8
 
   0877:48                 ret
@@ -1399,7 +1399,7 @@
   005e:5b 12 02           lea 12 2
   0061:36                push
   0062:8d 00              lst temp0
-  0064:89 16              lsg
+  0064:89 16              lsg global22
   0066:76               push0
   0067:43 1a 08         callk TextSize 8
 

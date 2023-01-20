@@ -293,7 +293,7 @@
   00e9:78               push1
   00ea:85 00              lat temp0
   00ec:9b 00             lsli local0
-  00ee:81 0a              lag
+  00ee:81 0a              lag global10
   00f0:4a 06             send 6
 
   00f2:c5 00              +at temp0
@@ -302,7 +302,7 @@
         code_00f7
   00f7:39 3c            pushi 3c                       // $3c doit
   00f9:76               push0
-  00fa:81 0a              lag
+  00fa:81 0a              lag global10
   00fc:4a 04             send 4
 
   00fe:87 00              lap paramTotal
@@ -577,7 +577,7 @@
   02e3:4a 1e             send 1e
 
   02e5:36                push
-  02e6:81 02              lag
+  02e6:81 02              lag global2
   02e8:4a 18             send 18
 
   02ea:32 0b5b            jmp code_0e48
@@ -778,7 +778,7 @@
   044b:4a 26             send 26
 
   044d:36                push
-  044e:81 02              lag
+  044e:81 02              lag global2
   0450:4a 12             send 12
 
   0452:32 09f3            jmp code_0e48
@@ -1002,7 +1002,7 @@
   05d7:4a 22             send 22
 
   05d9:36                push
-  05da:81 02              lag
+  05da:81 02              lag global2
   05dc:4a 14             send 14
 
   05de:32 0867            jmp code_0e48
@@ -1224,7 +1224,7 @@
   0763:4a 1e             send 1e
 
   0765:36                push
-  0766:81 02              lag
+  0766:81 02              lag global2
   0768:4a 14             send 14
 
   076a:32 06db            jmp code_0e48
@@ -1446,7 +1446,7 @@
   08e9:4a 1e             send 1e
 
   08eb:36                push
-  08ec:81 02              lag
+  08ec:81 02              lag global2
   08ee:4a 14             send 14
 
   08f0:32 0555            jmp code_0e48
@@ -1645,7 +1645,7 @@
   0a4f:4a 36             send 36
 
   0a51:36                push
-  0a52:81 02              lag
+  0a52:81 02              lag global2
   0a54:4a 12             send 12
 
   0a56:32 03ef            jmp code_0e48
@@ -1871,7 +1871,7 @@
   0be7:4a 1e             send 1e
 
   0be9:36                push
-  0bea:81 02              lag
+  0bea:81 02              lag global2
   0bec:4a 14             send 14
 
   0bee:32 0257            jmp code_0e48
@@ -2066,7 +2066,7 @@
   0d42:4a 1e             send 1e
 
   0d44:36                push
-  0d45:81 02              lag
+  0d45:81 02              lag global2
   0d47:4a 12             send 12
 
   0d49:32 00fc            jmp code_0e48
@@ -2203,7 +2203,7 @@
   0e41:4a 2e             send 2e
 
   0e43:36                push
-  0e44:81 02              lag
+  0e44:81 02              lag global2
   0e46:4a 0e             send e
 
 

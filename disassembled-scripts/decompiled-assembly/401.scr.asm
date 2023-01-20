@@ -55,11 +55,11 @@
   002c:1a                 eq?
   002d:30 0018            bnt code_0048
   0030:76               push0
-  0031:45 03 00         callb procedure_0003 0         //
+  0031:45 03 00         callb procedure_0003 0         // proc0_3
 
   0034:78               push1
   0035:38 0090          pushi 90                       // $90 localize
-  0038:45 06 02         callb procedure_0006 2         //
+  0038:45 06 02         callb procedure_0006 2         // proc0_6
 
   003b:7a               push2
   003c:5b 02 00           lea 2 0
@@ -125,11 +125,11 @@
   0099:76               push0
   009a:39 03            pushi 3                        // $3 y
   009c:76               push0
-  009d:81 00              lag
+  009d:81 00              lag gEgo
   009f:4a 04             send 4
 
   00a1:36                push
-  00a2:81 00              lag
+  00a2:81 00              lag gEgo
   00a4:4a 0a             send a
 
   00a6:39 6c            pushi 6c                       // $6c dispose

@@ -191,13 +191,13 @@
   00f6:63 34             pToa value
   00f8:30 0016            bnt code_0111
   00fb:8f 01              lsp param1
-  00fd:81 00              lag
+  00fd:81 00              lag gEgo
   00ff:1a                 eq?
   0100:30 000e            bnt code_0111
   0103:38 016e          pushi 16e                      // $16e changeScore
   0106:78               push1
   0107:67 34             pTos value
-  0109:81 01              lag
+  0109:81 01              lag global1
   010b:4a 06             send 6
 
   010d:35 00              ldi 0
@@ -260,7 +260,7 @@
     )
     (method (init)                                     // method_0613
   0613:5c              selfID
-  0614:a1 09              sag
+  0614:a1 09              sag global9
   0616:63 2a             pToa normalHeading
   0618:65 2c             aTop heading
   061a:48                 ret
@@ -543,7 +543,7 @@
   0a87:4a 04             send 4
 
   0a89:36                push
-  0a8a:81 01              lag
+  0a8a:81 01              lag global1
   0a8c:4a 06             send 6
 
 
@@ -577,7 +577,7 @@
 
   0ab6:36                push
   0ab7:78               push1
-  0ab8:81 01              lag
+  0ab8:81 01              lag global1
   0aba:4a 08             send 8
 
   0abc:32 0244            jmp code_0d03
@@ -763,20 +763,20 @@
   0bce:39 71            pushi 71                       // $71 respondsTo
   0bd0:78               push1
   0bd1:38 0154          pushi 154                      // $154 eraseOnly
-  0bd4:81 26              lag
+  0bd4:81 26              lag global38
   0bd6:4a 06             send 6
 
   0bd8:30 0033            bnt code_0c0e
   0bdb:38 0154          pushi 154                      // $154 eraseOnly
   0bde:76               push0
-  0bdf:81 26              lag
+  0bdf:81 26              lag global38
   0be1:4a 04             send 4
 
   0be3:a5 07              sat temp7
   0be5:38 0154          pushi 154                      // $154 eraseOnly
   0be8:78               push1
   0be9:78               push1
-  0bea:81 26              lag
+  0bea:81 26              lag global38
   0bec:4a 06             send 6
 
   0bee:39 03            pushi 3                        // $3 y
@@ -793,7 +793,7 @@
   0c01:38 0154          pushi 154                      // $154 eraseOnly
   0c04:78               push1
   0c05:8d 07              lst temp7
-  0c07:81 26              lag
+  0c07:81 26              lag global38
   0c09:4a 06             send 6
 
   0c0b:32 0013            jmp code_0c21
@@ -829,7 +829,7 @@
   0c34:38 00bb          pushi bb                       // $bb setCursor
   0c37:78               push1
   0c38:38 03e7          pushi 3e7                      // $3e7 sel_999
-  0c3b:81 01              lag
+  0c3b:81 01              lag global1
   0c3d:4a 06             send 6
 
   0c3f:32 00c1            jmp code_0d03
@@ -877,7 +877,7 @@
 
   0c85:36                push
   0c86:78               push1
-  0c87:81 01              lag
+  0c87:81 01              lag global1
   0c89:4a 08             send 8
 
   0c8b:32 0075            jmp code_0d03
@@ -888,20 +888,20 @@
   0c93:39 71            pushi 71                       // $71 respondsTo
   0c95:78               push1
   0c96:38 0154          pushi 154                      // $154 eraseOnly
-  0c99:81 26              lag
+  0c99:81 26              lag global38
   0c9b:4a 06             send 6
 
   0c9d:30 0013            bnt code_0cb3
   0ca0:38 0154          pushi 154                      // $154 eraseOnly
   0ca3:76               push0
-  0ca4:81 26              lag
+  0ca4:81 26              lag global38
   0ca6:4a 04             send 4
 
   0ca8:a5 07              sat temp7
   0caa:38 0154          pushi 154                      // $154 eraseOnly
   0cad:78               push1
   0cae:78               push1
-  0caf:81 26              lag
+  0caf:81 26              lag global38
   0cb1:4a 06             send 6
 
 
@@ -950,14 +950,14 @@
   0cec:39 71            pushi 71                       // $71 respondsTo
   0cee:78               push1
   0cef:38 0154          pushi 154                      // $154 eraseOnly
-  0cf2:81 26              lag
+  0cf2:81 26              lag global38
   0cf4:4a 06             send 6
 
   0cf6:30 000a            bnt code_0d03
   0cf9:38 0154          pushi 154                      // $154 eraseOnly
   0cfc:78               push1
   0cfd:8d 07              lst temp7
-  0cff:81 26              lag
+  0cff:81 26              lag global38
   0d01:4a 06             send 6
 
 
@@ -985,10 +985,10 @@
     (method (showSelf)                                 // method_0626
   0626:38 009d          pushi 9d                       // $9d pause
   0629:76               push0
-  062a:81 08              lag
+  062a:81 08              lag global8
   062c:4a 04             send 4
 
-  062e:81 4d              lag
+  062e:81 4d              lag global77
   0630:30 0013            bnt code_0646
   0633:39 71            pushi 71                       // $71 respondsTo
   0635:78               push1
@@ -998,20 +998,20 @@
   063b:30 0008            bnt code_0646
   063e:38 009c          pushi 9c                       // $9c stop
   0641:76               push0
-  0642:81 4d              lag
+  0642:81 4d              lag global77
   0644:4a 04             send 4
 
 
         code_0646
   0646:38 00cb          pushi cb                       // $cb height
   0649:76               push0
-  064a:81 45              lag
+  064a:81 45              lag gIconBar
   064c:4a 04             send 4
 
   064e:30 0007            bnt code_0658
   0651:39 69            pushi 69                       // $69 hide
   0653:76               push0
-  0654:81 45              lag
+  0654:81 45              lag gIconBar
   0656:4a 04             send 4
 
 
@@ -1066,7 +1066,7 @@
   069d:32 0002            jmp code_06a2
 
         code_06a0
-  06a0:81 00              lag
+  06a0:81 00              lag gEgo
 
         code_06a2
   06a2:36                push
@@ -1103,7 +1103,7 @@
 
         code_06c8
   06c8:36                push
-  06c9:81 01              lag
+  06c9:81 01              lag global1
   06cb:4a 06             send 6
 
   06cd:76               push0
@@ -1125,13 +1125,13 @@
   06e7:32 0002            jmp code_06ec
 
         code_06ea
-  06ea:81 00              lag
+  06ea:81 00              lag gEgo
 
         code_06ec
   06ec:36                push
   06ed:38 00ce          pushi ce                       // $ce curIcon
   06f0:76               push0
-  06f1:81 45              lag
+  06f1:81 45              lag gIconBar
   06f3:4a 04             send 4
 
   06f5:36                push
@@ -1162,7 +1162,7 @@
   0d22:38 009d          pushi 9d                       // $9d pause
   0d25:78               push1
   0d26:76               push0
-  0d27:81 08              lag
+  0d27:81 08              lag global8
   0d29:4a 06             send 6
 
   0d2b:67 24             pTos state
@@ -1194,7 +1194,7 @@
   0d4f:30 005f            bnt code_0db1
   0d52:38 00d1          pushi d1                       // $d1 curInvIcon
   0d55:76               push0
-  0d56:81 45              lag
+  0d56:81 45              lag gIconBar
   0d58:4a 04             send 4
 
   0d5a:18                 not
@@ -1203,11 +1203,11 @@
   0d61:78               push1
   0d62:38 00d2          pushi d2                       // $d2 useIconItem
   0d65:76               push0
-  0d66:81 45              lag
+  0d66:81 45              lag gIconBar
   0d68:4a 04             send 4
 
   0d6a:36                push
-  0d6b:81 45              lag
+  0d6b:81 45              lag gIconBar
   0d6d:4a 06             send 6
 
 
@@ -1226,7 +1226,7 @@
   0d80:76               push0
   0d81:38 00d2          pushi d2                       // $d2 useIconItem
   0d84:76               push0
-  0d85:81 45              lag
+  0d85:81 45              lag gIconBar
   0d87:4a 04             send 4
 
   0d89:4a 0a             send a
@@ -1235,7 +1235,7 @@
   0d8c:38 00d1          pushi d1                       // $d1 curInvIcon
   0d8f:78               push1
   0d90:67 14             pTos curIcon
-  0d92:81 45              lag
+  0d92:81 45              lag gIconBar
   0d94:4a 0c             send c
 
   0d96:39 24            pushi 24                       // $24 cursor
@@ -1253,7 +1253,7 @@
 
   0dab:36                push
   0dac:78               push1
-  0dad:81 01              lag
+  0dad:81 01              lag global1
   0daf:4a 08             send 8
 
 
@@ -1342,7 +1342,7 @@
         code_077b
   077b:38 00bb          pushi bb                       // $bb setCursor
   077e:39 04            pushi 4                        // $4 x
-  0780:89 13              lsg
+  0780:89 13              lsg global19
   0782:78               push1
   0783:39 0a            pushi a                        // $a nsLeft
   0785:76               push0
@@ -1376,7 +1376,7 @@
   07a9:35 03              ldi 3
   07ab:04                 sub
   07ac:36                push
-  07ad:81 01              lag
+  07ad:81 01              lag global1
   07af:4a 0c             send c
 
   07b1:38 00c3          pushi c3                       // $c3 highlight
@@ -1454,7 +1454,7 @@
         code_0812
   0812:38 00bb          pushi bb                       // $bb setCursor
   0815:39 04            pushi 4                        // $4 x
-  0817:89 13              lsg
+  0817:89 13              lsg global19
   0819:78               push1
   081a:39 0a            pushi a                        // $a nsLeft
   081c:76               push0
@@ -1488,7 +1488,7 @@
   0840:35 03              ldi 3
   0842:04                 sub
   0843:36                push
-  0844:81 01              lag
+  0844:81 01              lag global1
   0846:4a 0c             send c
 
   0848:38 00c3          pushi c3                       // $c3 highlight
@@ -1543,7 +1543,7 @@
 
   0ded:36                push
   0dee:78               push1
-  0def:81 01              lag
+  0def:81 01              lag global1
   0df1:4a 08             send 8
 
   0df3:48                 ret
@@ -1574,7 +1574,7 @@
   01ba:a5 00              sat temp0
   01bc:39 79            pushi 79                       // $79 first
   01be:76               push0
-  01bf:81 09              lag
+  01bf:81 09              lag global9
   01c1:4a 04             send 4
 
   01c3:a5 08              sat temp8
@@ -1752,7 +1752,7 @@
   02ba:39 44            pushi 44                       // $44 next
   02bc:78               push1
   02bd:8d 08              lst temp8
-  02bf:81 09              lag
+  02bf:81 09              lag global9
   02c1:4a 06             send 6
 
   02c3:a5 08              sat temp8
@@ -1851,7 +1851,7 @@
   0355:a5 0f              sat temp15
   0357:39 23            pushi 23                       // $23 window
   0359:76               push0
-  035a:81 09              lag
+  035a:81 09              lag global9
   035c:4a 04             send 4
 
   035e:30 0025            bnt code_0386
@@ -1871,7 +1871,7 @@
   037c:76               push0
   037d:39 23            pushi 23                       // $23 window
   037f:76               push0
-  0380:81 09              lag
+  0380:81 09              lag global9
   0382:4a 04             send 4
 
   0384:4a 1c             send 1c
@@ -1888,7 +1888,7 @@
   0393:38 016b          pushi 16b                      // $16b yOffset
   0396:39 23            pushi 23                       // $23 window
   0398:76               push0
-  0399:81 09              lag
+  0399:81 09              lag global9
   039b:4a 04             send 4
 
   039d:4a 06             send 6
@@ -1898,7 +1898,7 @@
   03a5:76               push0
   03a6:39 23            pushi 23                       // $23 window
   03a8:76               push0
-  03a9:81 09              lag
+  03a9:81 09              lag global9
   03ab:4a 04             send 4
 
   03ad:4a 04             send 4
@@ -1913,7 +1913,7 @@
   03b7:38 016a          pushi 16a                      // $16a xOffset
   03ba:39 23            pushi 23                       // $23 window
   03bc:76               push0
-  03bd:81 09              lag
+  03bd:81 09              lag global9
   03bf:4a 04             send 4
 
   03c1:4a 06             send 6
@@ -1923,7 +1923,7 @@
   03c9:76               push0
   03ca:39 23            pushi 23                       // $23 window
   03cc:76               push0
-  03cd:81 09              lag
+  03cd:81 09              lag global9
   03cf:4a 04             send 4
 
   03d1:4a 04             send 4
@@ -1935,7 +1935,7 @@
   03d6:a5 13              sat temp19
   03d8:39 79            pushi 79                       // $79 first
   03da:76               push0
-  03db:81 09              lag
+  03db:81 09              lag global9
   03dd:4a 04             send 4
 
   03df:a5 08              sat temp8
@@ -2120,7 +2120,7 @@
   04e2:39 44            pushi 44                       // $44 next
   04e4:78               push1
   04e5:8d 08              lst temp8
-  04e7:81 09              lag
+  04e7:81 09              lag global9
   04e9:4a 06             send 6
 
   04eb:a5 08              sat temp8
@@ -2131,7 +2131,7 @@
   04f3:76               push0
   04f4:39 23            pushi 23                       // $23 window
   04f6:76               push0
-  04f7:81 09              lag
+  04f7:81 09              lag global9
   04f9:4a 04             send 4
 
   04fb:4a 04             send 4
@@ -2141,7 +2141,7 @@
   0501:76               push0
   0502:39 23            pushi 23                       // $23 window
   0504:76               push0
-  0505:81 09              lag
+  0505:81 09              lag global9
   0507:4a 04             send 4
 
   0509:4a 04             send 4
@@ -2158,7 +2158,7 @@
   0519:76               push0
   051a:39 23            pushi 23                       // $23 window
   051c:76               push0
-  051d:81 09              lag
+  051d:81 09              lag global9
   051f:4a 04             send 4
 
   0521:4a 04             send 4
@@ -2168,7 +2168,7 @@
   0527:76               push0
   0528:39 23            pushi 23                       // $23 window
   052a:76               push0
-  052b:81 09              lag
+  052b:81 09              lag global9
   052d:4a 04             send 4
 
   052f:4a 04             send 4
@@ -2179,7 +2179,7 @@
   0537:a5 12              sat temp18
   0539:39 79            pushi 79                       // $79 first
   053b:76               push0
-  053c:81 09              lag
+  053c:81 09              lag global9
   053e:4a 04             send 4
 
   0540:a5 08              sat temp8
@@ -2320,7 +2320,7 @@
   0602:39 44            pushi 44                       // $44 next
   0604:78               push1
   0605:8d 08              lst temp8
-  0607:81 09              lag
+  0607:81 09              lag global9
   0609:4a 06             send 6
 
   060b:a5 08              sat temp8

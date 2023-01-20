@@ -27,7 +27,7 @@
   0026:a5 0e              sat temp14
   0028:39 23            pushi 23                       // $23 window
   002a:78               push1
-  002b:89 26              lsg
+  002b:89 26              lsg global38
   002d:39 6a            pushi 6a                       // $6a new
   002f:76               push0
   0030:51 12            class Dialog

@@ -74,10 +74,10 @@
         obstacles $0
     )
     (method (init)                                     // method_000e
-  000e:81 8b              lag
-  0010:a1 92              sag
+  000e:81 8b              lag global139
+  0010:a1 92              sag global146
   0012:78               push1
-  0013:81 8b              lag
+  0013:81 8b              lag global139
   0015:16                 neg
   0016:36                push
   0017:46 0326 0004 02  calle 326 procedure_0004 2     //
@@ -94,7 +94,7 @@
   002f:46 03be 0000 08  calle 3be procedure_0000 8     //
 
   0035:35 00              ldi 0
-  0037:a1 8b              sag
+  0037:a1 8b              sag global139
   0039:39 6b            pushi 6b                       // $6b init
   003b:76               push0
   003c:38 0096          pushi 96                       // $96 setCycle
@@ -131,7 +131,7 @@
 
   0070:78               push1
   0071:39 05            pushi 5                        // $5 view
-  0073:45 02 02         callb procedure_0002 2         //
+  0073:45 02 02         callb procedure_0002 2         // proc0_2
 
   0076:39 07            pushi 7                        // $7 cel
   0078:78               push1
@@ -145,12 +145,12 @@
   0086:38 6000          pushi 6000                     // $6000 sel_24576
   0089:39 6b            pushi 6b                       // $6b init
   008b:76               push0
-  008c:81 00              lag
+  008c:81 00              lag gEgo
   008e:4a 18             send 18
 
   0090:78               push1
   0091:39 05            pushi 5                        // $5 view
-  0093:45 05 02         callb procedure_0005 2         //
+  0093:45 05 02         callb procedure_0005 2         // proc0_5
 
   0096:18                 not
   0097:30 0013            bnt code_00ad
@@ -175,14 +175,14 @@
   00b5:39 ff            pushi ff                       // $ff syncNum
   00b7:39 2a            pushi 2a                       // $2a play
   00b9:76               push0
-  00ba:81 64              lag
+  00ba:81 64              lag gRgnMusic
   00bc:4a 10             send 10
 
   00be:38 008e          pushi 8e                       // $8e setScript
   00c1:78               push1
   00c2:72 0a64          lofsa $0a64                    // doTheSlideShow
   00c5:36                push
-  00c6:81 00              lag
+  00c6:81 00              lag gEgo
   00c8:4a 06             send 6
 
   00ca:48                 ret
@@ -195,7 +195,7 @@
   00d1:39 14            pushi 14                       // $14 brLeft
   00d3:39 0c            pushi c                        // $c nsRight
   00d5:78               push1
-  00d6:81 64              lag
+  00d6:81 64              lag gRgnMusic
   00d8:4a 0c             send c
 
   00da:39 6c            pushi 6c                       // $6c dispose
@@ -797,7 +797,7 @@
   062a:1a                 eq?
   062b:30 0030            bnt code_065e
   062e:76               push0
-  062f:45 03 00         callb procedure_0003 0         //
+  062f:45 03 00         callb procedure_0003 0         // proc0_3
 
   0632:38 00a2          pushi a2                       // $a2 setLoop
   0635:78               push1
@@ -818,7 +818,7 @@
   0651:36                push
   0652:38 00e6          pushi e6                       // $e6 distanceTo
   0655:39 4b            pushi 4b                       // $4b said
-  0657:81 00              lag
+  0657:81 00              lag gEgo
   0659:4a 0a             send a
 
   065b:32 03f8            jmp code_0a56
@@ -831,8 +831,8 @@
   0665:7a               push2
   0666:72 0432          lofsa $0432                    // theKnight
   0669:36                push
-  066a:89 00              lsg
-  066c:45 09 04         callb procedure_0009 4         //
+  066a:89 00              lsg gEgo
+  066c:45 09 04         callb procedure_0009 4         // proc0_9
 
   066f:35 01              ldi 1
   0671:65 10             aTop cycles
@@ -862,7 +862,7 @@
   0698:51 1a            class End
   069a:36                push
   069b:7c            pushSelf
-  069c:81 00              lag
+  069c:81 00              lag gEgo
   069e:4a 1a             send 1a
 
   06a0:39 6b            pushi 6b                       // $6b init
@@ -891,11 +891,11 @@
   06c4:78               push1
   06c5:76               push0
   06c6:78               push1
-  06c7:45 02 06         callb procedure_0002 6         //
+  06c7:45 02 06         callb procedure_0002 6         // proc0_2
 
   06ca:78               push1
   06cb:39 41            pushi 41                       // $41 replay
-  06cd:45 05 02         callb procedure_0005 2         //
+  06cd:45 05 02         callb procedure_0005 2         // proc0_5
 
   06d0:30 005c            bnt code_072f
   06d3:38 00a2          pushi a2                       // $a2 setLoop
@@ -961,13 +961,13 @@
   073a:30 0030            bnt code_076d
   073d:78               push1
   073e:39 05            pushi 5                        // $5 view
-  0740:45 05 02         callb procedure_0005 2         //
+  0740:45 05 02         callb procedure_0005 2         // proc0_5
 
   0743:18                 not
   0744:30 001f            bnt code_0766
   0747:78               push1
   0748:39 3e            pushi 3e                       // $3e looper
-  074a:45 05 02         callb procedure_0005 2         //
+  074a:45 05 02         callb procedure_0005 2         // proc0_5
 
   074d:30 0016            bnt code_0766
   0750:38 011b          pushi 11b                      // $11b setMotion
@@ -994,13 +994,13 @@
   0771:30 0045            bnt code_07b9
   0774:78               push1
   0775:39 05            pushi 5                        // $5 view
-  0777:45 05 02         callb procedure_0005 2         //
+  0777:45 05 02         callb procedure_0005 2         // proc0_5
 
   077a:18                 not
   077b:30 0034            bnt code_07b2
   077e:78               push1
   077f:39 3e            pushi 3e                       // $3e looper
-  0781:45 05 02         callb procedure_0005 2         //
+  0781:45 05 02         callb procedure_0005 2         // proc0_5
 
   0784:30 002b            bnt code_07b2
   0787:39 05            pushi 5                        // $5 view
@@ -1042,7 +1042,7 @@
   07bd:30 0024            bnt code_07e4
   07c0:78               push1
   07c1:39 41            pushi 41                       // $41 replay
-  07c3:45 05 02         callb procedure_0005 2         //
+  07c3:45 05 02         callb procedure_0005 2         // proc0_5
 
   07c6:30 0014            bnt code_07dd
   07c9:38 0120          pushi 120                      // $120 setCel
@@ -1070,7 +1070,7 @@
   07e8:30 0032            bnt code_081d
   07eb:78               push1
   07ec:39 41            pushi 41                       // $41 replay
-  07ee:45 05 02         callb procedure_0005 2         //
+  07ee:45 05 02         callb procedure_0005 2         // proc0_5
 
   07f1:30 0014            bnt code_0808
   07f4:39 06            pushi 6                        // $6 loop
@@ -1188,7 +1188,7 @@
 
   08af:78               push1
   08b0:39 41            pushi 41                       // $41 replay
-  08b2:45 05 02         callb procedure_0005 2         //
+  08b2:45 05 02         callb procedure_0005 2         // proc0_5
 
   08b5:30 002a            bnt code_08e2
   08b8:38 00a2          pushi a2                       // $a2 setLoop
@@ -1226,7 +1226,7 @@
   08ed:30 0040            bnt code_0930
   08f0:78               push1
   08f1:39 41            pushi 41                       // $41 replay
-  08f3:45 05 02         callb procedure_0005 2         //
+  08f3:45 05 02         callb procedure_0005 2         // proc0_5
 
   08f6:30 002e            bnt code_0927
   08f9:38 00a2          pushi a2                       // $a2 setLoop
@@ -1268,27 +1268,27 @@
   0934:30 0035            bnt code_096c
   0937:78               push1
   0938:39 05            pushi 5                        // $5 view
-  093a:45 05 02         callb procedure_0005 2         //
+  093a:45 05 02         callb procedure_0005 2         // proc0_5
 
   093d:18                 not
   093e:30 0022            bnt code_0963
   0941:78               push1
   0942:39 3e            pushi 3e                       // $3e looper
-  0944:45 05 02         callb procedure_0005 2         //
+  0944:45 05 02         callb procedure_0005 2         // proc0_5
 
   0947:30 0019            bnt code_0963
   094a:39 03            pushi 3                        // $3 y
-  094c:89 00              lsg
+  094c:89 00              lsg gEgo
   094e:72 04b0          lofsa $04b0                    // maidMarian
   0951:36                push
   0952:7c            pushSelf
-  0953:45 09 06         callb procedure_0009 6         //
+  0953:45 09 06         callb procedure_0009 6         // proc0_9
 
   0956:7a               push2
   0957:72 04b0          lofsa $04b0                    // maidMarian
   095a:36                push
-  095b:89 00              lsg
-  095d:45 09 04         callb procedure_0009 4         //
+  095b:89 00              lsg gEgo
+  095d:45 09 04         callb procedure_0009 4         // proc0_9
 
   0960:32 00f3            jmp code_0a56
 
@@ -1306,13 +1306,13 @@
   0970:30 002f            bnt code_09a2
   0973:78               push1
   0974:39 05            pushi 5                        // $5 view
-  0976:45 05 02         callb procedure_0005 2         //
+  0976:45 05 02         callb procedure_0005 2         // proc0_5
 
   0979:18                 not
   097a:30 001c            bnt code_0999
   097d:78               push1
   097e:39 3e            pushi 3e                       // $3e looper
-  0980:45 05 02         callb procedure_0005 2         //
+  0980:45 05 02         callb procedure_0005 2         // proc0_5
 
   0983:30 0013            bnt code_0999
   0986:39 04            pushi 4                        // $4 x
@@ -1339,7 +1339,7 @@
   09a6:30 009b            bnt code_0a44
   09a9:78               push1
   09aa:39 41            pushi 41                       // $41 replay
-  09ac:45 05 02         callb procedure_0005 2         //
+  09ac:45 05 02         callb procedure_0005 2         // proc0_5
 
   09af:30 0016            bnt code_09c8
   09b2:39 6c            pushi 6c                       // $6c dispose
@@ -1360,13 +1360,13 @@
         code_09c8
   09c8:78               push1
   09c9:39 05            pushi 5                        // $5 view
-  09cb:45 05 02         callb procedure_0005 2         //
+  09cb:45 05 02         callb procedure_0005 2         // proc0_5
 
   09ce:18                 not
   09cf:30 0014            bnt code_09e6
   09d2:78               push1
   09d3:39 3e            pushi 3e                       // $3e looper
-  09d5:45 05 02         callb procedure_0005 2         //
+  09d5:45 05 02         callb procedure_0005 2         // proc0_5
 
   09d8:30 000b            bnt code_09e6
   09db:39 6c            pushi 6c                       // $6c dispose
@@ -1422,14 +1422,14 @@
 
   0a28:39 69            pushi 69                       // $69 hide
   0a2a:76               push0
-  0a2b:81 00              lag
+  0a2b:81 00              lag gEgo
   0a2d:4a 04             send 4
 
   0a2f:38 018c          pushi 18c                      // $18c drawPic
   0a32:7a               push2
   0a33:38 0323          pushi 323                      // $323 sel_803
   0a36:38 8006          pushi 8006                     // $8006 sel_32774
-  0a39:81 02              lag
+  0a39:81 02              lag global2
   0a3b:4a 08             send 8
 
   0a3d:35 30              ldi 30
@@ -1444,7 +1444,7 @@
   0a4b:38 0179          pushi 179                      // $179 newRoom
   0a4e:78               push1
   0a4f:38 0321          pushi 321                      // $321 sel_801
-  0a52:81 02              lag
+  0a52:81 02              lag global2
   0a54:4a 06             send 6
 
 

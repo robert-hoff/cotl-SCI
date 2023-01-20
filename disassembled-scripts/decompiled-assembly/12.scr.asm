@@ -56,13 +56,13 @@
   0014:39 73            pushi 73                       // $73 add
   0016:78               push1
   0017:7c            pushSelf
-  0018:81 49              lag
+  0018:81 49              lag gMH
   001a:4a 06             send 6
 
   001c:39 73            pushi 73                       // $73 add
   001e:78               push1
   001f:7c            pushSelf
-  0020:81 48              lag
+  0020:81 48              lag gKH
   0022:4a 06             send 6
 
   0024:48                 ret
@@ -72,13 +72,13 @@
   0025:39 54            pushi 54                       // $54 delete
   0027:78               push1
   0028:7c            pushSelf
-  0029:81 49              lag
+  0029:81 49              lag gMH
   002b:4a 06             send 6
 
   002d:39 54            pushi 54                       // $54 delete
   002f:78               push1
   0030:7c            pushSelf
-  0031:81 48              lag
+  0031:81 48              lag gKH
   0033:4a 06             send 6
 
   0035:39 6c            pushi 6c                       // $6c dispose
@@ -94,7 +94,7 @@
   0090:76               push0
   0091:38 00ce          pushi ce                       // $ce curIcon
   0094:76               push0
-  0095:81 45              lag
+  0095:81 45              lag gIconBar
   0097:4a 04             send 4
 
   0099:4a 04             send 4
@@ -240,17 +240,17 @@
   0164:39 43            pushi 43                       // $43 at
   0166:78               push1
   0167:76               push0
-  0168:81 45              lag
+  0168:81 45              lag gIconBar
   016a:4a 06             send 6
 
   016c:36                push
-  016d:81 45              lag
+  016d:81 45              lag gIconBar
   016f:4a 06             send 6
 
   0171:38 0179          pushi 179                      // $179 newRoom
   0174:78               push1
   0175:67 0e             pTos heading
-  0177:81 02              lag
+  0177:81 02              lag global2
   0179:4a 06             send 6
 
   017b:32 005d            jmp code_01db
@@ -291,17 +291,17 @@
   01ad:39 43            pushi 43                       // $43 at
   01af:78               push1
   01b0:76               push0
-  01b1:81 45              lag
+  01b1:81 45              lag gIconBar
   01b3:4a 06             send 6
 
   01b5:36                push
-  01b6:81 45              lag
+  01b6:81 45              lag gIconBar
   01b8:4a 06             send 6
 
   01ba:38 0179          pushi 179                      // $179 newRoom
   01bd:78               push1
   01be:67 0e             pTos heading
-  01c0:81 02              lag
+  01c0:81 02              lag global2
   01c2:4a 06             send 6
 
   01c4:39 4c            pushi 4c                       // $4c claimed
@@ -353,7 +353,7 @@
   0074:a5 01              sat temp1
 
         code_0076
-  0076:81 19              lag
+  0076:81 19              lag global25
   0078:30 0005            bnt code_0080
   007b:35 00              ldi 0
   007d:32 000b            jmp code_008b

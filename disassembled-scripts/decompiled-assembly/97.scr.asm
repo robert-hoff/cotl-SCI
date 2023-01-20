@@ -55,7 +55,7 @@
     )
     (method (init)                                     // method_000e
   000e:76               push0
-  000f:45 03 00         callb procedure_0003 0         //
+  000f:45 03 00         callb procedure_0003 0         // proc0_3
 
   0012:39 03            pushi 3                        // $3 y
   0014:38 0081          pushi 81                       // $81 handleEvent
@@ -72,14 +72,14 @@
   0032:78               push1
   0033:72 1146          lofsa $1146                    // giveEmTheWorks
   0036:36                push
-  0037:81 49              lag
+  0037:81 49              lag gMH
   0039:4a 06             send 6
 
   003b:39 73            pushi 73                       // $73 add
   003d:78               push1
   003e:72 1146          lofsa $1146                    // giveEmTheWorks
   0041:36                push
-  0042:81 48              lag
+  0042:81 48              lag gKH
   0044:4a 06             send 6
 
   0046:39 03            pushi 3                        // $3 y
@@ -91,7 +91,7 @@
 
   0051:78               push1
   0052:76               push0
-  0053:45 05 02         callb procedure_0005 2         //
+  0053:45 05 02         callb procedure_0005 2         // proc0_5
 
   0056:30 0007            bnt code_0060
   0059:35 0a              ldi a
@@ -130,7 +130,7 @@
   0086:78               push1
   0087:39 2a            pushi 2a                       // $2a play
   0089:76               push0
-  008a:81 64              lag
+  008a:81 64              lag gRgnMusic
   008c:4a 10             send 10
 
   008e:39 6b            pushi 6b                       // $6b init
@@ -229,7 +229,7 @@
   0123:7a               push2
   0124:39 05            pushi 5                        // $5 view
   0126:78               push1
-  0127:81 01              lag
+  0127:81 01              lag global1
   0129:4a 08             send 8
 
   012b:38 008e          pushi 8e                       // $8e setScript
@@ -248,21 +248,21 @@
   013c:39 0c            pushi c                        // $c nsRight
   013e:3c                 dup
   013f:78               push1
-  0140:81 64              lag
+  0140:81 64              lag gRgnMusic
   0142:4a 0c             send c
 
   0144:39 54            pushi 54                       // $54 delete
   0146:78               push1
   0147:72 1146          lofsa $1146                    // giveEmTheWorks
   014a:36                push
-  014b:81 49              lag
+  014b:81 49              lag gMH
   014d:4a 06             send 6
 
   014f:39 54            pushi 54                       // $54 delete
   0151:78               push1
   0152:72 1146          lofsa $1146                    // giveEmTheWorks
   0155:36                push
-  0156:81 48              lag
+  0156:81 48              lag gKH
   0158:4a 06             send 6
 
   015a:39 6c            pushi 6c                       // $6c dispose
@@ -943,7 +943,7 @@
   0809:30 000e            bnt code_081a
   080c:35 00              ldi 0
   080e:76               push0
-  080f:45 03 00         callb procedure_0003 0         //
+  080f:45 03 00         callb procedure_0003 0         // proc0_3
 
   0812:34 0258            ldi 258
   0815:65 16             aTop ticks
@@ -957,14 +957,14 @@
   0821:35 01              ldi 1
   0823:38 00c9          pushi c9                       // $c9 disable
   0826:76               push0
-  0827:81 45              lag
+  0827:81 45              lag gIconBar
   0829:4a 04             send 4
 
   082b:38 018c          pushi 18c                      // $18c drawPic
   082e:7a               push2
   082f:38 0323          pushi 323                      // $323 sel_803
   0832:8b 00              lsl local0
-  0834:81 02              lag
+  0834:81 02              lag global2
   0836:4a 08             send 8
 
   0838:39 69            pushi 69                       // $69 hide
@@ -1031,7 +1031,7 @@
   089b:7a               push2
   089c:38 0389          pushi 389                      // $389 sel_905
   089f:8b 00              lsl local0
-  08a1:81 02              lag
+  08a1:81 02              lag global2
   08a3:4a 08             send 8
 
   08a5:39 06            pushi 6                        // $6 loop
@@ -1148,7 +1148,7 @@
   095e:35 03              ldi 3
   0960:38 00a7          pushi a7                       // $a7 enable
   0963:76               push0
-  0964:81 45              lag
+  0964:81 45              lag gIconBar
   0966:4a 04             send 4
 
   0968:34 0258            ldi 258
@@ -1163,14 +1163,14 @@
   0977:35 04              ldi 4
   0979:38 00c9          pushi c9                       // $c9 disable
   097c:76               push0
-  097d:81 45              lag
+  097d:81 45              lag gIconBar
   097f:4a 04             send 4
 
   0981:38 018c          pushi 18c                      // $18c drawPic
   0984:7a               push2
   0985:38 0323          pushi 323                      // $323 sel_803
   0988:8b 00              lsl local0
-  098a:81 02              lag
+  098a:81 02              lag global2
   098c:4a 08             send 8
 
   098e:39 69            pushi 69                       // $69 hide
@@ -1217,7 +1217,7 @@
   09d1:7a               push2
   09d2:38 0389          pushi 389                      // $389 sel_905
   09d5:8b 00              lsl local0
-  09d7:81 02              lag
+  09d7:81 02              lag global2
   09d9:4a 08             send 8
 
   09db:39 06            pushi 6                        // $6 loop
@@ -1419,7 +1419,7 @@
   0b26:35 06              ldi 6
   0b28:38 00a7          pushi a7                       // $a7 enable
   0b2b:76               push0
-  0b2c:81 45              lag
+  0b2c:81 45              lag gIconBar
   0b2e:4a 04             send 4
 
   0b30:34 0258            ldi 258
@@ -1434,14 +1434,14 @@
   0b3f:35 07              ldi 7
   0b41:38 00c9          pushi c9                       // $c9 disable
   0b44:76               push0
-  0b45:81 45              lag
+  0b45:81 45              lag gIconBar
   0b47:4a 04             send 4
 
   0b49:38 018c          pushi 18c                      // $18c drawPic
   0b4c:7a               push2
   0b4d:38 0323          pushi 323                      // $323 sel_803
   0b50:8b 00              lsl local0
-  0b52:81 02              lag
+  0b52:81 02              lag global2
   0b54:4a 08             send 8
 
   0b56:39 69            pushi 69                       // $69 hide
@@ -1513,7 +1513,7 @@
   0bc1:7a               push2
   0bc2:38 0389          pushi 389                      // $389 sel_905
   0bc5:8b 00              lsl local0
-  0bc7:81 02              lag
+  0bc7:81 02              lag global2
   0bc9:4a 08             send 8
 
   0bcb:39 06            pushi 6                        // $6 loop
@@ -1755,7 +1755,7 @@
   0d56:35 09              ldi 9
   0d58:38 00a7          pushi a7                       // $a7 enable
   0d5b:76               push0
-  0d5c:81 45              lag
+  0d5c:81 45              lag gIconBar
   0d5e:4a 04             send 4
 
   0d60:34 0384            ldi 384
@@ -1770,14 +1770,14 @@
   0d6f:35 0a              ldi a
   0d71:38 00c9          pushi c9                       // $c9 disable
   0d74:76               push0
-  0d75:81 45              lag
+  0d75:81 45              lag gIconBar
   0d77:4a 04             send 4
 
   0d79:38 018c          pushi 18c                      // $18c drawPic
   0d7c:7a               push2
   0d7d:38 0323          pushi 323                      // $323 sel_803
   0d80:8b 00              lsl local0
-  0d82:81 02              lag
+  0d82:81 02              lag global2
   0d84:4a 08             send 8
 
   0d86:39 69            pushi 69                       // $69 hide
@@ -1874,7 +1874,7 @@
   0e19:7a               push2
   0e1a:38 0389          pushi 389                      // $389 sel_905
   0e1d:8b 00              lsl local0
-  0e1f:81 02              lag
+  0e1f:81 02              lag global2
   0e21:4a 08             send 8
 
   0e23:39 06            pushi 6                        // $6 loop
@@ -1974,7 +1974,7 @@
   0ec4:35 0c              ldi c
   0ec6:38 00a7          pushi a7                       // $a7 enable
   0ec9:76               push0
-  0eca:81 45              lag
+  0eca:81 45              lag gIconBar
   0ecc:4a 04             send 4
 
   0ece:34 0384            ldi 384
@@ -1989,14 +1989,14 @@
   0edd:35 0d              ldi d
   0edf:38 00c9          pushi c9                       // $c9 disable
   0ee2:76               push0
-  0ee3:81 45              lag
+  0ee3:81 45              lag gIconBar
   0ee5:4a 04             send 4
 
   0ee7:38 018c          pushi 18c                      // $18c drawPic
   0eea:7a               push2
   0eeb:38 0323          pushi 323                      // $323 sel_803
   0eee:8b 00              lsl local0
-  0ef0:81 02              lag
+  0ef0:81 02              lag global2
   0ef2:4a 08             send 8
 
   0ef4:39 69            pushi 69                       // $69 hide
@@ -2038,7 +2038,7 @@
   0f2f:7a               push2
   0f30:38 0389          pushi 389                      // $389 sel_905
   0f33:8b 00              lsl local0
-  0f35:81 02              lag
+  0f35:81 02              lag global2
   0f37:4a 08             send 8
 
   0f39:39 06            pushi 6                        // $6 loop
@@ -2087,7 +2087,7 @@
   0f80:35 0f              ldi f
   0f82:38 00a7          pushi a7                       // $a7 enable
   0f85:76               push0
-  0f86:81 45              lag
+  0f86:81 45              lag gIconBar
   0f88:4a 04             send 4
 
   0f8a:34 012c            ldi 12c
@@ -2102,14 +2102,14 @@
   0f99:35 10              ldi 10
   0f9b:38 00c9          pushi c9                       // $c9 disable
   0f9e:76               push0
-  0f9f:81 45              lag
+  0f9f:81 45              lag gIconBar
   0fa1:4a 04             send 4
 
   0fa3:38 018c          pushi 18c                      // $18c drawPic
   0fa6:7a               push2
   0fa7:38 0323          pushi 323                      // $323 sel_803
   0faa:8b 00              lsl local0
-  0fac:81 02              lag
+  0fac:81 02              lag global2
   0fae:4a 08             send 8
 
   0fb0:39 69            pushi 69                       // $69 hide
@@ -2136,7 +2136,7 @@
   0fd3:7a               push2
   0fd4:38 0389          pushi 389                      // $389 sel_905
   0fd7:8b 00              lsl local0
-  0fd9:81 02              lag
+  0fd9:81 02              lag global2
   0fdb:4a 08             send 8
 
   0fdd:39 05            pushi 5                        // $5 view
@@ -2327,7 +2327,7 @@
   1113:35 12              ldi 12
   1115:38 00a7          pushi a7                       // $a7 enable
   1118:76               push0
-  1119:81 45              lag
+  1119:81 45              lag gIconBar
   111b:4a 04             send 4
 
   111d:34 012c            ldi 12c

@@ -612,10 +612,10 @@
   03dc:3f 06             link 6                        // (var $6)
   03de:38 009d          pushi 9d                       // $9d pause
   03e1:76               push0
-  03e2:81 08              lag
+  03e2:81 08              lag global8
   03e4:4a 04             send 4
 
-  03e6:81 4d              lag
+  03e6:81 4d              lag global77
   03e8:30 0013            bnt code_03fe
   03eb:39 71            pushi 71                       // $71 respondsTo
   03ed:78               push1
@@ -625,7 +625,7 @@
   03f3:30 0008            bnt code_03fe
   03f6:38 009c          pushi 9c                       // $9c stop
   03f9:76               push0
-  03fa:81 4d              lag
+  03fa:81 4d              lag global77
   03fc:4a 04             send 4
 
 
@@ -676,7 +676,7 @@
   0449:76               push0
   044a:39 6a            pushi 6a                       // $6a new
   044c:76               push0
-  044d:81 26              lag
+  044d:81 26              lag global38
   044f:4a 04             send 4
 
   0451:4a 26             send 26
@@ -820,7 +820,7 @@
   0515:30 0034            bnt code_054c
   0518:38 00bb          pushi bb                       // $bb setCursor
   051b:39 04            pushi 4                        // $4 x
-  051d:89 13              lsg
+  051d:89 13              lsg global19
   051f:78               push1
   0520:39 0a            pushi a                        // $a nsLeft
   0522:76               push0
@@ -853,7 +853,7 @@
   0544:35 03              ldi 3
   0546:04                 sub
   0547:36                push
-  0548:81 01              lag
+  0548:81 01              lag global1
   054a:4a 0c             send c
 
 
@@ -883,7 +883,7 @@
   0720:38 009d          pushi 9d                       // $9d pause
   0723:78               push1
   0724:76               push0
-  0725:81 08              lag
+  0725:81 08              lag global8
   0727:4a 06             send 6
 
   0729:67 24             pTos state
@@ -968,20 +968,20 @@
   059b:39 71            pushi 71                       // $71 respondsTo
   059d:78               push1
   059e:38 0154          pushi 154                      // $154 eraseOnly
-  05a1:81 26              lag
+  05a1:81 26              lag global38
   05a3:4a 06             send 6
 
   05a5:30 0033            bnt code_05db
   05a8:38 0154          pushi 154                      // $154 eraseOnly
   05ab:76               push0
-  05ac:81 26              lag
+  05ac:81 26              lag global38
   05ae:4a 04             send 4
 
   05b0:a5 00              sat temp0
   05b2:38 0154          pushi 154                      // $154 eraseOnly
   05b5:78               push1
   05b6:78               push1
-  05b7:81 26              lag
+  05b7:81 26              lag global38
   05b9:4a 06             send 6
 
   05bb:39 03            pushi 3                        // $3 y
@@ -998,7 +998,7 @@
   05ce:38 0154          pushi 154                      // $154 eraseOnly
   05d1:78               push1
   05d2:8d 00              lst temp0
-  05d4:81 26              lag
+  05d4:81 26              lag global38
   05d6:4a 06             send 6
 
   05d8:32 0013            jmp code_05ee
@@ -1043,7 +1043,7 @@
   060a:38 00bb          pushi bb                       // $bb setCursor
   060d:78               push1
   060e:38 03e7          pushi 3e7                      // $3e7 sel_999
-  0611:81 01              lag
+  0611:81 01              lag global1
   0613:4a 06             send 6
 
   0615:35 00              ldi 0
@@ -1243,7 +1243,7 @@
   07cc:30 000f            bnt code_07de
   07cf:39 69            pushi 69                       // $69 hide
   07d1:76               push0
-  07d2:81 3f              lag
+  07d2:81 3f              lag global63
   07d4:30 0003            bnt code_07da
   07d7:32 0002            jmp code_07dc
 

@@ -317,7 +317,7 @@
   0198:63 0a             pToa caller
   019a:30 0008            bnt code_01a5
   019d:35 01              ldi 1
-  019f:a1 25              sag
+  019f:a1 25              sag global37
   01a1:35 01              ldi 1
   01a3:65 20             aTop completed
 

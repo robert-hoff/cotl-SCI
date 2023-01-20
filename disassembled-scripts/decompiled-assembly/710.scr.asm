@@ -101,18 +101,18 @@
         obstacles $0
     )
     (method (init)                                     // method_000e
-  000e:89 0c              lsg
+  000e:89 0c              lsg global12
   0010:34 02be            ldi 2be
   0013:1a                 eq?
   0014:a3 07              sal local7
-  0016:81 7d              lag
+  0016:81 7d              lag global125
   0018:a3 0c              sal local12
   001a:76               push0
-  001b:45 04 00         callb procedure_0004 0         //
+  001b:45 04 00         callb procedure_0004 0         // proc0_4
 
   001e:78               push1
   001f:76               push0
-  0020:45 05 02         callb procedure_0005 2         //
+  0020:45 05 02         callb procedure_0005 2         // proc0_5
 
   0023:30 0005            bnt code_002b
   0026:35 0a              ldi a
@@ -152,7 +152,7 @@
   006e:39 05            pushi 5                        // $5 view
   0070:39 06            pushi 6                        // $6 loop
   0072:39 07            pushi 7                        // $7 cel
-  0074:81 45              lag
+  0074:81 45              lag gIconBar
   0076:4a 12             send 12
 
   0078:76               push0
@@ -164,18 +164,18 @@
   0081:39 43            pushi 43                       // $43 at
   0083:78               push1
   0084:7a               push2
-  0085:81 45              lag
+  0085:81 45              lag gIconBar
   0087:4a 06             send 6
 
   0089:4a 06             send 6
 
   008b:38 00bb          pushi bb                       // $bb setCursor
   008e:39 04            pushi 4                        // $4 x
-  0090:89 13              lsg
+  0090:89 13              lsg global19
   0092:78               push1
   0093:38 0096          pushi 96                       // $96 setCycle
   0096:38 00af          pushi af                       // $af checkState
-  0099:81 01              lag
+  0099:81 01              lag global1
   009b:4a 0c             send c
 
   009d:39 6b            pushi 6b                       // $6b init
@@ -227,7 +227,7 @@
   00e9:39 ff            pushi ff                       // $ff syncNum
   00eb:39 2a            pushi 2a                       // $2a play
   00ed:76               push0
-  00ee:81 64              lag
+  00ee:81 64              lag gRgnMusic
   00f0:4a 10             send 10
 
   00f2:35 58              ldi 58
@@ -266,7 +266,7 @@
   0125:83 07              lal local7
   0127:18                 not
   0128:30 006b            bnt code_0196
-  012b:89 7d              lsg
+  012b:89 7d              lsg global125
   012d:35 01              ldi 1
   012f:1a                 eq?
   0130:30 0014            bnt code_0147
@@ -284,7 +284,7 @@
         code_0147
   0147:78               push1
   0148:39 1d            pushi 1d                       // $1d back
-  014a:47 0d 06 02      calle d procedure_0006 2       //
+  014a:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   014e:39 04            pushi 4                        // $4 x
   0150:38 06ae          pushi 6ae                      // $6ae sel_1710
@@ -292,22 +292,22 @@
   0154:39 50            pushi 50                       // $50 title
   0156:72 123a          lofsa $123a                    // Monk
   0159:36                push
-  015a:47 0d 04 08      calle d procedure_0004 8       //
+  015a:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   015e:78               push1
   015f:76               push0
-  0160:47 0d 06 02      calle d procedure_0006 2       //
+  0160:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0164:39 73            pushi 73                       // $73 add
   0166:78               push1
   0167:7c            pushSelf
-  0168:81 49              lag
+  0168:81 49              lag gMH
   016a:4a 06             send 6
 
   016c:39 73            pushi 73                       // $73 add
   016e:78               push1
   016f:7c            pushSelf
-  0170:81 4a              lag
+  0170:81 4a              lag gDH
   0172:4a 06             send 6
 
   0174:39 08            pushi 8                        // $8 underBits
@@ -321,19 +321,19 @@
   0183:72 1243          lofsa $1243                    // NO
   0186:36                push
   0187:76               push0
-  0188:47 0d 01 10      calle d procedure_0001 10      //
+  0188:47 0d 01 10      calle d procedure_0001 10      // proc13_1
 
   018c:30 0007            bnt code_0196
   018f:39 4e            pushi 4e                       // $4e save
   0191:76               push0
-  0192:81 01              lag
+  0192:81 01              lag global1
   0194:4a 04             send 4
 
 
         code_0196
   0196:78               push1
   0197:76               push0
-  0198:47 0d 06 02      calle d procedure_0006 2       //
+  0198:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   019c:48                 ret
     )
@@ -359,13 +359,13 @@
   01b9:83 0a              lal local10
   01bb:18                 not
   01bc:30 0031            bnt code_01f0
-  01bf:89 7d              lsg
+  01bf:89 7d              lsg global125
   01c1:83 0c              lal local12
   01c3:1c                 ne?
   01c4:30 0029            bnt code_01f0
-  01c7:81 7d              lag
+  01c7:81 7d              lag global125
   01c9:a3 0c              sal local12
-  01cb:89 7d              lsg
+  01cb:89 7d              lsg global125
   01cd:35 01              ldi 1
   01cf:1a                 eq?
   01d0:30 0018            bnt code_01eb
@@ -402,7 +402,7 @@
   01fc:39 43            pushi 43                       // $43 at
   01fe:78               push1
   01ff:7a               push2
-  0200:81 45              lag
+  0200:81 45              lag gIconBar
   0202:4a 06             send 6
 
   0204:4a 06             send 6
@@ -423,19 +423,19 @@
   021c:39 1e            pushi 1e                       // $1e mode
   021e:39 08            pushi 8                        // $8 underBits
   0220:78               push1
-  0221:81 64              lag
+  0221:81 64              lag gRgnMusic
   0223:4a 0c             send c
 
   0225:39 54            pushi 54                       // $54 delete
   0227:78               push1
   0228:7c            pushSelf
-  0229:81 49              lag
+  0229:81 49              lag gMH
   022b:4a 06             send 6
 
   022d:39 54            pushi 54                       // $54 delete
   022f:78               push1
   0230:7c            pushSelf
-  0231:81 4a              lag
+  0231:81 4a              lag gDH
   0233:4a 06             send 6
 
   0235:39 6c            pushi 6c                       // $6c dispose
@@ -1336,7 +1336,7 @@
   0ab9:7a               push2
   0aba:39 04            pushi 4                        // $4 x
   0abc:39 10            pushi 10                       // $10 lsRight
-  0abe:89 7d              lsg
+  0abe:89 7d              lsg global125
   0ac0:35 02              ldi 2
   0ac2:06                 mul
   0ac3:04                 sub
@@ -1401,14 +1401,14 @@
   0b23:30 0012            bnt code_0b38
   0b26:39 54            pushi 54                       // $54 delete
   0b28:78               push1
-  0b29:89 02              lsg
-  0b2b:81 49              lag
+  0b29:89 02              lsg global2
+  0b2b:81 49              lag gMH
   0b2d:4a 06             send 6
 
   0b2f:39 54            pushi 54                       // $54 delete
   0b31:78               push1
-  0b32:89 02              lsg
-  0b34:81 4a              lag
+  0b32:89 02              lsg global2
+  0b34:81 4a              lag gDH
   0b36:4a 06             send 6
 
 
@@ -1813,7 +1813,7 @@
   0dc4:39 1e            pushi 1e                       // $1e mode
   0dc6:39 08            pushi 8                        // $8 underBits
   0dc8:78               push1
-  0dc9:81 64              lag
+  0dc9:81 64              lag gRgnMusic
   0dcb:4a 0c             send c
 
   0dcd:39 2b            pushi 2b                       // $2b number
@@ -1889,7 +1889,7 @@
   0e48:4a 04             send 4
 
   0e4a:35 26              ldi 26
-  0e4c:a1 91              sag
+  0e4c:a1 91              sag global145
   0e4e:38 0096          pushi 96                       // $96 setCycle
   0e51:7a               push2
   0e52:51 1a            class End
@@ -1917,7 +1917,7 @@
   0e74:38 0179          pushi 179                      // $179 newRoom
   0e77:78               push1
   0e78:38 00aa          pushi aa                       // $aa setSize
-  0e7b:81 02              lag
+  0e7b:81 02              lag global2
   0e7d:4a 06             send 6
 
 
@@ -1955,7 +1955,7 @@
   0ec4:1a                 eq?
   0ec5:30 0067            bnt code_0f2f
   0ec8:76               push0
-  0ec9:45 03 00         callb procedure_0003 0         //
+  0ec9:45 03 00         callb procedure_0003 0         // proc0_3
 
   0ecc:35 01              ldi 1
   0ece:a3 0a              sal local10
@@ -1963,14 +1963,14 @@
   0ed2:a3 08              sal local8
   0ed4:39 54            pushi 54                       // $54 delete
   0ed6:78               push1
-  0ed7:89 02              lsg
-  0ed9:81 49              lag
+  0ed7:89 02              lsg global2
+  0ed9:81 49              lag gMH
   0edb:4a 06             send 6
 
   0edd:39 54            pushi 54                       // $54 delete
   0edf:78               push1
-  0ee0:89 02              lsg
-  0ee2:81 4a              lag
+  0ee0:89 02              lsg global2
+  0ee2:81 4a              lag gDH
   0ee4:4a 06             send 6
 
   0ee6:38 00db          pushi db                       // $db cycleSpeed
@@ -2112,7 +2112,7 @@
   0fce:30 0021            bnt code_0ff2
   0fd1:78               push1
   0fd2:39 1d            pushi 1d                       // $1d back
-  0fd4:47 0d 06 02      calle d procedure_0006 2       //
+  0fd4:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0fd8:39 08            pushi 8                        // $8 underBits
   0fda:38 06ae          pushi 6ae                      // $6ae sel_1710
@@ -2124,7 +2124,7 @@
   0fe5:39 43            pushi 43                       // $43 at
   0fe7:39 ff            pushi ff                       // $ff syncNum
   0fe9:39 4b            pushi 4b                       // $4b said
-  0feb:47 0d 04 10      calle d procedure_0004 10      //
+  0feb:47 0d 04 10      calle d procedure_0004 10      // proc13_4
 
   0fef:32 0099            jmp code_108b
 
@@ -2147,7 +2147,7 @@
 
   100b:78               push1
   100c:76               push0
-  100d:47 0d 06 02      calle d procedure_0006 2       //
+  100d:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   1011:39 6c            pushi 6c                       // $6c dispose
   1013:76               push0
@@ -2173,7 +2173,7 @@
   1034:7a               push2
   1035:38 0323          pushi 323                      // $323 sel_803
   1038:38 8006          pushi 8006                     // $8006 sel_32774
-  103b:81 02              lag
+  103b:81 02              lag global2
   103d:4a 08             send 8
 
   103f:83 0b              lal local11
@@ -2200,14 +2200,14 @@
   1063:39 1e            pushi 1e                       // $1e mode
   1065:39 08            pushi 8                        // $8 underBits
   1067:76               push0
-  1068:81 64              lag
+  1068:81 64              lag gRgnMusic
   106a:4a 0c             send c
 
   106c:39 03            pushi 3                        // $3 y
   106e:38 06ae          pushi 6ae                      // $6ae sel_1710
   1071:7a               push2
   1072:7c            pushSelf
-  1073:47 0d 04 06      calle d procedure_0004 6       //
+  1073:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   1077:32 0011            jmp code_108b
 
@@ -2219,7 +2219,7 @@
   1081:38 0179          pushi 179                      // $179 newRoom
   1084:78               push1
   1085:39 09            pushi 9                        // $9 nsTop
-  1087:81 02              lag
+  1087:81 02              lag global2
   1089:4a 06             send 6
 
 
@@ -2574,13 +2574,13 @@
 
 (procedure proc_044f
   044f:39 50            pushi 50                       // $50 title
-  0451:81 7d              lag
+  0451:81 7d              lag global125
   0453:08                 div
   0454:a3 02              sal local2
   0456:7a               push2
   0457:39 03            pushi 3                        // $3 y
   0459:39 42            pushi 42                       // $42 setPri
-  045b:81 7d              lag
+  045b:81 7d              lag global125
   045d:08                 div
   045e:36                push
   045f:8b 0f              lsl local15
@@ -2592,14 +2592,14 @@
 
   046c:a3 03              sal local3
   046e:39 24            pushi 24                       // $24 cursor
-  0470:81 7d              lag
+  0470:81 7d              lag global125
   0472:08                 div
   0473:a3 00              sal local0
   0475:39 04            pushi 4                        // $4 x
-  0477:81 7d              lag
+  0477:81 7d              lag global125
   0479:02                 add
   047a:a3 01              sal local1
-  047c:89 7d              lsg
+  047c:89 7d              lsg global125
   047e:3c                 dup
   047f:35 02              ldi 2
   0481:1a                 eq?
@@ -2630,7 +2630,7 @@
   04a6:24                 le?
   04a7:30 000b            bnt code_04b5
   04aa:39 1e            pushi 1e                       // $1e mode
-  04ac:89 7d              lsg
+  04ac:89 7d              lsg global125
   04ae:35 02              ldi 2
   04b0:06                 mul
   04b1:04                 sub
@@ -2642,7 +2642,7 @@
   04b9:24                 le?
   04ba:30 000b            bnt code_04c8
   04bd:39 19            pushi 19                       // $19 time
-  04bf:89 7d              lsg
+  04bf:89 7d              lsg global125
   04c1:35 02              ldi 2
   04c3:06                 mul
   04c4:04                 sub
@@ -2654,14 +2654,14 @@
   04cc:24                 le?
   04cd:30 0008            bnt code_04d8
   04d0:39 14            pushi 14                       // $14 brLeft
-  04d2:89 7d              lsg
+  04d2:89 7d              lsg global125
   04d4:35 02              ldi 2
   04d6:06                 mul
   04d7:04                 sub
 
         code_04d8
   04d8:a3 06              sal local6
-  04da:89 7d              lsg
+  04da:89 7d              lsg global125
   04dc:35 01              ldi 1
   04de:04                 sub
   04df:a3 05              sal local5

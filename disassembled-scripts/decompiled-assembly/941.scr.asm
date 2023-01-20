@@ -50,7 +50,7 @@
 
     (method (doit)                                     // method_002c
   002c:78               push1
-  002d:89 58              lsg
+  002d:89 58              lsg global88
   002f:63 0e             pToa cycleCnt
   0031:04                 sub
   0032:36                push
@@ -83,7 +83,7 @@
   005b:63 08             pToa client
   005d:4a 06             send 6
 
-  005f:81 58              lag
+  005f:81 58              lag global88
   0061:65 0e             aTop cycleCnt
   0063:32 0006            jmp code_006c
 
@@ -143,7 +143,7 @@
   00a2:63 0a             pToa caller
   00a4:30 0007            bnt code_00ae
   00a7:35 01              ldi 1
-  00a9:a1 25              sag
+  00a9:a1 25              sag global37
   00ab:32 0006            jmp code_00b4
 
         code_00ae

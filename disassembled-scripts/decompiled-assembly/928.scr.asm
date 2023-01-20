@@ -34,13 +34,13 @@
   005b:63 08             pToa client
   005d:4a 06             send 6
 
-  005f:81 58              lag
+  005f:81 58              lag global88
   0061:65 0e             aTop cycleCnt
   0063:8f 00              lsp paramTotal
   0065:35 02              ldi 2
   0067:20                 ge?
   0068:30 0016            bnt code_0081
-  006b:89 58              lsg
+  006b:89 58              lsg global88
   006d:87 02              lap param2
   006f:02                 add
   0070:65 12             aTop count
@@ -63,7 +63,7 @@
     (method (doit)                                     // method_0004
   0004:3f 01             link 1                        // (var $1)
   0006:67 12             pTos count
-  0008:81 58              lag
+  0008:81 58              lag global88
   000a:a5 00              sat temp0
   000c:04                 sub
   000d:36                push
@@ -95,7 +95,7 @@
   0035:63 08             pToa client
   0037:4a 06             send 6
 
-  0039:81 58              lag
+  0039:81 58              lag global88
   003b:65 0e             aTop cycleCnt
   003d:32 000e            jmp code_004e
 
@@ -221,7 +221,7 @@
     )
 
     (method (doit)                                     // method_0575
-  0575:89 58              lsg
+  0575:89 58              lsg global88
   0577:63 5c             pToa ticks
   0579:04                 sub
   057a:36                push
@@ -260,36 +260,36 @@
     (method (dispose)                                  // method_0614
   0614:3f 01             link 1                        // (var $1)
   0616:78               push1
-  0617:89 54              lsg
+  0617:89 54              lsg global84
   0619:43 06 02         callk IsObject 2
 
   061c:30 0028            bnt code_0647
   061f:39 77            pushi 77                       // $77 contains
   0621:78               push1
   0622:7c            pushSelf
-  0623:81 54              lag
+  0623:81 54              lag global84
   0625:4a 06             send 6
 
   0627:30 001d            bnt code_0647
   062a:39 54            pushi 54                       // $54 delete
   062c:78               push1
   062d:7c            pushSelf
-  062e:81 54              lag
+  062e:81 54              lag global84
   0630:4a 06             send 6
 
   0632:39 78            pushi 78                       // $78 isEmpty
   0634:76               push0
-  0635:81 54              lag
+  0635:81 54              lag global84
   0637:4a 04             send 4
 
   0639:30 000b            bnt code_0647
   063c:39 6c            pushi 6c                       // $6c dispose
   063e:76               push0
-  063f:81 54              lag
+  063f:81 54              lag global84
   0641:4a 04             send 4
 
   0643:35 00              ldi 0
-  0645:a1 54              sag
+  0645:a1 54              sag global84
 
         code_0647
   0647:87 00              lap paramTotal
@@ -336,7 +336,7 @@
 
 
         code_068a
-  068a:81 53              lag
+  068a:81 53              lag global83
   068c:30 0009            bnt code_0698
   068f:78               push1
   0690:39 03            pushi 3                        // $3 y
@@ -345,7 +345,7 @@
   0695:32 000a            jmp code_06a2
 
         code_0698
-  0698:81 19              lag
+  0698:81 19              lag global25
   069a:30 0005            bnt code_06a2
   069d:39 6c            pushi 6c                       // $6c dispose
   069f:76               push0
@@ -906,7 +906,7 @@
   0388:65 60             aTop caller
 
         code_038a
-  038a:81 53              lag
+  038a:81 53              lag global83
   038c:30 0010            bnt code_039f
   038f:38 01fe          pushi 1fe                      // $1fe startAudio
   0392:39 03            pushi 3                        // $3 y
@@ -927,7 +927,7 @@
 
 
         code_03ac
-  03ac:81 54              lag
+  03ac:81 54              lag global84
   03ae:30 0009            bnt code_03ba
   03b1:39 73            pushi 73                       // $73 add
   03b3:78               push1
@@ -942,7 +942,7 @@
   03bd:51 05            class EventHandler
   03bf:4a 04             send 4
 
-  03c1:a1 54              sag
+  03c1:a1 54              sag global84
   03c3:39 17            pushi 17                       // $17 name
   03c5:78               push1
   03c6:72 07d8          lofsa $07d8                    // fastCast
@@ -950,7 +950,7 @@
   03ca:39 73            pushi 73                       // $73 add
   03cc:78               push1
   03cd:7c            pushSelf
-  03ce:81 54              lag
+  03ce:81 54              lag global84
   03d0:4a 0c             send c
 
 
@@ -959,7 +959,7 @@
   03d4:35 3c              ldi 3c
   03d6:02                 add
   03d7:36                push
-  03d8:81 58              lag
+  03d8:81 58              lag global88
   03da:02                 add
   03db:65 5c             aTop ticks
   03dd:48                 ret
@@ -1009,7 +1009,7 @@
 
     (method (startText)                                // method_03de
   03de:3e 01f4           link 1f4                      // (var $1f4)
-  03e1:81 19              lag
+  03e1:81 19              lag global25
   03e3:30 0005            bnt code_03eb
   03e6:39 6c            pushi 6c                       // $6c dispose
   03e8:76               push0

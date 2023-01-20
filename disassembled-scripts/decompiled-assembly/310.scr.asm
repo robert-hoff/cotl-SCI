@@ -259,7 +259,7 @@
   0018:46 0137 0003 00  calle 137 procedure_0003 0     //
 
   001e:39 03            pushi 3                        // $3 y
-  0020:89 7e              lsg
+  0020:89 7e              lsg global126
   0022:39 05            pushi 5                        // $5 view
   0024:39 06            pushi 6                        // $6 loop
   0026:46 03e7 0005 06  calle 3e7 procedure_0005 6     //
@@ -724,11 +724,11 @@
   0393:39 74            pushi 74                       // $74 eachElementDo
   0395:78               push1
   0396:39 6b            pushi 6b                       // $6b init
-  0398:81 20              lag
+  0398:81 20              lag global32
   039a:4a 6a             send 6a
 
   039c:39 03            pushi 3                        // $3 y
-  039e:89 7e              lsg
+  039e:89 7e              lsg global126
   03a0:39 05            pushi 5                        // $5 view
   03a2:39 06            pushi 6                        // $6 loop
   03a4:46 03e7 0005 06  calle 3e7 procedure_0005 6     //
@@ -738,7 +738,7 @@
   03af:76               push0
   03b0:39 05            pushi 5                        // $5 view
   03b2:78               push1
-  03b3:89 7e              lsg
+  03b3:89 7e              lsg global126
   03b5:35 05              ldi 5
   03b7:1a                 eq?
   03b8:30 0006            bnt code_03c1
@@ -771,10 +771,10 @@
   03e4:a3 01              sal local1
 
         code_03e6
-  03e6:81 c6              lag
+  03e6:81 c6              lag global198
   03e8:18                 not
   03e9:2e 0006             bt code_03f2
-  03ec:89 c6              lsg
+  03ec:89 c6              lsg global198
   03ee:34 010e            ldi 10e
   03f1:1e                 gt?
 
@@ -790,7 +790,7 @@
 
 
         code_0401
-  0401:89 0c              lsg
+  0401:89 0c              lsg global12
   0403:3c                 dup
   0404:63 22             pToa west
   0406:1a                 eq?
@@ -801,28 +801,28 @@
   0410:78               push1
   0411:39 04            pushi 4                        // $4 x
   0413:76               push0
-  0414:81 00              lag
+  0414:81 00              lag gEgo
   0416:4a 04             send 4
 
   0418:36                push
   0419:34 0140            ldi 140
   041c:04                 sub
   041d:36                push
-  041e:81 00              lag
+  041e:81 00              lag gEgo
   0420:4a 06             send 6
 
   0422:39 6b            pushi 6b                       // $6b init
   0424:78               push1
   0425:38 0146          pushi 146                      // $146 edgeHit
   0428:76               push0
-  0429:81 00              lag
+  0429:81 00              lag gEgo
   042b:4a 04             send 4
 
   042d:36                push
   042e:57 87 06         super StdRoom 6
 
   0431:76               push0
-  0432:45 04 00         callb procedure_0004 0         //
+  0432:45 04 00         callb procedure_0004 0         // proc0_4
 
   0435:32 00ad            jmp code_04e5
 
@@ -832,7 +832,7 @@
   043c:1a                 eq?
   043d:30 002f            bnt code_046f
   0440:76               push0
-  0441:45 03 00         callb procedure_0003 0         //
+  0441:45 03 00         callb procedure_0003 0         // proc0_3
 
   0444:39 6b            pushi 6b                       // $6b init
   0446:76               push0
@@ -843,7 +843,7 @@
   0451:38 00e4          pushi e4                       // $e4 setHeading
   0454:78               push1
   0455:38 013b          pushi 13b                      // $13b controls
-  0458:81 00              lag
+  0458:81 00              lag gEgo
   045a:4a 12             send 12
 
   045c:38 008e          pushi 8e                       // $8e setScript
@@ -860,7 +860,7 @@
 
         code_046f
   046f:76               push0
-  0470:45 03 00         callb procedure_0003 0         //
+  0470:45 03 00         callb procedure_0003 0         // proc0_3
 
   0473:38 008e          pushi 8e                       // $8e setScript
   0476:78               push1
@@ -876,7 +876,7 @@
   0486:35 04              ldi 4
   0488:08                 div
   0489:36                push
-  048a:81 85              lag
+  048a:81 85              lag gPennies
   048c:4a 06             send 6
 
   048e:38 0148          pushi 148                      // $148 put
@@ -888,7 +888,7 @@
   0498:35 02              ldi 2
   049a:08                 div
   049b:36                push
-  049c:81 86              lag
+  049c:81 86              lag gHapennies
   049e:4a 06             send 6
 
   04a0:38 0148          pushi 148                      // $148 put
@@ -897,16 +897,16 @@
   04a6:35 02              ldi 2
   04a8:0a                 mod
   04a9:36                push
-  04aa:81 87              lag
+  04aa:81 87              lag gFarthings
   04ac:4a 06             send 6
 
   04ae:35 04              ldi 4
-  04b0:a1 7e              sag
+  04b0:a1 7e              sag global126
   04b2:35 08              ldi 8
-  04b4:a1 82              sag
+  04b4:a1 82              sag global130
   04b6:78               push1
   04b7:39 22            pushi 22                       // $22 type
-  04b9:45 06 02         callb procedure_0006 2         //
+  04b9:45 06 02         callb procedure_0006 2         // proc0_6
 
   04bc:39 6b            pushi 6b                       // $6b init
   04be:76               push0
@@ -923,7 +923,7 @@
   04d4:38 00e4          pushi e4                       // $e4 setHeading
   04d7:78               push1
   04d8:38 013b          pushi 13b                      // $13b controls
-  04db:81 00              lag
+  04db:81 00              lag gEgo
   04dd:4a 1e             send 1e
 
   04df:39 6b            pushi 6b                       // $6b init
@@ -944,7 +944,7 @@
         code_04ef
   04ef:38 0146          pushi 146                      // $146 edgeHit
   04f2:76               push0
-  04f3:81 00              lag
+  04f3:81 00              lag gEgo
   04f5:4a 04             send 4
 
   04f7:36                push
@@ -952,13 +952,13 @@
   04fa:1a                 eq?
   04fb:30 0013            bnt code_0511
   04fe:76               push0
-  04ff:45 03 00         callb procedure_0003 0         //
+  04ff:45 03 00         callb procedure_0003 0         // proc0_3
 
   0502:38 008e          pushi 8e                       // $8e setScript
   0505:78               push1
   0506:72 27b4          lofsa $27b4                    // sExitSouth
   0509:36                push
-  050a:81 02              lag
+  050a:81 02              lag global2
   050c:4a 06             send 6
 
   050e:32 001f            jmp code_0530
@@ -966,7 +966,7 @@
         code_0511
   0511:38 0146          pushi 146                      // $146 edgeHit
   0514:76               push0
-  0515:81 00              lag
+  0515:81 00              lag gEgo
   0517:4a 04             send 4
 
   0519:36                push
@@ -974,13 +974,13 @@
   051c:1a                 eq?
   051d:30 0010            bnt code_0530
   0520:76               push0
-  0521:45 03 00         callb procedure_0003 0         //
+  0521:45 03 00         callb procedure_0003 0         // proc0_3
 
   0524:38 008e          pushi 8e                       // $8e setScript
   0527:78               push1
   0528:72 2d74          lofsa $2d74                    // sExitWest
   052b:36                push
-  052c:81 02              lag
+  052c:81 02              lag global2
   052e:4a 06             send 6
 
 
@@ -1047,7 +1047,7 @@
   058f:7a               push2
   0590:38 051e          pushi 51e                      // $51e sel_1310
   0593:39 3a            pushi 3a                       // $3a heading
-  0595:47 0d 04 04      calle d procedure_0004 4       //
+  0595:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0599:32 007f            jmp code_061b
 
@@ -1080,7 +1080,7 @@
   05c7:30 0021            bnt code_05eb
   05ca:78               push1
   05cb:39 15            pushi 15                       // $15 brBottom
-  05cd:47 0d 06 02      calle d procedure_0006 2       //
+  05cd:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   05d1:39 04            pushi 4                        // $4 x
   05d3:38 051e          pushi 51e                      // $51e sel_1310
@@ -1088,11 +1088,11 @@
   05d8:39 50            pushi 50                       // $50 title
   05da:72 2e59          lofsa $2e59                    // Oswald Oakhurst
   05dd:36                push
-  05de:47 0d 04 08      calle d procedure_0004 8       //
+  05de:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   05e2:78               push1
   05e3:76               push0
-  05e4:47 0d 06 02      calle d procedure_0006 2       //
+  05e4:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   05e8:32 000b            jmp code_05f6
 
@@ -1117,7 +1117,7 @@
   0603:38 051e          pushi 51e                      // $51e sel_1310
   0606:39 05            pushi 5                        // $5 view
   0608:78               push1
-  0609:47 0d 04 06      calle d procedure_0004 6       //
+  0609:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   060d:32 000b            jmp code_061b
 
@@ -1189,7 +1189,7 @@
   0695:7a               push2
   0696:38 051e          pushi 51e                      // $51e sel_1310
   0699:39 3a            pushi 3a                       // $3a heading
-  069b:47 0d 04 04      calle d procedure_0004 4       //
+  069b:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   069f:32 007f            jmp code_0721
 
@@ -1222,7 +1222,7 @@
   06cd:30 0021            bnt code_06f1
   06d0:78               push1
   06d1:39 15            pushi 15                       // $15 brBottom
-  06d3:47 0d 06 02      calle d procedure_0006 2       //
+  06d3:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   06d7:39 04            pushi 4                        // $4 x
   06d9:38 051e          pushi 51e                      // $51e sel_1310
@@ -1230,11 +1230,11 @@
   06de:39 50            pushi 50                       // $50 title
   06e0:72 2e59          lofsa $2e59                    // Oswald Oakhurst
   06e3:36                push
-  06e4:47 0d 04 08      calle d procedure_0004 8       //
+  06e4:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   06e8:78               push1
   06e9:76               push0
-  06ea:47 0d 06 02      calle d procedure_0006 2       //
+  06ea:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   06ee:32 000b            jmp code_06fc
 
@@ -1259,7 +1259,7 @@
   0709:38 051e          pushi 51e                      // $51e sel_1310
   070c:39 05            pushi 5                        // $5 view
   070e:78               push1
-  070f:47 0d 04 06      calle d procedure_0004 6       //
+  070f:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   0713:32 000b            jmp code_0721
 
@@ -1331,7 +1331,7 @@
   079b:7a               push2
   079c:38 051e          pushi 51e                      // $51e sel_1310
   079f:39 3a            pushi 3a                       // $3a heading
-  07a1:47 0d 04 04      calle d procedure_0004 4       //
+  07a1:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   07a5:32 007f            jmp code_0827
 
@@ -1364,7 +1364,7 @@
   07d3:30 0021            bnt code_07f7
   07d6:78               push1
   07d7:39 15            pushi 15                       // $15 brBottom
-  07d9:47 0d 06 02      calle d procedure_0006 2       //
+  07d9:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   07dd:39 04            pushi 4                        // $4 x
   07df:38 051e          pushi 51e                      // $51e sel_1310
@@ -1372,11 +1372,11 @@
   07e4:39 50            pushi 50                       // $50 title
   07e6:72 2e59          lofsa $2e59                    // Oswald Oakhurst
   07e9:36                push
-  07ea:47 0d 04 08      calle d procedure_0004 8       //
+  07ea:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   07ee:78               push1
   07ef:76               push0
-  07f0:47 0d 06 02      calle d procedure_0006 2       //
+  07f0:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   07f4:32 000b            jmp code_0802
 
@@ -1401,7 +1401,7 @@
   080f:38 051e          pushi 51e                      // $51e sel_1310
   0812:39 05            pushi 5                        // $5 view
   0814:78               push1
-  0815:47 0d 04 06      calle d procedure_0004 6       //
+  0815:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   0819:32 000b            jmp code_0827
 
@@ -1473,7 +1473,7 @@
   08a1:7a               push2
   08a2:38 051e          pushi 51e                      // $51e sel_1310
   08a5:39 54            pushi 54                       // $54 delete
-  08a7:47 0d 04 04      calle d procedure_0004 4       //
+  08a7:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   08ab:32 0041            jmp code_08ef
 
@@ -1504,7 +1504,7 @@
   08d7:38 051e          pushi 51e                      // $51e sel_1310
   08da:39 05            pushi 5                        // $5 view
   08dc:78               push1
-  08dd:47 0d 04 06      calle d procedure_0004 6       //
+  08dd:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   08e1:32 000b            jmp code_08ef
 
@@ -1571,7 +1571,7 @@
   0969:7a               push2
   096a:38 051e          pushi 51e                      // $51e sel_1310
   096d:39 6e            pushi 6e                       // $6e showSelf
-  096f:47 0d 04 04      calle d procedure_0004 4       //
+  096f:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0973:32 0049            jmp code_09bf
 
@@ -1582,7 +1582,7 @@
   097a:30 0021            bnt code_099e
   097d:78               push1
   097e:39 15            pushi 15                       // $15 brBottom
-  0980:47 0d 06 02      calle d procedure_0006 2       //
+  0980:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0984:39 04            pushi 4                        // $4 x
   0986:38 051e          pushi 51e                      // $51e sel_1310
@@ -1590,11 +1590,11 @@
   098b:39 50            pushi 50                       // $50 title
   098d:72 2eb6          lofsa $2eb6                    // Francis the Mule
   0990:36                push
-  0991:47 0d 04 08      calle d procedure_0004 8       //
+  0991:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   0995:78               push1
   0996:76               push0
-  0997:47 0d 06 02      calle d procedure_0006 2       //
+  0997:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   099b:32 0021            jmp code_09bf
 
@@ -1607,7 +1607,7 @@
   09a7:38 051e          pushi 51e                      // $51e sel_1310
   09aa:39 05            pushi 5                        // $5 view
   09ac:78               push1
-  09ad:47 0d 04 06      calle d procedure_0004 6       //
+  09ad:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   09b1:32 000b            jmp code_09bf
 
@@ -1674,7 +1674,7 @@
   0a2f:7a               push2
   0a30:38 051e          pushi 51e                      // $51e sel_1310
   0a33:39 6e            pushi 6e                       // $6e showSelf
-  0a35:47 0d 04 04      calle d procedure_0004 4       //
+  0a35:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0a39:32 0049            jmp code_0a85
 
@@ -1685,7 +1685,7 @@
   0a40:30 0021            bnt code_0a64
   0a43:78               push1
   0a44:39 15            pushi 15                       // $15 brBottom
-  0a46:47 0d 06 02      calle d procedure_0006 2       //
+  0a46:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0a4a:39 04            pushi 4                        // $4 x
   0a4c:38 051e          pushi 51e                      // $51e sel_1310
@@ -1693,11 +1693,11 @@
   0a51:39 50            pushi 50                       // $50 title
   0a53:72 2eb6          lofsa $2eb6                    // Francis the Mule
   0a56:36                push
-  0a57:47 0d 04 08      calle d procedure_0004 8       //
+  0a57:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   0a5b:78               push1
   0a5c:76               push0
-  0a5d:47 0d 06 02      calle d procedure_0006 2       //
+  0a5d:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0a61:32 0021            jmp code_0a85
 
@@ -1710,7 +1710,7 @@
   0a6d:38 051e          pushi 51e                      // $51e sel_1310
   0a70:39 05            pushi 5                        // $5 view
   0a72:78               push1
-  0a73:47 0d 04 06      calle d procedure_0004 6       //
+  0a73:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   0a77:32 000b            jmp code_0a85
 
@@ -1782,7 +1782,7 @@
   0af5:7a               push2
   0af6:38 051e          pushi 51e                      // $51e sel_1310
   0af9:39 19            pushi 19                       // $19 time
-  0afb:47 0d 04 04      calle d procedure_0004 4       //
+  0afb:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0aff:32 0049            jmp code_0b4b
 
@@ -1793,7 +1793,7 @@
   0b06:30 0021            bnt code_0b2a
   0b09:78               push1
   0b0a:39 15            pushi 15                       // $15 brBottom
-  0b0c:47 0d 06 02      calle d procedure_0006 2       //
+  0b0c:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0b10:39 04            pushi 4                        // $4 x
   0b12:38 051e          pushi 51e                      // $51e sel_1310
@@ -1801,11 +1801,11 @@
   0b17:39 50            pushi 50                       // $50 title
   0b19:72 2ed1          lofsa $2ed1                    // Joshua Mandel
   0b1c:36                push
-  0b1d:47 0d 04 08      calle d procedure_0004 8       //
+  0b1d:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   0b21:78               push1
   0b22:76               push0
-  0b23:47 0d 06 02      calle d procedure_0006 2       //
+  0b23:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0b27:32 0021            jmp code_0b4b
 
@@ -1818,7 +1818,7 @@
   0b33:38 051e          pushi 51e                      // $51e sel_1310
   0b36:39 05            pushi 5                        // $5 view
   0b38:78               push1
-  0b39:47 0d 04 06      calle d procedure_0004 6       //
+  0b39:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   0b3d:32 000b            jmp code_0b4b
 
@@ -1869,7 +1869,7 @@
   0bc5:7a               push2
   0bc6:38 051e          pushi 51e                      // $51e sel_1310
   0bc9:39 09            pushi 9                        // $9 nsTop
-  0bcb:47 0d 04 04      calle d procedure_0004 4       //
+  0bcb:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0bcf:32 0037            jmp code_0c09
 
@@ -1882,7 +1882,7 @@
   0bdb:38 051e          pushi 51e                      // $51e sel_1310
   0bde:39 06            pushi 6                        // $6 loop
   0be0:78               push1
-  0be1:47 0d 04 06      calle d procedure_0004 6       //
+  0be1:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   0be5:32 0021            jmp code_0c09
 
@@ -1895,7 +1895,7 @@
   0bf1:38 051e          pushi 51e                      // $51e sel_1310
   0bf4:39 05            pushi 5                        // $5 view
   0bf6:78               push1
-  0bf7:47 0d 04 06      calle d procedure_0004 6       //
+  0bf7:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   0bfb:32 000b            jmp code_0c09
 
@@ -1946,7 +1946,7 @@
   0c59:7a               push2
   0c5a:38 051e          pushi 51e                      // $51e sel_1310
   0c5d:39 0a            pushi a                        // $a nsLeft
-  0c5f:47 0d 04 04      calle d procedure_0004 4       //
+  0c5f:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0c63:32 006a            jmp code_0cd0
 
@@ -2001,7 +2001,7 @@
   0cb8:38 051e          pushi 51e                      // $51e sel_1310
   0cbb:39 05            pushi 5                        // $5 view
   0cbd:78               push1
-  0cbe:47 0d 04 06      calle d procedure_0004 6       //
+  0cbe:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   0cc2:32 000b            jmp code_0cd0
 
@@ -2051,7 +2051,7 @@
   0d1f:7a               push2
   0d20:38 051e          pushi 51e                      // $51e sel_1310
   0d23:39 12            pushi 12                       // $12 illegalBits
-  0d25:47 0d 04 04      calle d procedure_0004 4       //
+  0d25:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0d29:32 003f            jmp code_0d6b
 
@@ -2081,7 +2081,7 @@
   0d53:38 051e          pushi 51e                      // $51e sel_1310
   0d56:39 05            pushi 5                        // $5 view
   0d58:78               push1
-  0d59:47 0d 04 06      calle d procedure_0004 6       //
+  0d59:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   0d5d:32 000b            jmp code_0d6b
 
@@ -2132,7 +2132,7 @@
   0dbb:7a               push2
   0dbc:38 051e          pushi 51e                      // $51e sel_1310
   0dbf:39 15            pushi 15                       // $15 brBottom
-  0dc1:47 0d 04 04      calle d procedure_0004 4       //
+  0dc1:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0dc5:32 003f            jmp code_0e07
 
@@ -2162,7 +2162,7 @@
   0def:38 051e          pushi 51e                      // $51e sel_1310
   0df2:39 05            pushi 5                        // $5 view
   0df4:78               push1
-  0df5:47 0d 04 06      calle d procedure_0004 6       //
+  0df5:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   0df9:32 000b            jmp code_0e07
 
@@ -2213,7 +2213,7 @@
   0e57:7a               push2
   0e58:38 051e          pushi 51e                      // $51e sel_1310
   0e5b:39 19            pushi 19                       // $19 time
-  0e5d:47 0d 04 04      calle d procedure_0004 4       //
+  0e5d:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0e61:32 0049            jmp code_0ead
 
@@ -2224,7 +2224,7 @@
   0e68:30 0021            bnt code_0e8c
   0e6b:78               push1
   0e6c:39 15            pushi 15                       // $15 brBottom
-  0e6e:47 0d 06 02      calle d procedure_0006 2       //
+  0e6e:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0e72:39 04            pushi 4                        // $4 x
   0e74:38 051e          pushi 51e                      // $51e sel_1310
@@ -2232,11 +2232,11 @@
   0e79:39 50            pushi 50                       // $50 title
   0e7b:72 2ed1          lofsa $2ed1                    // Joshua Mandel
   0e7e:36                push
-  0e7f:47 0d 04 08      calle d procedure_0004 8       //
+  0e7f:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   0e83:78               push1
   0e84:76               push0
-  0e85:47 0d 06 02      calle d procedure_0006 2       //
+  0e85:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0e89:32 0021            jmp code_0ead
 
@@ -2249,7 +2249,7 @@
   0e95:38 051e          pushi 51e                      // $51e sel_1310
   0e98:39 05            pushi 5                        // $5 view
   0e9a:78               push1
-  0e9b:47 0d 04 06      calle d procedure_0004 6       //
+  0e9b:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   0e9f:32 000b            jmp code_0ead
 
@@ -2300,7 +2300,7 @@
   0efd:7a               push2
   0efe:38 051e          pushi 51e                      // $51e sel_1310
   0f01:39 1b            pushi 1b                       // $1b elements
-  0f03:47 0d 04 04      calle d procedure_0004 4       //
+  0f03:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0f07:32 005b            jmp code_0f65
 
@@ -2311,7 +2311,7 @@
   0f0e:30 0021            bnt code_0f32
   0f11:78               push1
   0f12:39 15            pushi 15                       // $15 brBottom
-  0f14:47 0d 06 02      calle d procedure_0006 2       //
+  0f14:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0f18:39 04            pushi 4                        // $4 x
   0f1a:38 051e          pushi 51e                      // $51e sel_1310
@@ -2319,11 +2319,11 @@
   0f1f:39 50            pushi 50                       // $50 title
   0f21:72 2f0f          lofsa $2f0f                    // George Bush
   0f24:36                push
-  0f25:47 0d 04 08      calle d procedure_0004 8       //
+  0f25:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   0f29:78               push1
   0f2a:76               push0
-  0f2b:47 0d 06 02      calle d procedure_0006 2       //
+  0f2b:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0f2f:32 0033            jmp code_0f65
 
@@ -2334,7 +2334,7 @@
   0f36:30 0021            bnt code_0f5a
   0f39:78               push1
   0f3a:39 15            pushi 15                       // $15 brBottom
-  0f3c:47 0d 06 02      calle d procedure_0006 2       //
+  0f3c:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0f40:39 04            pushi 4                        // $4 x
   0f42:38 051e          pushi 51e                      // $51e sel_1310
@@ -2342,11 +2342,11 @@
   0f47:39 50            pushi 50                       // $50 title
   0f49:72 2f0f          lofsa $2f0f                    // George Bush
   0f4c:36                push
-  0f4d:47 0d 04 08      calle d procedure_0004 8       //
+  0f4d:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   0f51:78               push1
   0f52:76               push0
-  0f53:47 0d 06 02      calle d procedure_0006 2       //
+  0f53:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0f57:32 000b            jmp code_0f65
 
@@ -2397,7 +2397,7 @@
   0fb5:7a               push2
   0fb6:38 051e          pushi 51e                      // $51e sel_1310
   0fb9:39 1e            pushi 1e                       // $1e mode
-  0fbb:47 0d 04 04      calle d procedure_0004 4       //
+  0fbb:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0fbf:32 005a            jmp code_101c
 
@@ -2408,7 +2408,7 @@
   0fc6:30 0032            bnt code_0ffb
   0fc9:78               push1
   0fca:39 15            pushi 15                       // $15 brBottom
-  0fcc:47 0d 06 02      calle d procedure_0006 2       //
+  0fcc:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0fd0:39 04            pushi 4                        // $4 x
   0fd2:38 051e          pushi 51e                      // $51e sel_1310
@@ -2416,7 +2416,7 @@
   0fd7:39 50            pushi 50                       // $50 title
   0fd9:72 2f23          lofsa $2f23                    // Daniel Quail
   0fdc:36                push
-  0fdd:47 0d 04 08      calle d procedure_0004 8       //
+  0fdd:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   0fe1:39 04            pushi 4                        // $4 x
   0fe3:38 051e          pushi 51e                      // $51e sel_1310
@@ -2424,11 +2424,11 @@
   0fe8:39 50            pushi 50                       // $50 title
   0fea:72 2f23          lofsa $2f23                    // Daniel Quail
   0fed:36                push
-  0fee:47 0d 04 08      calle d procedure_0004 8       //
+  0fee:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   0ff2:78               push1
   0ff3:76               push0
-  0ff4:47 0d 06 02      calle d procedure_0006 2       //
+  0ff4:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0ff8:32 0021            jmp code_101c
 
@@ -2441,7 +2441,7 @@
   1004:38 051e          pushi 51e                      // $51e sel_1310
   1007:39 05            pushi 5                        // $5 view
   1009:78               push1
-  100a:47 0d 04 06      calle d procedure_0004 6       //
+  100a:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   100e:32 000b            jmp code_101c
 
@@ -2491,7 +2491,7 @@
   106b:7a               push2
   106c:38 051e          pushi 51e                      // $51e sel_1310
   106f:39 21            pushi 21                       // $21 font
-  1071:47 0d 04 04      calle d procedure_0004 4       //
+  1071:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1075:32 006b            jmp code_10e3
 
@@ -2502,7 +2502,7 @@
   107c:30 0043            bnt code_10c2
   107f:78               push1
   1080:39 15            pushi 15                       // $15 brBottom
-  1082:47 0d 06 02      calle d procedure_0006 2       //
+  1082:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   1086:39 04            pushi 4                        // $4 x
   1088:38 051e          pushi 51e                      // $51e sel_1310
@@ -2510,7 +2510,7 @@
   108d:39 50            pushi 50                       // $50 title
   108f:72 2f38          lofsa $2f38                    // Christopher Shankarmour
   1092:36                push
-  1093:47 0d 04 08      calle d procedure_0004 8       //
+  1093:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   1097:39 04            pushi 4                        // $4 x
   1099:38 051e          pushi 51e                      // $51e sel_1310
@@ -2518,7 +2518,7 @@
   109e:39 50            pushi 50                       // $50 title
   10a0:72 2f38          lofsa $2f38                    // Christopher Shankarmour
   10a3:36                push
-  10a4:47 0d 04 08      calle d procedure_0004 8       //
+  10a4:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   10a8:39 04            pushi 4                        // $4 x
   10aa:38 051e          pushi 51e                      // $51e sel_1310
@@ -2526,11 +2526,11 @@
   10af:39 50            pushi 50                       // $50 title
   10b1:72 2f38          lofsa $2f38                    // Christopher Shankarmour
   10b4:36                push
-  10b5:47 0d 04 08      calle d procedure_0004 8       //
+  10b5:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   10b9:78               push1
   10ba:76               push0
-  10bb:47 0d 06 02      calle d procedure_0006 2       //
+  10bb:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   10bf:32 0021            jmp code_10e3
 
@@ -2543,7 +2543,7 @@
   10cb:38 051e          pushi 51e                      // $51e sel_1310
   10ce:39 05            pushi 5                        // $5 view
   10d0:78               push1
-  10d1:47 0d 04 06      calle d procedure_0004 6       //
+  10d1:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   10d5:32 000b            jmp code_10e3
 
@@ -2594,7 +2594,7 @@
   1133:7a               push2
   1134:38 051e          pushi 51e                      // $51e sel_1310
   1137:39 25            pushi 25                       // $25 max
-  1139:47 0d 04 04      calle d procedure_0004 4       //
+  1139:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   113d:32 005a            jmp code_119a
 
@@ -2605,7 +2605,7 @@
   1144:30 0032            bnt code_1179
   1147:78               push1
   1148:39 15            pushi 15                       // $15 brBottom
-  114a:47 0d 06 02      calle d procedure_0006 2       //
+  114a:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   114e:39 04            pushi 4                        // $4 x
   1150:38 051e          pushi 51e                      // $51e sel_1310
@@ -2613,7 +2613,7 @@
   1155:39 50            pushi 50                       // $50 title
   1157:72 2f58          lofsa $2f58                    // Mistress Yhalkee
   115a:36                push
-  115b:47 0d 04 08      calle d procedure_0004 8       //
+  115b:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   115f:39 04            pushi 4                        // $4 x
   1161:38 051e          pushi 51e                      // $51e sel_1310
@@ -2621,11 +2621,11 @@
   1166:39 50            pushi 50                       // $50 title
   1168:72 2f58          lofsa $2f58                    // Mistress Yhalkee
   116b:36                push
-  116c:47 0d 04 08      calle d procedure_0004 8       //
+  116c:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   1170:78               push1
   1171:76               push0
-  1172:47 0d 06 02      calle d procedure_0006 2       //
+  1172:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   1176:32 0021            jmp code_119a
 
@@ -2638,7 +2638,7 @@
   1182:38 051e          pushi 51e                      // $51e sel_1310
   1185:39 05            pushi 5                        // $5 view
   1187:78               push1
-  1188:47 0d 04 06      calle d procedure_0004 6       //
+  1188:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   118c:32 000b            jmp code_119a
 
@@ -2688,7 +2688,7 @@
   11e9:7a               push2
   11ea:38 051e          pushi 51e                      // $51e sel_1310
   11ed:39 28            pushi 28                       // $28 message
-  11ef:47 0d 04 04      calle d procedure_0004 4       //
+  11ef:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   11f3:32 004e            jmp code_1244
 
@@ -2699,7 +2699,7 @@
   11fa:30 0026            bnt code_1223
   11fd:78               push1
   11fe:39 15            pushi 15                       // $15 brBottom
-  1200:47 0d 06 02      calle d procedure_0006 2       //
+  1200:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   1204:39 05            pushi 5                        // $5 view
   1206:5b 02 3c           lea 2 3c
@@ -2714,7 +2714,7 @@
 
   121a:78               push1
   121b:76               push0
-  121c:47 0d 06 02      calle d procedure_0006 2       //
+  121c:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   1220:32 0021            jmp code_1244
 
@@ -2727,7 +2727,7 @@
   122c:38 051e          pushi 51e                      // $51e sel_1310
   122f:39 05            pushi 5                        // $5 view
   1231:78               push1
-  1232:47 0d 04 06      calle d procedure_0004 6       //
+  1232:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   1236:32 000b            jmp code_1244
 
@@ -2777,7 +2777,7 @@
   1293:7a               push2
   1294:38 051e          pushi 51e                      // $51e sel_1310
   1297:39 32            pushi 32                       // $32 b-i2
-  1299:47 0d 04 04      calle d procedure_0004 4       //
+  1299:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   129d:32 0049            jmp code_12e9
 
@@ -2788,7 +2788,7 @@
   12a4:30 0021            bnt code_12c8
   12a7:78               push1
   12a8:39 15            pushi 15                       // $15 brBottom
-  12aa:47 0d 06 02      calle d procedure_0006 2       //
+  12aa:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   12ae:39 04            pushi 4                        // $4 x
   12b0:38 051e          pushi 51e                      // $51e sel_1310
@@ -2796,11 +2796,11 @@
   12b5:39 50            pushi 50                       // $50 title
   12b7:72 2e4b          lofsa $2e4b                    // Biddy Bigears
   12ba:36                push
-  12bb:47 0d 05 08      calle d procedure_0005 8       //
+  12bb:47 0d 05 08      calle d procedure_0005 8       // proc13_5
 
   12bf:78               push1
   12c0:76               push0
-  12c1:47 0d 06 02      calle d procedure_0006 2       //
+  12c1:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   12c5:32 0021            jmp code_12e9
 
@@ -2813,7 +2813,7 @@
   12d1:38 051e          pushi 51e                      // $51e sel_1310
   12d4:39 05            pushi 5                        // $5 view
   12d6:78               push1
-  12d7:47 0d 04 06      calle d procedure_0004 6       //
+  12d7:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   12db:32 000b            jmp code_12e9
 
@@ -2864,7 +2864,7 @@
   1339:7a               push2
   133a:38 051e          pushi 51e                      // $51e sel_1310
   133d:39 34            pushi 34                       // $34 b-xAxis
-  133f:47 0d 04 04      calle d procedure_0004 4       //
+  133f:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1343:32 0049            jmp code_138f
 
@@ -2875,7 +2875,7 @@
   134a:30 0021            bnt code_136e
   134d:78               push1
   134e:39 15            pushi 15                       // $15 brBottom
-  1350:47 0d 06 02      calle d procedure_0006 2       //
+  1350:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   1354:39 04            pushi 4                        // $4 x
   1356:38 051e          pushi 51e                      // $51e sel_1310
@@ -2883,11 +2883,11 @@
   135b:39 50            pushi 50                       // $50 title
   135d:72 2f83          lofsa $2f83                    // Cedric Nimfadoro
   1360:36                push
-  1361:47 0d 04 08      calle d procedure_0004 8       //
+  1361:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   1365:78               push1
   1366:76               push0
-  1367:47 0d 06 02      calle d procedure_0006 2       //
+  1367:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   136b:32 0021            jmp code_138f
 
@@ -2900,7 +2900,7 @@
   1377:38 051e          pushi 51e                      // $51e sel_1310
   137a:39 05            pushi 5                        // $5 view
   137c:78               push1
-  137d:47 0d 04 06      calle d procedure_0004 6       //
+  137d:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   1381:32 000b            jmp code_138f
 
@@ -2951,7 +2951,7 @@
   13df:7a               push2
   13e0:38 051e          pushi 51e                      // $51e sel_1310
   13e3:39 36            pushi 36                       // $36 xStep
-  13e5:47 0d 04 04      calle d procedure_0004 4       //
+  13e5:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   13e9:32 0049            jmp code_1435
 
@@ -2962,7 +2962,7 @@
   13f0:30 0021            bnt code_1414
   13f3:78               push1
   13f4:39 15            pushi 15                       // $15 brBottom
-  13f6:47 0d 06 02      calle d procedure_0006 2       //
+  13f6:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   13fa:39 04            pushi 4                        // $4 x
   13fc:38 051e          pushi 51e                      // $51e sel_1310
@@ -2970,11 +2970,11 @@
   1401:39 50            pushi 50                       // $50 title
   1403:72 2f9d          lofsa $2f9d                    // Old Gaffer
   1406:36                push
-  1407:47 0d 04 08      calle d procedure_0004 8       //
+  1407:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   140b:78               push1
   140c:76               push0
-  140d:47 0d 06 02      calle d procedure_0006 2       //
+  140d:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   1411:32 0021            jmp code_1435
 
@@ -2987,7 +2987,7 @@
   141d:38 051e          pushi 51e                      // $51e sel_1310
   1420:39 05            pushi 5                        // $5 view
   1422:78               push1
-  1423:47 0d 04 06      calle d procedure_0004 6       //
+  1423:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   1427:32 000b            jmp code_1435
 
@@ -3038,7 +3038,7 @@
   1485:7a               push2
   1486:38 051e          pushi 51e                      // $51e sel_1310
   1489:39 38            pushi 38                       // $38 moveSpeed
-  148b:47 0d 04 04      calle d procedure_0004 4       //
+  148b:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   148f:32 0049            jmp code_14db
 
@@ -3049,7 +3049,7 @@
   1496:30 0021            bnt code_14ba
   1499:78               push1
   149a:39 15            pushi 15                       // $15 brBottom
-  149c:47 0d 06 02      calle d procedure_0006 2       //
+  149c:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   14a0:39 04            pushi 4                        // $4 x
   14a2:38 051e          pushi 51e                      // $51e sel_1310
@@ -3057,11 +3057,11 @@
   14a7:39 50            pushi 50                       // $50 title
   14a9:72 2fb1          lofsa $2fb1                    // Patience Witzend
   14ac:36                push
-  14ad:47 0d 04 08      calle d procedure_0004 8       //
+  14ad:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   14b1:78               push1
   14b2:76               push0
-  14b3:47 0d 06 02      calle d procedure_0006 2       //
+  14b3:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   14b7:32 0021            jmp code_14db
 
@@ -3074,7 +3074,7 @@
   14c3:38 051e          pushi 51e                      // $51e sel_1310
   14c6:39 05            pushi 5                        // $5 view
   14c8:78               push1
-  14c9:47 0d 04 06      calle d procedure_0004 6       //
+  14c9:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   14cd:32 000b            jmp code_14db
 
@@ -3125,7 +3125,7 @@
   152b:7a               push2
   152c:38 051e          pushi 51e                      // $51e sel_1310
   152f:39 3a            pushi 3a                       // $3a heading
-  1531:47 0d 04 04      calle d procedure_0004 4       //
+  1531:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1535:32 007f            jmp code_15b7
 
@@ -3158,7 +3158,7 @@
   1563:30 0021            bnt code_1587
   1566:78               push1
   1567:39 15            pushi 15                       // $15 brBottom
-  1569:47 0d 06 02      calle d procedure_0006 2       //
+  1569:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   156d:39 04            pushi 4                        // $4 x
   156f:38 051e          pushi 51e                      // $51e sel_1310
@@ -3166,11 +3166,11 @@
   1574:39 50            pushi 50                       // $50 title
   1576:72 2e59          lofsa $2e59                    // Oswald Oakhurst
   1579:36                push
-  157a:47 0d 04 08      calle d procedure_0004 8       //
+  157a:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   157e:78               push1
   157f:76               push0
-  1580:47 0d 06 02      calle d procedure_0006 2       //
+  1580:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   1584:32 000b            jmp code_1592
 
@@ -3195,7 +3195,7 @@
   159f:38 051e          pushi 51e                      // $51e sel_1310
   15a2:39 05            pushi 5                        // $5 view
   15a4:78               push1
-  15a5:47 0d 04 06      calle d procedure_0004 6       //
+  15a5:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   15a9:32 000b            jmp code_15b7
 
@@ -3246,7 +3246,7 @@
   1607:7a               push2
   1608:38 051e          pushi 51e                      // $51e sel_1310
   160b:39 40            pushi 40                       // $40 modifiers
-  160d:47 0d 04 04      calle d procedure_0004 4       //
+  160d:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1611:32 005a            jmp code_166e
 
@@ -3257,7 +3257,7 @@
   1618:30 0032            bnt code_164d
   161b:78               push1
   161c:39 15            pushi 15                       // $15 brBottom
-  161e:47 0d 06 02      calle d procedure_0006 2       //
+  161e:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   1622:39 04            pushi 4                        // $4 x
   1624:38 051e          pushi 51e                      // $51e sel_1310
@@ -3265,7 +3265,7 @@
   1629:39 50            pushi 50                       // $50 title
   162b:72 2fd4          lofsa $2fd4                    // Mark Hood
   162e:36                push
-  162f:47 0d 04 08      calle d procedure_0004 8       //
+  162f:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   1633:39 04            pushi 4                        // $4 x
   1635:38 051e          pushi 51e                      // $51e sel_1310
@@ -3273,11 +3273,11 @@
   163a:39 50            pushi 50                       // $50 title
   163c:72 2e59          lofsa $2e59                    // Oswald Oakhurst
   163f:36                push
-  1640:47 0d 05 08      calle d procedure_0005 8       //
+  1640:47 0d 05 08      calle d procedure_0005 8       // proc13_5
 
   1644:78               push1
   1645:76               push0
-  1646:47 0d 06 02      calle d procedure_0006 2       //
+  1646:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   164a:32 0021            jmp code_166e
 
@@ -3290,7 +3290,7 @@
   1656:38 051e          pushi 51e                      // $51e sel_1310
   1659:39 05            pushi 5                        // $5 view
   165b:78               push1
-  165c:47 0d 04 06      calle d procedure_0004 6       //
+  165c:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   1660:32 000b            jmp code_166e
 
@@ -3340,7 +3340,7 @@
   16bd:7a               push2
   16be:38 051e          pushi 51e                      // $51e sel_1310
   16c1:39 43            pushi 43                       // $43 at
-  16c3:47 0d 04 04      calle d procedure_0004 4       //
+  16c3:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   16c7:32 003f            jmp code_1709
 
@@ -3370,7 +3370,7 @@
   16f1:38 051e          pushi 51e                      // $51e sel_1310
   16f4:39 05            pushi 5                        // $5 view
   16f6:78               push1
-  16f7:47 0d 04 06      calle d procedure_0004 6       //
+  16f7:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   16fb:32 000b            jmp code_1709
 
@@ -3421,7 +3421,7 @@
   1759:7a               push2
   175a:38 051e          pushi 51e                      // $51e sel_1310
   175d:39 4d            pushi 4d                       // $4d value
-  175f:47 0d 04 04      calle d procedure_0004 4       //
+  175f:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1763:32 005a            jmp code_17c0
 
@@ -3432,7 +3432,7 @@
   176a:30 0032            bnt code_179f
   176d:78               push1
   176e:39 15            pushi 15                       // $15 brBottom
-  1770:47 0d 06 02      calle d procedure_0006 2       //
+  1770:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   1774:39 04            pushi 4                        // $4 x
   1776:38 051e          pushi 51e                      // $51e sel_1310
@@ -3440,7 +3440,7 @@
   177b:39 50            pushi 50                       // $50 title
   177d:72 2ff0          lofsa $2ff0                    // Wystan Wheelwright
   1780:36                push
-  1781:47 0d 04 08      calle d procedure_0004 8       //
+  1781:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   1785:39 04            pushi 4                        // $4 x
   1787:38 051e          pushi 51e                      // $51e sel_1310
@@ -3448,11 +3448,11 @@
   178c:39 50            pushi 50                       // $50 title
   178e:72 2ff0          lofsa $2ff0                    // Wystan Wheelwright
   1791:36                push
-  1792:47 0d 04 08      calle d procedure_0004 8       //
+  1792:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   1796:78               push1
   1797:76               push0
-  1798:47 0d 06 02      calle d procedure_0006 2       //
+  1798:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   179c:32 0021            jmp code_17c0
 
@@ -3465,7 +3465,7 @@
   17a8:38 051e          pushi 51e                      // $51e sel_1310
   17ab:39 05            pushi 5                        // $5 view
   17ad:78               push1
-  17ae:47 0d 04 06      calle d procedure_0004 6       //
+  17ae:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   17b2:32 000b            jmp code_17c0
 
@@ -3515,7 +3515,7 @@
   180f:7a               push2
   1810:38 051e          pushi 51e                      // $51e sel_1310
   1813:39 50            pushi 50                       // $50 title
-  1815:47 0d 04 04      calle d procedure_0004 4       //
+  1815:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1819:32 0049            jmp code_1865
 
@@ -3526,7 +3526,7 @@
   1820:30 0021            bnt code_1844
   1823:78               push1
   1824:39 15            pushi 15                       // $15 brBottom
-  1826:47 0d 06 02      calle d procedure_0006 2       //
+  1826:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   182a:39 04            pushi 4                        // $4 x
   182c:38 051e          pushi 51e                      // $51e sel_1310
@@ -3534,11 +3534,11 @@
   1831:39 50            pushi 50                       // $50 title
   1833:72 300c          lofsa $300c                    // Richard
   1836:36                push
-  1837:47 0d 04 08      calle d procedure_0004 8       //
+  1837:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   183b:78               push1
   183c:76               push0
-  183d:47 0d 06 02      calle d procedure_0006 2       //
+  183d:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   1841:32 0021            jmp code_1865
 
@@ -3551,7 +3551,7 @@
   184d:38 051e          pushi 51e                      // $51e sel_1310
   1850:39 05            pushi 5                        // $5 view
   1852:78               push1
-  1853:47 0d 04 06      calle d procedure_0004 6       //
+  1853:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   1857:32 000b            jmp code_1865
 
@@ -3602,7 +3602,7 @@
   18b5:7a               push2
   18b6:38 051e          pushi 51e                      // $51e sel_1310
   18b9:39 52            pushi 52                       // $52 icon
-  18bb:47 0d 04 04      calle d procedure_0004 4       //
+  18bb:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   18bf:32 0049            jmp code_190b
 
@@ -3613,7 +3613,7 @@
   18c6:30 0021            bnt code_18ea
   18c9:78               push1
   18ca:39 15            pushi 15                       // $15 brBottom
-  18cc:47 0d 06 02      calle d procedure_0006 2       //
+  18cc:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   18d0:39 04            pushi 4                        // $4 x
   18d2:38 051e          pushi 51e                      // $51e sel_1310
@@ -3621,11 +3621,11 @@
   18d7:39 50            pushi 50                       // $50 title
   18d9:72 301d          lofsa $301d                    // Aaron
   18dc:36                push
-  18dd:47 0d 04 08      calle d procedure_0004 8       //
+  18dd:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   18e1:78               push1
   18e2:76               push0
-  18e3:47 0d 06 02      calle d procedure_0006 2       //
+  18e3:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   18e7:32 0021            jmp code_190b
 
@@ -3638,7 +3638,7 @@
   18f3:38 051e          pushi 51e                      // $51e sel_1310
   18f6:39 05            pushi 5                        // $5 view
   18f8:78               push1
-  18f9:47 0d 04 06      calle d procedure_0004 6       //
+  18f9:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   18fd:32 000b            jmp code_190b
 
@@ -3689,7 +3689,7 @@
   195b:7a               push2
   195c:38 051e          pushi 51e                      // $51e sel_1310
   195f:39 54            pushi 54                       // $54 delete
-  1961:47 0d 04 04      calle d procedure_0004 4       //
+  1961:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1965:32 0041            jmp code_19a9
 
@@ -3720,7 +3720,7 @@
   1991:38 051e          pushi 51e                      // $51e sel_1310
   1994:39 05            pushi 5                        // $5 view
   1996:78               push1
-  1997:47 0d 04 06      calle d procedure_0004 6       //
+  1997:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   199b:32 000b            jmp code_19a9
 
@@ -3771,7 +3771,7 @@
   19f9:7a               push2
   19fa:38 051e          pushi 51e                      // $51e sel_1310
   19fd:39 57            pushi 57                       // $57 printLang
-  19ff:47 0d 04 04      calle d procedure_0004 4       //
+  19ff:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1a03:32 0041            jmp code_1a47
 
@@ -3802,7 +3802,7 @@
   1a2f:38 051e          pushi 51e                      // $51e sel_1310
   1a32:39 05            pushi 5                        // $5 view
   1a34:78               push1
-  1a35:47 0d 04 06      calle d procedure_0004 6       //
+  1a35:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   1a39:32 000b            jmp code_1a47
 
@@ -3853,7 +3853,7 @@
   1a97:7a               push2
   1a98:38 051e          pushi 51e                      // $51e sel_1310
   1a9b:39 5a            pushi 5a                       // $5a points
-  1a9d:47 0d 04 04      calle d procedure_0004 4       //
+  1a9d:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1aa1:32 000b            jmp code_1aaf
 
@@ -3904,7 +3904,7 @@
   1aff:7a               push2
   1b00:38 051e          pushi 51e                      // $51e sel_1310
   1b03:39 5b            pushi 5b                       // $5b palette
-  1b05:47 0d 04 04      calle d procedure_0004 4       //
+  1b05:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1b09:32 001f            jmp code_1b2b
 
@@ -3916,7 +3916,7 @@
   1b13:7a               push2
   1b14:38 051e          pushi 51e                      // $51e sel_1310
   1b17:39 5c            pushi 5c                       // $5c dataInc
-  1b19:47 0d 04 04      calle d procedure_0004 4       //
+  1b19:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1b1d:32 000b            jmp code_1b2b
 
@@ -3967,7 +3967,7 @@
   1b7b:7a               push2
   1b7c:38 051e          pushi 51e                      // $51e sel_1310
   1b7f:39 5d            pushi 5d                       // $5d handle
-  1b81:47 0d 04 04      calle d procedure_0004 4       //
+  1b81:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1b85:32 002c            jmp code_1bb4
 
@@ -3978,16 +3978,16 @@
   1b8c:30 001a            bnt code_1ba9
   1b8f:78               push1
   1b90:39 15            pushi 15                       // $15 brBottom
-  1b92:47 0d 06 02      calle d procedure_0006 2       //
+  1b92:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   1b96:7a               push2
   1b97:38 051e          pushi 51e                      // $51e sel_1310
   1b9a:39 5e            pushi 5e                       // $5e min
-  1b9c:47 0d 04 04      calle d procedure_0004 4       //
+  1b9c:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1ba0:78               push1
   1ba1:76               push0
-  1ba2:47 0d 06 02      calle d procedure_0006 2       //
+  1ba2:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   1ba6:32 000b            jmp code_1bb4
 
@@ -4037,7 +4037,7 @@
   1c03:7a               push2
   1c04:38 051e          pushi 51e                      // $51e sel_1310
   1c07:39 5f            pushi 5f                       // $5f sec
-  1c09:47 0d 04 04      calle d procedure_0004 4       //
+  1c09:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1c0d:32 000b            jmp code_1c1b
 
@@ -4088,7 +4088,7 @@
   1c6b:7a               push2
   1c6c:38 051e          pushi 51e                      // $51e sel_1310
   1c6f:39 60            pushi 60                       // $60 frame
-  1c71:47 0d 04 04      calle d procedure_0004 4       //
+  1c71:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1c75:32 000b            jmp code_1c83
 
@@ -4139,7 +4139,7 @@
   1cd3:7a               push2
   1cd4:38 051e          pushi 51e                      // $51e sel_1310
   1cd7:39 61            pushi 61                       // $61 vol
-  1cd9:47 0d 04 04      calle d procedure_0004 4       //
+  1cd9:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1cdd:32 000b            jmp code_1ceb
 
@@ -4190,7 +4190,7 @@
   1d3b:7a               push2
   1d3c:38 051e          pushi 51e                      // $51e sel_1310
   1d3f:39 62            pushi 62                       // $62 pri
-  1d41:47 0d 04 04      calle d procedure_0004 4       //
+  1d41:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1d45:32 000b            jmp code_1d53
 
@@ -4241,7 +4241,7 @@
   1da3:7a               push2
   1da4:38 051e          pushi 51e                      // $51e sel_1310
   1da7:39 62            pushi 62                       // $62 pri
-  1da9:47 0d 04 04      calle d procedure_0004 4       //
+  1da9:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1dad:32 000b            jmp code_1dbb
 
@@ -4292,7 +4292,7 @@
   1e0b:7a               push2
   1e0c:38 051e          pushi 51e                      // $51e sel_1310
   1e0f:39 63            pushi 63                       // $63 perform
-  1e11:47 0d 04 04      calle d procedure_0004 4       //
+  1e11:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1e15:32 000b            jmp code_1e23
 
@@ -4343,7 +4343,7 @@
   1e73:7a               push2
   1e74:38 051e          pushi 51e                      // $51e sel_1310
   1e77:39 64            pushi 64                       // $64 moveDone
-  1e79:47 0d 04 04      calle d procedure_0004 4       //
+  1e79:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1e7d:32 000b            jmp code_1e8b
 
@@ -4394,7 +4394,7 @@
   1edb:7a               push2
   1edc:38 051e          pushi 51e                      // $51e sel_1310
   1edf:39 64            pushi 64                       // $64 moveDone
-  1ee1:47 0d 04 04      calle d procedure_0004 4       //
+  1ee1:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1ee5:32 000b            jmp code_1ef3
 
@@ -4445,7 +4445,7 @@
   1f43:7a               push2
   1f44:38 051e          pushi 51e                      // $51e sel_1310
   1f47:39 65            pushi 65                       // $65 topString
-  1f49:47 0d 04 04      calle d procedure_0004 4       //
+  1f49:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1f4d:32 000b            jmp code_1f5b
 
@@ -4496,7 +4496,7 @@
   1fab:7a               push2
   1fac:38 051e          pushi 51e                      // $51e sel_1310
   1faf:39 65            pushi 65                       // $65 topString
-  1fb1:47 0d 04 04      calle d procedure_0004 4       //
+  1fb1:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1fb5:32 000b            jmp code_1fc3
 
@@ -4547,7 +4547,7 @@
   2013:7a               push2
   2014:38 051e          pushi 51e                      // $51e sel_1310
   2017:39 66            pushi 66                       // $66 flags
-  2019:47 0d 04 04      calle d procedure_0004 4       //
+  2019:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   201d:32 000b            jmp code_202b
 
@@ -4598,7 +4598,7 @@
   207b:7a               push2
   207c:38 051e          pushi 51e                      // $51e sel_1310
   207f:39 66            pushi 66                       // $66 flags
-  2081:47 0d 04 04      calle d procedure_0004 4       //
+  2081:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   2085:32 000b            jmp code_2093
 
@@ -4649,7 +4649,7 @@
   20e3:7a               push2
   20e4:38 051e          pushi 51e                      // $51e sel_1310
   20e7:39 67            pushi 67                       // $67 quitGame
-  20e9:47 0d 04 04      calle d procedure_0004 4       //
+  20e9:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   20ed:32 000b            jmp code_20fb
 
@@ -4733,7 +4733,7 @@
   217c:7a               push2
   217d:38 051e          pushi 51e                      // $51e sel_1310
   2180:39 67            pushi 67                       // $67 quitGame
-  2182:47 0d 04 04      calle d procedure_0004 4       //
+  2182:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   2186:32 000b            jmp code_2194
 
@@ -4783,12 +4783,12 @@
   21e7:7a               push2
   21e8:38 051e          pushi 51e                      // $51e sel_1310
   21eb:39 68            pushi 68                       // $68 restart
-  21ed:47 0d 04 04      calle d procedure_0004 4       //
+  21ed:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   21f1:7a               push2
   21f2:38 051e          pushi 51e                      // $51e sel_1310
   21f5:39 69            pushi 69                       // $69 hide
-  21f7:47 0d 04 04      calle d procedure_0004 4       //
+  21f7:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   21fb:32 000b            jmp code_2209
 
@@ -4839,7 +4839,7 @@
   2259:7a               push2
   225a:38 051e          pushi 51e                      // $51e sel_1310
   225d:39 6a            pushi 6a                       // $6a new
-  225f:47 0d 04 04      calle d procedure_0004 4       //
+  225f:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   2263:32 000b            jmp code_2271
 
@@ -4890,7 +4890,7 @@
   22c1:7a               push2
   22c2:38 051e          pushi 51e                      // $51e sel_1310
   22c5:39 6a            pushi 6a                       // $6a new
-  22c7:47 0d 04 04      calle d procedure_0004 4       //
+  22c7:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   22cb:32 000b            jmp code_22d9
 
@@ -4941,7 +4941,7 @@
   2329:7a               push2
   232a:38 051e          pushi 51e                      // $51e sel_1310
   232d:39 6a            pushi 6a                       // $6a new
-  232f:47 0d 04 04      calle d procedure_0004 4       //
+  232f:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   2333:32 000b            jmp code_2341
 
@@ -4992,7 +4992,7 @@
   2391:7a               push2
   2392:38 051e          pushi 51e                      // $51e sel_1310
   2395:39 6a            pushi 6a                       // $6a new
-  2397:47 0d 04 04      calle d procedure_0004 4       //
+  2397:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   239b:32 000b            jmp code_23a9
 
@@ -5043,7 +5043,7 @@
   23f9:7a               push2
   23fa:38 051e          pushi 51e                      // $51e sel_1310
   23fd:39 6b            pushi 6b                       // $6b init
-  23ff:47 0d 04 04      calle d procedure_0004 4       //
+  23ff:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   2403:32 000b            jmp code_2411
 
@@ -5094,7 +5094,7 @@
   2461:7a               push2
   2462:38 051e          pushi 51e                      // $51e sel_1310
   2465:39 6c            pushi 6c                       // $6c dispose
-  2467:47 0d 04 04      calle d procedure_0004 4       //
+  2467:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   246b:32 001f            jmp code_248d
 
@@ -5106,7 +5106,7 @@
   2475:7a               push2
   2476:38 051e          pushi 51e                      // $51e sel_1310
   2479:39 6d            pushi 6d                       // $6d showStr
-  247b:47 0d 04 04      calle d procedure_0004 4       //
+  247b:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   247f:32 000b            jmp code_248d
 
@@ -5157,7 +5157,7 @@
   24dd:7a               push2
   24de:38 051e          pushi 51e                      // $51e sel_1310
   24e1:39 6e            pushi 6e                       // $6e showSelf
-  24e3:47 0d 04 04      calle d procedure_0004 4       //
+  24e3:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   24e7:32 0049            jmp code_2533
 
@@ -5168,7 +5168,7 @@
   24ee:30 0021            bnt code_2512
   24f1:78               push1
   24f2:39 15            pushi 15                       // $15 brBottom
-  24f4:47 0d 06 02      calle d procedure_0006 2       //
+  24f4:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   24f8:39 04            pushi 4                        // $4 x
   24fa:38 051e          pushi 51e                      // $51e sel_1310
@@ -5176,11 +5176,11 @@
   24ff:39 50            pushi 50                       // $50 title
   2501:72 2eb6          lofsa $2eb6                    // Francis the Mule
   2504:36                push
-  2505:47 0d 04 08      calle d procedure_0004 8       //
+  2505:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   2509:78               push1
   250a:76               push0
-  250b:47 0d 06 02      calle d procedure_0006 2       //
+  250b:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   250f:32 0021            jmp code_2533
 
@@ -5193,7 +5193,7 @@
   251b:38 051e          pushi 51e                      // $51e sel_1310
   251e:39 05            pushi 5                        // $5 view
   2520:78               push1
-  2521:47 0d 04 06      calle d procedure_0004 6       //
+  2521:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   2525:32 000b            jmp code_2533
 
@@ -5443,7 +5443,7 @@
   2735:30 005b            bnt code_2793
   2738:39 04            pushi 4                        // $4 x
   273a:76               push0
-  273b:81 00              lag
+  273b:81 00              lag gEgo
   273d:4a 04             send 4
 
   273f:36                push
@@ -5456,7 +5456,7 @@
   274e:36                push
   274f:39 04            pushi 4                        // $4 x
   2751:76               push0
-  2752:81 00              lag
+  2752:81 00              lag gEgo
   2754:4a 04             send 4
 
   2756:36                push
@@ -5465,7 +5465,7 @@
   275a:36                push
   275b:39 03            pushi 3                        // $3 y
   275d:76               push0
-  275e:81 00              lag
+  275e:81 00              lag gEgo
   2760:4a 04             send 4
 
   2762:36                push
@@ -5473,7 +5473,7 @@
   2765:02                 add
   2766:36                push
   2767:7c            pushSelf
-  2768:81 00              lag
+  2768:81 00              lag gEgo
   276a:4a 0c             send c
 
   276c:32 0036            jmp code_27a5
@@ -5485,13 +5485,13 @@
   2776:36                push
   2777:39 04            pushi 4                        // $4 x
   2779:76               push0
-  277a:81 00              lag
+  277a:81 00              lag gEgo
   277c:4a 04             send 4
 
   277e:36                push
   277f:39 03            pushi 3                        // $3 y
   2781:76               push0
-  2782:81 00              lag
+  2782:81 00              lag gEgo
   2784:4a 04             send 4
 
   2786:36                push
@@ -5499,7 +5499,7 @@
   2789:02                 add
   278a:36                push
   278b:7c            pushSelf
-  278c:81 00              lag
+  278c:81 00              lag gEgo
   278e:4a 0c             send c
 
   2790:32 0012            jmp code_27a5
@@ -5512,7 +5512,7 @@
   279a:38 0179          pushi 179                      // $179 newRoom
   279d:78               push1
   279e:38 0104          pushi 104                      // $104 gx
-  27a1:81 02              lag
+  27a1:81 02              lag global2
   27a3:4a 06             send 6
 
 
@@ -5627,7 +5627,7 @@
 
   2873:39 03            pushi 3                        // $3 y
   2875:76               push0
-  2876:81 00              lag
+  2876:81 00              lag gEgo
   2878:4a 04             send 4
 
   287a:36                push
@@ -5635,15 +5635,15 @@
   287e:22                 lt?
   287f:30 0043            bnt code_28c5
   2882:76               push0
-  2883:45 03 00         callb procedure_0003 0         //
+  2883:45 03 00         callb procedure_0003 0         // proc0_3
 
   2886:38 00e4          pushi e4                       // $e4 setHeading
   2889:78               push1
   288a:38 013b          pushi 13b                      // $13b controls
-  288d:81 00              lag
+  288d:81 00              lag gEgo
   288f:4a 06             send 6
 
-  2891:89 7e              lsg
+  2891:89 7e              lsg global126
   2893:35 05              ldi 5
   2895:1a                 eq?
   2896:30 0016            bnt code_28af
@@ -5684,7 +5684,7 @@
   28ce:35 03              ldi 3
   28d0:1a                 eq?
   28d1:30 0034            bnt code_2908
-  28d4:89 7e              lsg
+  28d4:89 7e              lsg global126
   28d6:35 05              ldi 5
   28d8:1a                 eq?
   28d9:30 0016            bnt code_28f2
@@ -5719,11 +5719,11 @@
   290b:1a                 eq?
   290c:30 000f            bnt code_291e
   290f:35 04              ldi 4
-  2911:a1 91              sag
+  2911:a1 91              sag global145
   2913:38 0179          pushi 179                      // $179 newRoom
   2916:78               push1
   2917:38 00aa          pushi aa                       // $aa setSize
-  291a:81 02              lag
+  291a:81 02              lag global2
   291c:4a 06             send 6
 
 
@@ -6225,7 +6225,7 @@
   2c52:38 00c3          pushi c3                       // $c3 highlight
   2c55:38 00b9          pushi b9                       // $b9 bottom
   2c58:7c            pushSelf
-  2c59:81 00              lag
+  2c59:81 00              lag gEgo
   2c5b:4a 0c             send c
 
   2c5d:39 2b            pushi 2b                       // $2b number
@@ -6236,7 +6236,7 @@
   2c66:39 ff            pushi ff                       // $ff syncNum
   2c68:39 2a            pushi 2a                       // $2a play
   2c6a:76               push0
-  2c6b:81 64              lag
+  2c6b:81 64              lag gRgnMusic
   2c6d:4a 10             send 10
 
   2c6f:32 0065            jmp code_2cd7
@@ -6247,7 +6247,7 @@
   2c75:1a                 eq?
   2c76:30 0048            bnt code_2cc1
   2c79:39 03            pushi 3                        // $3 y
-  2c7b:89 7e              lsg
+  2c7b:89 7e              lsg global126
   2c7d:39 05            pushi 5                        // $5 view
   2c7f:39 06            pushi 6                        // $6 loop
   2c81:46 03e7 0005 06  calle 3e7 procedure_0005 6     //
@@ -6270,11 +6270,11 @@
   2ca1:39 43            pushi 43                       // $43 at
   2ca3:78               push1
   2ca4:76               push0
-  2ca5:81 45              lag
+  2ca5:81 45              lag gIconBar
   2ca7:4a 06             send 6
 
   2ca9:36                push
-  2caa:81 45              lag
+  2caa:81 45              lag gIconBar
   2cac:4a 0c             send c
 
   2cae:35 02              ldi 2
@@ -6283,7 +6283,7 @@
 
         code_2cb5
   2cb5:76               push0
-  2cb6:45 04 00         callb procedure_0004 0         //
+  2cb6:45 04 00         callb procedure_0004 0         // proc0_4
 
   2cb9:39 6c            pushi 6c                       // $6c dispose
   2cbb:76               push0
@@ -6300,7 +6300,7 @@
   2ccb:7a               push2
   2ccc:76               push0
   2ccd:78               push1
-  2cce:81 01              lag
+  2cce:81 01              lag global1
   2cd0:4a 08             send 8
 
   2cd2:39 6c            pushi 6c                       // $6c dispose
@@ -6342,7 +6342,7 @@
   2d1c:1a                 eq?
   2d1d:30 001e            bnt code_2d3e
   2d20:76               push0
-  2d21:45 03 00         callb procedure_0003 0         //
+  2d21:45 03 00         callb procedure_0003 0         // proc0_3
 
   2d24:38 011b          pushi 11b                      // $11b setMotion
   2d27:39 04            pushi 4                        // $4 x
@@ -6351,12 +6351,12 @@
   2d2c:39 f1            pushi f1                       // $f1 escaping
   2d2e:39 03            pushi 3                        // $3 y
   2d30:76               push0
-  2d31:81 00              lag
+  2d31:81 00              lag gEgo
   2d33:4a 04             send 4
 
   2d35:36                push
   2d36:7c            pushSelf
-  2d37:81 00              lag
+  2d37:81 00              lag gEgo
   2d39:4a 0c             send c
 
   2d3b:32 0027            jmp code_2d65
@@ -6376,7 +6376,7 @@
   2d51:38 0179          pushi 179                      // $179 newRoom
   2d54:78               push1
   2d55:38 012c          pushi 12c                      // $12c ignoreHorizon
-  2d58:81 02              lag
+  2d58:81 02              lag global2
   2d5a:4a 06             send 6
 
   2d5c:32 0006            jmp code_2d65
@@ -6426,7 +6426,7 @@
   2dad:38 051e          pushi 51e                      // $51e sel_1310
   2db0:39 05            pushi 5                        // $5 view
   2db2:78               push1
-  2db3:47 0d 04 06      calle d procedure_0004 6       //
+  2db3:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   2db7:32 000b            jmp code_2dc5
 

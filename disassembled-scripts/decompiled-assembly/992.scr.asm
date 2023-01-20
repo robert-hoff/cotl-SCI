@@ -35,7 +35,7 @@
   000b:65 08             aTop client
 
         code_000d
-  000d:89 58              lsg
+  000d:89 58              lsg global88
   000f:38 00db          pushi db                       // $db cycleSpeed
   0012:76               push0
   0013:63 08             pToa client
@@ -53,7 +53,7 @@
 
     (method (nextCel)                                  // method_0023
   0023:78               push1
-  0024:89 58              lsg
+  0024:89 58              lsg global88
   0026:63 0e             pToa cycleCnt
   0028:04                 sub
   0029:36                push
@@ -75,7 +75,7 @@
   0041:32 000f            jmp code_0053
 
         code_0044
-  0044:81 58              lag
+  0044:81 58              lag global88
   0046:65 0e             aTop cycleCnt
   0048:39 07            pushi 7                        // $7 cel
   004a:76               push0
@@ -301,7 +301,7 @@
   01f9:63 08             pToa client
   01fb:4a 06             send 6
 
-  01fd:89 58              lsg
+  01fd:89 58              lsg global88
   01ff:63 0e             pToa cycleCnt
   0201:1a                 eq?
   0202:30 0013            bnt code_0218
@@ -328,7 +328,7 @@
   021d:63 0a             pToa caller
   021f:30 0007            bnt code_0229
   0222:35 01              ldi 1
-  0224:a1 25              sag
+  0224:a1 25              sag global37
   0226:32 0006            jmp code_022f
 
         code_0229
@@ -485,7 +485,7 @@
     )
 
     (method (nextCel)                                  // method_0382
-  0382:89 58              lsg
+  0382:89 58              lsg global88
   0384:38 00db          pushi db                       // $db cycleSpeed
   0387:76               push0
   0388:63 08             pToa client
@@ -562,7 +562,7 @@
 
   0422:02                 add
   0423:36                push
-  0424:81 58              lag
+  0424:81 58              lag global88
   0426:02                 add
   0427:65 14             aTop b-moveCnt
   0429:38 00dc          pushi dc                       // $dc cycler
@@ -624,7 +624,7 @@
     (method (doit)                                     // method_04a1
   04a1:3f 06             link 6                        // (var $6)
   04a3:78               push1
-  04a4:89 58              lsg
+  04a4:89 58              lsg global88
   04a6:63 14             pToa b-moveCnt
   04a8:04                 sub
   04a9:36                push
@@ -638,7 +638,7 @@
 
   04b5:20                 ge?
   04b6:30 0009            bnt code_04c2
-  04b9:81 58              lag
+  04b9:81 58              lag global88
   04bb:65 14             aTop b-moveCnt
   04bd:78               push1
   04be:7c            pushSelf
@@ -655,7 +655,7 @@
   04c7:63 0a             pToa caller
   04c9:30 0007            bnt code_04d3
   04cc:35 01              ldi 1
-  04ce:a1 25              sag
+  04ce:a1 25              sag global37
   04d0:32 0006            jmp code_04d9
 
         code_04d3

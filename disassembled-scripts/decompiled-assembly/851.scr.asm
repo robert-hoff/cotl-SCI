@@ -505,7 +505,7 @@
   01c5:35 00              ldi 0
   01c7:65 30             aTop loop
   01c9:76               push0
-  01ca:47 0d 07 00      calle d procedure_0007 0       //
+  01ca:47 0d 07 00      calle d procedure_0007 0       // proc13_7
 
   01ce:39 6c            pushi 6c                       // $6c dispose
   01d0:76               push0
@@ -517,7 +517,7 @@
     )
 
     (method (startText)                                // method_010a
-  010a:81 19              lag
+  010a:81 19              lag global25
   010c:30 0005            bnt code_0114
   010f:39 6c            pushi 6c                       // $6c dispose
   0111:76               push0
@@ -533,11 +533,11 @@
 
   011e:18                 not
   011f:36                push
-  0120:81 01              lag
+  0120:81 01              lag global1
   0122:4a 08             send 8
 
-  0124:89 a2              lsg
-  0126:89 a3              lsg
+  0124:89 a2              lsg global162
+  0126:89 a3              lsg global163
   0128:78               push1
   0129:8f 01              lsp param1
   012b:43 46 02         callk StrLen 2
@@ -660,7 +660,7 @@
   0301:46 03e7 0006 04  calle 3e7 procedure_0006 4     //
 
   0307:36                push
-  0308:47 0d 06 02      calle d procedure_0006 2       //
+  0308:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   030c:8d 00              lst temp0
   030e:3c                 dup
@@ -702,7 +702,7 @@
   0344:32 00b3            jmp code_03fa
 
         code_0347
-  0347:81 19              lag
+  0347:81 19              lag global25
   0349:30 0005            bnt code_0351
   034c:39 6c            pushi 6c                       // $6c dispose
   034e:76               push0
@@ -718,7 +718,7 @@
   0358:46 03e7 0006 04  calle 3e7 procedure_0006 4     //
 
   035e:36                push
-  035f:47 0d 06 02      calle d procedure_0006 2       //
+  035f:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0363:39 03            pushi 3                        // $3 y
   0365:8b 0b              lsl local11
@@ -863,7 +863,7 @@
         code_0441
   0441:78               push1
   0442:76               push0
-  0443:47 0d 06 02      calle d procedure_0006 2       //
+  0443:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0447:83 09              lal local9
   0449:30 0008            bnt code_0454
@@ -998,7 +998,7 @@
   08f3:46 03e7 0006 04  calle 3e7 procedure_0006 4     //
 
   08f9:36                push
-  08fa:47 0d 06 02      calle d procedure_0006 2       //
+  08fa:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   08fe:39 05            pushi 5                        // $5 view
   0900:78               push1
@@ -1177,7 +1177,7 @@
   0a30:46 03e7 0006 04  calle 3e7 procedure_0006 4     //
 
   0a36:36                push
-  0a37:47 0d 06 02      calle d procedure_0006 2       //
+  0a37:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0a3b:39 0a            pushi a                        // $a nsLeft
   0a3d:8b 0b              lsl local11
@@ -1200,7 +1200,7 @@
   0a5b:46 03e7 0006 04  calle 3e7 procedure_0006 4     //
 
   0a61:36                push
-  0a62:47 0d 04 14      calle d procedure_0004 14      //
+  0a62:47 0d 04 14      calle d procedure_0004 14      // proc13_4
 
 
         code_0a66
@@ -1226,7 +1226,7 @@
         code_0a83
   0a83:78               push1
   0a84:76               push0
-  0a85:47 0d 06 02      calle d procedure_0006 2       //
+  0a85:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0a89:83 09              lal local9
   0a8b:30 0008            bnt code_0a96
@@ -1749,8 +1749,8 @@
   0f85:32 001b            jmp code_0fa3
 
         code_0f88
-  0f88:89 0d              lsg
-  0f8a:81 0b              lag
+  0f88:89 0d              lsg global13
+  0f8a:81 0b              lag global11
   0f8c:1a                 eq?
   0f8d:30 000c            bnt code_0f9c
   0f90:39 6b            pushi 6b                       // $6b init
@@ -1774,8 +1774,8 @@
   0fa6:43 06 02         callk IsObject 2
 
   0fa9:30 0012            bnt code_0fbe
-  0fac:89 0d              lsg
-  0fae:81 0b              lag
+  0fac:89 0d              lsg global13
+  0fae:81 0b              lag global11
   0fb0:1a                 eq?
   0fb1:30 000a            bnt code_0fbe
   0fb4:38 008d          pushi 8d                       // $8d cue
@@ -1825,7 +1825,7 @@
 // EXPORTED procedure #0 ()
 (procedure proc_0504
   0504:3f 01             link 1                        // (var $1)
-  0506:81 19              lag
+  0506:81 19              lag global25
   0508:30 0005            bnt code_0510
   050b:39 6c            pushi 6c                       // $6c dispose
   050d:76               push0
@@ -2399,7 +2399,7 @@
   0b4f:7a               push2
   0b50:38 03e7          pushi 3e7                      // $3e7 sel_999
   0b53:78               push1
-  0b54:81 01              lag
+  0b54:81 01              lag global1
   0b56:4a 08             send 8
 
   0b58:39 0a            pushi a                        // $a nsLeft
@@ -2432,7 +2432,7 @@
   0adf:34 03e7            ldi 3e7
   0ae2:1a                 eq?
   0ae3:30 0056            bnt code_0b3c
-  0ae6:89 7e              lsg
+  0ae6:89 7e              lsg global126
   0ae8:3c                 dup
   0ae9:35 00              ldi 0
   0aeb:1a                 eq?

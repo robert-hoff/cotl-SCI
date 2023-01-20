@@ -58,23 +58,23 @@
         obstacles $0
     )
     (method (init)                                     // method_000e
-  000e:89 82              lsg
+  000e:89 82              lsg global130
   0010:35 01              ldi 1
   0012:1a                 eq?
   0013:30 0024            bnt code_003a
   0016:78               push1
   0017:39 2e            pushi 2e                       // $2e dx
-  0019:45 05 02         callb procedure_0005 2         //
+  0019:45 05 02         callb procedure_0005 2         // proc0_5
 
   001c:30 001b            bnt code_003a
   001f:78               push1
   0020:39 2d            pushi 2d                       // $2d client
-  0022:45 05 02         callb procedure_0005 2         //
+  0022:45 05 02         callb procedure_0005 2         // proc0_5
 
   0025:30 0012            bnt code_003a
   0028:78               push1
   0029:39 2c            pushi 2c                       // $2c nodePtr
-  002b:45 05 02         callb procedure_0005 2         //
+  002b:45 05 02         callb procedure_0005 2         // proc0_5
 
   002e:30 0009            bnt code_003a
   0031:38 0234          pushi 234                      // $234 whichChar
@@ -86,34 +86,34 @@
 
         code_003a
   003a:2e 00c5             bt code_0102
-  003d:89 82              lsg
+  003d:89 82              lsg global130
   003f:35 03              ldi 3
   0041:1a                 eq?
   0042:30 000f            bnt code_0054
   0045:78               push1
   0046:39 36            pushi 36                       // $36 xStep
-  0048:45 05 02         callb procedure_0005 2         //
+  0048:45 05 02         callb procedure_0005 2         // proc0_5
 
   004b:30 0006            bnt code_0054
   004e:78               push1
   004f:39 52            pushi 52                       // $52 icon
-  0051:45 05 02         callb procedure_0005 2         //
+  0051:45 05 02         callb procedure_0005 2         // proc0_5
 
 
         code_0054
   0054:2e 00ab             bt code_0102
-  0057:89 82              lsg
+  0057:89 82              lsg global130
   0059:35 04              ldi 4
   005b:1a                 eq?
   005c:30 001b            bnt code_007a
   005f:78               push1
   0060:39 30            pushi 30                       // $30 b-moveCnt
-  0062:45 05 02         callb procedure_0005 2         //
+  0062:45 05 02         callb procedure_0005 2         // proc0_5
 
   0065:30 0012            bnt code_007a
   0068:78               push1
   0069:39 2f            pushi 2f                       // $2f dy
-  006b:45 05 02         callb procedure_0005 2         //
+  006b:45 05 02         callb procedure_0005 2         // proc0_5
 
   006e:30 0009            bnt code_007a
   0071:38 0234          pushi 234                      // $234 whichChar
@@ -125,81 +125,81 @@
 
         code_007a
   007a:2e 0085             bt code_0102
-  007d:89 82              lsg
+  007d:89 82              lsg global130
   007f:35 07              ldi 7
   0081:1a                 eq?
   0082:30 000f            bnt code_0094
   0085:78               push1
   0086:39 22            pushi 22                       // $22 type
-  0088:45 05 02         callb procedure_0005 2         //
+  0088:45 05 02         callb procedure_0005 2         // proc0_5
 
   008b:30 0006            bnt code_0094
   008e:78               push1
   008f:39 23            pushi 23                       // $23 window
-  0091:45 05 02         callb procedure_0005 2         //
+  0091:45 05 02         callb procedure_0005 2         // proc0_5
 
 
         code_0094
   0094:2e 006b             bt code_0102
-  0097:89 82              lsg
+  0097:89 82              lsg global130
   0099:35 08              ldi 8
   009b:1a                 eq?
   009c:30 0036            bnt code_00d5
   009f:78               push1
   00a0:39 3a            pushi 3a                       // $3a heading
-  00a2:45 05 02         callb procedure_0005 2         //
+  00a2:45 05 02         callb procedure_0005 2         // proc0_5
 
   00a5:30 002d            bnt code_00d5
   00a8:78               push1
   00a9:38 00bf          pushi bf                       // $bf maskCel
-  00ac:45 05 02         callb procedure_0005 2         //
+  00ac:45 05 02         callb procedure_0005 2         // proc0_5
 
   00af:2e 0050             bt code_0102
   00b2:78               push1
   00b3:38 00bf          pushi bf                       // $bf maskCel
-  00b6:45 05 02         callb procedure_0005 2         //
+  00b6:45 05 02         callb procedure_0005 2         // proc0_5
 
   00b9:18                 not
   00ba:30 0018            bnt code_00d5
   00bd:78               push1
   00be:39 0a            pushi a                        // $a nsLeft
-  00c0:45 05 02         callb procedure_0005 2         //
+  00c0:45 05 02         callb procedure_0005 2         // proc0_5
 
   00c3:2e 003c             bt code_0102
   00c6:78               push1
   00c7:38 00a0          pushi a0                       // $a0 mute
-  00ca:45 05 02         callb procedure_0005 2         //
+  00ca:45 05 02         callb procedure_0005 2         // proc0_5
 
   00cd:2e 0032             bt code_0102
-  00d0:89 9b              lsg
+  00d0:89 9b              lsg global155
   00d2:35 2a              ldi 2a
   00d4:1e                 gt?
 
         code_00d5
   00d5:2e 002a             bt code_0102
-  00d8:89 82              lsg
+  00d8:89 82              lsg global130
   00da:35 09              ldi 9
   00dc:1a                 eq?
   00dd:30 0011            bnt code_00f1
   00e0:78               push1
   00e1:38 0091          pushi 91                       // $91 globalize
-  00e4:45 05 02         callb procedure_0005 2         //
+  00e4:45 05 02         callb procedure_0005 2         // proc0_5
 
   00e7:2e 0018             bt code_0102
   00ea:78               push1
   00eb:38 0092          pushi 92                       // $92 cycleCnt
-  00ee:45 05 02         callb procedure_0005 2         //
+  00ee:45 05 02         callb procedure_0005 2         // proc0_5
 
 
         code_00f1
   00f1:2e 000e             bt code_0102
-  00f4:89 82              lsg
+  00f4:89 82              lsg global130
   00f6:35 0c              ldi c
   00f8:1a                 eq?
   00f9:30 0014            bnt code_0110
   00fc:78               push1
   00fd:39 1b            pushi 1b                       // $1b elements
-  00ff:45 05 02         callb procedure_0005 2         //
+  00ff:45 05 02         callb procedure_0005 2         // proc0_5
 
 
         code_0102
@@ -207,7 +207,7 @@
   0105:38 0179          pushi 179                      // $179 newRoom
   0108:78               push1
   0109:38 00a0          pushi a0                       // $a0 mute
-  010c:81 02              lag
+  010c:81 02              lag global2
   010e:4a 06             send 6
 
 
@@ -216,11 +216,11 @@
   0112:76               push0
   0113:57 43 04         super Rm 4
 
-  0116:81 22              lag
+  0116:81 22              lag global34
   0118:a3 03              sal local3
   011a:35 00              ldi 0
-  011c:a1 22              sag
-  011e:89 57              lsg
+  011c:a1 22              sag global34
+  011e:89 57              lsg global87
   0120:3c                 dup
   0121:35 00              ldi 0
   0123:1a                 eq?
@@ -248,11 +248,11 @@
   0142:a3 02              sal local2
   0144:78               push1
   0145:39 04            pushi 4                        // $4 x
-  0147:45 06 02         callb procedure_0006 2         //
+  0147:45 06 02         callb procedure_0006 2         // proc0_6
 
   014a:39 2b            pushi 2b                       // $2b number
   014c:76               push0
-  014d:81 64              lag
+  014d:81 64              lag gRgnMusic
   014f:4a 04             send 4
 
   0151:36                push
@@ -261,14 +261,14 @@
   0156:2e 0013             bt code_016c
   0159:39 5d            pushi 5d                       // $5d handle
   015b:76               push0
-  015c:81 64              lag
+  015c:81 64              lag gRgnMusic
   015e:4a 04             send 4
 
   0160:18                 not
   0161:2e 0008             bt code_016c
   0164:39 61            pushi 61                       // $61 vol
   0166:76               push0
-  0167:81 64              lag
+  0167:81 64              lag gRgnMusic
   0169:4a 04             send 4
 
   016b:18                 not
@@ -283,7 +283,7 @@
   0178:39 ff            pushi ff                       // $ff syncNum
   017a:39 2a            pushi 2a                       // $2a play
   017c:76               push0
-  017d:81 64              lag
+  017d:81 64              lag gRgnMusic
   017f:4a 10             send 10
 
 
@@ -320,7 +320,7 @@
 
   01b1:78               push1
   01b2:38 0089          pushi 89                       // $89 register
-  01b5:45 05 02         callb procedure_0005 2         //
+  01b5:45 05 02         callb procedure_0005 2         // proc0_5
 
   01b8:30 0008            bnt code_01c3
   01bb:39 6b            pushi 6b                       // $6b init
@@ -358,7 +358,7 @@
   01f5:46 0326 0003 18  calle 326 procedure_0003 18    //
 
   01fb:76               push0
-  01fc:45 04 00         callb procedure_0004 0         //
+  01fc:45 04 00         callb procedure_0004 0         // proc0_4
 
   01ff:78               push1
   0200:76               push0
@@ -370,7 +370,7 @@
   020c:39 43            pushi 43                       // $43 at
   020e:78               push1
   020f:76               push0
-  0210:81 45              lag
+  0210:81 45              lag gIconBar
   0212:4a 06             send 6
 
   0214:4a 06             send 6
@@ -382,17 +382,17 @@
   0217:c3 01              +al local1
   0219:78               push1
   021a:39 46            pushi 46                       // $46 width
-  021c:45 05 02         callb procedure_0005 2         //
+  021c:45 05 02         callb procedure_0005 2         // proc0_5
 
   021f:30 0013            bnt code_0235
   0222:78               push1
   0223:39 46            pushi 46                       // $46 width
-  0225:45 07 02         callb procedure_0007 2         //
+  0225:45 07 02         callb procedure_0007 2         // proc0_7
 
   0228:7a               push2
   0229:38 044c          pushi 44c                      // $44c sel_1100
   022c:39 12            pushi 12                       // $12 illegalBits
-  022e:47 0d 04 04      calle d procedure_0004 4       //
+  022e:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0232:32 001b            jmp code_0250
 
@@ -419,7 +419,7 @@
     (method (dispose)                                  // method_0251
   0251:78               push1
   0252:39 04            pushi 4                        // $4 x
-  0254:45 07 02         callb procedure_0007 2         //
+  0254:45 07 02         callb procedure_0007 2         // proc0_7
 
   0257:38 00a7          pushi a7                       // $a7 enable
   025a:39 06            pushi 6                        // $6 loop
@@ -429,18 +429,18 @@
   0261:39 05            pushi 5                        // $5 view
   0263:39 06            pushi 6                        // $6 loop
   0265:39 07            pushi 7                        // $7 cel
-  0267:81 45              lag
+  0267:81 45              lag gIconBar
   0269:4a 10             send 10
 
   026b:83 03              lal local3
-  026d:a1 22              sag
+  026d:a1 22              sag global34
   026f:39 28            pushi 28                       // $28 message
   0271:78               push1
   0272:78               push1
   0273:39 43            pushi 43                       // $43 at
   0275:78               push1
   0276:76               push0
-  0277:81 45              lag
+  0277:81 45              lag gIconBar
   0279:4a 06             send 6
 
   027b:4a 06             send 6
@@ -526,7 +526,7 @@
   02fe:76               push0
   02ff:38 00ce          pushi ce                       // $ce curIcon
   0302:76               push0
-  0303:81 45              lag
+  0303:81 45              lag gIconBar
   0305:4a 04             send 4
 
   0307:4a 04             send 4
@@ -541,25 +541,25 @@
   0316:54 06             self 6
 
   0318:30 003b            bnt code_0356
-  031b:89 82              lsg
+  031b:89 82              lsg global130
   031d:35 09              ldi 9
   031f:1a                 eq?
   0320:30 0007            bnt code_032a
   0323:78               push1
   0324:39 24            pushi 24                       // $24 cursor
-  0326:45 05 02         callb procedure_0005 2         //
+  0326:45 05 02         callb procedure_0005 2         // proc0_5
 
   0329:18                 not
 
         code_032a
   032a:2e 000f             bt code_033c
-  032d:89 82              lsg
+  032d:89 82              lsg global130
   032f:35 0c              ldi c
   0331:1a                 eq?
   0332:30 0021            bnt code_0356
   0335:78               push1
   0336:39 26            pushi 26                       // $26 mark
-  0338:45 05 02         callb procedure_0005 2         //
+  0338:45 05 02         callb procedure_0005 2         // proc0_5
 
   033b:18                 not
 
@@ -569,7 +569,7 @@
   0341:38 044c          pushi 44c                      // $44c sel_1100
   0344:39 13            pushi 13                       // $13 brTop
   0346:78               push1
-  0347:47 0d 04 06      calle d procedure_0004 6       //
+  0347:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   034b:39 4c            pushi 4c                       // $4c claimed
   034d:78               push1
@@ -793,7 +793,7 @@
     (method (init)                                     // method_0534
   0534:78               push1
   0535:38 0089          pushi 89                       // $89 register
-  0538:45 05 02         callb procedure_0005 2         //
+  0538:45 05 02         callb procedure_0005 2         // proc0_5
 
   053b:30 0005            bnt code_0543
   053e:34 00da            ldi da
@@ -981,7 +981,7 @@
   06dc:76               push0
   06dd:38 00ce          pushi ce                       // $ce curIcon
   06e0:76               push0
-  06e1:81 45              lag
+  06e1:81 45              lag gIconBar
   06e3:4a 04             send 4
 
   06e5:4a 04             send 4
@@ -1043,7 +1043,7 @@
 
   073f:30 0004            bnt code_0746
   0742:35 18              ldi 18
-  0744:a1 70              sag
+  0744:a1 70              sag global112
 
         code_0746
   0746:2e 0131             bt code_087a
@@ -1064,7 +1064,7 @@
 
   0764:30 0004            bnt code_076b
   0767:35 27              ldi 27
-  0769:a1 70              sag
+  0769:a1 70              sag global112
 
         code_076b
   076b:2e 010c             bt code_087a
@@ -1085,7 +1085,7 @@
 
   078a:30 0004            bnt code_0791
   078d:35 36              ldi 36
-  078f:a1 70              sag
+  078f:a1 70              sag global112
 
         code_0791
   0791:2e 00e6             bt code_087a
@@ -1106,7 +1106,7 @@
 
   07b0:30 0004            bnt code_07b7
   07b3:35 46              ldi 46
-  07b5:a1 70              sag
+  07b5:a1 70              sag global112
 
         code_07b7
   07b7:2e 00c0             bt code_087a
@@ -1127,7 +1127,7 @@
 
   07d6:30 0004            bnt code_07dd
   07d9:35 56              ldi 56
-  07db:a1 70              sag
+  07db:a1 70              sag global112
 
         code_07dd
   07dd:2e 009a             bt code_087a
@@ -1148,7 +1148,7 @@
 
   07fc:30 0004            bnt code_0803
   07ff:35 65              ldi 65
-  0801:a1 70              sag
+  0801:a1 70              sag global112
 
         code_0803
   0803:2e 0074             bt code_087a
@@ -1169,7 +1169,7 @@
 
   0823:30 0004            bnt code_082a
   0826:35 75              ldi 75
-  0828:a1 70              sag
+  0828:a1 70              sag global112
 
         code_082a
   082a:2e 004d             bt code_087a
@@ -1190,7 +1190,7 @@
 
   084a:30 0005            bnt code_0852
   084d:34 0085            ldi 85
-  0850:a1 70              sag
+  0850:a1 70              sag global112
 
         code_0852
   0852:2e 0025             bt code_087a
@@ -1211,7 +1211,7 @@
 
   0872:30 0056            bnt code_08cb
   0875:34 0095            ldi 95
-  0878:a1 70              sag
+  0878:a1 70              sag global112
 
         code_087a
   087a:30 004e            bnt code_08cb
@@ -1245,7 +1245,7 @@
   08a4:76               push0
   08a5:38 00ce          pushi ce                       // $ce curIcon
   08a8:76               push0
-  08a9:81 45              lag
+  08a9:81 45              lag gIconBar
   08ab:4a 04             send 4
 
   08ad:4a 04             send 4
@@ -1263,7 +1263,7 @@
   08be:38 0179          pushi 179                      // $179 newRoom
   08c1:78               push1
   08c2:39 78            pushi 78                       // $78 isEmpty
-  08c4:81 02              lag
+  08c4:81 02              lag global2
   08c6:4a 06             send 6
 
   08c8:32 0004            jmp code_08cf
@@ -1339,7 +1339,7 @@
 
   096d:65 20             aTop onMeCheck
   096f:36                push
-  0970:81 02              lag
+  0970:81 02              lag global2
   0972:4a 06             send 6
 
   0974:39 6b            pushi 6b                       // $6b init
@@ -1444,7 +1444,7 @@
 
   0a50:65 20             aTop onMeCheck
   0a52:36                push
-  0a53:81 02              lag
+  0a53:81 02              lag global2
   0a55:4a 06             send 6
 
   0a57:39 6b            pushi 6b                       // $6b init
@@ -1550,7 +1550,7 @@
 
   0b21:65 20             aTop onMeCheck
   0b23:36                push
-  0b24:81 02              lag
+  0b24:81 02              lag global2
   0b26:4a 06             send 6
 
   0b28:39 6b            pushi 6b                       // $6b init
@@ -1640,7 +1640,7 @@
   0bda:76               push0
   0bdb:38 00ce          pushi ce                       // $ce curIcon
   0bde:76               push0
-  0bdf:81 45              lag
+  0bdf:81 45              lag gIconBar
   0be1:4a 04             send 4
 
   0be3:4a 04             send 4
@@ -1677,25 +1677,25 @@
   0c11:32 0026            jmp code_0c3a
 
         code_0c14
-  0c14:89 0c              lsg
+  0c14:89 0c              lsg global12
   0c16:34 00dc            ldi dc
   0c19:1a                 eq?
   0c1a:30 000e            bnt code_0c2b
   0c1d:38 0179          pushi 179                      // $179 newRoom
   0c20:78               push1
   0c21:38 00dc          pushi dc                       // $dc cycler
-  0c24:81 02              lag
+  0c24:81 02              lag global2
   0c26:4a 06             send 6
 
   0c28:32 000f            jmp code_0c3a
 
         code_0c2b
   0c2b:35 49              ldi 49
-  0c2d:a1 70              sag
+  0c2d:a1 70              sag global112
   0c2f:38 0179          pushi 179                      // $179 newRoom
   0c32:78               push1
   0c33:38 00dc          pushi dc                       // $dc cycler
-  0c36:81 02              lag
+  0c36:81 02              lag global2
   0c38:4a 06             send 6
 
 

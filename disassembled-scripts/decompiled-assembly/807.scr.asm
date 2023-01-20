@@ -105,7 +105,7 @@
   0031:59 01            &rest 1
   0033:57 56 04         super StopWalk 4
 
-  0036:89 7e              lsg
+  0036:89 7e              lsg global126
   0038:3c                 dup
   0039:35 01              ldi 1
   003b:1a                 eq?
@@ -216,7 +216,7 @@
   00d3:72 012c          lofsa $012c                    // stepSound
   00d6:4a 0a             send a
 
-  00d8:c1 a4              +ag
+  00d8:c1 a4              +ag global164
 
         code_00da
   00da:48                 ret
@@ -262,7 +262,7 @@
   0014:9b 05             lsli local5
   0016:39 05            pushi 5                        // $5 view
   0018:76               push0
-  0019:81 00              lag
+  0019:81 00              lag gEgo
   001b:4a 04             send 4
 
   001d:1a                 eq?

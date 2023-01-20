@@ -109,7 +109,7 @@
   0097:a3 02              sal local2
   0099:39 04            pushi 4                        // $4 x
   009b:39 05            pushi 5                        // $5 view
-  009d:89 1b              lsg
+  009d:89 1b              lsg global27
   009f:39 06            pushi 6                        // $6 loop
   00a1:36                push
   00a2:43 74 08         callk FileIO 8
@@ -126,7 +126,7 @@
   00b2:39 74            pushi 74                       // $74 eachElementDo
   00b4:78               push1
   00b5:38 009c          pushi 9c                       // $9c stop
-  00b8:81 08              lag
+  00b8:81 08              lag global8
   00ba:4a 06             send 6
 
 
@@ -170,12 +170,12 @@
   00fa:4a 2e             send 2e
 
   00fc:35 00              ldi 0
-  00fe:a1 03              sag
+  00fe:a1 03              sag global3
   0100:35 00              ldi 0
   0102:a3 01              sal local1
   0104:78               push1
   0105:76               push0
-  0106:45 05 02         callb procedure_0005 2         //
+  0106:45 05 02         callb procedure_0005 2         // proc0_5
 
   0109:30 0005            bnt code_0111
   010c:35 5a              ldi 5a
@@ -188,7 +188,7 @@
   0113:a3 03              sal local3
   0115:78               push1
   0116:76               push0
-  0117:45 05 02         callb procedure_0005 2         //
+  0117:45 05 02         callb procedure_0005 2         // proc0_5
 
   011a:30 0005            bnt code_0122
   011d:35 3b              ldi 3b
@@ -245,46 +245,46 @@
   0163:35 00              ldi 0
 
         code_0165
-  0165:a1 57              sag
+  0165:a1 57              sag global87
   0167:38 0125          pushi 125                      // $125 detailLevel
   016a:78               push1
   016b:36                push
   016c:35 01              ldi 1
   016e:02                 add
   016f:36                push
-  0170:81 01              lag
+  0170:81 01              lag global1
   0172:4a 06             send 6
 
-  0174:89 57              lsg
+  0174:89 57              lsg global87
   0176:35 04              ldi 4
   0178:02                 add
-  0179:a1 8d              sag
+  0179:a1 8d              sag global141
   017b:35 06              ldi 6
-  017d:a1 03              sag
+  017d:a1 03              sag global3
   017f:38 0178          pushi 178                      // $178 egoMoveSpeed
   0182:78               push1
-  0183:89 8d              lsg
-  0185:81 01              lag
+  0183:89 8d              lsg global141
+  0185:81 01              lag global1
   0187:4a 06             send 6
 
   0189:39 38            pushi 38                       // $38 moveSpeed
   018b:78               push1
-  018c:89 8d              lsg
+  018c:89 8d              lsg global141
   018e:38 00db          pushi db                       // $db cycleSpeed
   0191:78               push1
-  0192:89 8d              lsg
-  0194:81 00              lag
+  0192:89 8d              lsg global141
+  0194:81 00              lag gEgo
   0196:4a 0c             send c
 
   0198:38 00a7          pushi a7                       // $a7 enable
   019b:76               push0
-  019c:81 45              lag
+  019c:81 45              lag gIconBar
   019e:4a 04             send 4
 
   01a0:38 0179          pushi 179                      // $179 newRoom
   01a3:78               push1
-  01a4:89 93              lsg
-  01a6:81 02              lag
+  01a4:89 93              lsg global147
+  01a6:81 02              lag global2
   01a8:4a 06             send 6
 
 

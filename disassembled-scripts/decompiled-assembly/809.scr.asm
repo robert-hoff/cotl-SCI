@@ -18,20 +18,20 @@
   000e:3f 65             link 65                       // (var $65)
   0010:38 0154          pushi 154                      // $154 eraseOnly
   0013:76               push0
-  0014:81 26              lag
+  0014:81 26              lag global38
   0016:4a 04             send 4
 
   0018:a5 64              sat temp100
   001a:38 0154          pushi 154                      // $154 eraseOnly
   001d:78               push1
   001e:78               push1
-  001f:81 26              lag
+  001f:81 26              lag global38
   0021:4a 06             send 6
 
   0023:39 03            pushi 3                        // $3 y
   0025:38 0329          pushi 329                      // $329 sel_809
   0028:76               push0
-  0029:89 1b              lsg
+  0029:89 1b              lsg global27
   002b:47 ff 04 06      calle ff procedure_0004 6      //
 
   002f:7a               push2
@@ -77,7 +77,7 @@
   007d:38 0154          pushi 154                      // $154 eraseOnly
   0080:78               push1
   0081:8d 64              lst temp100
-  0083:81 26              lag
+  0083:81 26              lag global38
   0085:4a 06             send 6
 
   0087:48                 ret

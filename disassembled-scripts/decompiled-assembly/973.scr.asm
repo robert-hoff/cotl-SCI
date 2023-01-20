@@ -45,7 +45,7 @@
   0059:39 73            pushi 73                       // $73 add
   005b:78               push1
   005c:7c            pushSelf
-  005d:81 07              lag
+  005d:81 07              lag global7
   005f:4a 06             send 6
 
   0061:39 71            pushi 71                       // $71 respondsTo
@@ -185,7 +185,7 @@
 
     (method (set)                                      // method_015f
   015f:3f 35             link 35                       // (var $35)
-  0161:81 03              lag
+  0161:81 03              lag global3
   0163:a5 02              sat temp2
   0165:36                push
   0166:35 00              ldi 0
@@ -354,7 +354,7 @@
   012a:39 54            pushi 54                       // $54 delete
   012c:78               push1
   012d:7c            pushSelf
-  012e:81 07              lag
+  012e:81 07              lag global7
   0130:4a 06             send 6
 
   0132:39 6c            pushi 6c                       // $6c dispose

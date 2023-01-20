@@ -93,7 +93,7 @@
   0051:39 77            pushi 77                       // $77 contains
   0053:78               push1
   0054:67 08             pTos client
-  0056:81 05              lag
+  0056:81 05              lag global5
   0058:4a 06             send 6
 
   005a:18                 not
@@ -476,7 +476,7 @@
 
     (method (nextCel)                                  // method_02d0
   02d0:78               push1
-  02d1:89 58              lsg
+  02d1:89 58              lsg global88
   02d3:63 0e             pToa cycleCnt
   02d5:04                 sub
   02d6:36                push
@@ -505,7 +505,7 @@
   02f7:32 0022            jmp code_031c
 
         code_02fa
-  02fa:81 58              lag
+  02fa:81 58              lag global88
   02fc:65 0e             aTop cycleCnt
   02fe:67 12             pTos loopIndex
   0300:67 0c             pTos cycleDir
@@ -532,7 +532,7 @@
     (method (cycleDone)                                // method_02a2
   02a2:35 01              ldi 1
   02a4:65 10             aTop completed
-  02a6:a1 25              sag
+  02a6:a1 25              sag global37
   02a8:48                 ret
     )
 

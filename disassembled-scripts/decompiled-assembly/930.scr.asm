@@ -58,7 +58,7 @@
   001a:30 000a            bnt code_0027
   001d:38 00ea          pushi ea                       // $ea obstacles
   0020:76               push0
-  0021:81 02              lag
+  0021:81 02              lag global2
   0023:4a 04             send 4
 
   0025:65 2e             aTop obstacles
@@ -290,7 +290,7 @@
         code_01d7
   01d7:38 00ea          pushi ea                       // $ea obstacles
   01da:76               push0
-  01db:81 02              lag
+  01db:81 02              lag global2
   01dd:4a 04             send 4
 
 

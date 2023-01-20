@@ -51,7 +51,7 @@
   0019:2e 0029             bt code_0045
   001c:39 03            pushi 3                        // $3 y
   001e:76               push0
-  001f:81 00              lag
+  001f:81 00              lag gEgo
   0021:4a 04             send 4
 
   0023:36                push
@@ -66,7 +66,7 @@
   002f:2e 0013             bt code_0045
   0032:39 03            pushi 3                        // $3 y
   0034:76               push0
-  0035:81 00              lag
+  0035:81 00              lag gEgo
   0037:4a 04             send 4
 
   0039:36                push
@@ -167,7 +167,7 @@
   00dd:2e 0029             bt code_0109
   00e0:39 03            pushi 3                        // $3 y
   00e2:76               push0
-  00e3:81 00              lag
+  00e3:81 00              lag gEgo
   00e5:4a 04             send 4
 
   00e7:36                push
@@ -182,7 +182,7 @@
   00f3:2e 0013             bt code_0109
   00f6:39 03            pushi 3                        // $3 y
   00f8:76               push0
-  00f9:81 00              lag
+  00f9:81 00              lag gEgo
   00fb:4a 04             send 4
 
   00fd:36                push
@@ -271,7 +271,7 @@
   0225:2e 0029             bt code_0251
   0228:39 03            pushi 3                        // $3 y
   022a:76               push0
-  022b:81 00              lag
+  022b:81 00              lag gEgo
   022d:4a 04             send 4
 
   022f:36                push
@@ -286,7 +286,7 @@
   023b:2e 0013             bt code_0251
   023e:39 03            pushi 3                        // $3 y
   0240:76               push0
-  0241:81 00              lag
+  0241:81 00              lag gEgo
   0243:4a 04             send 4
 
   0245:36                push
@@ -370,7 +370,7 @@
   033d:2e 0029             bt code_0369
   0340:39 03            pushi 3                        // $3 y
   0342:76               push0
-  0343:81 00              lag
+  0343:81 00              lag gEgo
   0345:4a 04             send 4
 
   0347:36                push
@@ -385,7 +385,7 @@
   0353:2e 0013             bt code_0369
   0356:39 03            pushi 3                        // $3 y
   0358:76               push0
-  0359:81 00              lag
+  0359:81 00              lag gEgo
   035b:4a 04             send 4
 
   035d:36                push

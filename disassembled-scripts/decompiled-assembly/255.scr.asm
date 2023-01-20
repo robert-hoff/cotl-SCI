@@ -434,7 +434,7 @@
   02fc:3f 01             link 1                        // (var $1)
   02fe:39 21            pushi 21                       // $21 font
   0300:78               push1
-  0301:89 16              lsg
+  0301:89 16              lsg global22
   0303:39 72            pushi 72                       // $72 yourself
   0305:76               push0
   0306:39 6a            pushi 6a                       // $6a new
@@ -626,7 +626,7 @@
 
     (method (setSize)                                  // method_04c9
   04c9:3f 04             link 4                        // (var $4)
-  04cb:81 55              lag
+  04cb:81 55              lag global85
   04cd:65 1c             aTop font
   04cf:39 05            pushi 5                        // $5 view
   04d1:35 00              ldi 0
@@ -1184,12 +1184,12 @@
     )
     (method (doit)                                     // method_08f3
   08f3:3f 05             link 5                        // (var $5)
-  08f5:89 56              lsg
+  08f5:89 56              lsg global86
   08f7:76               push0
   08f8:43 42 00         callk GetTime 0
 
   08fb:02                 add
-  08fc:a1 58              sag
+  08fc:a1 58              sag global88
   08fe:35 00              ldi 0
   0900:a5 00              sat temp0
   0902:35 01              ldi 1
@@ -1237,7 +1237,7 @@
   093f:63 10             pToa theItem
   0941:18                 not
   0942:30 000d            bnt code_0952
-  0945:81 4f              lag
+  0945:81 4f              lag global79
   0947:a5 03              sat temp3
   0949:76               push0
   094a:43 42 00         callk GetTime 0
@@ -1257,12 +1257,12 @@
   095a:85 02              lat temp2
   095c:18                 not
   095d:30 008e            bnt code_09ee
-  0960:89 56              lsg
+  0960:89 56              lsg global86
   0962:76               push0
   0963:43 42 00         callk GetTime 0
 
   0966:02                 add
-  0967:a1 58              sag
+  0967:a1 58              sag global88
   0969:39 74            pushi 74                       // $74 eachElementDo
   096b:78               push1
   096c:38 00b0          pushi b0                       // $b0 cycle
@@ -1371,17 +1371,17 @@
   0a37:54 0a             self a
 
   0a39:7c            pushSelf
-  0a3a:81 19              lag
+  0a3a:81 19              lag global25
   0a3c:1a                 eq?
   0a3d:30 000e            bnt code_0a4e
   0a40:78               push1
-  0a41:89 29              lsg
+  0a41:89 29              lsg global41
   0a43:43 15 02         callk SetPort 2
 
   0a46:35 00              ldi 0
-  0a48:a1 19              sag
+  0a48:a1 19              sag global25
   0a4a:35 00              ldi 0
-  0a4c:a1 29              sag
+  0a4c:a1 29              sag global41
 
         code_0a4e
   0a4e:63 0e             pToa window
@@ -1417,12 +1417,12 @@
   0891:43 0a 00         callk PicNotValid 0
 
   0894:30 0012            bnt code_08a9
-  0897:81 05              lag
+  0897:81 05              lag global5
   0899:30 000d            bnt code_08a9
   089c:7a               push2
   089d:39 1b            pushi 1b                       // $1b elements
   089f:76               push0
-  08a0:81 05              lag
+  08a0:81 05              lag global5
   08a2:4a 04             send 4
 
   08a4:36                push
@@ -1557,7 +1557,7 @@
 
   0ac4:38 00bb          pushi bb                       // $bb setCursor
   0ac7:39 04            pushi 4                        // $4 x
-  0ac9:89 13              lsg
+  0ac9:89 13              lsg global19
   0acb:78               push1
   0acc:39 0a            pushi a                        // $a nsLeft
   0ace:76               push0
@@ -1591,7 +1591,7 @@
   0af2:35 03              ldi 3
   0af4:04                 sub
   0af5:36                push
-  0af6:81 01              lag
+  0af6:81 01              lag global1
   0af8:4a 0c             send c
 
 
@@ -1657,7 +1657,7 @@
 
   0b4b:38 00bb          pushi bb                       // $bb setCursor
   0b4e:39 04            pushi 4                        // $4 x
-  0b50:89 13              lsg
+  0b50:89 13              lsg global19
   0b52:78               push1
   0b53:39 0a            pushi a                        // $a nsLeft
   0b55:76               push0
@@ -1691,7 +1691,7 @@
   0b79:35 03              ldi 3
   0b7b:04                 sub
   0b7c:36                push
-  0b7d:81 01              lag
+  0b7d:81 01              lag global1
   0b7f:4a 0c             send c
 
 
@@ -2558,13 +2558,13 @@
   1133:a5 06              sat temp6
   1135:39 57            pushi 57                       // $57 printLang
   1137:76               push0
-  1138:81 01              lag
+  1138:81 01              lag global1
   113a:4a 04             send 4
 
   113c:a4 0402            sat temp1026
   113f:39 58            pushi 58                       // $58 subtitleLang
   1141:76               push0
-  1142:81 01              lag
+  1142:81 01              lag global1
   1144:4a 04             send 4
 
   1146:a4 0403            sat temp1027
@@ -2580,7 +2580,7 @@
   115d:a4 0408            sat temp1032
   1160:39 23            pushi 23                       // $23 window
   1162:78               push1
-  1163:89 26              lsg
+  1163:89 26              lsg global38
   1165:39 17            pushi 17                       // $17 name
   1167:78               push1
   1168:72 192d          lofsa $192d                    // PrintD
@@ -2673,7 +2673,7 @@
   11fb:39 58            pushi 58                       // $58 subtitleLang
   11fd:78               push1
   11fe:39 51            pushi 51                       // $51 button
-  1200:81 01              lag
+  1200:81 01              lag global1
   1202:4a 0c             send c
 
   1204:39 03            pushi 3                        // $3 y
@@ -2691,7 +2691,7 @@
   121b:39 58            pushi 58                       // $58 subtitleLang
   121d:78               push1
   121e:8c 0403            lst temp1027
-  1221:81 01              lag
+  1221:81 01              lag global1
   1223:4a 0c             send c
 
   1225:39 03            pushi 3                        // $3 y
@@ -2745,7 +2745,7 @@
   127a:36                push
   127b:39 21            pushi 21                       // $21 font
   127d:78               push1
-  127e:89 16              lsg
+  127e:89 16              lsg global22
   1280:39 6a            pushi 6a                       // $6a new
   1282:76               push0
   1283:51 0d            class DText
@@ -2984,7 +2984,7 @@
   140c:7a               push2
   140d:39 1b            pushi 1b                       // $1b elements
   140f:76               push0
-  1410:81 05              lag
+  1410:81 05              lag global5
   1412:4a 04             send 4
 
   1414:36                push
@@ -3167,7 +3167,7 @@
   1529:35 51              ldi 51
   152b:1c                 ne?
   152c:30 0032            bnt code_1561
-  152f:81 19              lag
+  152f:81 19              lag global25
   1531:30 0005            bnt code_1539
   1534:39 6c            pushi 6c                       // $6c dispose
   1536:76               push0
@@ -3634,13 +3634,13 @@
   17e0:76               push0
   17e1:43 14 00         callk GetPort 0
 
-  17e4:a1 29              sag
+  17e4:a1 29              sag global41
   17e6:78               push1
   17e7:8d 0b              lst temp11
   17e9:43 15 02         callk SetPort 2
 
   17ec:85 09              lat temp9
-  17ee:a1 19              sag
+  17ee:a1 19              sag global25
   17f0:48                 ret
   17f1:32 0009            jmp code_17fd
 
@@ -3648,7 +3648,7 @@
   17f4:38 009d          pushi 9d                       // $9d pause
   17f7:78               push1
   17f8:78               push1
-  17f9:81 08              lag
+  17f9:81 08              lag global8
   17fb:4a 06             send 6
 
 
@@ -3747,7 +3747,7 @@
   1883:38 009d          pushi 9d                       // $9d pause
   1886:78               push1
   1887:76               push0
-  1888:81 08              lag
+  1888:81 08              lag global8
   188a:4a 06             send 6
 
   188c:85 04              lat temp4

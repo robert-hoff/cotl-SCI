@@ -229,7 +229,7 @@
   0113:57 78 04         super HedgeRow 4
 
   0116:39 1e            pushi 1e                       // $1e mode
-  0118:81 0c              lag
+  0118:81 0c              lag global12
   011a:24                 le?
   011b:30 0004            bnt code_0122
   011e:60               pprev
@@ -247,7 +247,7 @@
   012f:39 ff            pushi ff                       // $ff syncNum
   0131:39 2a            pushi 2a                       // $2a play
   0133:76               push0
-  0134:81 64              lag
+  0134:81 64              lag gRgnMusic
   0136:4a 10             send 10
 
   0138:32 0010            jmp code_014b
@@ -259,7 +259,7 @@
   0142:39 08            pushi 8                        // $8 underBits
   0144:39 1e            pushi 1e                       // $1e mode
   0146:76               push0
-  0147:81 64              lag
+  0147:81 64              lag gRgnMusic
   0149:4a 0c             send c
 
 
@@ -315,7 +315,7 @@
   019c:4a 1e             send 1e
 
   019e:36                push
-  019f:81 02              lag
+  019f:81 02              lag global2
   01a1:4a 08             send 8
 
   01a3:48                 ret
@@ -370,7 +370,7 @@
   0050:78               push1
   0051:85 00              lat temp0
   0053:9b 00             lsli local0
-  0055:81 0a              lag
+  0055:81 0a              lag global10
   0057:4a 06             send 6
 
   0059:c5 00              +at temp0
@@ -379,7 +379,7 @@
         code_005e
   005e:39 3c            pushi 3c                       // $3c doit
   0060:76               push0
-  0061:81 0a              lag
+  0061:81 0a              lag global10
   0063:4a 04             send 4
 
   0065:48                 ret
@@ -431,7 +431,7 @@
   00ae:78               push1
   00af:85 00              lat temp0
   00b1:9b 29             lsli local41
-  00b3:81 0a              lag
+  00b3:81 0a              lag global10
   00b5:4a 06             send 6
 
   00b7:c5 00              +at temp0
@@ -440,7 +440,7 @@
         code_00bc
   00bc:39 3c            pushi 3c                       // $3c doit
   00be:76               push0
-  00bf:81 0a              lag
+  00bf:81 0a              lag global10
   00c1:4a 04             send 4
 
   00c3:48                 ret

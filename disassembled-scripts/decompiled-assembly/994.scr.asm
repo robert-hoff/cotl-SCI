@@ -73,7 +73,7 @@
   005b:8f 01              lsp param1
   005d:57 05 06         super EventHandler 6
 
-  0060:81 22              lag
+  0060:81 22              lag global34
   0062:30 0029            bnt code_008e
   0065:39 6f            pushi 6f                       // $6f isKindOf
   0067:78               push1
@@ -85,8 +85,8 @@
   006f:30 001c            bnt code_008e
   0072:39 03            pushi 3                        // $3 y
   0074:8f 01              lsp param1
-  0076:89 06              lsg
-  0078:89 1c              lsg
+  0076:89 06              lsg global6
+  0078:89 1c              lsg global28
   007a:46 03e7 0005 06  calle 3e7 procedure_0005 6     //
 
   0080:18                 not
@@ -236,14 +236,14 @@
   01e1:30 00ba            bnt code_029e
   01e4:39 36            pushi 36                       // $36 xStep
   01e6:76               push0
-  01e7:81 00              lag
+  01e7:81 00              lag gEgo
   01e9:4a 04             send 4
 
   01eb:36                push
   01ec:39 03            pushi 3                        // $3 y
   01ee:39 05            pushi 5                        // $5 view
   01f0:76               push0
-  01f1:81 00              lag
+  01f1:81 00              lag gEgo
   01f3:4a 04             send 4
 
   01f5:36                push
@@ -258,7 +258,7 @@
   0200:a5 00              sat temp0
   0202:39 37            pushi 37                       // $37 yStep
   0204:76               push0
-  0205:81 00              lag
+  0205:81 00              lag gEgo
   0207:4a 04             send 4
 
   0209:36                push
@@ -369,7 +369,7 @@
   0297:4a 18             send 18
 
   0299:36                push
-  029a:81 02              lag
+  029a:81 02              lag global2
   029c:4a 06             send 6
 
 
@@ -400,78 +400,78 @@
   0446:39 73            pushi 73                       // $73 add
   0448:76               push0
   0449:72 000c          lofsa $000c                    // cast
-  044c:a1 05              sag
+  044c:a1 05              sag global5
   044e:4a 04             send 4
 
   0450:39 73            pushi 73                       // $73 add
   0452:76               push0
   0453:72 0028          lofsa $0028                    // features
-  0456:a1 20              sag
+  0456:a1 20              sag global32
   0458:4a 04             send 4
 
   045a:39 73            pushi 73                       // $73 add
   045c:76               push0
   045d:72 009c          lofsa $009c                    // sFeatures
-  0460:a1 21              sag
+  0460:a1 21              sag global33
   0462:4a 04             send 4
 
   0464:39 73            pushi 73                       // $73 add
   0466:76               push0
   0467:72 00da          lofsa $00da                    // sounds
-  046a:a1 08              sag
+  046a:a1 08              sag global8
   046c:4a 04             send 4
 
   046e:39 73            pushi 73                       // $73 add
   0470:76               push0
   0471:72 0134          lofsa $0134                    // regions
-  0474:a1 06              sag
+  0474:a1 06              sag global6
   0476:4a 04             send 4
 
   0478:39 73            pushi 73                       // $73 add
   047a:76               push0
   047b:72 0150          lofsa $0150                    // locales
-  047e:a1 1c              sag
+  047e:a1 1c              sag global28
   0480:4a 04             send 4
 
   0482:39 73            pushi 73                       // $73 add
   0484:76               push0
   0485:72 0182          lofsa $0182                    // addToPics
-  0488:a1 0a              sag
+  0488:a1 0a              sag global10
   048a:4a 04             send 4
 
   048c:39 73            pushi 73                       // $73 add
   048e:76               push0
   048f:72 01be          lofsa $01be                    // timers
-  0492:a1 07              sag
+  0492:a1 07              sag global7
   0494:4a 04             send 4
 
   0496:39 73            pushi 73                       // $73 add
   0498:76               push0
   0499:72 0044          lofsa $0044                    // theDoits
-  049c:a1 4e              sag
+  049c:a1 4e              sag global78
   049e:4a 04             send 4
 
   04a0:35 00              ldi 0
-  04a2:a1 54              sag
+  04a2:a1 54              sag global84
   04a4:76               push0
   04a5:43 64 00         callk GetSaveDir 0
 
-  04a8:a1 1d              sag
+  04a8:a1 1d              sag global29
   04aa:39 6b            pushi 6b                       // $6b init
   04ac:76               push0
   04ad:51 40            class Inv
   04af:4a 04             send 4
 
-  04b1:81 50              lag
+  04b1:81 50              lag global80
   04b3:18                 not
   04b4:30 0004            bnt code_04bb
   04b7:51 31            class User
-  04b9:a1 50              sag
+  04b9:a1 50              sag global80
 
         code_04bb
   04bb:39 6b            pushi 6b                       // $6b init
   04bd:76               push0
-  04be:81 50              lag
+  04be:81 50              lag global80
   04c0:4a 04             send 4
 
   04c2:48                 ret
@@ -479,32 +479,32 @@
 
     (method (doit)                                     // method_04c3
   04c3:3f 02             link 2                        // (var $2)
-  04c5:89 56              lsg
+  04c5:89 56              lsg global86
   04c7:76               push0
   04c8:43 42 00         callk GetTime 0
 
   04cb:02                 add
-  04cc:a1 58              sag
-  04ce:81 54              lag
+  04cc:a1 58              sag global88
+  04ce:81 54              lag global84
   04d0:30 00af            bnt code_0582
-  04d3:89 58              lsg
-  04d5:81 4f              lag
+  04d3:89 58              lsg global88
+  04d5:81 4f              lag global79
   04d7:02                 add
   04d8:a5 01              sat temp1
 
         code_04da
-  04da:81 54              lag
+  04da:81 54              lag global84
   04dc:30 0134            bnt code_0613
-  04df:89 56              lsg
+  04df:89 56              lsg global86
   04e1:76               push0
   04e2:43 42 00         callk GetTime 0
 
   04e5:02                 add
-  04e6:a1 58              sag
+  04e6:a1 58              sag global88
   04e8:39 74            pushi 74                       // $74 eachElementDo
   04ea:78               push1
   04eb:39 3c            pushi 3c                       // $3c doit
-  04ed:81 54              lag
+  04ed:81 54              lag global84
   04ef:4a 06             send 6
 
   04f1:39 22            pushi 22                       // $22 type
@@ -543,9 +543,9 @@
   0524:4a 04             send 4
 
   0526:30 ffb1            bnt code_04da
-  0529:81 54              lag
+  0529:81 54              lag global84
   052b:30 ffac            bnt code_04da
-  052e:89 58              lsg
+  052e:89 58              lsg global88
   0530:85 01              lat temp1
   0532:04                 sub
   0533:36                push
@@ -593,7 +593,7 @@
   0571:38 0081          pushi 81                       // $81 handleEvent
   0574:72 0a1a          lofsa $0a1a                    // talkerEvent
   0577:36                push
-  0578:81 54              lag
+  0578:81 54              lag global84
   057a:4a 08             send 8
 
   057c:32 ff5b            jmp code_04da
@@ -603,16 +603,16 @@
   0582:39 74            pushi 74                       // $74 eachElementDo
   0584:78               push1
   0585:38 00a4          pushi a4                       // $a4 check
-  0588:81 08              lag
+  0588:81 08              lag global8
   058a:4a 06             send 6
 
   058c:39 74            pushi 74                       // $74 eachElementDo
   058e:78               push1
   058f:39 3c            pushi 3c                       // $3c doit
-  0591:81 07              lag
+  0591:81 07              lag global7
   0593:4a 06             send 6
 
-  0595:81 19              lag
+  0595:81 19              lag global25
   0597:30 0006            bnt code_05a0
   059a:38 00a4          pushi a4                       // $a4 check
   059d:76               push0
@@ -623,26 +623,26 @@
   05a0:7a               push2
   05a1:39 1b            pushi 1b                       // $1b elements
   05a3:76               push0
-  05a4:81 05              lag
+  05a4:81 05              lag global5
   05a6:4a 04             send 4
 
   05a8:36                push
   05a9:78               push1
   05aa:43 0b 04         callk Animate 4
 
-  05ad:81 54              lag
+  05ad:81 54              lag global84
   05af:30 0001            bnt code_05b3
   05b2:48                 ret
 
         code_05b3
-  05b3:81 25              lag
+  05b3:81 25              lag global37
   05b5:30 000e            bnt code_05c6
   05b8:35 00              ldi 0
-  05ba:a1 25              sag
+  05ba:a1 25              sag global37
   05bc:39 74            pushi 74                       // $74 eachElementDo
   05be:78               push1
   05bf:38 00da          pushi da                       // $da motionCue
-  05c2:81 05              lag
+  05c2:81 05              lag global5
   05c4:4a 06             send 6
 
 
@@ -658,37 +658,37 @@
   05d0:39 74            pushi 74                       // $74 eachElementDo
   05d2:78               push1
   05d3:39 3c            pushi 3c                       // $3c doit
-  05d5:81 06              lag
+  05d5:81 06              lag global6
   05d7:4a 06             send 6
 
-  05d9:81 54              lag
+  05d9:81 54              lag global84
   05db:30 0001            bnt code_05df
   05de:48                 ret
 
         code_05df
-  05df:89 0d              lsg
-  05e1:81 0b              lag
+  05df:89 0d              lsg global13
+  05e1:81 0b              lag global11
   05e3:1a                 eq?
   05e4:30 0007            bnt code_05ee
   05e7:39 3c            pushi 3c                       // $3c doit
   05e9:76               push0
-  05ea:81 50              lag
+  05ea:81 50              lag global80
   05ec:4a 04             send 4
 
 
         code_05ee
   05ee:39 3c            pushi 3c                       // $3c doit
   05f0:76               push0
-  05f1:81 4e              lag
+  05f1:81 4e              lag global78
   05f3:4a 04             send 4
 
-  05f5:89 0d              lsg
-  05f7:81 0b              lag
+  05f5:89 0d              lsg global13
+  05f7:81 0b              lag global11
   05f9:1c                 ne?
   05fa:30 0008            bnt code_0605
   05fd:38 0179          pushi 179                      // $179 newRoom
   0600:78               push1
-  0601:89 0d              lsg
+  0601:89 0d              lsg global13
   0603:54 06             self 6
 
 
@@ -696,7 +696,7 @@
   0605:39 74            pushi 74                       // $74 eachElementDo
   0607:78               push1
   0608:39 54            pushi 54                       // $54 delete
-  060a:81 07              lag
+  060a:81 07              lag global7
   060c:4a 06             send 6
 
   060e:78               push1
@@ -710,37 +710,37 @@
 
     (method (play)                                     // method_02c0
   02c0:5c              selfID
-  02c1:a1 01              sag
+  02c1:a1 01              sag global1
   02c3:76               push0
   02c4:43 64 00         callk GetSaveDir 0
 
-  02c7:a1 1d              sag
+  02c7:a1 1d              sag global29
   02c9:76               push0
   02ca:43 2c 00         callk GameIsRestarting 0
 
   02cd:18                 not
   02ce:30 0006            bnt code_02d7
   02d1:78               push1
-  02d2:89 1d              lsg
+  02d2:89 1d              lsg global29
   02d4:43 5e 02         callk GetCWD 2
 
 
         code_02d7
   02d7:38 00bb          pushi bb                       // $bb setCursor
   02da:7a               push2
-  02db:89 15              lsg
+  02db:89 15              lsg global21
   02dd:78               push1
   02de:39 6b            pushi 6b                       // $6b init
   02e0:76               push0
   02e1:38 00bb          pushi bb                       // $bb setCursor
   02e4:7a               push2
-  02e5:89 14              lsg
+  02e5:89 14              lsg global20
   02e7:78               push1
   02e8:54 14             self 14
 
 
         code_02ea
-  02ea:81 04              lag
+  02ea:81 04              lag global4
   02ec:18                 not
   02ed:30 0008            bnt code_02f8
   02f0:39 3c            pushi 3c                       // $3c doit
@@ -754,7 +754,7 @@
     )
 
     (method (replay)                                   // method_0334
-  0334:81 18              lag
+  0334:81 18              lag global24
   0336:30 0005            bnt code_033e
   0339:39 6c            pushi 6c                       // $6c dispose
   033b:76               push0
@@ -764,10 +764,10 @@
         code_033e
   033e:39 7a            pushi 7a                       // $7a release
   0340:76               push0
-  0341:81 21              lag
+  0341:81 21              lag global33
   0343:4a 04             send 4
 
-  0345:81 19              lag
+  0345:81 19              lag global25
   0347:30 0005            bnt code_034f
   034a:39 6c            pushi 6c                       // $6c dispose
   034c:76               push0
@@ -780,11 +780,11 @@
   0352:39 63            pushi 63                       // $63 perform
   0354:72 1138          lofsa $1138                    // RU
   0357:36                push
-  0358:81 05              lag
+  0358:81 05              lag global5
   035a:4a 08             send 8
 
   035c:78               push1
-  035d:89 54              lsg
+  035d:89 54              lsg global84
   035f:43 06 02         callk IsObject 2
 
   0362:30 000a            bnt code_036f
@@ -792,28 +792,28 @@
   0367:7a               push2
   0368:39 08            pushi 8                        // $8 underBits
   036a:76               push0
-  036b:81 54              lag
+  036b:81 54              lag global84
   036d:4a 08             send 8
 
 
         code_036f
   036f:38 00bb          pushi bb                       // $bb setCursor
   0372:7a               push2
-  0373:89 15              lsg
+  0373:89 15              lsg global21
   0375:78               push1
-  0376:81 01              lag
+  0376:81 01              lag global1
   0378:4a 08             send 8
 
   037a:39 04            pushi 4                        // $4 x
   037c:38 0180          pushi 180                      // $180 curPic
   037f:76               push0
-  0380:81 02              lag
+  0380:81 02              lag global2
   0382:4a 04             send 4
 
   0384:36                push
   0385:39 1f            pushi 1f                       // $1f style
   0387:76               push0
-  0388:81 02              lag
+  0388:81 02              lag global2
   038a:4a 04             send 4
 
   038c:36                push
@@ -827,7 +827,7 @@
   0398:39 64            pushi 64                       // $64 moveDone
   039a:39 1f            pushi 1f                       // $1f style
   039c:76               push0
-  039d:81 02              lag
+  039d:81 02              lag global2
   039f:4a 04             send 4
 
   03a1:36                push
@@ -838,25 +838,25 @@
         code_03a7
   03a7:36                push
   03a8:78               push1
-  03a9:89 28              lsg
+  03a9:89 28              lsg global40
   03ab:43 08 08         callk DrawPic 8
 
-  03ae:89 24              lsg
+  03ae:89 24              lsg global36
   03b0:35 ff              ldi ff
   03b2:1c                 ne?
   03b3:30 000c            bnt code_03c2
   03b6:39 04            pushi 4                        // $4 x
-  03b8:89 24              lsg
+  03b8:89 24              lsg global36
   03ba:39 64            pushi 64                       // $64 moveDone
   03bc:76               push0
-  03bd:89 28              lsg
+  03bd:89 28              lsg global40
   03bf:43 08 08         callk DrawPic 8
 
 
         code_03c2
   03c2:38 013b          pushi 13b                      // $13b controls
   03c5:76               push0
-  03c6:81 02              lag
+  03c6:81 02              lag global2
   03c8:4a 04             send 4
 
   03ca:30 000d            bnt code_03da
@@ -864,14 +864,14 @@
   03cf:76               push0
   03d0:38 013b          pushi 13b                      // $13b controls
   03d3:76               push0
-  03d4:81 02              lag
+  03d4:81 02              lag global2
   03d6:4a 04             send 4
 
   03d8:4a 04             send 4
 
 
         code_03da
-  03da:81 0a              lag
+  03da:81 0a              lag global10
   03dc:30 0005            bnt code_03e4
   03df:39 3c            pushi 3c                       // $3c doit
   03e1:76               push0
@@ -881,7 +881,7 @@
         code_03e4
   03e4:38 00bb          pushi bb                       // $bb setCursor
   03e7:7a               push2
-  03e8:81 45              lag
+  03e8:81 45              lag gIconBar
   03ea:30 0019            bnt code_0406
   03ed:38 00ce          pushi ce                       // $ce curIcon
   03f0:76               push0
@@ -892,7 +892,7 @@
   03f8:76               push0
   03f9:38 00ce          pushi ce                       // $ce curIcon
   03fc:76               push0
-  03fd:81 45              lag
+  03fd:81 45              lag gIconBar
   03ff:4a 04             send 4
 
   0401:4a 04             send 4
@@ -900,12 +900,12 @@
   0403:32 0002            jmp code_0408
 
         code_0406
-  0406:81 14              lag
+  0406:81 14              lag global20
 
         code_0408
   0408:36                push
   0409:78               push1
-  040a:81 01              lag
+  040a:81 01              lag global1
   040c:4a 08             send 8
 
   040e:39 3c            pushi 3c                       // $3c doit
@@ -923,15 +923,15 @@
   041f:51 0a            class Sound
   0421:4a 06             send 6
 
-  0423:89 58              lsg
+  0423:89 58              lsg global88
   0425:76               push0
   0426:43 42 00         callk GetTime 0
 
   0429:04                 sub
-  042a:a1 56              sag
+  042a:a1 56              sag global86
 
         code_042c
-  042c:81 04              lag
+  042c:81 04              lag global4
   042e:18                 not
   042f:30 0008            bnt code_043a
   0432:39 3c            pushi 3c                       // $3c doit
@@ -951,7 +951,7 @@
   0619:39 6c            pushi 6c                       // $6c dispose
   061b:39 7a            pushi 7a                       // $7a release
   061d:76               push0
-  061e:81 0a              lag
+  061e:81 0a              lag global10
   0620:4a 0a             send a
 
   0622:39 74            pushi 74                       // $74 eachElementDo
@@ -961,7 +961,7 @@
   062a:36                push
   062b:39 7a            pushi 7a                       // $7a release
   062d:76               push0
-  062e:81 20              lag
+  062e:81 20              lag global32
   0630:4a 0c             send c
 
   0632:39 74            pushi 74                       // $74 eachElementDo
@@ -970,13 +970,13 @@
   0637:39 74            pushi 74                       // $74 eachElementDo
   0639:78               push1
   063a:39 54            pushi 54                       // $54 delete
-  063c:81 05              lag
+  063c:81 05              lag global5
   063e:4a 0c             send c
 
   0640:39 74            pushi 74                       // $74 eachElementDo
   0642:78               push1
   0643:39 54            pushi 54                       // $54 delete
-  0645:81 07              lag
+  0645:81 07              lag global7
   0647:4a 06             send 6
 
   0649:39 74            pushi 74                       // $74 eachElementDo
@@ -986,7 +986,7 @@
   0651:36                push
   0652:39 7a            pushi 7a                       // $7a release
   0654:76               push0
-  0655:81 06              lag
+  0655:81 06              lag global6
   0657:4a 0c             send c
 
   0659:39 74            pushi 74                       // $74 eachElementDo
@@ -994,37 +994,37 @@
   065c:39 6c            pushi 6c                       // $6c dispose
   065e:39 7a            pushi 7a                       // $7a release
   0660:76               push0
-  0661:81 1c              lag
+  0661:81 1c              lag global28
   0663:4a 0a             send a
 
   0665:39 7a            pushi 7a                       // $7a release
   0667:76               push0
-  0668:81 4e              lag
+  0668:81 4e              lag global78
   066a:4a 04             send 4
 
   066c:78               push1
   066d:76               push0
   066e:43 0b 02         callk Animate 2
 
-  0671:81 0b              lag
-  0673:a1 0c              sag
+  0671:81 0b              lag global11
+  0673:a1 0c              sag global12
   0675:87 01              lap param1
-  0677:a1 0b              sag
+  0677:a1 0b              sag global11
   0679:87 01              lap param1
-  067b:a1 0d              sag
+  067b:a1 0d              sag global13
   067d:78               push1
   067e:8f 01              lsp param1
   0680:43 67 02         callk FlushResources 2
 
   0683:38 017a          pushi 17a                      // $17a startRoom
   0686:78               push1
-  0687:89 0b              lsg
+  0687:89 0b              lsg global11
   0689:38 017d          pushi 17d                      // $17d checkAni
   068c:76               push0
   068d:54 0a             self a
 
   068f:78               push1
-  0690:89 06              lsg
+  0690:89 06              lsg global6
   0692:43 26 02         callk SetSynonyms 2
 
 
@@ -1058,7 +1058,7 @@
     )
 
     (method (startRoom)                                // method_071c
-  071c:81 0e              lag
+  071c:81 0e              lag global14
   071e:30 0004            bnt code_0725
   0721:76               push0
   0722:43 53 00         callk SetDebug 0
@@ -1071,21 +1071,21 @@
   0729:8f 01              lsp param1
   072b:43 02 02         callk ScriptID 2
 
-  072e:a1 02              sag
+  072e:a1 02              sag global2
   0730:36                push
-  0731:81 06              lag
+  0731:81 06              lag global6
   0733:4a 06             send 6
 
   0735:39 6b            pushi 6b                       // $6b init
   0737:76               push0
-  0738:81 02              lag
+  0738:81 02              lag global2
   073a:4a 04             send 4
 
   073c:48                 ret
     )
 
     (method (restart)                                  // method_078c
-  078c:81 19              lag
+  078c:81 19              lag global25
   078e:30 0005            bnt code_0796
   0791:39 6c            pushi 6c                       // $6c dispose
   0793:76               push0
@@ -1107,12 +1107,12 @@
   085e:65 0a             aTop parseLang
   0860:7a               push2
   0861:38 0087          pushi 87                       // $87 ticks
-  0864:89 17              lsg
+  0864:89 17              lsg global23
   0866:43 00 04         callk Load 4
 
   0869:7a               push2
   086a:38 0088          pushi 88                       // $88 lastTicks
-  086d:89 15              lsg
+  086d:89 15              lsg global21
   086f:43 00 04         callk Load 4
 
   0872:78               push1
@@ -1121,7 +1121,7 @@
 
   0879:38 00bb          pushi bb                       // $bb setCursor
   087c:78               push1
-  087d:89 14              lsg
+  087d:89 14              lsg global20
   087f:54 06             self 6
 
   0881:a5 15              sat temp21
@@ -1136,7 +1136,7 @@
   088e:40 0784 02        call proc_1016 2
 
   0892:30 006f            bnt code_0904
-  0895:81 19              lag
+  0895:81 19              lag global25
   0897:30 0005            bnt code_089f
   089a:39 6c            pushi 6c                       // $6c dispose
   089c:76               push0
@@ -1157,21 +1157,21 @@
   08ae:30 0049            bnt code_08fa
   08b1:38 00bb          pushi bb                       // $bb setCursor
   08b4:7a               push2
-  08b5:89 15              lsg
+  08b5:89 15              lsg global21
   08b7:78               push1
   08b8:54 08             self 8
 
   08ba:39 03            pushi 3                        // $3 y
   08bc:67 06             pTos name
   08be:8d 14              lst temp20
-  08c0:89 1b              lsg
+  08c0:89 1b              lsg global27
   08c2:43 65 06         callk CheckSaveGame 6
 
   08c5:30 000e            bnt code_08d6
   08c8:39 03            pushi 3                        // $3 y
   08ca:67 06             pTos name
   08cc:8d 14              lst temp20
-  08ce:89 1b              lsg
+  08ce:89 1b              lsg global27
   08d0:43 2a 06         callk RestoreGame 6
 
   08d3:32 0028            jmp code_08fe
@@ -1226,12 +1226,12 @@
   07a3:65 0a             aTop parseLang
   07a5:7a               push2
   07a6:38 0087          pushi 87                       // $87 ticks
-  07a9:89 17              lsg
+  07a9:89 17              lsg global23
   07ab:43 00 04         callk Load 4
 
   07ae:7a               push2
   07af:38 0088          pushi 88                       // $88 lastTicks
-  07b2:89 15              lsg
+  07b2:89 15              lsg global21
   07b4:43 00 04         callk Load 4
 
   07b7:78               push1
@@ -1249,7 +1249,7 @@
   07c9:40 0849 02        call proc_1016 2
 
   07cd:30 0078            bnt code_0848
-  07d0:81 19              lag
+  07d0:81 19              lag global25
   07d2:30 0005            bnt code_07da
   07d5:39 6c            pushi 6c                       // $6c dispose
   07d7:76               push0
@@ -1259,7 +1259,7 @@
         code_07da
   07da:38 00bb          pushi bb                       // $bb setCursor
   07dd:7a               push2
-  07de:89 14              lsg
+  07de:89 14              lsg global20
   07e0:78               push1
   07e1:54 08             self 8
 
@@ -1286,7 +1286,7 @@
   0805:65 0a             aTop parseLang
   0807:38 00bb          pushi bb                       // $bb setCursor
   080a:7a               push2
-  080b:89 15              lsg
+  080b:89 15              lsg global21
   080d:78               push1
   080e:54 08             self 8
 
@@ -1296,7 +1296,7 @@
   0816:8d 14              lst temp20
   0818:5b 04 00           lea 4 0
   081b:36                push
-  081c:89 1b              lsg
+  081c:89 1b              lsg global27
   081e:43 29 08         callk SaveGame 8
 
   0821:18                 not
@@ -1340,10 +1340,10 @@
     )
 
     (method (changeScore)                              // method_077d
-  077d:89 0f              lsg
+  077d:89 0f              lsg global15
   077f:87 01              lap param1
   0781:02                 add
-  0782:a1 0f              sag
+  0782:a1 0f              sag global15
   0784:39 3c            pushi 3c                       // $3c doit
   0786:76               push0
   0787:51 45            class SL
@@ -1435,20 +1435,20 @@ Largest hunk: %u Bytes
 
     (method (setSpeed)                                 // method_090e
   090e:3f 01             link 1                        // (var $1)
-  0910:81 03              lag
+  0910:81 03              lag global3
   0912:a5 00              sat temp0
   0914:87 01              lap param1
-  0916:a1 03              sag
+  0916:a1 03              sag global3
   0918:85 00              lat temp0
   091a:48                 ret
     )
 
     (method (setCursor)                                // method_091b
   091b:3f 01             link 1                        // (var $1)
-  091d:81 13              lag
+  091d:81 13              lag global19
   091f:a5 00              sat temp0
   0921:87 01              lap param1
-  0923:a1 13              sag
+  0923:a1 13              sag global19
   0925:78               push1
   0926:8f 01              lsp param1
   0928:59 02            &rest 2
@@ -1463,7 +1463,7 @@ Largest hunk: %u Bytes
   06bc:7a               push2
   06bd:39 1b            pushi 1b                       // $1b elements
   06bf:76               push0
-  06c0:81 05              lag
+  06c0:81 05              lag global5
   06c2:4a 04             send 4
 
   06c4:36                push
@@ -1477,7 +1477,7 @@ Largest hunk: %u Bytes
   06ce:7a               push2
   06cf:39 1b            pushi 1b                       // $1b elements
   06d1:76               push0
-  06d2:81 05              lag
+  06d2:81 05              lag global5
   06d4:4a 04             send 4
 
   06d6:36                push
@@ -1491,13 +1491,13 @@ Largest hunk: %u Bytes
   06dd:43 41 02         callk Wait 2
 
   06e0:36                push
-  06e1:81 1e              lag
+  06e1:81 1e              lag global30
   06e3:1e                 gt?
   06e4:30 0034            bnt code_071b
   06e7:39 75            pushi 75                       // $75 firstTrue
   06e9:78               push1
   06ea:38 0123          pushi 123                      // $123 isExtra
-  06ed:81 05              lag
+  06ed:81 05              lag global5
   06ef:4a 06             send 6
 
   06f1:a5 00              sat temp0
@@ -1513,7 +1513,7 @@ Largest hunk: %u Bytes
   0702:7a               push2
   0703:39 1b            pushi 1b                       // $1b elements
   0705:76               push0
-  0706:81 05              lag
+  0706:81 05              lag global5
   0708:4a 04             send 4
 
   070a:36                push
@@ -1523,7 +1523,7 @@ Largest hunk: %u Bytes
   070f:39 74            pushi 74                       // $74 eachElementDo
   0711:78               push1
   0712:39 54            pushi 54                       // $54 delete
-  0714:81 05              lag
+  0714:81 05              lag global5
   0716:4a 06             send 6
 
   0718:32 ffc0            jmp code_06db
@@ -1579,7 +1579,7 @@ Largest hunk: %u Bytes
         code_0301
   0301:30 0004            bnt code_0308
   0304:35 01              ldi 1
-  0306:a1 04              sag
+  0306:a1 04              sag global4
 
         code_0308
   0308:48                 ret
@@ -1613,7 +1613,7 @@ Largest hunk: %u Bytes
   0327:39 74            pushi 74                       // $74 eachElementDo
   0329:78               push1
   032a:38 0124          pushi 124                      // $124 checkDetail
-  032d:81 05              lag
+  032d:81 05              lag global5
   032f:4a 06             send 6
 
 
@@ -1660,7 +1660,7 @@ Largest hunk: %u Bytes
   0a42:39 77            pushi 77                       // $77 contains
   0a44:78               push1
   0a45:7c            pushSelf
-  0a46:81 06              lag
+  0a46:81 06              lag global6
   0a48:4a 06             send 6
 
   0a4a:18                 not
@@ -1668,7 +1668,7 @@ Largest hunk: %u Bytes
   0a4e:39 7e            pushi 7e                       // $7e addToEnd
   0a50:78               push1
   0a51:7c            pushSelf
-  0a52:81 06              lag
+  0a52:81 06              lag global6
   0a54:4a 06             send 6
 
 
@@ -1698,7 +1698,7 @@ Largest hunk: %u Bytes
   0b02:39 54            pushi 54                       // $54 delete
   0b04:78               push1
   0b05:7c            pushSelf
-  0b06:81 06              lag
+  0b06:81 06              lag global6
   0b08:4a 06             send 6
 
   0b0a:78               push1
@@ -1729,7 +1729,7 @@ Largest hunk: %u Bytes
   0b2c:7a               push2
   0b2d:38 00a5          pushi a5                       // $a5 clean
   0b30:7c            pushSelf
-  0b31:81 08              lag
+  0b31:81 08              lag global8
   0b33:4a 08             send 8
 
   0b35:78               push1
@@ -1781,9 +1781,9 @@ Largest hunk: %u Bytes
   0aa3:4a 04             send 4
 
   0aa5:36                push
-  0aa6:81 09              lag
+  0aa6:81 09              lag global9
   0aa8:30 0024            bnt code_0acf
-  0aab:81 45              lag
+  0aab:81 45              lag gIconBar
   0aad:30 001f            bnt code_0acf
   0ab0:39 28            pushi 28                       // $28 message
   0ab2:76               push0
@@ -1798,11 +1798,11 @@ Largest hunk: %u Bytes
   0ac1:78               push1
   0ac2:38 00d1          pushi d1                       // $d1 curInvIcon
   0ac5:76               push0
-  0ac6:81 45              lag
+  0ac6:81 45              lag gIconBar
   0ac8:4a 04             send 4
 
   0aca:36                push
-  0acb:81 09              lag
+  0acb:81 09              lag global9
   0acd:4a 06             send 6
 
 
@@ -1922,12 +1922,12 @@ Largest hunk: %u Bytes
     )
     (method (init)                                     // method_0bc8
   0bc8:3f 01             link 1                        // (var $1)
-  0bca:81 0b              lag
+  0bca:81 0b              lag global11
   0bcc:65 0a             aTop number
   0bce:72 01a2          lofsa $01a2                    // controls
   0bd1:65 1a             aTop controls
   0bd3:63 26             pToa picAngle
-  0bd5:a1 1f              sag
+  0bd5:a1 1f              sag global31
   0bd7:63 14             pToa picture
   0bd9:30 0007            bnt code_0be3
   0bdc:38 018c          pushi 18c                      // $18c drawPic
@@ -1941,7 +1941,7 @@ Largest hunk: %u Bytes
   0be6:7a               push2
   0be7:38 0139          pushi 139                      // $139 alterEgo
   0bea:76               push0
-  0beb:81 50              lag
+  0beb:81 50              lag global80
   0bed:4a 04             send 4
 
   0bef:36                push
@@ -1949,7 +1949,7 @@ Largest hunk: %u Bytes
   0bf3:76               push0
   0bf4:38 0139          pushi 139                      // $139 alterEgo
   0bf7:76               push0
-  0bf8:81 50              lag
+  0bf8:81 50              lag global80
   0bfa:4a 04             send 4
 
   0bfc:4a 04             send 4
@@ -1962,7 +1962,7 @@ Largest hunk: %u Bytes
   0c05:76               push0
   0c06:38 0139          pushi 139                      // $139 alterEgo
   0c09:76               push0
-  0c0a:81 50              lag
+  0c0a:81 50              lag global80
   0c0c:4a 04             send 4
 
   0c0e:4a 06             send 6
@@ -1986,7 +1986,7 @@ Largest hunk: %u Bytes
   0c84:76               push0
   0c85:38 0139          pushi 139                      // $139 alterEgo
   0c88:76               push0
-  0c89:81 50              lag
+  0c89:81 50              lag global80
   0c8b:4a 04             send 4
 
   0c8d:4a 04             send 4
@@ -2065,11 +2065,11 @@ Largest hunk: %u Bytes
   0e02:39 7d            pushi 7d                       // $7d addToFront
   0e04:78               push1
   0e05:7c            pushSelf
-  0e06:81 06              lag
+  0e06:81 06              lag global6
   0e08:4a 14             send 14
 
   0e0a:87 01              lap param1
-  0e0c:a1 0d              sag
+  0e0c:a1 0d              sag global13
   0e0e:38 0179          pushi 179                      // $179 newRoom
   0e11:78               push1
   0e12:8f 01              lsp param1
@@ -2104,7 +2104,7 @@ Largest hunk: %u Bytes
   0d5f:39 73            pushi 73                       // $73 add
   0d61:78               push1
   0d62:8d 02              lst temp2
-  0d64:81 06              lag
+  0d64:81 06              lag global6
   0d66:4a 06             send 6
 
   0d68:38 0182          pushi 182                      // $182 initialized
@@ -2142,7 +2142,7 @@ Largest hunk: %u Bytes
   0dc8:78               push1
   0dc9:85 00              lat temp0
   0dcb:9f 01             lspi param1
-  0dcd:81 20              lag
+  0dcd:81 20              lag global32
   0dcf:4a 06             send 6
 
   0dd1:c5 00              +at temp0
@@ -2178,7 +2178,7 @@ Largest hunk: %u Bytes
   0da2:39 73            pushi 73                       // $73 add
   0da4:78               push1
   0da5:8d 02              lst temp2
-  0da7:81 1c              lag
+  0da7:81 1c              lag global28
   0da9:4a 06             send 6
 
   0dab:39 6b            pushi 6b                       // $6b init
@@ -2194,7 +2194,7 @@ Largest hunk: %u Bytes
     )
 
     (method (drawPic)                                  // method_0e18
-  0e18:81 0a              lag
+  0e18:81 0a              lag global10
   0e1a:30 000a            bnt code_0e27
   0e1d:39 74            pushi 74                       // $74 eachElementDo
   0e1f:78               push1
@@ -2222,7 +2222,7 @@ Largest hunk: %u Bytes
   0e40:87 01              lap param1
   0e42:65 24             aTop curPic
   0e44:35 ff              ldi ff
-  0e46:a1 24              sag
+  0e46:a1 24              sag global36
   0e48:39 04            pushi 4                        // $4 x
   0e4a:8f 01              lsp param1
   0e4c:8f 00              lsp paramTotal
@@ -2241,12 +2241,12 @@ Largest hunk: %u Bytes
   0e63:32 0002            jmp code_0e68
 
         code_0e66
-  0e66:81 11              lag
+  0e66:81 11              lag global17
 
         code_0e68
   0e68:36                push
   0e69:78               push1
-  0e6a:89 28              lsg
+  0e6a:89 28              lsg global40
   0e6c:43 08 08         callk DrawPic 8
 
   0e6f:48                 ret
@@ -2254,7 +2254,7 @@ Largest hunk: %u Bytes
 
     (method (overlay)                                  // method_0e70
   0e70:87 01              lap param1
-  0e72:a1 24              sag
+  0e72:a1 24              sag global36
   0e74:39 04            pushi 4                        // $4 x
   0e76:8f 01              lsp param1
   0e78:8f 00              lsp paramTotal
@@ -2273,12 +2273,12 @@ Largest hunk: %u Bytes
   0e8f:32 0002            jmp code_0e94
 
         code_0e92
-  0e92:81 11              lag
+  0e92:81 11              lag global17
 
         code_0e94
   0e94:36                push
   0e95:76               push0
-  0e96:89 28              lsg
+  0e96:89 28              lsg global40
   0e98:43 08 08         callk DrawPic 8
 
   0e9b:48                 ret
@@ -2465,7 +2465,7 @@ Largest hunk: %u Bytes
   0f4c:39 54            pushi 54                       // $54 delete
   0f4e:78               push1
   0f4f:7c            pushSelf
-  0f50:81 1c              lag
+  0f50:81 1c              lag global28
   0f52:4a 06             send 6
 
   0f54:78               push1
@@ -2698,7 +2698,7 @@ Largest hunk: %u Bytes
   102f:a5 00              sat temp0
   1031:39 03            pushi 3                        // $3 y
   1033:76               push0
-  1034:89 1d              lsg
+  1034:89 1d              lsg global29
   1036:5b 04 01           lea 4 1
   1039:36                push
   103a:43 63 06         callk DeviceInfo 6
@@ -2729,7 +2729,7 @@ Largest hunk: %u Bytes
   1065:39 06            pushi 6                        // $6 loop
   1067:39 17            pushi 17                       // $17 name
   1069:76               push0
-  106a:81 01              lag
+  106a:81 01              lag global1
   106c:4a 04             send 4
 
   106e:36                push
@@ -2759,7 +2759,7 @@ Largest hunk: %u Bytes
 
   1095:7a               push2
   1096:38 0087          pushi 87                       // $87 ticks
-  1099:89 16              lsg
+  1099:89 16              lsg global22
   109b:43 00 04         callk Load 4
 
   109e:78               push1
@@ -2807,7 +2807,7 @@ Largest hunk: %u Bytes
   10e3:1a                 eq?
   10e4:30 000b            bnt code_10f2
   10e7:78               push1
-  10e8:89 1d              lsg
+  10e8:89 1d              lsg global29
   10ea:46 03de 0000 02  calle 3de procedure_0000 2     //
 
   10f0:a5 00              sat temp0

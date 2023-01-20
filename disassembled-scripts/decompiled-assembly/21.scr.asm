@@ -221,12 +221,12 @@
   004d:30 0012            bnt code_0062
   0050:78               push1
   0051:76               push0
-  0052:47 0d 06 02      calle d procedure_0006 2       //
+  0052:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0056:7a               push2
   0057:38 03fd          pushi 3fd                      // $3fd sel_1021
   005a:76               push0
-  005b:47 0d 04 04      calle d procedure_0004 4       //
+  005b:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   005f:32 032b            jmp code_038d
 
@@ -235,12 +235,12 @@
   0064:a3 00              sal local0
   0066:78               push1
   0067:76               push0
-  0068:47 0d 06 02      calle d procedure_0006 2       //
+  0068:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   006c:7a               push2
   006d:38 03fd          pushi 3fd                      // $3fd sel_1021
   0070:78               push1
-  0071:47 0d 04 04      calle d procedure_0004 4       //
+  0071:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0075:32 0315            jmp code_038d
 
@@ -264,7 +264,7 @@
   0093:35 05              ldi 5
   0095:1a                 eq?
   0096:30 00cf            bnt code_0168
-  0099:89 7e              lsg
+  0099:89 7e              lsg global126
   009b:3c                 dup
   009c:35 01              ldi 1
   009e:1a                 eq?
@@ -314,7 +314,7 @@
   00ea:35 04              ldi 4
   00ec:1a                 eq?
   00ed:30 0030            bnt code_0120
-  00f0:89 82              lsg
+  00f0:89 82              lsg global130
   00f2:3c                 dup
   00f3:35 08              ldi 8
   00f5:1a                 eq?
@@ -697,7 +697,7 @@
   0375:7a               push2
   0376:38 03fd          pushi 3fd                      // $3fd sel_1021
   0379:39 1c            pushi 1c                       // $1c color
-  037b:47 0d 04 04      calle d procedure_0004 4       //
+  037b:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   037f:32 000b            jmp code_038d
 

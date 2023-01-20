@@ -102,11 +102,11 @@
   0054:39 05            pushi 5                        // $5 view
   0056:39 06            pushi 6                        // $6 loop
   0058:39 07            pushi 7                        // $7 cel
-  005a:81 45              lag
+  005a:81 45              lag gIconBar
   005c:4a 14             send 14
 
   005e:76               push0
-  005f:45 03 00         callb procedure_0003 0         //
+  005f:45 03 00         callb procedure_0003 0         // proc0_3
 
   0062:39 2b            pushi 2b                       // $2b number
   0064:78               push1
@@ -122,7 +122,7 @@
   0076:39 06            pushi 6                        // $6 loop
   0078:39 0c            pushi c                        // $c nsRight
   007a:76               push0
-  007b:81 64              lag
+  007b:81 64              lag gRgnMusic
   007d:4a 1c             send 1c
 
   007f:39 6b            pushi 6b                       // $6b init
@@ -144,7 +144,7 @@
   009a:78               push1
   009b:72 065a          lofsa $065a                    // dieScum
   009e:36                push
-  009f:81 02              lag
+  009f:81 02              lag global2
   00a1:4a 06             send 6
 
   00a3:39 73            pushi 73                       // $73 add
@@ -178,12 +178,12 @@
   00da:39 6b            pushi 6b                       // $6b init
   00dc:39 3c            pushi 3c                       // $3c doit
   00de:76               push0
-  00df:81 0a              lag
+  00df:81 0a              lag global10
   00e1:4a 26             send 26
 
   00e3:38 00a7          pushi a7                       // $a7 enable
   00e6:76               push0
-  00e7:81 45              lag
+  00e7:81 45              lag gIconBar
   00e9:4a 04             send 4
 
   00eb:48                 ret
@@ -763,7 +763,7 @@
   0623:39 06            pushi 6                        // $6 loop
   0625:39 0c            pushi c                        // $c nsRight
   0627:76               push0
-  0628:81 64              lag
+  0628:81 64              lag gRgnMusic
   062a:4a 0c             send c
 
   062c:34 00b4            ldi b4
@@ -778,7 +778,7 @@
   063b:38 0179          pushi 179                      // $179 newRoom
   063e:78               push1
   063f:38 0321          pushi 321                      // $321 sel_801
-  0642:81 02              lag
+  0642:81 02              lag global2
   0644:4a 06             send 6
 
   0646:39 6c            pushi 6c                       // $6c dispose

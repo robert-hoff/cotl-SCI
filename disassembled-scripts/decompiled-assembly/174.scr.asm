@@ -299,7 +299,7 @@
 
   0186:38 00a7          pushi a7                       // $a7 enable
   0189:76               push0
-  018a:81 45              lag
+  018a:81 45              lag gIconBar
   018c:4a 04             send 4
 
   018e:39 2b            pushi 2b                       // $2b number
@@ -318,21 +318,21 @@
   01a3:78               push1
   01a4:39 66            pushi 66                       // $66 flags
   01a6:76               push0
-  01a7:81 64              lag
+  01a7:81 64              lag gRgnMusic
   01a9:4a 04             send 4
 
   01ab:36                push
   01ac:35 fe              ldi fe
   01ae:12                 and
   01af:36                push
-  01b0:81 64              lag
+  01b0:81 64              lag gRgnMusic
   01b2:4a 1c             send 1c
 
   01b4:38 018c          pushi 18c                      // $18c drawPic
   01b7:7a               push2
   01b8:39 6e            pushi 6e                       // $6e showSelf
   01ba:39 06            pushi 6                        // $6 loop
-  01bc:81 02              lag
+  01bc:81 02              lag global2
   01be:4a 08             send 8
 
   01c0:39 06            pushi 6                        // $6 loop
@@ -476,7 +476,7 @@
   02a8:39 6b            pushi 6b                       // $6b init
   02aa:39 3c            pushi 3c                       // $3c doit
   02ac:76               push0
-  02ad:81 0a              lag
+  02ad:81 0a              lag global10
   02af:4a 1e             send 1e
 
   02b1:39 04            pushi 4                        // $4 x
@@ -613,26 +613,26 @@
   0392:78               push1
   0393:39 66            pushi 66                       // $66 flags
   0395:76               push0
-  0396:81 71              lag
+  0396:81 71              lag gSFX
   0398:4a 04             send 4
 
   039a:36                push
   039b:35 fe              ldi fe
   039d:12                 and
   039e:36                push
-  039f:81 71              lag
+  039f:81 71              lag gSFX
   03a1:4a 1a             send 1a
 
   03a3:38 008e          pushi 8e                       // $8e setScript
   03a6:78               push1
   03a7:72 0cd8          lofsa $0cd8                    // timer0
   03aa:36                push
-  03ab:81 02              lag
+  03ab:81 02              lag global2
   03ad:4a 06             send 6
 
   03af:78               push1
   03b0:39 41            pushi 41                       // $41 replay
-  03b2:45 06 02         callb procedure_0006 2         //
+  03b2:45 06 02         callb procedure_0006 2         // proc0_6
 
   03b5:48                 ret
     )
@@ -2426,21 +2426,21 @@
   124d:78               push1
   124e:39 66            pushi 66                       // $66 flags
   1250:76               push0
-  1251:81 64              lag
+  1251:81 64              lag gRgnMusic
   1253:4a 04             send 4
 
   1255:36                push
   1256:35 01              ldi 1
   1258:14                  or
   1259:36                push
-  125a:81 64              lag
+  125a:81 64              lag gRgnMusic
   125c:4a 06             send 6
 
   125e:39 66            pushi 66                       // $66 flags
   1260:78               push1
   1261:39 66            pushi 66                       // $66 flags
   1263:76               push0
-  1264:81 64              lag
+  1264:81 64              lag gRgnMusic
   1266:4a 04             send 4
 
   1268:36                push
@@ -2449,7 +2449,7 @@
   126c:36                push
   126d:38 009c          pushi 9c                       // $9c stop
   1270:76               push0
-  1271:81 71              lag
+  1271:81 71              lag gSFX
   1273:4a 0a             send a
 
   1275:38 008e          pushi 8e                       // $8e setScript
@@ -2508,7 +2508,7 @@
   12ce:76               push0
   12cf:7c            pushSelf
   12d0:39 6c            pushi 6c                       // $6c dispose
-  12d2:47 0d 04 08      calle d procedure_0004 8       //
+  12d2:47 0d 04 08      calle d procedure_0004 8       // proc13_4
 
   12d6:32 0017            jmp code_12f0
 
@@ -2520,7 +2520,7 @@
   12e0:38 0179          pushi 179                      // $179 newRoom
   12e3:78               push1
   12e4:38 00b3          pushi b3                       // $b3 theItem
-  12e7:81 02              lag
+  12e7:81 02              lag global2
   12e9:4a 06             send 6
 
   12eb:39 6c            pushi 6c                       // $6c dispose
@@ -3134,7 +3134,7 @@
     (method (cue)                                      // method_1742
   1742:38 009a          pushi 9a                       // $9a prevSignal
   1745:76               push0
-  1746:81 64              lag
+  1746:81 64              lag gRgnMusic
   1748:4a 04             send 4
 
   174a:36                push
@@ -3263,7 +3263,7 @@
   1814:30 0018            bnt code_182f
   1817:38 009c          pushi 9c                       // $9c stop
   181a:76               push0
-  181b:81 71              lag
+  181b:81 71              lag gSFX
   181d:4a 04             send 4
 
   181f:38 008e          pushi 8e                       // $8e setScript

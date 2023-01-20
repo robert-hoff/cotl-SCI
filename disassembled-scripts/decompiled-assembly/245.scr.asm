@@ -149,12 +149,12 @@
 
   0040:38 00a7          pushi a7                       // $a7 enable
   0043:76               push0
-  0044:81 45              lag
+  0044:81 45              lag gIconBar
   0046:4a 04             send 4
 
   0048:78               push1
   0049:39 66            pushi 66                       // $66 flags
-  004b:45 05 02         callb procedure_0005 2         //
+  004b:45 05 02         callb procedure_0005 2         // proc0_5
 
   004e:18                 not
   004f:30 003a            bnt code_008c
@@ -170,21 +170,21 @@
   0062:78               push1
   0063:39 11            pushi 11                       // $11 signal
   0065:76               push0
-  0066:81 00              lag
+  0066:81 00              lag gEgo
   0068:4a 04             send 4
 
   006a:36                push
   006b:34 4000            ldi 4000
   006e:14                  or
   006f:36                push
-  0070:81 00              lag
+  0070:81 00              lag gEgo
   0072:4a 16             send 16
 
   0074:39 03            pushi 3                        // $3 y
   0076:39 05            pushi 5                        // $5 view
   0078:39 21            pushi 21                       // $21 font
   007a:39 22            pushi 22                       // $22 type
-  007c:45 02 06         callb procedure_0002 6         //
+  007c:45 02 06         callb procedure_0002 6         // proc0_2
 
   007f:38 008e          pushi 8e                       // $8e setScript
   0082:78               push1
@@ -209,7 +209,7 @@
     (method (dispose)                                  // method_0097
   0097:78               push1
   0098:39 66            pushi 66                       // $66 flags
-  009a:45 06 02         callb procedure_0006 2         //
+  009a:45 06 02         callb procedure_0006 2         // proc0_6
 
   009d:78               push1
   009e:38 037a          pushi 37a                      // $37a sel_890
@@ -482,7 +482,7 @@
   02fb:78               push1
   02fc:72 040e          lofsa $040e                    // trapHim
   02ff:36                push
-  0300:81 00              lag
+  0300:81 00              lag gEgo
   0302:4a 06             send 6
 
   0304:34 0348            ldi 348
@@ -566,7 +566,7 @@
   0398:39 09            pushi 9                        // $9 nsTop
   039a:3c                 dup
   039b:39 0e            pushi e                        // $e lsLeft
-  039d:81 00              lag
+  039d:81 00              lag gEgo
   039f:4a 20             send 20
 
   03a1:32 005c            jmp code_0400
@@ -590,7 +590,7 @@
   03c0:76               push0
   03c1:39 03            pushi 3                        // $3 y
   03c3:7c            pushSelf
-  03c4:81 00              lag
+  03c4:81 00              lag gEgo
   03c6:4a 16             send 16
 
   03c8:32 0035            jmp code_0400
@@ -603,7 +603,7 @@
   03d2:39 06            pushi 6                        // $6 loop
   03d4:78               push1
   03d5:39 06            pushi 6                        // $6 loop
-  03d7:81 00              lag
+  03d7:81 00              lag gEgo
   03d9:4a 06             send 6
 
   03db:35 06              ldi 6
@@ -623,7 +623,7 @@
   03f2:76               push0
   03f3:38 011d          pushi 11d                      // $11d stopUpd
   03f6:76               push0
-  03f7:81 00              lag
+  03f7:81 00              lag gEgo
   03f9:4a 10             send 10
 
   03fb:39 6c            pushi 6c                       // $6c dispose
@@ -923,7 +923,7 @@
   05f5:38 0179          pushi 179                      // $179 newRoom
   05f8:78               push1
   05f9:38 0096          pushi 96                       // $96 setCycle
-  05fc:81 02              lag
+  05fc:81 02              lag global2
   05fe:4a 06             send 6
 
   0600:39 6c            pushi 6c                       // $6c dispose
@@ -1298,7 +1298,7 @@
   0897:38 0091          pushi 91                       // $91 globalize
   089a:39 6b            pushi 6b                       // $6b init
   089c:76               push0
-  089d:81 00              lag
+  089d:81 00              lag gEgo
   089f:4a 1c             send 1c
 
   08a1:39 05            pushi 5                        // $5 view
@@ -1353,7 +1353,7 @@
   08f3:78               push1
   08f4:51 17            class Fwd
   08f6:36                push
-  08f7:81 00              lag
+  08f7:81 00              lag gEgo
   08f9:4a 06             send 6
 
   08fb:34 012c            ldi 12c
@@ -1368,7 +1368,7 @@
   090a:39 06            pushi 6                        // $6 loop
   090c:78               push1
   090d:39 07            pushi 7                        // $7 cel
-  090f:81 00              lag
+  090f:81 00              lag gEgo
   0911:4a 06             send 6
 
   0913:34 012c            ldi 12c
@@ -1386,7 +1386,7 @@
   0927:39 06            pushi 6                        // $6 loop
   0929:78               push1
   092a:39 06            pushi 6                        // $6 loop
-  092c:81 00              lag
+  092c:81 00              lag gEgo
   092e:4a 0c             send c
 
   0930:35 06              ldi 6
@@ -1421,7 +1421,7 @@
   0961:78               push1
   0962:51 17            class Fwd
   0964:36                push
-  0965:81 00              lag
+  0965:81 00              lag gEgo
   0967:4a 06             send 6
 
   0969:34 012c            ldi 12c
@@ -1436,7 +1436,7 @@
   0978:39 06            pushi 6                        // $6 loop
   097a:78               push1
   097b:39 07            pushi 7                        // $7 cel
-  097d:81 00              lag
+  097d:81 00              lag gEgo
   097f:4a 06             send 6
 
   0981:34 012c            ldi 12c
@@ -1454,7 +1454,7 @@
   0995:39 06            pushi 6                        // $6 loop
   0997:78               push1
   0998:39 06            pushi 6                        // $6 loop
-  099a:81 00              lag
+  099a:81 00              lag gEgo
   099c:4a 0c             send c
 
   099e:35 06              ldi 6
@@ -1490,7 +1490,7 @@
   09d0:38 0179          pushi 179                      // $179 newRoom
   09d3:78               push1
   09d4:38 00a0          pushi a0                       // $a0 mute
-  09d7:81 02              lag
+  09d7:81 02              lag global2
   09d9:4a 06             send 6
 
   09db:39 6c            pushi 6c                       // $6c dispose

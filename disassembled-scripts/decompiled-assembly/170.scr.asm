@@ -152,11 +152,11 @@
   01e0:46 0326 0002 0a  calle 326 procedure_0002 a     //
 
   01e6:76               push0
-  01e7:45 03 00         callb procedure_0003 0         //
+  01e7:45 03 00         callb procedure_0003 0         // proc0_3
 
   01ea:38 00c9          pushi c9                       // $c9 disable
   01ed:76               push0
-  01ee:81 45              lag
+  01ee:81 45              lag gIconBar
   01f0:4a 04             send 4
 
   01f2:39 2b            pushi 2b                       // $2b number
@@ -167,10 +167,10 @@
   01fb:39 ff            pushi ff                       // $ff syncNum
   01fd:39 2a            pushi 2a                       // $2a play
   01ff:76               push0
-  0200:81 64              lag
+  0200:81 64              lag gRgnMusic
   0202:4a 10             send 10
 
-  0204:89 91              lsg
+  0204:89 91              lsg global145
   0206:3c                 dup
   0207:35 00              ldi 0
   0209:1a                 eq?
@@ -179,7 +179,7 @@
   0210:78               push1
   0211:72 0b50          lofsa $0b50                    // death2InRm120
   0214:36                push
-  0215:81 02              lag
+  0215:81 02              lag global2
   0217:4a 06             send 6
 
   0219:32 036d            jmp code_0589
@@ -193,7 +193,7 @@
   0226:78               push1
   0227:72 0c32          lofsa $0c32                    // death3InRm120
   022a:36                push
-  022b:81 02              lag
+  022b:81 02              lag global2
   022d:4a 06             send 6
 
   022f:32 0357            jmp code_0589
@@ -207,7 +207,7 @@
   023c:78               push1
   023d:72 0d2e          lofsa $0d2e                    // death4InRm120
   0240:36                push
-  0241:81 02              lag
+  0241:81 02              lag global2
   0243:4a 06             send 6
 
   0245:32 0341            jmp code_0589
@@ -221,7 +221,7 @@
   0252:78               push1
   0253:72 2a9e          lofsa $2a9e                    // death5InRm120
   0256:36                push
-  0257:81 02              lag
+  0257:81 02              lag global2
   0259:4a 06             send 6
 
   025b:32 032b            jmp code_0589
@@ -235,7 +235,7 @@
   0268:78               push1
   0269:72 0e10          lofsa $0e10                    // death1InFairRgn
   026c:36                push
-  026d:81 02              lag
+  026d:81 02              lag global2
   026f:4a 06             send 6
 
   0271:32 0315            jmp code_0589
@@ -249,7 +249,7 @@
   027e:78               push1
   027f:72 0ef2          lofsa $0ef2                    // deathInRm360
   0282:36                push
-  0283:81 02              lag
+  0283:81 02              lag global2
   0285:4a 06             send 6
 
   0287:32 02ff            jmp code_0589
@@ -263,7 +263,7 @@
   0294:78               push1
   0295:72 0ff0          lofsa $0ff0                    // death1InRm390
   0298:36                push
-  0299:81 02              lag
+  0299:81 02              lag global2
   029b:4a 06             send 6
 
   029d:32 02e9            jmp code_0589
@@ -277,7 +277,7 @@
   02aa:78               push1
   02ab:72 10d2          lofsa $10d2                    // death2InRm390
   02ae:36                push
-  02af:81 02              lag
+  02af:81 02              lag global2
   02b1:4a 06             send 6
 
   02b3:32 02d3            jmp code_0589
@@ -291,7 +291,7 @@
   02c0:78               push1
   02c1:72 11ce          lofsa $11ce                    // death3InRm390
   02c4:36                push
-  02c5:81 02              lag
+  02c5:81 02              lag global2
   02c7:4a 06             send 6
 
   02c9:32 02bd            jmp code_0589
@@ -305,7 +305,7 @@
   02d6:78               push1
   02d7:72 12ca          lofsa $12ca                    // death4InRm390
   02da:36                push
-  02db:81 02              lag
+  02db:81 02              lag global2
   02dd:4a 06             send 6
 
   02df:32 02a7            jmp code_0589
@@ -319,7 +319,7 @@
   02ec:78               push1
   02ed:72 13c6          lofsa $13c6                    // death1InAbyRegn
   02f0:36                push
-  02f1:81 02              lag
+  02f1:81 02              lag global2
   02f3:4a 06             send 6
 
   02f5:32 0291            jmp code_0589
@@ -333,7 +333,7 @@
   0302:78               push1
   0303:72 14a8          lofsa $14a8                    // death2InAbyRegn
   0306:36                push
-  0307:81 02              lag
+  0307:81 02              lag global2
   0309:4a 06             send 6
 
   030b:32 027b            jmp code_0589
@@ -347,7 +347,7 @@
   0318:78               push1
   0319:72 15f6          lofsa $15f6                    // death3InAbyRegn
   031c:36                push
-  031d:81 02              lag
+  031d:81 02              lag global2
   031f:4a 06             send 6
 
   0321:32 0265            jmp code_0589
@@ -361,7 +361,7 @@
   032e:78               push1
   032f:72 16d8          lofsa $16d8                    // death1InRm440
   0332:36                push
-  0333:81 02              lag
+  0333:81 02              lag global2
   0335:4a 06             send 6
 
   0337:32 024f            jmp code_0589
@@ -375,7 +375,7 @@
   0344:78               push1
   0345:72 17ba          lofsa $17ba                    // death2InRm440
   0348:36                push
-  0349:81 02              lag
+  0349:81 02              lag global2
   034b:4a 06             send 6
 
   034d:32 0239            jmp code_0589
@@ -389,7 +389,7 @@
   035a:78               push1
   035b:72 18b2          lofsa $18b2                    // death1InRm460
   035e:36                push
-  035f:81 02              lag
+  035f:81 02              lag global2
   0361:4a 06             send 6
 
   0363:32 0223            jmp code_0589
@@ -403,7 +403,7 @@
   0370:78               push1
   0371:72 19ae          lofsa $19ae                    // death2InRm460
   0374:36                push
-  0375:81 02              lag
+  0375:81 02              lag global2
   0377:4a 06             send 6
 
   0379:32 020d            jmp code_0589
@@ -417,7 +417,7 @@
   0386:78               push1
   0387:72 1a90          lofsa $1a90                    // death3InRm460
   038a:36                push
-  038b:81 02              lag
+  038b:81 02              lag global2
   038d:4a 06             send 6
 
   038f:32 01f7            jmp code_0589
@@ -431,7 +431,7 @@
   039c:78               push1
   039d:72 1bc2          lofsa $1bc2                    // death4InRm460
   03a0:36                push
-  03a1:81 02              lag
+  03a1:81 02              lag global2
   03a3:4a 06             send 6
 
   03a5:32 01e1            jmp code_0589
@@ -445,7 +445,7 @@
   03b2:78               push1
   03b3:72 1c86          lofsa $1c86                    // death1InRm620
   03b6:36                push
-  03b7:81 02              lag
+  03b7:81 02              lag global2
   03b9:4a 06             send 6
 
   03bb:32 01cb            jmp code_0589
@@ -459,7 +459,7 @@
   03c8:78               push1
   03c9:72 1d82          lofsa $1d82                    // death2InRm620
   03cc:36                push
-  03cd:81 02              lag
+  03cd:81 02              lag global2
   03cf:4a 06             send 6
 
   03d1:32 01b5            jmp code_0589
@@ -473,7 +473,7 @@
   03de:78               push1
   03df:72 2bb6          lofsa $2bb6                    // deathInRm620
   03e2:36                push
-  03e3:81 02              lag
+  03e3:81 02              lag global2
   03e5:4a 06             send 6
 
   03e7:32 019f            jmp code_0589
@@ -487,7 +487,7 @@
   03f4:78               push1
   03f5:72 1e7e          lofsa $1e7e                    // deathInRm650
   03f8:36                push
-  03f9:81 02              lag
+  03f9:81 02              lag global2
   03fb:4a 06             send 6
 
   03fd:32 0189            jmp code_0589
@@ -501,7 +501,7 @@
   040a:78               push1
   040b:72 1f7a          lofsa $1f7a                    // deathInWatrGate
   040e:36                push
-  040f:81 02              lag
+  040f:81 02              lag global2
   0411:4a 06             send 6
 
   0413:32 0173            jmp code_0589
@@ -515,7 +515,7 @@
   0420:78               push1
   0421:72 2076          lofsa $2076                    // deathInRm470
   0424:36                push
-  0425:81 02              lag
+  0425:81 02              lag global2
   0427:4a 06             send 6
 
   0429:32 015d            jmp code_0589
@@ -529,7 +529,7 @@
   0436:78               push1
   0437:72 21a8          lofsa $21a8                    // death1InRm500
   043a:36                push
-  043b:81 02              lag
+  043b:81 02              lag global2
   043d:4a 06             send 6
 
   043f:32 0147            jmp code_0589
@@ -543,7 +543,7 @@
   044c:78               push1
   044d:72 22c0          lofsa $22c0                    // death2InRm500
   0450:36                push
-  0451:81 02              lag
+  0451:81 02              lag global2
   0453:4a 06             send 6
 
   0455:32 0131            jmp code_0589
@@ -557,7 +557,7 @@
   0462:78               push1
   0463:72 23bc          lofsa $23bc                    // death1InRm530
   0466:36                push
-  0467:81 02              lag
+  0467:81 02              lag global2
   0469:4a 06             send 6
 
   046b:32 011b            jmp code_0589
@@ -571,7 +571,7 @@
   0478:78               push1
   0479:72 2482          lofsa $2482                    // death2InRm530
   047c:36                push
-  047d:81 02              lag
+  047d:81 02              lag global2
   047f:4a 06             send 6
 
   0481:32 0105            jmp code_0589
@@ -585,7 +585,7 @@
   048e:78               push1
   048f:72 257e          lofsa $257e                    // death3InRm530
   0492:36                push
-  0493:81 02              lag
+  0493:81 02              lag global2
   0495:4a 06             send 6
 
   0497:32 00ef            jmp code_0589
@@ -599,7 +599,7 @@
   04a4:78               push1
   04a5:72 267a          lofsa $267a                    // deathInRm550
   04a8:36                push
-  04a9:81 02              lag
+  04a9:81 02              lag global2
   04ab:4a 06             send 6
 
   04ad:32 00d9            jmp code_0589
@@ -613,7 +613,7 @@
   04ba:78               push1
   04bb:72 2792          lofsa $2792                    // death1InRm570
   04be:36                push
-  04bf:81 02              lag
+  04bf:81 02              lag global2
   04c1:4a 06             send 6
 
   04c3:32 00c3            jmp code_0589
@@ -627,7 +627,7 @@
   04d0:78               push1
   04d1:72 28c0          lofsa $28c0                    // death2InRm570
   04d4:36                push
-  04d5:81 02              lag
+  04d5:81 02              lag global2
   04d7:4a 06             send 6
 
   04d9:32 00ad            jmp code_0589
@@ -641,7 +641,7 @@
   04e6:78               push1
   04e7:72 29a2          lofsa $29a2                    // deathInForest
   04ea:36                push
-  04eb:81 02              lag
+  04eb:81 02              lag global2
   04ed:4a 06             send 6
 
   04ef:32 0097            jmp code_0589
@@ -655,7 +655,7 @@
   04fc:78               push1
   04fd:72 2c98          lofsa $2c98                    // deathInRm320
   0500:36                push
-  0501:81 02              lag
+  0501:81 02              lag global2
   0503:4a 06             send 6
 
   0505:32 0081            jmp code_0589
@@ -669,7 +669,7 @@
   0512:78               push1
   0513:72 2d7a          lofsa $2d7a                    // getInBoatRm620
   0516:36                push
-  0517:81 02              lag
+  0517:81 02              lag global2
   0519:4a 06             send 6
 
   051b:32 006b            jmp code_0589
@@ -683,7 +683,7 @@
   0528:78               push1
   0529:72 2e76          lofsa $2e76                    // death2InFairRgn
   052c:36                push
-  052d:81 02              lag
+  052d:81 02              lag global2
   052f:4a 06             send 6
 
   0531:32 0055            jmp code_0589
@@ -697,7 +697,7 @@
   053e:78               push1
   053f:72 2f72          lofsa $2f72                    // deathInRm501
   0542:36                push
-  0543:81 02              lag
+  0543:81 02              lag global2
   0545:4a 06             send 6
 
   0547:32 003f            jmp code_0589
@@ -711,7 +711,7 @@
   0554:78               push1
   0555:72 3002          lofsa $3002                    // deathInRm710
   0558:36                push
-  0559:81 02              lag
+  0559:81 02              lag global2
   055b:4a 06             send 6
 
   055d:32 0029            jmp code_0589
@@ -725,7 +725,7 @@
   056a:78               push1
   056b:72 3114          lofsa $3114                    // death5InRm390
   056e:36                push
-  056f:81 02              lag
+  056f:81 02              lag global2
   0571:4a 06             send 6
 
   0573:32 0013            jmp code_0589
@@ -739,7 +739,7 @@
   0580:78               push1
   0581:72 322c          lofsa $322c                    // tooLateInTheHedge
   0584:36                push
-  0585:81 02              lag
+  0585:81 02              lag global2
   0587:4a 06             send 6
 
 
@@ -752,7 +752,7 @@
     (method (dispose)                                  // method_0173
   0173:38 009c          pushi 9c                       // $9c stop
   0176:76               push0
-  0177:81 64              lag
+  0177:81 64              lag gRgnMusic
   0179:4a 04             send 4
 
   017b:39 6c            pushi 6c                       // $6c dispose
@@ -7140,7 +7140,7 @@
 
   001a:78               push1
   001b:7a               push2
-  001c:47 0d 06 02      calle d procedure_0006 2       //
+  001c:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0020:39 08            pushi 8                        // $8 underBits
   0022:8f 01              lsp param1
@@ -7152,7 +7152,7 @@
   002c:39 50            pushi 50                       // $50 title
   002e:72 3260          lofsa $3260                    // Will
   0031:36                push
-  0032:47 0d 04 10      calle d procedure_0004 10      //
+  0032:47 0d 04 10      calle d procedure_0004 10      // proc13_4
 
   0036:48                 ret
 )
@@ -7174,14 +7174,14 @@
 
   004f:78               push1
   0050:78               push1
-  0051:47 0d 06 02      calle d procedure_0006 2       //
+  0051:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0055:7a               push2
   0056:59 01            &rest 1
   0058:39 50            pushi 50                       // $50 title
   005a:72 3265          lofsa $3265                    // John
   005d:36                push
-  005e:47 0d 04 04      calle d procedure_0004 4       //
+  005e:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   0062:48                 ret
 )
@@ -7203,7 +7203,7 @@
 
   007b:78               push1
   007c:39 03            pushi 3                        // $3 y
-  007e:47 0d 06 02      calle d procedure_0006 2       //
+  007e:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   0082:39 05            pushi 5                        // $5 view
   0084:59 01            &rest 1
@@ -7213,7 +7213,7 @@
   008c:39 50            pushi 50                       // $50 title
   008e:72 326a          lofsa $326a                    // Tuck
   0091:36                push
-  0092:47 0d 04 0a      calle d procedure_0004 a       //
+  0092:47 0d 04 0a      calle d procedure_0004 a       // proc13_4
 
   0096:48                 ret
 )
@@ -7235,7 +7235,7 @@
 
   00af:78               push1
   00b0:39 04            pushi 4                        // $4 x
-  00b2:47 0d 06 02      calle d procedure_0006 2       //
+  00b2:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   00b6:39 05            pushi 5                        // $5 view
   00b8:59 01            &rest 1
@@ -7245,7 +7245,7 @@
   00c0:39 50            pushi 50                       // $50 title
   00c2:72 326f          lofsa $326f                    // Alan
   00c5:36                push
-  00c6:47 0d 04 0a      calle d procedure_0004 a       //
+  00c6:47 0d 04 0a      calle d procedure_0004 a       // proc13_4
 
   00ca:48                 ret
 )
@@ -7260,7 +7260,7 @@
 
   00d7:78               push1
   00d8:39 05            pushi 5                        // $5 view
-  00da:47 0d 06 02      calle d procedure_0006 2       //
+  00da:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   00de:39 05            pushi 5                        // $5 view
   00e0:59 01            &rest 1
@@ -7270,7 +7270,7 @@
   00e9:39 50            pushi 50                       // $50 title
   00eb:72 3274          lofsa $3274                    // Much
   00ee:36                push
-  00ef:47 0d 04 0a      calle d procedure_0004 a       //
+  00ef:47 0d 04 0a      calle d procedure_0004 a       // proc13_4
 
   00f3:48                 ret
 )
@@ -7353,16 +7353,16 @@
 
 (procedure proc_0159
   0159:76               push0
-  015a:45 04 00         callb procedure_0004 0         //
+  015a:45 04 00         callb procedure_0004 0         // proc0_4
 
   015d:38 00a7          pushi a7                       // $a7 enable
   0160:76               push0
-  0161:81 45              lag
+  0161:81 45              lag gIconBar
   0163:4a 04             send 4
 
   0165:78               push1
   0166:76               push0
-  0167:47 0d 06 02      calle d procedure_0006 2       //
+  0167:47 0d 06 02      calle d procedure_0006 2       // proc13_6
 
   016b:76               push0
   016c:46 0326 0000 00  calle 326 procedure_0000 0     //

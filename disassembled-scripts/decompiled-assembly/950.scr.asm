@@ -45,13 +45,13 @@
   0014:39 04            pushi 4                        // $4 x
   0016:3c                 dup
   0017:76               push0
-  0018:81 00              lag
+  0018:81 00              lag gEgo
   001a:4a 04             send 4
 
   001c:36                push
   001d:39 03            pushi 3                        // $3 y
   001f:76               push0
-  0020:81 00              lag
+  0020:81 00              lag gEgo
   0022:4a 04             send 4
 
   0024:36                push
@@ -71,13 +71,13 @@
 
   0038:36                push
   0039:7c            pushSelf
-  003a:81 00              lag
+  003a:81 00              lag gEgo
   003c:4a 08             send 8
 
   003e:39 73            pushi 73                       // $73 add
   0040:78               push1
   0041:7c            pushSelf
-  0042:81 4e              lag
+  0042:81 4e              lag global78
   0044:4a 06             send 6
 
   0046:32 0056            jmp code_009f
@@ -99,7 +99,7 @@
   005e:39 54            pushi 54                       // $54 delete
   0060:78               push1
   0061:7c            pushSelf
-  0062:81 4e              lag
+  0062:81 4e              lag global78
   0064:4a 06             send 6
 
   0066:63 08             pToa client
@@ -183,7 +183,7 @@
   0117:32 000b            jmp code_0125
 
         code_011a
-  011a:81 40              lag
+  011a:81 40              lag gFtrInit
   011c:30 0006            bnt code_0125
   011f:39 63            pushi 63                       // $63 perform
   0121:78               push1
@@ -201,7 +201,7 @@
   012f:39 73            pushi 73                       // $73 add
   0131:78               push1
   0132:7c            pushSelf
-  0133:81 05              lag
+  0133:81 05              lag global5
   0135:4a 06             send 6
 
   0137:32 0008            jmp code_0142
@@ -210,7 +210,7 @@
   013a:39 73            pushi 73                       // $73 add
   013c:78               push1
   013d:7c            pushSelf
-  013e:81 20              lag
+  013e:81 20              lag global32
   0140:4a 06             send 6
 
 
@@ -246,7 +246,7 @@
   03a9:39 54            pushi 54                       // $54 delete
   03ab:78               push1
   03ac:7c            pushSelf
-  03ad:81 20              lag
+  03ad:81 20              lag global32
   03af:4a 06             send 6
 
   03b1:39 6c            pushi 6c                       // $6c dispose
@@ -308,7 +308,7 @@
   01c3:36                push
   01c4:38 010a          pushi 10a                      // $10a theInvItem
   01c7:78               push1
-  01c8:81 45              lag
+  01c8:81 45              lag gIconBar
   01ca:30 0024            bnt code_01f1
   01cd:39 28            pushi 28                       // $28 message
   01cf:76               push0
@@ -319,17 +319,17 @@
   01d5:35 04              ldi 4
   01d7:1a                 eq?
   01d8:30 0016            bnt code_01f1
-  01db:81 09              lag
+  01db:81 09              lag global9
   01dd:30 0011            bnt code_01f1
   01e0:38 0080          pushi 80                       // $80 indexOf
   01e3:78               push1
   01e4:38 00d1          pushi d1                       // $d1 curInvIcon
   01e7:76               push0
-  01e8:81 45              lag
+  01e8:81 45              lag gIconBar
   01ea:4a 04             send 4
 
   01ec:36                push
-  01ed:81 09              lag
+  01ed:81 09              lag global9
   01ef:4a 06             send 6
 
 
@@ -346,7 +346,7 @@
 
   01fe:38 011a          pushi 11a                      // $11a canControl
   0201:76               push0
-  0202:81 50              lag
+  0202:81 50              lag global80
   0204:4a 04             send 4
 
   0206:30 003c            bnt code_0245
@@ -374,7 +374,7 @@
   022d:67 22             pTos approachX
   022f:39 55            pushi 55                       // $55 z
   0231:76               push0
-  0232:81 00              lag
+  0232:81 00              lag gEgo
   0234:4a 04             send 4
 
   0236:36                push
@@ -383,7 +383,7 @@
   023a:36                push
   023b:51 2b            class CueObj
   023d:36                push
-  023e:81 00              lag
+  023e:81 00              lag gEgo
   0240:4a 0c             send c
 
   0242:32 0013            jmp code_0258
@@ -392,7 +392,7 @@
   0245:38 011b          pushi 11b                      // $11b setMotion
   0248:78               push1
   0249:76               push0
-  024a:81 00              lag
+  024a:81 00              lag gEgo
   024c:4a 06             send 6
 
   024e:38 008c          pushi 8c                       // $8c changeState
@@ -417,7 +417,7 @@
   0284:8f 01              lsp param1
   0286:7c            pushSelf
   0287:59 02            &rest 2
-  0289:81 41              lag
+  0289:81 41              lag gDoVerbCode
   028b:30 0003            bnt code_0291
   028e:32 0003            jmp code_0294
 
@@ -435,7 +435,7 @@
   0262:38 011b          pushi 11b                      // $11b setMotion
   0265:78               push1
   0266:76               push0
-  0267:81 00              lag
+  0267:81 00              lag gEgo
   0269:4a 06             send 6
 
   026b:39 2d            pushi 2d                       // $2d client
@@ -463,7 +463,7 @@
   02a0:32 0002            jmp code_02a5
 
         code_02a3
-  02a3:81 00              lag
+  02a3:81 00              lag gEgo
 
         code_02a5
   02a5:a5 00              sat temp0
@@ -715,7 +715,7 @@
   0490:39 43            pushi 43                       // $43 at
   0492:78               push1
   0493:8f 03              lsp param3
-  0495:81 09              lag
+  0495:81 09              lag global9
   0497:4a 06             send 6
 
   0499:a5 01              sat temp1

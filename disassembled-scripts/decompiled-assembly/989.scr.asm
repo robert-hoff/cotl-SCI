@@ -60,7 +60,7 @@
   0027:39 73            pushi 73                       // $73 add
   0029:78               push1
   002a:7c            pushSelf
-  002b:81 08              lag
+  002b:81 08              lag global8
   002d:4a 06             send 6
 
   002f:7a               push2
@@ -75,7 +75,7 @@
   01dd:39 54            pushi 54                       // $54 delete
   01df:78               push1
   01e0:7c            pushSelf
-  01e1:81 08              lag
+  01e1:81 08              lag global8
   01e3:4a 06             send 6
 
   01e5:63 08             pToa nodePtr

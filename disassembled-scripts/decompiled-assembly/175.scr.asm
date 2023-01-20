@@ -75,7 +75,7 @@
   0041:7a               push2
   0042:39 6e            pushi 6e                       // $6e showSelf
   0044:39 06            pushi 6                        // $6 loop
-  0046:81 02              lag
+  0046:81 02              lag global2
   0048:4a 08             send 8
 
   004a:39 73            pushi 73                       // $73 add
@@ -89,7 +89,7 @@
   0058:39 6b            pushi 6b                       // $6b init
   005a:39 3c            pushi 3c                       // $3c doit
   005c:76               push0
-  005d:81 0a              lag
+  005d:81 0a              lag global10
   005f:4a 12             send 12
 
   0061:39 6b            pushi 6b                       // $6b init
@@ -653,7 +653,7 @@
   0512:38 0179          pushi 179                      // $179 newRoom
   0515:78               push1
   0516:38 00a0          pushi a0                       // $a0 mute
-  0519:81 02              lag
+  0519:81 02              lag global2
   051b:4a 06             send 6
 
   051d:39 6c            pushi 6c                       // $6c dispose

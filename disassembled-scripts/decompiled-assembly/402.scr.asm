@@ -171,7 +171,7 @@
   0034:1a                 eq?
   0035:30 0054            bnt code_008c
   0038:76               push0
-  0039:45 03 00         callb procedure_0003 0         //
+  0039:45 03 00         callb procedure_0003 0         // proc0_3
 
   003c:7a               push2
   003d:38 0190          pushi 190                      // $190 roomToEdge
@@ -205,7 +205,7 @@
   0070:a3 04              sal local4
   0072:78               push1
   0073:38 0092          pushi 92                       // $92 cycleCnt
-  0076:45 06 02         callb procedure_0006 2         //
+  0076:45 06 02         callb procedure_0006 2         // proc0_6
 
   0079:39 06            pushi 6                        // $6 loop
   007b:78               push1
@@ -255,7 +255,7 @@
   00c0:39 04            pushi 4                        // $4 x
   00c2:51 5b            class Approach
   00c4:36                push
-  00c5:89 00              lsg
+  00c5:89 00              lsg gEgo
   00c7:7a               push2
   00c8:7c            pushSelf
   00c9:83 02              lal local2
@@ -285,7 +285,7 @@
   00ee:39 03            pushi 3                        // $3 y
   00f0:51 9f            class GuardFollow
   00f2:36                push
-  00f3:89 00              lsg
+  00f3:89 00              lsg gEgo
   00f5:7a               push2
   00f6:83 02              lal local2
   00f8:4a 0a             send a
@@ -320,12 +320,12 @@
   0124:36                push
   0125:39 03            pushi 3                        // $3 y
   0127:76               push0
-  0128:81 00              lag
+  0128:81 00              lag gEgo
   012a:4a 04             send 4
 
   012c:36                push
   012d:7c            pushSelf
-  012e:81 00              lag
+  012e:81 00              lag gEgo
   0130:4a 0c             send c
 
   0132:32 0024            jmp code_0159
@@ -349,7 +349,7 @@
   014c:1a                 eq?
   014d:30 0009            bnt code_0159
   0150:76               push0
-  0151:45 04 00         callb procedure_0004 0         //
+  0151:45 04 00         callb procedure_0004 0         // proc0_4
 
   0154:39 6c            pushi 6c                       // $6c dispose
   0156:76               push0
@@ -443,12 +443,12 @@
 
   01f6:78               push1
   01f7:38 00b4          pushi b4                       // $b4 busy
-  01fa:45 06 02         callb procedure_0006 2         //
+  01fa:45 06 02         callb procedure_0006 2         // proc0_6
 
   01fd:38 0179          pushi 179                      // $179 newRoom
   0200:78               push1
   0201:38 00f0          pushi f0                       // $f0 thisTurn
-  0204:81 02              lag
+  0204:81 02              lag global2
   0206:4a 06             send 6
 
   0208:32 0010            jmp code_021b
@@ -459,7 +459,7 @@
   020e:1a                 eq?
   020f:30 0009            bnt code_021b
   0212:76               push0
-  0213:45 04 00         callb procedure_0004 0         //
+  0213:45 04 00         callb procedure_0004 0         // proc0_4
 
   0216:39 6c            pushi 6c                       // $6c dispose
   0218:76               push0
@@ -827,7 +827,7 @@
   04be:78               push1
   04bf:78               push1
   04c0:39 0a            pushi a                        // $a nsLeft
-  04c2:45 05 02         callb procedure_0005 2         //
+  04c2:45 05 02         callb procedure_0005 2         // proc0_5
 
   04c5:30 0006            bnt code_04ce
   04c8:72 02de          lofsa $02de                    // puckTalkToSheriffArrow
@@ -856,7 +856,7 @@
   04e8:30 0041            bnt code_052c
   04eb:39 3c            pushi 3c                       // $3c doit
   04ed:76               push0
-  04ee:81 98              lag
+  04ee:81 98              lag gMoney
   04f0:4a 04             send 4
 
   04f2:18                 not
@@ -867,7 +867,7 @@
   04f9:39 0c            pushi c                        // $c nsRight
   04fb:38 029a          pushi 29a                      // $29a taken
   04fe:76               push0
-  04ff:81 98              lag
+  04ff:81 98              lag gMoney
   0501:4a 04             send 4
 
   0503:24                 le?
@@ -884,7 +884,7 @@
         code_0516
   0516:38 0148          pushi 148                      // $148 put
   0519:76               push0
-  051a:81 98              lag
+  051a:81 98              lag gMoney
   051c:4a 04             send 4
 
   051e:38 008e          pushi 8e                       // $8e setScript

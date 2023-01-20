@@ -232,7 +232,7 @@
     )
     (method (init)                                     // method_007c
   007c:76               push0
-  007d:45 03 00         callb procedure_0003 0         //
+  007d:45 03 00         callb procedure_0003 0         // proc0_3
 
   0080:39 07            pushi 7                        // $7 cel
   0082:38 0080          pushi 80                       // $80 indexOf
@@ -253,7 +253,7 @@
   00ae:38 0394          pushi 394                      // $394 sel_916
   00b1:46 03be 0000 0c  calle 3be procedure_0000 c     //
 
-  00b7:89 6c              lsg
+  00b7:89 6c              lsg global108
   00b9:35 02              ldi 2
   00bb:1a                 eq?
   00bc:30 0012            bnt code_00d1
@@ -294,7 +294,7 @@
   00f4:78               push1
   00f5:72 2bca          lofsa $2bca                    // randomHorse
   00f8:36                push
-  00f9:81 00              lag
+  00f9:81 00              lag gEgo
   00fb:4a 06             send 6
 
   00fd:39 6b            pushi 6b                       // $6b init
@@ -314,7 +314,7 @@
   010f:38 04ca          pushi 4ca                      // $4ca sel_1226
   0112:39 18            pushi 18                       // $18 key
   0114:78               push1
-  0115:47 0d 04 06      calle d procedure_0004 6       //
+  0115:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   0119:32 0021            jmp code_013d
 
@@ -327,7 +327,7 @@
   0125:38 04ca          pushi 4ca                      // $4ca sel_1226
   0128:39 19            pushi 19                       // $19 time
   012a:78               push1
-  012b:47 0d 04 06      calle d procedure_0004 6       //
+  012b:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   012f:32 000b            jmp code_013d
 
@@ -403,7 +403,7 @@
         code $0
     )
     (method (init)                                     // method_01ca
-  01ca:89 6c              lsg
+  01ca:89 6c              lsg global108
   01cc:35 02              ldi 2
   01ce:1a                 eq?
   01cf:30 001b            bnt code_01ed
@@ -454,7 +454,7 @@
     (method (doit)                                     // method_0214
   0214:39 03            pushi 3                        // $3 y
   0216:76               push0
-  0217:81 00              lag
+  0217:81 00              lag gEgo
   0219:4a 04             send 4
 
   021b:36                push
@@ -466,7 +466,7 @@
   0225:30 0029            bnt code_0251
   0228:38 008a          pushi 8a                       // $8a script
   022b:76               push0
-  022c:81 00              lag
+  022c:81 00              lag gEgo
   022e:4a 04             send 4
 
   0230:36                push
@@ -483,7 +483,7 @@
   0245:78               push1
   0246:72 19d2          lofsa $19d2                    // watchHerDie
   0249:36                push
-  024a:81 00              lag
+  024a:81 00              lag gEgo
   024c:4a 06             send 6
 
   024e:32 0053            jmp code_02a4
@@ -491,7 +491,7 @@
         code_0251
   0251:38 00e6          pushi e6                       // $e6 distanceTo
   0254:78               push1
-  0255:89 00              lsg
+  0255:89 00              lsg gEgo
   0257:54 06             self 6
 
   0259:36                push
@@ -503,7 +503,7 @@
   0263:30 003e            bnt code_02a4
   0266:38 008a          pushi 8a                       // $8a script
   0269:76               push0
-  026a:81 00              lag
+  026a:81 00              lag gEgo
   026c:4a 04             send 4
 
   026e:36                push
@@ -532,7 +532,7 @@
   029b:78               push1
   029c:72 1c2a          lofsa $1c2a                    // suicide
   029f:36                push
-  02a0:81 00              lag
+  02a0:81 00              lag gEgo
   02a2:4a 06             send 6
 
 
@@ -572,7 +572,7 @@
   02d4:38 04ca          pushi 4ca                      // $4ca sel_1226
   02d7:39 15            pushi 15                       // $15 brBottom
   02d9:78               push1
-  02da:47 0d 04 06      calle d procedure_0004 6       //
+  02da:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   02de:32 00d0            jmp code_03b1
 
@@ -589,7 +589,7 @@
   02f2:38 04ca          pushi 4ca                      // $4ca sel_1226
   02f5:39 16            pushi 16                       // $16 brRight
   02f7:78               push1
-  02f8:47 0d 04 06      calle d procedure_0004 6       //
+  02f8:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   02fc:32 00b2            jmp code_03b1
 
@@ -598,7 +598,7 @@
   0301:38 04ca          pushi 4ca                      // $4ca sel_1226
   0304:39 17            pushi 17                       // $17 name
   0306:78               push1
-  0307:47 0d 04 06      calle d procedure_0004 6       //
+  0307:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   030b:32 00a3            jmp code_03b1
 
@@ -614,7 +614,7 @@
   031d:38 04ca          pushi 4ca                      // $4ca sel_1226
   0320:39 1a            pushi 1a                       // $1a text
   0322:78               push1
-  0323:47 0d 04 06      calle d procedure_0004 6       //
+  0323:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   0327:32 0087            jmp code_03b1
 
@@ -625,7 +625,7 @@
   0331:38 04ca          pushi 4ca                      // $4ca sel_1226
   0334:39 32            pushi 32                       // $32 b-i2
   0336:78               push1
-  0337:47 0d 04 06      calle d procedure_0004 6       //
+  0337:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   033b:32 0073            jmp code_03b1
 
@@ -646,7 +646,7 @@
   0355:78               push1
   0356:72 1288          lofsa $1288                    // searchMonk
   0359:36                push
-  035a:81 00              lag
+  035a:81 00              lag gEgo
   035c:4a 06             send 6
 
   035e:32 0050            jmp code_03b1
@@ -680,7 +680,7 @@
   038c:78               push1
   038d:72 1098          lofsa $1098                    // skewerMonk
   0390:36                push
-  0391:81 00              lag
+  0391:81 00              lag gEgo
   0393:4a 06             send 6
 
   0395:32 0019            jmp code_03b1
@@ -775,7 +775,7 @@
   044d:38 04ca          pushi 4ca                      // $4ca sel_1226
   0450:39 1f            pushi 1f                       // $1f style
   0452:78               push1
-  0453:47 0d 04 06      calle d procedure_0004 6       //
+  0453:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   0457:32 0031            jmp code_048b
 
@@ -798,7 +798,7 @@
   0474:78               push1
   0475:72 1418          lofsa $1418                    // getSlipper
   0478:36                push
-  0479:81 00              lag
+  0479:81 00              lag gEgo
   047b:4a 06             send 6
 
   047d:32 000b            jmp code_048b
@@ -858,7 +858,7 @@
         palette $0
     )
     (method (init)                                     // method_0514
-  0514:89 6c              lsg
+  0514:89 6c              lsg global108
   0516:35 02              ldi 2
   0518:1a                 eq?
   0519:30 0040            bnt code_055c
@@ -966,7 +966,7 @@
   05ab:38 04ca          pushi 4ca                      // $4ca sel_1226
   05ae:39 1d            pushi 1d                       // $1d back
   05b0:78               push1
-  05b1:47 0d 04 06      calle d procedure_0004 6       //
+  05b1:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   05b5:32 0021            jmp code_05d9
 
@@ -979,7 +979,7 @@
   05c1:38 04ca          pushi 4ca                      // $4ca sel_1226
   05c4:39 1e            pushi 1e                       // $1e mode
   05c6:78               push1
-  05c7:47 0d 04 06      calle d procedure_0004 6       //
+  05c7:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   05cb:32 000b            jmp code_05d9
 
@@ -1019,7 +1019,7 @@
     (method (doit)                                     // method_0644
   0644:38 0146          pushi 146                      // $146 edgeHit
   0647:76               push0
-  0648:81 00              lag
+  0648:81 00              lag gEgo
   064a:4a 04             send 4
 
   064c:30 0010            bnt code_065f
@@ -1030,7 +1030,7 @@
   0657:a3 16              sal local22
   0659:78               push1
   065a:39 05            pushi 5                        // $5 view
-  065c:45 06 02         callb procedure_0006 2         //
+  065c:45 06 02         callb procedure_0006 2         // proc0_6
 
 
         code_065f
@@ -1053,15 +1053,15 @@
   0675:78               push1
   0676:72 2c88          lofsa $2c88                    // marianHornBlow
   0679:36                push
-  067a:81 00              lag
+  067a:81 00              lag gEgo
   067c:4a 06             send 6
 
   067e:76               push0
-  067f:45 02 00         callb procedure_0002 0         //
+  067f:45 02 00         callb procedure_0002 0         // proc0_2
 
   0682:78               push1
   0683:38 00b6          pushi b6                       // $b6 center
-  0686:45 06 02         callb procedure_0006 2         //
+  0686:45 06 02         callb procedure_0006 2         // proc0_6
 
   0689:39 6b            pushi 6b                       // $6b init
   068b:76               push0
@@ -1073,7 +1073,7 @@
   0694:72 2ee6          lofsa $2ee6                    // mariansSong
   0697:4a 04             send 4
 
-  0699:89 6c              lsg
+  0699:89 6c              lsg global108
   069b:35 02              ldi 2
   069d:1a                 eq?
   069e:30 0024            bnt code_06c5
@@ -1093,7 +1093,7 @@
   06b8:39 29            pushi 29                       // $29 edit
   06ba:38 00b6          pushi b6                       // $b6 center
   06bd:7c            pushSelf
-  06be:81 00              lag
+  06be:81 00              lag gEgo
   06c0:4a 1e             send 1e
 
   06c2:32 036b            jmp code_0a30
@@ -1115,7 +1115,7 @@
   06de:38 0115          pushi 115                      // $115 lookStr
   06e1:38 00b6          pushi b6                       // $b6 center
   06e4:7c            pushSelf
-  06e5:81 00              lag
+  06e5:81 00              lag gEgo
   06e7:4a 1e             send 1e
 
   06e9:32 0344            jmp code_0a30
@@ -1158,7 +1158,7 @@
   0724:1a                 eq?
   0725:30 0066            bnt code_078e
   0728:76               push0
-  0729:45 04 00         callb procedure_0004 0         //
+  0729:45 04 00         callb procedure_0004 0         // proc0_4
 
   072c:76               push0
   072d:43 27 00         callk HaveMouse 0
@@ -1167,11 +1167,11 @@
   0731:30 0010            bnt code_0744
   0734:38 00bb          pushi bb                       // $bb setCursor
   0737:39 04            pushi 4                        // $4 x
-  0739:89 13              lsg
+  0739:89 13              lsg global19
   073b:78               push1
   073c:8b 13              lsl local19
   073e:8b 14              lsl local20
-  0740:81 01              lag
+  0740:81 01              lag global1
   0742:4a 0c             send c
 
 
@@ -1179,7 +1179,7 @@
   0744:38 008e          pushi 8e                       // $8e setScript
   0747:78               push1
   0748:76               push0
-  0749:81 00              lag
+  0749:81 00              lag gEgo
   074b:4a 06             send 6
 
   074d:38 008e          pushi 8e                       // $8e setScript
@@ -1196,10 +1196,10 @@
   075f:38 00c9          pushi c9                       // $c9 disable
   0762:78               push1
   0763:39 05            pushi 5                        // $5 view
-  0765:81 45              lag
+  0765:81 45              lag gIconBar
   0767:4a 06             send 6
 
-  0769:89 03              lsg
+  0769:89 03              lsg global3
   076b:35 07              ldi 7
   076d:1e                 gt?
   076e:30 0007            bnt code_0778
@@ -1208,7 +1208,7 @@
   0775:32 02b8            jmp code_0a30
 
         code_0778
-  0778:89 03              lsg
+  0778:89 03              lsg global3
   077a:35 04              ldi 4
   077c:1e                 gt?
   077d:30 0007            bnt code_0787
@@ -1231,7 +1231,7 @@
   0798:46 0326 0006 02  calle 326 procedure_0006 2     //
 
   079e:76               push0
-  079f:45 03 00         callb procedure_0003 0         //
+  079f:45 03 00         callb procedure_0003 0         // proc0_3
 
   07a2:35 5a              ldi 5a
   07a4:65 16             aTop ticks
@@ -1286,19 +1286,19 @@
   07f2:39 ff            pushi ff                       // $ff syncNum
   07f4:39 2a            pushi 2a                       // $2a play
   07f6:76               push0
-  07f7:81 72              lag
+  07f7:81 72              lag gSFX2
   07f9:4a 10             send 10
 
   07fb:78               push1
   07fc:39 05            pushi 5                        // $5 view
-  07fe:45 06 02         callb procedure_0006 2         //
+  07fe:45 06 02         callb procedure_0006 2         // proc0_6
 
   0801:39 05            pushi 5                        // $5 view
   0803:78               push1
   0804:38 00df          pushi df                       // $df endCel
   0807:38 00a2          pushi a2                       // $a2 setLoop
   080a:78               push1
-  080b:89 6c              lsg
+  080b:89 6c              lsg global108
   080d:35 02              ldi 2
   080f:1a                 eq?
   0810:30 0005            bnt code_0818
@@ -1406,7 +1406,7 @@
   08ae:35 0a              ldi a
   08b0:1a                 eq?
   08b1:30 001e            bnt code_08d2
-  08b4:81 19              lag
+  08b4:81 19              lag global25
   08b6:30 0005            bnt code_08be
   08b9:39 6c            pushi 6c                       // $6c dispose
   08bb:76               push0
@@ -1434,10 +1434,10 @@
   08dc:78               push1
   08dd:72 2c88          lofsa $2c88                    // marianHornBlow
   08e0:36                push
-  08e1:81 00              lag
+  08e1:81 00              lag gEgo
   08e3:4a 06             send 6
 
-  08e5:89 6c              lsg
+  08e5:89 6c              lsg global108
   08e7:35 02              ldi 2
   08e9:1a                 eq?
   08ea:30 001d            bnt code_090a
@@ -1479,7 +1479,7 @@
   0927:38 00dd          pushi dd                       // $dd lastCel
   092a:38 00a2          pushi a2                       // $a2 setLoop
   092d:78               push1
-  092e:89 6c              lsg
+  092e:89 6c              lsg global108
   0930:35 02              ldi 2
   0932:1a                 eq?
   0933:30 0005            bnt code_093b
@@ -1519,7 +1519,7 @@
   0969:35 0c              ldi c
   096b:1a                 eq?
   096c:30 0052            bnt code_09c1
-  096f:89 6c              lsg
+  096f:89 6c              lsg global108
   0971:35 02              ldi 2
   0973:1a                 eq?
   0974:30 0025            bnt code_099c
@@ -1581,7 +1581,7 @@
   09d3:1a                 eq?
   09d4:30 0059            bnt code_0a30
   09d7:76               push0
-  09d8:45 04 00         callb procedure_0004 0         //
+  09d8:45 04 00         callb procedure_0004 0         // proc0_4
 
   09db:38 009f          pushi 9f                       // $9f fade
   09de:39 04            pushi 4                        // $4 x
@@ -1589,7 +1589,7 @@
   09e1:39 14            pushi 14                       // $14 brLeft
   09e3:39 10            pushi 10                       // $10 lsRight
   09e5:78               push1
-  09e6:81 72              lag
+  09e6:81 72              lag gSFX2
   09e8:4a 0c             send c
 
   09ea:39 04            pushi 4                        // $4 x
@@ -1710,18 +1710,18 @@
   0ab4:1a                 eq?
   0ab5:30 00f3            bnt code_0bab
   0ab8:76               push0
-  0ab9:45 03 00         callb procedure_0003 0         //
+  0ab9:45 03 00         callb procedure_0003 0         // proc0_3
 
   0abc:39 04            pushi 4                        // $4 x
   0abe:3c                 dup
   0abf:76               push0
-  0ac0:81 00              lag
+  0ac0:81 00              lag gEgo
   0ac2:4a 04             send 4
 
   0ac4:36                push
   0ac5:39 03            pushi 3                        // $3 y
   0ac7:76               push0
-  0ac8:81 00              lag
+  0ac8:81 00              lag gEgo
   0aca:4a 04             send 4
 
   0acc:36                push
@@ -1753,7 +1753,7 @@
   0af4:38 00a2          pushi a2                       // $a2 setLoop
   0af7:78               push1
   0af8:39 03            pushi 3                        // $3 y
-  0afa:81 00              lag
+  0afa:81 00              lag gEgo
   0afc:4a 06             send 6
 
   0afe:32 0091            jmp code_0b92
@@ -1766,7 +1766,7 @@
   0b09:38 00a2          pushi a2                       // $a2 setLoop
   0b0c:78               push1
   0b0d:39 06            pushi 6                        // $6 loop
-  0b0f:81 00              lag
+  0b0f:81 00              lag gEgo
   0b11:4a 06             send 6
 
   0b13:32 007c            jmp code_0b92
@@ -1779,7 +1779,7 @@
   0b1e:38 00a2          pushi a2                       // $a2 setLoop
   0b21:78               push1
   0b22:76               push0
-  0b23:81 00              lag
+  0b23:81 00              lag gEgo
   0b25:4a 06             send 6
 
   0b27:32 0068            jmp code_0b92
@@ -1792,7 +1792,7 @@
   0b32:38 00a2          pushi a2                       // $a2 setLoop
   0b35:78               push1
   0b36:39 04            pushi 4                        // $4 x
-  0b38:81 00              lag
+  0b38:81 00              lag gEgo
   0b3a:4a 06             send 6
 
   0b3c:32 0053            jmp code_0b92
@@ -1805,7 +1805,7 @@
   0b48:38 00a2          pushi a2                       // $a2 setLoop
   0b4b:78               push1
   0b4c:7a               push2
-  0b4d:81 00              lag
+  0b4d:81 00              lag gEgo
   0b4f:4a 06             send 6
 
   0b51:32 003e            jmp code_0b92
@@ -1818,7 +1818,7 @@
   0b5d:38 00a2          pushi a2                       // $a2 setLoop
   0b60:78               push1
   0b61:39 05            pushi 5                        // $5 view
-  0b63:81 00              lag
+  0b63:81 00              lag gEgo
   0b65:4a 06             send 6
 
   0b67:32 0028            jmp code_0b92
@@ -1831,7 +1831,7 @@
   0b73:38 00a2          pushi a2                       // $a2 setLoop
   0b76:78               push1
   0b77:78               push1
-  0b78:81 00              lag
+  0b78:81 00              lag gEgo
   0b7a:4a 06             send 6
 
   0b7c:32 0013            jmp code_0b92
@@ -1844,7 +1844,7 @@
   0b88:38 00a2          pushi a2                       // $a2 setLoop
   0b8b:78               push1
   0b8c:39 07            pushi 7                        // $7 cel
-  0b8e:81 00              lag
+  0b8e:81 00              lag gEgo
   0b90:4a 06             send 6
 
 
@@ -1860,7 +1860,7 @@
   0ba0:51 1b            class Beg
   0ba2:36                push
   0ba3:7c            pushSelf
-  0ba4:81 00              lag
+  0ba4:81 00              lag gEgo
   0ba6:4a 14             send 14
 
   0ba8:32 04df            jmp code_108a
@@ -1881,7 +1881,7 @@
   0bc0:51 1a            class End
   0bc2:36                push
   0bc3:7c            pushSelf
-  0bc4:81 00              lag
+  0bc4:81 00              lag gEgo
   0bc6:4a 14             send 14
 
   0bc8:32 04bf            jmp code_108a
@@ -1915,7 +1915,7 @@
   0bf2:30 003a            bnt code_0c2f
   0bf5:38 00a2          pushi a2                       // $a2 setLoop
   0bf8:78               push1
-  0bf9:89 6c              lsg
+  0bf9:89 6c              lsg global108
   0bfb:35 02              ldi 2
   0bfd:1a                 eq?
   0bfe:30 0005            bnt code_0c06
@@ -1993,7 +1993,7 @@
   0c6e:39 ff            pushi ff                       // $ff syncNum
   0c70:39 2a            pushi 2a                       // $2a play
   0c72:76               push0
-  0c73:81 72              lag
+  0c73:81 72              lag gSFX2
   0c75:4a 10             send 10
 
   0c77:38 009f          pushi 9f                       // $9f fade
@@ -2016,7 +2016,7 @@
   0c94:4a 06             send 6
 
   0c96:76               push0
-  0c97:45 02 00         callb procedure_0002 0         //
+  0c97:45 02 00         callb procedure_0002 0         // proc0_2
 
   0c9a:39 55            pushi 55                       // $55 z
   0c9c:78               push1
@@ -2039,7 +2039,7 @@
   0cb6:a3 10              sal local16
   0cb8:78               push1
   0cb9:39 17            pushi 17                       // $17 name
-  0cbb:45 06 02         callb procedure_0006 2         //
+  0cbb:45 06 02         callb procedure_0006 2         // proc0_6
 
   0cbe:35 02              ldi 2
   0cc0:65 12             aTop seconds
@@ -2050,7 +2050,7 @@
   0cc6:35 06              ldi 6
   0cc8:1a                 eq?
   0cc9:30 01fe            bnt code_0eca
-  0ccc:89 6c              lsg
+  0ccc:89 6c              lsg global108
   0cce:35 02              ldi 2
   0cd0:1a                 eq?
   0cd1:30 00f0            bnt code_0dc4
@@ -2215,7 +2215,7 @@
   0dba:4a 2e             send 2e
 
   0dbc:36                push
-  0dbd:81 02              lag
+  0dbd:81 02              lag global2
   0dbf:4a 06             send 6
 
   0dc1:32 00cf            jmp code_0e93
@@ -2361,7 +2361,7 @@
   0e8c:4a 2a             send 2a
 
   0e8e:36                push
-  0e8f:81 02              lag
+  0e8f:81 02              lag global2
   0e91:4a 06             send 6
 
 
@@ -2379,10 +2379,10 @@
   0ea3:72 004e          lofsa $004e                    // bowSound
   0ea6:4a 14             send 14
 
-  0ea8:89 0f              lsg
+  0ea8:89 0f              lsg global15
   0eaa:35 64              ldi 64
   0eac:02                 add
-  0ead:a1 0f              sag
+  0ead:a1 0f              sag global15
   0eaf:38 011d          pushi 11d                      // $11d stopUpd
   0eb2:76               push0
   0eb3:72 05e8          lofsa $05e8                    // stick
@@ -2453,7 +2453,7 @@
   0f19:38 00de          pushi de                       // $de isStopped
   0f1c:38 00a2          pushi a2                       // $a2 setLoop
   0f1f:78               push1
-  0f20:89 6c              lsg
+  0f20:89 6c              lsg global108
   0f22:35 02              ldi 2
   0f24:1a                 eq?
   0f25:30 0005            bnt code_0f2d
@@ -2555,7 +2555,7 @@
   0fbe:72 014c          lofsa $014c                    // marian
   0fc1:4a 0c             send c
 
-  0fc3:89 6c              lsg
+  0fc3:89 6c              lsg global108
   0fc5:35 02              ldi 2
   0fc7:1a                 eq?
   0fc8:30 001b            bnt code_0fe6
@@ -2608,13 +2608,13 @@
   1016:7a               push2
   1017:38 04ca          pushi 4ca                      // $4ca sel_1226
   101a:39 10            pushi 10                       // $10 lsRight
-  101c:47 0d 04 04      calle d procedure_0004 4       //
+  101c:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   1020:39 03            pushi 3                        // $3 y
   1022:38 04ca          pushi 4ca                      // $4ca sel_1226
   1025:39 11            pushi 11                       // $11 signal
   1027:7c            pushSelf
-  1028:47 0d 04 06      calle d procedure_0004 6       //
+  1028:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   102c:32 005b            jmp code_108a
 
@@ -2633,13 +2633,13 @@
   1041:1a                 eq?
   1042:30 0039            bnt code_107e
   1045:76               push0
-  1046:45 04 00         callb procedure_0004 0         //
+  1046:45 04 00         callb procedure_0004 0         // proc0_4
 
   1049:38 010b          pushi 10b                      // $10b actions
   104c:78               push1
   104d:72 2c88          lofsa $2c88                    // marianHornBlow
   1050:36                push
-  1051:81 00              lag
+  1051:81 00              lag gEgo
   1053:4a 06             send 6
 
   1055:39 11            pushi 11                       // $11 signal
@@ -2654,7 +2654,7 @@
   1066:39 14            pushi 14                       // $14 brLeft
   1068:39 10            pushi 10                       // $10 lsRight
   106a:78               push1
-  106b:81 72              lag
+  106b:81 72              lag gSFX2
   106d:4a 0c             send c
 
   106f:39 6c            pushi 6c                       // $6c dispose
@@ -2714,13 +2714,13 @@
   10dd:36                push
   10de:39 04            pushi 4                        // $4 x
   10e0:76               push0
-  10e1:81 00              lag
+  10e1:81 00              lag gEgo
   10e3:4a 04             send 4
 
   10e5:36                push
   10e6:39 03            pushi 3                        // $3 y
   10e8:76               push0
-  10e9:81 00              lag
+  10e9:81 00              lag gEgo
   10eb:4a 04             send 4
 
   10ed:36                push
@@ -2728,7 +2728,7 @@
   10f0:02                 add
   10f1:36                push
   10f2:7c            pushSelf
-  10f3:81 00              lag
+  10f3:81 00              lag gEgo
   10f5:4a 0c             send c
 
   10f7:32 0018            jmp code_1112
@@ -2742,7 +2742,7 @@
   1103:38 04ca          pushi 4ca                      // $4ca sel_1226
   1106:39 33            pushi 33                       // $33 b-di
   1108:78               push1
-  1109:47 0d 04 06      calle d procedure_0004 6       //
+  1109:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   110d:39 6c            pushi 6c                       // $6c dispose
   110f:76               push0
@@ -2782,9 +2782,9 @@
   1156:1a                 eq?
   1157:30 0060            bnt code_11ba
   115a:76               push0
-  115b:45 03 00         callb procedure_0003 0         //
+  115b:45 03 00         callb procedure_0003 0         // proc0_3
 
-  115e:89 6c              lsg
+  115e:89 6c              lsg global108
   1160:35 02              ldi 2
   1162:1a                 eq?
   1163:30 002a            bnt code_1190
@@ -2811,7 +2811,7 @@
   1186:02                 add
   1187:36                push
   1188:7c            pushSelf
-  1189:81 00              lag
+  1189:81 00              lag gEgo
   118b:4a 0c             send c
 
   118d:32 00e9            jmp code_1279
@@ -2840,7 +2840,7 @@
   11b0:02                 add
   11b1:36                push
   11b2:7c            pushSelf
-  11b3:81 00              lag
+  11b3:81 00              lag gEgo
   11b5:4a 0c             send c
 
   11b7:32 00bf            jmp code_1279
@@ -2855,7 +2855,7 @@
   11c4:39 07            pushi 7                        // $7 cel
   11c6:38 00a2          pushi a2                       // $a2 setLoop
   11c9:78               push1
-  11ca:89 6c              lsg
+  11ca:89 6c              lsg global108
   11cc:35 02              ldi 2
   11ce:1a                 eq?
   11cf:30 0005            bnt code_11d7
@@ -2874,7 +2874,7 @@
   11e2:39 05            pushi 5                        // $5 view
   11e4:78               push1
   11e5:7c            pushSelf
-  11e6:81 00              lag
+  11e6:81 00              lag gEgo
   11e8:4a 18             send 18
 
   11ea:32 008c            jmp code_1279
@@ -2887,7 +2887,7 @@
   11f4:38 0120          pushi 120                      // $120 setCel
   11f7:78               push1
   11f8:39 04            pushi 4                        // $4 x
-  11fa:81 00              lag
+  11fa:81 00              lag gEgo
   11fc:4a 06             send 6
 
   11fe:35 12              ldi 12
@@ -2902,7 +2902,7 @@
   120c:38 0120          pushi 120                      // $120 setCel
   120f:78               push1
   1210:39 05            pushi 5                        // $5 view
-  1212:81 00              lag
+  1212:81 00              lag gEgo
   1214:4a 06             send 6
 
   1216:35 12              ldi 12
@@ -2918,7 +2918,7 @@
   1226:38 04ca          pushi 4ca                      // $4ca sel_1226
   1229:39 1b            pushi 1b                       // $1b elements
   122b:7c            pushSelf
-  122c:47 0d 04 06      calle d procedure_0004 6       //
+  122c:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   1230:32 0046            jmp code_1279
 
@@ -2931,7 +2931,7 @@
   123c:38 04ca          pushi 4ca                      // $4ca sel_1226
   123f:39 1c            pushi 1c                       // $1c color
   1241:7c            pushSelf
-  1242:47 0d 04 06      calle d procedure_0004 6       //
+  1242:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   1246:32 0030            jmp code_1279
 
@@ -2948,7 +2948,7 @@
   125a:51 1a            class End
   125c:36                push
   125d:7c            pushSelf
-  125e:81 00              lag
+  125e:81 00              lag gEgo
   1260:4a 0e             send e
 
   1262:32 0014            jmp code_1279
@@ -2959,10 +2959,10 @@
   1268:1a                 eq?
   1269:30 000d            bnt code_1279
   126c:76               push0
-  126d:45 02 00         callb procedure_0002 0         //
+  126d:45 02 00         callb procedure_0002 0         // proc0_2
 
   1270:76               push0
-  1271:45 04 00         callb procedure_0004 0         //
+  1271:45 04 00         callb procedure_0004 0         // proc0_4
 
   1274:39 6c            pushi 6c                       // $6c dispose
   1276:76               push0
@@ -3003,11 +3003,11 @@
   12be:1a                 eq?
   12bf:30 006c            bnt code_132e
   12c2:76               push0
-  12c3:45 03 00         callb procedure_0003 0         //
+  12c3:45 03 00         callb procedure_0003 0         // proc0_3
 
   12c6:39 04            pushi 4                        // $4 x
   12c8:76               push0
-  12c9:81 00              lag
+  12c9:81 00              lag gEgo
   12cb:4a 04             send 4
 
   12cd:36                push
@@ -3041,7 +3041,7 @@
   12fa:02                 add
   12fb:36                push
   12fc:7c            pushSelf
-  12fd:81 00              lag
+  12fd:81 00              lag gEgo
   12ff:4a 0c             send c
 
   1301:32 0105            jmp code_1409
@@ -3070,7 +3070,7 @@
   1324:02                 add
   1325:36                push
   1326:7c            pushSelf
-  1327:81 00              lag
+  1327:81 00              lag gEgo
   1329:4a 0c             send c
 
   132b:32 00db            jmp code_1409
@@ -3090,7 +3090,7 @@
   1342:78               push1
   1343:39 04            pushi 4                        // $4 x
   1345:76               push0
-  1346:81 00              lag
+  1346:81 00              lag gEgo
   1348:4a 04             send 4
 
   134a:36                push
@@ -3116,7 +3116,7 @@
   1367:39 04            pushi 4                        // $4 x
   1369:78               push1
   136a:7c            pushSelf
-  136b:81 00              lag
+  136b:81 00              lag gEgo
   136d:4a 1e             send 1e
 
   136f:32 0097            jmp code_1409
@@ -3135,12 +3135,12 @@
   1383:a3 11              sal local17
   1385:78               push1
   1386:39 35            pushi 35                       // $35 b-incr
-  1388:45 06 02         callb procedure_0006 2         //
+  1388:45 06 02         callb procedure_0006 2         // proc0_6
 
   138b:38 0147          pushi 147                      // $147 get
   138e:78               push1
   138f:39 03            pushi 3                        // $3 y
-  1391:81 00              lag
+  1391:81 00              lag gEgo
   1393:4a 06             send 6
 
   1395:39 2b            pushi 2b                       // $2b number
@@ -3156,10 +3156,10 @@
   13a5:72 004e          lofsa $004e                    // bowSound
   13a8:4a 14             send 14
 
-  13aa:89 0f              lsg
+  13aa:89 0f              lsg global15
   13ac:35 64              ldi 64
   13ae:02                 add
-  13af:a1 0f              sag
+  13af:a1 0f              sag global15
   13b1:39 3c            pushi 3c                       // $3c doit
   13b3:76               push0
   13b4:7a               push2
@@ -3174,7 +3174,7 @@
   13c0:51 1a            class End
   13c2:36                push
   13c3:7c            pushSelf
-  13c4:81 00              lag
+  13c4:81 00              lag gEgo
   13c6:4a 08             send 8
 
   13c8:32 003e            jmp code_1409
@@ -3188,7 +3188,7 @@
   13d4:78               push1
   13d5:39 06            pushi 6                        // $6 loop
   13d7:76               push0
-  13d8:81 00              lag
+  13d8:81 00              lag gEgo
   13da:4a 04             send 4
 
   13dc:18                 not
@@ -3201,7 +3201,7 @@
 
         code_13e7
   13e7:36                push
-  13e8:81 00              lag
+  13e8:81 00              lag gEgo
   13ea:4a 06             send 6
 
   13ec:39 6c            pushi 6c                       // $6c dispose
@@ -3215,10 +3215,10 @@
   13fa:4a 04             send 4
 
   13fc:76               push0
-  13fd:45 02 00         callb procedure_0002 0         //
+  13fd:45 02 00         callb procedure_0002 0         // proc0_2
 
   1400:76               push0
-  1401:45 04 00         callb procedure_0004 0         //
+  1401:45 04 00         callb procedure_0004 0         // proc0_4
 
   1404:39 6c            pushi 6c                       // $6c dispose
   1406:76               push0
@@ -3258,7 +3258,7 @@
   144c:35 00              ldi 0
   144e:1a                 eq?
   144f:30 0080            bnt code_14d2
-  1452:89 6c              lsg
+  1452:89 6c              lsg global108
   1454:35 02              ldi 2
   1456:1a                 eq?
   1457:30 003c            bnt code_1496
@@ -3346,7 +3346,7 @@
   14d3:35 01              ldi 1
   14d5:1a                 eq?
   14d6:30 005e            bnt code_1537
-  14d9:89 6c              lsg
+  14d9:89 6c              lsg global108
   14db:35 02              ldi 2
   14dd:1a                 eq?
   14de:30 002b            bnt code_150c
@@ -3412,7 +3412,7 @@
   1538:35 02              ldi 2
   153a:1a                 eq?
   153b:30 005e            bnt code_159c
-  153e:89 6c              lsg
+  153e:89 6c              lsg global108
   1540:35 02              ldi 2
   1542:1a                 eq?
   1543:30 002b            bnt code_1571
@@ -3478,7 +3478,7 @@
   159d:35 03              ldi 3
   159f:1a                 eq?
   15a0:30 005e            bnt code_1601
-  15a3:89 6c              lsg
+  15a3:89 6c              lsg global108
   15a5:35 02              ldi 2
   15a7:1a                 eq?
   15a8:30 002b            bnt code_15d6
@@ -3663,7 +3663,7 @@
   16d2:1a                 eq?
   16d3:30 0037            bnt code_170d
   16d6:76               push0
-  16d7:45 03 00         callb procedure_0003 0         //
+  16d7:45 03 00         callb procedure_0003 0         // proc0_3
 
   16da:38 011b          pushi 11b                      // $11b setMotion
   16dd:39 03            pushi 3                        // $3 y
@@ -3671,7 +3671,7 @@
   16e1:36                push
   16e2:39 04            pushi 4                        // $4 x
   16e4:76               push0
-  16e5:81 00              lag
+  16e5:81 00              lag gEgo
   16e7:4a 04             send 4
 
   16e9:36                push
@@ -3680,11 +3680,11 @@
   16ed:36                push
   16ee:39 03            pushi 3                        // $3 y
   16f0:76               push0
-  16f1:81 00              lag
+  16f1:81 00              lag gEgo
   16f3:4a 04             send 4
 
   16f5:36                push
-  16f6:81 00              lag
+  16f6:81 00              lag gEgo
   16f8:4a 0a             send a
 
   16fa:38 0096          pushi 96                       // $96 setCycle
@@ -3708,7 +3708,7 @@
   1717:38 00da          pushi da                       // $da motionCue
   171a:38 00a2          pushi a2                       // $a2 setLoop
   171d:78               push1
-  171e:89 6c              lsg
+  171e:89 6c              lsg global108
   1720:35 02              ldi 2
   1722:1a                 eq?
   1723:30 0005            bnt code_172b
@@ -3772,19 +3772,19 @@
   177d:39 ff            pushi ff                       // $ff syncNum
   177f:39 2a            pushi 2a                       // $2a play
   1781:76               push0
-  1782:81 72              lag
+  1782:81 72              lag gSFX2
   1784:4a 10             send 10
 
   1786:78               push1
   1787:39 05            pushi 5                        // $5 view
-  1789:45 06 02         callb procedure_0006 2         //
+  1789:45 06 02         callb procedure_0006 2         // proc0_6
 
   178c:39 05            pushi 5                        // $5 view
   178e:78               push1
   178f:38 00df          pushi df                       // $df endCel
   1792:38 00a2          pushi a2                       // $a2 setLoop
   1795:78               push1
-  1796:89 6c              lsg
+  1796:89 6c              lsg global108
   1798:35 02              ldi 2
   179a:1a                 eq?
   179b:30 0005            bnt code_17a3
@@ -3852,7 +3852,7 @@
   17fb:39 10            pushi 10                       // $10 lsRight
   17fd:38 00a2          pushi a2                       // $a2 setLoop
   1800:78               push1
-  1801:89 6c              lsg
+  1801:89 6c              lsg global108
   1803:35 02              ldi 2
   1805:1a                 eq?
   1806:30 0005            bnt code_180e
@@ -3899,10 +3899,10 @@
   1847:78               push1
   1848:72 2c88          lofsa $2c88                    // marianHornBlow
   184b:36                push
-  184c:81 00              lag
+  184c:81 00              lag gEgo
   184e:4a 06             send 6
 
-  1850:89 6c              lsg
+  1850:89 6c              lsg global108
   1852:35 02              ldi 2
   1854:1a                 eq?
   1855:30 0023            bnt code_187b
@@ -3950,7 +3950,7 @@
   189e:38 00dd          pushi dd                       // $dd lastCel
   18a1:38 00a2          pushi a2                       // $a2 setLoop
   18a4:78               push1
-  18a5:89 6c              lsg
+  18a5:89 6c              lsg global108
   18a7:35 02              ldi 2
   18a9:1a                 eq?
   18aa:30 0005            bnt code_18b2
@@ -3990,7 +3990,7 @@
   18e0:35 07              ldi 7
   18e2:1a                 eq?
   18e3:30 0052            bnt code_1938
-  18e6:89 6c              lsg
+  18e6:89 6c              lsg global108
   18e8:35 02              ldi 2
   18ea:1a                 eq?
   18eb:30 0025            bnt code_1913
@@ -4061,7 +4061,7 @@
   195a:1a                 eq?
   195b:30 0059            bnt code_19b7
   195e:76               push0
-  195f:45 04 00         callb procedure_0004 0         //
+  195f:45 04 00         callb procedure_0004 0         // proc0_4
 
   1962:39 6c            pushi 6c                       // $6c dispose
   1964:76               push0
@@ -4156,9 +4156,9 @@
   1a08:1a                 eq?
   1a09:30 0060            bnt code_1a6c
   1a0c:76               push0
-  1a0d:45 03 00         callb procedure_0003 0         //
+  1a0d:45 03 00         callb procedure_0003 0         // proc0_3
 
-  1a10:89 6c              lsg
+  1a10:89 6c              lsg global108
   1a12:35 02              ldi 2
   1a14:1a                 eq?
   1a15:30 002a            bnt code_1a42
@@ -4185,7 +4185,7 @@
   1a38:02                 add
   1a39:36                push
   1a3a:7c            pushSelf
-  1a3b:81 00              lag
+  1a3b:81 00              lag gEgo
   1a3d:4a 0c             send c
 
   1a3f:32 01d9            jmp code_1c1b
@@ -4214,7 +4214,7 @@
   1a62:02                 add
   1a63:36                push
   1a64:7c            pushSelf
-  1a65:81 00              lag
+  1a65:81 00              lag gEgo
   1a67:4a 0c             send c
 
   1a69:32 01af            jmp code_1c1b
@@ -4235,7 +4235,7 @@
   1a81:78               push1
   1a82:39 11            pushi 11                       // $11 signal
   1a84:76               push0
-  1a85:81 00              lag
+  1a85:81 00              lag gEgo
   1a87:4a 04             send 4
 
   1a89:36                push
@@ -4245,7 +4245,7 @@
   1a8f:38 00a2          pushi a2                       // $a2 setLoop
   1a92:78               push1
   1a93:39 03            pushi 3                        // $3 y
-  1a95:81 00              lag
+  1a95:81 00              lag gEgo
   1a97:4a 0c             send c
 
   1a99:35 0c              ldi c
@@ -4293,7 +4293,7 @@
   1ae0:51 1a            class End
   1ae2:36                push
   1ae3:7c            pushSelf
-  1ae4:81 00              lag
+  1ae4:81 00              lag gEgo
   1ae6:4a 14             send 14
 
   1ae8:32 0130            jmp code_1c1b
@@ -4330,7 +4330,7 @@
   1b17:38 00da          pushi da                       // $da motionCue
   1b1a:38 00a2          pushi a2                       // $a2 setLoop
   1b1d:78               push1
-  1b1e:89 6c              lsg
+  1b1e:89 6c              lsg global108
   1b20:35 02              ldi 2
   1b22:1a                 eq?
   1b23:30 0005            bnt code_1b2b
@@ -4369,14 +4369,14 @@
 
   1b56:78               push1
   1b57:39 05            pushi 5                        // $5 view
-  1b59:45 06 02         callb procedure_0006 2         //
+  1b59:45 06 02         callb procedure_0006 2         // proc0_6
 
   1b5c:39 05            pushi 5                        // $5 view
   1b5e:78               push1
   1b5f:38 00df          pushi df                       // $df endCel
   1b62:38 00a2          pushi a2                       // $a2 setLoop
   1b65:78               push1
-  1b66:89 6c              lsg
+  1b66:89 6c              lsg global108
   1b68:35 02              ldi 2
   1b6a:1a                 eq?
   1b6b:30 0005            bnt code_1b73
@@ -4444,7 +4444,7 @@
   1bcb:39 10            pushi 10                       // $10 lsRight
   1bcd:38 00a2          pushi a2                       // $a2 setLoop
   1bd0:78               push1
-  1bd1:89 6c              lsg
+  1bd1:89 6c              lsg global108
   1bd3:35 02              ldi 2
   1bd5:1a                 eq?
   1bd6:30 0005            bnt code_1bde
@@ -4546,7 +4546,7 @@
   1c96:1a                 eq?
   1c97:30 00cc            bnt code_1d66
   1c9a:76               push0
-  1c9b:45 03 00         callb procedure_0003 0         //
+  1c9b:45 03 00         callb procedure_0003 0         // proc0_3
 
   1c9e:39 05            pushi 5                        // $5 view
   1ca0:38 0082          pushi 82                       // $82 start
@@ -4569,7 +4569,7 @@
   1cca:a3 08              sal local8
   1ccc:35 f6              ldi f6
   1cce:a3 0c              sal local12
-  1cd0:89 6c              lsg
+  1cd0:89 6c              lsg global108
   1cd2:35 02              ldi 2
   1cd4:1a                 eq?
   1cd5:30 003b            bnt code_1d13
@@ -4637,7 +4637,7 @@
   1d58:38 00a0          pushi a0                       // $a0 mute
   1d5b:38 00a5          pushi a5                       // $a5 clean
   1d5e:7c            pushSelf
-  1d5f:81 00              lag
+  1d5f:81 00              lag gEgo
   1d61:4a 12             send 12
 
   1d63:32 06b8            jmp code_241e
@@ -4649,7 +4649,7 @@
   1d6a:30 0066            bnt code_1dd3
   1d6d:39 06            pushi 6                        // $6 loop
   1d6f:76               push0
-  1d70:81 00              lag
+  1d70:81 00              lag gEgo
   1d72:4a 04             send 4
 
   1d74:36                push
@@ -4658,7 +4658,7 @@
   1d78:2e 0027             bt code_1da2
   1d7b:39 06            pushi 6                        // $6 loop
   1d7d:76               push0
-  1d7e:81 00              lag
+  1d7e:81 00              lag gEgo
   1d80:4a 04             send 4
 
   1d82:36                push
@@ -4667,7 +4667,7 @@
   1d86:2e 0019             bt code_1da2
   1d89:39 06            pushi 6                        // $6 loop
   1d8b:76               push0
-  1d8c:81 00              lag
+  1d8c:81 00              lag gEgo
   1d8e:4a 04             send 4
 
   1d90:36                push
@@ -4676,7 +4676,7 @@
   1d94:2e 000b             bt code_1da2
   1d97:39 06            pushi 6                        // $6 loop
   1d99:76               push0
-  1d9a:81 00              lag
+  1d9a:81 00              lag gEgo
   1d9c:4a 04             send 4
 
   1d9e:36                push
@@ -4688,7 +4688,7 @@
   1da5:38 00a2          pushi a2                       // $a2 setLoop
   1da8:78               push1
   1da9:76               push0
-  1daa:81 00              lag
+  1daa:81 00              lag gEgo
   1dac:4a 06             send 6
 
   1dae:32 0009            jmp code_1dba
@@ -4697,7 +4697,7 @@
   1db1:38 00a2          pushi a2                       // $a2 setLoop
   1db4:78               push1
   1db5:78               push1
-  1db6:81 00              lag
+  1db6:81 00              lag gEgo
   1db8:4a 06             send 6
 
 
@@ -4713,7 +4713,7 @@
   1dc8:51 1a            class End
   1dca:36                push
   1dcb:7c            pushSelf
-  1dcc:81 00              lag
+  1dcc:81 00              lag gEgo
   1dce:4a 14             send 14
 
   1dd0:32 064b            jmp code_241e
@@ -4764,7 +4764,7 @@
   1e17:51 1b            class Beg
   1e19:36                push
   1e1a:7c            pushSelf
-  1e1b:81 00              lag
+  1e1b:81 00              lag gEgo
   1e1d:4a 08             send 8
 
   1e1f:32 05fc            jmp code_241e
@@ -4775,7 +4775,7 @@
   1e25:1a                 eq?
   1e26:30 009e            bnt code_1ec7
   1e29:76               push0
-  1e2a:45 02 00         callb procedure_0002 0         //
+  1e2a:45 02 00         callb procedure_0002 0         // proc0_2
 
   1e2d:38 011c          pushi 11c                      // $11c posn
   1e30:7a               push2
@@ -4811,7 +4811,7 @@
 
   1e65:4a 14             send 14
 
-  1e67:89 6c              lsg
+  1e67:89 6c              lsg global108
   1e69:35 02              ldi 2
   1e6b:1a                 eq?
   1e6c:30 002c            bnt code_1e9b
@@ -4897,20 +4897,20 @@
   1eed:36                push
   1eee:39 04            pushi 4                        // $4 x
   1ef0:76               push0
-  1ef1:81 00              lag
+  1ef1:81 00              lag gEgo
   1ef3:4a 04             send 4
 
   1ef5:36                push
   1ef6:39 03            pushi 3                        // $3 y
   1ef8:76               push0
-  1ef9:81 00              lag
+  1ef9:81 00              lag gEgo
   1efb:4a 04             send 4
 
   1efd:36                push
   1efe:35 01              ldi 1
   1f00:04                 sub
   1f01:36                push
-  1f02:81 00              lag
+  1f02:81 00              lag gEgo
   1f04:4a 0a             send a
 
   1f06:38 011c          pushi 11c                      // $11c posn
@@ -4947,7 +4947,7 @@
 
   1f3e:4a 14             send 14
 
-  1f40:89 6c              lsg
+  1f40:89 6c              lsg global108
   1f42:35 02              ldi 2
   1f44:1a                 eq?
   1f45:30 002c            bnt code_1f74
@@ -5011,7 +5011,7 @@
   1fa1:35 07              ldi 7
   1fa3:1a                 eq?
   1fa4:30 0053            bnt code_1ffa
-  1fa7:89 6c              lsg
+  1fa7:89 6c              lsg global108
   1fa9:35 02              ldi 2
   1fab:1a                 eq?
   1fac:30 0042            bnt code_1ff1
@@ -5053,7 +5053,7 @@
   1fe3:38 00c8          pushi c8                       // $c8 dispatchEvent
   1fe6:38 0096          pushi 96                       // $96 setCycle
   1fe9:7c            pushSelf
-  1fea:81 00              lag
+  1fea:81 00              lag gEgo
   1fec:4a 0c             send c
 
   1fee:32 042d            jmp code_241e
@@ -5092,13 +5092,13 @@
   2020:36                push
   2021:39 04            pushi 4                        // $4 x
   2023:76               push0
-  2024:81 00              lag
+  2024:81 00              lag gEgo
   2026:4a 04             send 4
 
   2028:36                push
   2029:39 03            pushi 3                        // $3 y
   202b:76               push0
-  202c:81 00              lag
+  202c:81 00              lag gEgo
   202e:4a 04             send 4
 
   2030:36                push
@@ -5106,7 +5106,7 @@
   2033:04                 sub
   2034:36                push
   2035:7c            pushSelf
-  2036:81 00              lag
+  2036:81 00              lag gEgo
   2038:4a 0c             send c
 
   203a:32 03e1            jmp code_241e
@@ -5730,10 +5730,10 @@
   237a:4a 26             send 26
 
   237c:36                push
-  237d:81 02              lag
+  237d:81 02              lag global2
   237f:4a 0c             send c
 
-  2381:89 6c              lsg
+  2381:89 6c              lsg global108
   2383:35 02              ldi 2
   2385:1a                 eq?
   2386:30 0007            bnt code_2390
@@ -5814,7 +5814,7 @@
   23ff:1a                 eq?
   2400:30 001b            bnt code_241e
   2403:76               push0
-  2404:45 04 00         callb procedure_0004 0         //
+  2404:45 04 00         callb procedure_0004 0         // proc0_4
 
   2407:38 008e          pushi 8e                       // $8e setScript
   240a:78               push1
@@ -5865,7 +5865,7 @@
   2462:1a                 eq?
   2463:30 0018            bnt code_247e
   2466:76               push0
-  2467:45 03 00         callb procedure_0003 0         //
+  2467:45 03 00         callb procedure_0003 0         // proc0_3
 
   246a:39 05            pushi 5                        // $5 view
   246c:78               push1
@@ -5884,7 +5884,7 @@
   2481:1a                 eq?
   2482:30 0009            bnt code_248e
   2485:76               push0
-  2486:45 04 00         callb procedure_0004 0         //
+  2486:45 04 00         callb procedure_0004 0         // proc0_4
 
   2489:39 6c            pushi 6c                       // $6c dispose
   248b:76               push0
@@ -5934,7 +5934,7 @@
   24e1:30 0033            bnt code_2517
   24e4:38 008a          pushi 8a                       // $8a script
   24e7:76               push0
-  24e8:81 00              lag
+  24e8:81 00              lag gEgo
   24ea:4a 04             send 4
 
   24ec:18                 not
@@ -5999,13 +5999,13 @@
   255c:1a                 eq?
   255d:30 0013            bnt code_2573
   2560:76               push0
-  2561:45 03 00         callb procedure_0003 0         //
+  2561:45 03 00         callb procedure_0003 0         // proc0_3
 
   2564:39 03            pushi 3                        // $3 y
   2566:38 04ca          pushi 4ca                      // $4ca sel_1226
   2569:39 2a            pushi 2a                       // $2a play
   256b:7c            pushSelf
-  256c:47 0d 04 06      calle d procedure_0004 6       //
+  256c:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   2570:32 0026            jmp code_2599
 
@@ -6018,7 +6018,7 @@
   257c:38 04ca          pushi 4ca                      // $4ca sel_1226
   257f:39 2b            pushi 2b                       // $2b number
   2581:7c            pushSelf
-  2582:47 0d 04 06      calle d procedure_0004 6       //
+  2582:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   2586:32 0010            jmp code_2599
 
@@ -6028,7 +6028,7 @@
   258c:1a                 eq?
   258d:30 0009            bnt code_2599
   2590:76               push0
-  2591:45 04 00         callb procedure_0004 0         //
+  2591:45 04 00         callb procedure_0004 0         // proc0_4
 
   2594:39 6c            pushi 6c                       // $6c dispose
   2596:76               push0
@@ -6901,7 +6901,7 @@
   2b82:39 06            pushi 6                        // $6 loop
   2b84:78               push1
   2b85:78               push1
-  2b86:81 71              lag
+  2b86:81 71              lag gSFX
   2b88:4a 0c             send c
 
   2b8a:35 06              ldi 6
@@ -6915,7 +6915,7 @@
   2b95:30 0016            bnt code_2bae
   2b98:39 2a            pushi 2a                       // $2a play
   2b9a:76               push0
-  2b9b:81 71              lag
+  2b9b:81 71              lag gSFX
   2b9d:4a 04             send 4
 
   2b9f:7a               push2
@@ -6964,7 +6964,7 @@
   2c0e:43 02 02         callk ScriptID 2
 
   2c11:36                push
-  2c12:81 05              lag
+  2c12:81 05              lag global5
   2c14:4a 06             send 6
 
   2c16:30 0011            bnt code_2c2a
@@ -6972,7 +6972,7 @@
   2c1b:38 04ca          pushi 4ca                      // $4ca sel_1226
   2c1e:39 31            pushi 31                       // $31 b-i1
   2c20:78               push1
-  2c21:47 0d 04 06      calle d procedure_0004 6       //
+  2c21:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   2c25:35 01              ldi 1
   2c27:32 0050            jmp code_2c7a
@@ -6986,7 +6986,7 @@
   2c35:78               push1
   2c36:72 242c          lofsa $242c                    // menGather
   2c39:36                push
-  2c3a:81 00              lag
+  2c3a:81 00              lag gEgo
   2c3c:4a 06             send 6
 
   2c3e:35 01              ldi 1
@@ -6997,13 +6997,13 @@
   2c45:78               push1
   2c46:72 03c0          lofsa $03c0                    // monk
   2c49:36                push
-  2c4a:81 05              lag
+  2c4a:81 05              lag global5
   2c4c:4a 06             send 6
 
   2c4e:30 001b            bnt code_2c6c
   2c51:78               push1
   2c52:39 05            pushi 5                        // $5 view
-  2c54:45 05 02         callb procedure_0005 2         //
+  2c54:45 05 02         callb procedure_0005 2         // proc0_5
 
   2c57:18                 not
   2c58:30 0011            bnt code_2c6c
@@ -7011,7 +7011,7 @@
   2c5d:38 04ca          pushi 4ca                      // $4ca sel_1226
   2c60:39 30            pushi 30                       // $30 b-moveCnt
   2c62:78               push1
-  2c63:47 0d 04 06      calle d procedure_0004 6       //
+  2c63:47 0d 04 06      calle d procedure_0004 6       // proc13_4
 
   2c67:35 01              ldi 1
   2c69:32 000e            jmp code_2c7a
@@ -7021,7 +7021,7 @@
   2c6f:78               push1
   2c70:72 25a8          lofsa $25a8                    // heartSick
   2c73:36                push
-  2c74:81 00              lag
+  2c74:81 00              lag gEgo
   2c76:4a 06             send 6
 
   2c78:35 01              ldi 1
@@ -7184,7 +7184,7 @@
   2dce:78               push1
   2dcf:72 03c0          lofsa $03c0                    // monk
   2dd2:36                push
-  2dd3:81 05              lag
+  2dd3:81 05              lag global5
   2dd5:4a 06             send 6
 
   2dd7:30 0016            bnt code_2df0
@@ -7206,7 +7206,7 @@
   2df2:78               push1
   2df3:72 014c          lofsa $014c                    // marian
   2df6:36                push
-  2df7:81 05              lag
+  2df7:81 05              lag global5
   2df9:4a 06             send 6
 
   2dfb:30 000b            bnt code_2e09
@@ -7240,7 +7240,7 @@
   2e2a:43 02 02         callk ScriptID 2
 
   2e2d:36                push
-  2e2e:81 05              lag
+  2e2e:81 05              lag global5
   2e30:4a 06             send 6
 
   2e32:30 0064            bnt code_2e99
@@ -7323,7 +7323,7 @@
   2eb3:38 010b          pushi 10b                      // $10b actions
   2eb6:78               push1
   2eb7:76               push0
-  2eb8:81 00              lag
+  2eb8:81 00              lag gEgo
   2eba:4a 06             send 6
 
   2ebc:48                 ret

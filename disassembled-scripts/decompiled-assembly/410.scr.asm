@@ -51,7 +51,7 @@
   0021:7a               push2
   0022:39 6b            pushi 6b                       // $6b init
   0024:76               push0
-  0025:81 00              lag
+  0025:81 00              lag gEgo
   0027:4a 12             send 12
 
   0029:39 6b            pushi 6b                       // $6b init
@@ -59,10 +59,10 @@
   002c:72 014c          lofsa $014c                    // trapDoor
   002f:4a 04             send 4
 
-  0031:81 41              lag
+  0031:81 41              lag gDoVerbCode
   0033:a3 00              sal local0
   0035:72 0106          lofsa $0106                    // goThere
-  0038:a1 41              sag
+  0038:a1 41              sag gDoVerbCode
   003a:39 22            pushi 22                       // $22 type
   003c:78               push1
   003d:38 4000          pushi 4000                     // $4000 sel_16384
@@ -75,7 +75,7 @@
   0048:4a 06             send 6
 
   004a:76               push0
-  004b:45 04 00         callb procedure_0004 0         //
+  004b:45 04 00         callb procedure_0004 0         // proc0_4
 
   004e:48                 ret
     )
@@ -93,7 +93,7 @@
   005b:4a 06             send 6
 
   005d:83 00              lal local0
-  005f:a1 41              sag
+  005f:a1 41              sag gDoVerbCode
   0061:39 6c            pushi 6c                       // $6c dispose
   0063:76               push0
   0064:57 43 04         super Rm 4
@@ -110,7 +110,7 @@
     (method (doit)                                     // method_00b2
   00b2:38 008a          pushi 8a                       // $8a script
   00b5:76               push0
-  00b6:81 02              lag
+  00b6:81 02              lag global2
   00b8:4a 04             send 4
 
   00ba:30 0001            bnt code_00be
@@ -143,7 +143,7 @@
   00e2:4a 04             send 4
 
   00e4:36                push
-  00e5:81 02              lag
+  00e5:81 02              lag global2
   00e7:4a 06             send 6
 
   00e9:32 000b            jmp code_00f7

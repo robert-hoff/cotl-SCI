@@ -266,7 +266,7 @@
   00b7:57 78 04         super HedgeRow 4
 
   00ba:39 1e            pushi 1e                       // $1e mode
-  00bc:81 0c              lag
+  00bc:81 0c              lag global12
   00be:24                 le?
   00bf:30 0004            bnt code_00c6
   00c2:60               pprev
@@ -284,7 +284,7 @@
   00d3:39 ff            pushi ff                       // $ff syncNum
   00d5:39 2a            pushi 2a                       // $2a play
   00d7:76               push0
-  00d8:81 64              lag
+  00d8:81 64              lag gRgnMusic
   00da:4a 10             send 10
 
   00dc:32 0010            jmp code_00ef
@@ -296,7 +296,7 @@
   00e6:39 08            pushi 8                        // $8 underBits
   00e8:39 1e            pushi 1e                       // $1e mode
   00ea:76               push0
-  00eb:81 64              lag
+  00eb:81 64              lag gRgnMusic
   00ed:4a 0c             send c
 
 
@@ -418,7 +418,7 @@
   01b7:4a 1e             send 1e
 
   01b9:36                push
-  01ba:81 02              lag
+  01ba:81 02              lag global2
   01bc:4a 0c             send c
 
   01be:48                 ret
@@ -474,7 +474,7 @@
   0051:78               push1
   0052:85 00              lat temp0
   0054:9b 00             lsli local0
-  0056:81 0a              lag
+  0056:81 0a              lag global10
   0058:4a 06             send 6
 
   005a:c5 00              +at temp0
@@ -483,7 +483,7 @@
         code_005f
   005f:39 3c            pushi 3c                       // $3c doit
   0061:76               push0
-  0062:81 0a              lag
+  0062:81 0a              lag global10
   0064:4a 04             send 4
 
   0066:48                 ret

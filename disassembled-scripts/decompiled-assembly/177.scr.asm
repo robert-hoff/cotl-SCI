@@ -295,7 +295,7 @@
 
   0188:38 00a7          pushi a7                       // $a7 enable
   018b:76               push0
-  018c:81 45              lag
+  018c:81 45              lag gIconBar
   018e:4a 04             send 4
 
   0190:7a               push2
@@ -315,7 +315,7 @@
   01a5:39 2a            pushi 2a                       // $2a play
   01a7:7a               push2
   01a8:39 1e            pushi 1e                       // $1e mode
-  01aa:89 92              lsg
+  01aa:89 92              lsg global146
   01ac:3c                 dup
   01ad:35 0c              ldi c
   01af:1a                 eq?
@@ -379,21 +379,21 @@
   020d:78               push1
   020e:39 66            pushi 66                       // $66 flags
   0210:76               push0
-  0211:81 64              lag
+  0211:81 64              lag gRgnMusic
   0213:4a 04             send 4
 
   0215:36                push
   0216:35 fe              ldi fe
   0218:12                 and
   0219:36                push
-  021a:81 64              lag
+  021a:81 64              lag gRgnMusic
   021c:4a 2a             send 2a
 
   021e:38 018c          pushi 18c                      // $18c drawPic
   0221:7a               push2
   0222:38 0186          pushi 186                      // $186 south
   0225:39 06            pushi 6                        // $6 loop
-  0227:81 02              lag
+  0227:81 02              lag global2
   0229:4a 08             send 8
 
   022b:39 04            pushi 4                        // $4 x
@@ -429,7 +429,7 @@
   0264:39 6b            pushi 6b                       // $6b init
   0266:39 3c            pushi 3c                       // $3c doit
   0268:76               push0
-  0269:81 0a              lag
+  0269:81 0a              lag global10
   026b:4a 16             send 16
 
   026d:39 04            pushi 4                        // $4 x
@@ -521,14 +521,14 @@
   0306:78               push1
   0307:39 66            pushi 66                       // $66 flags
   0309:76               push0
-  030a:81 64              lag
+  030a:81 64              lag gRgnMusic
   030c:4a 04             send 4
 
   030e:36                push
   030f:35 01              ldi 1
   0311:14                  or
   0312:36                push
-  0313:81 64              lag
+  0313:81 64              lag gRgnMusic
   0315:4a 06             send 6
 
   0317:39 6c            pushi 6c                       // $6c dispose
@@ -2654,7 +2654,7 @@
     (method (cue)                                      // method_1376
   1376:38 009a          pushi 9a                       // $9a prevSignal
   1379:76               push0
-  137a:81 64              lag
+  137a:81 64              lag gRgnMusic
   137c:4a 04             send 4
 
   137e:36                push
@@ -2830,7 +2830,7 @@
   148e:38 0179          pushi 179                      // $179 newRoom
   1491:78               push1
   1492:38 00b3          pushi b3                       // $b3 theItem
-  1495:81 02              lag
+  1495:81 02              lag global2
   1497:4a 06             send 6
 
 
@@ -2862,7 +2862,7 @@
     (method (cue)                                      // method_14d6
   14d6:38 009a          pushi 9a                       // $9a prevSignal
   14d9:76               push0
-  14da:81 64              lag
+  14da:81 64              lag gRgnMusic
   14dc:4a 04             send 4
 
   14de:36                push
@@ -3036,7 +3036,7 @@
   15f1:38 0179          pushi 179                      // $179 newRoom
   15f4:78               push1
   15f5:38 00b3          pushi b3                       // $b3 theItem
-  15f8:81 02              lag
+  15f8:81 02              lag global2
   15fa:4a 06             send 6
 
 
@@ -3067,7 +3067,7 @@
     (method (cue)                                      // method_1638
   1638:38 009a          pushi 9a                       // $9a prevSignal
   163b:76               push0
-  163c:81 64              lag
+  163c:81 64              lag gRgnMusic
   163e:4a 04             send 4
 
   1640:36                push
@@ -3362,7 +3362,7 @@
   1805:38 0179          pushi 179                      // $179 newRoom
   1808:78               push1
   1809:38 00b3          pushi b3                       // $b3 theItem
-  180c:81 02              lag
+  180c:81 02              lag global2
   180e:4a 06             send 6
 
 
@@ -3393,7 +3393,7 @@
     (method (cue)                                      // method_184c
   184c:38 009a          pushi 9a                       // $9a prevSignal
   184f:76               push0
-  1850:81 64              lag
+  1850:81 64              lag gRgnMusic
   1852:4a 04             send 4
 
   1854:36                push
@@ -3721,7 +3721,7 @@
   1a55:38 0179          pushi 179                      // $179 newRoom
   1a58:78               push1
   1a59:38 00b3          pushi b3                       // $b3 theItem
-  1a5c:81 02              lag
+  1a5c:81 02              lag global2
   1a5e:4a 06             send 6
 
 

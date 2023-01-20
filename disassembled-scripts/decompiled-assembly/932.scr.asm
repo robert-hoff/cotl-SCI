@@ -38,7 +38,7 @@
 (procedure proc_00a5
   00a5:39 57            pushi 57                       // $57 printLang
   00a7:76               push0
-  00a8:81 01              lag
+  00a8:81 01              lag global1
   00aa:4a 04             send 4
 
   00ac:36                push
@@ -51,7 +51,7 @@
   00b8:2e 000b             bt code_00c6
   00bb:39 58            pushi 58                       // $58 subtitleLang
   00bd:76               push0
-  00be:81 01              lag
+  00be:81 01              lag global1
   00c0:4a 04             send 4
 
   00c2:36                push
@@ -74,7 +74,7 @@
   00d8:2e 000b             bt code_00e6
   00db:39 58            pushi 58                       // $58 subtitleLang
   00dd:76               push0
-  00de:81 01              lag
+  00de:81 01              lag global1
   00e0:4a 04             send 4
 
   00e2:36                push
@@ -101,7 +101,7 @@
   00f6:30 0018            bnt code_0111
   00f9:39 58            pushi 58                       // $58 subtitleLang
   00fb:76               push0
-  00fc:81 01              lag
+  00fc:81 01              lag global1
   00fe:4a 04             send 4
 
   0100:a5 00              sat temp0
@@ -111,7 +111,7 @@
   0109:39 58            pushi 58                       // $58 subtitleLang
   010b:78               push1
   010c:76               push0
-  010d:81 01              lag
+  010d:81 01              lag global1
   010f:4a 06             send 6
 
 
@@ -128,7 +128,7 @@
   011a:30 0018            bnt code_0135
   011d:39 58            pushi 58                       // $58 subtitleLang
   011f:76               push0
-  0120:81 01              lag
+  0120:81 01              lag global1
   0122:4a 04             send 4
 
   0124:18                 not
@@ -136,7 +136,7 @@
   0128:39 58            pushi 58                       // $58 subtitleLang
   012a:78               push1
   012b:8b 00              lsl local0
-  012d:81 01              lag
+  012d:81 01              lag global1
   012f:4a 06             send 6
 
   0131:35 00              ldi 0
@@ -152,7 +152,7 @@
   0138:3f 01             link 1                        // (var $1)
   013a:39 58            pushi 58                       // $58 subtitleLang
   013c:76               push0
-  013d:81 01              lag
+  013d:81 01              lag global1
   013f:4a 04             send 4
 
   0141:a5 00              sat temp0
@@ -161,17 +161,17 @@
   0148:78               push1
   0149:39 57            pushi 57                       // $57 printLang
   014b:76               push0
-  014c:81 01              lag
+  014c:81 01              lag global1
   014e:4a 04             send 4
 
   0150:36                push
-  0151:81 01              lag
+  0151:81 01              lag global1
   0153:4a 06             send 6
 
   0155:39 57            pushi 57                       // $57 printLang
   0157:78               push1
   0158:8d 00              lst temp0
-  015a:81 01              lag
+  015a:81 01              lag global1
   015c:4a 06             send 6
 
   015e:35 01              ldi 1
@@ -208,13 +208,13 @@
         code_0187
   0187:39 57            pushi 57                       // $57 printLang
   0189:76               push0
-  018a:81 01              lag
+  018a:81 01              lag global1
   018c:4a 04             send 4
 
   018e:a5 00              sat temp0
   0190:39 58            pushi 58                       // $58 subtitleLang
   0192:76               push0
-  0193:81 01              lag
+  0193:81 01              lag global1
   0195:4a 04             send 4
 
   0197:a5 01              sat temp1
@@ -224,7 +224,7 @@
   019d:39 58            pushi 58                       // $58 subtitleLang
   019f:78               push1
   01a0:76               push0
-  01a1:81 01              lag
+  01a1:81 01              lag global1
   01a3:4a 0c             send c
 
   01a5:39 03            pushi 3                        // $3 y
@@ -240,7 +240,7 @@
   01b8:39 57            pushi 57                       // $57 printLang
   01ba:78               push1
   01bb:36                push
-  01bc:81 01              lag
+  01bc:81 01              lag global1
   01be:4a 06             send 6
 
   01c0:39 03            pushi 3                        // $3 y
@@ -267,7 +267,7 @@
   01de:39 58            pushi 58                       // $58 subtitleLang
   01e0:78               push1
   01e1:8d 01              lst temp1
-  01e3:81 01              lag
+  01e3:81 01              lag global1
   01e5:4a 0c             send c
 
   01e7:87 01              lap param1
@@ -278,7 +278,7 @@
 (procedure proc_01ea
   01ea:39 56            pushi 56                       // $56 parseLang
   01ec:76               push0
-  01ed:81 01              lag
+  01ed:81 01              lag global1
   01ef:4a 04             send 4
 
   01f1:36                push
@@ -300,14 +300,14 @@
   003c:3f 02             link 2                        // (var $2)
   003e:39 58            pushi 58                       // $58 subtitleLang
   0040:76               push0
-  0041:81 01              lag
+  0041:81 01              lag global1
   0043:4a 04             send 4
 
   0045:a5 01              sat temp1
   0047:39 58            pushi 58                       // $58 subtitleLang
   0049:78               push1
   004a:76               push0
-  004b:81 01              lag
+  004b:81 01              lag global1
   004d:4a 06             send 6
 
   004f:87 01              lap param1
@@ -330,14 +330,14 @@
   0068:30 0030            bnt code_009b
   006b:39 57            pushi 57                       // $57 printLang
   006d:76               push0
-  006e:81 01              lag
+  006e:81 01              lag global1
   0070:4a 04             send 4
 
   0072:a5 00              sat temp0
   0074:39 57            pushi 57                       // $57 printLang
   0076:78               push1
   0077:8d 01              lst temp1
-  0079:81 01              lag
+  0079:81 01              lag global1
   007b:4a 06             send 6
 
   007d:87 01              lap param1
@@ -358,7 +358,7 @@
   0092:39 57            pushi 57                       // $57 printLang
   0094:78               push1
   0095:8d 00              lst temp0
-  0097:81 01              lag
+  0097:81 01              lag global1
   0099:4a 06             send 6
 
 
@@ -366,7 +366,7 @@
   009b:39 58            pushi 58                       // $58 subtitleLang
   009d:78               push1
   009e:8d 01              lst temp1
-  00a0:81 01              lag
+  00a0:81 01              lag global1
   00a2:4a 06             send 6
 
   00a4:48                 ret

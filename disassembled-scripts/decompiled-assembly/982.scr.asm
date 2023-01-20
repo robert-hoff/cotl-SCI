@@ -71,17 +71,17 @@
   006b:35 02              ldi 2
   006d:22                 lt?
   006e:30 0004            bnt code_0075
-  0071:81 00              lag
+  0071:81 00              lag gEgo
   0073:a5 00              sat temp0
 
         code_0075
   0075:38 0168          pushi 168                      // $168 shadWid
   0078:8d 00              lst temp0
-  007a:81 00              lag
+  007a:81 00              lag gEgo
   007c:1a                 eq?
   007d:30 0004            bnt code_0084
   0080:7a               push2
-  0081:81 23              lag
+  0081:81 23              lag global35
   0083:06                 mul
 
         code_0084
@@ -150,7 +150,7 @@
   00e3:8d 06              lst temp6
   00e5:8d 03              lst temp3
   00e7:8d 04              lst temp4
-  00e9:89 1f              lsg
+  00e9:89 1f              lsg global31
   00eb:43 40 0a         callk GetDistance a
 
   00ee:22                 lt?

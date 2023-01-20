@@ -743,7 +743,7 @@
         code_0740
   0740:30 0018            bnt code_075b
   0743:39 04            pushi 4                        // $4 x
-  0745:89 14              lsg
+  0745:89 14              lsg global20
   0747:78               push1
   0748:39 04            pushi 4                        // $4 x
   074a:76               push0
@@ -1517,7 +1517,7 @@
   06a3:4a 1c             send 1c
 
   06a5:36                push
-  06a6:81 02              lag
+  06a6:81 02              lag global2
   06a8:4a 06             send 6
 
   06aa:48                 ret
@@ -2169,53 +2169,53 @@
   145a:39 04            pushi 4                        // $4 x
   145c:38 0180          pushi 180                      // $180 curPic
   145f:76               push0
-  1460:81 02              lag
+  1460:81 02              lag global2
   1462:4a 04             send 4
 
   1464:36                push
   1465:39 64            pushi 64                       // $64 moveDone
   1467:78               push1
-  1468:89 28              lsg
+  1468:89 28              lsg global40
   146a:43 08 08         callk DrawPic 8
 
-  146d:89 24              lsg
+  146d:89 24              lsg global36
   146f:35 ff              ldi ff
   1471:1c                 ne?
   1472:30 000c            bnt code_1481
   1475:39 04            pushi 4                        // $4 x
-  1477:89 24              lsg
+  1477:89 24              lsg global36
   1479:39 64            pushi 64                       // $64 moveDone
   147b:76               push0
-  147c:89 28              lsg
+  147c:89 28              lsg global40
   147e:43 08 08         callk DrawPic 8
 
 
         code_1481
   1481:39 3c            pushi 3c                       // $3c doit
   1483:76               push0
-  1484:81 0a              lag
+  1484:81 0a              lag global10
   1486:4a 04             send 4
 
   1488:39 74            pushi 74                       // $74 eachElementDo
   148a:78               push1
   148b:38 011d          pushi 11d                      // $11d stopUpd
-  148e:81 05              lag
+  148e:81 05              lag global5
   1490:4a 06             send 6
 
   1492:7a               push2
   1493:39 1b            pushi 1b                       // $1b elements
   1495:76               push0
-  1496:81 05              lag
+  1496:81 05              lag global5
   1498:4a 04             send 4
 
   149a:36                push
   149b:76               push0
   149c:43 0b 04         callk Animate 4
 
-  149f:81 26              lag
+  149f:81 26              lag global38
   14a1:a3 01              sal local1
   14a3:51 38            class SysWindow
-  14a5:a1 26              sag
+  14a5:a1 26              sag global38
   14a7:35 01              ldi 1
   14a9:a3 00              sal local0
   14ab:38 01e3          pushi 1e3                      // $1e3 readObstacles
@@ -2340,13 +2340,13 @@
   16d9:39 74            pushi 74                       // $74 eachElementDo
   16db:78               push1
   16dc:38 011f          pushi 11f                      // $11f startUpd
-  16df:81 05              lag
+  16df:81 05              lag global5
   16e1:4a 06             send 6
 
   16e3:7a               push2
   16e4:39 1b            pushi 1b                       // $1b elements
   16e6:76               push0
-  16e7:81 05              lag
+  16e7:81 05              lag global5
   16e9:4a 04             send 4
 
   16eb:36                push
@@ -2359,7 +2359,7 @@
   16f5:54 06             self 6
 
   16f7:83 01              lal local1
-  16f9:a1 26              sag
+  16f9:a1 26              sag global38
   16fb:78               push1
   16fc:38 03ac          pushi 3ac                      // $3ac sel_940
   16ff:43 03 02         callk DisposeScript 2
@@ -3551,7 +3551,7 @@
   13fc:43 6c 0c         callk Graph c
 
   13ff:39 04            pushi 4                        // $4 x
-  1401:89 14              lsg
+  1401:89 14              lsg global20
   1403:78               push1
   1404:67 0e             pTos x
   1406:67 10             pTos y
@@ -3653,7 +3653,7 @@
     (method (readObstacles)                            // method_1023
   1023:38 00ea          pushi ea                       // $ea obstacles
   1026:76               push0
-  1027:81 02              lag
+  1027:81 02              lag global2
   1029:4a 04             send 4
 
   102b:30 0013            bnt code_1041
@@ -3664,7 +3664,7 @@
   1036:36                push
   1037:38 00ea          pushi ea                       // $ea obstacles
   103a:76               push0
-  103b:81 02              lag
+  103b:81 02              lag global2
   103d:4a 04             send 4
 
   103f:4a 08             send 8
@@ -3677,7 +3677,7 @@
     (method (writeObstacles)                           // method_1042
   1042:38 00ea          pushi ea                       // $ea obstacles
   1045:76               push0
-  1046:81 02              lag
+  1046:81 02              lag global2
   1048:4a 04             send 4
 
   104a:30 0012            bnt code_105f
@@ -3688,7 +3688,7 @@
   1054:76               push0
   1055:38 00ea          pushi ea                       // $ea obstacles
   1058:76               push0
-  1059:81 02              lag
+  1059:81 02              lag global2
   105b:4a 04             send 4
 
   105d:4a 0a             send a
@@ -3795,7 +3795,7 @@
   154a:39 07            pushi 7                        // $7 cel
   154c:38 0180          pushi 180                      // $180 curPic
   154f:76               push0
-  1550:81 02              lag
+  1550:81 02              lag global2
   1552:4a 04             send 4
 
   1554:36                push
@@ -3964,7 +3964,7 @@
   1667:36                push
   1668:38 0180          pushi 180                      // $180 curPic
   166b:76               push0
-  166c:81 02              lag
+  166c:81 02              lag global2
   166e:4a 04             send 4
 
   1670:36                push

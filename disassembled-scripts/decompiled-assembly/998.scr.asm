@@ -45,7 +45,7 @@
   0015:39 73            pushi 73                       // $73 add
   0017:78               push1
   0018:7c            pushSelf
-  0019:81 0a              lag
+  0019:81 0a              lag global10
   001b:4a 06             send 6
 
   001d:78               push1
@@ -224,7 +224,7 @@
   0166:39 77            pushi 77                       // $77 contains
   0168:78               push1
   0169:7c            pushSelf
-  016a:81 05              lag
+  016a:81 05              lag global5
   016c:4a 06             send 6
 
   016e:18                 not
@@ -632,7 +632,7 @@
   01fb:39 54            pushi 54                       // $54 delete
   01fd:78               push1
   01fe:7c            pushSelf
-  01ff:81 05              lag
+  01ff:81 05              lag global5
   0201:4a 06             send 6
 
   0203:63 36             pToa underBits
@@ -686,13 +686,13 @@
   0251:4a 34             send 34
 
   0253:36                push
-  0254:81 0a              lag
+  0254:81 0a              lag global10
   0256:4a 06             send 6
 
   0258:39 73            pushi 73                       // $73 add
   025a:78               push1
   025b:7c            pushSelf
-  025c:81 20              lag
+  025c:81 20              lag global32
   025e:4a 06             send 6
 
   0260:32 0006            jmp code_0269
@@ -727,7 +727,7 @@
   036d:39 77            pushi 77                       // $77 contains
   036f:78               push1
   0370:7c            pushSelf
-  0371:81 05              lag
+  0371:81 05              lag global5
   0373:4a 06             send 6
 
   0375:18                 not
@@ -966,7 +966,7 @@
         code_068c
   068c:38 0125          pushi 125                      // $125 detailLevel
   068f:76               push0
-  0690:81 01              lag
+  0690:81 01              lag global1
   0692:4a 04             send 4
 
 
@@ -1503,7 +1503,7 @@
         code_0e2f
   0e2f:38 0125          pushi 125                      // $125 detailLevel
   0e32:76               push0
-  0e33:81 01              lag
+  0e33:81 01              lag global1
   0e35:4a 04             send 4
 
 
@@ -1943,7 +1943,7 @@
   0a41:4a 04             send 4
 
   0a43:36                push
-  0a44:89 1f              lsg
+  0a44:89 1f              lsg global31
   0a46:43 40 0a         callk GetDistance a
 
   0a49:48                 ret
@@ -1971,7 +1971,7 @@
   0a60:7c            pushSelf
   0a61:39 1b            pushi 1b                       // $1b elements
   0a63:76               push0
-  0a64:81 05              lag
+  0a64:81 05              lag global5
   0a66:4a 04             send 4
 
   0a68:36                push
@@ -1987,14 +1987,14 @@
   0a78:18                 not
   0a79:30 001c            bnt code_0a98
   0a7c:78               push1
-  0a7d:89 02              lsg
+  0a7d:89 02              lsg global2
   0a7f:43 06 02         callk IsObject 2
 
   0a82:30 0013            bnt code_0a98
   0a85:67 0a             pTos y
   0a87:38 0136          pushi 136                      // $136 horizon
   0a8a:76               push0
-  0a8b:81 02              lag
+  0a8b:81 02              lag global2
   0a8d:4a 04             send 4
 
   0a8f:22                 lt?
@@ -2075,7 +2075,7 @@
   0bc7:3f 08             link 8                        // (var $8)
   0bc9:38 0137          pushi 137                      // $137 vanishingY
   0bcc:76               push0
-  0bcd:81 02              lag
+  0bcd:81 02              lag global2
   0bcf:4a 04             send 4
 
   0bd1:a5 01              sat temp1
@@ -2089,7 +2089,7 @@
         code_0be0
   0be0:38 0138          pushi 138                      // $138 vanishingX
   0be3:76               push0
-  0be4:81 02              lag
+  0be4:81 02              lag global2
   0be6:4a 04             send 4
 
 
@@ -2263,12 +2263,12 @@
         code_0cef
   0cef:38 00ea          pushi ea                       // $ea obstacles
   0cf2:76               push0
-  0cf3:81 02              lag
+  0cf3:81 02              lag global2
   0cf5:4a 04             send 4
 
   0cf7:a5 07              sat temp7
   0cf9:30 0055            bnt code_0d51
-  0cfc:81 43              lag
+  0cfc:81 43              lag global67
   0cfe:30 0050            bnt code_0d51
   0d01:39 07            pushi 7                        // $7 cel
   0d03:67 08             pTos x

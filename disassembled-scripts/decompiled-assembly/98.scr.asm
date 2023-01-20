@@ -41,17 +41,17 @@
     )
     (method (init)                                     // method_000e
   000e:76               push0
-  000f:45 03 00         callb procedure_0003 0         //
+  000f:45 03 00         callb procedure_0003 0         // proc0_3
 
   0012:38 00c9          pushi c9                       // $c9 disable
   0015:76               push0
-  0016:81 45              lag
+  0016:81 45              lag gIconBar
   0018:4a 04             send 4
 
   001a:38 018c          pushi 18c                      // $18c drawPic
   001d:78               push1
   001e:38 0323          pushi 323                      // $323 sel_803
-  0021:81 02              lag
+  0021:81 02              lag global2
   0023:4a 06             send 6
 
   0025:39 6b            pushi 6b                       // $6b init
@@ -72,7 +72,7 @@
   003e:7a               push2
   003f:39 05            pushi 5                        // $5 view
   0041:78               push1
-  0042:81 01              lag
+  0042:81 01              lag global1
   0044:4a 08             send 8
 
   0046:39 2b            pushi 2b                       // $2b number
@@ -87,19 +87,19 @@
   0053:78               push1
   0054:39 66            pushi 66                       // $66 flags
   0056:76               push0
-  0057:81 64              lag
+  0057:81 64              lag gRgnMusic
   0059:4a 04             send 4
 
   005b:36                push
   005c:35 fe              ldi fe
   005e:12                 and
   005f:36                push
-  0060:81 64              lag
+  0060:81 64              lag gRgnMusic
   0062:4a 16             send 16
 
   0064:78               push1
   0065:76               push0
-  0066:45 05 02         callb procedure_0005 2         //
+  0066:45 05 02         callb procedure_0005 2         // proc0_5
 
   0069:30 001a            bnt code_0086
   006c:35 0a              ldi a
@@ -128,7 +128,7 @@
   0092:78               push1
   0093:72 023e          lofsa $023e                    // animScript
   0096:36                push
-  0097:81 02              lag
+  0097:81 02              lag global2
   0099:4a 06             send 6
 
   009b:48                 ret
@@ -139,19 +139,19 @@
   009e:78               push1
   009f:39 66            pushi 66                       // $66 flags
   00a1:76               push0
-  00a2:81 64              lag
+  00a2:81 64              lag gRgnMusic
   00a4:4a 04             send 4
 
   00a6:36                push
   00a7:35 01              ldi 1
   00a9:14                  or
   00aa:36                push
-  00ab:81 64              lag
+  00ab:81 64              lag gRgnMusic
   00ad:4a 06             send 6
 
   00af:38 00a7          pushi a7                       // $a7 enable
   00b2:76               push0
-  00b3:81 45              lag
+  00b3:81 45              lag gIconBar
   00b5:4a 04             send 4
 
   00b7:39 6c            pushi 6c                       // $6c dispose
@@ -220,7 +220,7 @@
   013f:7a               push2
   0140:39 6a            pushi 6a                       // $6a new
   0142:8b 00              lsl local0
-  0144:81 02              lag
+  0144:81 02              lag global2
   0146:4a 08             send 8
 
   0148:35 01              ldi 1
@@ -234,7 +234,7 @@
   0153:30 0028            bnt code_017e
   0156:38 009a          pushi 9a                       // $9a prevSignal
   0159:76               push0
-  015a:81 64              lag
+  015a:81 64              lag gRgnMusic
   015c:4a 04             send 4
 
   015e:36                push
@@ -264,7 +264,7 @@
   0182:30 0030            bnt code_01b5
   0185:38 009a          pushi 9a                       // $9a prevSignal
   0188:76               push0
-  0189:81 64              lag
+  0189:81 64              lag gRgnMusic
   018b:4a 04             send 4
 
   018d:36                push
@@ -312,7 +312,7 @@
   01cf:30 001e            bnt code_01f0
   01d2:38 009a          pushi 9a                       // $9a prevSignal
   01d5:76               push0
-  01d6:81 64              lag
+  01d6:81 64              lag gRgnMusic
   01d8:4a 04             send 4
 
   01da:36                push
@@ -352,7 +352,7 @@
   0211:7a               push2
   0212:39 60            pushi 60                       // $60 frame
   0214:8b 00              lsl local0
-  0216:81 02              lag
+  0216:81 02              lag global2
   0218:4a 08             send 8
 
   021a:39 06            pushi 6                        // $6 loop

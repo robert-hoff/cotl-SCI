@@ -171,7 +171,7 @@
   0033:7a               push2
   0034:38 05fe          pushi 5fe                      // $5fe sel_1534
   0037:76               push0
-  0038:47 0d 04 04      calle d procedure_0004 4       //
+  0038:47 0d 04 04      calle d procedure_0004 4       // proc13_4
 
   003c:32 025e            jmp code_029d
 
@@ -183,7 +183,7 @@
   0046:38 00d5          pushi d5                       // $d5 has
   0049:78               push1
   004a:39 0e            pushi e                        // $e lsLeft
-  004c:81 00              lag
+  004c:81 00              lag gEgo
   004e:4a 06             send 6
 
   0050:30 0012            bnt code_0065
@@ -199,7 +199,7 @@
         code_0065
   0065:78               push1
   0066:39 7c            pushi 7c                       // $7c prev
-  0068:45 05 02         callb procedure_0005 2         //
+  0068:45 05 02         callb procedure_0005 2         // proc0_5
 
   006b:30 0012            bnt code_0080
   006e:7a               push2
@@ -212,7 +212,7 @@
   007d:32 021d            jmp code_029d
 
         code_0080
-  0080:89 0c              lsg
+  0080:89 0c              lsg global12
   0082:34 021c            ldi 21c
   0085:1a                 eq?
   0086:30 0032            bnt code_00bb
@@ -258,7 +258,7 @@
         code_00d7
   00d7:78               push1
   00d8:38 00a7          pushi a7                       // $a7 enable
-  00db:45 05 02         callb procedure_0005 2         //
+  00db:45 05 02         callb procedure_0005 2         // proc0_5
 
   00de:30 0017            bnt code_00f8
   00e1:39 04            pushi 4                        // $4 x
@@ -277,7 +277,7 @@
   00fa:a3 57              sal local87
   00fc:78               push1
   00fd:38 00a7          pushi a7                       // $a7 enable
-  0100:45 06 02         callb procedure_0006 2         //
+  0100:45 06 02         callb procedure_0006 2         // proc0_6
 
   0103:39 03            pushi 3                        // $3 y
   0105:5b 02 1f           lea 2 1f
@@ -297,7 +297,7 @@
   0120:38 00d5          pushi d5                       // $d5 has
   0123:78               push1
   0124:39 0e            pushi e                        // $e lsLeft
-  0126:81 00              lag
+  0126:81 00              lag gEgo
   0128:4a 06             send 6
 
   012a:30 0012            bnt code_013f
@@ -313,7 +313,7 @@
         code_013f
   013f:78               push1
   0140:39 7c            pushi 7c                       // $7c prev
-  0142:45 05 02         callb procedure_0005 2         //
+  0142:45 05 02         callb procedure_0005 2         // proc0_5
 
   0145:30 0012            bnt code_015a
   0148:7a               push2
@@ -348,7 +348,7 @@
   017c:38 00d5          pushi d5                       // $d5 has
   017f:78               push1
   0180:39 0e            pushi e                        // $e lsLeft
-  0182:81 00              lag
+  0182:81 00              lag gEgo
   0184:4a 06             send 6
 
   0186:30 0012            bnt code_019b
@@ -364,7 +364,7 @@
         code_019b
   019b:78               push1
   019c:39 7c            pushi 7c                       // $7c prev
-  019e:45 05 02         callb procedure_0005 2         //
+  019e:45 05 02         callb procedure_0005 2         // proc0_5
 
   01a1:30 0012            bnt code_01b6
   01a4:7a               push2
@@ -394,7 +394,7 @@
   01d0:30 0031            bnt code_0204
   01d3:78               push1
   01d4:39 7c            pushi 7c                       // $7c prev
-  01d6:45 05 02         callb procedure_0005 2         //
+  01d6:45 05 02         callb procedure_0005 2         // proc0_5
 
   01d9:30 0012            bnt code_01ee
   01dc:7a               push2
@@ -424,7 +424,7 @@
   0208:30 002d            bnt code_0238
   020b:78               push1
   020c:39 7c            pushi 7c                       // $7c prev
-  020e:45 05 02         callb procedure_0005 2         //
+  020e:45 05 02         callb procedure_0005 2         // proc0_5
 
   0211:30 0012            bnt code_0226
   0214:7a               push2
@@ -517,7 +517,7 @@
   029f:38 0179          pushi 179                      // $179 newRoom
   02a2:78               push1
   02a3:38 021c          pushi 21c                      // $21c tally
-  02a6:81 02              lag
+  02a6:81 02              lag global2
   02a8:4a 06             send 6
 
   02aa:48                 ret

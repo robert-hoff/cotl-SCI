@@ -883,7 +883,7 @@
         next $0
     )
     (method (init)                                     // method_0706
-  0706:81 58              lag
+  0706:81 58              lag global88
   0708:65 18             aTop lastTicks
   070a:8f 00              lsp paramTotal
   070c:35 01              ldi 1
@@ -969,7 +969,7 @@
   06df:30 001f            bnt code_0701
   06e2:36                push
   06e3:78               push1
-  06e4:89 58              lsg
+  06e4:89 58              lsg global88
   06e6:63 18             pToa lastTicks
   06e8:04                 sub
   06e9:36                push
@@ -989,7 +989,7 @@
 
 
         code_0701
-  0701:81 58              lag
+  0701:81 58              lag global88
   0703:65 18             aTop lastTicks
   0705:48                 ret
     )
@@ -1056,8 +1056,8 @@
   0799:32 001b            jmp code_07b7
 
         code_079c
-  079c:89 0d              lsg
-  079e:81 0b              lag
+  079c:89 0d              lsg global13
+  079e:81 0b              lag global11
   07a0:1a                 eq?
   07a1:30 000c            bnt code_07b0
   07a4:39 6b            pushi 6b                       // $6b init
@@ -1081,8 +1081,8 @@
   07ba:43 06 02         callk IsObject 2
 
   07bd:30 0012            bnt code_07d2
-  07c0:89 0d              lsg
-  07c2:81 0b              lag
+  07c0:89 0d              lsg global13
+  07c2:81 0b              lag global11
   07c4:1a                 eq?
   07c5:30 000a            bnt code_07d2
   07c8:38 008d          pushi 8d                       // $8d cue

@@ -218,7 +218,7 @@
   0017:30 000d            bnt code_0027
   001a:38 00ea          pushi ea                       // $ea obstacles
   001d:76               push0
-  001e:81 02              lag
+  001e:81 02              lag global2
   0020:4a 04             send 4
 
   0022:a5 00              sat temp0
@@ -274,7 +274,7 @@
   013d:39 63            pushi 63                       // $63 perform
   013f:72 01ea          lofsa $01ea                    // flipFeature
   0142:36                push
-  0143:81 20              lag
+  0143:81 20              lag global32
   0145:4a 08             send 8
 
   0147:32 0041            jmp code_018b

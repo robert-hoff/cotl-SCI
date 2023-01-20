@@ -332,10 +332,10 @@
         code_014f
   014f:38 00db          pushi db                       // $db cycleSpeed
   0152:78               push1
-  0153:89 8d              lsg
+  0153:89 8d              lsg global141
   0155:39 38            pushi 38                       // $38 moveSpeed
   0157:78               push1
-  0158:89 8d              lsg
+  0158:89 8d              lsg global141
   015a:54 0c             self c
 
 
@@ -348,7 +348,7 @@
   0160:78               push1
   0161:38 0178          pushi 178                      // $178 egoMoveSpeed
   0164:76               push0
-  0165:81 01              lag
+  0165:81 01              lag global1
   0167:4a 04             send 4
 
   0169:36                push
@@ -356,7 +356,7 @@
   016c:78               push1
   016d:38 0178          pushi 178                      // $178 egoMoveSpeed
   0170:76               push0
-  0171:81 01              lag
+  0171:81 01              lag global1
   0173:4a 04             send 4
 
   0175:36                push
@@ -712,7 +712,7 @@
   03f9:39 08            pushi 8                        // $8 underBits
   03fb:39 05            pushi 5                        // $5 view
   03fd:76               push0
-  03fe:81 00              lag
+  03fe:81 00              lag gEgo
   0400:4a 04             send 4
 
   0402:36                push
@@ -728,7 +728,7 @@
   0417:30 000a            bnt code_0424
   041a:39 05            pushi 5                        // $5 view
   041c:76               push0
-  041d:81 00              lag
+  041d:81 00              lag gEgo
   041f:4a 04             send 4
 
   0421:32 000b            jmp code_042f
@@ -736,7 +736,7 @@
         code_0424
   0424:39 05            pushi 5                        // $5 view
   0426:76               push0
-  0427:81 00              lag
+  0427:81 00              lag gEgo
   0429:4a 04             send 4
 
   042b:36                push
@@ -747,7 +747,7 @@
   042f:36                push
   0430:39 06            pushi 6                        // $6 loop
   0432:78               push1
-  0433:89 7e              lsg
+  0433:89 7e              lsg global126
   0435:35 02              ldi 2
   0437:1a                 eq?
   0438:30 0005            bnt code_0440
@@ -757,7 +757,7 @@
         code_0440
   0440:39 05            pushi 5                        // $5 view
   0442:76               push0
-  0443:81 00              lag
+  0443:81 00              lag gEgo
   0445:4a 04             send 4
 
   0447:36                push
@@ -782,7 +782,7 @@
   0461:9b 00             lsli local0
   0463:39 55            pushi 55                       // $55 z
   0465:78               push1
-  0466:89 7e              lsg
+  0466:89 7e              lsg global126
   0468:3c                 dup
   0469:35 05              ldi 5
   046b:1a                 eq?
@@ -816,8 +816,8 @@
 
   0492:39 77            pushi 77                       // $77 contains
   0494:78               push1
-  0495:89 00              lsg
-  0497:81 05              lag
+  0495:89 00              lsg gEgo
+  0497:81 05              lag global5
   0499:4a 06             send 6
 
   049b:30 0005            bnt code_04a3
