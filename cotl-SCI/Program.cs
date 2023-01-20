@@ -1,5 +1,5 @@
 using System.Diagnostics;
-using cotl_SCI.AssemblyDecoding;
+using cotl_SCI.CodeAnalysis;
 using cotl_SCI.DataAnalysis;
 using cotl_SCI.DataFileIO;
 using cotl_SCI.InputControl;
@@ -26,7 +26,7 @@ namespace cotl_SCI
             // DosboxMemoryScan.NextScanReduceSamples();
             // RunDosboxScan();
             // ReadDataFromFile.CreateCheatEngineConfiguration();
-            PrintCheatEntries();
+            GenerateCheatEngineConfigs.Run();
             // ShowEventQueueOffsets();
             // ShowEventPointerValues();
             // TestMousePress.RunTrials();
@@ -35,7 +35,6 @@ namespace cotl_SCI
             // ScummVmBasePointerSearch.RunTrials();
             // ParseAssembly.RunTrials();
             // ShowClassDefinitions.RunTrials();
-            // ShowFlagAddresses();
         }
 
 
@@ -74,30 +73,6 @@ namespace cotl_SCI
             new CotlReadWrite().SetDosboxCycles(20000);
         }
 
-
-        public static void PrintCheatEntries()
-        {
-            int baseOffset = 0x208C4;
-            int nameid = 200;
-            int entryid = 399;
-
-            for (int i = 0; i < 16; i++)
-            {
-                int flags1 = i * 16;
-                int flags2 = flags1 + 15;
-                int offset = baseOffset + i * 2;
-                Debug.WriteLine($"<CheatEntry>");
-                Debug.WriteLine($"  <ID>{entryid+i}</ID>");
-                Debug.WriteLine($"  <Description>\"global{(nameid+i):000} - flags[{flags2:000}-{flags1:000}]\"</Description>");
-                Debug.WriteLine($"  <ShowAsSigned>0</ShowAsSigned>");
-                Debug.WriteLine($"  <VariableType>2 Bytes</VariableType>");
-                Debug.WriteLine($"  <Address>Dosbox.exe + 0x1B58E20</Address>");
-                Debug.WriteLine($"  <Offsets>");
-                Debug.WriteLine($"    <Offset>0x{offset:X}</Offset>");
-                Debug.WriteLine($"  </Offsets>");
-                Debug.WriteLine($"</CheatEntry>");
-            }
-        }
 
         public static void ShowEventQueueOffsets()
         {
@@ -147,34 +122,6 @@ namespace cotl_SCI
             int baseAddress = new CotlReadWrite().COTL_BASE_ADDRESS;
             Debug.WriteLine($"0x{baseAddress:X}");
         }
-
-
-        public static void ShowFlagAddresses()
-        {
-            string header = $"{"flag",-8} {"offset",10} {"bitPosition",14}";
-            Debug.WriteLine($"{header}");
-            Debug.WriteLine($"{new string('-', header.Length)}");
-            for (int flagId = 0; flagId < 192; flagId = flagId != 19 ? flagId + 1 : 182)
-            {
-                int offset = flagId / 16;
-                int bitPosition = 15 - flagId % 16;
-                Debug.WriteLine($"flag_{flagId:000} {offset,10} {bitPosition,14}");
-                if (flagId == 19)
-                    Debug.WriteLine("...");
-            }
-
-            /*
-            for (int flagId = 0; flagId < 192; flagId++)
-            {
-                int offset = flagId / 16;
-                int bitPosition = 15 - flagId % 16;
-                Debug.WriteLine($"flag_{flagId:000} {offset,10} {bitPosition,14}");
-            }
-            */
-        }
-
-
-
 
 
     }

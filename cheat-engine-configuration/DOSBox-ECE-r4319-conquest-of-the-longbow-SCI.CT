@@ -205,8 +205,8 @@
       </Offsets>
     </CheatEntry>
     <CheatEntry>
-      <ID>144</ID>
-      <Description>"event-data0"</Description>
+      <ID>172</ID>
+      <Description>"event-data0-event-type"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -215,8 +215,8 @@
       </Offsets>
     </CheatEntry>
     <CheatEntry>
-      <ID>172</ID>
-      <Description>"event-data0-event-type"</Description>
+      <ID>144</ID>
+      <Description>"event-data0"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -476,7 +476,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>200</ID>
-      <Description>"global001"</Description>
+      <Description>"global001 - gGame"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -486,7 +486,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>201</ID>
-      <Description>"global002"</Description>
+      <Description>"global002 - gClient"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -496,7 +496,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>202</ID>
-      <Description>"global003"</Description>
+      <Description>"global003 - gNewSpeed"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -516,7 +516,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>204</ID>
-      <Description>"global005"</Description>
+      <Description>"global005 - gNewCast"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -526,7 +526,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>205</ID>
-      <Description>"global006"</Description>
+      <Description>"global006 - gRegions"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -536,7 +536,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>206</ID>
-      <Description>"global007"</Description>
+      <Description>"global007 - gTimers"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -556,7 +556,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>208</ID>
-      <Description>"global009"</Description>
+      <Description>"global009 - gInv or gEgoHead"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -576,7 +576,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>210</ID>
-      <Description>"global011 - room-nr(1)"</Description>
+      <Description>"global011 - gGHeading (usually room-nr)"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -586,7 +586,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>211</ID>
-      <Description>"global012 - prev-room-nr"</Description>
+      <Description>"global012 - gHeading (usually prev-room-nr)"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -596,7 +596,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>212</ID>
-      <Description>"global013 - room-nr(2)"</Description>
+      <Description>"global013 - gNewRoomNumber"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -686,7 +686,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>221</ID>
-      <Description>"global022 - ransom"</Description>
+      <Description>"global022 - ransom(?)"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -706,7 +706,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>223</ID>
-      <Description>"global024"</Description>
+      <Description>"global024 - gPEvent"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -716,7 +716,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>224</ID>
-      <Description>"global025"</Description>
+      <Description>"global025 - gTheNewDialog"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -776,7 +776,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>230</ID>
-      <Description>"global031"</Description>
+      <Description>"global031 - gPicAngle"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -786,7 +786,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>231</ID>
-      <Description>"global032"</Description>
+      <Description>"global032 - gNewFeatures"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -796,7 +796,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>232</ID>
-      <Description>"global033"</Description>
+      <Description>"global033 - gSFeatures"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -826,7 +826,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>235</ID>
-      <Description>"global036"</Description>
+      <Description>"global036 - gPicNumber"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -846,7 +846,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>237</ID>
-      <Description>"global038"</Description>
+      <Description>"global038 - gSysWindow"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1156,7 +1156,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>268</ID>
-      <Description>"global069"</Description>
+      <Description>"global069 - gIconBar"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1166,7 +1166,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>269</ID>
-      <Description>"global070 - mouse-cursor-x"</Description>
+      <Description>"global070 - gX (mouse-cursor-x)"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1176,7 +1176,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>270</ID>
-      <Description>"global071 - mouse-cursor-y"</Description>
+      <Description>"global071 - gY (mouse-cursor-y)"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1246,7 +1246,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>277</ID>
-      <Description>"global078"</Description>
+      <Description>"global078 - gTheDoits"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1266,7 +1266,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>279</ID>
-      <Description>"global080"</Description>
+      <Description>"global080 - gUser"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1306,7 +1306,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>283</ID>
-      <Description>"global084"</Description>
+      <Description>"global084 - gNewEventHandler"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1316,7 +1316,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>284</ID>
-      <Description>"global085"</Description>
+      <Description>"global085 - gFont"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1346,7 +1346,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>287</ID>
-      <Description>"global088"</Description>
+      <Description>"global088 - gB_moveCnt"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1506,7 +1506,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>303</ID>
-      <Description>"global104"</Description>
+      <Description>"global104 - gGEgoX"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1516,7 +1516,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>304</ID>
-      <Description>"global105"</Description>
+      <Description>"global105 - gGEgoY"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1546,7 +1546,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>307</ID>
-      <Description>"global108"</Description>
+      <Description>"global108 - gGEgoEdgeHit"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1576,7 +1576,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>310</ID>
-      <Description>"global111"</Description>
+      <Description>"global111 - gGEgoLoop"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1776,7 +1776,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>330</ID>
-      <Description>"global131"</Description>
+      <Description>"global131 - gGEgoPriority"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1826,7 +1826,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>335</ID>
-      <Description>"global136"</Description>
+      <Description>"global136 - gGEgoCel"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1876,7 +1876,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>340</ID>
-      <Description>"global141"</Description>
+      <Description>"global141 - gGGGameEgoMoveSpeed"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -2036,7 +2036,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>356</ID>
-      <Description>"global157"</Description>
+      <Description>"global157 - gGGameEgoMoveSpeed"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -2076,7 +2076,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>360</ID>
-      <Description>"global161"</Description>
+      <Description>"global161 - gEgoBeard"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -2116,7 +2116,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>364</ID>
-      <Description>"global165"</Description>
+      <Description>"global165 - powers of 2, affected by pickups and room changes ... "</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -2226,7 +2226,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>375</ID>
-      <Description>"global176"</Description>
+      <Description>"global176 - gBack"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -2306,7 +2306,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>383</ID>
-      <Description>"global184"</Description>
+      <Description>"global184 - gGColor"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -2336,7 +2336,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>386</ID>
-      <Description>"global187"</Description>
+      <Description>"global187 - gColor"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -2346,7 +2346,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>387</ID>
-      <Description>"global188"</Description>
+      <Description>"global188 - gGBack"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -2466,163 +2466,3267 @@
     </CheatEntry>
     <CheatEntry>
       <ID>399</ID>
-      <Description>"global200 - flags[015-000]"</Description>
+      <Description>"global200 - flags[000-015]"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208C4</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>400</ID>
+          <Description>"flag000"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C5</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>401</ID>
+          <Description>"flag001"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C5</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>402</ID>
+          <Description>"flag002"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C5</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>403</ID>
+          <Description>"flag003"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C5</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>404</ID>
+          <Description>"flag004"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C5</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>405</ID>
+          <Description>"flag005"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C5</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>406</ID>
+          <Description>"flag006"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C5</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>407</ID>
+          <Description>"flag007"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C5</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>408</ID>
+          <Description>"flag008"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>409</ID>
+          <Description>"flag009"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>410</ID>
+          <Description>"flag010"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>411</ID>
+          <Description>"flag011"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>412</ID>
+          <Description>"flag012"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>413</ID>
+          <Description>"flag013"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>414</ID>
+          <Description>"flag014"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>415</ID>
+          <Description>"flag015"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C4</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>400</ID>
-      <Description>"global201 - flags[031-016]"</Description>
+      <ID>416</ID>
+      <Description>"global201 - flags[016-031]"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208C6</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>417</ID>
+          <Description>"flag016"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C7</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>418</ID>
+          <Description>"flag017"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C7</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>419</ID>
+          <Description>"flag018"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C7</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>420</ID>
+          <Description>"flag019"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C7</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>421</ID>
+          <Description>"flag020"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C7</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>422</ID>
+          <Description>"flag021"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C7</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>423</ID>
+          <Description>"flag022"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C7</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>424</ID>
+          <Description>"flag023"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C7</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>425</ID>
+          <Description>"flag024"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C6</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>426</ID>
+          <Description>"flag025"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C6</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>427</ID>
+          <Description>"flag026"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C6</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>428</ID>
+          <Description>"flag027"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C6</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>429</ID>
+          <Description>"flag028"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C6</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>430</ID>
+          <Description>"flag029"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C6</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>431</ID>
+          <Description>"flag030"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C6</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>432</ID>
+          <Description>"flag031"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C6</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>401</ID>
-      <Description>"global202 - flags[047-032]"</Description>
+      <ID>433</ID>
+      <Description>"global202 - flags[032-047]"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208C8</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>434</ID>
+          <Description>"flag032"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C9</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>435</ID>
+          <Description>"flag033"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C9</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>436</ID>
+          <Description>"flag034"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C9</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>437</ID>
+          <Description>"flag035"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C9</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>438</ID>
+          <Description>"flag036"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C9</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>439</ID>
+          <Description>"flag037"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C9</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>440</ID>
+          <Description>"flag038"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C9</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>441</ID>
+          <Description>"flag039"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C9</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>442</ID>
+          <Description>"flag040"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>443</ID>
+          <Description>"flag041"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>444</ID>
+          <Description>"flag042"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>445</ID>
+          <Description>"flag043"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>446</ID>
+          <Description>"flag044"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>447</ID>
+          <Description>"flag045"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>448</ID>
+          <Description>"flag046"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>449</ID>
+          <Description>"flag047"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208C8</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>402</ID>
-      <Description>"global203 - flags[063-048]"</Description>
+      <ID>450</ID>
+      <Description>"global203 - flags[048-063]"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208CA</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>451</ID>
+          <Description>"flag048"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CB</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>452</ID>
+          <Description>"flag049"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CB</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>453</ID>
+          <Description>"flag050"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CB</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>454</ID>
+          <Description>"flag051"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CB</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>455</ID>
+          <Description>"flag052"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CB</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>456</ID>
+          <Description>"flag053"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CB</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>457</ID>
+          <Description>"flag054"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CB</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>458</ID>
+          <Description>"flag055"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CB</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>459</ID>
+          <Description>"flag056"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CA</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>460</ID>
+          <Description>"flag057"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CA</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>461</ID>
+          <Description>"flag058"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CA</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>462</ID>
+          <Description>"flag059"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CA</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>463</ID>
+          <Description>"flag060"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CA</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>464</ID>
+          <Description>"flag061"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CA</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>465</ID>
+          <Description>"flag062"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CA</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>466</ID>
+          <Description>"flag063"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CA</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>403</ID>
-      <Description>"global204 - flags[079-064]"</Description>
+      <ID>467</ID>
+      <Description>"global204 - flags[064-079]"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208CC</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>468</ID>
+          <Description>"flag064"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CD</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>469</ID>
+          <Description>"flag065"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CD</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>470</ID>
+          <Description>"flag066"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CD</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>471</ID>
+          <Description>"flag067"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CD</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>472</ID>
+          <Description>"flag068"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CD</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>473</ID>
+          <Description>"flag069"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CD</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>474</ID>
+          <Description>"flag070"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CD</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>475</ID>
+          <Description>"flag071"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CD</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>476</ID>
+          <Description>"flag072"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>477</ID>
+          <Description>"flag073"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>478</ID>
+          <Description>"flag074"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>479</ID>
+          <Description>"flag075"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>480</ID>
+          <Description>"flag076"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>481</ID>
+          <Description>"flag077"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>482</ID>
+          <Description>"flag078"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>483</ID>
+          <Description>"flag079"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CC</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>404</ID>
-      <Description>"global205 - flags[095-080]"</Description>
+      <ID>484</ID>
+      <Description>"global205 - flags[080-095]"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208CE</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>485</ID>
+          <Description>"flag080"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CF</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>486</ID>
+          <Description>"flag081"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CF</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>487</ID>
+          <Description>"flag082"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CF</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>488</ID>
+          <Description>"flag083"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CF</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>489</ID>
+          <Description>"flag084"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CF</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>490</ID>
+          <Description>"flag085"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CF</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>491</ID>
+          <Description>"flag086"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CF</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>492</ID>
+          <Description>"flag087"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CF</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>493</ID>
+          <Description>"flag088"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CE</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>494</ID>
+          <Description>"flag089"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CE</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>495</ID>
+          <Description>"flag090"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CE</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>496</ID>
+          <Description>"flag091"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CE</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>497</ID>
+          <Description>"flag092"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CE</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>498</ID>
+          <Description>"flag093"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CE</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>499</ID>
+          <Description>"flag094"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CE</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>500</ID>
+          <Description>"flag095"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208CE</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>405</ID>
-      <Description>"global206 - flags[111-096]"</Description>
+      <ID>501</ID>
+      <Description>"global206 - flags[096-111]"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208D0</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>502</ID>
+          <Description>"flag096"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D1</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>503</ID>
+          <Description>"flag097"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D1</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>504</ID>
+          <Description>"flag098"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D1</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>505</ID>
+          <Description>"flag099"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D1</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>506</ID>
+          <Description>"flag100"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D1</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>507</ID>
+          <Description>"flag101"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D1</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>508</ID>
+          <Description>"flag102"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D1</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>509</ID>
+          <Description>"flag103"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D1</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>510</ID>
+          <Description>"flag104"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>511</ID>
+          <Description>"flag105"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>512</ID>
+          <Description>"flag106"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>513</ID>
+          <Description>"flag107"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>514</ID>
+          <Description>"flag108"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>515</ID>
+          <Description>"flag109"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>516</ID>
+          <Description>"flag110"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>517</ID>
+          <Description>"flag111"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D0</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>406</ID>
-      <Description>"global207 - flags[127-112]"</Description>
+      <ID>518</ID>
+      <Description>"global207 - flags[112-127]"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208D2</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>519</ID>
+          <Description>"flag112"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D3</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>520</ID>
+          <Description>"flag113"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D3</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>521</ID>
+          <Description>"flag114"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D3</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>522</ID>
+          <Description>"flag115"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D3</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>523</ID>
+          <Description>"flag116"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D3</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>524</ID>
+          <Description>"flag117"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D3</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>525</ID>
+          <Description>"flag118"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D3</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>526</ID>
+          <Description>"flag119"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D3</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>527</ID>
+          <Description>"flag120"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D2</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>528</ID>
+          <Description>"flag121"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D2</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>529</ID>
+          <Description>"flag122"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D2</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>530</ID>
+          <Description>"flag123"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D2</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>531</ID>
+          <Description>"flag124"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D2</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>532</ID>
+          <Description>"flag125"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D2</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>533</ID>
+          <Description>"flag126"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D2</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>534</ID>
+          <Description>"flag127"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D2</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>407</ID>
-      <Description>"global208 - flags[143-128]"</Description>
+      <ID>535</ID>
+      <Description>"global208 - flags[128-143]"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208D4</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>536</ID>
+          <Description>"flag128"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D5</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>537</ID>
+          <Description>"flag129"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D5</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>538</ID>
+          <Description>"flag130"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D5</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>539</ID>
+          <Description>"flag131"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D5</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>540</ID>
+          <Description>"flag132"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D5</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>541</ID>
+          <Description>"flag133"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D5</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>542</ID>
+          <Description>"flag134"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D5</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>543</ID>
+          <Description>"flag135"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D5</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>544</ID>
+          <Description>"flag136"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>545</ID>
+          <Description>"flag137"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>546</ID>
+          <Description>"flag138"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>547</ID>
+          <Description>"flag139"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>548</ID>
+          <Description>"flag140"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>549</ID>
+          <Description>"flag141"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>550</ID>
+          <Description>"flag142"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>551</ID>
+          <Description>"flag143"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D4</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>408</ID>
-      <Description>"global209 - flags[159-144]"</Description>
+      <ID>552</ID>
+      <Description>"global209 - flags[144-159]"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208D6</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>553</ID>
+          <Description>"flag144"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D7</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>554</ID>
+          <Description>"flag145"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D7</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>555</ID>
+          <Description>"flag146"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D7</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>556</ID>
+          <Description>"flag147"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D7</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>557</ID>
+          <Description>"flag148"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D7</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>558</ID>
+          <Description>"flag149"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D7</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>559</ID>
+          <Description>"flag150"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D7</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>560</ID>
+          <Description>"flag151"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D7</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>561</ID>
+          <Description>"flag152"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D6</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>562</ID>
+          <Description>"flag153"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D6</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>563</ID>
+          <Description>"flag154"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D6</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>564</ID>
+          <Description>"flag155"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D6</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>565</ID>
+          <Description>"flag156"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D6</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>566</ID>
+          <Description>"flag157"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D6</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>567</ID>
+          <Description>"flag158"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D6</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>568</ID>
+          <Description>"flag159"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D6</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>409</ID>
-      <Description>"global210 - flags[175-160]"</Description>
+      <ID>569</ID>
+      <Description>"global210 - flags[160-175]"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208D8</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>570</ID>
+          <Description>"flag160"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D9</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>571</ID>
+          <Description>"flag161"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D9</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>572</ID>
+          <Description>"flag162"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D9</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>573</ID>
+          <Description>"flag163"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D9</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>574</ID>
+          <Description>"flag164"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D9</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>575</ID>
+          <Description>"flag165"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D9</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>576</ID>
+          <Description>"flag166"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D9</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>577</ID>
+          <Description>"flag167"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D9</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>578</ID>
+          <Description>"flag168"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>579</ID>
+          <Description>"flag169"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>580</ID>
+          <Description>"flag170"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>581</ID>
+          <Description>"flag171 - horn picked up"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>582</ID>
+          <Description>"flag172"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>583</ID>
+          <Description>"flag173"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>584</ID>
+          <Description>"flag174"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>585</ID>
+          <Description>"flag175"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208D8</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>410</ID>
-      <Description>"global211 - flags[191-176]"</Description>
+      <ID>586</ID>
+      <Description>"global211 - flags[176-191]"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208DA</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>587</ID>
+          <Description>"flag176"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DB</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>588</ID>
+          <Description>"flag177"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DB</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>589</ID>
+          <Description>"flag178"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DB</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>590</ID>
+          <Description>"flag179"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DB</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>591</ID>
+          <Description>"flag180"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DB</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>592</ID>
+          <Description>"flag181"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DB</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>593</ID>
+          <Description>"flag182"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DB</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>594</ID>
+          <Description>"flag183"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DB</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>595</ID>
+          <Description>"flag184"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DA</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>596</ID>
+          <Description>"flag185"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DA</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>597</ID>
+          <Description>"flag186"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DA</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>598</ID>
+          <Description>"flag187"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DA</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>599</ID>
+          <Description>"flag188"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DA</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>600</ID>
+          <Description>"flag189"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DA</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>601</ID>
+          <Description>"flag190"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DA</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>602</ID>
+          <Description>"flag191"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DA</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>411</ID>
-      <Description>"global212 - flags[207-192]"</Description>
+      <ID>603</ID>
+      <Description>"global212 - flags[192-207]"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208DC</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>604</ID>
+          <Description>"flag192"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DD</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>605</ID>
+          <Description>"flag193 - coins picked up"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DD</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>606</ID>
+          <Description>"flag194"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DD</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>607</ID>
+          <Description>"flag195"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DD</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>608</ID>
+          <Description>"flag196"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DD</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>609</ID>
+          <Description>"flag197"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DD</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>610</ID>
+          <Description>"flag198"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DD</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>611</ID>
+          <Description>"flag199"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DD</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>612</ID>
+          <Description>"flag200"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>613</ID>
+          <Description>"flag201"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>614</ID>
+          <Description>"flag202"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>615</ID>
+          <Description>"flag203"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>616</ID>
+          <Description>"flag204"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>617</ID>
+          <Description>"flag205"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>618</ID>
+          <Description>"flag206"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>619</ID>
+          <Description>"flag207"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DC</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>412</ID>
-      <Description>"global213 - flags[223-208]"</Description>
+      <ID>620</ID>
+      <Description>"global213 - flags[208-223]"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208DE</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>621</ID>
+          <Description>"flag208"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DF</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>622</ID>
+          <Description>"flag209"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DF</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>623</ID>
+          <Description>"flag210"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DF</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>624</ID>
+          <Description>"flag211"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DF</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>625</ID>
+          <Description>"flag212"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DF</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>626</ID>
+          <Description>"flag213"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DF</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>627</ID>
+          <Description>"flag214"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DF</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>628</ID>
+          <Description>"flag215"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DF</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>629</ID>
+          <Description>"flag216"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DE</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>630</ID>
+          <Description>"flag217"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DE</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>631</ID>
+          <Description>"flag218"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DE</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>632</ID>
+          <Description>"flag219"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DE</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>633</ID>
+          <Description>"flag220"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DE</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>634</ID>
+          <Description>"flag221"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DE</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>635</ID>
+          <Description>"flag222"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DE</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>636</ID>
+          <Description>"flag223"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208DE</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>413</ID>
-      <Description>"global214 - flags[239-224]"</Description>
+      <ID>637</ID>
+      <Description>"global214 - flags[224-239]"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208E0</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>638</ID>
+          <Description>"flag224"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E1</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>639</ID>
+          <Description>"flag225"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E1</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>640</ID>
+          <Description>"flag226"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E1</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>641</ID>
+          <Description>"flag227"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E1</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>642</ID>
+          <Description>"flag228"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E1</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>643</ID>
+          <Description>"flag229"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E1</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>644</ID>
+          <Description>"flag230"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E1</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>645</ID>
+          <Description>"flag231"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E1</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>646</ID>
+          <Description>"flag232"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>647</ID>
+          <Description>"flag233"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>648</ID>
+          <Description>"flag234"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>649</ID>
+          <Description>"flag235"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>650</ID>
+          <Description>"flag236"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>651</ID>
+          <Description>"flag237"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>652</ID>
+          <Description>"flag238"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>653</ID>
+          <Description>"flag239"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E0</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>414</ID>
-      <Description>"global215 - flags[255-240]"</Description>
+      <ID>654</ID>
+      <Description>"global215 - flags[240-255]"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208E2</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>655</ID>
+          <Description>"flag240"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E3</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>656</ID>
+          <Description>"flag241"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E3</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>657</ID>
+          <Description>"flag242"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E3</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>658</ID>
+          <Description>"flag243"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E3</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>659</ID>
+          <Description>"flag244"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E3</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>660</ID>
+          <Description>"flag245"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E3</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>661</ID>
+          <Description>"flag246"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E3</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>662</ID>
+          <Description>"flag247"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E3</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>663</ID>
+          <Description>"flag248"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E2</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>664</ID>
+          <Description>"flag249"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E2</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>665</ID>
+          <Description>"flag250"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E2</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>666</ID>
+          <Description>"flag251"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E2</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>667</ID>
+          <Description>"flag252"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E2</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>668</ID>
+          <Description>"flag253"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E2</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>669</ID>
+          <Description>"flag254"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E2</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>670</ID>
+          <Description>"flag255"</Description>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>Dosbox.exe + 0x1B58E20</Address>
+          <Offsets>
+            <Offset>0x208E2</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
       <ID>103</ID>
