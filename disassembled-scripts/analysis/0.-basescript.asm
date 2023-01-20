@@ -133,8 +133,8 @@
     local12 = $0000
     local13 = $0000
     local14 = $0000
-    local15 = $0000
-    local16 = $0000
+    local15 = $0000 // game score
+    local16 = $0000 // assigned max score
     local17 = $0007
     local18 = $0000
     local19 = $0000

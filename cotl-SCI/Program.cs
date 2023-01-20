@@ -26,16 +26,20 @@ namespace cotl_SCI
             // DosboxMemoryScan.NextScanReduceSamples();
             // RunDosboxScan();
             // ReadDataFromFile.CreateCheatEngineConfiguration();
-            // PrintCheatEntries();
+            PrintCheatEntries();
             // ShowEventQueueOffsets();
             // ShowEventPointerValues();
             // TestMousePress.RunTrials();
             // TestKeyPress.RunTrials();
             // ClockTests.TestGameClockDuration();
             // ScummVmBasePointerSearch.RunTrials();
-            ParseAssembly.RunTrials();
+            // ParseAssembly.RunTrials();
             // ShowClassDefinitions.RunTrials();
             // ShowFlagAddresses();
+
+            // Debug.WriteLine($"{0x1c9d}");
+            // Debug.WriteLine($"{0x0BAAF754 - 0x0BA8F020:x}");
+
         }
 
 
@@ -77,16 +81,16 @@ namespace cotl_SCI
 
         public static void PrintCheatEntries()
         {
-            int baseOffset = 0x1D71A;
+            int baseOffset = 0x20734;
             int nameid = 0;
-            int entryid = 144;
+            int entryid = 199;
 
-            for (int i = 0; i < 16; i++)
+            for (int i = 0; i < 200; i++)
             {
-                int offset = baseOffset + i * 14;
+                int offset = baseOffset + i * 2;
                 Debug.WriteLine($"<CheatEntry>");
                 Debug.WriteLine($"  <ID>{entryid+i}</ID>");
-                Debug.WriteLine($"  <Description>\"event-data{nameid+i}\"</Description>");
+                Debug.WriteLine($"  <Description>\"global{(nameid+i):000}\"</Description>");
                 Debug.WriteLine($"  <ShowAsSigned>0</ShowAsSigned>");
                 Debug.WriteLine($"  <VariableType>2 Bytes</VariableType>");
                 Debug.WriteLine($"  <Address>Dosbox.exe + 0x1B58E20</Address>");
