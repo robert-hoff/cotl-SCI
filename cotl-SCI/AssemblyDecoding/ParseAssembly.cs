@@ -7,23 +7,25 @@ namespace cotl_SCI.AssemblyDecoding
 {
     class ParseAssembly
     {
-        private const string SCRIPT_DIR = "../../../../disassembled-scripts/clean-decompile/";
+        // private const string SCRIPT_DIR = "../../../../disassembled-scripts/decompiled-assembly/";
+        private const string SCRIPT_DIR = "X:\\checkouts\\cotl-SCI\\cheat-engine-configuration\\";
         private const string OUTPUT_DIR = "../../../../output/";
         private const string FILE_EXT = ".scr.asm";
 
 
         public static void RunTrials()
         {
-            // ChangeAssemblyFileExtension();
-            // ExtractOpCodes(3);
-            // ExtractAllOpCodes();
+            // ShowBinaryCode();
+            RemoveAllTrailingSpaces();
+            // PushCommentsForwardForAllScripts();
+            // PushCommentsForwardForFile($"{SCRIPT_DIR}../annotated/140-gamestart-hideout-cave.asm");
+            // ShowUniqueCommands("72");
             // CollectAndWriteAllOpcodesToFile("all-opcodes.txt");
             // CollectAllUnitueOpStatement("unique-opcodes.txt");
             // CollectAndShowNonDuplicatedOpcodes();
-            ShowUniqueCommands("72");
-            // ShowBinaryCode();
-            // PushCommentsForwardForAllScripts();
-            // PushCommentsForwardForFile($"{SCRIPT_DIR}../annotated/140-gamestart-hideout-cave.asm");
+            // ExtractAllOpCodes();
+            // ExtractOpCodes(3);
+            // ChangeAssemblyFileExtension();
         }
 
         public static void ShowBinaryCode()
@@ -45,6 +47,30 @@ namespace cotl_SCI.AssemblyDecoding
                 Debug.WriteLine($"");
             }
         }
+
+
+        public static void RemoveAllTrailingSpaces()
+        {
+            foreach (string filename in GetFileNames(SCRIPT_DIR))
+            {
+                RemoveTrailingSpaces(SCRIPT_DIR + filename);
+            }
+        }
+
+
+        public static void RemoveTrailingSpaces(string filenamepath)
+        {
+            string[] lines = File.ReadAllLines(filenamepath);
+            Debug.WriteLine($"fixing trailing spaces for {filenamepath}");
+
+            FileWriter fw = new(filenamepath);
+            foreach (string line in lines)
+            {
+                fw.WriteLine(line.TrimEnd());
+            }
+            fw.CloseStreamWriter();
+        }
+
 
         public static void PushCommentsForwardForAllScripts()
         {

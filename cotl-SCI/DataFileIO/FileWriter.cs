@@ -12,6 +12,7 @@ namespace cotl_SCI.DataFileIO
         {
             // Debug.WriteLine($"Writing to {outputFilenamepath}");
             sw = new StreamWriter(outputFilenamepath);
+            sw.NewLine = "\n";
             this.writeToConsole = showOutputToConsole;
         }
         public void CloseStreamWriter()

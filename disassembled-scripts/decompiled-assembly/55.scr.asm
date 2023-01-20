@@ -265,32 +265,32 @@
     )
     (method (init)                                     // method_00b2
   00b2:39 6b            pushi 6b                       // $6b init
-  00b4:76               push0 
-  00b5:57 78 04         super HedgeRow 4 
+  00b4:76               push0
+  00b5:57 78 04         super HedgeRow 4
 
   00b8:39 1e            pushi 1e                       // $1e mode
-  00ba:81 0c              lag  
-  00bc:24                 le? 
-  00bd:30 0004            bnt code_00c4 
-  00c0:60               pprev 
-  00c1:35 55              ldi 55 
-  00c3:24                 le? 
+  00ba:81 0c              lag
+  00bc:24                 le?
+  00bd:30 0004            bnt code_00c4
+  00c0:60               pprev
+  00c1:35 55              ldi 55
+  00c3:24                 le?
 
         code_00c4
-  00c4:18                 not 
-  00c5:30 0015            bnt code_00dd 
+  00c4:18                 not
+  00c5:30 0015            bnt code_00dd
   00c8:39 2b            pushi 2b                       // $2b number
-  00ca:78               push1 
+  00ca:78               push1
   00cb:38 01ea          pushi 1ea                      // $1ea sliderCel
   00ce:39 06            pushi 6                        // $6 loop
-  00d0:78               push1 
+  00d0:78               push1
   00d1:39 ff            pushi ff                       // $ff syncNum
   00d3:39 2a            pushi 2a                       // $2a play
-  00d5:76               push0 
-  00d6:81 64              lag  
-  00d8:4a 10             send 10 
+  00d5:76               push0
+  00d6:81 64              lag
+  00d8:4a 10             send 10
 
-  00da:32 0010            jmp code_00ed 
+  00da:32 0010            jmp code_00ed
 
         code_00dd
   00dd:38 009f          pushi 9f                       // $9f fade
@@ -298,20 +298,20 @@
   00e2:39 7f            pushi 7f                       // $7f addAfter
   00e4:39 08            pushi 8                        // $8 underBits
   00e6:39 1e            pushi 1e                       // $1e mode
-  00e8:76               push0 
-  00e9:81 64              lag  
-  00eb:4a 0c             send c 
+  00e8:76               push0
+  00e9:81 64              lag
+  00eb:4a 0c             send c
 
 
         code_00ed
-  00ed:76               push0 
-  00ee:40 ff1c 00        call proc_000e 0 
+  00ed:76               push0
+  00ee:40 ff1c 00        call proc_000e 0
 
   00f2:38 0176          pushi 176                      // $176 addObstacle
   00f5:39 07            pushi 7                        // $7 cel
   00f7:39 22            pushi 22                       // $22 type
-  00f9:78               push1 
-  00fa:7a               push2 
+  00f9:78               push1
+  00fa:7a               push2
   00fb:39 6b            pushi 6b                       // $6b init
   00fd:39 14            pushi 14                       // $14 brLeft
   00ff:38 013f          pushi 13f                      // $13f inputLineAddr
@@ -320,12 +320,12 @@
   0108:38 00ae          pushi ae                       // $ae isType
   010b:38 00e4          pushi e4                       // $e4 setHeading
   010e:39 2f            pushi 2f                       // $2f dy
-  0110:76               push0 
+  0110:76               push0
   0111:39 2f            pushi 2f                       // $2f dy
-  0113:76               push0 
-  0114:7a               push2 
+  0113:76               push0
+  0114:7a               push2
   0115:38 013f          pushi 13f                      // $13f inputLineAddr
-  0118:7a               push2 
+  0118:7a               push2
   0119:38 013f          pushi 13f                      // $13f inputLineAddr
   011c:39 5b            pushi 5b                       // $5b palette
   011e:38 0122          pushi 122                      // $122 addToPic
@@ -335,25 +335,25 @@
   0128:38 013f          pushi 13f                      // $13f inputLineAddr
   012b:39 6d            pushi 6d                       // $6d showStr
   012d:39 72            pushi 72                       // $72 yourself
-  012f:76               push0 
+  012f:76               push0
   0130:39 6a            pushi 6a                       // $6a new
-  0132:76               push0 
-  0133:51 23            class Polygon 
-  0135:4a 04             send 4 
+  0132:76               push0
+  0133:51 23            class Polygon
+  0135:4a 04             send 4
 
-  0137:4a 36             send 36 
+  0137:4a 36             send 36
 
-  0139:36                push 
+  0139:36                push
   013a:39 22            pushi 22                       // $22 type
-  013c:78               push1 
-  013d:7a               push2 
+  013c:78               push1
+  013d:7a               push2
   013e:39 6b            pushi 6b                       // $6b init
   0140:39 0c            pushi c                        // $c nsRight
   0142:38 0095          pushi 95                       // $95 set
   0145:39 75            pushi 75                       // $75 firstTrue
-  0147:76               push0 
+  0147:76               push0
   0148:39 75            pushi 75                       // $75 firstTrue
-  014a:76               push0 
+  014a:76               push0
   014b:39 63            pushi 63                       // $63 perform
   014d:38 00af          pushi af                       // $af checkState
   0150:39 63            pushi 63                       // $63 perform
@@ -362,25 +362,25 @@
   0158:38 00c4          pushi c4                       // $c4 onMe
   015b:38 00bd          pushi bd                       // $bd maskView
   015e:39 72            pushi 72                       // $72 yourself
-  0160:76               push0 
+  0160:76               push0
   0161:39 6a            pushi 6a                       // $6a new
-  0163:76               push0 
-  0164:51 23            class Polygon 
-  0166:4a 04             send 4 
+  0163:76               push0
+  0164:51 23            class Polygon
+  0166:4a 04             send 4
 
-  0168:4a 26             send 26 
+  0168:4a 26             send 26
 
-  016a:36                push 
+  016a:36                push
   016b:39 22            pushi 22                       // $22 type
-  016d:78               push1 
-  016e:7a               push2 
+  016d:78               push1
+  016e:7a               push2
   016f:39 6b            pushi 6b                       // $6b init
   0171:39 0c            pushi c                        // $c nsRight
   0173:39 6b            pushi 6b                       // $6b init
   0175:38 0090          pushi 90                       // $90 localize
-  0178:76               push0 
+  0178:76               push0
   0179:38 0090          pushi 90                       // $90 localize
-  017c:76               push0 
+  017c:76               push0
   017d:38 0082          pushi 82                       // $82 start
   0180:38 008a          pushi 8a                       // $8a script
   0183:38 0082          pushi 82                       // $82 start
@@ -389,25 +389,25 @@
   018c:38 0080          pushi 80                       // $80 indexOf
   018f:38 00af          pushi af                       // $af checkState
   0192:39 72            pushi 72                       // $72 yourself
-  0194:76               push0 
+  0194:76               push0
   0195:39 6a            pushi 6a                       // $6a new
-  0197:76               push0 
-  0198:51 23            class Polygon 
-  019a:4a 04             send 4 
+  0197:76               push0
+  0198:51 23            class Polygon
+  019a:4a 04             send 4
 
-  019c:4a 26             send 26 
+  019c:4a 26             send 26
 
-  019e:36                push 
+  019e:36                push
   019f:39 22            pushi 22                       // $22 type
-  01a1:78               push1 
-  01a2:7a               push2 
+  01a1:78               push1
+  01a2:7a               push2
   01a3:39 6b            pushi 6b                       // $6b init
   01a5:39 0c            pushi c                        // $c nsRight
   01a7:39 42            pushi 42                       // $42 setPri
   01a9:38 00af          pushi af                       // $af checkState
-  01ac:76               push0 
+  01ac:76               push0
   01ad:38 00af          pushi af                       // $af checkState
-  01b0:76               push0 
+  01b0:76               push0
   01b1:38 00a5          pushi a5                       // $a5 clean
   01b4:39 5c            pushi 5c                       // $5c dataInc
   01b6:38 00a5          pushi a5                       // $a5 clean
@@ -416,25 +416,25 @@
   01be:39 4b            pushi 4b                       // $4b said
   01c0:38 00bd          pushi bd                       // $bd maskView
   01c3:39 72            pushi 72                       // $72 yourself
-  01c5:76               push0 
+  01c5:76               push0
   01c6:39 6a            pushi 6a                       // $6a new
-  01c8:76               push0 
-  01c9:51 23            class Polygon 
-  01cb:4a 04             send 4 
+  01c8:76               push0
+  01c9:51 23            class Polygon
+  01cb:4a 04             send 4
 
-  01cd:4a 26             send 26 
+  01cd:4a 26             send 26
 
-  01cf:36                push 
+  01cf:36                push
   01d0:39 22            pushi 22                       // $22 type
-  01d2:78               push1 
-  01d3:7a               push2 
+  01d2:78               push1
+  01d3:7a               push2
   01d4:39 6b            pushi 6b                       // $6b init
   01d6:39 0c            pushi c                        // $c nsRight
   01d8:38 00bd          pushi bd                       // $bd maskView
   01db:39 55            pushi 55                       // $55 z
-  01dd:76               push0 
+  01dd:76               push0
   01de:39 55            pushi 55                       // $55 z
-  01e0:76               push0 
+  01e0:76               push0
   01e1:39 4a            pushi 4a                       // $4a pragmaFail
   01e3:38 00d7          pushi d7                       // $d7 completed
   01e6:39 4a            pushi 4a                       // $4a pragmaFail
@@ -443,18 +443,18 @@
   01ee:38 00da          pushi da                       // $da motionCue
   01f1:38 0083          pushi 83                       // $83 timer
   01f4:39 72            pushi 72                       // $72 yourself
-  01f6:76               push0 
+  01f6:76               push0
   01f7:39 6a            pushi 6a                       // $6a new
-  01f9:76               push0 
-  01fa:51 23            class Polygon 
-  01fc:4a 04             send 4 
+  01f9:76               push0
+  01fa:51 23            class Polygon
+  01fc:4a 04             send 4
 
-  01fe:4a 26             send 26 
+  01fe:4a 26             send 26
 
-  0200:36                push 
+  0200:36                push
   0201:39 22            pushi 22                       // $22 type
-  0203:78               push1 
-  0204:7a               push2 
+  0203:78               push1
+  0204:7a               push2
   0205:39 6b            pushi 6b                       // $6b init
   0207:39 0c            pushi c                        // $c nsRight
   0209:38 0101          pushi 101                      // $101 syncCheck
@@ -470,42 +470,42 @@
   0227:38 013f          pushi 13f                      // $13f inputLineAddr
   022a:38 00bd          pushi bd                       // $bd maskView
   022d:39 72            pushi 72                       // $72 yourself
-  022f:76               push0 
+  022f:76               push0
   0230:39 6a            pushi 6a                       // $6a new
-  0232:76               push0 
-  0233:51 23            class Polygon 
-  0235:4a 04             send 4 
+  0232:76               push0
+  0233:51 23            class Polygon
+  0235:4a 04             send 4
 
-  0237:4a 26             send 26 
+  0237:4a 26             send 26
 
-  0239:36                push 
+  0239:36                push
   023a:39 22            pushi 22                       // $22 type
-  023c:78               push1 
-  023d:7a               push2 
+  023c:78               push1
+  023d:7a               push2
   023e:39 6b            pushi 6b                       // $6b init
   0240:39 08            pushi 8                        // $8 underBits
-  0242:76               push0 
+  0242:76               push0
   0243:38 00bb          pushi bb                       // $bb setCursor
   0246:39 35            pushi 35                       // $35 b-incr
   0248:38 00bb          pushi bb                       // $bb setCursor
   024b:39 38            pushi 38                       // $38 moveSpeed
   024d:38 00bd          pushi bd                       // $bd maskView
-  0250:76               push0 
+  0250:76               push0
   0251:38 00bd          pushi bd                       // $bd maskView
   0254:39 72            pushi 72                       // $72 yourself
-  0256:76               push0 
+  0256:76               push0
   0257:39 6a            pushi 6a                       // $6a new
-  0259:76               push0 
-  025a:51 23            class Polygon 
-  025c:4a 04             send 4 
+  0259:76               push0
+  025a:51 23            class Polygon
+  025c:4a 04             send 4
 
-  025e:4a 1e             send 1e 
+  025e:4a 1e             send 1e
 
-  0260:36                push 
-  0261:81 02              lag  
-  0263:4a 12             send 12 
+  0260:36                push
+  0261:81 02              lag
+  0263:4a 12             send 12
 
-  0265:48                 ret 
+  0265:48                 ret
     )
 
 )
@@ -514,61 +514,61 @@
 
 (procedure proc_000e
   000e:3f 01             link 1                        // (var $1)
-  0010:35 00              ldi 0 
-  0012:a5 00              sat temp0 
+  0010:35 00              ldi 0
+  0012:a5 00              sat temp0
 
         code_0014
-  0014:8d 00              lst temp0 
-  0016:35 27              ldi 27 
-  0018:22                 lt? 
-  0019:30 0042            bnt code_005e 
+  0014:8d 00              lst temp0
+  0016:35 27              ldi 27
+  0018:22                 lt?
+  0019:30 0042            bnt code_005e
   001c:39 06            pushi 6                        // $6 loop
-  001e:78               push1 
-  001f:76               push0 
+  001e:78               push1
+  001f:76               push0
   0020:39 07            pushi 7                        // $7 cel
-  0022:78               push1 
-  0023:85 00              lat temp0 
-  0025:9b 28             lsli local40 
+  0022:78               push1
+  0023:85 00              lat temp0
+  0025:9b 28             lsli local40
   0027:39 3f            pushi 3f                       // $3f priority
-  0029:78               push1 
-  002a:9b 4f             lsli local79 
+  0029:78               push1
+  002a:9b 4f             lsli local79
   002c:39 11            pushi 11                       // $11 signal
-  002e:78               push1 
+  002e:78               push1
   002f:38 4010          pushi 4010                     // $4010 sel_16400
   0032:39 04            pushi 4                        // $4 x
-  0034:78               push1 
-  0035:9b 76             lsli local118 
+  0034:78               push1
+  0035:9b 76             lsli local118
   0037:39 03            pushi 3                        // $3 y
-  0039:78               push1 
-  003a:9b 9d             lsli local157 
+  0039:78               push1
+  003a:9b 9d             lsli local157
   003c:39 6b            pushi 6b                       // $6b init
-  003e:76               push0 
+  003e:76               push0
   003f:39 6a            pushi 6a                       // $6a new
-  0041:76               push0 
+  0041:76               push0
   0042:72 0072          lofsa $0072                    // hedgeMaster
-  0045:4a 04             send 4 
+  0045:4a 04             send 4
 
-  0047:36                push 
-  0048:85 00              lat temp0 
-  004a:b3 00             sali local0 
-  004c:4a 28             send 28 
+  0047:36                push
+  0048:85 00              lat temp0
+  004a:b3 00             sali local0
+  004c:4a 28             send 28
 
   004e:39 73            pushi 73                       // $73 add
-  0050:78               push1 
-  0051:85 00              lat temp0 
-  0053:9b 00             lsli local0 
-  0055:81 0a              lag  
-  0057:4a 06             send 6 
+  0050:78               push1
+  0051:85 00              lat temp0
+  0053:9b 00             lsli local0
+  0055:81 0a              lag
+  0057:4a 06             send 6
 
-  0059:c5 00              +at temp0 
-  005b:32 ffb6            jmp code_0014 
+  0059:c5 00              +at temp0
+  005b:32 ffb6            jmp code_0014
 
         code_005e
   005e:39 3c            pushi 3c                       // $3c doit
-  0060:76               push0 
-  0061:81 0a              lag  
-  0063:4a 04             send 4 
+  0060:76               push0
+  0061:81 0a              lag
+  0063:4a 04             send 4
 
-  0065:48                 ret 
+  0065:48                 ret
 )
 
