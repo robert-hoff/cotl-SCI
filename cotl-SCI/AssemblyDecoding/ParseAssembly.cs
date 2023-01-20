@@ -7,7 +7,8 @@ namespace cotl_SCI.AssemblyDecoding
 {
     class ParseAssembly
     {
-        private const string SCRIPT_DIR = "../../../../disassembled-scripts/decompiled-assembly/";
+        // private const string SCRIPT_DIR = "../../../../disassembled-scripts/decompiled-assembly/";
+        private const string SCRIPT_DIR = "../../../../disassembled-scripts/decompiled-sci-script/";
         private const string OUTPUT_DIR = "../../../../output/";
         private const string FILE_EXT = ".scr.asm";
 
@@ -15,7 +16,7 @@ namespace cotl_SCI.AssemblyDecoding
         public static void RunTrials()
         {
             // ShowBinaryCode();
-            RemoveAllTrailingSpaces();
+            RemoveAllTrailingSpaces(); // this also changes the line endings to Linux style
             // PushCommentsForwardForAllScripts();
             // PushCommentsForwardForFile($"{SCRIPT_DIR}../annotated/140-gamestart-hideout-cave.asm");
             // ShowUniqueCommands("72");
