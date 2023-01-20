@@ -33,11 +33,9 @@ namespace cotl_SCI
             // TestKeyPress.RunTrials();
             // ClockTests.TestGameClockDuration();
             // ScummVmBasePointerSearch.RunTrials();
-            ParseAssembly.RunTrials();
+            // ParseAssembly.RunTrials();
+            ShowClassDefinitions.RunTrials();
             // ShowFlagAddresses();
-
-            // Debug.WriteLine($"{0x456}");
-
         }
 
 

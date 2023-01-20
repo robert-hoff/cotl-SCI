@@ -94,6 +94,8 @@ namespace cotl_SCI.AssemblyDecoding
             }
         }
 
+
+
         public static void ShowUniqueCommands(string opCode)
         {
             List<string> allLinesWithOpcodes = ExtractAllOpCodes();

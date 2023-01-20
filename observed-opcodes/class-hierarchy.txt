@@ -1,0 +1,180 @@
+                                                            defined in
+                                                            ----------
+
+(class Class_943_3 of                                       943.scr
+(class Obj of                                               999.scr
+
+
+(class Avoid of Obj                                         985.scr
+
+(class Blk of Obj                                           949.scr
+    (class Cage of Blk                                      949.scr
+
+(class Class_255_0 of Obj                                   255.scr
+
+(class Class_255_1 of Obj                                   255.scr
+    (class DButton of Class_255_1                           255.scr
+    (class DEdit of Class_255_1                             255.scr
+    (class DIcon of Class_255_1                             255.scr
+        (class DCIcon of DIcon                              967.scr
+        (class Denomination of DIcon                        856.scr
+        (class GiveOrTakeIcon of DIcon                      857.scr
+    (class DSelector of Class_255_1                         255.scr
+    (class DText of Class_255_1                             255.scr
+
+(class Class_993_0 of Obj                                   993.scr
+
+(class ClickMenu of Obj                                     943.scr
+
+(class Code of Obj                                          999.scr
+    (class Grooper of Code                                  977.scr
+    (class OnMeAndLowY of Code                              996.scr
+    (class PAvoider of Code                                 927.scr
+    (class PseudoMouse of Code                              933.scr
+    (class publicSmoothLooper of Code                       968.scr
+    (class SpecialDoVerb of Code                            813.scr
+
+(class Collect of Obj                                       999.scr
+    (class List of Collect                                  999.scr
+        (class _EditablePolygon of List                     943.scr
+        (class Controls of List                             255.scr
+        (class Dialog of List                               255.scr
+            (class MoneyDialog of Dialog                    857.scr
+            (class SRDialog of Dialog                       990.scr
+                (class Restore of SRDialog                  990.scr
+                (class Save of SRDialog                     990.scr
+        (class MList of List                                858.scr
+        (class Money of List                                856.scr
+        (class PolyEdit of List                             943.scr
+        (class Set of List                                  999.scr
+            (class EventHandler of Set                      999.scr
+            (class IconBar of Set                           937.scr
+                (class Inv of IconBar                       995.scr
+                (class publicGameControls of IconBar        934.scr
+
+(class Cycle of Obj                                         992.scr
+    (class CT of Cycle                                      992.scr
+        (class ATo of CT                                    540.scr
+        (class Beg of CT                                    992.scr
+        (class End of CT                                    992.scr
+    (class Fwd of Cycle                                     992.scr
+        (class ForwardCounter of Fwd                        956.scr
+        (class FuzzyStop of Fwd                             891.scr
+        (class GuardStopWalk of Fwd                         400.scr
+        (class publicStopWalk of Fwd                        961.scr
+            (class FootstepWalk of StopWalk                 807.scr
+        (class publicSyncStop of Fwd                        892.scr
+        (class SyncWalk of Fwd                              992.scr
+        (class Walk of Fwd                                  992.scr
+    (class Grycler of Cycle                                 977.scr
+    (class Osc of Cycle                                     939.scr
+    (class RandCycle of Cycle                               941.scr
+        (class RTEyeCycle of RandCycle                      851.scr
+        (class RTRandCycle of RandCycle                     928.scr
+    (class Rev of Cycle                                     969.scr
+
+(class Event of Obj                                         999.scr
+
+(class Feature of Obj                                       950.scr
+    (class FairFeature of Feature                           860.scr
+    (class Part of Feature                                  858.scr
+        (class qsPart of Part                                11.scr
+    (class PicView of Feature                               998.scr
+        (class Hedge of PicView                             490.scr
+        (class RPicView of PicView                          978.scr
+    (class RFeature of Feature                              978.scr
+    (class scrollSlots of Feature                           660.scr
+    (class View of Feature                                  998.scr
+        (class FairView of View                             860.scr
+        (class Garb of View                                 140.scr
+        (class Prop of View                                 998.scr
+            (class Actor of Prop                            998.scr
+                (class Ego of Actor                         996.scr
+                    (class rhEgo of Ego                     813.scr
+                (class FairActor of Actor                   860.scr
+                (class Fighter of Actor                     858.scr
+                    (class QSFighter of Fighter              11.scr
+                (class Wisp of Actor                        601.scr
+            (class Beard of Prop                            813.scr
+            (class Extra of Prop                            988.scr
+            (class FairProp of Prop                         860.scr
+            (class Head of Prop                             813.scr
+            (class Talker of Prop                           928.scr
+                (class RHTalker of Talker                   851.scr
+        (class publicMapButton of View                       12.scr
+
+(class Game of Obj                                          994.scr
+
+(class IconI of Obj                                         937.scr
+    (class ControlIcon of IconI                             934.scr
+    (class InvI of IconI                                    995.scr
+    (class RhIconItem of IconI                               14.scr
+    (class Slider of IconI                                  934.scr
+
+(class Locale of Obj                                        994.scr
+
+(class Motion of Obj                                        992.scr
+    (class Approach of Motion                               953.scr
+    (class DPath of Motion                                  964.scr
+        (class RelDPath of DPath                            963.scr
+    (class Follow of Motion                                 971.scr
+    (class GuardFollow of Motion                            400.scr
+    (class Jump of Motion                                   991.scr
+        (class JumpTo of Jump                               991.scr
+    (class MoveTo of Motion                                 992.scr
+        (class PPath of MoveTo                              852.scr
+        (class SlowDown of MoveTo                           890.scr
+    (class PolyPath of Motion                               945.scr
+        (class MoveFwd of PolyPath                          951.scr
+        (class PChase of PolyPath                           930.scr
+        (class PFollow of PolyPath                          930.scr
+    (class Track of Motion                                  955.scr
+    (class Wander of Motion                                 970.scr
+
+(class Polygon of Obj                                       946.scr
+
+(class Rgn of Obj                                           994.scr
+    (class publicFair of Rgn                                311.scr
+    (class publicMonastery of Rgn                           625.scr
+    (class publicTheDungeon of Rgn                          564.scr
+    (class publictheTower of Rgn                            720.scr
+    (class publicWat of Rgn                                 125.scr
+    (class Rm of Rgn                                        994.scr
+        (class publicHedgeRow of Rm                         490.scr
+        (class StdRoom of Rm                                812.scr
+
+(class Script of Obj                                        999.scr
+    (class Conversation of Script                           851.scr
+    (class CueObj of Script                                 950.scr
+    (class Fight of Script                                  858.scr
+    (class Morris of Script                                 541.scr
+    (class runAround of Script                              670.scr
+    (class Technique of Script                              858.scr
+        (class QSTechnique of Technique                      11.scr
+    (class TScript of Script                                851.scr
+    (class ZScript of Script                                 95.scr
+
+(class SL of Obj                                            994.scr
+
+(class Sound of Obj                                         989.scr
+
+(class SysWindow of Obj                                     981.scr
+    (class BorderWindow of SysWindow                        936.scr
+        (class InsetWindow of BorderWindow                  936.scr
+    (class Window of SysWindow                              981.scr
+
+(class Table of Obj                                         893.scr
+
+(class Timer of Obj                                         973.scr
+
+(class TO of Obj                                            973.scr
+
+(class User of Obj                                          996.scr
+
+
+
+
+
+
+
+
