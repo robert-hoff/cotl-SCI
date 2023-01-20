@@ -205,8 +205,8 @@
       </Offsets>
     </CheatEntry>
     <CheatEntry>
-      <ID>172</ID>
-      <Description>"event-data0-event-type"</Description>
+      <ID>144</ID>
+      <Description>"event-data0"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -215,8 +215,8 @@
       </Offsets>
     </CheatEntry>
     <CheatEntry>
-      <ID>144</ID>
-      <Description>"event-data0"</Description>
+      <ID>172</ID>
+      <Description>"event-data0-event-type"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -466,7 +466,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>199</ID>
-      <Description>"global000"</Description>
+      <Description>"global000 - gEgo"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -656,7 +656,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>218</ID>
-      <Description>"global019"</Description>
+      <Description>"global019 - cursor state (walk, see, interact, etc.)"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1106,7 +1106,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>263</ID>
-      <Description>"global064"</Description>
+      <Description>"global064 - gFtrInit"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1116,7 +1116,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>264</ID>
-      <Description>"global065"</Description>
+      <Description>"global065 - gDoVerbCode"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1186,7 +1186,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>271</ID>
-      <Description>"global072"</Description>
+      <Description>"global072 - gKH"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1196,7 +1196,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>272</ID>
-      <Description>"global073"</Description>
+      <Description>"global073 - gMH"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1206,7 +1206,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>273</ID>
-      <Description>"global074"</Description>
+      <Description>"global074 - gDH"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1466,7 +1466,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>299</ID>
-      <Description>"global100"</Description>
+      <Description>"global100 - gRgnMusic"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1556,7 +1556,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>308</ID>
-      <Description>"global109"</Description>
+      <Description>"global109 - gEgoHead"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1596,7 +1596,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>312</ID>
-      <Description>"global113"</Description>
+      <Description>"global113 - gSFX"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1606,7 +1606,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>313</ID>
-      <Description>"global114"</Description>
+      <Description>"global114 - gSFX2"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1796,7 +1796,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>332</ID>
-      <Description>"global133"</Description>
+      <Description>"global133 - gPennies"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1806,7 +1806,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>333</ID>
-      <Description>"global134"</Description>
+      <Description>"global134 - gHapennies"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1816,7 +1816,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>334</ID>
-      <Description>"global135"</Description>
+      <Description>"global135 - gFarthings"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1986,7 +1986,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>351</ID>
-      <Description>"global152"</Description>
+      <Description>"global152 - gMoney"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -2146,7 +2146,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>367</ID>
-      <Description>"global168"</Description>
+      <Description>"global168 - gRgnMusic2"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -2462,6 +2462,166 @@
       <Address>Dosbox.exe + 0x1B58E20</Address>
       <Offsets>
         <Offset>0x208C2</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>399</ID>
+      <Description>"global200 - flags[015-000]"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x208C4</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>400</ID>
+      <Description>"global201 - flags[031-016]"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x208C6</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>401</ID>
+      <Description>"global202 - flags[047-032]"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x208C8</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>402</ID>
+      <Description>"global203 - flags[063-048]"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x208CA</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>403</ID>
+      <Description>"global204 - flags[079-064]"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x208CC</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>404</ID>
+      <Description>"global205 - flags[095-080]"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x208CE</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>405</ID>
+      <Description>"global206 - flags[111-096]"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x208D0</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>406</ID>
+      <Description>"global207 - flags[127-112]"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x208D2</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>407</ID>
+      <Description>"global208 - flags[143-128]"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x208D4</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>408</ID>
+      <Description>"global209 - flags[159-144]"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x208D6</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>409</ID>
+      <Description>"global210 - flags[175-160]"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x208D8</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>410</ID>
+      <Description>"global211 - flags[191-176]"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x208DA</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>411</ID>
+      <Description>"global212 - flags[207-192]"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x208DC</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>412</ID>
+      <Description>"global213 - flags[223-208]"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x208DE</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>413</ID>
+      <Description>"global214 - flags[239-224]"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x208E0</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>414</ID>
+      <Description>"global215 - flags[255-240]"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x208E2</Offset>
       </Offsets>
     </CheatEntry>
     <CheatEntry>
