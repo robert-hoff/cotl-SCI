@@ -18,8 +18,9 @@ namespace cotl_SCI.AssemblyDecoding
             // ExtractOpCodes(3);
             // ExtractAllOpCodes();
             // CollectAndWriteAllOpcodesToFile("all-opcodes.txt");
+            // CollectAllUnitueOpStatement("unique-opcodes.txt");
             // CollectAndShowNonDuplicatedOpcodes();
-            ShowUniqueCommands("38");
+            ShowUniqueCommands("72");
             // ShowBinaryCode();
             // PushCommentsForwardForAllScripts();
             // PushCommentsForwardForFile($"{SCRIPT_DIR}../annotated/140-gamestart-hideout-cave.asm");
@@ -112,6 +113,29 @@ namespace cotl_SCI.AssemblyDecoding
                 }
             }
         }
+
+
+        public static void CollectAllUnitueOpStatement(string outputFilename)
+        {
+            FileWriter fw = new(OUTPUT_DIR + outputFilename);
+            List<string> allLinesWithOpcodes = ExtractAllOpCodes();
+            string prevOpcode = "";
+            foreach (string line in allLinesWithOpcodes)
+            {
+                if (Regex.IsMatch(line.ToLower(), "^[0-9a-f][0-9a-f] "))
+                {
+                    string opCode = line;
+                    if (!opCode.Equals(prevOpcode))
+                    {
+                        // Debug.WriteLine($"{line}");
+                        fw.WriteLine($"{line}");
+                        prevOpcode = opCode;
+                    }
+                }
+            }
+            fw.CloseStreamWriter();
+        }
+
 
         public static void CollectAndShowNonDuplicatedOpcodes()
         {
