@@ -8,75 +8,75 @@
 (use n999)
 
 (public
-	rm410 0
+  rm410 0
 )
 
 (local
-	theGDoVerbCode
+  theGDoVerbCode
 )
 (instance rm410 of Rm
-	(properties
-		picture 410
-	)
+  (properties
+    picture 410
+  )
 
-	(method (init)
-		(super init:)
-		(gEgo posn: 152 183 loop: 2 init:)
-		(trapDoor init:)
-		(= theGDoVerbCode gDoVerbCode)
-		(= gDoVerbCode goThere)
-		((IconBar at: 0) type: 16384)
-		(proc0_4)
-	)
+  (method (init)
+    (super init:)
+    (gEgo posn: 152 183 loop: 2 init:)
+    (trapDoor init:)
+    (= theGDoVerbCode gDoVerbCode)
+    (= gDoVerbCode goThere)
+    ((IconBar at: 0) type: 16384)
+    (proc0_4)
+  )
 
-	(method (dispose)
-		((IconBar at: 0) type: 1)
-		(= gDoVerbCode theGDoVerbCode)
-		(super dispose:)
-	)
+  (method (dispose)
+    ((IconBar at: 0) type: 1)
+    (= gDoVerbCode theGDoVerbCode)
+    (super dispose:)
+  )
 )
 
 (instance goThere of Code
-	(properties)
+  (properties)
 
-	(method (doit param1 param2)
-		(if (gClient script?) (return))
-		(switch param1
-			(1
-				(if (== (param2 z?) 0)
-					(return)
-				else
-					(gClient newRoom: (param2 z?))
-				)
-			)
-			(else
-				(theGDoVerbCode doit: param1 param2)
-			)
-		)
-	)
+  (method (doit param1 param2)
+    (if (gClient script?) (return))
+    (switch param1
+      (1
+        (if (== (param2 z?) 0)
+          (return)
+        else
+          (gClient newRoom: (param2 z?))
+        )
+      )
+      (else
+        (theGDoVerbCode doit: param1 param2)
+      )
+    )
+  )
 )
 
 (instance trapDoor of Feature
-	(properties
-		z 410
-		nsTop 8
-		nsLeft 136
-		nsBottom 20
-		nsRight 192
-	)
+  (properties
+    z 410
+    nsTop 8
+    nsLeft 136
+    nsBottom 20
+    nsRight 192
+  )
 
-	(method (onMe param1)
-		(return
-			(if
-				(and
-					(<= nsLeft (param1 x?))
-					(<= (param1 x?) nsRight)
-					(<= nsTop (param1 y?))
-				)
-				(<= (param1 y?) nsBottom)
-			else
-				0
-			)
-		)
-	)
+  (method (onMe param1)
+    (return
+      (if
+        (and
+          (<= nsLeft (param1 x?))
+          (<= (param1 x?) nsRight)
+          (<= nsTop (param1 y?))
+        )
+        (<= (param1 y?) nsBottom)
+      else
+        0
+      )
+    )
+  )
 )

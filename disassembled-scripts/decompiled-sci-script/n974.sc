@@ -4,17 +4,17 @@
 (use n999)
 
 (public
-	proc974_0 0
+  proc974_0 0
 )
 
 (procedure (proc974_0 param1 param2)
-	(param2 firstTrue: #perform NC param1)
+  (param2 firstTrue: #perform NC param1)
 )
 
 (instance NC of Code
-	(properties)
+  (properties)
 
-	(method (doit param1 param2)
-		(return (== 0 (StrCmp (param1 name?) param2)))
-	)
+  (method (doit param1 param2)
+    (return (== 0 (StrCmp (param1 name?) param2)))
+  )
 )

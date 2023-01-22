@@ -8,9 +8,6 @@ namespace cotl_SCI.CodeAnalysis
     class ParseAssembly
     {
         private const string SCRIPT_DIR = "../../../../disassembled-scripts/decompiled-assembly/";
-
-        // FIXME - do NOT use this value. Place in it's own file
-        // private const string SCRIPT_DIR = "../../../../disassembled-scripts/decompiled-sci-script/";
         private const string OUTPUT_DIR = "../../../../output/";
         private const string FILE_EXT = ".scr.asm";
         private const string INPUT_SAMPLES_DIR = "../../../../input-samples/";
@@ -63,7 +60,6 @@ namespace cotl_SCI.CodeAnalysis
             }
         }
 
-
         public static void ShowInstanceDeclarations(string filename)
         {
             List<string> lines = ExtractInstanceDeclarations(filename);
@@ -85,7 +81,6 @@ namespace cotl_SCI.CodeAnalysis
             return linesExtracted;
         }
 
-
         public static List<string> ExtractInstanceDeclarations(string filename)
         {
             List<string> instanceDeclarations = new();
@@ -97,17 +92,19 @@ namespace cotl_SCI.CodeAnalysis
                 {
                     instanceDeclarations.Add($"{lineNr,5}     {filename[..^4]}      {line}");
                 }
-                //if (line.Length > 6 && line.Substring(0, 6).Equals("(class"))
-                //{
-                //    instanceDeclarations.Add($"{lineNr,5}     {filename[..^4]}      {line}");
-                //}
+                if (line.Length > 6 && line.Substring(0, 6).Equals("(class"))
+                {
+                    instanceDeclarations.Add($"{lineNr,5}     {filename[..^4]}      {line}");
+                }
                 lineNr++;
             }
             return instanceDeclarations;
         }
 
-
-
+        /*
+         * for the opcodes > 0x80 the bits express their functionality
+         *
+         */
         public static void ShowBinaryCode()
         {
             int[] opCodes = {
@@ -128,7 +125,6 @@ namespace cotl_SCI.CodeAnalysis
             }
         }
 
-
         public static void RemoveAllTrailingSpaces()
         {
             foreach (string filename in GetFileNames(SCRIPT_DIR))
@@ -136,7 +132,6 @@ namespace cotl_SCI.CodeAnalysis
                 RemoveTrailingSpaces(SCRIPT_DIR + filename);
             }
         }
-
 
         public static void RemoveTrailingSpaces(string filenamepath)
         {
@@ -151,7 +146,6 @@ namespace cotl_SCI.CodeAnalysis
             fw.CloseStreamWriter();
         }
 
-
         public static void PushCommentsForwardForAllScripts()
         {
             foreach (string filename in GetFileNames(SCRIPT_DIR))
@@ -159,7 +153,6 @@ namespace cotl_SCI.CodeAnalysis
                 PushCommentsForwardForFile(SCRIPT_DIR + filename);
             }
         }
-
 
         public static void PushCommentsForwardForFile(string filenamepath)
         {
@@ -200,9 +193,6 @@ namespace cotl_SCI.CodeAnalysis
                 return line;
             }
         }
-
-
-
         public static void ShowUniqueCommands(string opCode)
         {
             List<string> allLinesWithOpcodes = ExtractAllOpCodes();
@@ -219,7 +209,6 @@ namespace cotl_SCI.CodeAnalysis
                 }
             }
         }
-
 
         public static void CollectAllUnitueOpStatement(string outputFilename)
         {
@@ -241,7 +230,6 @@ namespace cotl_SCI.CodeAnalysis
             }
             fw.CloseStreamWriter();
         }
-
 
         public static void CollectAndShowNonDuplicatedOpcodes()
         {
@@ -333,6 +321,6 @@ namespace cotl_SCI.CodeAnalysis
                 }
             }
         }
-
     }
 }
+

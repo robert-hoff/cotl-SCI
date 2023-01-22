@@ -5,25 +5,25 @@
 (use n999)
 
 (public
-	theTower 0
+  theTower 0
 )
 
 (class theTower of Rgn
-	(properties
-		script 0
-		number 0
-		timer 0
-		keep 1
-		initialized 0
-		lookStr 0
-		climbing 0
-		outBoat 0
-		ivyDone 0
-	)
+  (properties
+    script 0
+    number 0
+    timer 0
+    keep 1
+    initialized 0
+    lookStr 0
+    climbing 0
+    outBoat 0
+    ivyDone 0
+  )
 
-	(method (newRoom newRoomNumber)
-		(if (not (proc999_5 newRoomNumber 701 702 705))
-			(self keep: 0)
-		)
-	)
+  (method (newRoom newRoomNumber)
+    (if (not (proc999_5 newRoomNumber 701 702 705))
+      (self keep: 0)
+    )
+  )
 )
