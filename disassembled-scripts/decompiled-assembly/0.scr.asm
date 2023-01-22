@@ -901,16 +901,28 @@
     )
 )
 
+
+; lea 4
+; load effective address
+
+; 000   0
+; 010   2
+; 100   4     bits 1-2 evaluate as 4, meaning lea refers to a temp variable
+; 110   6
+
+; (instance publicstatLine of Code is rewritten as
+; (instance statLine of Code in the decompiled SCI
+; this possibly means the 'public' prefix is a bug (very likely)
 // 0634
-(instance publicstatLine of Code
+(instance public statLine of Code
     (properties
     )
     (method (doit)                                     // method_053c
-  053c:3f e3             link e3                       // (var $e3)
+  053c:3f e3             link e3                       ; declares space for 0xe3 = 227 temp variables
   053e:7a               push2
   053f:5b 04 aa           lea 4 aa
   0542:36                push
-  0543:72 3275          lofsa $3275                    // Ransom:
+  0543:72 3275          lofsa $3275                    ; 0x3275 addresses the string "Ransom: " (defined at start)s
   0546:36                push
   0547:43 47 04         callk StrCpy 4
 
@@ -1125,13 +1137,11 @@
   06c5:72 04ba          lofsa $04ba                    // MH
   06c8:a1 49              sag gMH
   06ca:4a 04             send 4
-
   06cc:39 73            pushi 73                       // $73 add
   06ce:76               push0
   06cf:72 04d6          lofsa $04d6                    // KH
   06d2:a1 48              sag gKH
   06d4:4a 04             send 4
-
   06d6:39 73            pushi 73                       // $73 add
   06d8:76               push0
   06d9:72 04f2          lofsa $04f2                    // DH
@@ -6951,43 +6961,50 @@
 
 // EXPORTED procedure #5 (proc0_5)
 (procedure proc_3027
-  3027:8f 01              lsp param1
-  3029:35 10              ldi 10
-  302b:08                 div
-  302c:99 c8             lsgi global200
-  302e:38 8000          pushi 8000                     // $8000 sel_32768
-  3031:8f 01              lsp param1
-  3033:35 10              ldi 10
-  3035:0a                 mod
-  3036:0c                 shr
-  3037:12                 and
+  3027:8f 01              lsp param1        ;                             stack = {param1}
+  3029:35 10              ldi 10            ; acc = 16
+  302b:08                 div               ; acc = param1 / 16           stack = {}
+  302c:99 c8             lsgi global200     ;                             stack = {global[200i]}
+  302e:38 8000          pushi 8000          ;                             stack = {global[200i],0x8000}
+  3031:8f 01              lsp param1        ;                             stack = {global[200i],0x8000,param1}
+  3033:35 10              ldi 10            ; acc = 16
+  3035:0a                 mod               ; acc = param1 % 16           stack = {global[200i],0x8000}
+  3036:0c                 shr               ; acc = 0x8000 >> (param1%16) stack = {global[200i]}
+  3037:12                 and               ; acc = global[200i] & (0x8000 >> (param1%16))
+                                            ;                             stack = {}
   3038:48                 ret
 )
 
 // EXPORTED procedure #6 (proc0_6)
 (procedure proc_3039
-  3039:3f 01             link 1                        // (var $1)
-  303b:78               push1
-  303c:8f 01              lsp param1
-  303e:40 ffe5 02        call proc_3027 2
+  3039:3f 01             link 1             ;                       stack = {temp0}
+  303b:78               push1               ;                       stack = {temp0,1}
+  303c:8f 01              lsp param1        ;                       stack = {temp0,1,param1}
+  303e:40 ffe5 02        call proc_3027 2   ; acc = isSet(param1)   stack = {temp0}
 
-  3042:a5 00              sat temp0
-  3044:8f 01              lsp param1
-  3046:35 10              ldi 10
-  3048:08                 div
-  3049:99 c8             lsgi global200
-  304b:38 8000          pushi 8000                     // $8000 sel_32768
-  304e:8f 01              lsp param1
-  3050:35 10              ldi 10
-  3052:0a                 mod
-  3053:0c                 shr
-  3054:14                  or
-  3055:36                push
-  3056:8f 01              lsp param1
-  3058:35 10              ldi 10
-  305a:08                 div
-  305b:b1 c8             sagi global200
-  305d:85 00              lat temp0
+  3042:a5 00              sat temp0         ; temp0 = acc
+  3044:8f 01              lsp param1        ;                       stack = {temp0,param1}
+  3046:35 10              ldi 10            ; acc = 16
+  3048:08                 div               ; acc = param1/16       stack = {temp0}
+  3049:99 c8             lsgi global200     ;                       stack = {temp0,global[200i])
+  304b:38 8000          pushi 8000          ;                       stack = {temp0,global[200i],0x8000)
+  304e:8f 01              lsp param1        ;                       stack = {temp0,global[200i],0x8000,param1)
+  3050:35 10              ldi 10            ; acc = 16
+  3052:0a                 mod               ; acc = param1%16       stack = {temp0,global[200i],0x8000)
+  3053:0c                 shr               ; acc = 08000 >> param1%16 stack = {temp0,global[200i])
+  3054:14                  or               ; acc = global[200i] | (0x8000 >> (param1%16))
+                                            ;                       stack = {temp0)
+                                            ; the 'or' writes the bit into the global variable regardless
+                                            ; of whether it is previously set
+                                            ; temp0, though, is affected by the previous value
+                                            ; let flagsUpdated = acc
+  3055:36                push               ; stack = {temp0,flagsUpdated)
+  3056:8f 01              lsp param1        ; stack = {temp0,flagsUpdated,param1)
+  3058:35 10              ldi 10            ; acc = 16
+  305a:08                 div               ; acc = param1/16         stack = {temp0,flagsUpdated)
+  305b:b1 c8             sagi global200     ; writes the accumulator back to global[200+i]
+                                            ;                         stack = {temp0)
+  305d:85 00              lat temp0         ; acc = temp0
   305f:48                 ret
 )
 
