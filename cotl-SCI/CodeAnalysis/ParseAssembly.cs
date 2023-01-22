@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Globalization;
 using System.Text.RegularExpressions;
 using cotl_SCI.DataFileIO;
 
@@ -6,19 +7,25 @@ namespace cotl_SCI.CodeAnalysis
 {
     class ParseAssembly
     {
-        // private const string SCRIPT_DIR = "../../../../disassembled-scripts/decompiled-assembly/";
-        private const string SCRIPT_DIR = "../../../../disassembled-scripts/decompiled-sci-script/";
+        private const string SCRIPT_DIR = "../../../../disassembled-scripts/decompiled-assembly/";
+
+        // FIXME - do NOT use this value. Place in it's own file
+        // private const string SCRIPT_DIR = "../../../../disassembled-scripts/decompiled-sci-script/";
         private const string OUTPUT_DIR = "../../../../output/";
         private const string FILE_EXT = ".scr.asm";
+        private const string INPUT_SAMPLES_DIR = "../../../../input-samples/";
 
 
         public static void RunTrials()
         {
+            // ParseVocabTable();
+            ShowInstanceDeclarations("0.scr.asm");
+            // ShowInstanceDeclarations();
             // ShowBinaryCode();
-            RemoveAllTrailingSpaces(); // this also changes the line endings to Linux style
+            // RemoveAllTrailingSpaces(); // this also changes the line endings to Linux style
             // PushCommentsForwardForAllScripts();
             // PushCommentsForwardForFile($"{SCRIPT_DIR}../annotated/140-gamestart-hideout-cave.asm");
-            // ShowUniqueCommands("72");
+            // ShowUniqueCommands("56");
             // CollectAndWriteAllOpcodesToFile("all-opcodes.txt");
             // CollectAllUnitueOpStatement("unique-opcodes.txt");
             // CollectAndShowNonDuplicatedOpcodes();
@@ -26,6 +33,80 @@ namespace cotl_SCI.CodeAnalysis
             // ExtractOpCodes(3);
             // ChangeAssemblyFileExtension();
         }
+
+        /*
+         * the vocab996 table contains script references (that matches the filename)
+         * where objects are defined. For example 999 is repeated 8 times, once for each
+         * of the class definitions
+         *
+         * Obj, Code, Collect, List, Set, EventHandler, Event, Script
+         *
+         */
+        public static void ParseVocabTable()
+        {
+            string filenamepath = $"{INPUT_SAMPLES_DIR}vocab996.txt";
+            List<string> hexTokens = new();
+            foreach (string line in File.ReadLines(filenamepath))
+            {
+                string[] tokens = line.Split(' ');
+                for (int i = 2; i < tokens.Length; i++)
+                {
+                    hexTokens.Add(tokens[i]);
+                }
+            }
+
+            for (int i = 0; i < hexTokens.Count; i += 4)
+            {
+                string hexString = $"{hexTokens[i + 3]}{hexTokens[i + 2]}";
+                int dataVal = int.Parse(hexString, NumberStyles.HexNumber);
+                Debug.WriteLine($"{dataVal}");
+            }
+        }
+
+
+        public static void ShowInstanceDeclarations(string filename)
+        {
+            List<string> lines = ExtractInstanceDeclarations(filename);
+            foreach (string line in lines)
+            {
+                Debug.WriteLine($"{line}");
+            }
+        }
+
+        public static List<string> CollectInstanceDeclarations()
+        {
+            List<string> linesExtracted = new();
+            List<string> filenames = GetFileNames(SCRIPT_DIR);
+            foreach (string filename in filenames)
+            {
+                linesExtracted.Add($"\n{filename}");
+                linesExtracted.AddRange(ExtractInstanceDeclarations(filename));
+            }
+            return linesExtracted;
+        }
+
+
+        public static List<string> ExtractInstanceDeclarations(string filename)
+        {
+            List<string> instanceDeclarations = new();
+            string filenamepath = SCRIPT_DIR + filename;
+            int lineNr = 0;
+            foreach (string line in File.ReadLines(filenamepath))
+            {
+                if (line.Length > 9 && line.Substring(0, 9).Equals("(instance"))
+                {
+                    instanceDeclarations.Add($"{lineNr,5}     {filename[..^4]}      {line}");
+                }
+                //if (line.Length > 6 && line.Substring(0, 6).Equals("(class"))
+                //{
+                //    instanceDeclarations.Add($"{lineNr,5}     {filename[..^4]}      {line}");
+                //}
+                lineNr++;
+            }
+            return instanceDeclarations;
+        }
+
+
 
         public static void ShowBinaryCode()
         {
@@ -75,7 +156,7 @@ namespace cotl_SCI.CodeAnalysis
         {
             foreach (string filename in GetFileNames(SCRIPT_DIR))
             {
-                PushCommentsForwardForFile(SCRIPT_DIR+filename);
+                PushCommentsForwardForFile(SCRIPT_DIR + filename);
             }
         }
 

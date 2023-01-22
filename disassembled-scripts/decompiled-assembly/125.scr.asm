@@ -13,6 +13,8 @@
 (local
 )
 
+; Wat class
+
 // 00e2
 (class publicWat of Rgn
     (properties

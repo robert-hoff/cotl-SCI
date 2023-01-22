@@ -26,14 +26,14 @@ namespace cotl_SCI
             // DosboxMemoryScan.NextScanReduceSamples();
             // RunDosboxScan();
             // ReadDataFromFile.CreateCheatEngineConfiguration();
-            GenerateCheatEngineConfigs.Run();
+            // GenerateCheatEngineConfigs.Run();
             // ShowEventQueueOffsets();
             // ShowEventPointerValues();
             // TestMousePress.RunTrials();
             // TestKeyPress.RunTrials();
             // ClockTests.TestGameClockDuration();
             // ScummVmBasePointerSearch.RunTrials();
-            // ParseAssembly.RunTrials();
+            ParseAssembly.RunTrials();
             // ShowClassDefinitions.RunTrials();
         }
 

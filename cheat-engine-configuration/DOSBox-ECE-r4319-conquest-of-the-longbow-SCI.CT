@@ -546,7 +546,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>207</ID>
-      <Description>"global008"</Description>
+      <Description>"global008 - gNewSounds"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -556,7 +556,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>208</ID>
-      <Description>"global009 - gInv or gEgoHead"</Description>
+      <Description>"global009 - gInv"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -566,7 +566,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>209</ID>
-      <Description>"global010"</Description>
+      <Description>"global010 - gAddToPics"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -656,7 +656,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>218</ID>
-      <Description>"global019 - cursor state (walk, see, interact, etc.)"</Description>
+      <Description>"global019 - gCursorNumber (walk, see, interact, etc.)"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1696,7 +1696,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>322</ID>
-      <Description>"global123"</Description>
+      <Description>"global123 - gRegister"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -1726,7 +1726,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>325</ID>
-      <Description>"global126"</Description>
+      <Description>"global126 - gNewGuise"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -2476,7 +2476,7 @@
       <CheatEntries>
         <CheatEntry>
           <ID>400</ID>
-          <Description>"flag000"</Description>
+          <Description>"flag000 - game-started"</Description>
           <VariableType>Binary</VariableType>
           <BitStart>7</BitStart>
           <BitLength>1</BitLength>

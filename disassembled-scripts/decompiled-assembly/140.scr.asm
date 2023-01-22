@@ -2284,6 +2284,15 @@
 
 )
 
+
+
+; this is declared as an object but follows a similar patter
+; 1f68
+; 1f6a
+; 1f6c
+; 1f6e
+
+
 // 1f6e
 (class Garb of View
     (properties
@@ -2648,6 +2657,8 @@
 
 )
 
+
+
 // 2026
 (instance gRobin of Garb
     (properties
@@ -2906,6 +2917,16 @@
     )
 )
 
+
+
+; the methods are not ordered by ascending program counter in this instance
+; but if I take the higest pc and increment it I get
+; 2310
+; 2312
+; 2314
+; 2316
+
+
 // 2316
 (instance publicfire of Prop
     (properties
@@ -3066,6 +3087,16 @@
 
 )
 
+
+
+
+; line after 'ret' will be 23ce
+; 23ce
+; 23d0
+; 23d2
+; 23d4
+
+
 // 23d4
 (instance lookAtChest of Script
     (properties
@@ -3135,6 +3166,18 @@
     )
 
 )
+
+
+
+; the last line in this instance is 2493, so the line following is 2494
+; which is close to 249a, the value added as a comment
+
+; 2494
+; 2496
+; 2498
+; 249a
+
+
 
 // 249a
 (instance getHorn of Script
