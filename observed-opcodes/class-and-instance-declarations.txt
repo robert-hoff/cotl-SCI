@@ -1,0 +1,3506 @@
+0.scr.asm
+00339 0.scr.asm (instance ego of rhEgo
+00487 0.scr.asm (instance egoHead of Head
+00534 0.scr.asm (instance egoBeard of Beard
+00591 0.scr.asm (instance rgnMusic of Sound
+00612 0.scr.asm (instance rgnMusic2 of Sound
+00633 0.scr.asm (instance SFX of Sound
+00654 0.scr.asm (instance SFX2 of Sound
+00675 0.scr.asm (instance moneySound of Sound
+00696 0.scr.asm (instance stopGroop of Grooper
+00754 0.scr.asm (instance money of Money
+00790 0.scr.asm (instance pennies of Denomination
+00813 0.scr.asm (instance hapennies of Denomination
+00836 0.scr.asm (instance farthings of Denomination
+00859 0.scr.asm (instance MH of EventHandler
+00867 0.scr.asm (instance KH of EventHandler
+00875 0.scr.asm (instance DH of EventHandler
+00883 0.scr.asm (instance rhWindow of SysWindow
+00916 0.scr.asm (instance public statLine of Code
+01068 0.scr.asm (instance quitIcon of DCIcon
+01106 0.scr.asm (instance publicLongbow of Game
+02403 0.scr.asm (instance iconWalk of RhIconItem
+02428 0.scr.asm (instance iconLook of RhIconItem
+02453 0.scr.asm (instance iconDo of RhIconItem
+02478 0.scr.asm (instance iconTalk of RhIconItem
+02503 0.scr.asm (instance iconBow of RhIconItem
+02528 0.scr.asm (instance iconMap of RhIconItem
+02671 0.scr.asm (instance iconUse of RhIconItem
+02696 0.scr.asm (instance iconInvSel of RhIconItem
+02738 0.scr.asm (instance iconControl of RhIconItem
+02789 0.scr.asm (instance iconWhat of RhIconItem
+02814 0.scr.asm (instance ok of IconI
+02959 0.scr.asm (instance invLook of IconI
+02984 0.scr.asm (instance invHand of IconI
+03009 0.scr.asm (instance invHelp of IconI
+03034 0.scr.asm (instance invSelect of IconI
+03059 0.scr.asm (instance bucks of InvI
+03452 0.scr.asm (instance horn of InvI
+03511 0.scr.asm (instance halfHeart of InvI
+03570 0.scr.asm (instance slipper of InvI
+03629 0.scr.asm (instance net of InvI
+03688 0.scr.asm (instance pipe of InvI
+03747 0.scr.asm (instance gems of InvI
+03857 0.scr.asm (instance jewels of InvI
+03956 0.scr.asm (instance rouge of InvI
+04044 0.scr.asm (instance message of InvI
+04143 0.scr.asm (instance fireRing of InvI
+04276 0.scr.asm (instance cask of InvI
+04335 0.scr.asm (instance puzzleBox of InvI
+04405 0.scr.asm (instance robes of InvI
+04464 0.scr.asm (instance amethyst of InvI
+04523 0.scr.asm (instance comb of InvI
+04582 0.scr.asm (instance fulkScroll of InvI
+04708 0.scr.asm (instance handScroll of InvI
+04822 0.scr.asm (instance waterRing of InvI
+04946 0.scr.asm (instance detailSlider of Slider
+04985 0.scr.asm (instance volumeSlider of Slider
+05024 0.scr.asm (instance moveSpeedSlider of Slider
+05114 0.scr.asm (instance arcadeSlider of Slider
+05244 0.scr.asm (instance iconSave of ControlIcon
+05271 0.scr.asm (instance iconRestore of ControlIcon
+05298 0.scr.asm (instance iconRestart of ControlIcon
+05325 0.scr.asm (instance iconQuit of ControlIcon
+05352 0.scr.asm (instance iconHelp of IconI
+05377 0.scr.asm (instance iconAbout of ControlIcon
+05404 0.scr.asm (instance iconOk of IconI
+05429 0.scr.asm (instance gcWindow of BorderWindow
+05743 0.scr.asm (instance invWindow of InsetWindow
+05801 0.scr.asm (instance DoVerbCode of Code
+05922 0.scr.asm (instance FtrInit of Code
+06145 0.scr.asm (instance checkIcon of Code
+
+10.scr.asm
+00281 10.scr.asm (instance publicfKnight of Actor
+00987 10.scr.asm (instance publichorseBody of Prop
+01129 10.scr.asm (instance publichorseHead of Prop
+01335 10.scr.asm (instance publictheSword of View
+01414 10.scr.asm (instance nayTalk of Script
+01511 10.scr.asm (instance publicfKnightEncounter of Script
+01918 10.scr.asm (instance willSez of Script
+02047 10.scr.asm (instance horseMove of Script
+02153 10.scr.asm (instance handCodeDelay of Script
+02282 10.scr.asm (instance liftSword of Script
+02406 10.scr.asm (instance doWarning of Script
+02548 10.scr.asm (instance robinDeath of Script
+02797 10.scr.asm (instance killHim of Script
+03281 10.scr.asm (instance searchHim of TScript
+03623 10.scr.asm (instance yakItUp1 of Script
+03782 10.scr.asm (instance yakItUp2 of Script
+03880 10.scr.asm (instance hereComesJohn of Script
+04065 10.scr.asm (instance showLetter of Script
+04157 10.scr.asm (instance johnActions of SpecialDoVerb
+04260 10.scr.asm (instance localHorn of Script
+04437 10.scr.asm (instance egoActions of SpecialDoVerb
+04476 10.scr.asm (instance horseSound of Sound
+04497 10.scr.asm (instance shootSound of Sound
+04518 10.scr.asm (instance swordSound of Sound
+04539 10.scr.asm (instance bigJohn of Actor
+04596 10.scr.asm (instance bigTuck of Actor
+04653 10.scr.asm (instance bigWill of Actor
+
+100.scr.asm
+00037 100.scr.asm (instance publicrm100 of Rm
+00457 100.scr.asm (instance town of MapButton
+00595 100.scr.asm (instance cottage of MapButton
+00635 100.scr.asm (instance monks of MapButton
+00675 100.scr.asm (instance willowGrove of MapButton
+00715 100.scr.asm (instance overlook of MapButton
+00755 100.scr.asm (instance camp of MapButton
+00812 100.scr.asm (instance oakGrove of MapButton
+00852 100.scr.asm (instance watlingStGood of Feature
+01281 100.scr.asm (instance watlingStBad of Feature
+01368 100.scr.asm (instance riverTrent of Feature
+01472 100.scr.asm (instance riverLeene of Feature
+01579 100.scr.asm (instance banner of Feature
+01603 100.scr.asm (instance forestGood of Feature
+01709 100.scr.asm (instance forestBad1 of Feature
+01733 100.scr.asm (instance forestBad2 of Feature
+01825 100.scr.asm (instance emblem1 of Feature
+01849 100.scr.asm (instance emblem2 of Feature
+01873 100.scr.asm (instance lion1 of Feature
+01897 100.scr.asm (instance lion2 of Feature
+
+11.scr.asm
+00129 11.scr.asm (instance defenseOddsCode of Code
+00156 11.scr.asm (instance attackOddsCode of Code
+00201 11.scr.asm (instance attackStrengthCode of Code
+00217 11.scr.asm (instance RandForward of Fwd
+00263 11.scr.asm (instance qsp of Script
+00632 11.scr.asm (class qsPart of Part
+00783 11.scr.asm (class QSFighter of Fighter
+01109 11.scr.asm (instance thudAndGroanSound of Sound
+01130 11.scr.asm (instance thudSound of Sound
+01151 11.scr.asm (instance swishSound of Sound
+01172 11.scr.asm (instance woodHitsWoodSound of Sound
+01193 11.scr.asm (instance publicoverlayDisposer of Script
+01280 11.scr.asm (instance publicmonkFight of Fight
+01794 11.scr.asm (instance cheatWin of Script
+01854 11.scr.asm (instance rob of QSFighter
+02262 11.scr.asm (instance getKilled of Script
+02422 11.scr.asm (instance getHit of Script
+02640 11.scr.asm (instance attackElsewhere of Code
+02675 11.scr.asm (instance robOverHead of qsPart
+02725 11.scr.asm (instance robHead of qsPart
+02789 11.scr.asm (instance robBody of qsPart
+02873 11.scr.asm (instance robLegs of qsPart
+02943 11.scr.asm (class QSTechnique of Technique
+03399 11.scr.asm (instance robOverHit of QSTechnique
+03430 11.scr.asm (instance robHighHit of QSTechnique
+03461 11.scr.asm (instance robMidHit of QSTechnique
+03492 11.scr.asm (instance robLowHit of QSTechnique
+03523 11.scr.asm (instance robHighBlk of QSTechnique
+03554 11.scr.asm (instance robDuck of QSTechnique
+03585 11.scr.asm (instance robMidBlk of QSTechnique
+03616 11.scr.asm (instance robJump of QSTechnique
+03647 11.scr.asm (instance monk of QSFighter
+03841 11.scr.asm (instance monkOverHead of qsPart
+03891 11.scr.asm (instance monkHead of qsPart
+03955 11.scr.asm (instance monkBody of qsPart
+04039 11.scr.asm (instance monkLegs of qsPart
+04109 11.scr.asm (instance monkOverHit of QSTechnique
+04140 11.scr.asm (instance monkHighHit of QSTechnique
+04171 11.scr.asm (instance monkMidHit of QSTechnique
+04202 11.scr.asm (instance monkLowHit of QSTechnique
+04233 11.scr.asm (instance monkHighBlk of QSTechnique
+04264 11.scr.asm (instance monkDuck of QSTechnique
+04295 11.scr.asm (instance monkMidBlk of QSTechnique
+04326 11.scr.asm (instance monkJump of QSTechnique
+
+110.scr.asm
+00047 110.scr.asm (instance publicrm110 of Rm
+00896 110.scr.asm (instance ridge of Feature
+00981 110.scr.asm (instance street of Feature
+01144 110.scr.asm (instance takeTheLowRoad of Script
+01319 110.scr.asm (instance offScreen of Script
+01593 110.scr.asm (instance fromTheForest of Script
+01753 110.scr.asm (instance fromTheStreet of Script
+01975 110.scr.asm (instance waitForEncounter of Script
+02123 110.scr.asm (instance waitForMonk of Script
+02230 110.scr.asm (instance blewHornDay11 of Script
+02315 110.scr.asm (instance day11Script of Script
+02416 110.scr.asm (instance seeKnight of TScript
+02510 110.scr.asm (instance egoActions of SpecialDoVerb
+02634 110.scr.asm (instance willActions of SpecialDoVerb
+
+12.scr.asm
+00013 12.scr.asm (class publicMapButton of View
+
+120.scr.asm
+00034 120.scr.asm (instance publicrm120 of Rm
+00648 120.scr.asm (instance walkIn of Script
+01318 120.scr.asm (instance walkOut of Script
+02856 120.scr.asm (instance toTheBattle of Script
+03015 120.scr.asm (instance publictheStreet of Feature
+03260 120.scr.asm (instance publiceastSide of Feature
+03498 120.scr.asm (instance publicwestSide of Feature
+03707 120.scr.asm (instance doubleMessage of TScript
+03803 120.scr.asm (instance publictree of PicView
+03933 120.scr.asm (instance rm120Actions of SpecialDoVerb
+
+121.scr.asm
+
+125.scr.asm
+00018 125.scr.asm (class publicWat of Rgn
+00175 125.scr.asm (instance publicputStuff of Code
+00308 125.scr.asm (instance travelTimer of Script
+00510 125.scr.asm (instance publicmerryMenEntrance of Script
+
+13.scr.asm
+00020 13.scr.asm (instance stopMessage of Script
+
+14.scr.asm
+00014 14.scr.asm (class RhIconItem of IconI
+
+140.scr.asm
+00078 140.scr.asm (instance publicrm140 of Rm
+00580 140.scr.asm (instance floor of Feature
+00789 140.scr.asm (instance vines of Feature
+00905 140.scr.asm (instance skin1 of Feature
+00999 140.scr.asm (instance skin2 of Feature
+01098 140.scr.asm (instance skin3 of Feature
+01194 140.scr.asm (instance bed of Feature
+01322 140.scr.asm (instance entry of Feature
+01440 140.scr.asm (instance drape of Feature
+01564 140.scr.asm (instance cover of View
+01645 140.scr.asm (instance bow of View
+01726 140.scr.asm (instance horn of View
+01808 140.scr.asm (instance publicpeg of View
+01902 140.scr.asm (instance publicledge of View
+02296 140.scr.asm (class Garb of View
+02662 140.scr.asm (instance gRobin of Garb
+02705 140.scr.asm (instance gBeggar of Garb
+02748 140.scr.asm (instance gJeweler of Garb
+02791 140.scr.asm (instance gPuck of Garb
+02834 140.scr.asm (instance gAbbey of Garb
+02877 140.scr.asm (instance gFens of Garb
+02930 140.scr.asm (instance publicfire of Prop
+03100 140.scr.asm (instance lookAtChest of Script
+03182 140.scr.asm (instance getHorn of Script
+03295 140.scr.asm (instance wardrobeChange of Script
+03945 140.scr.asm (instance stashIt of Script
+04257 140.scr.asm (instance putMoneyBack of Script
+04489 140.scr.asm (instance cantRap of Script
+04715 140.scr.asm (instance blowOut of Script
+04897 140.scr.asm (instance burnHand of Script
+05049 140.scr.asm (instance enterTheCave of Script
+05110 140.scr.asm (instance skinDoVerb of Code
+05171 140.scr.asm (instance egoHorn of SpecialDoVerb
+05301 140.scr.asm (instance hornBadSound of Sound
+05322 140.scr.asm (instance fireSound of Sound
+05343 140.scr.asm (instance chestSound of Sound
+05364 140.scr.asm (instance chingSound of Sound
+05385 140.scr.asm (instance magicSound of Sound
+05406 140.scr.asm (instance vanishSound of Sound
+
+141.scr.asm
+00031 141.scr.asm (instance thisCover of View
+00071 141.scr.asm (instance theEmerald of View
+00111 141.scr.asm (instance flashGreen of Prop
+00156 141.scr.asm (instance marian of Actor
+00213 141.scr.asm (instance publictheStupor of TScript
+00647 141.scr.asm (instance publicdancer of TScript
+01346 141.scr.asm (instance publicspinDown of TScript
+01528 141.scr.asm (instance publicday2Script of TScript
+01948 141.scr.asm (instance vanishSound of Sound
+01969 141.scr.asm (instance magicSound of Sound
+
+15.scr.asm
+00084 15.scr.asm (instance publicfulk of Actor
+00187 15.scr.asm (instance chip of Actor
+00244 15.scr.asm (instance doVerb670 of Code
+00692 15.scr.asm (instance doVerb680 of Code
+00698 15.scr.asm (instance leaveNow of Script
+00868 15.scr.asm (instance killEgoWithRing of Script
+00964 15.scr.asm (instance giveItToHim of Script
+
+150.scr.asm
+00187 150.scr.asm (instance publicrm150 of Rm
+01554 150.scr.asm (instance bowActions of SpecialDoVerb
+01600 150.scr.asm (instance tucksActions of SpecialDoVerb
+01698 150.scr.asm (instance alansActions of SpecialDoVerb
+01752 150.scr.asm (instance willsActions of SpecialDoVerb
+01826 150.scr.asm (instance johnsActions of SpecialDoVerb
+01915 150.scr.asm (instance muchsActions of SpecialDoVerb
+01945 150.scr.asm (instance tableDoVerb of Code
+02049 150.scr.asm (instance stumpDoVerb of Code
+02110 150.scr.asm (instance rockDoVerb of Code
+02171 150.scr.asm (instance table1 of Feature
+02236 150.scr.asm (instance table2 of Feature
+02305 150.scr.asm (instance table3 of Feature
+02373 150.scr.asm (instance table4 of Feature
+02442 150.scr.asm (instance rock1 of Feature
+02511 150.scr.asm (instance rock2 of Feature
+02579 150.scr.asm (instance rock3 of Feature
+02647 150.scr.asm (instance rock4 of Feature
+02726 150.scr.asm (instance rock5 of Feature
+02801 150.scr.asm (instance stump1 of Feature
+02874 150.scr.asm (instance stump2 of Feature
+02945 150.scr.asm (instance stump3 of Feature
+03017 150.scr.asm (instance stump4 of Feature
+03087 150.scr.asm (instance stump5 of Feature
+03159 150.scr.asm (instance cave of Feature
+03253 150.scr.asm (instance stream of Feature
+03418 150.scr.asm (instance cliffs of Feature
+03511 150.scr.asm (instance woods of Feature
+03604 150.scr.asm (instance food of Feature
+03735 150.scr.asm (instance everyThing of Feature
+03784 150.scr.asm (instance wave of Prop
+03861 150.scr.asm (instance theFire of Prop
+04021 150.scr.asm (instance egoEnters of Script
+04245 150.scr.asm (instance walkOutOfHere of Script
+04366 150.scr.asm (instance burnHand of Script
+04496 150.scr.asm (instance tuckAlone of Script
+04586 150.scr.asm (instance takeFood of Script
+04683 150.scr.asm (instance walkInToCave of Script
+04760 150.scr.asm (instance fireSound of Sound
+04781 150.scr.asm (instance streamSound of Sound
+
+151.scr.asm
+00375 151.scr.asm (instance pucksClothes of View
+00415 151.scr.asm (instance publicdayOne of TScript
+00727 151.scr.asm (instance publicdayTwo of TScript
+01418 151.scr.asm (instance publicdayThree of Script
+01534 151.scr.asm (instance publicdayFour of Script
+01670 151.scr.asm (instance publicdayFive of Script
+01824 151.scr.asm (instance publicnoRobeFensMonkMet of Script
+01984 151.scr.asm (instance publicnoRobeAbbeyMonkMet of Script
+02118 151.scr.asm (instance publicsecondNoRescue of Script
+02244 151.scr.asm (instance publicthirdNoRescue of Script
+02391 151.scr.asm (instance publicday6B of Script
+02490 151.scr.asm (instance publicday6A of Script
+02588 151.scr.asm (instance publicday7 of TScript
+02747 151.scr.asm (instance publicday8 of TScript
+03087 151.scr.asm (instance publicday8Puck of Script
+03597 151.scr.asm (instance publicday9Will of Script
+03734 151.scr.asm (instance publicday10 of Script
+03805 151.scr.asm (instance publicday11 of Script
+04000 151.scr.asm (instance publicday12 of Script
+04137 151.scr.asm (instance publicday13 of Script
+
+153.scr.asm
+00063 153.scr.asm (instance food1 of View
+00103 153.scr.asm (instance food2 of View
+00143 153.scr.asm (instance food3 of View
+00183 153.scr.asm (instance food4 of View
+00223 153.scr.asm (instance outLaw1 of Prop
+00268 153.scr.asm (instance outLaw2 of Prop
+00313 153.scr.asm (instance outLaw3 of Prop
+00358 153.scr.asm (instance outLaw4 of Prop
+00403 153.scr.asm (instance fire of Prop
+00448 153.scr.asm (instance publicday9 of TScript
+
+160.scr.asm
+00469 160.scr.asm (instance publicrm160 of Rm
+00772 160.scr.asm (instance stars of Script
+00852 160.scr.asm (instance series of Script
+01188 160.scr.asm (instance marian of Prop
+01233 160.scr.asm (instance firePit of Prop
+01339 160.scr.asm (instance log of View
+01379 160.scr.asm (instance tuckView of View
+01419 160.scr.asm (instance johnView of Actor
+01476 160.scr.asm (instance willView of View
+01516 160.scr.asm (instance alanView of Prop
+01561 160.scr.asm (instance muchView of View
+01601 160.scr.asm (instance nightOne of TScript
+02284 160.scr.asm (instance night2 of Script
+02512 160.scr.asm (instance night3 of Script
+02625 160.scr.asm (instance night4 of Script
+02830 160.scr.asm (instance boysStealthSaved of Script
+02947 160.scr.asm (instance boysBattleSaved of Script
+03076 160.scr.asm (instance battleWO of Script
+03193 160.scr.asm (instance nightFive of Script
+03299 160.scr.asm (instance nightSix of Script
+03412 160.scr.asm (instance night7 of Script
+03596 160.scr.asm (instance night8 of Script
+03818 160.scr.asm (instance night9 of Script
+04095 160.scr.asm (instance getPuzzBox of Script
+04255 160.scr.asm (instance night10 of Script
+04480 160.scr.asm (instance noPass of Script
+04563 160.scr.asm (instance night11 of Script
+04860 160.scr.asm (instance night12 of Script
+05027 160.scr.asm (instance fireSound of Sound
+
+170.scr.asm
+00073 170.scr.asm (instance publicrobinDeath of Rm
+00768 170.scr.asm (instance tuckBody of PicView
+00798 170.scr.asm (instance tuckHead of Prop
+00843 170.scr.asm (instance tuckHands of Prop
+00888 170.scr.asm (instance johnBody of PicView
+00918 170.scr.asm (instance johnHead of Prop
+00963 170.scr.asm (instance johnArm of Prop
+01008 170.scr.asm (instance alanBody of PicView
+01038 170.scr.asm (instance alanHead of Prop
+01083 170.scr.asm (instance alanArm of Prop
+01129 170.scr.asm (instance willBody of PicView
+01159 170.scr.asm (instance willHead of Prop
+01204 170.scr.asm (instance muchBody of PicView
+01234 170.scr.asm (instance muchHead of Prop
+01279 170.scr.asm (instance death2InRm120 of TScript
+01439 170.scr.asm (instance death3InRm120 of TScript
+01568 170.scr.asm (instance death4InRm120 of TScript
+01712 170.scr.asm (instance death1InFairRgn of TScript
+01841 170.scr.asm (instance deathInRm360 of TScript
+01970 170.scr.asm (instance death1InRm390 of TScript
+02116 170.scr.asm (instance death2InRm390 of TScript
+02245 170.scr.asm (instance death3InRm390 of TScript
+02389 170.scr.asm (instance death4InRm390 of TScript
+02533 170.scr.asm (instance death1InAbyRegn of TScript
+02677 170.scr.asm (instance death2InAbyRegn of TScript
+02806 170.scr.asm (instance death3InAbyRegn of TScript
+02999 170.scr.asm (instance death1InRm440 of TScript
+03128 170.scr.asm (instance death2InRm440 of TScript
+03257 170.scr.asm (instance death1InRm460 of TScript
+03399 170.scr.asm (instance death2InRm460 of TScript
+03543 170.scr.asm (instance death3InRm460 of TScript
+03672 170.scr.asm (instance death4InRm460 of TScript
+03848 170.scr.asm (instance death1InRm620 of TScript
+03961 170.scr.asm (instance death2InRm620 of TScript
+04105 170.scr.asm (instance deathInRm650 of TScript
+04249 170.scr.asm (instance deathInWatrGate of TScript
+04393 170.scr.asm (instance deathInRm470 of TScript
+04537 170.scr.asm (instance death1InRm500 of TScript
+04713 170.scr.asm (instance death2InRm500 of TScript
+04874 170.scr.asm (instance death1InRm530 of TScript
+05018 170.scr.asm (instance death2InRm530 of TScript
+05130 170.scr.asm (instance death3InRm530 of TScript
+05274 170.scr.asm (instance deathInRm550 of TScript
+05418 170.scr.asm (instance death1InRm570 of TScript
+05579 170.scr.asm (instance death2InRm570 of TScript
+05753 170.scr.asm (instance deathInForest of TScript
+05882 170.scr.asm (instance death5InRm120 of TScript
+06026 170.scr.asm (instance deathInRm620 of TScript
+06187 170.scr.asm (instance deathInRm320 of TScript
+06316 170.scr.asm (instance getInBoatRm620 of TScript
+06445 170.scr.asm (instance death2InFairRgn of TScript
+06589 170.scr.asm (instance deathInRm501 of TScript
+06733 170.scr.asm (instance deathInRm710 of TScript
+06813 170.scr.asm (instance death5InRm390 of TScript
+06970 170.scr.asm (instance tooLateInTheHedge of TScript
+
+171.scr.asm
+00075 171.scr.asm (instance publicstrat of Rm
+01232 171.scr.asm (instance lilJohn of View
+01272 171.scr.asm (instance johnHead of Prop
+01317 171.scr.asm (instance johnHand of Prop
+01362 171.scr.asm (instance friarTuck of View
+01402 171.scr.asm (instance tuckHead of Prop
+01447 171.scr.asm (instance tuckHand of Prop
+01492 171.scr.asm (instance alanDale of View
+01532 171.scr.asm (instance alanHead of Prop
+01577 171.scr.asm (instance alanHand of Prop
+01622 171.scr.asm (instance muchMiller of View
+01662 171.scr.asm (instance muchHead of Prop
+01707 171.scr.asm (instance willScarlet of View
+01747 171.scr.asm (instance willHead of Prop
+01792 171.scr.asm (instance queensKnight of Script
+02105 171.scr.asm (instance rescueMarian3 of Script
+02726 171.scr.asm (instance rescueMarian2 of Script
+03381 171.scr.asm (instance rescueSonsOfWidow2 of Script
+04108 171.scr.asm (instance rescueSonsOfWidow1 of Script
+04926 171.scr.asm (instance headShake of Script
+04994 171.scr.asm (instance tuckHeadShake of Script
+05068 171.scr.asm (instance handShake of Script
+05154 171.scr.asm (instance johnHandShake of Script
+05285 171.scr.asm (instance alanHandShake of Script
+05416 171.scr.asm (instance walkThePlank of Script
+05567 171.scr.asm (instance robTreasureTrain of Script
+06368 171.scr.asm (instance talkArbitrator of Script
+07549 171.scr.asm (instance rescueMarian1 of Script
+
+172.scr.asm
+00065 172.scr.asm (instance publictuckwobat of Rm
+00592 172.scr.asm (instance frieze1 of PicView
+00622 172.scr.asm (instance frieze2 of PicView
+00652 172.scr.asm (instance robin of Prop
+00697 172.scr.asm (instance victim of Prop
+00742 172.scr.asm (instance victim2 of Prop
+00787 172.scr.asm (instance mule of PicView
+00817 172.scr.asm (instance mule2 of PicView
+00847 172.scr.asm (instance archer of Prop
+00893 172.scr.asm (instance archer2 of Prop
+00939 172.scr.asm (instance outlaw of Actor
+00996 172.scr.asm (instance outlaw2 of Actor
+01053 172.scr.asm (instance knave of Prop
+01099 172.scr.asm (instance knave2 of Prop
+01145 172.scr.asm (instance knave3 of Prop
+01191 172.scr.asm (instance lancer of Actor
+01248 172.scr.asm (instance lancer2 of Actor
+01305 172.scr.asm (instance lancer3 of Actor
+01362 172.scr.asm (instance corpse of View
+01403 172.scr.asm (instance corpse2 of View
+01444 172.scr.asm (instance corpse3 of View
+01485 172.scr.asm (instance corpse4 of View
+01526 172.scr.asm (instance timer0 of Script
+01603 172.scr.asm (instance timer0A of Script
+01683 172.scr.asm (instance timer1 of Script
+01754 172.scr.asm (instance timer2 of Script
+01817 172.scr.asm (instance timer2A of Script
+01911 172.scr.asm (instance timer3 of Script
+01999 172.scr.asm (instance timer4 of Script
+02062 172.scr.asm (instance timer5 of Script
+02125 172.scr.asm (instance timer6 of Script
+02274 172.scr.asm (instance kill of Script
+02353 172.scr.asm (instance kill2 of Script
+02432 172.scr.asm (instance kill3 of Script
+02511 172.scr.asm (instance shoot1 of Script
+02599 172.scr.asm (instance shoot2 of Script
+02678 172.scr.asm (instance shoot3 of Script
+02757 172.scr.asm (instance shoot4 of Script
+02836 172.scr.asm (instance musicScript of Script
+
+173.scr.asm
+00066 173.scr.asm (instance publicwobat of Rm
+00591 173.scr.asm (instance frieze1 of PicView
+00621 173.scr.asm (instance frieze2 of PicView
+00651 173.scr.asm (instance robin of Prop
+00696 173.scr.asm (instance victim of Prop
+00741 173.scr.asm (instance victim2 of Prop
+00786 173.scr.asm (instance mule of PicView
+00816 173.scr.asm (instance mule2 of PicView
+00846 173.scr.asm (instance archer of Prop
+00892 173.scr.asm (instance archer2 of Prop
+00938 173.scr.asm (instance outlaw of Actor
+00995 173.scr.asm (instance outlaw2 of Actor
+01052 173.scr.asm (instance knave of Prop
+01098 173.scr.asm (instance knave2 of Prop
+01144 173.scr.asm (instance knave3 of Prop
+01190 173.scr.asm (instance lancer of Actor
+01247 173.scr.asm (instance lancer2 of Actor
+01304 173.scr.asm (instance lancer3 of Actor
+01361 173.scr.asm (instance corpse of PicView
+01392 173.scr.asm (instance corpse2 of PicView
+01423 173.scr.asm (instance corpse3 of PicView
+01454 173.scr.asm (instance corpse4 of PicView
+01485 173.scr.asm (instance timer0 of Script
+01562 173.scr.asm (instance timer0A of Script
+01644 173.scr.asm (instance timer1 of Script
+01718 173.scr.asm (instance timer2 of Script
+01785 173.scr.asm (instance timer3 of Script
+01868 173.scr.asm (instance timer2A of Script
+01941 173.scr.asm (instance timer3A of Script
+02059 173.scr.asm (instance timer4 of Script
+02122 173.scr.asm (instance timer5 of Script
+02181 173.scr.asm (instance timer6 of Script
+02338 173.scr.asm (instance kill of Script
+02417 173.scr.asm (instance kill2 of Script
+02496 173.scr.asm (instance kill3 of Script
+02575 173.scr.asm (instance shoot1 of Script
+02654 173.scr.asm (instance shoot2 of Script
+02733 173.scr.asm (instance shoot3 of Script
+02812 173.scr.asm (instance shoot4 of Script
+02891 173.scr.asm (instance musicScript of Script
+
+174.scr.asm
+00070 174.scr.asm (instance publicjohnswobat of Rm
+00642 174.scr.asm (instance frieze1 of PicView
+00672 174.scr.asm (instance frieze2 of PicView
+00702 174.scr.asm (instance robin of Prop
+00747 174.scr.asm (instance victim2 of Prop
+00792 174.scr.asm (instance mule of PicView
+00822 174.scr.asm (instance mule2 of PicView
+00852 174.scr.asm (instance archer of Prop
+00898 174.scr.asm (instance archer2 of Prop
+00944 174.scr.asm (instance archer3 of Prop
+00990 174.scr.asm (instance archer4 of Prop
+01036 174.scr.asm (instance outlaw of Actor
+01093 174.scr.asm (instance outlaw2 of Actor
+01150 174.scr.asm (instance knave of Prop
+01196 174.scr.asm (instance knave2 of Prop
+01242 174.scr.asm (instance knave3 of Prop
+01288 174.scr.asm (instance lancer of Actor
+01345 174.scr.asm (instance lancer2 of Actor
+01402 174.scr.asm (instance lancer3 of Actor
+01459 174.scr.asm (instance corpse of PicView
+01490 174.scr.asm (instance corpse2 of PicView
+01521 174.scr.asm (instance corpse3 of PicView
+01552 174.scr.asm (instance corpse4 of PicView
+01583 174.scr.asm (instance timer0 of Script
+01675 174.scr.asm (instance timer0A of Script
+01758 174.scr.asm (instance timer1 of Script
+01831 174.scr.asm (instance timer1A of Script
+01895 174.scr.asm (instance timer2 of Script
+01962 174.scr.asm (instance timer3 of Script
+02044 174.scr.asm (instance timer2A of Script
+02143 174.scr.asm (instance timer3A of Script
+02255 174.scr.asm (instance timer4 of Script
+02322 174.scr.asm (instance timer5 of Script
+02383 174.scr.asm (instance timer6 of Script
+02538 174.scr.asm (instance kill of Script
+02626 174.scr.asm (instance kill2 of Script
+02714 174.scr.asm (instance kill3 of Script
+02801 174.scr.asm (instance shoot1 of Script
+02880 174.scr.asm (instance shoot2 of Script
+02959 174.scr.asm (instance shoot3 of Script
+03038 174.scr.asm (instance shoot4 of Script
+03117 174.scr.asm (instance musicScript of Script
+
+175.scr.asm
+00030 175.scr.asm (instance publicmuchswobat of Rm
+00153 175.scr.asm (instance frieze1 of PicView
+00183 175.scr.asm (instance frieze2 of PicView
+00213 175.scr.asm (instance robinh of View
+00253 175.scr.asm (instance lilj of View
+00293 175.scr.asm (instance friart of View
+00333 175.scr.asm (instance aland of View
+00373 175.scr.asm (instance wills of View
+00413 175.scr.asm (instance muchm of View
+00453 175.scr.asm (instance robinHead of Prop
+00498 175.scr.asm (instance lookSee of Script
+00582 175.scr.asm (instance whatNoBattle of Script
+
+176.scr.asm
+00069 176.scr.asm (instance publicrobscrewed of Rm
+00654 176.scr.asm (instance frieze1 of PicView
+00684 176.scr.asm (instance frieze2 of PicView
+00714 176.scr.asm (instance robin of Prop
+00759 176.scr.asm (instance victim2 of Prop
+00804 176.scr.asm (instance mule of PicView
+00834 176.scr.asm (instance mule2 of PicView
+00864 176.scr.asm (instance archer of Prop
+00910 176.scr.asm (instance archer2 of Prop
+00956 176.scr.asm (instance archer3 of Prop
+01002 176.scr.asm (instance archer4 of Prop
+01048 176.scr.asm (instance outlaw of Actor
+01105 176.scr.asm (instance outlaw2 of Actor
+01162 176.scr.asm (instance knave of Prop
+01208 176.scr.asm (instance knave2 of Prop
+01254 176.scr.asm (instance knave3 of Prop
+01300 176.scr.asm (instance lancer of Actor
+01357 176.scr.asm (instance lancer2 of Actor
+01414 176.scr.asm (instance lancer3 of Actor
+01471 176.scr.asm (instance corpse of PicView
+01502 176.scr.asm (instance corpse2 of PicView
+01533 176.scr.asm (instance corpse3 of PicView
+01564 176.scr.asm (instance corpse4 of PicView
+01595 176.scr.asm (instance timer0 of Script
+01686 176.scr.asm (instance timer1 of Script
+01768 176.scr.asm (instance timer0A of Script
+01842 176.scr.asm (instance timer2A of Script
+01915 176.scr.asm (instance timer3 of Script
+01998 176.scr.asm (instance timer3A of Script
+02063 176.scr.asm (instance timer4 of Script
+02157 176.scr.asm (instance timer5 of Script
+02250 176.scr.asm (instance timer6 of Script
+02399 176.scr.asm (instance kill of Script
+02487 176.scr.asm (instance kill2 of Script
+02575 176.scr.asm (instance kill3 of Script
+02664 176.scr.asm (instance shoot1 of Script
+02743 176.scr.asm (instance shoot2 of Script
+02822 176.scr.asm (instance shoot3 of Script
+02901 176.scr.asm (instance shoot4 of Script
+02980 176.scr.asm (instance musicScript of Script
+
+177.scr.asm
+00061 177.scr.asm (instance publicwillCas of Rm
+00544 177.scr.asm (instance frieze1 of PicView
+00574 177.scr.asm (instance frieze2 of PicView
+00604 177.scr.asm (instance robin of Actor
+00661 177.scr.asm (instance lilj of Actor
+00718 177.scr.asm (instance wills of Actor
+00775 177.scr.asm (instance muchm of Prop
+00821 177.scr.asm (instance victim of Prop
+00866 177.scr.asm (instance knave of Actor
+00923 177.scr.asm (instance knave2 of Actor
+00980 177.scr.asm (instance knave3 of Actor
+01037 177.scr.asm (instance knave4 of Actor
+01094 177.scr.asm (instance corpse of PicView
+01124 177.scr.asm (instance corpse2 of PicView
+01154 177.scr.asm (instance fire of Prop
+01199 177.scr.asm (instance fire2 of Prop
+01244 177.scr.asm (instance fire3 of Prop
+01289 177.scr.asm (instance fire4 of Prop
+01334 177.scr.asm (instance timer0 of Script
+01451 177.scr.asm (instance timer1 of Script
+01571 177.scr.asm (instance timer1fire of Script
+01721 177.scr.asm (instance timer2A of Script
+01781 177.scr.asm (instance timer3 of Script
+01870 177.scr.asm (instance timer4 of Script
+01985 177.scr.asm (instance timer5 of Script
+02070 177.scr.asm (instance liljWalk of Script
+02153 177.scr.asm (instance willsWalk of Script
+02228 177.scr.asm (instance kill1 of Script
+02308 177.scr.asm (instance kill2 of Script
+02388 177.scr.asm (instance kill3 of Script
+02477 177.scr.asm (instance fight1 of Script
+02557 177.scr.asm (instance fight2 of Script
+02637 177.scr.asm (instance musicScriptGood of Script
+02845 177.scr.asm (instance musicScriptBad of Script
+03050 177.scr.asm (instance musicScriptTwo of Script
+03376 177.scr.asm (instance musicScriptOne of Script
+
+179.scr.asm
+00017 179.scr.asm (instance publicsynop of Rm
+00080 179.scr.asm (instance whatHappened of Script
+
+18.scr.asm
+00072 18.scr.asm (instance publicday1 of Script
+00533 18.scr.asm (instance publicday3 of Script
+00684 18.scr.asm (instance publicday4 of Script
+01129 18.scr.asm (instance publicday5 of Script
+01433 18.scr.asm (instance publicday6A of Script
+01644 18.scr.asm (instance publicday6B of Script
+01849 18.scr.asm (instance publicday8 of Script
+01995 18.scr.asm (instance publicday9 of Script
+02141 18.scr.asm (instance publicday12 of Script
+02315 18.scr.asm (instance character1 of Actor
+02735 18.scr.asm (instance character2 of Actor
+03047 18.scr.asm (instance publicsetup of TScript
+03505 18.scr.asm (instance littleJohn of PicView
+03535 18.scr.asm (instance friarTuck of PicView
+
+180.scr.asm
+00782 180.scr.asm (instance publicrm180 of Rm
+01203 180.scr.asm (instance egoEnters of Script
+01500 180.scr.asm (instance walkOut of Script
+01708 180.scr.asm (instance overRidge of Script
+01783 180.scr.asm (instance firstEncounter of Script
+02055 180.scr.asm (instance canWeTalkHere of Script
+02128 180.scr.asm (instance callVainly of Script
+02262 180.scr.asm (instance blowIt of Script
+02320 180.scr.asm (instance theRiddles of Script
+03364 180.scr.asm (instance oakWindow of Window
+03395 180.scr.asm (instance fakeFrame of View
+03435 180.scr.asm (instance fakeBust of View
+03506 180.scr.asm (instance fakeMouth of Prop
+03606 180.scr.asm (instance yourHistory of Script
+03834 180.scr.asm (instance yourAWinner of Script
+04120 180.scr.asm (instance targetPractice of Script
+04611 180.scr.asm (instance callOutOakMan of Script
+04778 180.scr.asm (instance sprite of Actor
+04862 180.scr.asm (instance publicoakMan of Prop
+05395 180.scr.asm (instance razzleDazzle of Sound
+05416 180.scr.asm (instance sparkle of Prop
+05461 180.scr.asm (instance oakTree of Feature
+05720 180.scr.asm (instance grove1 of Feature
+05804 180.scr.asm (instance grove2 of Feature
+05889 180.scr.asm (instance oakHandSignCode of Code
+06011 180.scr.asm (instance egoDoVerb of SpecialDoVerb
+
+181.scr.asm
+00022 181.scr.asm (instance publictossIt of Script
+00588 181.scr.asm (instance getNet of Script
+00868 181.scr.asm (instance publictheNet of Actor
+
+185.scr.asm
+00075 185.scr.asm (instance publicsprite of Actor
+00271 185.scr.asm (instance funnySprite of PicView
+00352 185.scr.asm (instance publicbag of View
+00611 185.scr.asm (instance extraNet of Prop
+00684 185.scr.asm (instance flash of View
+00783 185.scr.asm (instance publicrunFerIt of Script
+01512 185.scr.asm (instance publicspriteCaught of Script
+02550 185.scr.asm (instance skewerSprite of Script
+02876 185.scr.asm (instance easterEgg of Script
+03440 185.scr.asm (instance bagLook of Script
+03510 185.scr.asm (instance lookSprite of Script
+03587 185.scr.asm (instance egoShrimp of SpecialDoVerb
+03627 185.scr.asm (instance noPuzzleBox of SpecialDoVerb
+03655 185.scr.asm (instance publicdumpSprite of Code
+
+19.scr.asm
+00121 19.scr.asm (instance publicJohn of Actor
+00734 19.scr.asm (instance johnGroop of Grooper
+
+190.scr.asm
+00115 190.scr.asm (instance publicrm190 of Rm
+00842 190.scr.asm (instance garland1 of View
+00979 190.scr.asm (instance garland2 of View
+01116 190.scr.asm (instance garland3 of View
+01253 190.scr.asm (instance windFlags of Prop
+01361 190.scr.asm (instance flagTree of View
+01442 190.scr.asm (instance rocks of Feature
+01558 190.scr.asm (instance anOutlaw of Prop
+01786 190.scr.asm (instance heDidNotFire of Script
+01854 190.scr.asm (instance firstConvDay1 of Script
+01960 190.scr.asm (instance firstAboutGarland of Script
+02038 190.scr.asm (instance outlawFirstTalk of Script
+02116 190.scr.asm (instance repeateClickTalk of Script
+02187 190.scr.asm (instance giveSimonMoney of Script
+02264 190.scr.asm (instance lookAtSimon of Script
+02334 190.scr.asm (instance garlandRepeatMsg of Script
+02402 190.scr.asm (instance imHere of Script
+02575 190.scr.asm (instance willDoVerb of SpecialDoVerb
+02659 190.scr.asm (instance egoShootingDoVerb of SpecialDoVerb
+
+20.scr.asm
+00116 20.scr.asm (instance publicWill of Actor
+00706 20.scr.asm (instance willGroop of Grooper
+
+200.scr.asm
+00130 200.scr.asm (instance publicpovGladeArchery of Rm
+00423 200.scr.asm (instance windFlags of Prop
+00533 200.scr.asm (instance garland1 of Prop
+00645 200.scr.asm (instance garland2 of Prop
+00757 200.scr.asm (instance garland3 of Prop
+00869 200.scr.asm (instance bowHand of View
+01069 200.scr.asm (instance bow of View
+01159 200.scr.asm (instance arrow of View
+01249 200.scr.asm (instance smallArrow of View
+01316 200.scr.asm (instance bigTarget of View
+01385 200.scr.asm (instance flagTree of View
+01466 200.scr.asm (instance rock1 of Feature
+01532 200.scr.asm (instance rock2 of Feature
+01566 200.scr.asm (instance rock3 of Feature
+01600 200.scr.asm (instance prepareArrow of Script
+01684 200.scr.asm (instance fireArrow of Script
+02797 200.scr.asm (instance showCloseUpGarland of Script
+02872 200.scr.asm (instance closeUpGarland of Script
+03168 200.scr.asm (instance saySomethingWill of Script
+03275 200.scr.asm (instance leaveGlade of Script
+03338 200.scr.asm (instance newRound of Script
+03517 200.scr.asm (instance showEmptyTarget of Script
+03701 200.scr.asm (instance shootSound of Sound
+03722 200.scr.asm (instance hitSound of Sound
+03743 200.scr.asm (instance leftTargetArea of Feature
+03803 200.scr.asm (instance midTargetArea of Feature
+03863 200.scr.asm (instance rightTargetArea of Feature
+
+21.scr.asm
+00118 21.scr.asm (instance publicAlan of Actor
+00720 21.scr.asm (instance alanGroop of Grooper
+
+210.scr.asm
+00569 210.scr.asm (instance publicrm210 of Rm
+00846 210.scr.asm (instance egoEnters of Script
+01446 210.scr.asm (instance disarm of Script
+01895 210.scr.asm (instance rearm of Script
+02242 210.scr.asm (instance weaponsCheck of Code
+02290 210.scr.asm (instance groveClosed of Code
+02336 210.scr.asm (instance bow of Prop
+02419 210.scr.asm (instance quiver of View
+02469 210.scr.asm (instance walkOut of Script
+02591 210.scr.asm (instance carryIn of Script
+02847 210.scr.asm (instance waitToStand of Script
+03029 210.scr.asm (instance waitToDie of Script
+03291 210.scr.asm (instance marian of Actor
+03843 210.scr.asm (instance giveEmerald of TScript
+04363 210.scr.asm (instance thereSheGoes of Script
+04469 210.scr.asm (instance sex of Script
+05071 210.scr.asm (instance rHead of Prop
+05116 210.scr.asm (instance mHead of Prop
+05161 210.scr.asm (instance sit of Script
+05254 210.scr.asm (instance heal of Script
+05580 210.scr.asm (instance dying of SpecialDoVerb
+05699 210.scr.asm (instance unite of TScript
+06072 210.scr.asm (instance giveComb of Script
+06391 210.scr.asm (instance giveScroll of TScript
+07400 210.scr.asm (instance scrollCloseUp of Script
+07691 210.scr.asm (instance cursMan of Actor
+07802 210.scr.asm (instance giveFScroll of TScript
+08081 210.scr.asm (instance tryBlowinIt of Script
+08226 210.scr.asm (instance egoActions of SpecialDoVerb
+08275 210.scr.asm (instance waitForIt of Script
+08316 210.scr.asm (instance willowTalk of TScript
+08608 210.scr.asm (instance spillBeans of TScript
+08693 210.scr.asm (instance rustleSound of Sound
+08714 210.scr.asm (instance joinSound of Sound
+08735 210.scr.asm (instance letterSound of Sound
+08756 210.scr.asm (instance willows of Feature
+08822 210.scr.asm (instance ferns of Feature
+
+213.scr.asm
+00231 213.scr.asm (instance newCast of EventHandler
+00239 213.scr.asm (instance newFeatures of EventHandler
+00247 213.scr.asm (instance newMH of EventHandler
+00255 213.scr.asm (instance newKH of EventHandler
+00263 213.scr.asm (instance newDH of EventHandler
+00271 213.scr.asm (instance hideMe of Code
+00296 213.scr.asm (instance showMe of Code
+00321 213.scr.asm (instance publichandCode of Code
+00445 213.scr.asm (instance pointHand of Actor
+00520 213.scr.asm (instance polyLetter of Polygon
+00530 213.scr.asm (instance behindTheHand of Feature
+00572 213.scr.asm (instance letter of Feature
+00763 213.scr.asm (instance clear of Feature
+00882 213.scr.asm (instance letterbox of Feature
+
+22.scr.asm
+00117 22.scr.asm (instance publicMuch of Actor
+00765 22.scr.asm (instance muchGroop of Grooper
+
+220.scr.asm
+00064 220.scr.asm (instance publicforest of Rm
+01230 220.scr.asm (instance egoEnters of Script
+01830 220.scr.asm (instance walkOut of Script
+02791 220.scr.asm (instance bunny of Actor
+03176 220.scr.asm (instance robin of PicView
+03265 220.scr.asm (instance robinHead of PicView
+03361 220.scr.asm (instance funnyBunny of PicView
+03442 220.scr.asm (instance buck of Actor
+03579 220.scr.asm (instance doe1 of Actor
+03646 220.scr.asm (instance doe2 of Actor
+03713 220.scr.asm (instance stampede of Script
+03953 220.scr.asm (instance handSignCode of Code
+05130 220.scr.asm (instance publicforestBlown of SpecialDoVerb
+05245 220.scr.asm (instance PT of Script
+
+221.scr.asm
+
+222.scr.asm
+
+223.scr.asm
+00042 223.scr.asm (instance publicenglishTreeName of Script
+00171 223.scr.asm (instance publicnotSweeping of Script
+00306 223.scr.asm (instance publicnotBlessed of Script
+00397 223.scr.asm (instance publicturnToTree of Script
+00973 223.scr.asm (instance razzleDazzle of Sound
+00994 223.scr.asm (instance publicunTreeEgo of Script
+01702 223.scr.asm (instance sparkle of Prop
+
+225.scr.asm
+00403 225.scr.asm (instance berryBush of PicView
+00511 225.scr.asm (instance publicliveBush of Actor
+00645 225.scr.asm (instance publicdummyBush of PicView
+00715 225.scr.asm (instance aHint of PicView
+00755 225.scr.asm (instance publicdummyHint of PicView
+00844 225.scr.asm (instance publictreeClue of View
+01002 225.scr.asm (instance publicmakeClue of Script
+01680 225.scr.asm (instance publicdumpClue of Script
+01745 225.scr.asm (instance aTree of PicView
+01867 225.scr.asm (instance dummyLiveBush of PicView
+01951 225.scr.asm (instance publicmoveBushes of Script
+
+226.scr.asm
+00157 226.scr.asm (instance bowSound of Sound
+00178 226.scr.asm (instance publicmarian of Actor
+00350 226.scr.asm (instance publicmonk of Actor
+00713 226.scr.asm (instance publicglassSlipper of Actor
+00822 226.scr.asm (instance publicstick of View
+01002 226.scr.asm (instance publicmarianAttack of Script
+01643 226.scr.asm (instance skewerMonk of Script
+02686 226.scr.asm (instance noGoodShot of Script
+02759 226.scr.asm (instance searchMonk of Script
+02980 226.scr.asm (instance getSlipper of Script
+03236 226.scr.asm (instance spinner of Script
+03640 226.scr.asm (instance watchHerDie of Script
+04133 226.scr.asm (instance suicide of Script
+04502 226.scr.asm (instance hornToot of Sound
+04523 226.scr.asm (instance publicmenGather of Script
+05842 226.scr.asm (instance getGoing of Script
+05901 226.scr.asm (instance beatItTimerScript of Script
+05976 226.scr.asm (instance heartSick of Script
+06046 226.scr.asm (instance publicdummyMonk of PicView
+06146 226.scr.asm (instance dummyMarian of PicView
+06251 226.scr.asm (instance publicdummySlip of PicView
+06348 226.scr.asm (instance publicdummyStick of PicView
+06445 226.scr.asm (instance publicjohnPic of PicView
+06552 226.scr.asm (instance publictuckPic of PicView
+06659 226.scr.asm (instance publicwillPic of PicView
+06766 226.scr.asm (instance publicmuchPic of PicView
+06873 226.scr.asm (instance publicrandomHorse of Script
+06947 226.scr.asm (instance marianHornBlow of SpecialDoVerb
+07036 226.scr.asm (instance johnAct of SpecialDoVerb
+07062 226.scr.asm (instance tuckAct of SpecialDoVerb
+07088 226.scr.asm (instance willAct of SpecialDoVerb
+07114 226.scr.asm (instance muchAct of SpecialDoVerb
+07140 226.scr.asm (instance publicdumpMarian of Code
+07335 226.scr.asm (instance mariansSong of Sound
+07356 226.scr.asm (instance dieSound of Sound
+
+228.scr.asm
+
+23.scr.asm
+00134 23.scr.asm (instance publicTuck of Actor
+00873 23.scr.asm (instance tuckGroop of Grooper
+
+231.scr.asm
+
+232.scr.asm
+
+233.scr.asm
+
+24.scr.asm
+00194 24.scr.asm (instance publicyeo of Actor
+00700 24.scr.asm (instance publicyeoScript of Script
+00892 24.scr.asm (instance repeatEncounter of TScript
+01007 24.scr.asm (instance buyClothes of Script
+01436 24.scr.asm (instance twoBirds of Script
+01722 24.scr.asm (instance egoSkewered of Script
+01985 24.scr.asm (instance noMoreChances of Script
+02168 24.scr.asm (instance dropIt of Script
+02943 24.scr.asm (instance egoActions of SpecialDoVerb
+02994 24.scr.asm (instance shootSound of Sound
+
+240.scr.asm
+00153 240.scr.asm (instance publicrobbedOne of Rm
+00437 240.scr.asm (instance sheriffRides of Actor
+00494 240.scr.asm (instance sheriffsHead of Prop
+00539 240.scr.asm (instance lilj of Actor
+00596 240.scr.asm (instance tuckie of Actor
+00653 240.scr.asm (instance theTrap of Script
+00779 240.scr.asm (instance trapHim of Script
+00893 240.scr.asm (instance youFool1 of Script
+00985 240.scr.asm (instance theDeception of Script
+01439 240.scr.asm (instance youFool2 of Script
+01531 240.scr.asm (instance theCharade of Script
+01795 240.scr.asm (instance egad of Script
+01972 240.scr.asm (instance jWalk of Script
+02044 240.scr.asm (instance tWalk of Script
+02116 240.scr.asm (instance jWalk2 of Script
+02188 240.scr.asm (instance tWalk2 of Script
+02260 240.scr.asm (instance xRated of Script
+02477 240.scr.asm (instance veryFunny of Script
+02608 240.scr.asm (instance laughSound of Sound
+
+241.scr.asm
+
+242.scr.asm
+
+245.scr.asm
+00106 245.scr.asm (instance publicrobbedTwo of Rm
+00240 245.scr.asm (instance sheriffRides of Actor
+00297 245.scr.asm (instance sheriffsHead of Prop
+00342 245.scr.asm (instance lilj of Actor
+00399 245.scr.asm (instance tuckie of Actor
+00456 245.scr.asm (instance theTrap of Script
+00526 245.scr.asm (instance trapHim of Script
+00641 245.scr.asm (instance youFool of Script
+00942 245.scr.asm (instance egad of Script
+01118 245.scr.asm (instance jWalk of Script
+01190 245.scr.asm (instance tWalk of Script
+01262 245.scr.asm (instance xRated of Script
+
+25.scr.asm
+00179 25.scr.asm (instance publicbeg of Actor
+00639 25.scr.asm (instance publicbegScript of Script
+00871 25.scr.asm (instance repeatEncounter of Script
+00979 25.scr.asm (instance approachBeggar of Script
+01222 25.scr.asm (instance buyClothes of Script
+01854 25.scr.asm (instance beggarDo of Script
+02007 25.scr.asm (instance getWill of Script
+02337 25.scr.asm (instance threat of Script
+03153 25.scr.asm (instance egoActions of SpecialDoVerb
+03196 25.scr.asm (instance threatSound of Sound
+
+250.scr.asm
+00616 250.scr.asm (instance publicrm250 of Rm
+02256 250.scr.asm (instance hal of Prop
+02428 250.scr.asm (instance hob of Prop
+02587 250.scr.asm (instance dicken of Prop
+02739 250.scr.asm (instance widow of Prop
+03838 250.scr.asm (instance tuckActions of SpecialDoVerb
+03894 250.scr.asm (instance lamb of Prop
+04262 250.scr.asm (instance getTheNetJerk of Script
+04426 250.scr.asm (instance getNetAfterMary of Script
+04571 250.scr.asm (instance egoEnters of Script
+04941 250.scr.asm (instance walkOut of Script
+05128 250.scr.asm (instance handOut of Script
+05176 250.scr.asm (instance firstTime of Script
+05305 250.scr.asm (instance boysBusted of Script
+05422 250.scr.asm (instance boysSaved of Script
+05814 250.scr.asm (instance mouthyLamb of Script
+05878 250.scr.asm (instance talkToDicky of Script
+05942 250.scr.asm (instance giveHobBuck of Script
+06006 250.scr.asm (instance giveDickBuck of Script
+06070 250.scr.asm (instance giveDickHorn of Script
+06134 250.scr.asm (instance tuckChill of Script
+06293 250.scr.asm (instance widowChill of Script
+06432 250.scr.asm (instance widowBlow of SpecialDoVerb
+06549 250.scr.asm (instance smoke of Prop
+06616 250.scr.asm (instance noGoat of Feature
+06718 250.scr.asm (instance roof of Feature
+06841 250.scr.asm (instance theWoods of Feature
+06935 250.scr.asm (instance eastWall of Feature
+07034 250.scr.asm (instance midWall of Feature
+07129 250.scr.asm (instance westWall of Feature
+07232 250.scr.asm (instance door of Feature
+07327 250.scr.asm (instance chimney of Feature
+07422 250.scr.asm (instance rock of Feature
+07525 250.scr.asm (instance stream of Feature
+07682 250.scr.asm (instance baaSound of Sound
+
+255.scr.asm
+00028 255.scr.asm (class Class_255_0 of Obj
+00091 255.scr.asm (class Class_255_1 of Obj
+00417 255.scr.asm (class DText of Class_255_1
+00490 255.scr.asm (class DIcon of Class_255_1
+00532 255.scr.asm (class DButton of Class_255_1
+00600 255.scr.asm (class DEdit of Class_255_1
+00670 255.scr.asm (class DSelector of Class_255_1
+01167 255.scr.asm (class Dialog of List
+02485 255.scr.asm (class Controls of List
+
+26.scr.asm
+00323 26.scr.asm (instance publicjew of Actor
+00763 26.scr.asm (instance publicjewScript of Script
+00964 26.scr.asm (instance repeatEncounter of TScript
+01146 26.scr.asm (instance approachJeweler of Script
+01497 26.scr.asm (instance spentEmerald of TScript
+01946 26.scr.asm (instance jewSearch of Script
+02746 26.scr.asm (instance tryHorn of Script
+02924 26.scr.asm (instance threat of Script
+03621 26.scr.asm (instance egoActions of SpecialDoVerb
+03685 26.scr.asm (instance talkScript of TScript
+03774 26.scr.asm (instance firstMeet of TScript
+03863 26.scr.asm (instance threatSound of Sound
+03884 26.scr.asm (instance spankSound of Sound
+
+260.scr.asm
+00039 260.scr.asm (instance publicrm260 of Rm
+00433 260.scr.asm (instance castle of Feature
+00570 260.scr.asm (instance pub of Feature
+00669 260.scr.asm (instance shop of Feature
+00782 260.scr.asm (instance abbey of Feature
+00912 260.scr.asm (instance fair of Feature
+01079 260.scr.asm (instance river of Feature
+01234 260.scr.asm (instance watling of Feature
+01365 260.scr.asm (instance inField of Feature
+01508 260.scr.asm (instance inTown of Feature
+01662 260.scr.asm (instance midTown of Feature
+01823 260.scr.asm (instance northOfTown of Feature
+01891 260.scr.asm (instance southOfTown of Feature
+01959 260.scr.asm (instance castleFlag of MapButton
+02111 260.scr.asm (instance pubFlag of MapButton
+02185 260.scr.asm (instance fairFlag of MapButton
+02337 260.scr.asm (instance abbeyFlag of MapButton
+02489 260.scr.asm (instance lobbFlag of MapButton
+02641 260.scr.asm (instance aPole of View
+02681 260.scr.asm (instance castleMessage of TScript
+02788 260.scr.asm (instance abbeyMessage of TScript
+02923 260.scr.asm (instance fairMessage of TScript
+
+27.scr.asm
+00183 27.scr.asm (instance publicfMonk of Actor
+00714 27.scr.asm (instance egoActions of SpecialDoVerb
+00756 27.scr.asm (instance menActions of SpecialDoVerb
+00774 27.scr.asm (instance RLScript of Script
+01003 27.scr.asm (instance LRScript of Script
+01232 27.scr.asm (instance publicmonkScript of TScript
+01501 27.scr.asm (instance repeatEncounter of Script
+01578 27.scr.asm (instance comeBackLittleEgo of Script
+01734 27.scr.asm (instance getBack of Script
+01912 27.scr.asm (instance drawBow of Script
+02103 27.scr.asm (instance staffFight of Script
+03385 27.scr.asm (instance dieRobinDie of Script
+03478 27.scr.asm (instance dieMonkDie of Script
+03861 27.scr.asm (instance hereComesWill of Script
+04149 27.scr.asm (instance shootMonk of Script
+04558 27.scr.asm (instance getYerMen of Script
+04913 27.scr.asm (instance closePoly of Feature
+05089 27.scr.asm (instance catchAll of Feature
+05119 27.scr.asm (instance shootSound of Sound
+
+270.scr.asm
+00037 270.scr.asm (instance publicrm270 of Rm
+00652 270.scr.asm (instance smokeOne of Prop
+00724 270.scr.asm (instance door of View
+00828 270.scr.asm (instance egg of Feature
+00917 270.scr.asm (instance bluff of Feature
+01132 270.scr.asm (instance pub of Feature
+01282 270.scr.asm (instance castle of Feature
+01460 270.scr.asm (instance town of Feature
+01574 270.scr.asm (instance everything of Feature
+01636 270.scr.asm (instance alice of Actor
+01693 270.scr.asm (instance hal of Actor
+01750 270.scr.asm (instance hob of Actor
+01807 270.scr.asm (instance dicken of Actor
+01864 270.scr.asm (instance egoActions of SpecialDoVerb
+01926 270.scr.asm (instance tryToEnter of Script
+01985 270.scr.asm (instance saved of Script
+02106 270.scr.asm (instance launch of Script
+02295 270.scr.asm (instance aliceSound of Sound
+02316 270.scr.asm (instance landSound of Sound
+02337 270.scr.asm (instance launchSound of Sound
+
+28.scr.asm
+00195 28.scr.asm (instance publicaMonk of Actor
+00675 28.scr.asm (instance tuckie of Prop
+00720 28.scr.asm (instance egoActions of SpecialDoVerb
+00748 28.scr.asm (instance publicmonkScript of TScript
+01043 28.scr.asm (instance repeatEncounter of Script
+01202 28.scr.asm (instance approachMonk of Script
+01536 28.scr.asm (instance drawBow of Script
+02133 28.scr.asm (instance bowAndScrape of TScript
+02482 28.scr.asm (instance talkTalkScript of TScript
+02550 28.scr.asm (instance talkBuckScript of TScript
+02650 28.scr.asm (instance monkPoly of Feature
+02758 28.scr.asm (instance assumeThePosition of Script
+02859 28.scr.asm (instance whippingBoy of Script
+03335 28.scr.asm (instance chopChop of Script
+03528 28.scr.asm (instance shootSound of Sound
+03549 28.scr.asm (instance chopSound of Sound
+03570 28.scr.asm (instance spankSound of Sound
+
+280.scr.asm
+00303 280.scr.asm (instance publicrm280 of StdRoom
+00870 280.scr.asm (instance smoke of Prop
+00959 280.scr.asm (instance beggarHead of Prop
+01124 280.scr.asm (instance drinkerHand of Prop
+01291 280.scr.asm (instance fire of Prop
+01380 280.scr.asm (instance person1 of Feature
+01502 280.scr.asm (instance person2 of Feature
+01612 280.scr.asm (instance person3 of Feature
+01868 280.scr.asm (instance person4 of Feature
+01971 280.scr.asm (instance person5 of Feature
+02069 280.scr.asm (instance person7 of Feature
+02146 280.scr.asm (instance person8 of Feature
+02223 280.scr.asm (instance person9 of Feature
+02300 280.scr.asm (instance person10 of Feature
+02377 280.scr.asm (instance person11 of Feature
+02468 280.scr.asm (instance person12 of Feature
+02545 280.scr.asm (instance person13 of Feature
+02690 280.scr.asm (instance person16 of Feature
+02765 280.scr.asm (instance person17 of Feature
+02840 280.scr.asm (instance person18 of Feature
+02957 280.scr.asm (instance person19 of Feature
+03038 280.scr.asm (instance person20 of Feature
+03150 280.scr.asm (instance person22 of Feature
+03227 280.scr.asm (instance person23 of Feature
+03304 280.scr.asm (instance person24 of Feature
+03448 280.scr.asm (instance person25 of Feature
+03524 280.scr.asm (instance person26 of Feature
+03627 280.scr.asm (instance dogUnderTable of Feature
+03690 280.scr.asm (instance rectanglObject of Feature
+03753 280.scr.asm (instance garlic of Feature
+03816 280.scr.asm (instance cauldron of Feature
+03883 280.scr.asm (instance lowerRightTable of Feature
+03946 280.scr.asm (instance silkScarves of Feature
+04009 280.scr.asm (instance theFence of Feature
+04065 280.scr.asm (instance bigKeg of Feature
+04128 280.scr.asm (instance barrels of Feature
+04178 280.scr.asm (instance smallCask of Feature
+04241 280.scr.asm (instance largeDog of Feature
+04304 280.scr.asm (instance fortuneConv of Script
+04414 280.scr.asm (instance giveMoneyToBeg of Script
+04552 280.scr.asm (instance talkPerson9 of Script
+04625 280.scr.asm (instance talkWithPerson10 of Script
+04716 280.scr.asm (instance sExitSouth of Script
+04824 280.scr.asm (instance fortuneTeller of Actor
+05063 280.scr.asm (instance fortuneTellerBooth of Feature
+05114 280.scr.asm (instance rugs of Feature
+05164 280.scr.asm (instance sEnterWest of Script
+05226 280.scr.asm (instance sExitEast of Script
+
+29.scr.asm
+00219 29.scr.asm (instance publictheMan of Actor
+00552 29.scr.asm (instance publictheWoman of Actor
+01029 29.scr.asm (instance publicshooter of Prop
+01074 29.scr.asm (instance closePoly of Feature
+01209 29.scr.asm (instance publicwomanScript of Script
+01433 29.scr.asm (instance repeatEncounter of Script
+01559 29.scr.asm (instance lastChance of Script
+01730 29.scr.asm (instance getBack of Script
+01866 29.scr.asm (instance womanKilled of Script
+02027 29.scr.asm (instance flunkyKilled of Script
+02601 29.scr.asm (instance savedTheWoman of Script
+03146 29.scr.asm (instance buckTalk of TScript
+03226 29.scr.asm (instance giveWomanBucks of Script
+03575 29.scr.asm (instance egoActions of SpecialDoVerb
+03639 29.scr.asm (instance getYerMen of TScript
+04245 29.scr.asm (instance shootSound of Sound
+04266 29.scr.asm (instance screamSound of Sound
+
+290.scr.asm
+00259 290.scr.asm (instance publicrm290 of StdRoom
+01436 290.scr.asm (instance person1 of FairFeature
+01533 290.scr.asm (instance person2 of FairFeature
+01630 290.scr.asm (instance person3 of FairFeature
+01707 290.scr.asm (instance person4 of FairFeature
+01784 290.scr.asm (instance person5 of FairFeature
+01881 290.scr.asm (instance person6 of FairFeature
+01984 290.scr.asm (instance person7 of FairFeature
+02136 290.scr.asm (instance person8 of FairFeature
+02279 290.scr.asm (instance person9 of FairFeature
+02422 290.scr.asm (instance person10 of FairFeature
+02606 290.scr.asm (instance person11 of FairFeature
+02709 290.scr.asm (instance person12 of FairFeature
+02827 290.scr.asm (instance person13 of FairFeature
+02903 290.scr.asm (instance person14 of FairFeature
+03000 290.scr.asm (instance person15 of FairFeature
+03097 290.scr.asm (instance person16 of FairFeature
+03293 290.scr.asm (instance person17 of FairProp
+03523 290.scr.asm (instance person18 of FairFeature
+03619 290.scr.asm (instance person19 of FairFeature
+03726 290.scr.asm (instance person20 of FairFeature
+03801 290.scr.asm (instance person21 of FairFeature
+03898 290.scr.asm (instance person22 of FairFeature
+03996 290.scr.asm (instance person23 of FairFeature
+04072 290.scr.asm (instance person24 of FairFeature
+04148 290.scr.asm (instance person25 of FairFeature
+04224 290.scr.asm (instance person26 of FairFeature
+04322 290.scr.asm (instance person27 of FairFeature
+04436 290.scr.asm (instance person28 of FairFeature
+04534 290.scr.asm (instance table1 of FairFeature
+04584 290.scr.asm (instance wall of FairFeature
+04634 290.scr.asm (instance barrel1 of FairFeature
+04684 290.scr.asm (instance table2 of FairFeature
+04734 290.scr.asm (instance barrels2 of FairFeature
+04784 290.scr.asm (instance stall of FairFeature
+04858 290.scr.asm (instance crate of FairFeature
+04908 290.scr.asm (instance rugs1 of FairFeature
+04958 290.scr.asm (instance rugs2 of FairFeature
+05008 290.scr.asm (instance bottle of View
+05048 290.scr.asm (instance doom of FairProp
+05166 290.scr.asm (instance arm of FairProp
+05364 290.scr.asm (instance head of FairProp
+05482 290.scr.asm (instance carm1 of FairProp
+05699 290.scr.asm (instance carm2 of FairProp
+05916 290.scr.asm (instance pigarm of FairProp
+06035 290.scr.asm (instance tail of FairProp
+06149 290.scr.asm (instance gamble of Script
+06345 290.scr.asm (instance christy of Script
+06488 290.scr.asm (instance buyOil of Script
+06691 290.scr.asm (instance sRandom of Script
+07301 290.scr.asm (instance sExitEast of Script
+07378 290.scr.asm (instance sExitWest of Script
+
+3.scr.asm
+00020 3.scr.asm (instance publicpipeIt of Script
+00240 3.scr.asm (instance theFrame of View
+00280 3.scr.asm (instance blowFace of View
+00320 3.scr.asm (instance blowPeepers of Prop
+00365 3.scr.asm (instance blowMouth of Prop
+00410 3.scr.asm (instance pipeSound of Sound
+
+30.scr.asm
+00172 30.scr.asm (instance hedgeMaster of Hedge
+00202 30.scr.asm (instance publichedge1 of HedgeRow
+
+300.scr.asm
+00194 300.scr.asm (instance publicrm300 of StdRoom
+01340 300.scr.asm (instance beggarArm of FairProp
+01395 300.scr.asm (instance sheepsArm of FairProp
+01450 300.scr.asm (instance swordsArm of FairProp
+01607 300.scr.asm (instance merchantArm of FairProp
+01764 300.scr.asm (instance markArm of FairProp
+01882 300.scr.asm (instance person1 of FairFeature
+01986 300.scr.asm (instance person2 of FairFeature
+02090 300.scr.asm (instance person3 of FairFeature
+02201 300.scr.asm (instance person4 of FairFeature
+02297 300.scr.asm (instance person5 of FairFeature
+02413 300.scr.asm (instance person6 of FairFeature
+02523 300.scr.asm (instance person7 of FairFeature
+02627 300.scr.asm (instance person8 of FairFeature
+02753 300.scr.asm (instance person9 of FairFeature
+02830 300.scr.asm (instance person10 of FairFeature
+02963 300.scr.asm (instance person11 of FairFeature
+03040 300.scr.asm (instance person12 of FairFeature
+03117 300.scr.asm (instance person13 of FairFeature
+03262 300.scr.asm (instance person14 of FairFeature
+03339 300.scr.asm (instance knivesArm of FairProp
+03394 300.scr.asm (instance person15 of FairFeature
+03498 300.scr.asm (instance person16 of FairFeature
+03647 300.scr.asm (instance person17 of FairFeature
+03751 300.scr.asm (instance person18 of FairFeature
+03862 300.scr.asm (instance person19 of FairFeature
+03973 300.scr.asm (instance person20 of FairFeature
+04118 300.scr.asm (instance person21 of FairFeature
+04268 300.scr.asm (instance person22 of FairFeature
+04345 300.scr.asm (instance person23 of FairFeature
+04422 300.scr.asm (instance person24 of FairFeature
+04520 300.scr.asm (instance person25 of FairFeature
+04624 300.scr.asm (instance person26 of FairFeature
+04701 300.scr.asm (instance person27 of FairFeature
+04798 300.scr.asm (instance person28 of FairFeature
+04895 300.scr.asm (instance baskets of FairFeature
+04946 300.scr.asm (instance wheel of FairFeature
+04997 300.scr.asm (instance table1 of FairFeature
+05071 300.scr.asm (instance table2 of FairFeature
+05122 300.scr.asm (instance wall of Feature
+05173 300.scr.asm (instance knives of FairFeature
+05224 300.scr.asm (instance tools of FairFeature
+05275 300.scr.asm (instance furs of Feature
+05349 300.scr.asm (instance leather of FairFeature
+05400 300.scr.asm (instance box of FairFeature
+05481 300.scr.asm (instance swords of FairFeature
+05532 300.scr.asm (instance mysteries of FairFeature
+05583 300.scr.asm (instance mysteries2 of FairFeature
+05634 300.scr.asm (instance sExitSouth of Script
+05742 300.scr.asm (instance sRandom of Script
+06323 300.scr.asm (instance talkScript of Script
+06392 300.scr.asm (instance sExitEast of Script
+06469 300.scr.asm (instance sExitWest of Script
+
+310.scr.asm
+00227 310.scr.asm (instance publicrm310 of StdRoom
+00998 310.scr.asm (instance rugArm1 of Prop
+01140 310.scr.asm (instance rugArm2 of Prop
+01282 310.scr.asm (instance rugHead of Prop
+01424 310.scr.asm (instance coryHead of Prop
+01527 310.scr.asm (instance ear1 of View
+01630 310.scr.asm (instance ear2 of View
+01733 310.scr.asm (instance gameArm of Prop
+01841 310.scr.asm (instance person1 of Feature
+01918 310.scr.asm (instance person2 of Feature
+02023 310.scr.asm (instance person3 of Feature
+02104 310.scr.asm (instance person4 of Feature
+02185 310.scr.asm (instance person5 of Feature
+02272 310.scr.asm (instance person6 of Feature
+02369 310.scr.asm (instance person7 of Feature
+02463 310.scr.asm (instance person8 of Feature
+02566 310.scr.asm (instance person9 of Feature
+02660 310.scr.asm (instance person10 of Feature
+02749 310.scr.asm (instance person11 of Feature
+02836 310.scr.asm (instance person12 of Feature
+02923 310.scr.asm (instance person13 of Feature
+03010 310.scr.asm (instance person14 of Feature
+03097 310.scr.asm (instance person15 of Feature
+03218 310.scr.asm (instance person16 of Feature
+03312 310.scr.asm (instance person17 of Feature
+03393 310.scr.asm (instance person18 of Feature
+03487 310.scr.asm (instance person19 of Feature
+03574 310.scr.asm (instance person20 of Feature
+03661 310.scr.asm (instance person21 of Feature
+03743 310.scr.asm (instance person22 of Feature
+03825 310.scr.asm (instance gameTable of Feature
+03876 310.scr.asm (instance stall of Feature
+03939 310.scr.asm (instance table of Feature
+04009 310.scr.asm (instance mat of Feature
+04060 310.scr.asm (instance potA of Feature
+04111 310.scr.asm (instance potB of Feature
+04162 310.scr.asm (instance potC of Feature
+04213 310.scr.asm (instance potC2 of Feature
+04264 310.scr.asm (instance potD of Feature
+04315 310.scr.asm (instance potE of Feature
+04366 310.scr.asm (instance potE2 of Feature
+04417 310.scr.asm (instance potF of Feature
+04468 310.scr.asm (instance potF2 of Feature
+04519 310.scr.asm (instance potG of Feature
+04570 310.scr.asm (instance potG2 of Feature
+04621 310.scr.asm (instance potH of Feature
+04672 310.scr.asm (instance potH2 of Feature
+04755 310.scr.asm (instance wall of Feature
+04811 310.scr.asm (instance rug1 of Feature
+04862 310.scr.asm (instance rug2 of Feature
+04913 310.scr.asm (instance rug3 of Feature
+04964 310.scr.asm (instance rug4 of Feature
+05015 310.scr.asm (instance satOnRug of Feature
+05066 310.scr.asm (instance cart of Feature
+05129 310.scr.asm (instance mule of Feature
+05216 310.scr.asm (instance badMonk of Actor
+05273 310.scr.asm (instance sheriffMan1 of Actor
+05346 310.scr.asm (instance sheriffMan2 of Actor
+05419 310.scr.asm (instance sExitSouth of Script
+05527 310.scr.asm (instance sMonk of Script
+05737 310.scr.asm (instance sRandom of Script
+06187 310.scr.asm (instance sEnter of Script
+06319 310.scr.asm (instance sExitWest of Script
+06397 310.scr.asm (instance person55 of Feature
+
+311.scr.asm
+00163 311.scr.asm (class publicFair of Rgn
+00270 311.scr.asm (instance walkEm of Script
+00485 311.scr.asm (instance catWalk of Script
+00592 311.scr.asm (instance sWalkOut of Script
+
+312.scr.asm
+00141 312.scr.asm (instance publicscholar1 of Actor
+00645 312.scr.asm (instance showIt of Script
+00812 312.scr.asm (instance converse of Script
+01248 312.scr.asm (instance waitForGive of Script
+01463 312.scr.asm (instance lv of CueObj
+01497 312.scr.asm (instance getMon of Script
+01625 312.scr.asm (instance noTake of Script
+01772 312.scr.asm (instance giveMon of Script
+02021 312.scr.asm (instance give of Script
+
+313.scr.asm
+00249 313.scr.asm (instance roger of Actor
+00306 313.scr.asm (instance giles of Actor
+00363 313.scr.asm (instance publicscholar2 of Actor
+00907 313.scr.asm (instance showIt of Script
+01125 313.scr.asm (instance youBlewIt of Script
+01221 313.scr.asm (instance menLeave of Script
+01447 313.scr.asm (instance offerBucks of Script
+01602 313.scr.asm (instance leave of CueObj
+01636 313.scr.asm (instance rottingRichard of Script
+01952 313.scr.asm (instance converse of Script
+02371 313.scr.asm (instance sDieNow of Script
+02590 313.scr.asm (instance hereTheyCome of Script
+
+314.scr.asm
+00102 314.scr.asm (instance publicscholar3 of Actor
+00585 314.scr.asm (instance leave of CueObj
+00619 314.scr.asm (instance showIt of Script
+00783 314.scr.asm (instance converse of Script
+
+316.scr.asm
+00042 316.scr.asm (instance publicmarian of Actor
+00485 316.scr.asm (instance sTalkMarian of Script
+
+320.scr.asm
+00103 320.scr.asm (instance publicrm320 of Rm
+00837 320.scr.asm (instance sheriffBox of Feature
+00948 320.scr.asm (instance ladiesBox of Feature
+01062 320.scr.asm (instance crowd1 of Feature
+01176 320.scr.asm (instance crowd2 of Feature
+01286 320.scr.asm (instance targetLeft of Feature
+01397 320.scr.asm (instance targetRight of Feature
+01508 320.scr.asm (instance closeUpArrow of View
+01548 320.scr.asm (instance puckTarget of View
+01624 320.scr.asm (instance adamBell of View
+01780 320.scr.asm (instance archer2 of View
+01944 320.scr.asm (instance leftFlag of Prop
+02033 320.scr.asm (instance middleFlag of Prop
+02095 320.scr.asm (instance rightFlag of Prop
+02157 320.scr.asm (instance guard1Roger of Actor
+02450 320.scr.asm (instance guard2Jack of Actor
+02671 320.scr.asm (instance guard3Giles of Actor
+02892 320.scr.asm (instance leaveInHuff of Script
+02967 320.scr.asm (instance stillHasScroll of Script
+03064 320.scr.asm (instance firstEntWithNoScrol of Script
+03161 320.scr.asm (instance returnBeforeStarted of Script
+03243 320.scr.asm (instance takeHimOut of Script
+03390 320.scr.asm (instance afterToldMoveOut of Script
+03458 320.scr.asm (instance goToDeathMesg of Script
+03602 320.scr.asm (instance goldenArrowAward of Script
+03774 320.scr.asm (instance moneyConv of Script
+03877 320.scr.asm (instance letPuckGoIn of Script
+04099 320.scr.asm (instance kickOutPoorPlay of Script
+04202 320.scr.asm (instance forceOutComeIn of Script
+04283 320.scr.asm (instance tormentHasStarted of Script
+04364 320.scr.asm (instance tormentIsOver of Script
+04455 320.scr.asm (instance tooLateToComeIn of Script
+04599 320.scr.asm (instance leaveAfterPaid of Script
+04715 320.scr.asm (instance talkAdamConv of Script
+04800 320.scr.asm (instance beforeGoldenArrow of Script
+04872 320.scr.asm (instance sExitEast of Script
+
+330.scr.asm
+00201 330.scr.asm (instance cleanTarget of Code
+00255 330.scr.asm (instance publicfairArchery of Rm
+00690 330.scr.asm (instance bowHand of View
+00914 330.scr.asm (instance bow of View
+01007 330.scr.asm (instance arrow of View
+01074 330.scr.asm (instance smallArrow of View
+01153 330.scr.asm (instance adamBigArrow of Actor
+01210 330.scr.asm (instance windFlags of Prop
+01278 330.scr.asm (instance middleTarget of View
+01394 330.scr.asm (instance targetLeft of View
+01449 330.scr.asm (instance targetRight of View
+01504 330.scr.asm (instance bigTarget of View
+01544 330.scr.asm (instance splitArrow of View
+01584 330.scr.asm (instance adamStanding of View
+01624 330.scr.asm (instance walkPuck of Actor
+01681 330.scr.asm (instance guard1 of View
+01721 330.scr.asm (instance guard2 of View
+01761 330.scr.asm (instance guard3 of View
+01801 330.scr.asm (instance fireArrow of Script
+02427 330.scr.asm (instance changeTargPos of Script
+02618 330.scr.asm (instance beginAnnounce of Script
+03027 330.scr.asm (instance roundOne of Script
+03525 330.scr.asm (instance roundTwo of Script
+04154 330.scr.asm (instance puckHasLost of Script
+04277 330.scr.asm (instance puckHasWon of Script
+04448 330.scr.asm (instance adamShoot of Script
+04706 330.scr.asm (instance turnClymBill of Script
+04979 330.scr.asm (instance puckCloseUpTarg of Script
+05140 330.scr.asm (instance goToGoldenArrow of Script
+05215 330.scr.asm (instance showEmptyTarget of Script
+05371 330.scr.asm (instance drumSound of Sound
+05392 330.scr.asm (instance shootSound of Sound
+05413 330.scr.asm (instance targetArea of Feature
+
+35.scr.asm
+00207 35.scr.asm (instance hedgeMaster of Hedge
+00237 35.scr.asm (instance publichedge2 of HedgeRow
+
+350.scr.asm
+00093 350.scr.asm (instance publicrm350 of Rm
+01034 350.scr.asm (instance lobbsHut of Feature
+01203 350.scr.asm (instance tailorHut of Feature
+01320 350.scr.asm (instance leftHut of Feature
+01416 350.scr.asm (instance middleHut of Feature
+01520 350.scr.asm (instance rightHut of Feature
+01617 350.scr.asm (instance bucket of Feature
+01641 350.scr.asm (instance day9Door of PicView
+01725 350.scr.asm (instance tailorDoor of PicView
+01852 350.scr.asm (instance lobbsDoor of PicView
+02008 350.scr.asm (instance lobbsCover of PicView
+02124 350.scr.asm (instance tailorCover of PicView
+02198 350.scr.asm (instance handView of Actor
+02255 350.scr.asm (instance tailorWoman of View
+02799 350.scr.asm (instance swineMan of View
+03031 350.scr.asm (instance fly of Actor
+03113 350.scr.asm (instance fly2 of Actor
+03195 350.scr.asm (instance bigOlFly of Actor
+03328 350.scr.asm (instance pig1 of Actor
+03426 350.scr.asm (instance pig2 of Actor
+03524 350.scr.asm (instance cat of Actor
+03658 350.scr.asm (instance chicken of Actor
+03779 350.scr.asm (instance flyCage of Cage
+03812 350.scr.asm (instance enterShop of Script
+03871 350.scr.asm (instance tailorLook of Script
+03955 350.scr.asm (instance tailorTalk of Script
+04064 350.scr.asm (instance catChickenScript of Script
+04380 350.scr.asm (instance giveWomanMoney of Script
+04497 350.scr.asm (instance giveWomanMon of Script
+04614 350.scr.asm (instance giveManMoney of Script
+04736 350.scr.asm (instance day3Talk of Script
+04821 350.scr.asm (instance tailorDo of Script
+04906 350.scr.asm (instance knockLobb of Script
+05016 350.scr.asm (instance talkToSwine of Script
+05099 350.scr.asm (instance pigCycle of Script
+05297 350.scr.asm (instance comeIn of Script
+05357 350.scr.asm (instance getBuggy of Script
+05638 350.scr.asm (instance smashed of Script
+06073 350.scr.asm (instance pigScript of Script
+06139 350.scr.asm (instance catSound of Sound
+06160 350.scr.asm (instance chickenSound of Sound
+06181 350.scr.asm (instance pigSound of Sound
+06202 350.scr.asm (instance knockSound of Sound
+06223 350.scr.asm (instance flySound of Sound
+
+360.scr.asm
+00236 360.scr.asm (instance publicrm360 of Rm
+00643 360.scr.asm (instance lobbWindow of Feature
+00718 360.scr.asm (instance lobbShelfDoor of Feature
+00783 360.scr.asm (instance lobbDoor of Feature
+00858 360.scr.asm (instance lobbCloak of Feature
+00923 360.scr.asm (instance lobbStool of Feature
+00975 360.scr.asm (instance lobbBoots of Feature
+01102 360.scr.asm (instance lobbTopShelf of Feature
+01211 360.scr.asm (instance lobbTools of Feature
+01317 360.scr.asm (instance lobbChest of Feature
+01428 360.scr.asm (instance lobbFrontWall of Feature
+01533 360.scr.asm (instance lobbLeftWall of Feature
+01641 360.scr.asm (instance lobbRightWall of Feature
+01741 360.scr.asm (instance lobbCeiling of Feature
+01837 360.scr.asm (instance lobbFloor of Feature
+01938 360.scr.asm (instance lobbBackWall of Feature
+02031 360.scr.asm (instance openDoor of View
+02122 360.scr.asm (instance lobb of Actor
+02779 360.scr.asm (instance goOutside of Script
+02880 360.scr.asm (instance putOnRouge of Script
+02959 360.scr.asm (instance stepIn of Script
+03121 360.scr.asm (instance moveFromTheWall of Script
+03212 360.scr.asm (instance handLobb of Script
+03330 360.scr.asm (instance moveToRobin of Script
+03514 360.scr.asm (instance moveCloseAndAway of Script
+03683 360.scr.asm (instance goBackRoom of Script
+03927 360.scr.asm (instance killRobinScript of Script
+
+370.scr.asm
+00022 370.scr.asm (instance publicrm370 of Rm
+00165 370.scr.asm (instance exitRoom of Feature
+00209 370.scr.asm (instance lobbsHead of Prop
+00254 370.scr.asm (instance lobbsArm of Prop
+00299 370.scr.asm (instance egoArm of Prop
+00344 370.scr.asm (instance egoHead of Prop
+00389 370.scr.asm (instance candle of Actor
+00446 370.scr.asm (instance dialogScript of TScript
+
+390.scr.asm
+00557 390.scr.asm (instance MoveBack of Script
+00664 390.scr.asm (instance publicrm390 of Rm
+00883 390.scr.asm (instance roomInit of TScript
+00956 390.scr.asm (instance GilesAndRogerAppear of TScript
+01063 390.scr.asm (instance BeardChanged of TScript
+01199 390.scr.asm (instance Giles of Actor
+01256 390.scr.asm (instance Roger of Actor
+01313 390.scr.asm (instance castle of Feature
+01390 390.scr.asm (instance arch of Feature
+01447 390.scr.asm (instance stopTresspasser of TScript
+01556 390.scr.asm (instance Hubert of Actor
+02141 390.scr.asm (instance GiveAmethystToHubert of TScript
+02258 390.scr.asm (instance GiveJewelsToHubert of TScript
+02462 390.scr.asm (instance GiveRingToHubert of TScript
+02626 390.scr.asm (instance JewelerGivesEmeraldToHubert of TScript
+02812 390.scr.asm (instance GiveCombToHubert of TScript
+02868 390.scr.asm (instance GiveSlipperToHubert of TScript
+02941 390.scr.asm (instance AbbeyBribesHubert of TScript
+03221 390.scr.asm (instance FensBribesHubert of TScript
+03474 390.scr.asm (instance PuckBribesHubert of TScript
+03739 390.scr.asm (instance JewelerBribesHubert of TScript
+03848 390.scr.asm (instance BeggarBribesHubert of TScript
+03996 390.scr.asm (instance BeggarTouchesHubert of TScript
+04067 390.scr.asm (instance KickBeggar of Script
+04286 390.scr.asm (instance BeggarTalkToHubert of TScript
+04411 390.scr.asm (instance TryToTouchHubert of TScript
+04552 390.scr.asm (instance PuckTalkToHubert of TScript
+04912 390.scr.asm (instance FensTalkToHubert of TScript
+05171 390.scr.asm (instance AbbeyTalkToHubert of TScript
+05376 390.scr.asm (instance JewelerTalkToHubert of TScript
+
+40.scr.asm
+00171 40.scr.asm (instance hedgeMaster of Hedge
+00201 40.scr.asm (instance publichedge3 of HedgeRow
+
+400.scr.asm
+00091 400.scr.asm (class GuardFollow of Motion
+00311 400.scr.asm (instance GuardTrack of Track
+00454 400.scr.asm (class GuardStopWalk of Fwd
+00581 400.scr.asm (instance MoveBack of TScript
+00669 400.scr.asm (instance publicrm400 of Rm
+01081 400.scr.asm (instance roomInit of Script
+01192 400.scr.asm (instance publicguards of Actor
+01318 400.scr.asm (instance publicgiles of Actor
+01385 400.scr.asm (instance publicroger of Actor
+01452 400.scr.asm (instance publicsheriff of Prop
+01593 400.scr.asm (instance publictable of Feature
+01736 400.scr.asm (instance leftChair of Feature
+01793 400.scr.asm (instance book of Feature
+01876 400.scr.asm (instance deer of Feature
+01947 400.scr.asm (instance halberd of Feature
+02007 400.scr.asm (instance alcove of Feature
+02063 400.scr.asm (instance alcoveWindow of Feature
+02130 400.scr.asm (instance desk of Feature
+02199 400.scr.asm (instance shelves of Feature
+02260 400.scr.asm (instance crowShield of Feature
+02357 400.scr.asm (instance stripeShield of Feature
+02418 400.scr.asm (instance rug of Feature
+02475 400.scr.asm (instance leftTorch of Feature
+02532 400.scr.asm (instance rightTorch of Feature
+02590 400.scr.asm (instance fireplace of Feature
+02650 400.scr.asm (instance firewood of Feature
+02712 400.scr.asm (instance bench of Feature
+
+401.scr.asm
+00031 401.scr.asm (instance publicfensScript of TScript
+
+402.scr.asm
+00147 402.scr.asm (instance publicpuckScript of TScript
+00367 402.scr.asm (instance wolfsHeadScript of TScript
+00477 402.scr.asm (instance puckTalkToSheriffArrow of TScript
+00582 402.scr.asm (instance puckTalkToSheriff of TScript
+00696 402.scr.asm (instance puckWager of TScript
+00761 402.scr.asm (instance puckWagerSmall of TScript
+00813 402.scr.asm (instance publicSheriffPuckActions of SpecialDoVerb
+
+403.scr.asm
+00346 403.scr.asm (instance publicjewelerArrivesScript of TScript
+00657 403.scr.asm (instance showJewel of TScript
+00812 403.scr.asm (instance blondScript of TScript
+00923 403.scr.asm (instance jewelProp of Prop
+01009 403.scr.asm (instance getTableJewels of TScript
+01118 403.scr.asm (instance gatherJewels of TScript
+01296 403.scr.asm (instance spreadJewels of TScript
+01471 403.scr.asm (instance leaveBeforeJewels of TScript
+01598 403.scr.asm (instance sheriffConvinced of TScript
+01674 403.scr.asm (instance jewelerTalkToSheriffAfterJewels of TScript
+01737 403.scr.asm (instance jewelerTalkToSheriff of TScript
+01800 403.scr.asm (instance publicmatilda of Prop
+02037 403.scr.asm (instance EmToMatilda of TScript
+02107 403.scr.asm (instance EmToMatildaJewels of TScript
+02205 403.scr.asm (instance AmToMatilda of TScript
+02276 403.scr.asm (instance AmToMatildaJewels of TScript
+02328 403.scr.asm (instance FireToMatilda of TScript
+02399 403.scr.asm (instance FireToMatildaJewels of TScript
+02451 403.scr.asm (instance WaterToMatilda of TScript
+02522 403.scr.asm (instance WaterToMatildaJewels of TScript
+02574 403.scr.asm (instance RougeToMatilda of TScript
+02692 403.scr.asm (instance jewelerTalkToMatilda of TScript
+02770 403.scr.asm (instance EmToSheriff of TScript
+02828 403.scr.asm (instance EmToSheriffJewels of TScript
+02916 403.scr.asm (instance AmToSheriff of TScript
+03001 403.scr.asm (instance AmToSheriffJewels of TScript
+03053 403.scr.asm (instance FireToSheriff of TScript
+03124 403.scr.asm (instance FireToSheriffJewels of TScript
+03176 403.scr.asm (instance WaterToSheriff of TScript
+03247 403.scr.asm (instance WaterToSheriffJewels of TScript
+03299 403.scr.asm (instance JewelsToSheriff of TScript
+03509 403.scr.asm (instance RougeToSheriff of TScript
+03587 403.scr.asm (instance TableActions of SpecialDoVerb
+03617 403.scr.asm (instance SheriffJewelerActions of SpecialDoVerb
+
+410.scr.asm
+00017 410.scr.asm (instance publicrm410 of Rm
+00106 410.scr.asm (instance goThere of Code
+00168 410.scr.asm (instance trapDoor of Feature
+
+420.scr.asm
+00306 420.scr.asm (instance publicjment of Rm
+00560 420.scr.asm (instance robinH of PicView
+00590 420.scr.asm (instance guardR of PicView
+00620 420.scr.asm (instance guardL of PicView
+00650 420.scr.asm (instance guardD of PicView
+00680 420.scr.asm (instance bench1 of PicView
+00710 420.scr.asm (instance bench2 of PicView
+00740 420.scr.asm (instance spect1 of PicView
+00770 420.scr.asm (instance spect2 of PicView
+00800 420.scr.asm (instance spect3 of PicView
+00830 420.scr.asm (instance spect4 of PicView
+00860 420.scr.asm (instance spect5 of PicView
+00890 420.scr.asm (instance spect6 of PicView
+00920 420.scr.asm (instance spect7 of PicView
+00950 420.scr.asm (instance spect8 of PicView
+00980 420.scr.asm (instance marianM of PicView
+01010 420.scr.asm (instance tuckie of PicView
+01040 420.scr.asm (instance widow of PicView
+01070 420.scr.asm (instance lobb of PicView
+01100 420.scr.asm (instance poacher of PicView
+01130 420.scr.asm (instance peasant of PicView
+01160 420.scr.asm (instance yeoman of PicView
+01190 420.scr.asm (instance jeweller of PicView
+01220 420.scr.asm (instance beggar of PicView
+01250 420.scr.asm (instance fulkie of PicView
+01280 420.scr.asm (instance sheriff of PicView
+01310 420.scr.asm (instance abbot of PicView
+01340 420.scr.asm (instance monk of PicView
+01370 420.scr.asm (instance prior of PicView
+01400 420.scr.asm (instance scribe of Prop
+01445 420.scr.asm (instance kingRichie of Prop
+01490 420.scr.asm (instance debateIssue of Script
+
+421.scr.asm
+00122 421.scr.asm (instance publicsentence of Rm
+00561 421.scr.asm (instance robinH of Prop
+00606 421.scr.asm (instance guardD of PicView
+00636 421.scr.asm (instance spect1 of PicView
+00666 421.scr.asm (instance spect2 of PicView
+00696 421.scr.asm (instance spect3 of PicView
+00726 421.scr.asm (instance spect4 of PicView
+00756 421.scr.asm (instance spect5 of PicView
+00786 421.scr.asm (instance spect6 of PicView
+00816 421.scr.asm (instance marianM of PicView
+00846 421.scr.asm (instance tuckie of PicView
+00876 421.scr.asm (instance fulkie of PicView
+00906 421.scr.asm (instance sheriff of PicView
+00936 421.scr.asm (instance abbot of PicView
+00966 421.scr.asm (instance prior of PicView
+00996 421.scr.asm (instance scribe of Prop
+01041 421.scr.asm (instance kingRichie of Prop
+01086 421.scr.asm (instance abbotTuck of Prop
+01131 421.scr.asm (instance robinNMarian of Prop
+01176 421.scr.asm (instance guests of View
+01216 421.scr.asm (instance guests2 of View
+01256 421.scr.asm (instance bardsHead of Prop
+01301 421.scr.asm (instance bardsHand of Prop
+01346 421.scr.asm (instance bardsFingers of Prop
+01391 421.scr.asm (instance deliverJudgement1 of Script
+01665 421.scr.asm (instance theWedding of Script
+01937 421.scr.asm (instance deliverJudgement2 of Script
+02167 421.scr.asm (instance deliverJudgement3 of Script
+02378 421.scr.asm (instance sing of Script
+02632 421.scr.asm (instance strum of Script
+02909 421.scr.asm (instance riff of Script
+
+422.scr.asm
+00047 422.scr.asm (instance publichanging of Rm
+00194 422.scr.asm (instance robinH of Prop
+00239 422.scr.asm (instance guardR of PicView
+00269 422.scr.asm (instance guardL of PicView
+00299 422.scr.asm (instance spect1 of PicView
+00329 422.scr.asm (instance spect2 of PicView
+00359 422.scr.asm (instance spect3 of PicView
+00389 422.scr.asm (instance spect4 of PicView
+00419 422.scr.asm (instance spect5 of PicView
+00449 422.scr.asm (instance spect6 of PicView
+00479 422.scr.asm (instance fulkie of PicView
+00509 422.scr.asm (instance sheriff of PicView
+00539 422.scr.asm (instance abbot of PicView
+00569 422.scr.asm (instance prior of PicView
+00599 422.scr.asm (instance scribe of Prop
+00644 422.scr.asm (instance kingRichie of Prop
+00689 422.scr.asm (instance dieScum of Script
+
+440.scr.asm
+00097 440.scr.asm (instance publicrm440 of StdRoom
+00482 440.scr.asm (instance arrived of Script
+00561 440.scr.asm (instance walkOut of Script
+00646 440.scr.asm (instance monkLeaves of Script
+00699 440.scr.asm (instance monkAtDoor of Script
+00821 440.scr.asm (instance doKnock of Script
+00924 440.scr.asm (instance atDoor of Script
+01322 440.scr.asm (instance noAnswer of TScript
+01417 440.scr.asm (instance getTheo of Script
+01629 440.scr.asm (instance doorMonk of Actor
+01686 440.scr.asm (instance facade of Feature
+01740 440.scr.asm (instance fDoor of Feature
+02190 440.scr.asm (instance entrance of Feature
+02214 440.scr.asm (instance maryTop of Feature
+02238 440.scr.asm (instance maryB of Feature
+02262 440.scr.asm (instance privies of Feature
+02286 440.scr.asm (instance build of Feature
+02340 440.scr.asm (instance maze of Feature
+02364 440.scr.asm (instance trees of Feature
+02388 440.scr.asm (instance town of Feature
+02442 440.scr.asm (instance series of Script
+02517 440.scr.asm (instance noBig of SpecialDoVerb
+02579 440.scr.asm (instance changeMusic of Script
+02700 440.scr.asm (instance knockSound of Sound
+
+45.scr.asm
+00183 45.scr.asm (instance hedgeMaster of Hedge
+00213 45.scr.asm (instance publichedge4 of HedgeRow
+
+450.scr.asm
+00074 450.scr.asm (instance publicrm450 of Rm
+01067 450.scr.asm (instance arrived of Script
+01103 450.scr.asm (instance takeOff of Script
+01214 450.scr.asm (instance bedRm of Feature
+01268 450.scr.asm (instance ref of Feature
+01322 450.scr.asm (instance chap of Feature
+01377 450.scr.asm (instance front of Feature
+01401 450.scr.asm (instance wash of Feature
+01456 450.scr.asm (instance kitchen of Feature
+01511 450.scr.asm (instance flag of Feature
+01566 450.scr.asm (instance cells of Feature
+01737 450.scr.asm (instance outside of Feature
+01761 450.scr.asm (instance changeMusic of Script
+
+452.scr.asm
+00088 452.scr.asm (instance publicabbey of Rgn
+00179 452.scr.asm (instance publicaMonk of Actor
+00486 452.scr.asm (instance publicregTimer of Script
+00579 452.scr.asm (instance dangerBox of Script
+00941 452.scr.asm (instance publicnoBlow of SpecialDoVerb
+
+455.scr.asm
+00026 455.scr.asm (instance publicrm455 of Rm
+00274 455.scr.asm (instance robes of View
+00386 455.scr.asm (instance tub of Feature
+00484 455.scr.asm (instance shelves of Feature
+00550 455.scr.asm (instance table of Feature
+00670 455.scr.asm (instance buckets of Feature
+00735 455.scr.asm (instance jug of Feature
+00800 455.scr.asm (instance water of Feature
+00903 455.scr.asm (instance rShelves of Feature
+01016 455.scr.asm (instance putBack of Script
+01094 455.scr.asm (instance door of Feature
+01143 455.scr.asm (instance ldry of Feature
+01167 455.scr.asm (instance series of Script
+01248 455.scr.asm (instance rustleSound of Sound
+
+460.scr.asm
+00439 460.scr.asm (instance publicrm460 of StdRoom
+01018 460.scr.asm (instance comeIn of Script
+01081 460.scr.asm (instance tunnelExit of Script
+01266 460.scr.asm (instance leave of Script
+01420 460.scr.asm (instance abbot of Actor
+01901 460.scr.asm (instance giveIt of Script
+02065 460.scr.asm (instance waterDeath of Script
+02135 460.scr.asm (instance giveRobes of Script
+02386 460.scr.asm (instance caskV of View
+02582 460.scr.asm (instance chair of PicView
+02652 460.scr.asm (instance chrPoly of Polygon
+02662 460.scr.asm (instance aMug of View
+02702 460.scr.asm (instance rMug of View
+02943 460.scr.asm (instance tunnel of Prop
+03019 460.scr.asm (instance fire of Prop
+03064 460.scr.asm (instance tapestry of Feature
+03122 460.scr.asm (instance feelTap of Script
+03238 460.scr.asm (instance tables of Feature
+03262 460.scr.asm (instance walls of Feature
+03286 460.scr.asm (instance lChairs of Feature
+03364 460.scr.asm (instance rChairs of Feature
+03399 460.scr.asm (instance windows of Feature
+03423 460.scr.asm (instance abbotsChair of Feature
+03447 460.scr.asm (instance arthur of Feature
+03518 460.scr.asm (instance tryToSit of Script
+03778 460.scr.asm (instance tapBefore of Script
+03909 460.scr.asm (instance mugBefore of TScript
+04023 460.scr.asm (instance talkBefore of Script
+04090 460.scr.asm (instance tryToGrabCask of Script
+04265 460.scr.asm (instance grabCask of Script
+04435 460.scr.asm (instance drinkingMatch of TScript
+05137 460.scr.asm (instance goAway of Script
+05165 460.scr.asm (instance dropInDrink of Script
+05410 460.scr.asm (instance aPassOut of TScript
+05568 460.scr.asm (instance waitToStand of Script
+05789 460.scr.asm (instance rPassOut of Script
+06038 460.scr.asm (instance prodAbbot of Script
+06196 460.scr.asm (instance robAbbot of TScript
+06473 460.scr.asm (instance lInRMug of TScript
+06562 460.scr.asm (instance sell of Script
+06736 460.scr.asm (instance deliver of Script
+06896 460.scr.asm (instance frock of Script
+07011 460.scr.asm (instance warn of Script
+07119 460.scr.asm (instance betterLeave of Script
+07353 460.scr.asm (instance escape of SpecialDoVerb
+07380 460.scr.asm (instance mad of Script
+07519 460.scr.asm (instance snoreScript of Script
+07575 460.scr.asm (instance fireSound of Sound
+07596 460.scr.asm (instance mugSound of Sound
+07617 460.scr.asm (instance tapestrySound of Sound
+07638 460.scr.asm (instance snoreSound of Sound
+07659 460.scr.asm (instance plopSound of Sound
+
+470.scr.asm
+00162 470.scr.asm (instance publicrm470 of StdRoom
+00566 470.scr.asm (instance firstMess of Script
+00617 470.scr.asm (instance pillow of Actor
+00825 470.scr.asm (instance pillowL of Actor
+00976 470.scr.asm (instance pillowM of Actor
+01075 470.scr.asm (instance putBack of Script
+01362 470.scr.asm (instance getBox of Script
+01676 470.scr.asm (instance checkM of Script
+01872 470.scr.asm (instance checkL of Script
+02061 470.scr.asm (instance chkPriv of Script
+02165 470.scr.asm (instance rope of Feature
+02218 470.scr.asm (instance ropePull of Script
+02371 470.scr.asm (instance doMonk of Script
+02551 470.scr.asm (instance bCurtains of Feature
+02575 470.scr.asm (instance bTape of Feature
+02599 470.scr.asm (instance bed of Feature
+02730 470.scr.asm (instance skin of Feature
+02780 470.scr.asm (instance table of Feature
+02845 470.scr.asm (instance desk of Feature
+02895 470.scr.asm (instance book of Feature
+02968 470.scr.asm (instance readBook of Script
+03045 470.scr.asm (instance chair of Feature
+03110 470.scr.asm (instance rug of Feature
+03189 470.scr.asm (instance windows of Feature
+03247 470.scr.asm (instance fTape of Feature
+03271 470.scr.asm (instance rChest of Feature
+03336 470.scr.asm (instance lChest of View
+03418 470.scr.asm (instance openIt of Script
+03578 470.scr.asm (instance fire of Actor
+03635 470.scr.asm (instance rugPol of Polygon
+03645 470.scr.asm (instance lChstPol of Polygon
+03655 470.scr.asm (instance rChstPol of Polygon
+03665 470.scr.asm (instance DeskPol of Polygon
+03675 470.scr.asm (instance BookPol of Polygon
+03685 470.scr.asm (instance SkinPol of Polygon
+03695 470.scr.asm (instance fireSound of Sound
+
+480.scr.asm
+00100 480.scr.asm (instance publicrm480 of StdRoom
+00449 480.scr.asm (instance arrived of Script
+00661 480.scr.asm (instance monks of Script
+00830 480.scr.asm (instance wanderVerbs of SpecialDoVerb
+00856 480.scr.asm (instance openDoor of Script
+01262 480.scr.asm (instance lDoor of Prop
+01335 480.scr.asm (instance rDoor of Prop
+01408 480.scr.asm (instance ceiling of Feature
+01432 480.scr.asm (instance altar of Feature
+01481 480.scr.asm (instance reliquary of Feature
+01530 480.scr.asm (instance windows of Feature
+01588 480.scr.asm (instance pews of Feature
+01669 480.scr.asm (instance book of Feature
+01718 480.scr.asm (instance chapel of Feature
+01742 480.scr.asm (instance doorSound of Sound
+
+490.scr.asm
+00061 490.scr.asm (class publicHedgeRow of Rm
+00713 490.scr.asm (class Hedge of PicView
+00809 490.scr.asm (instance hornSound of Sound
+00830 490.scr.asm (instance DMZ of Feature
+00940 490.scr.asm (instance egoEnters of Script
+01820 490.scr.asm (instance thisIsIt of Script
+01955 490.scr.asm (instance publicrunFerDoor of Script
+02137 490.scr.asm (instance hurryDay10 of Script
+02210 490.scr.asm (instance publicitsToLate of Script
+02288 490.scr.asm (instance northToAlaska of Script
+02403 490.scr.asm (instance egoMonkActions of SpecialDoVerb
+02429 490.scr.asm (instance egoOutlawActions of SpecialDoVerb
+02473 490.scr.asm (instance egoHornActions of SpecialDoVerb
+
+5.scr.asm
+00145 5.scr.asm (instance hornSound of Sound
+00166 5.scr.asm (instance publicblowinIt of Script
+00478 5.scr.asm (instance publicblowArbitrator of Script
+01650 5.scr.asm (instance summonWill of Script
+02314 5.scr.asm (instance willEnters of Script
+02532 5.scr.asm (instance campWillComes of Script
+02693 5.scr.asm (instance willLeaves of Script
+02752 5.scr.asm (instance thornyHorn of Script
+02803 5.scr.asm (instance tinyBubbles of Script
+02969 5.scr.asm (instance bubble of Actor
+03044 5.scr.asm (instance Willbert of Actor
+03138 5.scr.asm (instance scarletGroop of Grooper
+
+50.scr.asm
+00271 50.scr.asm (instance hedgeMaster of Hedge
+00301 50.scr.asm (instance publichedge5 of HedgeRow
+
+500.scr.asm
+00028 500.scr.asm (instance publicrm500 of Rm
+00234 500.scr.asm (instance secretDoor of Prop
+00351 500.scr.asm (instance pyre of Feature
+00492 500.scr.asm (instance hedge of Feature
+00607 500.scr.asm (instance awning of Feature
+00691 500.scr.asm (instance stand of Feature
+00817 500.scr.asm (instance ring1 of Feature
+00910 500.scr.asm (instance ring2 of Feature
+01005 500.scr.asm (instance ring3 of Feature
+01098 500.scr.asm (instance walls of Feature
+01197 500.scr.asm (instance floor of Feature
+01280 500.scr.asm (instance enterRoom of Script
+01423 500.scr.asm (instance outAndInAgain of Script
+01598 500.scr.asm (instance openDoor of Script
+
+501.scr.asm
+00102 501.scr.asm (instance publicjwitchct of Rm
+00640 501.scr.asm (instance robinH of Actor
+00697 501.scr.asm (instance robinsHead of Prop
+00742 501.scr.asm (instance killer of Actor
+00799 501.scr.asm (instance killer2 of Actor
+00856 501.scr.asm (instance arrow of View
+00896 501.scr.asm (instance door of Prop
+00941 501.scr.asm (instance marianM of Prop
+00986 501.scr.asm (instance fire of Prop
+01031 501.scr.asm (instance fire2 of Prop
+01076 501.scr.asm (instance fireA of Prop
+01121 501.scr.asm (instance fireB of Prop
+01166 501.scr.asm (instance fireD of Prop
+01211 501.scr.asm (instance fireE of Prop
+01256 501.scr.asm (instance fireF of Prop
+01301 501.scr.asm (instance knave of Prop
+01346 501.scr.asm (instance knave2 of Prop
+01391 501.scr.asm (instance knave3 of Prop
+01436 501.scr.asm (instance marianBurns of Script
+01645 501.scr.asm (instance knavesDie of Script
+01873 501.scr.asm (instance openSesame of Script
+02498 501.scr.asm (instance ignisMortis of Script
+03002 501.scr.asm (instance fromTheGate of Script
+03310 501.scr.asm (instance kill of Script
+03387 501.scr.asm (instance kill2 of Script
+03464 501.scr.asm (instance kill3 of Script
+03551 501.scr.asm (instance suddenDeath of Script
+03756 501.scr.asm (instance musicScript of Script
+03852 501.scr.asm (instance fireSound of Sound
+
+530.scr.asm
+00305 530.scr.asm (instance publicrm530 of StdRoom
+01032 530.scr.asm (instance inStuf of Script
+01153 530.scr.asm (instance dieNow of Script
+01300 530.scr.asm (instance publicpayKeeper of Script
+01801 530.scr.asm (instance pullAPint of Script
+01885 530.scr.asm (instance pour of Script
+02213 530.scr.asm (instance drinking of Script
+02287 530.scr.asm (instance notBehindBar of Script
+02392 530.scr.asm (instance dontBow of Script
+02462 530.scr.asm (instance usePipe of Script
+02519 530.scr.asm (instance fire of Prop
+02604 530.scr.asm (instance publicgate of Prop
+02711 530.scr.asm (instance rope of View
+02765 530.scr.asm (instance bucket of Actor
+02895 530.scr.asm (instance roger of Actor
+02952 530.scr.asm (instance giles of Actor
+03009 530.scr.asm (instance jack of Actor
+03066 530.scr.asm (instance publickeeper of Actor
+03443 530.scr.asm (instance man1 of Prop
+03529 530.scr.asm (instance man2 of Prop
+03584 530.scr.asm (instance man3 of Prop
+03639 530.scr.asm (instance morStool of Feature
+03873 530.scr.asm (instance morTable of Feature
+04018 530.scr.asm (instance walls of Feature
+04042 530.scr.asm (instance bar of Feature
+04094 530.scr.asm (instance lamps of Feature
+04146 530.scr.asm (instance bottles of Feature
+04198 530.scr.asm (instance cTable of Feature
+04250 530.scr.asm (instance cMug of Feature
+04302 530.scr.asm (instance stools of Feature
+04354 530.scr.asm (instance bTable of Feature
+04406 530.scr.asm (instance bBenches of Feature
+04458 530.scr.asm (instance tDrunk of Feature
+04606 530.scr.asm (instance floor of Feature
+04630 530.scr.asm (instance bMug of Feature
+04682 530.scr.asm (instance fDrunk of Feature
+04828 530.scr.asm (instance casks of Feature
+04880 530.scr.asm (instance vbParty of SpecialDoVerb
+04898 530.scr.asm (instance vbNoCanDo of SpecialDoVerb
+04931 530.scr.asm (instance egoActions of SpecialDoVerb
+04973 530.scr.asm (instance vbGenPub of SpecialDoVerb
+05167 530.scr.asm (instance gateSound of Sound
+05188 530.scr.asm (instance fireSound of Sound
+
+531.scr.asm
+00188 531.scr.asm (instance publicmonkCode of Code
+00221 531.scr.asm (instance payBill of Script
+00387 531.scr.asm (instance tryNOpen of Script
+00693 531.scr.asm (instance fillCask of Script
+00815 531.scr.asm (instance vbKeeperMonk of SpecialDoVerb
+01238 531.scr.asm (instance vbGateMonk of SpecialDoVerb
+01266 531.scr.asm (instance gateSound of Sound
+
+532.scr.asm
+00137 532.scr.asm (instance publicparty of Code
+00352 532.scr.asm (instance enter of Script
+00543 532.scr.asm (instance escape of Script
+00684 532.scr.asm (instance prayOrDie of Script
+00876 532.scr.asm (instance bless of Script
+01104 532.scr.asm (instance die of Script
+01205 532.scr.asm (instance drinking of Script
+01279 532.scr.asm (instance makeOut of Script
+01358 532.scr.asm (instance changeLaughter of Script
+01487 532.scr.asm (instance sheriff of Prop
+01643 532.scr.asm (instance hal of Actor
+01708 532.scr.asm (instance hob of Actor
+01773 532.scr.asm (instance dick of Actor
+01830 532.scr.asm (instance man1 of Actor
+01934 532.scr.asm (instance man2 of Prop
+02032 532.scr.asm (instance man3 of Actor
+02143 532.scr.asm (instance man4 of View
+02193 532.scr.asm (instance man5 of View
+02243 532.scr.asm (instance man6 of View
+02293 532.scr.asm (instance man7 of View
+02343 532.scr.asm (instance man8 of View
+02393 532.scr.asm (instance wench1 of Prop
+02500 532.scr.asm (instance wench2 of Prop
+02599 532.scr.asm (instance vbKeeper of SpecialDoVerb
+02668 532.scr.asm (instance vbGate of SpecialDoVerb
+02711 532.scr.asm (instance pubSound of Sound
+
+533.scr.asm
+00157 533.scr.asm (instance publicday10 of Script
+00500 533.scr.asm (instance guardTunnels of SpecialDoVerb
+00722 533.scr.asm (instance letIn of Script
+00902 533.scr.asm (instance threaten of Script
+01336 533.scr.asm (instance bribe of Script
+01501 533.scr.asm (instance shootSound of Sound
+
+534.scr.asm
+00103 534.scr.asm (instance publicHarry of Prop
+00529 534.scr.asm (instance hDrink of Script
+00627 534.scr.asm (instance mugSound of Sound
+
+540.scr.asm
+00751 540.scr.asm (instance publicrm540 of Rm
+01038 540.scr.asm (instance board of Feature
+01140 540.scr.asm (instance tail of Prop
+01195 540.scr.asm (instance cat1 of Feature
+01267 540.scr.asm (instance cat2 of Feature
+01339 540.scr.asm (instance mugFloor of Feature
+01389 540.scr.asm (instance bones of Feature
+01439 540.scr.asm (instance fish of Feature
+01512 540.scr.asm (instance harry of Feature
+01952 540.scr.asm (instance pissOff of Script
+02015 540.scr.asm (instance meat of Feature
+02088 540.scr.asm (instance rob of Feature
+02123 540.scr.asm (instance rHead of Prop
+02174 540.scr.asm (instance hHead of Prop
+02229 540.scr.asm (instance floor of Feature
+02336 540.scr.asm (instance meow of Script
+02399 540.scr.asm (instance brdPoly of Polygon
+02409 540.scr.asm (instance cat1Poly of Polygon
+02419 540.scr.asm (instance cat2Poly of Polygon
+02429 540.scr.asm (instance meatPoly of Polygon
+02439 540.scr.asm (instance harryPoly of Polygon
+02449 540.scr.asm (instance robPoly of Polygon
+02459 540.scr.asm (instance halfBoard of Polygon
+02469 540.scr.asm (instance offer of Script
+02865 540.scr.asm (instance piece of Prop
+03046 540.scr.asm (instance arm of Prop
+03102 540.scr.asm (instance cArm of Prop
+03157 540.scr.asm (instance theMorris of Morris
+04387 540.scr.asm (class ATo of CT
+04517 540.scr.asm (instance clickSound of Sound
+04538 540.scr.asm (instance catSound of Sound
+
+541.scr.asm
+00150 541.scr.asm (class Morris of Script
+
+55.scr.asm
+00211 55.scr.asm (instance hedgeMaster of Hedge
+00241 55.scr.asm (instance publichedge6 of HedgeRow
+
+550.scr.asm
+00153 550.scr.asm (instance publicrm550 of Rm
+00444 550.scr.asm (instance sDoor of Prop
+00495 550.scr.asm (instance gate of Prop
+00616 550.scr.asm (instance tap3 of PicView
+00675 550.scr.asm (instance tap4 of Feature
+00728 550.scr.asm (instance tap5 of PicView
+00787 550.scr.asm (instance tap6 of PicView
+00846 550.scr.asm (instance turnTap of Script
+01068 550.scr.asm (instance guardX of Actor
+01125 550.scr.asm (instance keeper of Actor
+01262 550.scr.asm (instance gateIn of Script
+01552 550.scr.asm (instance barrelIn of Script
+01812 550.scr.asm (instance barrelOut of Script
+02192 550.scr.asm (instance series of Script
+02288 550.scr.asm (instance screwUp of Script
+02534 550.scr.asm (instance openGate of Script
+02605 550.scr.asm (instance resc of Script
+03153 550.scr.asm (instance hal of Actor
+03210 550.scr.asm (instance hob of Actor
+03267 550.scr.asm (instance dick of Actor
+03324 550.scr.asm (instance spigotSound of Sound
+03345 550.scr.asm (instance caskSound of Sound
+03366 550.scr.asm (instance caskCloseSound of Sound
+03387 550.scr.asm (instance gateSound of Sound
+03408 550.scr.asm (instance csk1 of Feature
+03459 550.scr.asm (instance csk2 of Feature
+03493 550.scr.asm (instance csk3 of Feature
+03544 550.scr.asm (instance csk4 of Feature
+03600 550.scr.asm (instance csk5 of Feature
+03651 550.scr.asm (instance csk6 of Feature
+03702 550.scr.asm (instance csk7 of Feature
+03736 550.scr.asm (instance csk8 of Feature
+03787 550.scr.asm (instance csk9 of Feature
+03821 550.scr.asm (instance base of Feature
+03872 550.scr.asm (instance sacks of Feature
+03923 550.scr.asm (instance walls of Feature
+03947 550.scr.asm (instance floor of Feature
+
+560.scr.asm
+00090 560.scr.asm (instance publictunnel1 of Rm
+00778 560.scr.asm (instance sonHal of Actor
+01006 560.scr.asm (instance sonHob of Actor
+01234 560.scr.asm (instance sonDicken of Actor
+01453 560.scr.asm (instance cannotUsePuzbox of SpecialDoVerb
+01488 560.scr.asm (instance firstInFrom550 of Script
+01592 560.scr.asm (instance withSon5B6A of Script
+01657 560.scr.asm (instance comeFromEstWithSons of Script
+01731 560.scr.asm (instance caskArea of Feature
+01854 560.scr.asm (instance tunnelFloor of Feature
+01991 560.scr.asm (instance caskConvToSon of Script
+02048 560.scr.asm (instance caskClikFirst of Script
+02275 560.scr.asm (instance caskClikSecond of Script
+02500 560.scr.asm (instance eastTunlWay of Feature
+02646 560.scr.asm (instance westTunlWay of Feature
+02774 560.scr.asm (instance tunnelWall of Feature
+02971 560.scr.asm (instance waterOrFireRingTalk of Script
+03033 560.scr.asm (instance dickenPuzBoxTalk of Script
+
+561.scr.asm
+00092 561.scr.asm (instance publictunnel2 of Rm
+00995 561.scr.asm (instance sonHal of Actor
+01223 561.scr.asm (instance sonHob of Actor
+01451 561.scr.asm (instance sonDicken of Actor
+01670 561.scr.asm (instance cannotUsePuzbox of SpecialDoVerb
+01701 561.scr.asm (instance theDoor of Prop
+01857 561.scr.asm (instance theTapestry of Prop
+01997 561.scr.asm (instance westWallArea of Feature
+02134 561.scr.asm (instance eastWallArea of Feature
+02242 561.scr.asm (instance endWallArea of Feature
+02449 561.scr.asm (instance floorArea of Feature
+02569 561.scr.asm (instance call565Scpt of Script
+02688 561.scr.asm (instance goToTunnels of Script
+02796 561.scr.asm (instance openDoorGoto570 of Script
+02886 561.scr.asm (instance moveTapestryTo460 of Script
+02997 561.scr.asm (instance westTunnelDay5&6 of Script
+03124 561.scr.asm (instance mirrorTunnelDay5&6 of Script
+03230 561.scr.asm (instance comeWithSonsFrom560 of Script
+03405 561.scr.asm (instance comeWithSons570 of Script
+03490 561.scr.asm (instance hurryFrom460 of Script
+03617 561.scr.asm (instance afterCoinLeft of Script
+03703 561.scr.asm (instance dickenPuzBoxTalk of Script
+03780 561.scr.asm (instance waterOrFireRingTalk of Script
+03857 561.scr.asm (instance doorSound of Sound
+
+562.scr.asm
+00054 562.scr.asm (instance publictunnel3 of Rm
+00623 562.scr.asm (instance tunnelWall of Feature
+00728 562.scr.asm (instance sonHal of Actor
+00956 562.scr.asm (instance sonHob of Actor
+01184 562.scr.asm (instance sonDicken of Actor
+01403 562.scr.asm (instance cannotUsePuzbox of SpecialDoVerb
+01433 562.scr.asm (instance dickenPuzBoxTalk of Script
+01510 562.scr.asm (instance waterOrFireRingTalk of Script
+01587 562.scr.asm (instance changeTunnels of Script
+01672 562.scr.asm (instance backAgain of Script
+01745 562.scr.asm (instance walkIn of Script
+01842 562.scr.asm (instance theLeader of Script
+01903 562.scr.asm (instance onwardsHo of Script
+
+564.scr.asm
+00017 564.scr.asm (class publicTheDungeon of Rgn
+00069 564.scr.asm (instance publicshortTimer of Script
+00126 564.scr.asm (instance publiclongTimer of Script
+00188 564.scr.asm (instance publicwarningTimer of Script
+
+565.scr.asm
+00058 565.scr.asm (instance newCast of EventHandler
+00066 565.scr.asm (instance newFeatures of EventHandler
+00074 565.scr.asm (instance newMDH of EventHandler
+00082 565.scr.asm (instance hideMe of Code
+00107 565.scr.asm (instance showMe of Code
+00132 565.scr.asm (instance publicpeephole of Code
+00531 565.scr.asm (instance roger of Actor
+00588 565.scr.asm (instance giles of Actor
+00645 565.scr.asm (instance coins of View
+00685 565.scr.asm (instance dayTenScript of Script
+00756 565.scr.asm (instance randomScript of Script
+01003 565.scr.asm (instance rogerEnter of TScript
+01332 565.scr.asm (instance rogerPace of TScript
+01958 565.scr.asm (instance shortTimerScript of Script
+02072 565.scr.asm (instance tryAgain of TScript
+02417 565.scr.asm (instance noMoreChances of TScript
+02553 565.scr.asm (instance allDone of Script
+02641 565.scr.asm (instance goneForAle of Script
+02766 565.scr.asm (instance longTimerOne of TScript
+03160 565.scr.asm (instance longTimerTwo of TScript
+03570 565.scr.asm (instance guardsDoneDrinking of TScript
+03855 565.scr.asm (instance guardsDoneDrinkingTwo of TScript
+
+570.scr.asm
+00183 570.scr.asm (instance publicrm570 of Rm
+00832 570.scr.asm (instance hob of Actor
+00889 570.scr.asm (instance dicken of Actor
+00946 570.scr.asm (instance hal of Actor
+01003 570.scr.asm (instance roger of Actor
+01060 570.scr.asm (instance giles of Actor
+01117 570.scr.asm (instance jack of Actor
+01174 570.scr.asm (instance trapDoor of Feature
+01325 570.scr.asm (instance table of Feature
+01519 570.scr.asm (instance chair of Feature
+01618 570.scr.asm (instance stool of Feature
+01717 570.scr.asm (instance hiddenDoor of Feature
+01780 570.scr.asm (instance doorway of Feature
+01843 570.scr.asm (instance floor of Feature
+01927 570.scr.asm (instance walls of Feature
+01981 570.scr.asm (instance tunnel of Feature
+02035 570.scr.asm (instance dickenWithRope of Prop
+02080 570.scr.asm (instance rope of Prop
+02125 570.scr.asm (instance theTorch of Prop
+02209 570.scr.asm (instance trapdoor of Prop
+02449 570.scr.asm (instance robes of View
+02489 570.scr.asm (instance coins of View
+02570 570.scr.asm (instance closedDoor of PicView
+02600 570.scr.asm (instance openDoor of PicView
+02630 570.scr.asm (instance instantDeath1 of TScript
+02845 570.scr.asm (instance instantDeath2 of TScript
+03044 570.scr.asm (instance instantDeath3 of TScript
+03232 570.scr.asm (instance blessing of TScript
+03634 570.scr.asm (instance enterRoom of Script
+03718 570.scr.asm (instance firstTimeOpen of TScript
+03849 570.scr.asm (instance backAgain of TScript
+03995 570.scr.asm (instance putCoins of Script
+04191 570.scr.asm (instance getCoins of Script
+04326 570.scr.asm (instance saveBoys of TScript
+05185 570.scr.asm (instance comeBackHere of Script
+05264 570.scr.asm (instance blessBoys of TScript
+05651 570.scr.asm (instance trembling of Script
+05865 570.scr.asm (instance openIt of TScript
+06030 570.scr.asm (instance trapDoorSound of Sound
+
+580.scr.asm
+00027 580.scr.asm (instance publicrm580 of Rm
+00329 580.scr.asm (instance theMon of Feature
+00429 580.scr.asm (instance theFen of Feature
+00562 580.scr.asm (instance theArea of Feature
+00615 580.scr.asm (instance theRoad1 of Feature
+00728 580.scr.asm (instance theRoad2 of Feature
+00838 580.scr.asm (instance theRock of Feature
+00926 580.scr.asm (instance goDown of Script
+01042 580.scr.asm (instance toOverLook of Script
+01120 580.scr.asm (instance backToMap of Script
+01184 580.scr.asm (instance fromMonastery of Script
+01321 580.scr.asm (instance egads of Script
+01392 580.scr.asm (instance egoActions of SpecialDoVerb
+
+590.scr.asm
+00158 590.scr.asm (instance publicrm590 of Rm
+00607 590.scr.asm (instance cloud of PicView
+00757 590.scr.asm (instance aPlant of PicView
+00787 590.scr.asm (instance wave of Prop
+00880 590.scr.asm (instance elliot of Actor
+01008 590.scr.asm (instance lilTree of Feature
+01084 590.scr.asm (instance monastery of Feature
+01174 590.scr.asm (instance waters of Feature
+01303 590.scr.asm (instance roundGround of Feature
+01327 590.scr.asm (instance fog of Feature
+01377 590.scr.asm (instance sky of Feature
+01401 590.scr.asm (instance gate of Feature
+01425 590.scr.asm (instance walkUp of Script
+01492 590.scr.asm (instance walkOut of Script
+01613 590.scr.asm (instance nessie of Script
+01733 590.scr.asm (instance bumpBog of Script
+01819 590.scr.asm (instance beKilled of Script
+02048 590.scr.asm (instance dieSound of Sound
+
+60.scr.asm
+00208 60.scr.asm (instance hedgeMaster of Hedge
+00238 60.scr.asm (instance publichedge7 of HedgeRow
+
+600.scr.asm
+00289 600.scr.asm (instance publicrm600 of Rm
+00863 600.scr.asm (instance cloud of PicView
+00919 600.scr.asm (instance aPlant of PicView
+00949 600.scr.asm (instance wave of Prop
+01042 600.scr.asm (instance theWater of Feature
+01159 600.scr.asm (instance thePlants of Feature
+01280 600.scr.asm (instance theSky of Feature
+01304 600.scr.asm (instance theGround of Feature
+01328 600.scr.asm (instance fulkScroll of View
+01368 600.scr.asm (instance waterRing of View
+01408 600.scr.asm (instance fulk of Actor
+01465 600.scr.asm (instance bumpBog of Script
+01551 600.scr.asm (instance walkOut of Script
+01611 600.scr.asm (instance walkDown of Script
+01683 600.scr.asm (instance headEast of Script
+01981 600.scr.asm (instance headWest of Script
+02291 600.scr.asm (instance rescueOfFulk of Script
+
+601.scr.asm
+00373 601.scr.asm (instance publicFens of Rgn
+00825 601.scr.asm (instance publicboatLooper of SmoothLooper
+00841 601.scr.asm (instance wispCage of Cage
+00923 601.scr.asm (class Wisp of Actor
+01197 601.scr.asm (instance publicrobin of Actor
+01295 601.scr.asm (instance publicrgnBoat of Actor
+01434 601.scr.asm (instance publicpole of Actor
+01531 601.scr.asm (instance bow of Prop
+01576 601.scr.asm (instance publicmonk of Actor
+01932 601.scr.asm (instance wispsOfferBoat of Script
+02145 601.scr.asm (instance wispsGoGetBoat of Script
+02735 601.scr.asm (instance frenzy of Script
+02880 601.scr.asm (instance toTheKnight of Script
+03094 601.scr.asm (instance publicoutlawAfterWisps of Script
+03268 601.scr.asm (instance publicstepInBoatAsOutlaw of Script
+03578 601.scr.asm (instance publicmonkBoat of Script
+03933 601.scr.asm (instance publicegoActions of SpecialDoVerb
+04085 601.scr.asm (instance flutePlayer of Script
+04229 601.scr.asm (instance monkWaitTimer of Script
+04313 601.scr.asm (instance naiadPrinter of TScript
+
+603.scr.asm
+00041 603.scr.asm (instance publicblewIt of Script
+00190 603.scr.asm (instance publicknockItOff of Script
+00448 603.scr.asm (instance publicincoming600 of Script
+00746 603.scr.asm (instance publicincoming590 of Script
+01043 603.scr.asm (instance publicwalkToBoat of Script
+01263 603.scr.asm (instance egoInMonkBoat of Script
+01891 603.scr.asm (instance musicPlay of Script
+01965 603.scr.asm (instance dieSound of Sound
+
+610.scr.asm
+00227 610.scr.asm (instance publicrm610 of Rm
+00542 610.scr.asm (instance cloud of PicView
+00598 610.scr.asm (instance plant of PicView
+00628 610.scr.asm (instance wave of Prop
+00721 610.scr.asm (instance publichiddenWisp of Actor
+00778 610.scr.asm (instance onTheWater of Script
+00914 610.scr.asm (instance outtaHere of Script
+01108 610.scr.asm (instance withMonk of Script
+
+620.scr.asm
+00229 620.scr.asm (instance publicrm620 of Rm
+00741 620.scr.asm (instance wierdDoVerb of SpecialDoVerb
+00784 620.scr.asm (instance publicfenMonkVerb of Code
+01071 620.scr.asm (instance entrance of Feature
+01095 620.scr.asm (instance walls of Feature
+01119 620.scr.asm (instance waters of Feature
+01207 620.scr.asm (instance bench of Feature
+01231 620.scr.asm (instance chainLeft of Feature
+01299 620.scr.asm (instance chainRight of Feature
+01368 620.scr.asm (instance reedsLeft of Feature
+01459 620.scr.asm (instance reedsRight of Feature
+01530 620.scr.asm (instance gate of Feature
+01603 620.scr.asm (instance aroundTheGuard of Feature
+01658 620.scr.asm (instance wave of Prop
+01751 620.scr.asm (instance monk1 of Actor
+01970 620.scr.asm (instance theBoat of Actor
+02056 620.scr.asm (instance whichOne of Actor
+02113 620.scr.asm (instance backInside of Script
+02227 620.scr.asm (instance egoToMap of Script
+02286 620.scr.asm (instance glideIn of Script
+02483 620.scr.asm (instance getOutBoat of Script
+02619 620.scr.asm (instance getInBoat of Script
+02768 620.scr.asm (instance oops of Script
+03008 620.scr.asm (instance murderHim of Script
+03145 620.scr.asm (instance monkSwings of Script
+03320 620.scr.asm (instance moveAway of Script
+03538 620.scr.asm (instance kinkyKill of Script
+03724 620.scr.asm (instance blowHard of Script
+03807 620.scr.asm (instance riddleScript of Script
+03878 620.scr.asm (instance wrongGemDeath of Script
+04060 620.scr.asm (instance walkIntoMon of Script
+04203 620.scr.asm (instance closeToGuard of Script
+04315 620.scr.asm (instance turnAndFace of Script
+04453 620.scr.asm (instance dieSound of Sound
+04474 620.scr.asm (instance splashSound of Sound
+04495 620.scr.asm (instance dockSound of Sound
+
+621.scr.asm
+00098 621.scr.asm (instance newCast of EventHandler
+00106 621.scr.asm (instance newFeatures of EventHandler
+00114 621.scr.asm (instance newMDH of EventHandler
+00122 621.scr.asm (instance hideMe of Code
+00147 621.scr.asm (instance showMe of Code
+00172 621.scr.asm (instance publicgems_room of Code
+00386 621.scr.asm (instance everything of Feature
+00438 621.scr.asm (instance agate of Feature
+00557 621.scr.asm (instance turquoise of Feature
+00671 621.scr.asm (instance sapphire of Feature
+00792 621.scr.asm (instance carnelian of Feature
+00913 621.scr.asm (instance lapisLazuli of Feature
+01031 621.scr.asm (instance amber of Feature
+01147 621.scr.asm (instance jet of Feature
+01264 621.scr.asm (instance opal of Feature
+01377 621.scr.asm (instance quartz of Feature
+01492 621.scr.asm (instance bigGems of View
+01532 621.scr.asm (instance army of Actor
+01617 621.scr.asm (instance doTheRiddles of Script
+01849 621.scr.asm (instance wrongAns of Script
+01919 621.scr.asm (instance rightAns of Script
+02057 621.scr.asm (instance oneRiddle of Script
+02143 621.scr.asm (instance twoRiddle of Script
+02229 621.scr.asm (instance threeRiddle of Script
+
+625.scr.asm
+00120 625.scr.asm (class publicMonastery of Rgn
+00243 625.scr.asm (instance chipGroop of Grooper
+00253 625.scr.asm (instance publicchip of Actor
+00519 625.scr.asm (instance publicprior of Actor
+00937 625.scr.asm (instance walkToActor of Script
+01117 625.scr.asm (instance ringed of Script
+01220 625.scr.asm (instance notYetMoney of Script
+01304 625.scr.asm (instance onceMoney of Script
+01388 625.scr.asm (instance twiceMoney of Script
+01470 625.scr.asm (instance monkeyMoney of Script
+01544 625.scr.asm (instance publicwGateTimer of Script
+
+630.scr.asm
+00143 630.scr.asm (instance publicrm630 of Rm
+01513 630.scr.asm (instance yard of Feature
+01563 630.scr.asm (instance extraRms of Feature
+01613 630.scr.asm (instance emptyRms of Feature
+01663 630.scr.asm (instance tortureTower of Feature
+01770 630.scr.asm (instance swTower of Feature
+01882 630.scr.asm (instance neTower of Feature
+01995 630.scr.asm (instance nwTower of Feature
+02104 630.scr.asm (instance monastery of Feature
+02128 630.scr.asm (instance cel1 of Feature
+02230 630.scr.asm (instance cel2 of Feature
+02331 630.scr.asm (instance cel3 of Feature
+02432 630.scr.asm (instance cel4 of Feature
+02533 630.scr.asm (instance cel5 of Feature
+02634 630.scr.asm (instance cel6 of Feature
+02736 630.scr.asm (instance cel7 of Feature
+02837 630.scr.asm (instance cel8 of Feature
+02938 630.scr.asm (instance cel9 of Feature
+03040 630.scr.asm (instance cel10 of Feature
+03142 630.scr.asm (instance cel11 of Feature
+03244 630.scr.asm (instance cel12 of Feature
+03345 630.scr.asm (instance cel13 of Feature
+03447 630.scr.asm (instance cel14 of Feature
+03549 630.scr.asm (instance cel15 of Feature
+03650 630.scr.asm (instance cel16 of Feature
+03752 630.scr.asm (instance waterGate of Feature
+03776 630.scr.asm (instance mainGate of Feature
+03826 630.scr.asm (instance refectory of Feature
+03876 630.scr.asm (instance wave of Prop
+03969 630.scr.asm (instance fulk of Actor
+04026 630.scr.asm (instance takeOff of Script
+04310 630.scr.asm (instance moveToScribes of Script
+04402 630.scr.asm (instance inFromScribes of Script
+04507 630.scr.asm (instance moveToRef of Script
+04773 630.scr.asm (instance moveToPTower of Script
+04895 630.scr.asm (instance moveToCell of Script
+04988 630.scr.asm (instance enterTheMap of Script
+05052 630.scr.asm (instance prisonTower of Script
+05132 630.scr.asm (instance scribesTower of Script
+05211 630.scr.asm (instance extraRooms of Script
+05277 630.scr.asm (instance toTheYard of Script
+05364 630.scr.asm (instance emptyRooms of Script
+05429 630.scr.asm (instance moveToFGate of Script
+05494 630.scr.asm (instance toTheRefec of Script
+05578 630.scr.asm (instance makeIt of Script
+05655 630.scr.asm (instance splitToTheGate of Script
+05811 630.scr.asm (instance theTortureTower of Script
+05966 630.scr.asm (instance movinOnIn of Script
+06053 630.scr.asm (instance goOnIn of Script
+06128 630.scr.asm (instance ToTheNETower of Script
+
+640.scr.asm
+00121 640.scr.asm (instance publicrm640 of Rm
+00707 640.scr.asm (instance upLeftTable of Feature
+00837 640.scr.asm (instance upRightTable of Feature
+00960 640.scr.asm (instance lowLeftTable of Feature
+01075 640.scr.asm (instance lowRightTable of Feature
+01192 640.scr.asm (instance bench1 of Feature
+01305 640.scr.asm (instance bench2 of Feature
+01419 640.scr.asm (instance bench3 of Feature
+01534 640.scr.asm (instance bench4 of Feature
+01648 640.scr.asm (instance bench5 of Feature
+01762 640.scr.asm (instance bench6 of Feature
+01874 640.scr.asm (instance bench7 of Feature
+01983 640.scr.asm (instance bench8 of Feature
+02096 640.scr.asm (instance floor of Feature
+02195 640.scr.asm (instance statue of Feature
+02329 640.scr.asm (instance niche of Feature
+02435 640.scr.asm (instance upLeftDoor of Feature
+02533 640.scr.asm (instance lowLeftDoor of Feature
+02632 640.scr.asm (instance upRightDoor of Feature
+02731 640.scr.asm (instance lowRightDoor of Feature
+02827 640.scr.asm (instance everything of Feature
+02876 640.scr.asm (instance aTorch of Prop
+02961 640.scr.asm (instance monkey1 of Actor
+03173 640.scr.asm (instance monkey2 of Actor
+03385 640.scr.asm (instance cmonIn of Script
+03708 640.scr.asm (instance meetThePrior of Script
+03923 640.scr.asm (instance takeAndRun of Script
+04181 640.scr.asm (instance gotchaRobin of Script
+04401 640.scr.asm (instance buckMonkeys of Script
+04466 640.scr.asm (instance dieSound of Sound
+
+65.scr.asm
+00251 65.scr.asm (instance hedgeMaster of Hedge
+00281 65.scr.asm (instance publichedge8 of HedgeRow
+
+650.scr.asm
+00172 650.scr.asm (instance publicrm650 of Rm
+00520 650.scr.asm (instance rack of Feature
+00659 650.scr.asm (instance steps of Feature
+00756 650.scr.asm (instance pDesk of Feature
+00975 650.scr.asm (instance desk of Feature
+01116 650.scr.asm (instance desk2 of Feature
+01258 650.scr.asm (instance candle of Feature
+01363 650.scr.asm (instance chest of Feature
+01466 650.scr.asm (instance floor of Feature
+01551 650.scr.asm (instance fWindow of Feature
+01666 650.scr.asm (instance sWindow of Feature
+01777 650.scr.asm (instance walls of Feature
+01828 650.scr.asm (instance thePrior of Actor
+01941 650.scr.asm (instance monk of Actor
+02206 650.scr.asm (instance monk2 of Actor
+02471 650.scr.asm (instance scroll of Prop
+02548 650.scr.asm (instance goblet of Prop
+02708 650.scr.asm (instance openChest of Script
+02801 650.scr.asm (instance enterTheRoom of Script
+02873 650.scr.asm (instance knockOverGoblet of Script
+03094 650.scr.asm (instance tipGoblet of Script
+03370 650.scr.asm (instance priorLeave of Script
+03446 650.scr.asm (instance talkToPrior of Script
+03581 650.scr.asm (instance getScroll of Script
+03710 650.scr.asm (instance dropStone of Script
+04011 650.scr.asm (instance burnedByFire of Script
+04217 650.scr.asm (instance ripsOff of Script
+04389 650.scr.asm (instance putItBack of Script
+04514 650.scr.asm (instance giveItBack of Script
+04655 650.scr.asm (instance goDoIt of Script
+04777 650.scr.asm (instance scrollSound of Sound
+04798 650.scr.asm (instance spillSound of Sound
+04819 650.scr.asm (instance dieSound of Sound
+
+660.scr.asm
+00051 660.scr.asm (instance newCast of EventHandler
+00059 660.scr.asm (instance newFeatures of EventHandler
+00067 660.scr.asm (instance newMDH of EventHandler
+00075 660.scr.asm (instance hideMe of Code
+00100 660.scr.asm (instance showMe of Code
+00125 660.scr.asm (instance publicscrolls of Code
+00261 660.scr.asm (class scrollSlots of Feature
+00336 660.scr.asm (instance one of scrollSlots
+00392 660.scr.asm (instance two of scrollSlots
+00446 660.scr.asm (instance three of scrollSlots
+00509 660.scr.asm (instance four of scrollSlots
+00562 660.scr.asm (instance five of scrollSlots
+00618 660.scr.asm (instance six of scrollSlots
+00685 660.scr.asm (instance seven of scrollSlots
+00742 660.scr.asm (instance eight of scrollSlots
+00801 660.scr.asm (instance scroll1 of scrollSlots
+00908 660.scr.asm (instance scroll2 of scrollSlots
+01028 660.scr.asm (instance scroll3 of scrollSlots
+01125 660.scr.asm (instance scroll4 of scrollSlots
+01224 660.scr.asm (instance scroll5 of scrollSlots
+01329 660.scr.asm (instance scroll6 of scrollSlots
+01432 660.scr.asm (instance scroll7 of scrollSlots
+01548 660.scr.asm (instance scroll8 of scrollSlots
+01661 660.scr.asm (instance scroll9 of scrollSlots
+01774 660.scr.asm (instance scroll10 of scrollSlots
+01880 660.scr.asm (instance scroll11 of scrollSlots
+01992 660.scr.asm (instance scroll12 of scrollSlots
+02098 660.scr.asm (instance scroll13 of scrollSlots
+02206 660.scr.asm (instance scroll14 of scrollSlots
+02338 660.scr.asm (instance scroll15 of scrollSlots
+02448 660.scr.asm (instance wholeRoom of Feature
+02499 660.scr.asm (instance scrollATP of View
+02539 660.scr.asm (instance emptyATP of View
+02618 660.scr.asm (instance showScroll of Script
+
+670.scr.asm
+00106 670.scr.asm (instance publicrm670 of Rm
+00516 670.scr.asm (instance oRat of Actor
+00658 670.scr.asm (instance bucket of Feature
+00721 670.scr.asm (instance walls of Feature
+00745 670.scr.asm (instance floor of Feature
+00796 670.scr.asm (instance highWindow of Feature
+00820 670.scr.asm (instance rack of Feature
+00933 670.scr.asm (instance strappado of Feature
+01022 670.scr.asm (instance wheel of Feature
+01097 670.scr.asm (instance leftRope of Feature
+01221 670.scr.asm (instance rightRope of Feature
+01369 670.scr.asm (instance rightTopRope of Feature
+01508 670.scr.asm (instance wallChain of Feature
+01598 670.scr.asm (instance highChain of Feature
+01688 670.scr.asm (instance meetThePrior of Script
+01818 670.scr.asm (instance meetTheMonk of Script
+01958 670.scr.asm (instance walkIn of Script
+02203 670.scr.asm (instance freeFulk of Script
+02737 670.scr.asm (class runAround of Script
+02829 670.scr.asm (instance burnedByFire of Script
+03030 670.scr.asm (instance sqeakSound of Sound
+03051 670.scr.asm (instance ropeSound of Sound
+03072 670.scr.asm (instance pulleySound of Sound
+03093 670.scr.asm (instance dieSound of Sound
+
+680.scr.asm
+00155 680.scr.asm (instance publicrm680 of Rm
+01009 680.scr.asm (instance water of Feature
+01112 680.scr.asm (instance everything of Feature
+01162 680.scr.asm (instance mooringPost of Feature
+01239 680.scr.asm (instance malitia of Feature
+01454 680.scr.asm (instance ieiunus of Feature
+01603 680.scr.asm (instance deformis of Feature
+01745 680.scr.asm (instance cogito of Prop
+01842 680.scr.asm (instance ineptus of Prop
+01953 680.scr.asm (instance vocalis of Prop
+02055 680.scr.asm (instance hilaris of Prop
+02157 680.scr.asm (instance waterGate of Prop
+02257 680.scr.asm (instance wave of Prop
+02350 680.scr.asm (instance theBoat of Actor
+02494 680.scr.asm (instance fulk of Actor
+02758 680.scr.asm (instance killMonk of Actor
+02815 680.scr.asm (instance theRock of Actor
+02872 680.scr.asm (instance thePole of Actor
+02947 680.scr.asm (instance thePrior of Actor
+03004 680.scr.asm (instance viciouslyPullTongue of Script
+03293 680.scr.asm (instance stepInBoat of Script
+03444 680.scr.asm (instance egoGetsInBoat of Script
+03736 680.scr.asm (instance toTheGate of Script
+04035 680.scr.asm (instance split of Script
+04269 680.scr.asm (instance fulkBoat of Script
+04440 680.scr.asm (instance raiseTheGrate of Script
+04624 680.scr.asm (instance blowTheJoint of Script
+04803 680.scr.asm (instance moveAway of Script
+04982 680.scr.asm (instance egoDock of Script
+05178 680.scr.asm (instance timesUp of Script
+05250 680.scr.asm (instance monkKillDock of Script
+05435 680.scr.asm (instance monkKillBoat of Script
+05604 680.scr.asm (instance priorKillBoat of Script
+05772 680.scr.asm (instance moveAndShake of Script
+06045 680.scr.asm (instance askTheDwarf of Script
+06124 680.scr.asm (instance lookAtFulk of Script
+06201 680.scr.asm (instance giveFulkMoney of Script
+06270 680.scr.asm (instance cogitoTalks of Script
+06353 680.scr.asm (instance vocalisTalks of Script
+06436 680.scr.asm (instance hilarisTalks of Script
+06519 680.scr.asm (instance BackWalk of Rev
+06548 680.scr.asm (instance egoCode of Code
+06645 680.scr.asm (instance gateSound of Sound
+06666 680.scr.asm (instance dieSound of Sound
+06687 680.scr.asm (instance secretSound of Sound
+
+681.scr.asm
+00025 681.scr.asm (instance publictalky of Script
+00115 681.scr.asm (instance publicyouGotIeiunus of Script
+00218 681.scr.asm (instance publicyouGotIneptus of Script
+00304 681.scr.asm (instance publicyouGotCogito of Script
+00407 681.scr.asm (instance publicyouGotMalitia of Script
+00496 681.scr.asm (instance publicyouGotVocalis of Script
+00581 681.scr.asm (instance publicyouGotHilaris of Script
+00667 681.scr.asm (instance publicyouGotDeformis of Script
+00753 681.scr.asm (instance secretSound of Sound
+
+690.scr.asm
+00073 690.scr.asm (instance publicrm690 of Rm
+00287 690.scr.asm (instance gate of Prop
+00332 690.scr.asm (instance clFog of Prop
+00377 690.scr.asm (instance wave of Prop
+00470 690.scr.asm (instance theBoat of Actor
+00568 690.scr.asm (instance fulk of Actor
+00666 690.scr.asm (instance gateDown of Script
+00832 690.scr.asm (instance outOfHere of Script
+00897 690.scr.asm (instance steelGate of Sound
+
+695.scr.asm
+00036 695.scr.asm (instance publicmonDeath of Rm
+01028 695.scr.asm (instance gotcha of Script
+01074 695.scr.asm (instance gotchaWater of Script
+01256 695.scr.asm (instance gotchaRing of Script
+01395 695.scr.asm (instance dieSound of Sound
+
+70.scr.asm
+00234 70.scr.asm (instance hedgeMaster of Hedge
+00264 70.scr.asm (instance publichedge9 of HedgeRow
+00529 70.scr.asm (instance theDoor of PicView
+00788 70.scr.asm (instance goToDoor of Script
+
+700.scr.asm
+00208 700.scr.asm (instance publicrm700 of Rm
+01014 700.scr.asm (instance boatLooper of SmoothLooper
+01030 700.scr.asm (instance wispHolder of Cage
+01062 700.scr.asm (instance unusualDoVerb of SpecialDoVerb
+01203 700.scr.asm (instance sky of Feature
+01227 700.scr.asm (instance bottomTower of Feature
+01329 700.scr.asm (instance theReeds of Feature
+01477 700.scr.asm (instance clFog of Feature
+01501 700.scr.asm (instance theWater of Feature
+01525 700.scr.asm (instance theIvy of Feature
+01737 700.scr.asm (instance chIvy of View
+01795 700.scr.asm (instance publicquiver of View
+01835 700.scr.asm (instance wave of Prop
+01928 700.scr.asm (instance clIvy of Prop
+02088 700.scr.asm (instance publiclongPole of Prop
+02143 700.scr.asm (instance wisp of Actor
+02333 700.scr.asm (instance publictheBow of Prop
+02404 700.scr.asm (instance publictheBoat of Prop
+02502 700.scr.asm (instance egoBoat of Script
+02850 700.scr.asm (instance egoClimbQuiverBow of Script
+03208 700.scr.asm (instance ivyDoubled of Script
+03372 700.scr.asm (instance N of Script
+03446 700.scr.asm (instance moveToVines of Script
+03649 700.scr.asm (instance egoTogether of Script
+03800 700.scr.asm (instance fraidyCat of Script
+04039 700.scr.asm (instance outtaHere of Script
+04209 700.scr.asm (instance naiadPrinter of TScript
+
+701.scr.asm
+00206 701.scr.asm (instance rightSide of Feature
+00278 701.scr.asm (instance leftSide of Feature
+00346 701.scr.asm (instance publicrm701 of Rm
+00648 701.scr.asm (instance unusualDoVerb of SpecialDoVerb
+00671 701.scr.asm (instance aTower of Feature
+00781 701.scr.asm (instance sky of Feature
+00805 701.scr.asm (instance clIvy of Prop
+00898 701.scr.asm (instance climbGoThere of Script
+00999 701.scr.asm (instance N of Script
+01071 701.scr.asm (instance S of Script
+01143 701.scr.asm (instance enterThePicture of Script
+
+702.scr.asm
+00124 702.scr.asm (instance publicrm702 of Rm
+00430 702.scr.asm (instance unusualDoVerb of SpecialDoVerb
+00453 702.scr.asm (instance topTower of Feature
+00559 702.scr.asm (instance theWindow of Feature
+00673 702.scr.asm (instance theIvy of Feature
+00772 702.scr.asm (instance rightSide of Feature
+00849 702.scr.asm (instance leftSide of Feature
+00925 702.scr.asm (instance clIvy of Prop
+01003 702.scr.asm (instance monk1 of Actor
+01115 702.scr.asm (instance monk2 of Actor
+01227 702.scr.asm (instance climbGoThere of Script
+01389 702.scr.asm (instance monksTalk of Script
+01606 702.scr.asm (instance climbInWindow of Script
+01702 702.scr.asm (instance S of Script
+01774 702.scr.asm (instance foooolishhhh of Script
+
+704.scr.asm
+00042 704.scr.asm (instance publicegoDock of Script
+00574 704.scr.asm (instance publiccantGoThere of Script
+00659 704.scr.asm (instance publicclimbGoThere of Script
+00822 704.scr.asm (instance publicgetOffVines of Script
+
+705.scr.asm
+00112 705.scr.asm (instance publicrm705 of Rm
+00309 705.scr.asm (instance robDoVerb of SpecialDoVerb
+00336 705.scr.asm (instance theRoom of Feature
+00444 705.scr.asm (instance theFloor of Feature
+00560 705.scr.asm (instance theWindow of Feature
+00672 705.scr.asm (instance theDoor of Feature
+00791 705.scr.asm (instance rat1 of Prop
+00877 705.scr.asm (instance rat2 of Prop
+00963 705.scr.asm (instance rat3 of Prop
+01049 705.scr.asm (instance theKnight of Actor
+01320 705.scr.asm (instance enterWindow of Script
+01584 705.scr.asm (instance winKnightTrust of Script
+01666 705.scr.asm (instance ratsDoit of Script
+01762 705.scr.asm (instance squeakSound of Sound
+
+710.scr.asm
+00080 710.scr.asm (instance publicrm710 of Rm
+00588 710.scr.asm (instance robin of Actor
+00676 710.scr.asm (instance fenL of Actor
+00733 710.scr.asm (instance fenR of Actor
+00790 710.scr.asm (instance boat of Actor
+00847 710.scr.asm (instance rockL of Actor
+00904 710.scr.asm (instance rockR of Actor
+00961 710.scr.asm (instance throwRock of Script
+01710 710.scr.asm (instance rockSpin of Script
+01785 710.scr.asm (instance fallOut of Script
+01932 710.scr.asm (instance toTheBoat of Script
+02234 710.scr.asm (instance cmonRobin of Script
+02321 710.scr.asm (instance splashSound of Sound
+02342 710.scr.asm (instance thudSound of Sound
+02363 710.scr.asm (instance fallSound of Sound
+02384 710.scr.asm (instance drownSound of Sound
+
+720.scr.asm
+00014 720.scr.asm (class publictheTower of Rgn
+
+75.scr.asm
+00172 75.scr.asm (instance hedgeMaster of Hedge
+00202 75.scr.asm (instance publichedge10 of HedgeRow
+
+750.scr.asm
+00308 750.scr.asm (instance publicsweepRgn of Rgn
+00540 750.scr.asm (instance sherPic of PicView
+00570 750.scr.asm (instance sherMan of Actor
+01093 750.scr.asm (instance outlawSweep of Script
+02616 750.scr.asm (instance cleanSweep of Script
+03985 750.scr.asm (instance nearGrove of Script
+04123 750.scr.asm (instance myArrow of PicView
+04186 750.scr.asm (instance yourDead of Script
+05273 750.scr.asm (instance surroundEgo of Script
+05880 750.scr.asm (instance surrenderToSweep of Script
+05977 750.scr.asm (instance sweptToDeath of Script
+06053 750.scr.asm (instance bustedFensMonk of Script
+06212 750.scr.asm (instance bustedAbbeyMonk of Script
+06351 750.scr.asm (instance bustedPuck of Script
+06512 750.scr.asm (instance blowSweep of Script
+06682 750.scr.asm (instance handSignCode of Code
+07791 750.scr.asm (instance handJive of SpecialDoVerb
+
+8.scr.asm
+00279 8.scr.asm (instance publictheMan of Actor
+00649 8.scr.asm (instance publicpoach of Actor
+01181 8.scr.asm (instance publicshootist of Prop
+01226 8.scr.asm (instance closePoly of Feature
+01361 8.scr.asm (instance publicpoachScript of Script
+01664 8.scr.asm (instance repeatEncounter of Script
+01790 8.scr.asm (instance lastChance of Script
+01964 8.scr.asm (instance getBack of Script
+02115 8.scr.asm (instance getYerMen of Script
+02702 8.scr.asm (instance poacherKilled of Script
+02880 8.scr.asm (instance flunkyKilled of Script
+03521 8.scr.asm (instance savedThePoacher of Script
+04196 8.scr.asm (instance offerEmerald of TScript
+04356 8.scr.asm (instance buckTalk of TScript
+04451 8.scr.asm (instance givePoacherBucks of Script
+04850 8.scr.asm (instance iTrustYou of Script
+04993 8.scr.asm (instance egoActions of SpecialDoVerb
+05094 8.scr.asm (instance shootSound of Sound
+05115 8.scr.asm (instance screamSound of Sound
+
+80.scr.asm
+00232 80.scr.asm (instance hedgeMaster of Hedge
+00262 80.scr.asm (instance publichedge11 of HedgeRow
+
+801.scr.asm
+00060 801.scr.asm (instance publictroub of Rm
+00444 801.scr.asm (instance bardsHead of Prop
+00489 801.scr.asm (instance bardsHand of Prop
+00534 801.scr.asm (instance bardsFingers of Prop
+00579 801.scr.asm (instance baddie1 of Prop
+00624 801.scr.asm (instance baddie2 of Prop
+00669 801.scr.asm (instance baddie3 of Prop
+00714 801.scr.asm (instance baddie4 of Prop
+00759 801.scr.asm (instance tuckie of Prop
+00804 801.scr.asm (instance sheriffsHead of Prop
+00849 801.scr.asm (instance sheriffsHand of Prop
+00894 801.scr.asm (instance robinsHead of Prop
+00939 801.scr.asm (instance robinsRightHand of Prop
+00984 801.scr.asm (instance robinsLeftHand of Prop
+01029 801.scr.asm (instance kingsHead of Prop
+01074 801.scr.asm (instance soldier of Prop
+01119 801.scr.asm (instance hangman of Prop
+01164 801.scr.asm (instance sheriffsPate of Prop
+01209 801.scr.asm (instance sheriffsKnuckles of Prop
+01254 801.scr.asm (instance robinH of Actor
+01311 801.scr.asm (instance johnnieHangs of PicView
+01341 801.scr.asm (instance tuckieHangs of PicView
+01371 801.scr.asm (instance swinger of View
+01411 801.scr.asm (instance sing of Script
+01665 801.scr.asm (instance strum of Script
+01942 801.scr.asm (instance riff of Script
+02114 801.scr.asm (instance bardsTheme of Script
+02338 801.scr.asm (instance theLoveNest of Script
+02551 801.scr.asm (instance theCapture of Script
+02792 801.scr.asm (instance theGallows of Script
+03129 801.scr.asm (instance theKingRidesIn of Script
+03284 801.scr.asm (instance theAccused of Script
+03928 801.scr.asm (instance sheriffTalks of Script
+04009 801.scr.asm (instance itsNotOver of Script
+04245 801.scr.asm (instance rainSound of Sound
+04266 801.scr.asm (instance dieScum of Script
+04511 801.scr.asm (instance hang of Script
+04671 801.scr.asm (instance bardsTheme2 of Script
+04796 801.scr.asm (instance drum of Script
+04924 801.scr.asm (instance fret of Script
+05070 801.scr.asm (instance creakSound of Sound
+
+802.scr.asm
+
+803.scr.asm
+00021 803.scr.asm (instance fred of Actor
+00078 803.scr.asm (instance publicspeedTest of Rm
+
+804.scr.asm
+00014 804.scr.asm (instance publicegoSez of Code
+
+806.scr.asm
+00019 806.scr.asm (instance specialSound of Sound
+00064 806.scr.asm (instance deadIcon of DCIcon
+00100 806.scr.asm (instance publicverseScript of Script
+
+807.scr.asm
+00091 807.scr.asm (class FootstepWalk of StopWalk
+00228 807.scr.asm (instance stepSound of Sound
+
+808.scr.asm
+00024 808.scr.asm (instance publicinitGame of Code
+00355 808.scr.asm (instance publicstartUpRoom of Code
+
+809.scr.asm
+00013 809.scr.asm (instance publicaboutCode of Code
+
+812.scr.asm
+00016 812.scr.asm (instance controls of Controls
+00024 812.scr.asm (class StdRoom of Rm
+00204 812.scr.asm (instance walkIn of Script
+00368 812.scr.asm (instance walkOut of Script
+
+813.scr.asm
+00025 813.scr.asm (class rhEgo of Ego
+00371 813.scr.asm (class Head of Prop
+00835 813.scr.asm (class SpecialDoVerb of Code
+00853 813.scr.asm (class Beard of Prop
+
+85.scr.asm
+00237 85.scr.asm (instance hedgeMaster of Hedge
+00267 85.scr.asm (instance publichedge12 of HedgeRow
+
+851.scr.asm
+00269 851.scr.asm (class RTEyeCycle of RandCycle
+00408 851.scr.asm (class RHTalker of Talker
+00602 851.scr.asm (class Conversation of Script
+00940 851.scr.asm (instance crowd of Conversation
+01246 851.scr.asm (instance publictalker1 of RHTalker
+01297 851.scr.asm (instance bust1 of View
+01337 851.scr.asm (instance mouth1 of Prop
+01382 851.scr.asm (instance eyes1 of Prop
+01427 851.scr.asm (instance publictalker2 of RHTalker
+01478 851.scr.asm (instance bust2 of View
+01518 851.scr.asm (instance mouth2 of Prop
+01563 851.scr.asm (instance eyes2 of Prop
+01608 851.scr.asm (class TScript of Script
+
+852.scr.asm
+00013 852.scr.asm (class PPath of MoveTo
+
+853.scr.asm
+00088 853.scr.asm (instance newCast of EventHandler
+00096 853.scr.asm (instance newFeatures of EventHandler
+00104 853.scr.asm (instance newMH of EventHandler
+00112 853.scr.asm (instance newKH of EventHandler
+00120 853.scr.asm (instance newDH of EventHandler
+00128 853.scr.asm (instance newSounds of EventHandler
+00157 853.scr.asm (instance mightPause of Code
+00185 853.scr.asm (instance hideMe of Code
+00210 853.scr.asm (instance showMe of Code
+00235 853.scr.asm (instance publicthePuzzleBox of Code
+00523 853.scr.asm (instance everything of Feature
+00577 853.scr.asm (instance theHand of Actor
+00652 853.scr.asm (instance theBox of View
+00698 853.scr.asm (instance theR of View
+00792 853.scr.asm (instance theN of View
+00874 853.scr.asm (instance theA of View
+00969 853.scr.asm (instance theM of View
+01050 853.scr.asm (instance theF of View
+01131 853.scr.asm (instance theI of View
+01212 853.scr.asm (instance theO of View
+01321 853.scr.asm (instance theB of View
+01402 853.scr.asm (instance theE of View
+01483 853.scr.asm (instance theS of View
+01588 853.scr.asm (instance theD of View
+01669 853.scr.asm (instance theL of View
+01750 853.scr.asm (instance theT of View
+01831 853.scr.asm (instance theG of View
+01912 853.scr.asm (instance theC of View
+01993 853.scr.asm (instance theRing of Actor
+02050 853.scr.asm (instance showFireRing of Script
+02237 853.scr.asm (instance endIt of Script
+02311 853.scr.asm (instance clickSound of Sound
+02332 853.scr.asm (instance publiccursorPause of Script
+
+854.scr.asm
+00013 854.scr.asm (instance publicpuzBoxMessage of Code
+
+855.scr.asm
+00014 855.scr.asm (instance publicversePrinter of Script
+
+856.scr.asm
+00019 856.scr.asm (class Denomination of DIcon
+00154 856.scr.asm (instance addValue of Code
+00211 856.scr.asm (class Money of List
+
+857.scr.asm
+00017 857.scr.asm (class GiveOrTakeIcon of DIcon
+00389 857.scr.asm (instance keepButton of DButton
+00406 857.scr.asm (instance giveButton of DButton
+00423 857.scr.asm (class MoneyDialog of Dialog
+
+858.scr.asm
+00019 858.scr.asm (class MList of List
+00089 858.scr.asm (class Fighter of Actor
+00636 858.scr.asm (class Technique of Script
+00952 858.scr.asm (class Part of Feature
+01044 858.scr.asm (class Fight of Script
+
+860.scr.asm
+00016 860.scr.asm (class FairFeature of Feature
+00099 860.scr.asm (class FairActor of Actor
+00215 860.scr.asm (class FairProp of Prop
+00319 860.scr.asm (class FairView of View
+
+890.scr.asm
+00014 890.scr.asm (class SlowDown of MoveTo
+
+891.scr.asm
+00013 891.scr.asm (class FuzzyStop of Fwd
+
+892.scr.asm
+00014 892.scr.asm (class publicSyncStop of Fwd
+
+893.scr.asm
+00013 893.scr.asm (class Table of Obj
+
+9.scr.asm
+00053 9.scr.asm (instance publicrm9 of Rm
+00211 9.scr.asm (instance myWill of View
+00251 9.scr.asm (instance myJohn of View
+00291 9.scr.asm (instance myTuck of View
+00331 9.scr.asm (instance myAlan of View
+00371 9.scr.asm (instance myMuch of View
+00411 9.scr.asm (instance horseAndKnight of Prop
+00456 9.scr.asm (instance knightArm of Prop
+00501 9.scr.asm (instance knightHead of Prop
+00546 9.scr.asm (instance theKnight of Actor
+00603 9.scr.asm (instance maidMarian of Actor
+00660 9.scr.asm (instance mule1 of Actor
+00717 9.scr.asm (instance mule2 of Actor
+00774 9.scr.asm (instance doTheSlideShow of Script
+
+926.scr.asm
+00015 926.scr.asm (instance flipPoly of Code
+00151 926.scr.asm (instance flipFeature of Code
+
+927.scr.asm
+00015 927.scr.asm (class PAvoider of Code
+
+928.scr.asm
+00015 928.scr.asm (class RTRandCycle of RandCycle
+00120 928.scr.asm (class Talker of Prop
+
+930.scr.asm
+00015 930.scr.asm (class PChase of PolyPath
+00253 930.scr.asm (class PFollow of PolyPath
+
+932.scr.asm
+
+933.scr.asm
+00013 933.scr.asm (class PseudoMouse of Code
+
+934.scr.asm
+00015 934.scr.asm (class Slider of IconI
+00589 934.scr.asm (class publicGameControls of IconBar
+01206 934.scr.asm (class ControlIcon of IconI
+
+936.scr.asm
+00015 936.scr.asm (class BorderWindow of SysWindow
+00210 936.scr.asm (class InsetWindow of BorderWindow
+
+937.scr.asm
+00014 937.scr.asm (class IconI of Obj
+00492 937.scr.asm (class IconBar of Set
+
+939.scr.asm
+00013 939.scr.asm (class Osc of Cycle
+
+940.scr.asm
+
+941.scr.asm
+00013 941.scr.asm (class RandCycle of Cycle
+
+943.scr.asm
+00158 943.scr.asm (class ClickMenu of Obj
+00414 943.scr.asm (instance editMenu of ClickMenu
+00433 943.scr.asm (instance addMenu of ClickMenu
+00452 943.scr.asm (class Class_943_3 of
+00590 943.scr.asm (class _EditablePolygon of List
+02072 943.scr.asm (instance readObstacle of Code
+02150 943.scr.asm (class PolyEdit of List
+
+945.scr.asm
+00014 945.scr.asm (class PolyPath of Motion
+
+946.scr.asm
+00013 946.scr.asm (class Polygon of Obj
+
+949.scr.asm
+00015 949.scr.asm (class Blk of Obj
+00066 949.scr.asm (class Cage of Blk
+
+95.scr.asm
+00058 95.scr.asm (instance publicopen of Rm
+00200 95.scr.asm (class ZScript of Script
+00354 95.scr.asm (instance bardsHead of Prop
+00399 95.scr.asm (instance bardsHand of Prop
+00444 95.scr.asm (instance bardsFingers of Prop
+00489 95.scr.asm (instance bardsToes of Prop
+00534 95.scr.asm (instance richie of Actor
+00591 95.scr.asm (instance mule of Actor
+00648 95.scr.asm (instance knave of Actor
+00705 95.scr.asm (instance kingsHead of Prop
+00750 95.scr.asm (instance leftHand of Prop
+00795 95.scr.asm (instance rightHand of Prop
+00840 95.scr.asm (instance leoHead of Prop
+00885 95.scr.asm (instance leoHand of Prop
+00930 95.scr.asm (instance richieHand of Prop
+00975 95.scr.asm (instance guardHead of Prop
+01020 95.scr.asm (instance johnnie of View
+01060 95.scr.asm (instance tuckie of View
+01100 95.scr.asm (instance alanD of View
+01140 95.scr.asm (instance willie of View
+01180 95.scr.asm (instance muchie of View
+01220 95.scr.asm (instance robbie of View
+01260 95.scr.asm (instance frameRobin of View
+01300 95.scr.asm (instance frameTuck of View
+01340 95.scr.asm (instance frameAlan of View
+01380 95.scr.asm (instance frameJohn of View
+01420 95.scr.asm (instance frameWill of View
+01460 95.scr.asm (instance frameMuch of View
+01500 95.scr.asm (instance bardsTheme of ZScript
+01699 95.scr.asm (instance nightRider of ZScript
+02175 95.scr.asm (instance trot of Script
+02269 95.scr.asm (instance gallop of Script
+02376 95.scr.asm (instance grovelYouWorm of ZScript
+02639 95.scr.asm (instance merrieMen of ZScript
+03102 95.scr.asm (instance sing of Script
+03232 95.scr.asm (instance strum of Script
+03509 95.scr.asm (instance riff of Script
+03681 95.scr.asm (instance tap of Script
+03868 95.scr.asm (instance wriggle1 of Script
+03945 95.scr.asm (instance wriggle2 of Script
+04022 95.scr.asm (instance wriggle3 of Script
+04099 95.scr.asm (instance yodel of Script
+04353 95.scr.asm (instance point of Script
+04422 95.scr.asm (instance lastScript of Script
+
+950.scr.asm
+00016 950.scr.asm (class CueObj of Script
+00151 950.scr.asm (class Feature of Obj
+00666 950.scr.asm (instance dftDoVerb of Code
+
+951.scr.asm
+00013 951.scr.asm (class MoveFwd of PolyPath
+
+953.scr.asm
+00014 953.scr.asm (class Approach of Motion
+
+955.scr.asm
+00013 955.scr.asm (class Track of Motion
+
+956.scr.asm
+00014 956.scr.asm (class ForwardCounter of Fwd
+
+958.scr.asm
+
+96.scr.asm
+00038 96.scr.asm (instance publiccred of Rm
+00432 96.scr.asm (instance bowPiece of PicView
+00462 96.scr.asm (instance quitIcon of DCIcon
+00500 96.scr.asm (instance hand of Prop
+00545 96.scr.asm (instance grin of Prop
+00590 96.scr.asm (instance arrow of Actor
+00647 96.scr.asm (instance titleName of PicView
+00677 96.scr.asm (instance NWview of PicView
+00707 96.scr.asm (instance NEview of PicView
+00737 96.scr.asm (instance SWview of PicView
+00767 96.scr.asm (instance theMumble of Script
+01766 96.scr.asm (instance bowString of Script
+
+961.scr.asm
+00014 961.scr.asm (class publicStopWalk of Fwd
+
+963.scr.asm
+00014 963.scr.asm (class RelDPath of DPath
+
+964.scr.asm
+00013 964.scr.asm (class DPath of Motion
+
+967.scr.asm
+00014 967.scr.asm (class DCIcon of DIcon
+
+968.scr.asm
+00014 968.scr.asm (class publicSmoothLooper of Code
+
+969.scr.asm
+00013 969.scr.asm (class Rev of Cycle
+
+97.scr.asm
+00033 97.scr.asm (instance publictheEnd of Rm
+00279 97.scr.asm (instance title1 of View
+00319 97.scr.asm (instance name1 of View
+00359 97.scr.asm (instance name2 of View
+00399 97.scr.asm (instance name3 of View
+00439 97.scr.asm (instance name4 of View
+00479 97.scr.asm (instance name5 of View
+00519 97.scr.asm (instance name6 of View
+00559 97.scr.asm (instance name7 of View
+00599 97.scr.asm (instance name8 of View
+00639 97.scr.asm (instance name9 of View
+00679 97.scr.asm (instance name10 of View
+00719 97.scr.asm (instance name11 of View
+00759 97.scr.asm (instance name12 of View
+00799 97.scr.asm (instance name13 of View
+00839 97.scr.asm (instance name14 of View
+00879 97.scr.asm (instance name15 of View
+00919 97.scr.asm (instance giveEmTheWorks of Script
+
+970.scr.asm
+00014 970.scr.asm (class Wander of Motion
+
+971.scr.asm
+00014 971.scr.asm (class Follow of Motion
+
+973.scr.asm
+00015 973.scr.asm (class Timer of Obj
+00412 973.scr.asm (class TO of Obj
+
+974.scr.asm
+00014 974.scr.asm (instance NC of Code
+
+977.scr.asm
+00030 977.scr.asm (class Grooper of Code
+00382 977.scr.asm (class Grycler of Cycle
+
+978.scr.asm
+00014 978.scr.asm (class RFeature of Feature
+00038 978.scr.asm (class RPicView of PicView
+
+98.scr.asm
+00019 98.scr.asm (instance publiclogo of Rm
+00167 98.scr.asm (instance animScript of Script
+00380 98.scr.asm (instance glint of Prop
+00425 98.scr.asm (instance glint2 of Prop
+
+981.scr.asm
+00015 981.scr.asm (class SysWindow of Obj
+00073 981.scr.asm (class Window of SysWindow
+
+982.scr.asm
+
+985.scr.asm
+00013 985.scr.asm (class Avoid of Obj
+
+988.scr.asm
+00013 988.scr.asm (class Extra of Prop
+
+989.scr.asm
+00013 989.scr.asm (class Sound of Obj
+
+990.scr.asm
+00061 990.scr.asm (class SRDialog of Dialog
+00964 990.scr.asm (class Restore of SRDialog
+00984 990.scr.asm (class Save of SRDialog
+01004 990.scr.asm (instance GetReplaceName of Dialog
+01239 990.scr.asm (instance selectorI of DSelector
+01261 990.scr.asm (instance editI of DEdit
+01280 990.scr.asm (instance okI of DButton
+01297 990.scr.asm (instance cancelI of DButton
+01314 990.scr.asm (instance changeDirI of DButton
+01331 990.scr.asm (instance deleteI of DButton
+01348 990.scr.asm (instance textI of DText
+01366 990.scr.asm (instance text1 of DText
+01384 990.scr.asm (instance text2 of DText
+01402 990.scr.asm (instance oldName of DText
+01420 990.scr.asm (instance newName of DEdit
+01439 990.scr.asm (instance button1 of DButton
+01456 990.scr.asm (instance button2 of DButton
+
+991.scr.asm
+00014 991.scr.asm (class Jump of Motion
+00427 991.scr.asm (class JumpTo of Jump
+
+992.scr.asm
+00022 992.scr.asm (class Cycle of Obj
+00127 992.scr.asm (class Fwd of Cycle
+00182 992.scr.asm (class Walk of Fwd
+00212 992.scr.asm (class CT of Cycle
+00346 992.scr.asm (class End of CT
+00386 992.scr.asm (class Beg of CT
+00422 992.scr.asm (class SyncWalk of Fwd
+00506 992.scr.asm (class Motion of Obj
+00736 992.scr.asm (class MoveTo of Motion
+
+993.scr.asm
+00012 993.scr.asm (class Class_993_0 of Obj
+
+994.scr.asm
+00040 994.scr.asm (instance cast of EventHandler
+00048 994.scr.asm (instance features of EventHandler
+00056 994.scr.asm (instance theDoits of EventHandler
+00064 994.scr.asm (instance sFeatures of EventHandler
+00109 994.scr.asm (instance sounds of EventHandler
+00138 994.scr.asm (instance mayPause of Code
+00166 994.scr.asm (instance regions of EventHandler
+00174 994.scr.asm (instance locales of EventHandler
+00182 994.scr.asm (instance addToPics of EventHandler
+00205 994.scr.asm (instance controls of Controls
+00213 994.scr.asm (instance timers of Set
+00221 994.scr.asm (instance aTOC of Code
+00383 994.scr.asm (class Game of Obj
+01631 994.scr.asm (instance talkerEvent of Event
+01644 994.scr.asm (class Rgn of Obj
+01900 994.scr.asm (class Rm of Rgn
+02459 994.scr.asm (class Locale of Obj
+02490 994.scr.asm (class SL of Obj
+02566 994.scr.asm (instance RU of Code
+02609 994.scr.asm (instance DNKR of Code
+02633 994.scr.asm (instance fDC of Code
+
+995.scr.asm
+00019 995.scr.asm (class InvI of IconI
+00232 995.scr.asm (class Inv of IconBar
+
+996.scr.asm
+00041 996.scr.asm (instance uEvt of Event
+00054 996.scr.asm (class User of Obj
+00499 996.scr.asm (class Ego of Actor
+01022 996.scr.asm (class OnMeAndLowY of Code
+
+998.scr.asm
+00016 998.scr.asm (class PicView of Feature
+00181 998.scr.asm (class View of Feature
+00800 998.scr.asm (class Prop of View
+01089 998.scr.asm (class Actor of Prop
+
+999.scr.asm
+00020 999.scr.asm (class Obj of
+00159 999.scr.asm (class Code of Obj
+00170 999.scr.asm (class Collect of Obj
+00508 999.scr.asm (class List of Collect
+00738 999.scr.asm (class Set of List
+00807 999.scr.asm (class EventHandler of Set
+00868 999.scr.asm (class Script of Obj
+01179 999.scr.asm (class Event of Obj
+
+
+
