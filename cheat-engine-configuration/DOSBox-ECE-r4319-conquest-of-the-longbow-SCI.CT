@@ -425,8 +425,28 @@
       </Offsets>
     </CheatEntry>
     <CheatEntry>
-      <ID>57</ID>
+      <ID>673</ID>
       <Description>"player-x0"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x1EF6C</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>674</ID>
+      <Description>"player-y0"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>Dosbox.exe + 0x1B58E20</Address>
+      <Offsets>
+        <Offset>0x1EF6E</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>57</ID>
+      <Description>"player-x1"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -436,7 +456,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>52</ID>
-      <Description>"player-y0"</Description>
+      <Description>"player-y1"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -446,7 +466,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>56</ID>
-      <Description>"player-x1"</Description>
+      <Description>"player-x2"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>
@@ -456,7 +476,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>53</ID>
-      <Description>"player-y1"</Description>
+      <Description>"player-y2"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>Dosbox.exe + 0x1B58E20</Address>

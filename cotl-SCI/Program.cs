@@ -14,7 +14,7 @@ namespace cotl_SCI
         [STAThread]
         static void Main()
         {
-            // RunMemorySampling();
+            RunMemorySampling();
             // RunMonitorVariable();
             // RunDataAnalysis();
             // TestBitmapImport();
@@ -34,7 +34,7 @@ namespace cotl_SCI
             // ClockTests.TestGameClockDuration();
             // ScummVmBasePointerSearch.RunTrials();
             // ParseAssembly.RunTrials();
-            ParseSciScript.Run();
+            // ParseSciScript.Run();
             // ShowClassDefinitions.RunTrials();
         }
 

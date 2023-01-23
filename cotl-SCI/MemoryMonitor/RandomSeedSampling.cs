@@ -43,9 +43,7 @@ namespace cotl_SCI.MemoryMonitor
             List<int> seedValuesSeen = new();
             while (!requestClose)
             {
-                // int randomSeed = kq1ReadWrite.ReadTwoByte(RANDOM_SEED_PTR);
-                // int randomSeed = kq1ReadWrite.ReadTwoByte(0x1B496);
-                int randomSeed = cotlReadWrite.ReadTwoByte(0x1C8AC); // mouse stack pointer
+                int randomSeed = cotlReadWrite.ReadTwoByte(RANDOM_SEED_PTR);
                 if (seedValuesSeen.Count == 0 || randomSeed != seedValuesSeen.Last())
                 {
                     seedValuesSeen.Add(randomSeed);
